@@ -1,0 +1,6 @@
+//************//
+Begin
+Input MoneyUSD
+MoneyVND=MoneyUSD*23000
+Display MoneyVND
+End

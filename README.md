@@ -1,1 +1,1 @@
-"# C0120G1_Le_Dinh_Quoc" 
+C0120G1_Le_Dinh_Quoc

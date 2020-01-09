@@ -1,0 +1,17 @@
+//******************//
+Begin
+Input a,b,c
+If a>b
+  If a>c
+    Display:"So lon nhat la a"
+  Else
+    Display:"So lon nhat la c"
+  End If
+Else
+  If b>c
+    Display:"So lon nhat la b"
+  Else
+    Display:"So lon nhat la c"
+  End If
+End If
+End

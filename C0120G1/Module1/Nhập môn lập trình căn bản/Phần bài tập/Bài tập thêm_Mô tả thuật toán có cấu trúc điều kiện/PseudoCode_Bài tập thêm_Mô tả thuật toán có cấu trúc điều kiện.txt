@@ -1,0 +1,32 @@
+//******************//
+Begin
+Input Point
+If Point >=75
+  Display:Grade is A
+Else If Point >=60
+       Display:Grade is B
+Else If Point >=45
+         Display:Grade is C
+Else If
+         Display:Grade is D
+End If
+End
+//******************//
+Begin
+Input Point
+If Point >=75 
+   Display:Grade is A
+End If
+If Point >=60 and Point <75
+   Display:Grade is B
+End If
+If Point >=45 and Point <60
+   Display:Grade is C
+End If
+If Point >=35 and Point <45
+   Display:Grade is D
+End If 
+If Point <35
+   Display:Grade is E
+End If
+End
