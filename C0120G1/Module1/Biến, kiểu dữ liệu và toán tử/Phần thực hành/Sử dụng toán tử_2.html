@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script lang="en">
+    function tinh(){
+    //Nhap Chieu cao va Chieu rong va Dien tich
+    let chieuCao =document.getElementById('chieuCao');
+    let chieuRong =document.getElementById('chieuRong');
+    let dienTich =document.getElementById('dienTich');
+    //Tinh Dien tich hinh chu nhat
+    tinhdientich=parseInt(chieuCao.value)*parseInt(chieuRong.value);
+    //Gan tinhdientich va dientich
+    dienTich.value=tinhdientich;
+    }
+
+</script>
+          Chieu rong :<input text="text" id="chieuCao" value="" onkeyup="tinh()"/>
+          Chieu cao :<input text="text" id="chieuRong" value="" onkeyup="tinh()"/>
+          Dien tich:<input text="text" id="dienTich" value=""/>
+
+</body>
+</html>
