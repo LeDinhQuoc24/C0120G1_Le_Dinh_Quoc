@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script language="JavaScript">
+    function tinh() {
+        //Nhap gia tri
+        let diemvatly=document.getElementById('diemvatly');
+        let diemhoahoc=document.getElementById('diemhoahoc');
+        let diemsinhhoc=document.getElementById('diemsinhhoc');
+        let diemtong=document.getElementById('diemtong');
+        let diemtrungbinh=document.getElementById('diemtrungbinh');
+        //Tinh diem tong va diem trung binh
+        tinhdiemtong=parseInt(diemvatly.value)+parseInt(diemhoahoc.value)+parseInt(diemsinhhoc.value);
+            tinhdiemtrungbinh=tinhdiemtong/3;
+            //Gan gia tri vao o nhap
+        diemtong.value=tinhdiemtong;
+        diemtrungbinh.value=tinhdiemtrungbinh;
+    }
+
+</script>
+Diem vat ly:<input text='text'id='diemvatly'value=''onkeyup="tinh()"/>
+Diem hoa hoc:<input text="text"id="diemhoahoc"value=""onkeyup="tinh()"/>
+Diem sinh hoc:<input text="text"id="diemsinhhoc"value=""onkeyup="tinh()"/>
+Diem tong:<input text="text"id="diemtong"value=""/>
+Diem trung binh:<input text="text"id="diemtrungbinh"value=""/>
+
+</body>
+</html>
