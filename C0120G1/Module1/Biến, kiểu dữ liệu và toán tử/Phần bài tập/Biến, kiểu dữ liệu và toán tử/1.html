@@ -1,0 +1,66 @@
+Skip to content
+Search or jump to…
+
+Pull requests
+Issues
+Marketplace
+Explore
+
+@LeDinhQuoc24
+Learn Git and GitHub without any code!
+Using the Hello World guide, you’ll start a branch, write comments, and open a pull request.
+
+
+minhhung94
+/
+C0120G1_Vo_Minh_Hung
+1
+00
+Code Issues 0 Pull requests 0 Actions Projects 0 Wiki Security Insights
+C0120G1_Vo_Minh_Hung/C0120G1_Vo_Minh_Hung/Module1/B2.BienKieuDuLieuVaThuatToan/BaiTap/ChuyenDoCsangF.html
+@minhhung94 minhhung94 s
+9b6376f 6 hours ago
+30 lines (29 sloc)  838 Bytes
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script language="javascript">
+    // Hàm tính kết quả
+    function tinh()
+    {
+        // Nhập độ C vào ô input
+        var a = document.getElementById("a");
+        var result = document.getElementById("result");
+        var cd =( (parseFloat(a.value)*9 ) / 5 ) +32;
+
+        // Gán giá trị vào ô thứ ba
+        // Phải kiểm tra tổng hai số này có bị lỗi hay không
+        if (!Number.isNaN(cd) ){
+            result.value = cd;
+        }
+        else {
+            result.value = 'Vui lòng nhập số';
+        }
+    }
+</script>
+Do C: <input type="text" id="a" value="" placeholder='nhập độ C' onkeyup="tinh() "/>
+Kết quả: <input type="text" id="result" value=""/>
+</body>
+</html>
+© 2020 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Help
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
