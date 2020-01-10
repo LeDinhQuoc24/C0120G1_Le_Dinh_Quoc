@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script language="JavaScript">
+    function tinh() {
+        //nhap gia tri
+        let bankinh=document.getElementById('bankinh');
+        let chuvi=document.getElementById('chuvi');
+        let dientich=document.getElementById('dientich');
+        let pi;
+        //tinh
+        pi=3.14;
+        tinhchuvi=parseInt(bankinh.value)*2*pi;
+        tinhdientich=parseInt(bankinh.value)*parseInt(bankinh.value)*pi;
+        //gan vao o nhap chuvi va dientich
+        chuvi.value=tinhchuvi;
+        dientich.value=tinhdientich;
+
+
+    }
+
+
+</script>
+Nhap ban kinh:<input text="text"id="bankinh"value=""onkeyup="tinh()"/>
+Chu vi:<input text="text"id="chuvi"value=""/>
+Dien Tich:<input text="text"id="dientich"value=""/>
+
+</body>
+</html>
