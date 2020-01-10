@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script language="JavaScript">
+
+    function chuyendoi() {
+        //Nhap gia tri
+        let Do_C=document.getElementById('Do_C');
+        let Do_F=document.getElementById('Do_F');
+        //Chuyen doi
+        tinhDo_F=parseInt((Do_C.value/5)*9+32);
+        //Gan vao gia tri Do_F
+        Do_F.value=tinhDo_F;
+
+    }
+
+
+
+
+</script>
+                 Nhap Do C:<input text='text' id="Do_C"value=""onkeyup='chuyendoi()'/>
+                 Do F la  :<input text="text" id="Do_F"value=""/>
+
+</body>
+</html>
