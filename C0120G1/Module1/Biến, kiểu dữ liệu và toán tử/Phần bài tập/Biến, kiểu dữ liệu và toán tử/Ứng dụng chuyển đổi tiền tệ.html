@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script language="JavaScript">
+    function chuyendoi() {
+        var nhapsotien = document.getElementById("nhaptien").value;
+        var luachon1 = document.getElementById("luachon1").value;
+        var luachon2 = document.getElementById("luachon2").value;
+        var ketquadoi = document.getElementById("ketqua");
+
+        if(luachon1 == "VND" && luachon2 == "USD")
+        {
+            ketquadoi.value = nhapsotien / 23000;}
+        else {
+            if (luachon1 == "USD" && luachon2 == "VND") {
+                ketquadoi.value = nhapsotien * 23000;
+            } else {
+                ketquadoi.value = "Vui long chon tien quy doi";
+            }
+        }
+
+    }
+</script>
+<form>
+    <input text="text"id="nhaptien"value=""/>
+    <select id="luachon1">
+        <option value="VND">VND</option>
+        <option value="USD">USD</option>
+    </select>
+    <select id="luachon2">
+        <option value="VND">VND</option>
+        <option value="USD">USD</option>
+    </select>
+    <button type="button" onclick="chuyendoi()">Doi tien</button>
+    <input text="text"id="ketqua"value=""/>
+
+
+
+
+</form>
+</body>
+</html>
