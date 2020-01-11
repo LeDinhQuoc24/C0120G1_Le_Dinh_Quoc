@@ -20,6 +20,7 @@
     var numberRoom;
     var discountcode;
     var payments;
+    var serviceprices;
     //Hàm prompt để nhập giá trị
     name=prompt('Chọn tên');
     identitycard=prompt('Chọn CMND');
@@ -36,24 +37,24 @@
 
     //Khai báo giá tiền dịch vụ
     if (typeofservice=='Villa'){
-        typeofservice=500;
+        serviceprices=500;
     }
     if (typeofservice=='House'){
-        typeofservice=300;
+        serviceprices=300;
     }
     if (typeofservice=='Room'){
-        typeofservice=100;
+        serviceprices=100;
     }
     //Tính payments
 
-    payments=parseInt(typeofservice)*parseInt(rentDays)*(1-parseFloat(discountcode)/100);
+    payments=parseInt(serviceprices)*parseInt(rentDays)*(1-parseFloat(discountcode)/100);
 
     //Hiển thị kết quả
     alert( "Hóa đơn dịch vụ của khách hàng"+
             "\nTên khách hàng: "+name+
         "\nChứng minh nhân dân:"+identitycard+
         "\nNgày tháng năm sinh: "+dateofbirth+
-        "\nĐịa chỉ emailemailaddress: +"+ emailaddress+
+        "\nĐịa chỉ emailemailaddress: "+ emailaddress+
         "\nĐịa chỉ khách hàng: "+address+
         "\nGiới tính khách hàng: "+sex+
         "\nLoại thẻ của khách hàng: "+customercard+

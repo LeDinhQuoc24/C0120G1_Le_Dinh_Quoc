@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9b29b0ce-ee83-4c8d-8e6e-ef53a38a2ead" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/C0120G1/Module1/caseStudy/Bài tập 1/1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/C0120G1/Module1/caseStudy/Bài tập 1/Request1-Tast2.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/C0120G1/Module1/Biến, kiểu dữ liệu và toán tử/Phần bài tập/Biến, kiểu dữ liệu và toán tử/1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/C0120G1/Module1/caseStudy/Bài tập 1/Request1-Tast2.html" beforeDir="false" afterPath="$PROJECT_DIR$/C0120G1/Module1/caseStudy/Bài tập 1/Request1-Tast2.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -18,29 +16,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/C0120G1/Module1/caseStudy/Bài tập 1/Request1-Tast1.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="36">
+            <state relative-caret-position="-66">
               <caret line="8" selection-start-line="8" selection-end-line="8" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/C0120G1/Module1/caseStudy/Bài tập 1/Request1-Tast2.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
-              <caret line="44" column="25" selection-start-line="44" selection-start-column="25" selection-end-line="44" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/C0120G1/Module1/caseStudy/Bài tập 1/1.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="38" column="2" lean-forward="true" selection-start-line="38" selection-start-column="2" selection-end-line="38" selection-end-column="89" />
+            <state relative-caret-position="206">
+              <caret line="56" column="38" selection-start-line="56" selection-start-column="38" selection-end-line="56" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -48,8 +37,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/C0120G1/Module1/Biến, kiểu dữ liệu và toán tử/Phần bài tập/Biến, kiểu dữ liệu và toán tử/Tính diện tích và chu vi đường tròn_2.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="348">
-              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+            <state relative-caret-position="374">
+              <caret line="22" selection-start-line="22" selection-end-line="22" />
             </state>
           </provider>
         </entry>
@@ -57,8 +46,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/C0120G1/Module1/Biến, kiểu dữ liệu và toán tử/Phần bài tập/Biến, kiểu dữ liệu và toán tử/Ứng dụng chuyển đổi tiền tệ.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="20" column="20" lean-forward="true" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
+            <state relative-caret-position="340">
+              <caret line="20" column="20" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -67,7 +56,7 @@
         <entry file="file://$PROJECT_DIR$/C0120G1/Module1/Biến, kiểu dữ liệu và toán tử/Phần bài tập/Biến, kiểu dữ liệu và toán tử/Tính điểm tổng và điểm trung bình_2.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="85">
-              <caret line="5" column="7" lean-forward="true" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
+              <caret line="5" column="7" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -76,7 +65,7 @@
         <entry file="file://$PROJECT_DIR$/C0120G1/Module1/Biến, kiểu dữ liệu và toán tử/Phần bài tập/Biến, kiểu dữ liệu và toán tử/Tính điểm tổng và điểm trung bình_1.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="493">
-              <caret line="29" column="7" lean-forward="true" selection-start-line="29" selection-start-column="7" selection-end-line="29" selection-end-column="7" />
+              <caret line="29" column="7" selection-start-line="29" selection-start-column="7" selection-end-line="29" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -103,7 +92,7 @@
         <entry file="file://$PROJECT_DIR$/C0120G1/Module1/Biến, kiểu dữ liệu và toán tử/Phần thực hành/Khai báo và sử dụng biến_1.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="306">
-              <caret line="18" column="38" lean-forward="true" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
+              <caret line="18" column="38" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -167,6 +156,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -236,7 +226,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -277,12 +266,14 @@
       <workItem from="1578629897358" duration="10112000" />
       <workItem from="1578645783809" duration="599000" />
       <workItem from="1578707983169" duration="2128000" />
-      <workItem from="1578710219914" duration="4036000" />
+      <workItem from="1578710219914" duration="4239000" />
+      <workItem from="1578716937584" duration="1637000" />
+      <workItem from="1578726137857" duration="1078000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23965000" />
+    <option name="totallyTimeSpent" value="26883000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -340,7 +331,7 @@
     <entry file="file://$PROJECT_DIR$/C0120G1/Module1/Nhập môn lập trình căn bản/Phần thực hành/Các cách nhúng JavaScript vào trang web_Hiển thị đầu ra/X_Bonus/Choose I J_1.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/../CodyGym/Demo/Demo2-Suma,b.html" />
+    <entry file="file://F:/CodyGym/Demo/Demo2-Suma,b.html" />
     <entry file="file://$PROJECT_DIR$/C0120G1/Module1/Biến, kiểu dữ liệu và toán tử/Phần thực hành/Sử dụng toán tử.html" />
     <entry file="file://$PROJECT_DIR$/C0120G1/Module1/Biến, kiểu dữ liệu và toán tử/Phần thực hành/a.html" />
     <entry file="file://$PROJECT_DIR$/C0120G1/Module1/Biến, kiểu dữ liệu và toán tử/Phần thực hành/2.html" />
@@ -383,6 +374,35 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/C0120G1/Module1/caseStudy/Bài tập 1/1.html" />
+    <entry file="file://$PROJECT_DIR$/C0120G1/Module1/Biến, kiểu dữ liệu và toán tử/Phần bài tập/Biến, kiểu dữ liệu và toán tử/Tính diện tích và chu vi đường tròn_2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/C0120G1/Module1/Biến, kiểu dữ liệu và toán tử/Phần bài tập/Biến, kiểu dữ liệu và toán tử/Ứng dụng chuyển đổi tiền tệ.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="20" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/C0120G1/Module1/Biến, kiểu dữ liệu và toán tử/Phần bài tập/Biến, kiểu dữ liệu và toán tử/Tính điểm tổng và điểm trung bình_2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="7" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/C0120G1/Module1/Biến, kiểu dữ liệu và toán tử/Phần bài tập/Biến, kiểu dữ liệu và toán tử/Tính điểm tổng và điểm trung bình_1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="29" column="7" selection-start-line="29" selection-start-column="7" selection-end-line="29" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/C0120G1/Module1/Biến, kiểu dữ liệu và toán tử/Phần thực hành/Sử dụng toán tử_1.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -400,56 +420,21 @@
     <entry file="file://$PROJECT_DIR$/C0120G1/Module1/Biến, kiểu dữ liệu và toán tử/Phần thực hành/Khai báo và sử dụng biến_1.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
-          <caret line="18" column="38" lean-forward="true" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/C0120G1/Module1/Biến, kiểu dữ liệu và toán tử/Phần bài tập/Biến, kiểu dữ liệu và toán tử/Tính điểm tổng và điểm trung bình_2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="7" lean-forward="true" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/C0120G1/Module1/Biến, kiểu dữ liệu và toán tử/Phần bài tập/Biến, kiểu dữ liệu và toán tử/Tính điểm tổng và điểm trung bình_1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="7" lean-forward="true" selection-start-line="29" selection-start-column="7" selection-end-line="29" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/C0120G1/Module1/Biến, kiểu dữ liệu và toán tử/Phần bài tập/Biến, kiểu dữ liệu và toán tử/Tính diện tích và chu vi đường tròn_2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/C0120G1/Module1/Biến, kiểu dữ liệu và toán tử/Phần bài tập/Biến, kiểu dữ liệu và toán tử/Ứng dụng chuyển đổi tiền tệ.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="20" column="20" lean-forward="true" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/C0120G1/Module1/caseStudy/Bài tập 1/Request1-Tast1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/C0120G1/Module1/caseStudy/Bài tập 1/1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="38" column="2" lean-forward="true" selection-start-line="38" selection-start-column="2" selection-end-line="38" selection-end-column="89" />
+          <caret line="18" column="38" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/C0120G1/Module1/caseStudy/Bài tập 1/Request1-Tast2.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="44" column="25" selection-start-line="44" selection-start-column="25" selection-end-line="44" selection-end-column="25" />
+        <state relative-caret-position="206">
+          <caret line="56" column="38" selection-start-line="56" selection-start-column="38" selection-end-line="56" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/C0120G1/Module1/caseStudy/Bài tập 1/Request1-Tast1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-66">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
