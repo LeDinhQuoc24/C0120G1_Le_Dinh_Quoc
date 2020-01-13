@@ -36,21 +36,34 @@
     discountcode=prompt('Chọn mã giảm giá:x');
 
     //Khai báo giá tiền dịch vụ
-    if (typeofservice=='Villa'){
-        serviceprices=500;
+
+    switch (typeofservice) {
+        case 'Villa':
+            serviceprices = 500;
+            break;
+        case 'House':
+            serviceprices = 300;
+            break;
+        case 'Room':
+            serviceprices = 100;
+            break;
+        default:
+            serviceprices = 50;
     }
-    if (typeofservice=='House'){
-        serviceprices=300;
-    }
-    if (typeofservice=='Room'){
-        serviceprices=100;
+//So sanh
+
+
+    if(Number.isNaN(parseInt(rentDays))){
+        //hoặc dùng lệnh if(isNaN(rentDays)){
+        rentDays=1;
+
     }
     //Tính payments
 
     payments=parseInt(serviceprices)*parseInt(rentDays)*(1-parseFloat(discountcode)/100);
 
     //Hiển thị kết quả
-    alert( "Hóa đơn dịch vụ của khách hàng"+
+    alert( "Hóa đơn dịch vụ của khách hàng:"+
             "\nTên khách hàng: "+name+
         "\nChứng minh nhân dân:"+identitycard+
         "\nNgày tháng năm sinh: "+dateofbirth+
