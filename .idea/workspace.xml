@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9b29b0ce-ee83-4c8d-8e6e-ef53a38a2ead" name="Default Changelist" comment="" />
+    <list default="true" id="9b29b0ce-ee83-4c8d-8e6e-ef53a38a2ead" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/C0120G1/Module1/Nhập môn lập trình căn bản/Phần thực hành/Các cách nhúng JavaScript vào trang web_Hiển thị đầu ra/Hàm alect/ham_alect.html" beforeDir="false" afterPath="$PROJECT_DIR$/C0120G1/Module1/Nhập môn lập trình căn bản/Phần thực hành/Các cách nhúng JavaScript vào trang web_Hiển thị đầu ra/Hàm alect/ham_alect.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/C0120G1/Module1/Nhập môn lập trình căn bản/Phần thực hành/Các cách nhúng JavaScript vào trang web_Hiển thị đầu ra/X_Bonus/Choose I J_1.html" beforeDir="false" afterPath="$PROJECT_DIR$/C0120G1/Module1/Nhập môn lập trình căn bản/Phần thực hành/Các cách nhúng JavaScript vào trang web_Hiển thị đầu ra/X_Bonus/Choose I J_1.html" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -12,32 +16,81 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/C0120G1/Module1/Nhập môn lập trình căn bản/Demo/Demo4-Text.html">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/C0120G1/Module1/Nhập môn lập trình căn bản/Demo/Demo5.html">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/C0120G1/Module1/Nhập môn lập trình căn bản/Demo/Demo6.html">
+        <entry file="file://$PROJECT_DIR$/C0120G1/Module1/Nhập môn lập trình căn bản/Phần thực hành/Các cách nhúng JavaScript vào trang web_Hiển thị đầu ra/Hàm alect/ham_alect.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="22" />
+            <state relative-caret-position="204">
+              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/C0120G1/Module1/Nhập môn lập trình căn bản/Demo/Demo7.html">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor />
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/C0120G1/Module1/Nhập môn lập trình căn bản/Phần thực hành/Các cách nhúng JavaScript vào trang web_Hiển thị đầu ra/X_Bonus/Choose I J_1.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="23" column="6" lean-forward="true" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/C0120G1/Module1/Nhập môn lập trình căn bản/Phần thực hành/Các cách nhúng JavaScript vào trang web_Hiển thị đầu ra/X_Bonus/Choose I J_2.html">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/C0120G1/Module1/Nhập môn lập trình căn bản/Phần thực hành/Các cách nhúng JavaScript vào trang web_Hiển thị đầu ra/Hàm document_write/document_write.html">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/C0120G1/Module1/Nhập môn lập trình căn bản/Phần thực hành/Các cách nhúng JavaScript vào trang web_Hiển thị đầu ra/Thẻ HTML/HTML.html">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/C0120G1/Module1/Nhập môn lập trình căn bản/Phần thực hành/Các cách nhúng JavaScript vào trang web_Hiển thị đầu ra/Hàm console_log/console_log.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" column="7" lean-forward="true" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/C0120G1/Module1/Nhập môn lập trình căn bản/Phần thực hành/Các cách nhúng JavaScript vào trang web_Hiển thị đầu ra/Hàm alect/ham_alect.html" />
+        <option value="$PROJECT_DIR$/C0120G1/Module1/Nhập môn lập trình căn bản/Phần thực hành/Các cách nhúng JavaScript vào trang web_Hiển thị đầu ra/Hàm console_log/console_log.html" />
+        <option value="$PROJECT_DIR$/C0120G1/Module1/Nhập môn lập trình căn bản/Phần thực hành/Các cách nhúng JavaScript vào trang web_Hiển thị đầu ra/1.html" />
+        <option value="$PROJECT_DIR$/C0120G1/Module1/Nhập môn lập trình căn bản/Phần thực hành/Các cách nhúng JavaScript vào trang web_Hiển thị đầu ra/X_Bonus/Choose I J_1.html" />
+        <option value="$PROJECT_DIR$/C0120G1/Module1/Nhập môn lập trình căn bản/Phần thực hành/Các cách nhúng JavaScript vào trang web_Hiển thị đầu ra/Hàm alect/1.html" />
+      </list>
+    </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="228" />
@@ -51,47 +104,115 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="ProjectCodyGym" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ProjectCodyGym" type="462c0819:PsiDirectoryNode" />
+              <item name="C0120G1_Le_Dinh_Quoc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="C0120G1_Le_Dinh_Quoc" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="ProjectCodyGym" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ProjectCodyGym" type="462c0819:PsiDirectoryNode" />
+              <item name="C0120G1_Le_Dinh_Quoc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="C0120G1_Le_Dinh_Quoc" type="462c0819:PsiDirectoryNode" />
               <item name="C0120G1" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="ProjectCodyGym" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ProjectCodyGym" type="462c0819:PsiDirectoryNode" />
-              <item name="C0120G1" type="462c0819:PsiDirectoryNode" />
-              <item name="Module1" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ProjectCodyGym" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ProjectCodyGym" type="462c0819:PsiDirectoryNode" />
+              <item name="C0120G1_Le_Dinh_Quoc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="C0120G1_Le_Dinh_Quoc" type="462c0819:PsiDirectoryNode" />
               <item name="C0120G1" type="462c0819:PsiDirectoryNode" />
               <item name="Module1" type="462c0819:PsiDirectoryNode" />
-              <item name="Nhập môn lập trình căn bản" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="ProjectCodyGym" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ProjectCodyGym" type="462c0819:PsiDirectoryNode" />
+              <item name="C0120G1_Le_Dinh_Quoc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="C0120G1_Le_Dinh_Quoc" type="462c0819:PsiDirectoryNode" />
               <item name="C0120G1" type="462c0819:PsiDirectoryNode" />
               <item name="Module1" type="462c0819:PsiDirectoryNode" />
               <item name="Nhập môn lập trình căn bản" type="462c0819:PsiDirectoryNode" />
-              <item name="Demo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="C0120G1_Le_Dinh_Quoc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="C0120G1_Le_Dinh_Quoc" type="462c0819:PsiDirectoryNode" />
+              <item name="C0120G1" type="462c0819:PsiDirectoryNode" />
+              <item name="Module1" type="462c0819:PsiDirectoryNode" />
+              <item name="Nhập môn lập trình căn bản" type="462c0819:PsiDirectoryNode" />
+              <item name="Phần bài tập" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="C0120G1_Le_Dinh_Quoc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="C0120G1_Le_Dinh_Quoc" type="462c0819:PsiDirectoryNode" />
+              <item name="C0120G1" type="462c0819:PsiDirectoryNode" />
+              <item name="Module1" type="462c0819:PsiDirectoryNode" />
+              <item name="Nhập môn lập trình căn bản" type="462c0819:PsiDirectoryNode" />
+              <item name="Phần thực hành" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="C0120G1_Le_Dinh_Quoc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="C0120G1_Le_Dinh_Quoc" type="462c0819:PsiDirectoryNode" />
+              <item name="C0120G1" type="462c0819:PsiDirectoryNode" />
+              <item name="Module1" type="462c0819:PsiDirectoryNode" />
+              <item name="Nhập môn lập trình căn bản" type="462c0819:PsiDirectoryNode" />
+              <item name="Phần thực hành" type="462c0819:PsiDirectoryNode" />
+              <item name="Các cách nhúng JavaScript vào trang web_Hiển thị đầu ra" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="C0120G1_Le_Dinh_Quoc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="C0120G1_Le_Dinh_Quoc" type="462c0819:PsiDirectoryNode" />
+              <item name="C0120G1" type="462c0819:PsiDirectoryNode" />
+              <item name="Module1" type="462c0819:PsiDirectoryNode" />
+              <item name="Nhập môn lập trình căn bản" type="462c0819:PsiDirectoryNode" />
+              <item name="Phần thực hành" type="462c0819:PsiDirectoryNode" />
+              <item name="Các cách nhúng JavaScript vào trang web_Hiển thị đầu ra" type="462c0819:PsiDirectoryNode" />
+              <item name="Hàm alect" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="C0120G1_Le_Dinh_Quoc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="C0120G1_Le_Dinh_Quoc" type="462c0819:PsiDirectoryNode" />
+              <item name="C0120G1" type="462c0819:PsiDirectoryNode" />
+              <item name="Module1" type="462c0819:PsiDirectoryNode" />
+              <item name="Nhập môn lập trình căn bản" type="462c0819:PsiDirectoryNode" />
+              <item name="Phần thực hành" type="462c0819:PsiDirectoryNode" />
+              <item name="Các cách nhúng JavaScript vào trang web_Hiển thị đầu ra" type="462c0819:PsiDirectoryNode" />
+              <item name="Hàm console_log" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="C0120G1_Le_Dinh_Quoc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="C0120G1_Le_Dinh_Quoc" type="462c0819:PsiDirectoryNode" />
+              <item name="C0120G1" type="462c0819:PsiDirectoryNode" />
+              <item name="Module1" type="462c0819:PsiDirectoryNode" />
+              <item name="Nhập môn lập trình căn bản" type="462c0819:PsiDirectoryNode" />
+              <item name="Phần thực hành" type="462c0819:PsiDirectoryNode" />
+              <item name="Các cách nhúng JavaScript vào trang web_Hiển thị đầu ra" type="462c0819:PsiDirectoryNode" />
+              <item name="Hàm document_write" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="C0120G1_Le_Dinh_Quoc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="C0120G1_Le_Dinh_Quoc" type="462c0819:PsiDirectoryNode" />
+              <item name="C0120G1" type="462c0819:PsiDirectoryNode" />
+              <item name="Module1" type="462c0819:PsiDirectoryNode" />
+              <item name="Nhập môn lập trình căn bản" type="462c0819:PsiDirectoryNode" />
+              <item name="Phần thực hành" type="462c0819:PsiDirectoryNode" />
+              <item name="Các cách nhúng JavaScript vào trang web_Hiển thị đầu ra" type="462c0819:PsiDirectoryNode" />
+              <item name="Thẻ HTML" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="C0120G1_Le_Dinh_Quoc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="C0120G1_Le_Dinh_Quoc" type="462c0819:PsiDirectoryNode" />
+              <item name="C0120G1" type="462c0819:PsiDirectoryNode" />
+              <item name="Module1" type="462c0819:PsiDirectoryNode" />
+              <item name="Nhập môn lập trình căn bản" type="462c0819:PsiDirectoryNode" />
+              <item name="Phần thực hành" type="462c0819:PsiDirectoryNode" />
+              <item name="Các cách nhúng JavaScript vào trang web_Hiển thị đầu ra" type="462c0819:PsiDirectoryNode" />
+              <item name="X_Bonus" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -120,22 +241,19 @@
       <option name="presentableId" value="Default" />
       <updated>1578541566038</updated>
       <workItem from="1578541569079" duration="386000" />
+      <workItem from="1578578616079" duration="1418000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="386000" />
+    <option name="totallyTimeSpent" value="1804000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24973656" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -143,29 +261,103 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24973656" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/C0120G1/Module1/Nhập môn lập trình căn bản/Phần thực hành/Các cách nhúng JavaScript vào trang web_Hiển thị đầu ra/Hàm alect/ham_alect.html</url>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/C0120G1/Module1/Nhập môn lập trình căn bản/Demo/Demo4-Text.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/C0120G1/Module1/Nhập môn lập trình căn bản/Demo/Demo5.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/C0120G1/Module1/Nhập môn lập trình căn bản/Demo/Demo6.html">
+    <entry file="file://$PROJECT_DIR$/C0120G1/Module1/Nhập môn lập trình căn bản/Demo/Demo4-Text.html" />
+    <entry file="file://$PROJECT_DIR$/C0120G1/Module1/Nhập môn lập trình căn bản/Demo/Demo5.html" />
+    <entry file="file://$PROJECT_DIR$/C0120G1/Module1/Nhập môn lập trình căn bản/Demo/Demo6.html" />
+    <entry file="file://$PROJECT_DIR$/C0120G1/Module1/Nhập môn lập trình căn bản/Demo/Demo7.html" />
+    <entry file="file://$PROJECT_DIR$/C0120G1/Module1/Nhập môn lập trình căn bản/Phần thực hành/Các cách nhúng JavaScript vào trang web_Hiển thị đầu ra/1.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="22" />
+        <state relative-caret-position="289">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/C0120G1/Module1/Nhập môn lập trình căn bản/Demo/Demo7.html">
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/C0120G1/Module1/Nhập môn lập trình căn bản/Phần thực hành/Các cách nhúng JavaScript vào trang web_Hiển thị đầu ra/Hàm alect/1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="7" lean-forward="true" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/C0120G1/Module1/Nhập môn lập trình căn bản/Phần thực hành/Các cách nhúng JavaScript vào trang web_Hiển thị đầu ra/X_Bonus/Choose I J_2.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/C0120G1/Module1/Nhập môn lập trình căn bản/Phần thực hành/Các cách nhúng JavaScript vào trang web_Hiển thị đầu ra/X_Bonus/Choose I J_1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="6" lean-forward="true" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/C0120G1/Module1/Nhập môn lập trình căn bản/Phần thực hành/Các cách nhúng JavaScript vào trang web_Hiển thị đầu ra/Hàm alect/ham_alect.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/C0120G1/Module1/Nhập môn lập trình căn bản/Phần thực hành/Các cách nhúng JavaScript vào trang web_Hiển thị đầu ra/Hàm console_log/console_log.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="7" lean-forward="true" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/C0120G1/Module1/Nhập môn lập trình căn bản/Phần thực hành/Các cách nhúng JavaScript vào trang web_Hiển thị đầu ra/Hàm document_write/document_write.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/C0120G1/Module1/Nhập môn lập trình căn bản/Phần thực hành/Các cách nhúng JavaScript vào trang web_Hiển thị đầu ra/Thẻ HTML/HTML.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
