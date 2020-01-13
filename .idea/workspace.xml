@@ -2,9 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9b29b0ce-ee83-4c8d-8e6e-ef53a38a2ead" name="Default Changelist" comment="">
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/C0120G1/Module1/Nhập môn lập trình căn bản/Phần thực hành/Các cách nhúng JavaScript vào trang web_Hiển thị đầu ra/Hàm alect/ham_alect.html" beforeDir="false" afterPath="$PROJECT_DIR$/C0120G1/Module1/Nhập môn lập trình căn bản/Phần thực hành/Các cách nhúng JavaScript vào trang web_Hiển thị đầu ra/Hàm alect/ham_alect.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/C0120G1/Module1/Nhập môn lập trình căn bản/Phần thực hành/Các cách nhúng JavaScript vào trang web_Hiển thị đầu ra/X_Bonus/Choose I J_1.html" beforeDir="false" afterPath="$PROJECT_DIR$/C0120G1/Module1/Nhập môn lập trình căn bản/Phần thực hành/Các cách nhúng JavaScript vào trang web_Hiển thị đầu ra/X_Bonus/Choose I J_1.html" afterDir="false" />
+=======
+      <change afterPath="$PROJECT_DIR$/C0120G1/Module1/3-Cấu trúc điều kiện/Bài thực hành/1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/C0120G1/Module1/3-Cấu trúc điều kiện/Bài thực hành/2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+>>>>>>> 3769be8a5edbfa445b33f64715030a090fe39888
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -18,15 +24,23 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
+<<<<<<< HEAD
         <entry file="file://$PROJECT_DIR$/C0120G1/Module1/Nhập môn lập trình căn bản/Phần thực hành/Các cách nhúng JavaScript vào trang web_Hiển thị đầu ra/Hàm alect/ham_alect.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="204">
               <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+=======
+        <entry file="file://$PROJECT_DIR$/C0120G1/Module1/3-Cấu trúc điều kiện/Bài thực hành/Luyện tập với cấu trúc if_else.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="16" column="7" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
+>>>>>>> 3769be8a5edbfa445b33f64715030a090fe39888
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+<<<<<<< HEAD
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
@@ -34,18 +48,39 @@
               <second_editor />
             </state>
           </provider>
+=======
+        <entry file="file://$PROJECT_DIR$/C0120G1/Module1/3-Cấu trúc điều kiện/Bài thực hành/Luyện tập với cấu trúc switch-case_1.html">
+          <provider selected="true" editor-type-id="text-editor" />
+>>>>>>> 3769be8a5edbfa445b33f64715030a090fe39888
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/C0120G1/Module1/Nhập môn lập trình căn bản/Phần thực hành/Các cách nhúng JavaScript vào trang web_Hiển thị đầu ra/X_Bonus/Choose I J_1.html">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/C0120G1/Module1/3-Cấu trúc điều kiện/Bài thực hành/1.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="23" column="6" lean-forward="true" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="6" />
+            <state relative-caret-position="187">
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+<<<<<<< HEAD
+        <entry file="file://$PROJECT_DIR$/C0120G1/Module1/Nhập môn lập trình căn bản/Phần thực hành/Các cách nhúng JavaScript vào trang web_Hiển thị đầu ra/X_Bonus/Choose I J_1.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="23" column="6" lean-forward="true" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="6" />
+=======
+        <entry file="file://$PROJECT_DIR$/C0120G1/Module1/3-Cấu trúc điều kiện/Bài thực hành/2.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="17" column="31" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
+>>>>>>> 3769be8a5edbfa445b33f64715030a090fe39888
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+<<<<<<< HEAD
         <entry file="file://$PROJECT_DIR$/C0120G1/Module1/Nhập môn lập trình căn bản/Phần thực hành/Các cách nhúng JavaScript vào trang web_Hiển thị đầu ra/X_Bonus/Choose I J_2.html">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
@@ -57,14 +92,56 @@
       </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/C0120G1/Module1/Nhập môn lập trình căn bản/Phần thực hành/Các cách nhúng JavaScript vào trang web_Hiển thị đầu ra/Thẻ HTML/HTML.html">
+=======
+        <entry file="file://$PROJECT_DIR$/C0120G1/Module1/3-Cấu trúc điều kiện/Bài thực hành/Luyện tập với cấu trúc switch-case_3.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" selection-start-line="7" selection-end-line="16" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/C0120G1/Module1/3-Cấu trúc điều kiện/Bài thực hành/Luyện tập với cấu trúc switch-case_2.html">
+>>>>>>> 3769be8a5edbfa445b33f64715030a090fe39888
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+<<<<<<< HEAD
         <entry file="file://$PROJECT_DIR$/C0120G1/Module1/Nhập môn lập trình căn bản/Phần thực hành/Các cách nhúng JavaScript vào trang web_Hiển thị đầu ra/Hàm console_log/console_log.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="238">
               <caret line="14" column="7" lean-forward="true" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
+=======
+        <entry file="file://$PROJECT_DIR$/C0120G1/Module1/3-Cấu trúc điều kiện/Bài thực hành/Luyện tập với cấu trúc if...else...if.html">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/C0120G1/Module1/caseStudy/Bài tập 1/Request1-Tast2.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="952">
+              <caret line="56" column="45" selection-start-line="56" selection-start-column="45" selection-end-line="56" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/C0120G1/Module1/caseStudy/Bài tập 1/Request1-Tast1.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" selection-start-line="8" selection-end-line="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/C0120G1/Module1/3-Cấu trúc điều kiện/Bài thực hành/Kiểm tra năm nhuận_1.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+>>>>>>> 3769be8a5edbfa445b33f64715030a090fe39888
             </state>
           </provider>
         </entry>
@@ -84,11 +161,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/C0120G1/Module1/Nhập môn lập trình căn bản/Phần thực hành/Các cách nhúng JavaScript vào trang web_Hiển thị đầu ra/Hàm alect/ham_alect.html" />
         <option value="$PROJECT_DIR$/C0120G1/Module1/Nhập môn lập trình căn bản/Phần thực hành/Các cách nhúng JavaScript vào trang web_Hiển thị đầu ra/Hàm console_log/console_log.html" />
         <option value="$PROJECT_DIR$/C0120G1/Module1/Nhập môn lập trình căn bản/Phần thực hành/Các cách nhúng JavaScript vào trang web_Hiển thị đầu ra/1.html" />
         <option value="$PROJECT_DIR$/C0120G1/Module1/Nhập môn lập trình căn bản/Phần thực hành/Các cách nhúng JavaScript vào trang web_Hiển thị đầu ra/X_Bonus/Choose I J_1.html" />
         <option value="$PROJECT_DIR$/C0120G1/Module1/Nhập môn lập trình căn bản/Phần thực hành/Các cách nhúng JavaScript vào trang web_Hiển thị đầu ra/Hàm alect/1.html" />
+=======
+        <option value="$PROJECT_DIR$/C0120G1/Module1/Biến, kiểu dữ liệu và toán tử/Khai báo và sử dụng biến.html" />
+        <option value="$PROJECT_DIR$/C0120G1/Module1/Biến, kiểu dữ liệu và toán tử/Khai báo và sử dụng biến_2.html" />
+        <option value="$PROJECT_DIR$/C0120G1/Module1/Biến, kiểu dữ liệu và toán tử/Phần thực hành/Sử dụng toán tử.html" />
+        <option value="$PROJECT_DIR$/C0120G1/Module1/Biến, kiểu dữ liệu và toán tử/Phần thực hành/a.html" />
+        <option value="$PROJECT_DIR$/C0120G1/Module1/Biến, kiểu dữ liệu và toán tử/Phần thực hành/1.html" />
+        <option value="$PROJECT_DIR$/C0120G1/Module1/Biến, kiểu dữ liệu và toán tử/Phần thực hành/2.html" />
+        <option value="$PROJECT_DIR$/C0120G1/Module1/Biến, kiểu dữ liệu và toán tử/Phần thực hành/Tính điểm tổng và điểm trung bình.html" />
+        <option value="$PROJECT_DIR$/C0120G1/Module1/Biến, kiểu dữ liệu và toán tử/Phần bài tập/Tính điểm tổng và điểm trung bình.html" />
+        <option value="$PROJECT_DIR$/C0120G1/Module1/Biến, kiểu dữ liệu và toán tử/Phần bài tập/a.html" />
+        <option value="$PROJECT_DIR$/C0120G1/Module1/Biến, kiểu dữ liệu và toán tử/Phần bài tập/Tính điểm tổng và điểm trung bình_1.html" />
+        <option value="$PROJECT_DIR$/C0120G1/Module1/Biến, kiểu dữ liệu và toán tử/Phần thực hành/Khai báo và sử dụng biến_1.html" />
+        <option value="$PROJECT_DIR$/C0120G1/Module1/Biến, kiểu dữ liệu và toán tử/Phần thực hành/Khai báo và sử dụng biến_2.html" />
+        <option value="$PROJECT_DIR$/C0120G1/Module1/Biến, kiểu dữ liệu và toán tử/Phần thực hành/Sử dụng toán tử_1.html" />
+        <option value="$PROJECT_DIR$/C0120G1/Module1/Biến, kiểu dữ liệu và toán tử/Phần thực hành/Sử dụng toán tử_2.html" />
+        <option value="$PROJECT_DIR$/C0120G1/Module1/Biến, kiểu dữ liệu và toán tử/Phần bài tập/Tính điểm tổng và điểm trung bình_2.html" />
+        <option value="$PROJECT_DIR$/C0120G1/Module1/Biến, kiểu dữ liệu và toán tử/Phần bài tập/Biến, kiểu dữ liệu và toán tử/a.html" />
+        <option value="$PROJECT_DIR$/C0120G1/Module1/Biến, kiểu dữ liệu và toán tử/Phần bài tập/Biến, kiểu dữ liệu và toán tử/a_1.html" />
+        <option value="$PROJECT_DIR$/C0120G1/Module1/Biến, kiểu dữ liệu và toán tử/Phần bài tập/Biến, kiểu dữ liệu và toán tử/b.html" />
+        <option value="$PROJECT_DIR$/C0120G1/Module1/Biến, kiểu dữ liệu và toán tử/Phần bài tập/Biến, kiểu dữ liệu và toán tử/Ứng dụng chuyển đổi tiền tệ.html" />
+        <option value="$PROJECT_DIR$/C0120G1/Module1/Biến, kiểu dữ liệu và toán tử/Phần bài tập/Biến, kiểu dữ liệu và toán tử/Tính điểm tổng và điểm trung bình_2.html" />
+        <option value="$PROJECT_DIR$/C0120G1/Module1/Biến, kiểu dữ liệu và toán tử/Phần bài tập/Biến, kiểu dữ liệu và toán tử/Chuyển 0C sang 0F_1.html" />
+        <option value="$PROJECT_DIR$/C0120G1/Module1/Biến, kiểu dữ liệu và toán tử/Phần bài tập/Biến, kiểu dữ liệu và toán tử/Tính diện tích và chu vi đường tròn_1.html" />
+        <option value="$PROJECT_DIR$/C0120G1/Module1/Biến, kiểu dữ liệu và toán tử/Phần bài tập/Biến, kiểu dữ liệu và toán tử/Tính diện tích và chu vi đường tròn_2.html" />
+        <option value="$PROJECT_DIR$/C0120G1/Module1/Biến, kiểu dữ liệu và toán tử/Phần bài tập/Biến, kiểu dữ liệu và toán tử/1.html" />
+        <option value="$PROJECT_DIR$/C0120G1/Module1/caseStudy/Bài tập 1/bai tap 1.html" />
+        <option value="$PROJECT_DIR$/C0120G1/Module1/caseStudy/Bài tập 1/Request1-Tast1.html" />
+        <option value="$PROJECT_DIR$/C0120G1/Module1/Biến, kiểu dữ liệu và toán tử/Phần bài tập/Biến, kiểu dữ liệu và toán tử/Chuyển 0C sang 0F_2.html" />
+        <option value="$PROJECT_DIR$/C0120G1/Module1/Cấu trúc điều kiện/Bài đọc/Tạo biểu mẫu cho trang web/Thuộc tính action.html" />
+        <option value="$PROJECT_DIR$/C0120G1/Module1/Cấu trúc điều kiện/Bài đọc/Tạo biểu mẫu cho trang web/Sử dụng phần tử select, option.html" />
+        <option value="$PROJECT_DIR$/C0120G1/Module1/Cấu trúc điều kiện/Bài đọc/Sử dụng phần tử select, option/1.html" />
+        <option value="$PROJECT_DIR$/C0120G1/Module1/Cấu trúc điều kiện/Bài đọc/Sử dụng input, button và textarea/Input Reset.html" />
+        <option value="$PROJECT_DIR$/C0120G1/Module1/Cấu trúc điều kiện/Bài đọc/Sử dụng input, button và textarea/1.html" />
+        <option value="$PROJECT_DIR$/C0120G1/Module1/caseStudy/Bài tập 1/1.html" />
+        <option value="$PROJECT_DIR$/C0120G1/Module1/3-Cấu trúc điều kiện/Bài thực hành/Kiểm tra năm nhuận.html" />
+        <option value="$PROJECT_DIR$/C0120G1/Module1/3-Cấu trúc điều kiện/Bài thực hành/Kiểm tra năm nhuận_1_2.html" />
+        <option value="$PROJECT_DIR$/C0120G1/Module1/3-Cấu trúc điều kiện/Bài thực hành/Kiểm tra năm nhuận_1.html" />
+        <option value="$PROJECT_DIR$/C0120G1/Module1/3-Cấu trúc điều kiện/Bài thực hành/Kiểm tra năm nhuận_2.html" />
+        <option value="$PROJECT_DIR$/C0120G1/Module1/3-Cấu trúc điều kiện/Bài thực hành/2-Luyện tập với cấu trúc if_else/2-Luyện tập với cấu trúc if_else.html" />
+        <option value="$PROJECT_DIR$/C0120G1/Module1/3-Cấu trúc điều kiện/Bài thực hành/2-Luyện tập với cấu trúc if_else/Luyện tập với cấu trúc if_else.html" />
+        <option value="$PROJECT_DIR$/C0120G1/Module1/caseStudy/Bài tập 1/test.html" />
+        <option value="$PROJECT_DIR$/C0120G1/Module1/caseStudy/Bài tập 1/Request1-Tast2.html" />
+        <option value="$PROJECT_DIR$/C0120G1/Module1/3-Cấu trúc điều kiện/Bài thực hành/1.html" />
+        <option value="$PROJECT_DIR$/C0120G1/Module1/3-Cấu trúc điều kiện/Bài thực hành/2.html" />
+>>>>>>> 3769be8a5edbfa445b33f64715030a090fe39888
       </list>
     </option>
   </component>
@@ -170,16 +293,21 @@
               <item name="C0120G1_Le_Dinh_Quoc" type="462c0819:PsiDirectoryNode" />
               <item name="C0120G1" type="462c0819:PsiDirectoryNode" />
               <item name="Module1" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
               <item name="Nhập môn lập trình căn bản" type="462c0819:PsiDirectoryNode" />
               <item name="Phần thực hành" type="462c0819:PsiDirectoryNode" />
               <item name="Các cách nhúng JavaScript vào trang web_Hiển thị đầu ra" type="462c0819:PsiDirectoryNode" />
               <item name="Hàm console_log" type="462c0819:PsiDirectoryNode" />
+=======
+              <item name="1-Nhập môn lập trình căn bản" type="462c0819:PsiDirectoryNode" />
+>>>>>>> 3769be8a5edbfa445b33f64715030a090fe39888
             </path>
             <path>
               <item name="C0120G1_Le_Dinh_Quoc" type="b2602c69:ProjectViewProjectNode" />
               <item name="C0120G1_Le_Dinh_Quoc" type="462c0819:PsiDirectoryNode" />
               <item name="C0120G1" type="462c0819:PsiDirectoryNode" />
               <item name="Module1" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
               <item name="Nhập môn lập trình căn bản" type="462c0819:PsiDirectoryNode" />
               <item name="Phần thực hành" type="462c0819:PsiDirectoryNode" />
               <item name="Các cách nhúng JavaScript vào trang web_Hiển thị đầu ra" type="462c0819:PsiDirectoryNode" />
@@ -204,6 +332,56 @@
               <item name="Phần thực hành" type="462c0819:PsiDirectoryNode" />
               <item name="Các cách nhúng JavaScript vào trang web_Hiển thị đầu ra" type="462c0819:PsiDirectoryNode" />
               <item name="X_Bonus" type="462c0819:PsiDirectoryNode" />
+=======
+              <item name="2-Biến, kiểu dữ liệu và toán tử" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ProjectCodyGym" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ProjectCodyGym" type="462c0819:PsiDirectoryNode" />
+              <item name="C0120G1" type="462c0819:PsiDirectoryNode" />
+              <item name="Module1" type="462c0819:PsiDirectoryNode" />
+              <item name="2-Biến, kiểu dữ liệu và toán tử" type="462c0819:PsiDirectoryNode" />
+              <item name="Phần bài tập" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ProjectCodyGym" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ProjectCodyGym" type="462c0819:PsiDirectoryNode" />
+              <item name="C0120G1" type="462c0819:PsiDirectoryNode" />
+              <item name="Module1" type="462c0819:PsiDirectoryNode" />
+              <item name="2-Biến, kiểu dữ liệu và toán tử" type="462c0819:PsiDirectoryNode" />
+              <item name="Phần bài tập" type="462c0819:PsiDirectoryNode" />
+              <item name="Biến, kiểu dữ liệu và toán tử" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ProjectCodyGym" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ProjectCodyGym" type="462c0819:PsiDirectoryNode" />
+              <item name="C0120G1" type="462c0819:PsiDirectoryNode" />
+              <item name="Module1" type="462c0819:PsiDirectoryNode" />
+              <item name="3-Cấu trúc điều kiện" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ProjectCodyGym" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ProjectCodyGym" type="462c0819:PsiDirectoryNode" />
+              <item name="C0120G1" type="462c0819:PsiDirectoryNode" />
+              <item name="Module1" type="462c0819:PsiDirectoryNode" />
+              <item name="3-Cấu trúc điều kiện" type="462c0819:PsiDirectoryNode" />
+              <item name="Bài thực hành" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ProjectCodyGym" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ProjectCodyGym" type="462c0819:PsiDirectoryNode" />
+              <item name="C0120G1" type="462c0819:PsiDirectoryNode" />
+              <item name="Module1" type="462c0819:PsiDirectoryNode" />
+              <item name="caseStudy" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ProjectCodyGym" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ProjectCodyGym" type="462c0819:PsiDirectoryNode" />
+              <item name="C0120G1" type="462c0819:PsiDirectoryNode" />
+              <item name="Module1" type="462c0819:PsiDirectoryNode" />
+              <item name="caseStudy" type="462c0819:PsiDirectoryNode" />
+              <item name="Bài tập 1" type="462c0819:PsiDirectoryNode" />
+>>>>>>> 3769be8a5edbfa445b33f64715030a090fe39888
             </path>
           </expand>
           <select />
@@ -215,6 +393,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -230,6 +409,16 @@
       </list>
     </option>
   </component>
+  <component name="RunManager">
+    <configuration name="1.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/ProjectCodyGym/C0120G1/Module1/caseStudy/Bài tập 1/1.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.1.html" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -241,23 +430,50 @@
       <option name="presentableId" value="Default" />
       <updated>1578541566038</updated>
       <workItem from="1578541569079" duration="386000" />
+<<<<<<< HEAD
       <workItem from="1578578616079" duration="1418000" />
+=======
+      <workItem from="1578622815595" duration="1126000" />
+      <workItem from="1578623966505" duration="4218000" />
+      <workItem from="1578628224726" duration="45000" />
+      <workItem from="1578628373255" duration="1315000" />
+      <workItem from="1578629897358" duration="10112000" />
+      <workItem from="1578645783809" duration="599000" />
+      <workItem from="1578707983169" duration="2128000" />
+      <workItem from="1578710219914" duration="4239000" />
+      <workItem from="1578716937584" duration="1637000" />
+      <workItem from="1578726137857" duration="2908000" />
+      <workItem from="1578803778455" duration="3801000" />
+      <workItem from="1578878711422" duration="12487000" />
+      <workItem from="1578895483190" duration="7251000" />
+      <workItem from="1578906760016" duration="739000" />
+>>>>>>> 3769be8a5edbfa445b33f64715030a090fe39888
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="1804000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24973656" />
+=======
+    <option name="totallyTimeSpent" value="52991000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+>>>>>>> 3769be8a5edbfa445b33f64715030a090fe39888
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39934534" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -270,13 +486,21 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
     <layout-to-restore>
+<<<<<<< HEAD
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24973656" />
+=======
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+>>>>>>> 3769be8a5edbfa445b33f64715030a090fe39888
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
+<<<<<<< HEAD
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+=======
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39934534" />
+>>>>>>> 3769be8a5edbfa445b33f64715030a090fe39888
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -304,6 +528,7 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/C0120G1/Module1/Nhập môn lập trình căn bản/Demo/Demo4-Text.html" />
     <entry file="file://$PROJECT_DIR$/C0120G1/Module1/Nhập môn lập trình căn bản/Demo/Demo5.html" />
     <entry file="file://$PROJECT_DIR$/C0120G1/Module1/Nhập môn lập trình căn bản/Demo/Demo6.html" />
@@ -358,7 +583,136 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/C0120G1/Module1/Nhập môn lập trình căn bản/Phần thực hành/Các cách nhúng JavaScript vào trang web_Hiển thị đầu ra/Thẻ HTML/HTML.html">
+=======
+    <entry file="file://$PROJECT_DIR$/C0120G1/Module1/Biến, kiểu dữ liệu và toán tử/Phần bài tập/a.html" />
+    <entry file="file://$PROJECT_DIR$/C0120G1/Module1/Biến, kiểu dữ liệu và toán tử/Phần bài tập/Tính điểm tổng và điểm trung bình_1.html" />
+    <entry file="file://$PROJECT_DIR$/C0120G1/Module1/Biến, kiểu dữ liệu và toán tử/Phần bài tập/Tính điểm tổng và điểm trung bình_2.html" />
+    <entry file="file://$PROJECT_DIR$/C0120G1/Module1/Biến, kiểu dữ liệu và toán tử/Phần bài tập/Biến, kiểu dữ liệu và toán tử/a.html" />
+    <entry file="file://$PROJECT_DIR$/C0120G1/Module1/Biến, kiểu dữ liệu và toán tử/Phần bài tập/Biến, kiểu dữ liệu và toán tử/a_1.html" />
+    <entry file="file://$PROJECT_DIR$/C0120G1/Module1/Biến, kiểu dữ liệu và toán tử/Phần bài tập/Biến, kiểu dữ liệu và toán tử/b.html" />
+    <entry file="file://$PROJECT_DIR$/C0120G1/Module1/Biến, kiểu dữ liệu và toán tử/Phần bài tập/Biến, kiểu dữ liệu và toán tử/1.html" />
+    <entry file="file://$PROJECT_DIR$/C0120G1/Module1/Biến, kiểu dữ liệu và toán tử/Phần bài tập/Biến, kiểu dữ liệu và toán tử/Chuyển 0C sang 0F_1.html" />
+    <entry file="file://$PROJECT_DIR$/C0120G1/Module1/caseStudy/Bài tập 1/bai tap 1.html" />
+    <entry file="file://$PROJECT_DIR$/C0120G1/Module1/Biến, kiểu dữ liệu và toán tử/Phần thực hành/Sử dụng toán tử_2.html" />
+    <entry file="file://$PROJECT_DIR$/C0120G1/Module1/Biến, kiểu dữ liệu và toán tử/Phần thực hành/Sử dụng toán tử_1.html" />
+    <entry file="file://$PROJECT_DIR$/C0120G1/Module1/Biến, kiểu dữ liệu và toán tử/Phần thực hành/Khai báo và sử dụng biến_2.html" />
+    <entry file="file://$PROJECT_DIR$/C0120G1/Module1/Biến, kiểu dữ liệu và toán tử/Phần bài tập/Biến, kiểu dữ liệu và toán tử/Tính diện tích và chu vi đường tròn_2.html" />
+    <entry file="file://$PROJECT_DIR$/C0120G1/Module1/Biến, kiểu dữ liệu và toán tử/Phần bài tập/Biến, kiểu dữ liệu và toán tử/Tính diện tích và chu vi đường tròn_1.html" />
+    <entry file="file://$PROJECT_DIR$/C0120G1/Module1/Cấu trúc điều kiện/Bài đọc/Tạo biểu mẫu cho trang web/Sử dụng phần tử select, option.html" />
+    <entry file="file://$PROJECT_DIR$/C0120G1/Module1/Cấu trúc điều kiện/Bài đọc/Sử dụng phần tử select, option/1.html" />
+    <entry file="file://$PROJECT_DIR$/C0120G1/Module1/Biến, kiểu dữ liệu và toán tử/Phần bài tập/Biến, kiểu dữ liệu và toán tử/Chuyển 0C sang 0F_2.html" />
+    <entry file="file://$PROJECT_DIR$/C0120G1/Module1/Cấu trúc điều kiện/Bài đọc/Tạo biểu mẫu cho trang web/Nhóm các dữ liệu của biểu mẫu lại với nhau.html" />
+    <entry file="file://$PROJECT_DIR$/C0120G1/Module1/Cấu trúc điều kiện/Bài đọc/Tạo biểu mẫu cho trang web/Thuộc tính action.html" />
+    <entry file="file://$PROJECT_DIR$/C0120G1/Module1/Biến, kiểu dữ liệu và toán tử/Phần bài tập/Biến, kiểu dữ liệu và toán tử/Ứng dụng chuyển đổi tiền tệ.html" />
+    <entry file="file://$PROJECT_DIR$/C0120G1/Module1/Cấu trúc điều kiện/Bài đọc/Sử dụng phần tử select, option/Lựa chọn một thể loại Game từ drop-down.html" />
+    <entry file="file://$PROJECT_DIR$/C0120G1/Module1/Biến, kiểu dữ liệu và toán tử/Phần bài tập/Biến, kiểu dữ liệu và toán tử/Tính điểm tổng và điểm trung bình_2.html" />
+    <entry file="file://$PROJECT_DIR$/C0120G1/Module1/Biến, kiểu dữ liệu và toán tử/Phần bài tập/Biến, kiểu dữ liệu và toán tử/Tính điểm tổng và điểm trung bình_1.html" />
+    <entry file="file://$PROJECT_DIR$/C0120G1/Module1/Biến, kiểu dữ liệu và toán tử/Phần thực hành/Khai báo và sử dụng biến_1.html" />
+    <entry file="file://$PROJECT_DIR$/C0120G1/Module1/Cấu trúc điều kiện/Bài đọc/Sử dụng input, button và textarea/1.html" />
+    <entry file="file://$PROJECT_DIR$/C0120G1/Module1/Nhập môn lập trình căn bản/Phần thực hành/Các cách nhúng JavaScript vào trang web_Hiển thị đầu ra/Thẻ HTML/HTML.html" />
+    <entry file="file://$PROJECT_DIR$/C0120G1/Module1/Nhập môn lập trình căn bản/Phần thực hành/Các cách nhúng JavaScript vào trang web_Hiển thị đầu ra/Hàm document_write/document_write.html" />
+    <entry file="file://$PROJECT_DIR$/C0120G1/Module1/caseStudy/Bài tập 1/1.html" />
+    <entry file="file://$PROJECT_DIR$/C0120G1/Module1/Cấu trúc điều kiện/Bài đọc/Sử dụng input, button và textarea/Input Reset.html" />
+    <entry file="file://$PROJECT_DIR$/C0120G1/Module1/2-Biến, kiểu dữ liệu và toán tử/Phần thực hành/Sử dụng toán tử_1.html">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/C0120G1/Module1/2-Biến, kiểu dữ liệu và toán tử/Phần bài tập/Biến, kiểu dữ liệu và toán tử/Tính diện tích và chu vi đường tròn_1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="9" lean-forward="true" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/C0120G1/Module1/2-Biến, kiểu dữ liệu và toán tử/Phần bài tập/Biến, kiểu dữ liệu và toán tử/Tính diện tích và chu vi đường tròn_2.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/C0120G1/Module1/2-Biến, kiểu dữ liệu và toán tử/Phần bài tập/Biến, kiểu dữ liệu và toán tử/Chuyển 0C sang 0F_2.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/C0120G1/Module1/3-Cấu trúc điều kiện/Bài thực hành/Kiểm tra năm nhuận.html" />
+    <entry file="file://$PROJECT_DIR$/C0120G1/Module1/3-Cấu trúc điều kiện/Bài thực hành/Kiểm tra năm nhuận_1_2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="4" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/C0120G1/Module1/3-Cấu trúc điều kiện/Bài thực hành/Kiểm tra năm nhuận_2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="16" lean-forward="true" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/C0120G1/Module1/2-Biến, kiểu dữ liệu và toán tử/Phần bài tập/Biến, kiểu dữ liệu và toán tử/Ứng dụng chuyển đổi tiền tệ.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/C0120G1/Module1/2-Biến, kiểu dữ liệu và toán tử/Phần bài tập/Biến, kiểu dữ liệu và toán tử/Tính điểm tổng và điểm trung bình_1.html">
+>>>>>>> 3769be8a5edbfa445b33f64715030a090fe39888
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/C0120G1/Module1/2-Biến, kiểu dữ liệu và toán tử/Phần bài tập/Biến, kiểu dữ liệu và toán tử/Chuyển 0C sang 0F_1.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/C0120G1/Module1/3-Cấu trúc điều kiện/Bài thực hành/2-Luyện tập với cấu trúc if_else/Luyện tập với cấu trúc if_else.html" />
+    <entry file="file://$PROJECT_DIR$/C0120G1/Module1/caseStudy/Bài tập 1/test.html" />
+    <entry file="file://$PROJECT_DIR$/C0120G1/Module1/3-Cấu trúc điều kiện/Bài thực hành/Luyện tập với cấu trúc if_else.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="7" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/C0120G1/Module1/3-Cấu trúc điều kiện/Bài thực hành/Luyện tập với cấu trúc switch-case_3.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" selection-start-line="7" selection-end-line="16" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/C0120G1/Module1/3-Cấu trúc điều kiện/Bài thực hành/Luyện tập với cấu trúc switch-case_2.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/C0120G1/Module1/3-Cấu trúc điều kiện/Bài thực hành/Luyện tập với cấu trúc if...else...if.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/C0120G1/Module1/caseStudy/Bài tập 1/Request1-Tast2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="952">
+          <caret line="56" column="45" selection-start-line="56" selection-start-column="45" selection-end-line="56" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/C0120G1/Module1/caseStudy/Bài tập 1/Request1-Tast1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/C0120G1/Module1/3-Cấu trúc điều kiện/Bài thực hành/Kiểm tra năm nhuận_1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/C0120G1/Module1/3-Cấu trúc điều kiện/Bài thực hành/Luyện tập với cấu trúc switch-case_1.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/C0120G1/Module1/3-Cấu trúc điều kiện/Bài thực hành/2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="31" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/C0120G1/Module1/3-Cấu trúc điều kiện/Bài thực hành/1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
     </entry>
   </component>
 </project>

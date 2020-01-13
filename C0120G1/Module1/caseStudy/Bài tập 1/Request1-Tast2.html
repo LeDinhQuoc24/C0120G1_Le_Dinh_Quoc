@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //Khai báo giá trị
+    var name;
+    var identitycard;
+    var dateofbirth;
+    var emailaddress;
+    var address;
+    var sex;
+    var customercard;
+    var rentDays;
+    var numberofpeople;
+    var typeofservice;
+    var numberRoom;
+    var discountcode;
+    var payments;
+    var serviceprices;
+    //Hàm prompt để nhập giá trị
+    name=prompt('Chọn tên');
+    identitycard=prompt('Chọn CMND');
+    dateofbirth=prompt('Chọn ngày tháng năm sinh');
+    emailaddress=prompt('Chọn địa chỉ email');
+    address=prompt('Chọn địa chỉ sinh sống');
+    sex=prompt('Chọn giới tính');
+    customercard=prompt('Chọn loại thẻ khách hàng');
+    rentDays=prompt('Chọn số ngày thuê');
+    numberofpeople=prompt('Chọn số lượng người đi kèm ');
+    typeofservice=prompt('Chọn loại dịch vụ:Villa,House,Room');
+    numberRoom=prompt('Chọn số phòng thuê');
+    discountcode=prompt('Chọn mã giảm giá:x');
+
+    //Khai báo giá tiền dịch vụ
+
+    switch (typeofservice) {
+        case 'Villa':
+            serviceprices = 500;
+            break;
+        case 'House':
+            serviceprices = 300;
+            break;
+        case 'Room':
+            serviceprices = 100;
+            break;
+        default:
+            serviceprices = 50;
+    }
+//So sanh
+
+
+    if(Number.isNaN(parseInt(rentDays))){
+        //hoặc dùng lệnh if(isNaN(rentDays)){
+        rentDays=1;
+
+    }
+    //Tính payments
+
+    payments=parseInt(serviceprices)*parseInt(rentDays)*(1-parseFloat(discountcode)/100);
+
+    //Hiển thị kết quả
+    alert( "Hóa đơn dịch vụ của khách hàng:"+
+            "\nTên khách hàng: "+name+
+        "\nChứng minh nhân dân:"+identitycard+
+        "\nNgày tháng năm sinh: "+dateofbirth+
+        "\nĐịa chỉ emailemailaddress: "+ emailaddress+
+        "\nĐịa chỉ khách hàng: "+address+
+        "\nGiới tính khách hàng: "+sex+
+        "\nLoại thẻ của khách hàng: "+customercard+
+        "\nSố ngày thuê phòng: "+rentDays+
+        "\nSố người kèm theo: "+numberofpeople+
+        "\nLoại dịch vụ(Villa,House,Room): "+typeofservice+
+        "\nSố phòng đăng ký thuê: "+numberRoom+
+        "\nMã giảm giá: "+discountcode+
+      '\nTổng tiền dịch vụ của quý khách là '+payments+" "+"\n"
+
+    )
+</script>
+
+</body>
+</html>

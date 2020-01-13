@@ -2,5 +2,7 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/C0120G1/Module1/1-Nhập môn lập trình căn bản/Phần thực hành/Clone dự án từ Git/wf-hello" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/C0120G1/Module1/Nhập môn lập trình căn bản/Phần thực hành/Clone dự án từ Git/wf-hello" vcs="Git" />
   </component>
 </project>
