@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function YesClick() {
+        alert("Lựa chọn chính xác của cuộc đời bạn");
+    }
+
+    function nohope() {
+        var x = Math.round(Math.random() * window.innerHeight);
+        var y = Math.round(Math.random() * window.innerWidth);
+        document.getElementById("nohope").style.left = x + "px";
+        document.getElementById("nohope").style.top = y + 'px';
+
+
+    }
+</script>
+<h2 style="position:absolute;left:300px;top:100px; font-size:40px;">Do you love me?</h2>
+<input type="button" value="Yes" onclick=YesClick() style="position:absolute; left:400px;top:200px;"/>
+<input type="button" value="No"  id="nohope" onmouseover="nohope()" style="position:absolute; left:450px; top:200px;"/>
+
+
+</body>
+</html>
