@@ -7,40 +7,57 @@
 <body>
 
 <form>
-    <fieldset>
+    <fieldset style="width: 350px;">
         <legend>Thông tin khách hàng</legend>
-        name              :<input type="text" id="name"value=""/><br>
-        identitycard      :<input type="text" id="identitycard" value=""/><br>
-        dateofbirth       :<input type="text" id="dateofbirth" value=""/><br>
-        emailaddress      :<input type="text" id="emailaddress" value=""/><br>
-        address           :<input type="text" id="address" value=""/><br>
-        sex               :<input type="text" id="sex" value=""/><br>
-        customercard      :<input type="text" id="customercard" value=""/><br>
-        rentDays          :<input type="text" id="rentDays" value=""/><br>
-        numberofpeople    :<input type="text" id="numberofpeople" value=""><br>
-        typeofservice     :<input type="text" id="typeofservice" value=""><br>
-        numberRoom        :<input type="text" id="numberRoom" value=""><br>
-        discountcode      :<input type="text" id="discountcode" value=""><br>
+        name              :<input type="text" id="name"value="" style="position: absolute;left:150px;"/><br>
+        identitycard      :<input type="text" id="identitycard" value=""style="position: absolute;left:150px;"/><br>
+        dateofbirth       :<input type="text" id="dateofbirth" value=""style="position: absolute;left:150px;"/><br>
+        emailaddress      :<input type="text" id="emailaddress" value=""style="position: absolute;left:150px;"/><br>
+        address           :<input type="text" id="address" value=""style="position: absolute;left:150px;"/><br>
+        sex               :<input type="text" id="sex" value=""style="position: absolute;left:150px;"/><br>
+        customercard      :<input type="text" id="customercard" value=""style="position: absolute;left:150px;"/><br>
+        rentDays          :<input type="text" id="rentDays" value=""style="position: absolute;left:150px;"/><br>
+        numberofpeople    :<input type="text" id="numberofpeople" value=""style="position: absolute;left:150px;"/><br>
+        typeofservice     :<input type="text" id="typeofservice" value=""style="position: absolute;left:150px;"/><br>
+        numberRoom        :<input type="text" id="numberRoom" value=""style="position: absolute;left:150px;"/><br>
+        discountcode      :<input type="text" id="discountcode" value=""style="position: absolute;left:150px;"/><br>
 
     </fieldset>
 </form>
 
-<button type="button" onclick="hienthi1()">Xác nhận thông tin.</button>
+<button type="button" onclick="hienthi2()">Xác nhận thông tin.</button>
 <script>
-    let name=document.getElementById('name');
-    let identitycard=document.getElementById('identitycard');
-    let dateofbirth =document.getElementById('dateofbirth');
-    let emailaddress=document.getElementById('emailaddress');
-    let address=document.getElementById('address');
-    let sex=document.getElementById('sex');
-    let customercard=document.getElementById('customercard');
-    let rentDays=document.getElementById('rentDays');
-    let numberofpeople=document.getElementById('numberofpeople');
-    let typeofservice=document.getElementById('typeofservice');
-    let numberRoom=document.getElementById('numberRoom');
-    let discountcode=document.getElementById('discountcode');
+    let name;
+    let identitycard;
+    let dateofbirth;
+    let emailaddress;
+    let address;
+    let sex;
+    let customercard;
+    let rentDays;
+    let numberofpeople;
+    let typeofservice;
+    let numberRoom;
+    let discountcode;
+
+    function hienthi2() {
+        name=document.getElementById('name').value;
+        identitycard=document.getElementById('identitycard').value;
+        dateofbirth=document.getElementById('dateofbirth').value;
+        emailaddress=document.getElementById('emailaddress').value;
+        address=document.getElementById('address').value;
+        sex=document.getElementById('sex').value;
+        customercard=document.getElementById('customercard').value;
+        rentDays=document.getElementById('rentDays').value;
+        numberofpeople=document.getElementById('numberofpeople').value;
+        typeofservice=document.getElementById('typeofservice').value;
+        numberRoom=document.getElementById('numberRoom').value;
+       discountcode=document.getElementById('discountcode').value;
+        hienthi1();
+    }
 
     function  hienthi1() {
+
         let choose = prompt(
             "1.Hiển thị thông tin đăng ký.\n" +
             "2.Chỉnh sửa thông tin đăng ký.\n" +
@@ -52,35 +69,36 @@
             case '1':
                 alert(
                     "Thông tin khách hàng \n" +
-                    "Tên khách hàng: " + name.value +
-                    "\nSố CMND: " + identitycard.value +
-                    "\nNgày tháng năm sinh: " + dateofbirth.value +
-                    "\nĐịa chỉ Email: " + emailaddress.value +
-                    "\nĐịa chỉ nhà: " + address.value +
-                    "\nGiới tính: " + sex.value +
-                    "\nThẻ khách hàng: " + customercard.value +
-                    "\nSố ngày thuê: " + rentDays.value +
-                    "\nSố người kèm theo: " + numberofpeople.value +
-                    "\nLoại dịch vụ: " + typeofservice.value +
-                    "\nSố phòng thuê: " + numberRoom.value +
-                    "\nMã giảm giá: " + discountcode.value
+                    "Tên khách hàng: " + name +
+                    "\nSố CMND: " + identitycard +
+                    "\nNgày tháng năm sinh: " + dateofbirth +
+                    "\nĐịa chỉ Email: " + emailaddress +
+                    "\nĐịa chỉ nhà: " + address +
+                    "\nGiới tính: " + sex +
+                    "\nThẻ khách hàng: " + customercard +
+                    "\nSố ngày thuê: " + rentDays +
+                    "\nSố người kèm theo: " + numberofpeople +
+                    "\nLoại dịch vụ: " + typeofservice +
+                    "\nSố phòng thuê: " + numberRoom +
+                    "\nMã giảm giá: " + discountcode
                 );
+                hienthi1()
                 break;
             case '2':
                 let suathongtin = prompt(
                     'Chọn thông tin bạn muốn thay đổi:\n' +
-                    "1.Tên khách hàng: " + name.value +
-                    "\n2.Số CMND: " + identitycard.value +
-                    "\n3.Ngày tháng năm sinh: " + dateofbirth.value +
-                    "\n4.Địa chỉ Email: " + emailaddress.value +
-                    "\n5.Địa chỉ nhà: " + address.value +
-                    "\n6.Giới tính: " + sex.value +
-                    "\n7.Thẻ khách hàng: " + customercard.value +
-                    "\n8.Số ngày thuê: " + rentDays.value +
-                    "\n9.Số người kèm theo: " + numberofpeople.value +
-                    "\n10.Loại dịch vụ: " + typeofservice.value +
-                    "\n11.Số phòng thuê: " + numberRoom.value +
-                    "\n12.Mã giảm giá: " + discountcode.value
+                    "1.Tên khách hàng: " + name +
+                    "\n2.Số CMND: " + identitycard +
+                    "\n3.Ngày tháng năm sinh: " + dateofbirth +
+                    "\n4.Địa chỉ Email: " + emailaddress +
+                    "\n5.Địa chỉ nhà: " + address +
+                    "\n6.Giới tính: " + sex +
+                    "\n7.Thẻ khách hàng: " + customercard +
+                    "\n8.Số ngày thuê: " + rentDays +
+                    "\n9.Số người kèm theo: " + numberofpeople+
+                    "\n10.Loại dịch vụ: " + typeofservice +
+                    "\n11.Số phòng thuê: " + numberRoom +
+                    "\n12.Mã giảm giá: " + discountcode
                 );
 
                 switch (suathongtin) {
@@ -137,24 +155,25 @@
                     "\nSố phòng đăng ký thuê: " + numberRoom +
                     "\nMã giảm giá: " + discountcode
                 );
+                hienthi1();
                 break;
             case '3':
 
-                if (typeofservice.value === 'Villa') {
+                if (typeofservice === 'Villa') {
                     serviceprices = 500;
-                } else if (typeofservice.value === 'House') {
+                } else if (typeofservice === 'House') {
                     serviceprices = 300;
-                } else if (typeofservice.value === 'Room') {
+                } else if (typeofservice === 'Room') {
                     serviceprices = 100;
                 } else {
                     serviceprices = 50;
                 }
-                let payments=serviceprices* rentDays.value *(1-discountcode.value/100)
+                let payments = serviceprices * rentDays * (1 - discountcode / 100);
 
                 alert("Tổng số tiền quý khách thanh toán: \n"+
                     payments
-                )
-
+                );
+                hienthi1();
 
         }
     }

@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="881931f3-478a-4124-aadb-ba6b75439dd8" name="Default Changelist" comment="" />
+    <list default="true" id="881931f3-478a-4124-aadb-ba6b75439dd8" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module1/caseStudy/Bài tập 2/Request2-Tast1.html" beforeDir="false" afterPath="$PROJECT_DIR$/Module1/caseStudy/Bài tập 2/Request2-Tast1.html" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -27,11 +30,11 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Module1/3-Cấu trúc điều kiện/Bài tập/Ứng dụng vui DoYouLoveMe.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="63" lean-forward="true" selection-start-line="13" selection-start-column="63" selection-end-line="13" selection-end-column="63" />
+            <state relative-caret-position="153">
+              <caret line="9" column="53" lean-forward="true" selection-start-line="9" selection-start-column="53" selection-end-line="9" selection-end-column="53" />
               <folding>
                 <element signature="n#style#0;n#h2#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#input#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -41,9 +44,28 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Module1/1-Nhập môn lập trình căn bản/Phần thực hành/Các cách nhúng JavaScript vào trang web_Hiển thị đầu ra/Hàm alect/ham_alect.html">
-          <provider selected="true" editor-type-id="text-editor" />
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Module1/caseStudy/Bài tập 2/Request2-Tast1.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-10">
+              <caret line="146" column="61" lean-forward="true" selection-start-line="146" selection-start-column="61" selection-end-line="146" selection-end-column="61" />
+              <folding>
+                <element signature="n#style#0;n#fieldset#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#0;n#fieldset#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#1;n#fieldset#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#2;n#fieldset#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#3;n#fieldset#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#4;n#fieldset#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#5;n#fieldset#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#6;n#fieldset#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#7;n#fieldset#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#8;n#fieldset#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#9;n#fieldset#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#10;n#fieldset#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#11;n#fieldset#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -63,13 +85,6 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Module1/1-Nhập môn lập trình căn bản/Phần thực hành/Các cách nhúng JavaScript vào trang web_Hiển thị đầu ra/X_Bonus/Choose I J_2.html">
           <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Module1/2-Biến, kiểu dữ liệu và toán tử/Phần bài tập/Biến, kiểu dữ liệu và toán tử/Ứng dụng chuyển đổi tiền tệ.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-102" />
-          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -93,14 +108,15 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Module1/caseStudy/Bài tập 1/Request1-Tast1.html" />
-        <option value="$PROJECT_DIR$/Module1/caseStudy/Bài tập 2/1.html" />
-        <option value="$PROJECT_DIR$/Module1/caseStudy/Bài tập 2/Request2-Tast1.html" />
         <option value="$PROJECT_DIR$/Module1/3-Cấu trúc điều kiện/Bài tập/Tính cân nặng cơ thể.html" />
         <option value="$PROJECT_DIR$/Module1/1-Nhập môn lập trình căn bản/Phần thực hành/Các cách nhúng JavaScript vào trang web_Hiển thị đầu ra/X_Bonus/Choose I J_1.html" />
         <option value="$PROJECT_DIR$/Module1/3-Cấu trúc điều kiện/Bài tập/Máy tính đơn giản.html" />
         <option value="$PROJECT_DIR$/Module1/3-Cấu trúc điều kiện/Bài tập/1.html" />
         <option value="$PROJECT_DIR$/Module1/3-Cấu trúc điều kiện/Bài tập/2.html" />
         <option value="$PROJECT_DIR$/Module1/3-Cấu trúc điều kiện/Bài tập/Ứng dụng vui DoYouLoveMe.html" />
+        <option value="$PROJECT_DIR$/Module1/caseStudy/Bài tập 2/1.html" />
+        <option value="$PROJECT_DIR$/Module1/caseStudy/Bài tập 2/Request2-Tast1.html" />
+        <option value="$PROJECT_DIR$/Module1/caseStudy/Bài tập 2/Error.html" />
       </list>
     </option>
   </component>
@@ -148,6 +164,15 @@
               <item name="1-Nhập môn lập trình căn bản" type="462c0819:PsiDirectoryNode" />
               <item name="Phần thực hành" type="462c0819:PsiDirectoryNode" />
               <item name="Các cách nhúng JavaScript vào trang web_Hiển thị đầu ra" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="C0120G1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="C0120G1" type="462c0819:PsiDirectoryNode" />
+              <item name="Module1" type="462c0819:PsiDirectoryNode" />
+              <item name="1-Nhập môn lập trình căn bản" type="462c0819:PsiDirectoryNode" />
+              <item name="Phần thực hành" type="462c0819:PsiDirectoryNode" />
+              <item name="Các cách nhúng JavaScript vào trang web_Hiển thị đầu ra" type="462c0819:PsiDirectoryNode" />
+              <item name="Hàm document_write" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="C0120G1" type="b2602c69:ProjectViewProjectNode" />
@@ -256,12 +281,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1578963939100</updated>
-      <workItem from="1578963940350" duration="15195000" />
+      <workItem from="1578963940350" duration="23460000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15195000" />
+    <option name="totallyTimeSpent" value="23460000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -290,13 +315,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Module1/caseStudy/Bài tập 2/1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="127" column="61" lean-forward="true" selection-start-line="127" selection-start-column="61" selection-end-line="127" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Module1/caseStudy/Bài tập 2/2.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -344,28 +362,15 @@
     <entry file="file://$PROJECT_DIR$/Module1/2-Biến, kiểu dữ liệu và toán tử/Phần bài tập/Biến, kiểu dữ liệu và toán tử/Tính điểm tổng và điểm trung bình_2.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Module1/caseStudy/Bài tập 2/Request2-Tast1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2057">
-          <caret line="139" column="22" selection-start-line="139" selection-start-column="22" selection-end-line="139" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Module1/2-Biến, kiểu dữ liệu và toán tử/Phần bài tập/Biến, kiểu dữ liệu và toán tử/Ứng dụng chuyển đổi tiền tệ.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-102" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Module1/1-Nhập môn lập trình căn bản/Phần thực hành/Các cách nhúng JavaScript vào trang web_Hiển thị đầu ra/Hàm document_write/document_write.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/Module1/1-Nhập môn lập trình căn bản/Phần thực hành/Các cách nhúng JavaScript vào trang web_Hiển thị đầu ra/Hàm alect/ham_alect.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/Module1/1-Nhập môn lập trình căn bản/Phần thực hành/Các cách nhúng JavaScript vào trang web_Hiển thị đầu ra/Hàm console_log/console_log.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Module1/1-Nhập môn lập trình căn bản/Phần thực hành/Các cách nhúng JavaScript vào trang web_Hiển thị đầu ra/X_Bonus/Choose I J_2.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/Module1/3-Cấu trúc điều kiện/Bài tập/Máy tính đơn giản.html">
@@ -402,13 +407,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Module1/1-Nhập môn lập trình căn bản/Phần thực hành/Các cách nhúng JavaScript vào trang web_Hiển thị đầu ra/X_Bonus/Choose I J_1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Module1/3-Cấu trúc điều kiện/Bài tập/Tính cân nặng cơ thể.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -419,14 +417,93 @@
     <entry file="file://$PROJECT_DIR$/Module1/3-Cấu trúc điều kiện/Bài tập/Câu lệnh switch-case_1 tháng_bao_nhiêu_ngày.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/Module1/1-Nhập môn lập trình căn bản/Phần thực hành/Các cách nhúng JavaScript vào trang web_Hiển thị đầu ra/Hàm document_write/document_write.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Module1/1-Nhập môn lập trình căn bản/Phần thực hành/Các cách nhúng JavaScript vào trang web_Hiển thị đầu ra/X_Bonus/Choose I J_1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Module1/1-Nhập môn lập trình căn bản/Phần thực hành/Các cách nhúng JavaScript vào trang web_Hiển thị đầu ra/X_Bonus/Choose I J_2.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/Module1/3-Cấu trúc điều kiện/Bài tập/Ứng dụng vui DoYouLoveMe.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="63" lean-forward="true" selection-start-line="13" selection-start-column="63" selection-end-line="13" selection-end-column="63" />
+        <state relative-caret-position="153">
+          <caret line="9" column="53" lean-forward="true" selection-start-line="9" selection-start-column="53" selection-end-line="9" selection-end-column="53" />
           <folding>
             <element signature="n#style#0;n#h2#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#input#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#input#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Module1/caseStudy/Bài tập 2/1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="381">
+          <caret line="29" column="21" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
+          <folding>
+            <element signature="n#style#0;n#fieldset#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#fieldset#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#1;n#fieldset#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#2;n#fieldset#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#3;n#fieldset#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#4;n#fieldset#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#5;n#fieldset#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#6;n#fieldset#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#7;n#fieldset#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#8;n#fieldset#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#9;n#fieldset#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#10;n#fieldset#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#11;n#fieldset#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Module1/caseStudy/Bài tập 2/Error.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-34">
+          <caret line="58" column="20" lean-forward="true" selection-start-line="58" selection-start-column="20" selection-end-line="58" selection-end-column="20" />
+          <folding>
+            <element signature="n#style#0;n#fieldset#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#fieldset#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#1;n#fieldset#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#2;n#fieldset#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#3;n#fieldset#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#4;n#fieldset#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#5;n#fieldset#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#6;n#fieldset#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#7;n#fieldset#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#8;n#fieldset#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#9;n#fieldset#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#10;n#fieldset#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#11;n#fieldset#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Module1/caseStudy/Bài tập 2/Request2-Tast1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-10">
+          <caret line="146" column="61" lean-forward="true" selection-start-line="146" selection-start-column="61" selection-end-line="146" selection-end-column="61" />
+          <folding>
+            <element signature="n#style#0;n#fieldset#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#fieldset#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#1;n#fieldset#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#2;n#fieldset#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#3;n#fieldset#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#4;n#fieldset#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#5;n#fieldset#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#6;n#fieldset#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#7;n#fieldset#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#8;n#fieldset#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#9;n#fieldset#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#10;n#fieldset#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#11;n#fieldset#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
