@@ -21,7 +21,7 @@
         typeofservice     :<input type="text" id="typeofservice" value=""><br>
         numberRoom        :<input type="text" id="numberRoom" value=""><br>
         discountcode      :<input type="text" id="discountcode" value=""><br>
-        discountcard      :<input type="text" id="discountcard" value=""><br>
+
     </fieldset>
 </form>
 
@@ -139,6 +139,18 @@
                 );
                 break;
             case '3':
+
+                if (typeofservice.value === 'Villa') {
+                    serviceprices = 500;
+                } else if (typeofservice.value === 'House') {
+                    serviceprices = 300;
+                } else if (typeofservice.value === 'Room') {
+                    serviceprices = 100;
+                } else {
+                    serviceprices = 50;
+                }
+                let payments=serviceprices* rentDays.value *(1-discountcode.value/100)
+
                 alert("Tổng số tiền quý khách thanh toán: \n"+
                     payments
                 )
