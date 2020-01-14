@@ -5,124 +5,179 @@
     <title>Title</title>
 </head>
 <body>
+
+<form>
+    <fieldset style="width: 350px;">
+        <legend>Thông tin khách hàng</legend>
+        name              :<input type="text" id="name"value="" style="position: absolute;left:150px;"/><br>
+        identitycard      :<input type="text" id="identitycard" value=""style="position: absolute;left:150px;"/><br>
+        dateofbirth       :<input type="text" id="dateofbirth" value=""style="position: absolute;left:150px;"/><br>
+        emailaddress      :<input type="text" id="emailaddress" value=""style="position: absolute;left:150px;"/><br>
+        address           :<input type="text" id="address" value=""style="position: absolute;left:150px;"/><br>
+        sex               :<input type="text" id="sex" value=""style="position: absolute;left:150px;"/><br>
+        customercard      :<input type="text" id="customercard" value=""style="position: absolute;left:150px;"/><br>
+        rentDays          :<input type="text" id="rentDays" value=""style="position: absolute;left:150px;"/><br>
+        numberofpeople    :<input type="text" id="numberofpeople" value=""style="position: absolute;left:150px;"/><br>
+        typeofservice     :<input type="text" id="typeofservice" value=""style="position: absolute;left:150px;"/><br>
+        numberRoom        :<input type="text" id="numberRoom" value=""style="position: absolute;left:150px;"/><br>
+        discountcode      :<input type="text" id="discountcode" value=""style="position: absolute;left:150px;"/><br>
+
+    </fieldset>
+</form>
+
+<button type="button" onclick="hienthi2()">Xác nhận thông tin.</button>
 <script>
+    let name;
+    let identitycard;
+    let dateofbirth;
+    let emailaddress;
+    let address;
+    let sex;
+    let customercard;
+    let rentDays;
+    let numberofpeople;
+    let typeofservice;
+    let numberRoom;
+    let discountcode;
 
+    function hienthi2() {
+        name=document.getElementById('name').value;
+        identitycard=document.getElementById('identitycard').value;
+        dateofbirth=document.getElementById('dateofbirth').value;
+        emailaddress=document.getElementById('emailaddress').value;
+        address=document.getElementById('address').value;
+        sex=document.getElementById('sex').value;
+        customercard=document.getElementById('customercard').value;
+        rentDays=document.getElementById('rentDays').value;
+        numberofpeople=document.getElementById('numberofpeople').value;
+        typeofservice=document.getElementById('typeofservice').value;
+        numberRoom=document.getElementById('numberRoom').value;
+       discountcode=document.getElementById('discountcode').value;
+        hienthi1();
+    }
 
-    //Hàm prompt để nhập giá trị
-    let name='Van Nhan Lam';
-    let identitycard='123456';
-    let dateofbirth='1/1/2000';
-    let emailaddress='vnnhnlm@gmail.com';
-    let address='Da Nang';
-    let sex='Nam';
-    let customercard='Diamon';
-    let rentDays=10;
-    let numberofpeople=1;
-    let typeofservice='Villa';
-    let numberRoom='1412';
-    let discountcode='20';
-    let discountcard;
-    let payments=500* rentDays *(1-discountcode/100)
-    let choose=prompt(
-        "1.Hiển thị thông tin đăng ký.\n" +
-        "2.Chỉnh sửa thông tin đăng ký.\n"+
-        "3.Hiển thị số tiền thanh toán.\n"
-    );
+    function  hienthi1() {
 
-switch (choose) {
-    case '1':
-        alert("Thông tin khách hàng:" +
-            "\nTên khách hàng: " + name +
-            "\nChứng minh nhân dân:" + identitycard +
-            "\nNgày tháng năm sinh: " + dateofbirth +
-            "\nĐịa chỉ emailemailaddress: " + emailaddress +
-            "\nĐịa chỉ khách hàng: " + address +
-            "\nGiới tính khách hàng: " + sex +
-            "\nLoại thẻ của khách hàng: " + customercard +
-            "\nSố ngày thuê phòng: " + rentDays +
-            "\nSố người kèm theo: " + numberofpeople +
-            "\nLoại dịch vụ(Villa,House,Room): " + typeofservice +
-            "\nSố phòng đăng ký thuê: " + numberRoom +
-            "\nMã giảm giá: " + discountcode
+        let choose = prompt(
+            "1.Hiển thị thông tin đăng ký.\n" +
+            "2.Chỉnh sửa thông tin đăng ký.\n" +
+            "3.Hiển thị số tiền thanh toán.\n"
         );
 
-        break;
-    case '2':
-        let suathongtin = prompt(
-            'Chọn thông tin bạn muốn thay đổi:\n' +
-            "\n1.Tên khách hàng: " + name +
-            "\n2.Chứng minh nhân dân:" + identitycard +
-            "\n3.Ngày tháng năm sinh: " + dateofbirth +
-            "\n4.Địa chỉ emailemailaddress: " + emailaddress +
-            "\n5.Địa chỉ khách hàng: " + address +
-            "\n6.Giới tính khách hàng: " + sex +
-            "\n7.Loại thẻ của khách hàng: " + customercard +
-            "\n8.Số ngày thuê phòng: " + rentDays +
-            "\n9.Số người kèm theo: " + numberofpeople +
-            "\n10.Loại dịch vụ(Villa,House,Room): " + typeofservice +
-            "\n11.Số phòng đăng ký thuê: " + numberRoom +
-            "\n12.Mã giảm giá: " + discountcode
-        );
-        ;
-        switch (suathongtin) {
+
+        switch (choose) {
             case '1':
-                name = prompt('Chọn tên muốn thay đổi');
+                alert(
+                    "Thông tin khách hàng \n" +
+                    "Tên khách hàng: " + name +
+                    "\nSố CMND: " + identitycard +
+                    "\nNgày tháng năm sinh: " + dateofbirth +
+                    "\nĐịa chỉ Email: " + emailaddress +
+                    "\nĐịa chỉ nhà: " + address +
+                    "\nGiới tính: " + sex +
+                    "\nThẻ khách hàng: " + customercard +
+                    "\nSố ngày thuê: " + rentDays +
+                    "\nSố người kèm theo: " + numberofpeople +
+                    "\nLoại dịch vụ: " + typeofservice +
+                    "\nSố phòng thuê: " + numberRoom +
+                    "\nMã giảm giá: " + discountcode
+                );
+                hienthi1()
                 break;
             case '2':
-                identitycard = prompt('Chọn CMND muốn thay đổi');
+                let suathongtin = prompt(
+                    'Chọn thông tin bạn muốn thay đổi:\n' +
+                    "1.Tên khách hàng: " + name +
+                    "\n2.Số CMND: " + identitycard +
+                    "\n3.Ngày tháng năm sinh: " + dateofbirth +
+                    "\n4.Địa chỉ Email: " + emailaddress +
+                    "\n5.Địa chỉ nhà: " + address +
+                    "\n6.Giới tính: " + sex +
+                    "\n7.Thẻ khách hàng: " + customercard +
+                    "\n8.Số ngày thuê: " + rentDays +
+                    "\n9.Số người kèm theo: " + numberofpeople+
+                    "\n10.Loại dịch vụ: " + typeofservice +
+                    "\n11.Số phòng thuê: " + numberRoom +
+                    "\n12.Mã giảm giá: " + discountcode
+                );
+
+                switch (suathongtin) {
+                    case '1':
+                        name = prompt('Chọn tên muốn thay đổi');
+                        break;
+                    case '2':
+                        identitycard = prompt('Chọn CMND muốn thay đổi');
+                        break;
+                    case '3':
+                        dateofbirth = prompt('Chọn ngày tháng năm sinh muốn thay đổi');
+                        break;
+                    case '4':
+                        emailaddress = prompt('Chọn địa chỉ email muốn thay đổi');
+                        break;
+                    case '5':
+                        address = prompt('Chọn địa chỉ sinh sống muốn thay đổi');
+                        break;
+                    case '6':
+                        sex = prompt('Chọn giới tính muốn thay đổi');
+                        break;
+                    case '7':
+                        customercard = prompt('Chọn loại thẻ khách hàng muốn thay đổi');
+                        break;
+                    case '8':
+                        rentDays = prompt('Chọn số ngày thuê muốn thay đổi');
+                        break;
+                    case '9':
+                        numberofpeople = prompt('Chọn số lượng người đi kèm muốn thay đổi');
+                        break;
+                    case '10':
+                        typeofservice = prompt('Chọn loại dịch vụ:Villa,House,Room muốn thay đổi');
+                        break;
+                    case '11':
+                        numberRoom = prompt('Chọn số phòng thuê muốn thay đổi');
+                        break;
+                    case '12':
+                        discountcode = prompt('Chọn mã giảm giá:x muốn thay đổi');
+                        break;
+                    default:
+                        alert('Nhập sai thông tin');
+                }
+                alert("Thông tin khách hàng:" +
+                    "\nTên khách hàng: " + name +
+                    "\nChứng minh nhân dân:" + identitycard +
+                    "\nNgày tháng năm sinh: " + dateofbirth +
+                    "\nĐịa chỉ emailemailaddress: " + emailaddress +
+                    "\nĐịa chỉ khách hàng: " + address +
+                    "\nGiới tính khách hàng: " + sex +
+                    "\nLoại thẻ của khách hàng: " + customercard +
+                    "\nSố ngày thuê phòng: " + rentDays +
+                    "\nSố người kèm theo: " + numberofpeople +
+                    "\nLoại dịch vụ(Villa,House,Room): " + typeofservice +
+                    "\nSố phòng đăng ký thuê: " + numberRoom +
+                    "\nMã giảm giá: " + discountcode
+                );
+                hienthi1();
                 break;
             case '3':
-                dateofbirth = prompt('Chọn ngày tháng năm sinh muốn thay đổi');
-                break;
-            case '4':
-                emailaddress = prompt('Chọn địa chỉ email muốn thay đổi');
-                break;
-            case '5':
-                address = prompt('Chọn địa chỉ sinh sống muốn thay đổi');
-                break;
-            case '6':
-                sex = prompt('Chọn giới tính muốn thay đổi');
-                break;
-            case '7':
-                customercard = prompt('Chọn loại thẻ khách hàng muốn thay đổi');
-                break;
-            case '8':
-                rentDays = prompt('Chọn số ngày thuê muốn thay đổi');
-                break;
-            case '9':
-                numberofpeople = prompt('Chọn số lượng người đi kèm muốn thay đổi');
-                break;
-            case '10':
-                typeofservice = prompt('Chọn loại dịch vụ:Villa,House,Room muốn thay đổi');
-                break;
-            case '11':
-                numberRoom = prompt('Chọn số phòng thuê muốn thay đổi');
-                break;
-            case '12':
-                discountcode = prompt('Chọn mã giảm giá:x muốn thay đổi');
-                break;
-            default:
-                alert('Nhập sai thông tin');
+
+                if (typeofservice === 'Villa') {
+                    serviceprices = 500;
+                } else if (typeofservice === 'House') {
+                    serviceprices = 300;
+                } else if (typeofservice === 'Room') {
+                    serviceprices = 100;
+                } else {
+                    serviceprices = 50;
+                }
+                let payments = serviceprices * rentDays * (1 - discountcode / 100);
+
+                alert("Tổng số tiền quý khách thanh toán: \n"+
+                    payments
+                );
+                hienthi1();
+
         }
-        alert("Thông tin khách hàng:" +
-            "\nTên khách hàng: " + name +
-            "\nChứng minh nhân dân:" + identitycard +
-            "\nNgày tháng năm sinh: " + dateofbirth +
-            "\nĐịa chỉ emailemailaddress: " + emailaddress +
-            "\nĐịa chỉ khách hàng: " + address +
-            "\nGiới tính khách hàng: " + sex +
-            "\nLoại thẻ của khách hàng: " + customercard +
-            "\nSố ngày thuê phòng: " + rentDays +
-            "\nSố người kèm theo: " + numberofpeople +
-            "\nLoại dịch vụ(Villa,House,Room): " + typeofservice +
-            "\nSố phòng đăng ký thuê: " + numberRoom +
-            "\nMã giảm giá: " + discountcode
-        );
-    case '3':
-        alert("Tổng số tiền quý khách thanh toán: \n"+
-            payments
-        )
-}
+    }
+
 
 
 
