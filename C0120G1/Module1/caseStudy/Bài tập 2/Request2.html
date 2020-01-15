@@ -20,7 +20,7 @@
         numberofpeople    :<input type="text" id="numberofpeople" value=""style="position: absolute;left:150px;"/><br>
         typeofservice     :<input type="text" id="typeofservice" value=""style="position: absolute;left:150px;"/><br>
         numberRoom        :<input type="text" id="numberRoom" value=""style="position: absolute;left:150px;"/><br>
-        discountcode      :<input type="text" id="discountcode" value=""style="position: absolute;left:150px;"/><br>
+        salecode      :<input type="text" id="discountcode" value=""style="position: absolute;left:150px;"/><br>
 
     </fieldset>
 </form>
@@ -38,7 +38,7 @@
     let numberofpeople;
     let typeofservice;
     let numberRoom;
-    let discountcode;
+    let salecode;
 
     function hienthi2() {
         name=document.getElementById('name').value;
@@ -52,7 +52,7 @@
         numberofpeople=document.getElementById('numberofpeople').value;
         typeofservice=document.getElementById('typeofservice').value;
         numberRoom=document.getElementById('numberRoom').value;
-       discountcode=document.getElementById('discountcode').value;
+        salecode=document.getElementById('discountcode').value;
         hienthi1();
     }
 
@@ -80,7 +80,7 @@
                     "\nSố người kèm theo: " + numberofpeople +
                     "\nLoại dịch vụ: " + typeofservice +
                     "\nSố phòng thuê: " + numberRoom +
-                    "\nMã giảm giá: " + discountcode
+                    "\nMã giảm giá: " + salecode
                 );
                 hienthi1()
                 break;
@@ -98,7 +98,7 @@
                     "\n9.Số người kèm theo: " + numberofpeople+
                     "\n10.Loại dịch vụ: " + typeofservice +
                     "\n11.Số phòng thuê: " + numberRoom +
-                    "\n12.Mã giảm giá: " + discountcode
+                    "\n12.Mã giảm giá: " + salecode
                 );
 
                 switch (suathongtin) {
@@ -136,7 +136,7 @@
                         numberRoom = prompt('Chọn số phòng thuê muốn thay đổi');
                         break;
                     case '12':
-                        discountcode = prompt('Chọn mã giảm giá:x muốn thay đổi');
+                        salecode = prompt('Chọn mã giảm giá:x muốn thay đổi');
                         break;
                     default:
                         alert('Nhập sai thông tin');
@@ -153,11 +153,13 @@
                     "\nSố người kèm theo: " + numberofpeople +
                     "\nLoại dịch vụ(Villa,House,Room): " + typeofservice +
                     "\nSố phòng đăng ký thuê: " + numberRoom +
-                    "\nMã giảm giá: " + discountcode
+                    "\nMã giảm giá: " + salecode
                 );
                 hienthi1();
                 break;
             case '3':
+                //Tinh Payments(gia dich vu)
+                //Tinh gia loai dichvu
 
                 if (typeofservice === 'Villa') {
                     serviceprices = 500;
@@ -168,7 +170,42 @@
                 } else {
                     serviceprices = 50;
                 }
-                let payments = serviceprices * rentDays * (1 - discountcode / 100);
+                //Giam gia khach hang
+                //Giam gia theo dia chi
+                let saleaddress;
+                if(address==="Da Nang"){
+                    saleaddress=20;
+                }else if(address==='Hue'){
+                    saleaddress=10;
+                }else if(address==="Quang Nam"){
+                    saleaddress=5;
+                }else {
+                    saleaddress=0;
+                }
+                //Giam gia theo loai the khach hang
+                let salecustomercard;
+                switch (customercard) {
+                    case('Diamond'):
+                        salecustomercard=15;
+                        break;
+                    case('Platium'):
+                        salecustomercard=10;
+                        break;
+                    case('Gold'):
+                        salecustomercard=5;
+                        break;
+                    case('Silver'):
+                        salecustomercard=2;
+                        break;
+                    case('Member'):
+                    default:
+                        salecustomercard=0;
+                        break;
+
+                }
+
+
+                let payments = serviceprices * rentDays * (1 - salecode / 100)-(saleaddress+salecustomercard);
 
                 alert("Tổng số tiền quý khách thanh toán: \n"+
                     payments

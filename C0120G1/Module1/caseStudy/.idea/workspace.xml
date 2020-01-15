@@ -2,56 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c1233afc-c98a-4973-aad7-1b39e458d56d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../2-Biến, kiểu dữ liệu và toán tử/Phần bài tập/Biến, kiểu dữ liệu và toán tử/Chuyển 0C sang 0F_1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../2-Biến, kiểu dữ liệu và toán tử/Phần bài tập/Biến, kiểu dữ liệu và toán tử/Chuyển 0C sang 0F_2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../2-Biến, kiểu dữ liệu và toán tử/Phần bài tập/Biến, kiểu dữ liệu và toán tử/Tính diện tích và chu vi đường tròn_1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../2-Biến, kiểu dữ liệu và toán tử/Phần bài tập/Biến, kiểu dữ liệu và toán tử/Tính diện tích và chu vi đường tròn_2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../2-Biến, kiểu dữ liệu và toán tử/Phần bài tập/Biến, kiểu dữ liệu và toán tử/Tính điểm tổng và điểm trung bình_1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../2-Biến, kiểu dữ liệu và toán tử/Phần bài tập/Biến, kiểu dữ liệu và toán tử/Tính điểm tổng và điểm trung bình_2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../2-Biến, kiểu dữ liệu và toán tử/Phần bài tập/Biến, kiểu dữ liệu và toán tử/Ứng dụng chuyển đổi tiền tệ.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../2-Biến, kiểu dữ liệu và toán tử/Phần thực hành/Khai báo và sử dụng biến_1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../2-Biến, kiểu dữ liệu và toán tử/Phần thực hành/Khai báo và sử dụng biến_2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../2-Biến, kiểu dữ liệu và toán tử/Phần thực hành/Sử dụng toán tử_1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../2-Biến, kiểu dữ liệu và toán tử/Phần thực hành/Sử dụng toán tử_2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../3-Cấu trúc điều kiện/Bài thực hành/Kiểm tra năm nhuận_1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../3-Cấu trúc điều kiện/Bài thực hành/Kiểm tra năm nhuận_1_2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../3-Cấu trúc điều kiện/Bài thực hành/Kiểm tra năm nhuận_2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../3-Cấu trúc điều kiện/Bài thực hành/Luyện tập với cấu trúc if...else...if.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../3-Cấu trúc điều kiện/Bài thực hành/Luyện tập với cấu trúc if_else.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../3-Cấu trúc điều kiện/Bài thực hành/Luyện tập với cấu trúc switch-case_1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../3-Cấu trúc điều kiện/Bài thực hành/Luyện tập với cấu trúc switch-case_2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../3-Cấu trúc điều kiện/Bài thực hành/Luyện tập với cấu trúc switch-case_3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../3-Cấu trúc điều kiện/Bài thực hành/Luyện tập với toán tử_1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../3-Cấu trúc điều kiện/Bài thực hành/Luyện tập với toán tử_2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../3-Cấu trúc điều kiện/Bài đọc/Sử dụng input, button và textarea/Input Reset.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../3-Cấu trúc điều kiện/Bài đọc/Sử dụng input, button và textarea/Thẻ button.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../3-Cấu trúc điều kiện/Bài đọc/Sử dụng phần tử select, option/Lựa chọn một thể loại Game từ drop-down.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../3-Cấu trúc điều kiện/Bài đọc/Sử dụng phần tử select, option/Lựa chọn một thể loại Game từ list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../3-Cấu trúc điều kiện/Bài đọc/Tạo biểu mẫu cho trang web/Nhóm các dữ liệu của biểu mẫu lại với nhau.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../3-Cấu trúc điều kiện/Bài đọc/Tạo biểu mẫu cho trang web/Thuộc tính action.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bài tập 1/Request1-Tast1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bài tập 1/Request1-Tast2.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Bài tập 2/1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Nhập môn lập trình căn bản/Phần bài tập/Bài tập thêm_Mô tả thuật toán có cấu trúc điều kiện/Flowchart_Bài tập thêm_Mô tả thuật toán có cấu trúc điều kiện.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../1-Nhập môn lập trình căn bản/Phần bài tập/Bài tập thêm_Mô tả thuật toán có cấu trúc điều kiện/Flowchart_Bài tập thêm_Mô tả thuật toán có cấu trúc điều kiện.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Nhập môn lập trình căn bản/Phần bài tập/Bài tập thêm_Mô tả thuật toán có cấu trúc điều kiện/PseudoCode_Bài tập thêm_Mô tả thuật toán có cấu trúc điều kiện.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../1-Nhập môn lập trình căn bản/Phần bài tập/Bài tập thêm_Mô tả thuật toán có cấu trúc điều kiện/PseudoCode_Bài tập thêm_Mô tả thuật toán có cấu trúc điều kiện.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Nhập môn lập trình căn bản/Phần bài tập/Mô tả thuật toán chuyển đổi tiền tệ/Flowchart_Mô tả thuật toán chuyển đổi tiền tệ.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../1-Nhập môn lập trình căn bản/Phần bài tập/Mô tả thuật toán chuyển đổi tiền tệ/Flowchart_Mô tả thuật toán chuyển đổi tiền tệ.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Nhập môn lập trình căn bản/Phần bài tập/Mô tả thuật toán chuyển đổi tiền tệ/PseudoCode_Mô tả thuật toán chuyển đổi tiền tệ.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../1-Nhập môn lập trình căn bản/Phần bài tập/Mô tả thuật toán chuyển đổi tiền tệ/PseudoCode_Mô tả thuật toán chuyển đổi tiền tệ.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Nhập môn lập trình căn bản/Phần bài tập/Mô tả thuật toán có cấu trúc lặp/Flowchart_Mô tả thuật toán có cấu trúc lặp.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../1-Nhập môn lập trình căn bản/Phần bài tập/Mô tả thuật toán có cấu trúc lặp/Flowchart_Mô tả thuật toán có cấu trúc lặp.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Nhập môn lập trình căn bản/Phần bài tập/Mô tả thuật toán có cấu trúc lặp/PseudoCode_Mô tả thuật toán có cấu trúc lặp.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../1-Nhập môn lập trình căn bản/Phần bài tập/Mô tả thuật toán có cấu trúc lặp/PseudoCode_Mô tả thuật toán có cấu trúc lặp.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Nhập môn lập trình căn bản/Phần bài tập/Mô tả thuật toán có cấu trúc điều kiện/Flowchart_Mô tả thuật toán có cấu trúc điều kiện.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../1-Nhập môn lập trình căn bản/Phần bài tập/Mô tả thuật toán có cấu trúc điều kiện/Flowchart_Mô tả thuật toán có cấu trúc điều kiện.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Nhập môn lập trình căn bản/Phần bài tập/Mô tả thuật toán có cấu trúc điều kiện/PseudoCode_Flowchart_Mô tả thuật toán có cấu trúc điều kiện.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../1-Nhập môn lập trình căn bản/Phần bài tập/Mô tả thuật toán có cấu trúc điều kiện/PseudoCode_Flowchart_Mô tả thuật toán có cấu trúc điều kiện.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Nhập môn lập trình căn bản/Phần bài tập/Mô tả thuật toán tính điểm trung bình/Flowchart_Mô tả thuật toán tính điểm trung bình.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../1-Nhập môn lập trình căn bản/Phần bài tập/Mô tả thuật toán tính điểm trung bình/Flowchart_Mô tả thuật toán tính điểm trung bình.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Nhập môn lập trình căn bản/Phần bài tập/Mô tả thuật toán tính điểm trung bình/PseudoCode_Mô tả thuật toán tính điểm trung bình.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../1-Nhập môn lập trình căn bản/Phần bài tập/Mô tả thuật toán tính điểm trung bình/PseudoCode_Mô tả thuật toán tính điểm trung bình.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Nhập môn lập trình căn bản/Phần thực hành/Clone dự án từ Git/Clone dự án từ Git.png" beforeDir="false" afterPath="$PROJECT_DIR$/../1-Nhập môn lập trình căn bản/Phần thực hành/Clone dự án từ Git/Clone dự án từ Git.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Nhập môn lập trình căn bản/Phần thực hành/Clone dự án từ Git/wf-hello" beforeDir="false" afterPath="$PROJECT_DIR$/../1-Nhập môn lập trình căn bản/Phần thực hành/Clone dự án từ Git/wf-hello" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Nhập môn lập trình căn bản/Phần thực hành/Các cách nhúng JavaScript vào trang web_Hiển thị đầu ra/Hàm alect/ham_alect.html" beforeDir="false" afterPath="$PROJECT_DIR$/../1-Nhập môn lập trình căn bản/Phần thực hành/Các cách nhúng JavaScript vào trang web_Hiển thị đầu ra/Hàm alect/ham_alect.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Nhập môn lập trình căn bản/Phần thực hành/Các cách nhúng JavaScript vào trang web_Hiển thị đầu ra/Hàm console_log/console_log.html" beforeDir="false" afterPath="$PROJECT_DIR$/../1-Nhập môn lập trình căn bản/Phần thực hành/Các cách nhúng JavaScript vào trang web_Hiển thị đầu ra/Hàm console_log/console_log.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Nhập môn lập trình căn bản/Phần thực hành/Các cách nhúng JavaScript vào trang web_Hiển thị đầu ra/Hàm document_write/document_write.html" beforeDir="false" afterPath="$PROJECT_DIR$/../1-Nhập môn lập trình căn bản/Phần thực hành/Các cách nhúng JavaScript vào trang web_Hiển thị đầu ra/Hàm document_write/document_write.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Nhập môn lập trình căn bản/Phần thực hành/Các cách nhúng JavaScript vào trang web_Hiển thị đầu ra/Thẻ HTML/HTML.html" beforeDir="false" afterPath="$PROJECT_DIR$/../1-Nhập môn lập trình căn bản/Phần thực hành/Các cách nhúng JavaScript vào trang web_Hiển thị đầu ra/Thẻ HTML/HTML.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Nhập môn lập trình căn bản/Phần thực hành/Các cách nhúng JavaScript vào trang web_Hiển thị đầu ra/X_Bonus/Choose I J_1.html" beforeDir="false" afterPath="$PROJECT_DIR$/../1-Nhập môn lập trình căn bản/Phần thực hành/Các cách nhúng JavaScript vào trang web_Hiển thị đầu ra/X_Bonus/Choose I J_1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Nhập môn lập trình căn bản/Phần thực hành/Các cách nhúng JavaScript vào trang web_Hiển thị đầu ra/X_Bonus/Choose I J_2.html" beforeDir="false" afterPath="$PROJECT_DIR$/../1-Nhập môn lập trình căn bản/Phần thực hành/Các cách nhúng JavaScript vào trang web_Hiển thị đầu ra/X_Bonus/Choose I J_2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bài tập 2/2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bài tập 2/22.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bài tập 2/Request2.html" beforeDir="false" afterPath="$PROJECT_DIR$/Bài tập 2/Request2.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -63,12 +18,45 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Bài tập 2/Request2.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="501">
+              <caret line="205" selection-start-line="205" selection-end-line="205" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Bài tập 2/1.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="16" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
+            <state relative-caret-position="119">
+              <caret line="7" selection-start-line="7" selection-end-line="17" selection-end-column="9" />
+              <folding>
+                <element signature="n#style#0;n#input#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Bài tập 2/22.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="476">
+              <caret line="28" column="7" lean-forward="true" selection-start-line="28" selection-start-column="7" selection-end-line="28" selection-end-column="7" />
+              <folding>
+                <element signature="n#style#0;n#input#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Bài tập 2/2.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="515">
+              <caret line="45" column="65" lean-forward="true" selection-start-line="45" selection-start-column="8" selection-end-line="45" selection-end-column="65" />
             </state>
           </provider>
         </entry>
@@ -88,7 +76,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/Bài tập 2/Request2.html" />
+        <option value="$PROJECT_DIR$/Bài tập 2/2.html" />
         <option value="$PROJECT_DIR$/Bài tập 2/1.html" />
+        <option value="$PROJECT_DIR$/Bài tập 2/22.html" />
       </list>
     </option>
   </component>
@@ -112,6 +103,11 @@
               <item name="caseStudy" type="b2602c69:ProjectViewProjectNode" />
               <item name="caseStudy" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="caseStudy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="caseStudy" type="462c0819:PsiDirectoryNode" />
+              <item name="Bài tập 2" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -120,8 +116,9 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -148,22 +145,20 @@
       <option name="presentableId" value="Default" />
       <updated>1578913348104</updated>
       <workItem from="1578913349199" duration="94000" />
+      <workItem from="1579087442758" duration="3705000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="94000" />
+    <option name="totallyTimeSpent" value="3799000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24973656" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -171,6 +166,10 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -180,10 +179,37 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Bài tập 2/Request2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="501">
+          <caret line="205" selection-start-line="205" selection-end-line="205" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Bài tập 2/2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="515">
+          <caret line="45" column="65" lean-forward="true" selection-start-line="45" selection-start-column="8" selection-end-line="45" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Bài tập 2/1.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="16" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
+        <state relative-caret-position="119">
+          <caret line="7" selection-start-line="7" selection-end-line="17" selection-end-column="9" />
+          <folding>
+            <element signature="n#style#0;n#input#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Bài tập 2/22.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" column="7" lean-forward="true" selection-start-line="28" selection-start-column="7" selection-end-line="28" selection-end-column="7" />
+          <folding>
+            <element signature="n#style#0;n#input#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
