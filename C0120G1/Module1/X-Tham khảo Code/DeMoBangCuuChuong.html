@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!-- Tạo 1 table dùng thẻ table -->
+<table border="1px">
+    <!-- tạo 1 dòng thì dùng thẻ tr -->
+    <tr>
+        <!-- tạo 1 ô thì dùng thẻ td -->
+        <td>2x1=2</td>
+        <td>3x1=3</td>
+        <td>4x1=4</td>
+        <td>4x1=4</td>
+        <td>4x1=4</td>
+        <td>4x1=4</td>
+        <td>4x1=4</td>
+        <td>4x1=4</td>
+    </tr>
+    <tr>
+        <!-- tạo 1 ô thì dùng thẻ td -->
+        <td>2x1=2</td>
+        <td>3x1=3</td>
+        <td>4x1=4</td>
+        <td>4x1=4</td>
+        <td>4x1=4</td>
+        <td>4x1=4</td>
+        <td>4x1=4</td>
+        <td>4x1=4</td>
+    </tr>
+</table>
+<script>
+    //Tạo một trang web với các thẻ HTML cơ bản
+    // Dùng for tạo bảng gồm 9 dòng, 9 cột
+    var kq = "";
+    kq += "<table border=\"1px\">";
+    for (var dong = 1; dong <= 9; dong++) {
+        kq += "<tr>";
+        for (var cot = 2; cot <= 9; cot++) {
+            kq += "<td>" + cot + "x" + dong + "=" + (cot * dong) + "</td>";
+        }
+        kq += "</tr>";
+    }
+    kq += "</table>";
+    document.write(kq);
+</script>
+</body>
+</html>
