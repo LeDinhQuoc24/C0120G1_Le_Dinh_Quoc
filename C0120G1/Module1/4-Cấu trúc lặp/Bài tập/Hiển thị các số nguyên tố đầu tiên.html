@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let i=2;
+    let count=1;
+    let j=2;
+    let z;
+    let check=true;
+
+    while(count<21){
+        while(j<i){
+            z=i%j;
+            if(z===0){
+                check=false;
+                break;
+            }
+            else{
+                j++;
+            }
+        }
+        if(check) {
+            document.write("số nguyên tố thứ " + count + " là: " + i + "<br>");
+            count++;
+        }
+        check=true;
+        i++;
+        j=2;
+    }
+
+</script>
+
+</body>
+</html>
