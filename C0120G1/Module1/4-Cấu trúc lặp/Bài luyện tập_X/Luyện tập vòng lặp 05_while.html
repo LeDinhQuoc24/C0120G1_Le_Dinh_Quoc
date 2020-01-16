@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a=0;
+    let b=1;
+    let i=1,result;
+    let sum=0;
+    let count=1;
+    while(count<21){
+        if (i<=2){
+            result=i-1;
+
+
+
+        }else{
+            result=a+b;
+            a=b;
+            b=result;
+
+
+
+        }
+        sum+=result;
+        i++;
+        count++;
+        document.write("Hiển thị số thứ "+i+" là: "+result+"<br>");
+    }
+    document.write("Tổng của "+(i-1)+" số là "+sum+"<br>");
+
+
+
+
+
+
+</script>
+
+</body>
+</html>
