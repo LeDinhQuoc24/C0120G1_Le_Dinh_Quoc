@@ -6,32 +6,43 @@
 </head>
 <body>
 <script>
-    var x=parseFloat(prompt("Nhập 1 số vào:"));
-    var y=new Array();
-    var z;
-if(x>0){
-    while(x>0){
-        y.push((x%10));
-        x= ((x-(x%10))/10);
-    }
+    var t = (prompt("Nhập 1 số vào:"));
+    while (true) {
+        if (isNaN(t)) {
+            t=prompt("Nhập 1 số vào:");}
+            else if((t-parseInt(t))>0){
+                t=prompt("Nhập 1 số vào:");
 
-}
-else if(x==0){
-y.push(0);
+        } else {
 
-}
-else {
-    z = x * (-1);
-    if (z > 0) {
-        while (z > 0) {
-            y.push((z % 10));
-            z = ((z - (z % 10)) / 10);
+            x = parseInt(t);
+
+            var y = new Array();
+            var z;
+            if (x > 0) {
+                while (x > 0) {
+                    y.push((x % 10));
+                    x = (x - (x % 10)) / 10;
+                }
+
+            } else if (x == 0) {
+                y.push(0);
+
+            } else {
+                z = x * (-1);
+                if (z > 0) {
+                    while (z > 0) {
+                        y.push((z % 10));
+                        z = ((z - (z % 10)) / 10);
+                    }
+
+                }
+
+            }
+            alert(y.reverse());
+            break;
         }
-
     }
-
-}
-alert(y.reverse());
 
 </script>
 
