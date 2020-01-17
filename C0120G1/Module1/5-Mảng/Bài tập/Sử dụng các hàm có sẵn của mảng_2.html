@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var x=parseFloat(prompt("Nhập 1 số vào:"));
+    var y=new Array();
+    var z;
+if(x>0){
+    while(x>0){
+        y.push((x%10));
+        x= ((x-(x%10))/10);
+    }
+
+}
+else if(x==0){
+y.push(0);
+
+}
+else {
+    z = x * (-1);
+    if (z > 0) {
+        while (z > 0) {
+            y.push((z % 10));
+            z = ((z - (z % 10)) / 10);
+        }
+
+    }
+
+}
+alert(y.reverse());
+
+</script>
+
+</body>
+</html>
