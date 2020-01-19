@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="df88910e-952b-405f-86a4-e4df73b81871" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/5-Mảng/Bài tập/Sử dụng các hàm có sẵn của mảng_2.html" beforeDir="false" afterPath="$PROJECT_DIR$/5-Mảng/Bài tập/Sử dụng các hàm có sẵn của mảng_2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1-Nhập môn lập trình căn bản/Phần bài tập/Mô tả thuật toán có cấu trúc điều kiện/Demo.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1-Nhập môn lập trình căn bản/Phần bài tập/Ứng dụng máy tính/Ứng dụng máy tính.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -16,62 +18,63 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/3-Cấu trúc điều kiện/Bài tập_X/Luyện tập cấu trúc điều kiện 01_1.html">
+        <entry file="file://$PROJECT_DIR$/5-Mảng/Bài tập/Sử dụng các hàm có sẵn của mảng_2.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="1" selection-start-column="1" selection-end-column="1" />
+            <state relative-caret-position="204">
+              <caret line="15" column="16" lean-forward="true" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/3-Cấu trúc điều kiện/Bài tập_X/Luyện tập cấu trúc điều kiện 01_2.html">
+        <entry file="file://$PROJECT_DIR$/1-Nhập môn lập trình căn bản/Phần thực hành/Các cách nhúng JavaScript vào trang web_Hiển thị đầu ra/X_Bonus/Choose I J_2.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="88" lean-forward="true" selection-start-line="11" selection-start-column="57" selection-end-line="11" selection-end-column="88" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/1-Nhập môn lập trình căn bản/Phần bài tập/Mô tả thuật toán chuyển đổi tiền tệ/Flowchart_Mô tả thuật toán chuyển đổi tiền tệ.jpg">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/1-Nhập môn lập trình căn bản/Phần bài tập/Mô tả thuật toán có cấu trúc lặp/Flowchart_Mô tả thuật toán có cấu trúc lặp.jpg">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/1-Nhập môn lập trình căn bản/Phần bài tập/Mô tả thuật toán có cấu trúc lặp/PseudoCode_Mô tả thuật toán có cấu trúc lặp.txt">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/3-Cấu trúc điều kiện/Bài tập_X/1.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" selection-start-line="11" selection-end-line="11" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/1-Nhập môn lập trình căn bản/Phần bài tập/Mô tả thuật toán có cấu trúc điều kiện/PseudoCode_Flowchart_Mô tả thuật toán có cấu trúc điều kiện.txt">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/5-Mảng/Bài tập/Sử dụng các hàm có sẵn của mảng_1.html">
+        <entry file="file://$PROJECT_DIR$/1-Nhập môn lập trình căn bản/Phần bài tập/Mô tả thuật toán có cấu trúc điều kiện/Demo.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="28" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/5-Mảng/Bài tập/Sử dụng các hàm có sẵn của mảng_2.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" selection-end-line="39" selection-end-column="7" />
+            <state relative-caret-position="272">
+              <caret line="16" column="7" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/5-Mảng/Bài tập/1.html">
+        <entry file="file://$PROJECT_DIR$/1-Nhập môn lập trình căn bản/Phần bài tập/Ứng dụng máy tính/Ứng dụng máy tính.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="30" lean-forward="true" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
+            <state relative-caret-position="153">
+              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/1-Nhập môn lập trình căn bản/Phần thực hành/Các cách nhúng JavaScript vào trang web_Hiển thị đầu ra/Hàm alect/ham_alect.html">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/1-Nhập môn lập trình căn bản/Phần thực hành/Các cách nhúng JavaScript vào trang web_Hiển thị đầu ra/X_Bonus/Choose I J_2.html">
+        <entry file="file://$PROJECT_DIR$/1-Nhập môn lập trình căn bản/Phần bài tập/Mô tả thuật toán chuyển đổi tiền tệ/PseudoCode_Mô tả thuật toán chuyển đổi tiền tệ.txt">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
@@ -110,6 +113,14 @@
         <option value="$PROJECT_DIR$/5-Mảng/Bài tập/3.html" />
         <option value="$PROJECT_DIR$/5-Mảng/Bài tập/Sử dụng các hàm có sẵn của mảng_2.html" />
         <option value="$PROJECT_DIR$/5-Mảng/Bài tập/1.html" />
+        <option value="$PROJECT_DIR$/1-Nhập môn lập trình căn bản/Phần bài giảng/Pseudo-Code_1.html" />
+        <option value="$PROJECT_DIR$/1-Nhập môn lập trình căn bản/1.html" />
+        <option value="$PROJECT_DIR$/1-Nhập môn lập trình căn bản/Phần bài tập/Mô tả thuật toán có cấu trúc điều kiện/1.html" />
+        <option value="$PROJECT_DIR$/1-Nhập môn lập trình căn bản/Phần bài tập/Mô tả thuật toán có cấu trúc điều kiện/Demo.html" />
+        <option value="$PROJECT_DIR$/1-Nhập môn lập trình căn bản/Phần bài tập/Mô tả thuật toán có cấu trúc lặp/1.html" />
+        <option value="$PROJECT_DIR$/1-Nhập môn lập trình căn bản/Phần bài tập/Mô tả thuật toán có cấu trúc lặp/19_1_remake.html" />
+        <option value="$PROJECT_DIR$/1-Nhập môn lập trình căn bản/Phần bài tập/Mô tả thuật toán có cấu trúc điều kiện/Demo_noFinish.html" />
+        <option value="$PROJECT_DIR$/1-Nhập môn lập trình căn bản/Phần bài tập/Ứng dụng máy tính/Ứng dụng máy tính.html" />
       </list>
     </option>
   </component>
@@ -125,6 +136,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -148,7 +160,7 @@
               <item name="Module1" type="462c0819:PsiDirectoryNode" />
               <item name="1-Nhập môn lập trình căn bản" type="462c0819:PsiDirectoryNode" />
               <item name="Phần bài tập" type="462c0819:PsiDirectoryNode" />
-              <item name="Mô tả thuật toán chuyển đổi tiền tệ" type="462c0819:PsiDirectoryNode" />
+              <item name="Ứng dụng máy tính" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Module1" type="b2602c69:ProjectViewProjectNode" />
@@ -162,30 +174,6 @@
               <item name="1-Nhập môn lập trình căn bản" type="462c0819:PsiDirectoryNode" />
               <item name="Phần thực hành" type="462c0819:PsiDirectoryNode" />
               <item name="Các cách nhúng JavaScript vào trang web_Hiển thị đầu ra" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Module1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Module1" type="462c0819:PsiDirectoryNode" />
-              <item name="1-Nhập môn lập trình căn bản" type="462c0819:PsiDirectoryNode" />
-              <item name="Phần thực hành" type="462c0819:PsiDirectoryNode" />
-              <item name="Các cách nhúng JavaScript vào trang web_Hiển thị đầu ra" type="462c0819:PsiDirectoryNode" />
-              <item name="Hàm alect" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Module1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Module1" type="462c0819:PsiDirectoryNode" />
-              <item name="1-Nhập môn lập trình căn bản" type="462c0819:PsiDirectoryNode" />
-              <item name="Phần thực hành" type="462c0819:PsiDirectoryNode" />
-              <item name="Các cách nhúng JavaScript vào trang web_Hiển thị đầu ra" type="462c0819:PsiDirectoryNode" />
-              <item name="Hàm document_write" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Module1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Module1" type="462c0819:PsiDirectoryNode" />
-              <item name="1-Nhập môn lập trình căn bản" type="462c0819:PsiDirectoryNode" />
-              <item name="Phần thực hành" type="462c0819:PsiDirectoryNode" />
-              <item name="Các cách nhúng JavaScript vào trang web_Hiển thị đầu ra" type="462c0819:PsiDirectoryNode" />
-              <item name="Thẻ HTML" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Module1" type="b2602c69:ProjectViewProjectNode" />
@@ -277,11 +265,15 @@
               <item name="caseStudy" type="462c0819:PsiDirectoryNode" />
               <item name="Bài tập 2" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Module1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Module1" type="462c0819:PsiDirectoryNode" />
+              <item name="X-Tham khảo Code" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -316,12 +308,14 @@
       <updated>1578913442710</updated>
       <workItem from="1578913443768" duration="10596000" />
       <workItem from="1579244569252" duration="6896000" />
-      <workItem from="1579252503099" duration="2300000" />
+      <workItem from="1579252503099" duration="2563000" />
+      <workItem from="1579400956724" duration="444000" />
+      <workItem from="1579401526355" duration="4761000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19792000" />
+    <option name="totallyTimeSpent" value="25260000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -412,6 +406,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/5-Mảng/1.html" />
     <entry file="file://$PROJECT_DIR$/5-Mảng/Bài tập/2.html" />
+    <entry file="file://$PROJECT_DIR$/5-Mảng/Bài tập/1.html" />
+    <entry file="file://$PROJECT_DIR$/1-Nhập môn lập trình căn bản/Phần bài giảng/Pseudo-Code_1.html" />
     <entry file="file://$PROJECT_DIR$/3-Cấu trúc điều kiện/Bài tập_X/Luyện tập cấu trúc điều kiện 01_1.html">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -429,10 +425,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/1-Nhập môn lập trình căn bản/Phần thực hành/Các cách nhúng JavaScript vào trang web_Hiển thị đầu ra/Hàm alect/ham_alect.html">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/5-Mảng/Bài tập/Sử dụng các hàm có sẵn của mảng_1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="28" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
+        </state>
+      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/1-Nhập môn lập trình căn bản/Phần thực hành/Các cách nhúng JavaScript vào trang web_Hiển thị đầu ra/X_Bonus/Choose I J_2.html">
+    <entry file="file://$PROJECT_DIR$/1-Nhập môn lập trình căn bản/Phần thực hành/Các cách nhúng JavaScript vào trang web_Hiển thị đầu ra/Hàm alect/ham_alect.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/caseStudy/Bài tập 1/Request1-Tast2.html">
@@ -442,24 +442,67 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/5-Mảng/Bài tập/Sử dụng các hàm có sẵn của mảng_1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="28" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/5-Mảng/Bài tập/Sử dụng các hàm có sẵn của mảng_2.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" selection-end-line="39" selection-end-column="7" />
+        <state relative-caret-position="204">
+          <caret line="15" column="16" lean-forward="true" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/5-Mảng/Bài tập/1.html">
+    <entry file="file://$PROJECT_DIR$/1-Nhập môn lập trình căn bản/1.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="30" lean-forward="true" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
+        <state relative-caret-position="187">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1-Nhập môn lập trình căn bản/Phần thực hành/Các cách nhúng JavaScript vào trang web_Hiển thị đầu ra/X_Bonus/Choose I J_2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="88" lean-forward="true" selection-start-line="11" selection-start-column="57" selection-end-line="11" selection-end-column="88" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1-Nhập môn lập trình căn bản/Phần bài tập/Mô tả thuật toán chuyển đổi tiền tệ/PseudoCode_Mô tả thuật toán chuyển đổi tiền tệ.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1-Nhập môn lập trình căn bản/Phần bài tập/Mô tả thuật toán chuyển đổi tiền tệ/Flowchart_Mô tả thuật toán chuyển đổi tiền tệ.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1-Nhập môn lập trình căn bản/Phần bài tập/Mô tả thuật toán có cấu trúc điều kiện/PseudoCode_Flowchart_Mô tả thuật toán có cấu trúc điều kiện.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1-Nhập môn lập trình căn bản/Phần bài tập/Mô tả thuật toán có cấu trúc điều kiện/Demo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="16" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1-Nhập môn lập trình căn bản/Phần bài tập/Mô tả thuật toán có cấu trúc lặp/19_1_remake.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" selection-start-line="12" selection-end-line="12" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1-Nhập môn lập trình căn bản/Phần bài tập/Mô tả thuật toán có cấu trúc lặp/PseudoCode_Mô tả thuật toán có cấu trúc lặp.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1-Nhập môn lập trình căn bản/Phần bài tập/Mô tả thuật toán có cấu trúc lặp/Flowchart_Mô tả thuật toán có cấu trúc lặp.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1-Nhập môn lập trình căn bản/Phần bài tập/Mô tả thuật toán có cấu trúc điều kiện/Demo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="7" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1-Nhập môn lập trình căn bản/Phần bài tập/Ứng dụng máy tính/Ứng dụng máy tính.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>
