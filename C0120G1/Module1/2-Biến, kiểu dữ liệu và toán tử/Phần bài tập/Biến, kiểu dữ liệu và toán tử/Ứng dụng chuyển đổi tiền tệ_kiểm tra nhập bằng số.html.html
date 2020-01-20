@@ -12,17 +12,22 @@
         var luachon2 = document.getElementById("luachon2").value;
         var ketquadoi = document.getElementById("ketqua");
 
-        if(luachon1 == "VND" && luachon2 == "USD") {
-            ketquadoi.value = nhapsotien / 23000;
+        if  (Number.isNaN(nhapsotien)||Number.isInteger(nhapsotien)) {
+            ketquadoi.value = "Vui long chon tien quy doi";
         } else {
-            if (luachon1 == "USD" && luachon2 == "VND") {
-                ketquadoi.value = nhapsotien * 23000;
+            if (luachon1 == "VND" && luachon2 == "USD") {
+                ketquadoi.value = parseInt(nhapsotien )/ 23000;
             } else {
-                ketquadoi.value = "Vui long chon tien quy doi";
+                if (luachon1 == "USD" && luachon2 == "VND") {
+                    ketquadoi.value = parseInt(nhapsotien) * 23000;
+                } else {
+                    ketquadoi.value = "Vui long chon tien quy doi";
+                }
             }
         }
-
     }
+
+
 </script>
 <form>
     <input text="text"id="nhaptien"value=""/>
