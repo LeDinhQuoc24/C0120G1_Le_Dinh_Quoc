@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body><form>
+    <fieldset style="width: 350px">
+        <legend style="font-size: 35px">Thông tin khách hàng</legend>
+        Tên khách hàng :<input type="text" id="name" style="position:absolute;left:180px"/><br>
+        CMND :<input type="number"  id="idcard" style="position:absolute;left:180px"/><br>
+        Ngày tháng năm sinh:<input type="date" id="birthdayCustomer" style="position:absolute;left:180px"/><br>
+        Địa chỉ email:<input type="text" id="emailCustomer" style="position:absolute;left:180px"/><br>
+        Địa chỉ sinh sống:<input type="text" id="addressCustomer" style="position:absolute;left:180px"/><br>
+        Loại thẻ khách hàng:<input type="text" id="typeCustomer" style="position:absolute;left:180px"/><br>
+        Giảm giá:<input type="number" id="discount" style="position:absolute;left:180px"/><br>
+        Số lượng đi kèm:<input type="number" id="numberofAccompanying" style="position:absolute;left:180px"/><br>
+        Ngày thuê:<input type="number" id="rentDays" style="position:absolute;left:180px"/><br>
+        Loại dịch vụ:<input type="o" id="typeService" style="position:absolute;left:180px"/><br><br><br>
+
+        <button type="button"id="1"onclick="hienthi1()">Hiển thị thông tin đăng ký</button><br>
+        <button type="button"id="2"onclick="hienthi2()">Chỉnh sửa thông tin đăng ký</button><br>
+        <button type="button"id="3"onclick="hienthi3()">Hiển thị số tiền thanh toán</button>
+        <input type="button" id="4" style="position:absolute;left:220px;style=width:200px"value="Tiền Thanh Toán"/>
+    </fieldset>
+
+</form>
+<script>
+    function hienthi1() {
+
+        document.getElementById("name").style.color = "red";
+        document.getElementById("name").type = "button";
+        document.getElementById("idcard").style.color = "red";
+        document.getElementById("idcard").type = "button";
+        document.getElementById("birthdayCustomer").style.color = "red";
+        document.getElementById("birthdayCustomer").type = "button";
+        document.getElementById("emailCustomer").style.color = "red";
+        document.getElementById("emailCustomer").type = "button";
+        document.getElementById("addressCustomer").style.color = "red";
+        document.getElementById("addressCustomer").type = "button";
+        document.getElementById("typeCustomer").style.color = "red";
+        document.getElementById("typeCustomer").type = "button";
+        document.getElementById("discount").style.color = "red";
+        document.getElementById("discount").type = "button";
+        document.getElementById("numberofAccompanying").style.color = "red";
+        document.getElementById("numberofAccompanying").type = "button";
+        document.getElementById("rentDays").style.color = "red";
+        document.getElementById("rentDays").type = "button";
+        document.getElementById("typeService").style.color = "red";
+        document.getElementById("typeService").type = "button";
+        document.getElementById("typeRoom").style.color = "red";
+        document.getElementById("typeRoom").type = "button";
+        document.getElementById("1").style.color = "red";
+        document.getElementById("2").style.color = "black";
+        document.getElementById("3").style.color = "black";
+    }
+        function hienthi2() {
+
+            document.getElementById("name").style.color = "black";
+            document.getElementById("name").type = "text";
+            document.getElementById("idcard").style.color = "black";
+            document.getElementById("idcard").type = "text";
+            document.getElementById("birthdayCustomer").style.color = "black";
+            document.getElementById("birthdayCustomer").type = "text";
+            document.getElementById("emailCustomer").style.color = "black";
+            document.getElementById("emailCustomer").type = "text";
+            document.getElementById("addressCustomer").style.color = "black";
+            document.getElementById("addressCustomer").type = "text";
+            document.getElementById("typeCustomer").style.color = "black";
+            document.getElementById("typeCustomer").type = "text";
+            document.getElementById("discount").style.color = "black";
+            document.getElementById("discount").type = "text";
+            document.getElementById("numberofAccompanying").style.color = "black";
+            document.getElementById("numberofAccompanying").type = "text";
+            document.getElementById("rentDays").style.color = "black";
+            document.getElementById("rentDays").type = "text";
+            document.getElementById("typeService").style.color = "black";
+            document.getElementById("typeService").type = "text";
+            document.getElementById("typeRoom").style.color = "black";
+            document.getElementById("typeRoom").type = "text";
+            document.getElementById("typeRoom").type = "button";
+            document.getElementById("1").style.color = "black";
+            document.getElementById("2").style.color = "red";
+            document.getElementById("3").style.color = "black";
+        }
+
+            function hienthi3() {
+
+                document.getElementById("name").style.color = "red";
+                document.getElementById("name").type = "button";
+                document.getElementById("idcard").style.color = "red";
+                document.getElementById("idcard").type = "button";
+                document.getElementById("birthdayCustomer").style.color = "red";
+                document.getElementById("birthdayCustomer").type = "button";
+                document.getElementById("emailCustomer").style.color = "red";
+                document.getElementById("emailCustomer").type = "button";
+                document.getElementById("addressCustomer").style.color = "red";
+                document.getElementById("addressCustomer").type = "button";
+                document.getElementById("typeCustomer").style.color = "red";
+                document.getElementById("typeCustomer").type = "button";
+                document.getElementById("discount").style.color = "red";
+                document.getElementById("discount").type = "button";
+                document.getElementById("numberofAccompanying").style.color = "red";
+                document.getElementById("numberofAccompanying").type = "button";
+                document.getElementById("rentDays").style.color = "red";
+                document.getElementById("rentDays").type = "button";
+                document.getElementById("typeService").style.color = "red";
+                document.getElementById("typeService").type = "button";
+                document.getElementById("typeRoom").style.color = "red";
+                document.getElementById("typeRoom").type = "button";
+                document.getElementById("1").style.color = "black";
+                document.getElementById("2").style.color = "black";
+                document.getElementById("3").style.color = "red";
+                let typeService=document.getElementById('typeService').value;
+                let addressCustomer=document.getElementById('addressCustomer').value;
+                let   typeCustomer=document.getElementById('  typeCustomer').value;
+                let   rentDays=document.getElementById('rentDays').value;
+                let   discount=document.getElementById('discount').value;
+
+                let priceservice;
+
+
+                //Tinh Payments(gia dich vu)
+                //Tinh gia loai dich vu
+                if (typeService === 'Villa') {
+                    priceservice = 500;
+                } else if (typeofservice === 'House') {
+                    priceservice = 300;
+                } else if (typeofservice === 'Room') {
+                    priceservice = 100;
+                } else {
+                    priceservice = 50;
+                }
+                //Giam gia khach hang
+                //Giam gia theo dia chi
+                let saleaddress;
+                if(addressCustomer=="Da Nang"){
+                    saleaddress=20;
+                }else if(addressCustomer=='Hue'){
+                    saleaddress=10;
+                }else if(addressCustomer=="Quang Nam"){
+                    saleaddress=5;
+                }else {
+                    saleaddress=0;
+                }
+                //Giam gia theo loai the khach hang
+                let saletypeCustomer;
+                switch ( typeCustomer) {
+                    case('Diamond'):
+                        saletypeCustomer=15;
+                        break;
+                    case('Platium'):
+                        saletypeCustomer=10;
+                        break;
+                    case('Gold'):
+                        saletypeCustomer=5;
+                        break;
+                    case('Silver'):
+                        saletypeCustomer=2;
+                        break;
+                    case('Member'):
+                    default:
+                        saletypeCustomer=0;
+                        break;
+                }
+                //Giam gia theo do tuoi
+                let currentYear=new Date().getFullYear();
+                let birthday=new Date(birthdayCustomer).getFullYear();
+                let ageCustomer;
+                ageCustomer=currentYear-birthday;
+
+                let saleageCustomer;
+                if((ageCustomer>30) && (addressCustomer=="Da Nang")){
+                    saleageCustomer=2;
+                }else if((ageCustomer<=30) && (ageCustomer>20) && (addressCustomer=="Da Nang")){
+                    saleageCustomer=1;
+                }else{
+                    saleageCustomer=0;
+                }
+
+                let payments =  priceservice * rentDays * (1 - discount / 100)-(saleaddress+saletypeCustomer+saleageCustomer);
+                document.getElementById("4").value=1;
+            }
+</script>
+
+</body>
+</html>
