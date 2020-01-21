@@ -4,183 +4,234 @@
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
-<body><form>
-    <fieldset style="width: 350px">
-        <legend style="font-size: 35px">Thông tin khách hàng</legend>
-        Tên khách hàng :<input type="text" id="name" style="position:absolute;left:180px"/><br>
-        CMND :<input type="number"  id="idcard" style="position:absolute;left:180px"/><br>
-        Ngày tháng năm sinh:<input type="date" id="birthdayCustomer" style="position:absolute;left:180px"/><br>
-        Địa chỉ email:<input type="text" id="emailCustomer" style="position:absolute;left:180px"/><br>
-        Địa chỉ sinh sống:<input type="text" id="addressCustomer" style="position:absolute;left:180px"/><br>
-        Loại thẻ khách hàng:<input type="text" id="typeCustomer" style="position:absolute;left:180px"/><br>
-        Giảm giá:<input type="number" id="discount" style="position:absolute;left:180px"/><br>
-        Số lượng đi kèm:<input type="number" id="numberofAccompanying" style="position:absolute;left:180px"/><br>
-        Ngày thuê:<input type="number" id="rentDays" style="position:absolute;left:180px"/><br>
-        Loại dịch vụ:<input type="o" id="typeService" style="position:absolute;left:180px"/><br><br><br>
+<body>
 
-        <button type="button"id="1"onclick="hienthi1()">Hiển thị thông tin đăng ký</button><br>
-        <button type="button"id="2"onclick="hienthi2()">Chỉnh sửa thông tin đăng ký</button><br>
-        <button type="button"id="3"onclick="hienthi3()">Hiển thị số tiền thanh toán</button>
-        <input type="button" id="4" style="position:absolute;left:220px;style=width:200px"value="Tiền Thanh Toán"/>
+<form>
+    <fieldset style="width: 350px;">
+        <legend>Thông tin khách hàng</legend>
+        name              :<input type="text" id="name"value="" style="position: absolute;left:150px;"/><br>
+        identitycard      :<input type="text" id="identitycard" value=""style="position: absolute;left:150px;"/><br>
+        dateofbirth       :<input type="text" id="dateofbirth" value=""style="position: absolute;left:150px;"/><br>
+        emailaddress      :<input type="text" id="emailaddress" value=""style="position: absolute;left:150px;"/><br>
+        address           :<input type="text" id="address" value=""style="position: absolute;left:150px;"/><br>
+        sex               :<input type="text" id="sex" value=""style="position: absolute;left:150px;"/><br>
+        customercard      :<input type="text" id="customercard" value=""style="position: absolute;left:150px;"/><br>
+        rentDays          :<input type="text" id="rentDays" value=""style="position: absolute;left:150px;"/><br>
+        numberofpeople    :<input type="text" id="numberofpeople" value=""style="position: absolute;left:150px;"/><br>
+        typeofservice     :<input type="text" id="typeofservice" value=""style="position: absolute;left:150px;"/><br>
+        numberRoom        :<input type="text" id="numberRoom" value=""style="position: absolute;left:150px;"/><br>
+        salecode      :<input type="text" id="discountcode" value=""style="position: absolute;left:150px;"/><br>
+
     </fieldset>
-
 </form>
+
+<button type="button" onclick="hienthi2()">Xác nhận thông tin.</button>
 <script>
-    function hienthi1() {
+    let name;
+    let identitycard;
+    let dateofbirth;
+    let emailaddress;
+    let address;
+    let sex;
+    let customercard;
+    let rentDays;
+    let numberofpeople;
+    let typeofservice;
+    let numberRoom;
+    let salecode;
 
-        document.getElementById("name").style.color = "red";
-        document.getElementById("name").type = "button";
-        document.getElementById("idcard").style.color = "red";
-        document.getElementById("idcard").type = "button";
-        document.getElementById("birthdayCustomer").style.color = "red";
-        document.getElementById("birthdayCustomer").type = "button";
-        document.getElementById("emailCustomer").style.color = "red";
-        document.getElementById("emailCustomer").type = "button";
-        document.getElementById("addressCustomer").style.color = "red";
-        document.getElementById("addressCustomer").type = "button";
-        document.getElementById("typeCustomer").style.color = "red";
-        document.getElementById("typeCustomer").type = "button";
-        document.getElementById("discount").style.color = "red";
-        document.getElementById("discount").type = "button";
-        document.getElementById("numberofAccompanying").style.color = "red";
-        document.getElementById("numberofAccompanying").type = "button";
-        document.getElementById("rentDays").style.color = "red";
-        document.getElementById("rentDays").type = "button";
-        document.getElementById("typeService").style.color = "red";
-        document.getElementById("typeService").type = "button";
-        document.getElementById("typeRoom").style.color = "red";
-        document.getElementById("typeRoom").type = "button";
-        document.getElementById("1").style.color = "red";
-        document.getElementById("2").style.color = "black";
-        document.getElementById("3").style.color = "black";
+    function hienthi2() {
+        name=document.getElementById('name').value;
+        identitycard=document.getElementById('identitycard').value;
+        dateofbirth=document.getElementById('dateofbirth').value;
+        emailaddress=document.getElementById('emailaddress').value;
+        address=document.getElementById('address').value;
+        sex=document.getElementById('sex').value;
+        customercard=document.getElementById('customercard').value;
+        rentDays=document.getElementById('rentDays').value;
+        numberofpeople=document.getElementById('numberofpeople').value;
+        typeofservice=document.getElementById('typeofservice').value;
+        numberRoom=document.getElementById('numberRoom').value;
+        salecode=document.getElementById('discountcode').value;
+        hienthi1();
     }
-        function hienthi2() {
 
-            document.getElementById("name").style.color = "black";
-            document.getElementById("name").type = "text";
-            document.getElementById("idcard").style.color = "black";
-            document.getElementById("idcard").type = "text";
-            document.getElementById("birthdayCustomer").style.color = "black";
-            document.getElementById("birthdayCustomer").type = "text";
-            document.getElementById("emailCustomer").style.color = "black";
-            document.getElementById("emailCustomer").type = "text";
-            document.getElementById("addressCustomer").style.color = "black";
-            document.getElementById("addressCustomer").type = "text";
-            document.getElementById("typeCustomer").style.color = "black";
-            document.getElementById("typeCustomer").type = "text";
-            document.getElementById("discount").style.color = "black";
-            document.getElementById("discount").type = "text";
-            document.getElementById("numberofAccompanying").style.color = "black";
-            document.getElementById("numberofAccompanying").type = "text";
-            document.getElementById("rentDays").style.color = "black";
-            document.getElementById("rentDays").type = "text";
-            document.getElementById("typeService").style.color = "black";
-            document.getElementById("typeService").type = "text";
-            document.getElementById("typeRoom").style.color = "black";
-            document.getElementById("typeRoom").type = "text";
-            document.getElementById("typeRoom").type = "button";
-            document.getElementById("1").style.color = "black";
-            document.getElementById("2").style.color = "red";
-            document.getElementById("3").style.color = "black";
-        }
+    function  hienthi1() {
 
-            function hienthi3() {
-
-                document.getElementById("name").style.color = "red";
-                document.getElementById("name").type = "button";
-                document.getElementById("idcard").style.color = "red";
-                document.getElementById("idcard").type = "button";
-                document.getElementById("birthdayCustomer").style.color = "red";
-                document.getElementById("birthdayCustomer").type = "button";
-                document.getElementById("emailCustomer").style.color = "red";
-                document.getElementById("emailCustomer").type = "button";
-                document.getElementById("addressCustomer").style.color = "red";
-                document.getElementById("addressCustomer").type = "button";
-                document.getElementById("typeCustomer").style.color = "red";
-                document.getElementById("typeCustomer").type = "button";
-                document.getElementById("discount").style.color = "red";
-                document.getElementById("discount").type = "button";
-                document.getElementById("numberofAccompanying").style.color = "red";
-                document.getElementById("numberofAccompanying").type = "button";
-                document.getElementById("rentDays").style.color = "red";
-                document.getElementById("rentDays").type = "button";
-                document.getElementById("typeService").style.color = "red";
-                document.getElementById("typeService").type = "button";
-                document.getElementById("typeRoom").style.color = "red";
-                document.getElementById("typeRoom").type = "button";
-                document.getElementById("1").style.color = "black";
-                document.getElementById("2").style.color = "black";
-                document.getElementById("3").style.color = "red";
-                let typeService=document.getElementById('typeService').value;
-                let addressCustomer=document.getElementById('addressCustomer').value;
-                let   typeCustomer=document.getElementById('  typeCustomer').value;
-                let   rentDays=document.getElementById('rentDays').value;
-                let   discount=document.getElementById('discount').value;
-
-                let priceservice;
+        let choose = prompt(
+            "1.Hiển thị thông tin đăng ký.\n" +
+            "2.Chỉnh sửa thông tin đăng ký.\n" +
+            "3.Hiển thị số tiền thanh toán.\n"
+        );
 
 
+        switch (choose) {
+            case '1':
+                alert(
+                    "Thông tin khách hàng \n" +
+                    "Tên khách hàng: " + name +
+                    "\nSố CMND: " + identitycard +
+                    "\nNgày tháng năm sinh: " + dateofbirth +
+                    "\nĐịa chỉ Email: " + emailaddress +
+                    "\nĐịa chỉ nhà: " + address +
+                    "\nGiới tính: " + sex +
+                    "\nThẻ khách hàng: " + customercard +
+                    "\nSố ngày thuê: " + rentDays +
+                    "\nSố người kèm theo: " + numberofpeople +
+                    "\nLoại dịch vụ: " + typeofservice +
+                    "\nSố phòng thuê: " + numberRoom +
+                    "\nMã giảm giá: " + salecode
+                );
+                hienthi1();
+                break;
+            case '2':
+                let suathongtin = prompt(
+                    'Chọn thông tin bạn muốn thay đổi:\n' +
+                    "1.Tên khách hàng: " + name +
+                    "\n2.Số CMND: " + identitycard +
+                    "\n3.Ngày tháng năm sinh: " + dateofbirth +
+                    "\n4.Địa chỉ Email: " + emailaddress +
+                    "\n5.Địa chỉ nhà: " + address +
+                    "\n6.Giới tính: " + sex +
+                    "\n7.Thẻ khách hàng: " + customercard +
+                    "\n8.Số ngày thuê: " + rentDays +
+                    "\n9.Số người kèm theo: " + numberofpeople+
+                    "\n10.Loại dịch vụ: " + typeofservice +
+                    "\n11.Số phòng thuê: " + numberRoom +
+                    "\n12.Mã giảm giá: " + salecode
+                );
+
+                switch (suathongtin) {
+                    case '1':
+                        name = prompt('Chọn tên muốn thay đổi');
+                        break;
+                    case '2':
+                        identitycard = prompt('Chọn CMND muốn thay đổi');
+                        break;
+                    case '3':
+                        dateofbirth = prompt('Chọn ngày tháng năm sinh muốn thay đổi');
+                        break;
+                    case '4':
+                        emailaddress = prompt('Chọn địa chỉ email muốn thay đổi');
+                        break;
+                    case '5':
+                        address = prompt('Chọn địa chỉ sinh sống muốn thay đổi');
+                        break;
+                    case '6':
+                        sex = prompt('Chọn giới tính muốn thay đổi');
+                        break;
+                    case '7':
+                        customercard = prompt('Chọn loại thẻ khách hàng muốn thay đổi');
+                        break;
+                    case '8':
+                        rentDays = prompt('Chọn số ngày thuê muốn thay đổi');
+                        break;
+                    case '9':
+                        numberofpeople = prompt('Chọn số lượng người đi kèm muốn thay đổi');
+                        break;
+                    case '10':
+                        typeofservice = prompt('Chọn loại dịch vụ:Villa,House,Room muốn thay đổi');
+                        break;
+                    case '11':
+                        numberRoom = prompt('Chọn số phòng thuê muốn thay đổi');
+                        break;
+                    case '12':
+                        salecode = prompt('Chọn mã giảm giá:x muốn thay đổi');
+                        break;
+                    default:
+                        alert('Nhập sai thông tin');
+                }
+                alert("Thông tin khách hàng:" +
+                    "\nTên khách hàng: " + name +
+                    "\nChứng minh nhân dân:" + identitycard +
+                    "\nNgày tháng năm sinh: " + dateofbirth +
+                    "\nĐịa chỉ emailemailaddress: " + emailaddress +
+                    "\nĐịa chỉ khách hàng: " + address +
+                    "\nGiới tính khách hàng: " + sex +
+                    "\nLoại thẻ của khách hàng: " + customercard +
+                    "\nSố ngày thuê phòng: " + rentDays +
+                    "\nSố người kèm theo: " + numberofpeople +
+                    "\nLoại dịch vụ(Villa,House,Room): " + typeofservice +
+                    "\nSố phòng đăng ký thuê: " + numberRoom +
+                    "\nMã giảm giá: " + salecode
+                );
+                hienthi1();
+                break;
+            case '3':
                 //Tinh Payments(gia dich vu)
-                //Tinh gia loai dich vu
-                if (typeService === 'Villa') {
-                    priceservice = 500;
+                //Tinh gia loai dichvu
+
+                if (typeofservice === 'Villa') {
+                    serviceprices = 500;
                 } else if (typeofservice === 'House') {
-                    priceservice = 300;
+                    serviceprices = 300;
                 } else if (typeofservice === 'Room') {
-                    priceservice = 100;
+                    serviceprices = 100;
                 } else {
-                    priceservice = 50;
+                    serviceprices = 50;
                 }
                 //Giam gia khach hang
                 //Giam gia theo dia chi
                 let saleaddress;
-                if(addressCustomer=="Da Nang"){
+                if(address==="Da Nang"){
                     saleaddress=20;
-                }else if(addressCustomer=='Hue'){
+                }else if(address==='Hue'){
                     saleaddress=10;
-                }else if(addressCustomer=="Quang Nam"){
+                }else if(address==="Quang Nam"){
                     saleaddress=5;
                 }else {
                     saleaddress=0;
                 }
                 //Giam gia theo loai the khach hang
-                let saletypeCustomer;
-                switch ( typeCustomer) {
+                let salecustomercard;
+                switch (customercard) {
                     case('Diamond'):
-                        saletypeCustomer=15;
+                        salecustomercard=15;
                         break;
                     case('Platium'):
-                        saletypeCustomer=10;
+                        salecustomercard=10;
                         break;
                     case('Gold'):
-                        saletypeCustomer=5;
+                        salecustomercard=5;
                         break;
                     case('Silver'):
-                        saletypeCustomer=2;
+                        salecustomercard=2;
                         break;
                     case('Member'):
                     default:
-                        saletypeCustomer=0;
+                        salecustomercard=0;
                         break;
+
                 }
                 //Giam gia theo do tuoi
                 let currentYear=new Date().getFullYear();
-                let birthday=new Date(birthdayCustomer).getFullYear();
+                let birthday=new Date(dateofbirth).getFullYear();
                 let ageCustomer;
                 ageCustomer=currentYear-birthday;
 
                 let saleageCustomer;
-                if((ageCustomer>30) && (addressCustomer=="Da Nang")){
+                if((ageCustomer>30) && (address=="Da Nang")){
                     saleageCustomer=2;
-                }else if((ageCustomer<=30) && (ageCustomer>20) && (addressCustomer=="Da Nang")){
+                }else if((ageCustomer<=30) && (ageCustomer>20) && (address=="Da Nang")){
                     saleageCustomer=1;
                 }else{
                     saleageCustomer=0;
                 }
 
-                let payments =  priceservice * rentDays * (1 - discount / 100)-(saleaddress+saletypeCustomer+saleageCustomer);
-                document.getElementById("4").value=1;
-            }
+                let payments = serviceprices * rentDays * (1 - salecode / 100)-(saleaddress+salecustomercard+saleageCustomer);
+
+                alert("Tổng số tiền quý khách thanh toán: \n"+
+                    payments
+                );
+                hienthi1();
+
+        }
+    }
+
+
+
+
+
 </script>
 
 </body>
