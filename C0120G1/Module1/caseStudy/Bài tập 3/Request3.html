@@ -5,7 +5,7 @@
     <title>Title</title>
 </head>
 <body>
-<h2  style='position:relative;left: 530px;top:120px;'>Thông tin khách hàng</h2>
+<h2  style='position:relative;left: 560px;top:70px;'>Thông tin khách hàng</h2>
 <table border='1' cellspacing='1' cellpadding='1' style='position:relative;left: 500px;top:60px;'>
 
     <tr >
@@ -29,7 +29,7 @@
         <td style="width:120px"><input type="text" id="addressCustomer"></td>
     </tr>
     <tr >
-        <td style="width:120px""> Thẻ khách hàng </td>
+        <td style="width:120px"> Thẻ khách hàng </td>
         <td style="width:120px"><select style="width: 173px"id="typeCustomer"><option value="Diamond">Diamond</option>
             <option value="Platinum">Platinum</option>
             <option value="Gold">Gold</option>
@@ -50,14 +50,23 @@
     </tr>
     <tr >
         <td style="width:120px"> Loại dịch vụ </td>
-        <td style="width:120px"><select style="width: 173px" id="typeService"><option value="Villa">Villa</option>
+        <td style="width:120px"><select style="width: 173px"id="typeService"><option value="Villa">Villa</option>
             <option value="House">House</option>
             <option value="Room">Room</option></select></td>
     </tr>
 
-    <button type="button"id="1"onclick="hienthi1()"style='position:relative;left: 530px;top:430px;'>Hiển thị thông tin đăng ký</button><br>
-    <button type="button"id="2"onclick="hienthi2()"style='position:relative;left: 530px;top:430px;'>Chỉnh sửa thông tin đăng ký</button><br>
-    <button type="button"id="3"onclick="hienthi3()"style='position:relative;left: 530px;top:430px;'>Hiển thị số tiền thanh toán</button>
+    <tr>
+        <td colspan="2"> <button type="button"id="1" onclick="hienthi1()"style="width: 350px"
+        >Hiển thị thông tin đăng ký</button> </td>
+    </tr>
+    <tr >
+        <td colspan="2"> <button type="button"id="2"onclick="hienthi2()"style="width: 350px"
+        >Chỉnh sửa thông tin đăng ký</button> </td>
+    </tr>
+    <tr >
+        <td colspan="2"><input type="button" id="3" value="Tiền thanh toán"onclick="hienthi3()" style="width: 350px"/></td>
+    </tr>
+
 </table>
 <script>
     function hienthi1() {
@@ -82,11 +91,10 @@
         document.getElementById("rentDays").disabled = "disabled";
         document.getElementById("typeService").style.color = "red";
         document.getElementById("typeService").disabled = "disabled";
-        document.getElementById("typeRoom").style.color = "red";
-        document.getElementById("typeRoom").disabled = "disabled";
         document.getElementById("1").style.color = "red";
         document.getElementById("2").style.color = "black";
         document.getElementById("3").style.color = "black";
+        document.getElementById("3").value="Tiền thanh toán";
     }
     function hienthi2() {
 
@@ -110,11 +118,10 @@
         document.getElementById("rentDays").disabled = "";
         document.getElementById("typeService").style.color = "black";
         document.getElementById("typeService").disabled =  "";
-        document.getElementById("typeRoom").style.color = "black";
-        document.getElementById("typeRoom").disabled =  "";
         document.getElementById("1").style.color = "black";
         document.getElementById("2").style.color = "red";
         document.getElementById("3").style.color = "black";
+        document.getElementById("3").value="Tiền thanh toán";
     }
 
     function hienthi3() {
@@ -139,31 +146,31 @@
         document.getElementById("rentDays").disabled = "disabled";
         document.getElementById("typeService").style.color = "red";
         document.getElementById("typeService").disabled = "disabled";
-        document.getElementById("typeRoom").style.color = "red";
-        document.getElementById("typeRoom").disabled = "disabled";
         document.getElementById("1").style.color = "black";
         document.getElementById("2").style.color = "black";
         document.getElementById("3").style.color = "red";
+
         let typeService=document.getElementById('typeService').value;
         let addressCustomer=document.getElementById('addressCustomer').value;
-        let   typeCustomer=document.getElementById('  typeCustomer').value;
-        let   rentDays=document.getElementById('rentDays').value;
-        let   discount=document.getElementById('discount').value;
+        let typeCustomer=document.getElementById('typeCustomer').value;
+        let rentDays=document.getElementById('rentDays').value;
+        let discount=document.getElementById('discount').value;
+
 
         let priceservice;
 
-
-        //Tinh Payments(gia dich vu)
-        //Tinh gia loai dich vu
         if (typeService === 'Villa') {
             priceservice = 500;
-        } else if (typeofservice === 'House') {
+        } else if (typeService === 'House') {
             priceservice = 300;
-        } else if (typeofservice === 'Room') {
+        } else if (typeService === 'Room') {
             priceservice = 100;
         } else {
             priceservice = 50;
         }
+
+
+
         //Giam gia khach hang
         //Giam gia theo dia chi
         let saleaddress;
@@ -176,6 +183,7 @@
         }else {
             saleaddress=0;
         }
+
         //Giam gia theo loai the khach hang
         let saletypeCustomer;
         switch ( typeCustomer) {
@@ -212,7 +220,10 @@
         }
 
         let payments =  priceservice * rentDays * (1 - discount / 100)-(saleaddress+saletypeCustomer+saleageCustomer);
-        document.getElementById("4").value=1;
+      document.getElementById("3").value=payments;
+
+
+
     }
 </script>
 </body>
