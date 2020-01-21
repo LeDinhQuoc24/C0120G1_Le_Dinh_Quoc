@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //Khai báo giá trị
+
+
+
+
+    let address;
+    let sex;
+    let customercard;
+
+    let numberofpeople;
+    let typeofservice;
+    let numberRoom;
+
+    let payments;
+    let serviceprices;
+    //Hàm prompt để nhập giá trị
+    //Xét tính hợp lệ của tên Khách hàng
+    let name;
+    name=prompt('Chọn tên');
+    //Xét tính hợp lệ của chứng minh nhân dân
+    let identitycard;
+    let checkidentitycard=true;
+    while(checkidentitycard){
+        identitycard=prompt('Chọn CMND');
+     if(!isNaN(identitycard)){
+         identitycard=Number.parseFloat(identitycard);
+         if(Number.isInteger(identitycard)){
+            if(Number.parseFloat(identitycard)>100000000&&Number.parseFloat(identitycard)<999999999){
+                checkidentitycard=false;
+                alert("Nhập thành công");
+            }else{
+                alert("Nhập đúng giá trị số CMND");
+            }
+         }else{
+             alert("Nhập số CMND là 1 số nguyên");
+         }
+     }else{
+         alert("Nhập số CMND là chữ số")
+     }
+    }
+
+    //Xét tính hợp lệ ngày tháng năm sinh:
+    let checkbirthday=true;
+    let birthdayCustomer;
+    while(checkbirthday){
+
+        birthdayCustomer=prompt('Chọn ngày tháng năm sinh:dd/MM/YYYY');
+        if(birthdayCustomer.charAt(2)!=="/"||birthdayCustomer.charAt(5)!=="/"){
+            alert("Chọn ngày,tháng có 2 chữ số");
+            continue;
+        }
+        let day=birthdayCustomer.substring(0,2);
+        let month=birthdayCustomer.substring(3,5);
+        let year=birthdayCustomer.substring(6,10);
+        if(!isNaN(day)&&!isNaN(month)&&!isNaN(year)){
+            day=Number.parseFloat(day);
+            month=Number.parseFloat(month);
+            year=Number.parseFloat(year);
+            if(Number.isInteger(day)&&Number.isInteger(month)&&Number.isInteger(year)){
+                if(day>0&& day<32&&month>0&&month<13&&year>1960&&year<=2020){
+                    checkbirthday=false;
+                    alert("Nhập thành công");
+
+                }else{
+                    alert("Nhập ngày tháng năm đúng giá trị");
+                }
+            }else{
+                alert("Nhập ngày tháng năm là 1 số nguyên");
+            }
+
+        }else{
+            alert("Nhập ngày tháng năm là 1 số");
+        }
+    }
+
+    //Xét tính hợp lệ Email nhập:
+    let checkemail=true;
+    let emailaddress;
+    while(checkemail){
+        checkemail=false;
+        emailaddress=prompt('Chọn địa chỉ email');
+        let countDoc = 0;
+        let countAt = 0;
+        let i;
+        for(i=0;i< emailaddress.length;i++){
+            if(emailaddress.charAt(i)==="."){
+                countDoc++;
+            }
+            if(emailaddress.charAt(i)==="@"){
+                countAt++;
+            }
+        }
+        if (countDoc < 1 || countAt !== 1) {
+            checkemail = true;
+            alert("Vui lòng nhập lại địa chỉ Email");
+        }
+    }
+    address=prompt('Chọn địa chỉ sinh sống');
+    sex=prompt('Chọn giới tính');
+    customercard=prompt('Chọn loại thẻ khách hàng');
+    rentDays=prompt('Chọn số ngày thuê');
+    //So sanh
+    let rentDays;
+    if (Number.isNaN(parseInt(rentDays))) {
+        //hoặc dùng lệnh if(isNaN(rentDays)){
+        rentDays = 1;
+    }
+    //Kiểm tra tính hợp lệ Mã giảm giá
+    let salecode;
+    salecode=prompt('Chọn mã giảm giá:x');
+
+    numberofpeople=prompt('Chọn số lượng người đi kèm ');
+    typeofservice=prompt('Chọn loại dịch vụ:Villa,House,Room');
+    numberRoom=prompt('Chọn số phòng thuê');
+
+    hienthi1();
+
+    function  hienthi1() {
+        let choose = prompt(
+            "1.Hiển thị thông tin đăng ký.\n" +
+            "2.Chỉnh sửa thông tin đăng ký.\n" +
+            "3.Hiển thị số tiền thanh toán.\n"
+        );
+
+
+        switch (choose) {
+            case '1':
+                alert(
+                    "Thông tin khách hàng \n" +
+                    "Tên khách hàng: " + name +
+                    "\nSố CMND: " + identitycard +
+                    "\nNgày tháng năm sinh: " + birthdayCustomer +
+                    "\nĐịa chỉ Email: " + emailaddress +
+                    "\nĐịa chỉ nhà: " + address +
+                    "\nGiới tính: " + sex +
+                    "\nThẻ khách hàng: " + customercard +
+                    "\nSố ngày thuê: " + rentDays +
+                    "\nSố người kèm theo: " + numberofpeople +
+                    "\nLoại dịch vụ: " + typeofservice +
+                    "\nSố phòng thuê: " + numberRoom +
+                    "\nMã giảm giá: " + salecode
+                );
+                hienthi1();
+                break;
+            case '2':
+                let suathongtin = prompt(
+                    'Chọn thông tin bạn muốn thay đổi:\n' +
+                    "1.Tên khách hàng: " + name +
+                    "\n2.Số CMND: " + identitycard +
+                    "\n3.Ngày tháng năm sinh: " + birthdayCustomer +
+                    "\n4.Địa chỉ Email: " + emailaddress +
+                    "\n5.Địa chỉ nhà: " + address +
+                    "\n6.Giới tính: " + sex +
+                    "\n7.Thẻ khách hàng: " + customercard +
+                    "\n8.Số ngày thuê: " + rentDays +
+                    "\n9.Số người kèm theo: " + numberofpeople +
+                    "\n10.Loại dịch vụ: " + typeofservice +
+                    "\n11.Số phòng thuê: " + numberRoom +
+                    "\n12.Mã giảm giá: " + salecode
+                );
+
+                switch (suathongtin) {
+                    case '1':
+                        name = prompt('Chọn tên muốn thay đổi');
+                        break;
+                    case '2':
+                        identitycard = prompt('Chọn CMND muốn thay đổi');
+                        break;
+                    case '3':
+                        dateofbirth = prompt('Chọn ngày tháng năm sinh muốn thay đổi');
+                        break;
+                    case '4':
+                        emailaddress = prompt('Chọn địa chỉ email muốn thay đổi');
+                        break;
+                    case '5':
+                        address = prompt('Chọn địa chỉ sinh sống muốn thay đổi');
+                        break;
+                    case '6':
+                        sex = prompt('Chọn giới tính muốn thay đổi');
+                        break;
+                    case '7':
+                        customercard = prompt('Chọn loại thẻ khách hàng muốn thay đổi');
+                        break;
+                    case '8':
+                        rentDays = prompt('Chọn số ngày thuê muốn thay đổi');
+                        break;
+                    case '9':
+                        numberofpeople = prompt('Chọn số lượng người đi kèm muốn thay đổi');
+                        break;
+                    case '10':
+                        typeofservice = prompt('Chọn loại dịch vụ:Villa,House,Room muốn thay đổi');
+                        break;
+                    case '11':
+                        numberRoom = prompt('Chọn số phòng thuê muốn thay đổi');
+                        break;
+                    case '12':
+                        salecode = prompt('Chọn mã giảm giá:x muốn thay đổi');
+                        break;
+                    default:
+                        alert('Nhập sai thông tin');
+                }
+                alert("Thông tin khách hàng:" +
+                    "\nTên khách hàng: " + name +
+                    "\nChứng minh nhân dân:" + identitycard +
+                    "\nNgày tháng năm sinh: " + birthdayCustomer+
+                    "\nĐịa chỉ emailemailaddress: " + emailaddress +
+                    "\nĐịa chỉ khách hàng: " + address +
+                    "\nGiới tính khách hàng: " + sex +
+                    "\nLoại thẻ của khách hàng: " + customercard +
+                    "\nSố ngày thuê phòng: " + rentDays +
+                    "\nSố người kèm theo: " + numberofpeople +
+                    "\nLoại dịch vụ(Villa,House,Room): " + typeofservice +
+                    "\nSố phòng đăng ký thuê: " + numberRoom +
+                    "\nMã giảm giá: " + salecode
+                );
+                hienthi1();
+                break;
+            case '3':
+
+                //Tinh Payments(gia dich vu)
+                //Tinh gia loai dichvu
+
+                if (typeofservice === 'Villa') {
+                    serviceprices = 500;
+                } else if (typeofservice === 'House') {
+                    serviceprices = 300;
+                } else if (typeofservice === 'Room') {
+                    serviceprices = 100;
+                } else {
+                    serviceprices = 50;
+                }
+                //Giam gia khach hang
+                //Giam gia theo dia chi
+                let saleaddress;
+                if (address === "Da Nang") {
+                    saleaddress = 20;
+                } else if (address === 'Hue') {
+                    saleaddress = 10;
+                } else if (address === "Quang Nam") {
+                    saleaddress = 5;
+                } else {
+                    saleaddress = 0;
+                }
+                //Giam gia theo loai the khach hang
+                let salecustomercard;
+                switch (customercard) {
+                    case('Diamond'):
+                        salecustomercard = 15;
+                        break;
+                    case('Platium'):
+                        salecustomercard = 10;
+                        break;
+                    case('Gold'):
+                        salecustomercard = 5;
+                        break;
+                    case('Silver'):
+                        salecustomercard = 2;
+                        break;
+                    case('Member'):
+                    default:
+                        salecustomercard = 0;
+                        break;
+
+                }
+                //Giam gia theo do tuoi
+                let currentYear = new Date().getFullYear();
+                let birthday = new Date(birthdayCustomer).getFullYear();
+                let ageCustomer;
+                ageCustomer = currentYear - birthday;
+
+                let saleageCustomer;
+                if ((ageCustomer > 30) && (address == "Da Nang")) {
+                    saleageCustomer = 2;
+                } else if ((ageCustomer <= 30) && (ageCustomer > 20) && (address == "Da Nang")) {
+                    saleageCustomer = 1;
+                } else {
+                    saleageCustomer = 0;
+                }
+
+                let payments = serviceprices * rentDays * (1 - salecode / 100) - (saleaddress + salecustomercard + saleageCustomer);
+
+                alert("Tổng số tiền quý khách thanh toán: \n" + payments);
+                hienthi1();
+        }
+
+
+
+    }
+
+
+</script>
+
+</body>
+</html>
