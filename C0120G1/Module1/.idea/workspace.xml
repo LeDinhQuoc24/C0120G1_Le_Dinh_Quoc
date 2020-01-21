@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="df88910e-952b-405f-86a4-e4df73b81871" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/caseStudy/Bài tập 3/Request3.html" beforeDir="false" afterPath="$PROJECT_DIR$/caseStudy/Bài tập 3/Request3.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -32,17 +31,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/caseStudy/Bài tập 2/Request2.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="24">
+            <state relative-caret-position="2625">
               <caret line="193" column="63" selection-start-line="193" selection-start-column="62" selection-end-line="193" selection-end-column="63" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/caseStudy/Bài tập 3/Request3.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-220">
-              <caret line="152" column="34" selection-start-line="152" selection-start-column="24" selection-end-line="152" selection-end-column="34" />
+            <state relative-caret-position="-886">
+              <caret line="259" column="66" selection-start-line="259" selection-start-column="66" selection-end-line="259" selection-end-column="66" />
               <folding>
                 <element signature="e#2732#4415#0" />
                 <element signature="e#2771#2868#0" />
@@ -52,7 +51,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/caseStudy/Bài tập 3/Request3_ver2.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="330">
@@ -356,12 +355,12 @@
       <workItem from="1579401526355" duration="23596000" />
       <workItem from="1579493831251" duration="7413000" />
       <workItem from="1579510798551" duration="17681000" />
-      <workItem from="1579570616546" duration="24689000" />
+      <workItem from="1579570616546" duration="26422000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="93878000" />
+    <option name="totallyTimeSpent" value="95611000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -661,24 +660,6 @@
     <entry file="file://$PROJECT_DIR$/4-Cấu trúc lặp/Bài luyện tập_X/Luyện tập vòng lặp 06.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/caseStudy/Bài tập 2/Request2_ver2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="58" column="2" selection-start-line="58" selection-start-column="2" selection-end-line="58" selection-end-column="26" />
-          <folding>
-            <element signature="n#style#0;n#fieldset#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#0;n#fieldset#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/caseStudy/Bài tập 2/Request2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="193" column="63" selection-start-line="193" selection-start-column="62" selection-end-line="193" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/caseStudy/Bài tập 3/1_2.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -690,13 +671,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="493">
           <caret line="29" column="9" selection-start-line="29" selection-start-column="9" selection-end-line="29" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/caseStudy/Bài tập 3/Request3_ver2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="88" column="33" lean-forward="true" selection-start-line="88" selection-start-column="33" selection-end-line="88" selection-end-column="53" />
         </state>
       </provider>
     </entry>
@@ -712,15 +686,40 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/caseStudy/Bài tập 2/Request2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2625">
+          <caret line="193" column="63" selection-start-line="193" selection-start-column="62" selection-end-line="193" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/caseStudy/Bài tập 2/Request2_ver2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="58" column="2" selection-start-line="58" selection-start-column="2" selection-end-line="58" selection-end-column="26" />
+          <folding>
+            <element signature="n#style#0;n#fieldset#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#fieldset#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/caseStudy/Bài tập 3/Request3.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-220">
-          <caret line="152" column="34" selection-start-line="152" selection-start-column="24" selection-end-line="152" selection-end-column="34" />
+        <state relative-caret-position="-886">
+          <caret line="259" column="66" selection-start-line="259" selection-start-column="66" selection-end-line="259" selection-end-column="66" />
           <folding>
             <element signature="e#2732#4415#0" />
             <element signature="e#2771#2868#0" />
             <element signature="e#2885#2991#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/caseStudy/Bài tập 3/Request3_ver2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="88" column="33" lean-forward="true" selection-start-line="88" selection-start-column="33" selection-end-line="88" selection-end-column="53" />
         </state>
       </provider>
     </entry>

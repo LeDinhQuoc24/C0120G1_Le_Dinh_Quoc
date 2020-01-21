@@ -7,19 +7,9 @@
 <body>
 <script>
     //Khai báo giá trị
-
-
-
-
     let address;
-
     let customercard;
-
-
     let typeofservice;
-    let numberRoom;
-
-    let payments;
     let serviceprices;
     //Hàm prompt để nhập giá trị
     //Xét tính hợp lệ của tên Khách hàng
@@ -149,20 +139,17 @@
         numberofAccompanying=prompt('Chọn số lượng người đi kèm ');
         if(!isNaN(numberofAccompanying)){
             numberofAccompanying=Number.parseFloat(numberofAccompanying);
-            if(Number.isInteger(numberofAccompanying)&&numberofAccompanying>0&&numberofAccompanying<10){
+            if(Number.isInteger(numberofAccompanying)&&numberofAccompanying>=0&&numberofAccompanying<10){
                 checknumberofAccompanying=false;
                 alert("Nhập thành công");
             }else{
-                alert("Nhập số nguyên lớn hơn 0,nhỏ hơn 10");
+                alert("Nhập số nguyên lớn hơn hoặc bằng 0,nhỏ hơn 10");
             }
         }else{
             alert("Vui lòng nhập số,không nhập chữ,ký tự lạ");
         }
     }
-
     typeofservice=prompt('Chọn loại dịch vụ:Villa,House,Room');
-    numberRoom=prompt('Chọn số phòng thuê');
-
     hienthi1();
 
     function  hienthi1() {
@@ -182,13 +169,12 @@
                     "\nNgày tháng năm sinh: " + birthdayCustomer +
                     "\nĐịa chỉ Email: " + emailaddress +
                     "\nĐịa chỉ nhà: " + address +
-                    "\nGiới tính: " + sex +
                     "\nThẻ khách hàng: " + customercard +
                     "\nSố ngày thuê: " + rentDays +
-                    "\nSố người kèm theo: " + numberofpeople +
-                    "\nLoại dịch vụ: " + typeofservice +
-                    "\nSố phòng thuê: " + numberRoom +
-                    "\nMã giảm giá: " + salecode
+                    "\nMã giảm giá: " + salecode +
+                    "\nSố người kèm theo: " + numberofAccompanying +
+                    "\nLoại dịch vụ: " + typeofservice
+
                 );
                 hienthi1();
                 break;
@@ -200,13 +186,12 @@
                     "\n3.Ngày tháng năm sinh: " + birthdayCustomer +
                     "\n4.Địa chỉ Email: " + emailaddress +
                     "\n5.Địa chỉ nhà: " + address +
-                    "\n6.Giới tính: " + sex +
-                    "\n7.Thẻ khách hàng: " + customercard +
-                    "\n8.Số ngày thuê: " + rentDays +
-                    "\n9.Số người kèm theo: " + numberofpeople +
-                    "\n10.Loại dịch vụ: " + typeofservice +
-                    "\n11.Số phòng thuê: " + numberRoom +
-                    "\n12.Mã giảm giá: " + salecode
+                    "\n6.Thẻ khách hàng: " + customercard +
+                    "\n7.Số ngày thuê: " + rentDays +
+                    "\n8.Mã giảm giá: " + salecode+
+                    "\n9.Số người kèm theo: " + numberofAccompanying +
+                    "\n10.Loại dịch vụ: " + typeofservice
+
                 );
 
                 switch (suathongtin) {
@@ -249,19 +234,18 @@
                     default:
                         alert('Nhập sai thông tin');
                 }
-                alert("Thông tin khách hàng:" +
-                    "\nTên khách hàng: " + name +
-                    "\nChứng minh nhân dân:" + identitycard +
-                    "\nNgày tháng năm sinh: " + birthdayCustomer+
-                    "\nĐịa chỉ emailemailaddress: " + emailaddress +
-                    "\nĐịa chỉ khách hàng: " + address +
-                    "\nGiới tính khách hàng: " + sex +
-                    "\nLoại thẻ của khách hàng: " + customercard +
-                    "\nSố ngày thuê phòng: " + rentDays +
-                    "\nSố người kèm theo: " + numberofpeople +
-                    "\nLoại dịch vụ(Villa,House,Room): " + typeofservice +
-                    "\nSố phòng đăng ký thuê: " + numberRoom +
-                    "\nMã giảm giá: " + salecode
+                alert(
+                    "Thông tin khách hàng \n" +
+                    "Tên khách hàng: " + name +
+                    "\nSố CMND: " + identitycard +
+                    "\nNgày tháng năm sinh: " + birthdayCustomer +
+                    "\nĐịa chỉ Email: " + emailaddress +
+                    "\nĐịa chỉ nhà: " + address +
+                    "\nThẻ khách hàng: " + customercard +
+                    "\nSố ngày thuê: " + rentDays +
+                    "\nMã giảm giá: " + salecode+
+                    "\nSố người kèm theo: " + numberofAccompanying +
+                    "\nLoại dịch vụ: " + typeofservice
                 );
                 hienthi1();
                 break;
@@ -332,9 +316,6 @@
                 alert("Tổng số tiền quý khách thanh toán: \n" + payments);
                 hienthi1();
         }
-
-
-
     }
 
 
