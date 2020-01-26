@@ -46,7 +46,7 @@
     </tr>
     <tr>
         <td style="width:120px">Ngày thuê </td>
-        <td style="width:120px"><input type="number" id="rentDays"></td>
+        <td style="width:120px"><input type="number" id="rentDays" onchange="checkrentDays()"></td>
     </tr>
     <tr >
         <td style="width:120px"> Loại dịch vụ </td>
@@ -128,6 +128,24 @@
                 checkemail = false;
                 alert("Vui lòng nhập lại địa chỉ email");
                 document.getElementById("emailCustomer").style.color = "black";
+                break;
+            }
+        }
+    }
+    //Kiểm tra tính hợp lệ Ngày thuê
+    function checkrentDays() {
+        let rentDays = parseInt(document.getElementById("rentDays").value);
+        let checkrentDays = true;
+        while (checkrentDays) {
+            if (rentDays > 0 && rentDays < 365) {
+                checkrentDays = false;
+                alert("Nhập ngày thuê thành công");
+                document.getElementById("rentDays").style.color = "blue";
+                break;
+            } else {
+                checkrentDays = true;
+                alert("Nhập ngày thuê là số nguyên,lớn hơn 0,nhỏ hơn 365");
+                document.getElementById("rentDays").style.color = "black";
                 break;
             }
         }
