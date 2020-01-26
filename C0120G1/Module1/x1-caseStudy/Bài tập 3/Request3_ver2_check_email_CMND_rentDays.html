@@ -76,7 +76,6 @@
         let identitycard=document.getElementById("idcard").value;
         let checkidentitycard=true;
         while(checkidentitycard){
-            if(!isNaN(identitycard)){
                 identitycard=Number.parseFloat(identitycard);
                 if(Number.isInteger(identitycard)){
                     if(Number.parseFloat(identitycard)>100000000&&Number.parseFloat(identitycard)<999999999){
@@ -94,12 +93,7 @@
                     document.getElementById("idcard").style.color = "black";
                     break;
                 }
-            }else{
-                alert("Nhập số CMND là chữ số");
-                document.getElementById("idcard").style.color = "black";
-                break;
             }
-        }
     }
     //Xét tính hợp lệ Email nhập
     //Nếu click vào lại mà không thay đổi thì không hiện thông báo nhập sai
