@@ -76,24 +76,24 @@
         let identitycard=document.getElementById("idcard").value;
         let checkidentitycard=true;
         while(checkidentitycard){
-                identitycard=Number.parseFloat(identitycard);
-                if(Number.isInteger(identitycard)){
-                    if(Number.parseFloat(identitycard)>100000000&&Number.parseFloat(identitycard)<999999999){
-                        checkidentitycard=false;
-                        alert("Nhập CMND thành công");
-                        document.getElementById("idcard").style.color = "blue";
-                        break;
-                    }else{
-                        alert("Nhập đúng giá trị số CMND");
-                        document.getElementById("idcard").style.color = "black";
-                        break;
-                    }
+            identitycard=Number.parseFloat(identitycard);
+            if(Number.isInteger(identitycard)){
+                if(Number.parseFloat(identitycard)>100000000&&Number.parseFloat(identitycard)<999999999){
+                    checkidentitycard=false;
+                    alert("Nhập CMND thành công");
+                    document.getElementById("idcard").style.color = "blue";
+                    break;
                 }else{
-                    alert("Nhập số CMND là 1 số nguyên");
+                    alert("Nhập đúng giá trị số CMND");
                     document.getElementById("idcard").style.color = "black";
                     break;
                 }
+            }else{
+                alert("Nhập số CMND là 1 số nguyên");
+                document.getElementById("idcard").style.color = "black";
+                break;
             }
+        }
     }
     //Xét tính hợp lệ Email nhập
     //Nếu click vào lại mà không thay đổi thì không hiện thông báo nhập sai
@@ -128,22 +128,28 @@
     }
     //Kiểm tra tính hợp lệ Ngày thuê
     function checkrentDays() {
-        let rentDays = parseInt(document.getElementById("rentDays").value);
+        let rentDays = parseFloat(document.getElementById("rentDays").value);
         let checkrentDays = true;
         while (checkrentDays) {
-            if (rentDays > 0 && rentDays < 365) {
-                checkrentDays = false;
-                alert("Nhập ngày thuê thành công");
-                document.getElementById("rentDays").style.color = "blue";
-                break;
-            } else {
-                checkrentDays = true;
-                alert("Nhập ngày thuê là số nguyên,lớn hơn 0,nhỏ hơn 365");
+            if (Number.isInteger(rentDays)){
+                if (rentDays > 0 && rentDays < 365) {
+                    checkrentDays = false;
+                    alert("Nhập ngày thuê thành công");
+                    document.getElementById("rentDays").style.color = "blue";
+                    break;
+                } else {
+                    alert("Nhập ngày thuê lớn hơn 0,nhỏ hơn 365");
+                    document.getElementById("rentDays").style.color = "black";
+                    break;
+                }
+            }else{
+                alert("Nhập ngày thuê là số nguyên");
                 document.getElementById("rentDays").style.color = "black";
                 break;
             }
         }
     }
+
     function hienthi1() {
 
         document.getElementById("name").style.color = "red";
