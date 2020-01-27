@@ -9,7 +9,7 @@
     let n=parseInt(prompt("Nhập giá trị n"));
     let sum=0;
     let result;
-    for(let i=1;i<=n.length;i++){
+    for(;n!=0;){
         result = n % 10;
         sum += result;
         n = (n - result) / 10;

@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="df88910e-952b-405f-86a4-e4df73b81871" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/x1-caseStudy/Bài tập 3/1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/x2-Giải thuật/Bài 7_nofinish.html" beforeDir="false" afterPath="$PROJECT_DIR$/x2-Giải thuật/Bài 7.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -16,19 +17,28 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/x2-Giải thuật/Bài 7_nofinish.html">
+        <entry file="file://$PROJECT_DIR$/x2-Giải thuật/Bài 7.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" selection-start-line="7" selection-end-line="19" selection-end-column="9" />
+            <state relative-caret-position="187">
+              <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/x2-Giải thuật/Bài 7_2.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="20" column="7" lean-forward="true" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/x2-Giải thuật/Bài 8.html">
+        <entry file="file://$PROJECT_DIR$/x2-Giải thuật/Bài 5_nofinish.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" selection-start-line="9" selection-end-line="9" />
+            <state relative-caret-position="238">
+              <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -50,17 +60,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/x1-caseStudy/Bài tập 3/Request3_ver2_check_email_CMND_rentDays.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="245">
-              <caret line="79" column="16" selection-start-line="79" selection-start-column="16" selection-end-line="79" selection-end-column="51" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/x1-caseStudy/Bài tập 3/1.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="347">
-              <caret line="145" column="50" selection-start-line="145" selection-start-column="50" selection-end-line="145" selection-end-column="50" />
+            <state relative-caret-position="2550">
+              <caret line="150" column="5" selection-start-line="150" selection-start-column="5" selection-end-line="150" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -108,10 +109,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/1-Nhập môn lập trình căn bản/Phần bài giảng/Pseudo-Code_1.html" />
-        <option value="$PROJECT_DIR$/1-Nhập môn lập trình căn bản/1.html" />
-        <option value="$PROJECT_DIR$/1-Nhập môn lập trình căn bản/Phần bài tập/Mô tả thuật toán có cấu trúc điều kiện/1.html" />
-        <option value="$PROJECT_DIR$/1-Nhập môn lập trình căn bản/Phần bài tập/Mô tả thuật toán có cấu trúc điều kiện/Demo.html" />
         <option value="$PROJECT_DIR$/1-Nhập môn lập trình căn bản/Phần bài tập/Mô tả thuật toán có cấu trúc lặp/1.html" />
         <option value="$PROJECT_DIR$/1-Nhập môn lập trình căn bản/Phần bài tập/Mô tả thuật toán có cấu trúc lặp/19_1_remake.html" />
         <option value="$PROJECT_DIR$/1-Nhập môn lập trình căn bản/Phần bài tập/Mô tả thuật toán có cấu trúc điều kiện/Demo_noFinish.html" />
@@ -154,11 +151,15 @@
         <option value="$PROJECT_DIR$/x2-Giải thuật/Bài 5.html" />
         <option value="$PROJECT_DIR$/x2-Giải thuật/Bài 6.html" />
         <option value="$PROJECT_DIR$/x2-Giải thuật/44.html" />
-        <option value="$PROJECT_DIR$/x2-Giải thuật/Bài 7.html" />
         <option value="$PROJECT_DIR$/x2-Giải thuật/Bài 8.html" />
         <option value="$PROJECT_DIR$/x1-caseStudy/Bài tập 3/Request3_ver2_check.html" />
         <option value="$PROJECT_DIR$/x1-caseStudy/Bài tập 3/Request3_ver2_check_email_CMND_rentDays.html" />
         <option value="$PROJECT_DIR$/x1-caseStudy/Bài tập 3/1.html" />
+        <option value="$PROJECT_DIR$/x3--Tham khảo Code/1.html" />
+        <option value="$PROJECT_DIR$/x2-Giải thuật/Bài 7_nofinish.html" />
+        <option value="$PROJECT_DIR$/x2-Giải thuật/Bài 5_nofinish.html" />
+        <option value="$PROJECT_DIR$/x2-Giải thuật/Bài 7_2.html" />
+        <option value="$PROJECT_DIR$/x2-Giải thuật/Bài 7.html" />
       </list>
     </option>
   </component>
@@ -174,7 +175,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -334,6 +334,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -385,12 +386,14 @@
       <workItem from="1579885490215" duration="749000" />
       <workItem from="1580011626188" duration="10342000" />
       <workItem from="1580024222627" duration="984000" />
-      <workItem from="1580025380464" duration="498000" />
+      <workItem from="1580025380464" duration="737000" />
+      <workItem from="1580089378282" duration="534000" />
+      <workItem from="1580089957124" duration="382000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="122504000" />
+    <option name="totallyTimeSpent" value="123659000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -445,9 +448,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/2-Biến, kiểu dữ liệu và toán tử/Phần bài tập/Biến, kiểu dữ liệu và toán tử/Ứng dụng chuyển đổi tiền tệ.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/4-Cấu trúc lặp/Bài tập/Sinh bảng cửu chương_while.html">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -464,13 +464,6 @@
           <folding>
             <element signature="n#style#0;n#table#0;n#!!top" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/x2-Giải thuật/Bài 5_nofinish.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
         </state>
       </provider>
     </entry>
@@ -598,13 +591,8 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/x1-caseStudy/Bài tập 3/Request3_ver2_check_email_CMND.html" />
-    <entry file="file://$PROJECT_DIR$/x2-Giải thuật/Bài 7_nofinish.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" selection-start-line="7" selection-end-line="19" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/x1-caseStudy/Bài tập 3/11.html" />
+    <entry file="file://$PROJECT_DIR$/x3--Tham khảo Code/1.html" />
     <entry file="file://$PROJECT_DIR$/x2-Giải thuật/Bài 8.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -621,6 +609,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/x3--Tham khảo Code/Demo_2.html">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/x1-caseStudy/Bài tập 3/Request3_ver2_check_email_CMND_rentDays.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2550">
+          <caret line="150" column="5" selection-start-line="150" selection-start-column="5" selection-end-line="150" selection-end-column="5" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/x1-caseStudy/Bài tập 3/Request3.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -642,24 +637,24 @@
     <entry file="file://$PROJECT_DIR$/4-Cấu trúc lặp/Bài luyện tập_X/Luyện tập vòng lặp 06_Fibonacci.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/x1-caseStudy/Bài tập 3/11.html">
+    <entry file="file://$PROJECT_DIR$/x2-Giải thuật/Bài 5_nofinish.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="87" column="37" selection-end-line="310" selection-end-column="7" />
+        <state relative-caret-position="238">
+          <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/x1-caseStudy/Bài tập 3/Request3_ver2_check_email_CMND_rentDays.html">
+    <entry file="file://$PROJECT_DIR$/x2-Giải thuật/Bài 7.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="79" column="16" selection-start-line="79" selection-start-column="16" selection-end-line="79" selection-end-column="51" />
+        <state relative-caret-position="187">
+          <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/x1-caseStudy/Bài tập 3/1.html">
+    <entry file="file://$PROJECT_DIR$/x2-Giải thuật/Bài 7_2.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
-          <caret line="145" column="50" selection-start-line="145" selection-start-column="50" selection-end-line="145" selection-end-column="50" />
+        <state relative-caret-position="340">
+          <caret line="20" column="7" lean-forward="true" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
         </state>
       </provider>
     </entry>
