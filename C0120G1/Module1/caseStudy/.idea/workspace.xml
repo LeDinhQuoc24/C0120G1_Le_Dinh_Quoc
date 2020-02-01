@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c1233afc-c98a-4973-aad7-1b39e458d56d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Bài tập 2/1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bài tập 2/2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bài tập 2/22.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bài tập 2/Request2.html" beforeDir="false" afterPath="$PROJECT_DIR$/Bài tập 2/Request2.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -19,44 +15,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Bài tập 2/Request2.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="501">
-              <caret line="205" selection-start-line="205" selection-end-line="205" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Bài tập 2/1.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" selection-start-line="7" selection-end-line="17" selection-end-column="9" />
-              <folding>
-                <element signature="n#style#0;n#input#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Bài tập 2/22.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="28" column="7" lean-forward="true" selection-start-line="28" selection-start-column="7" selection-end-line="28" selection-end-column="7" />
-              <folding>
-                <element signature="n#style#0;n#input#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Bài tập 2/2.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="515">
-              <caret line="45" column="65" lean-forward="true" selection-start-line="45" selection-start-column="8" selection-end-line="45" selection-end-column="65" />
+            <state relative-caret-position="93">
+              <caret line="157" column="27" lean-forward="true" selection-end-line="224" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -80,6 +43,7 @@
         <option value="$PROJECT_DIR$/Bài tập 2/2.html" />
         <option value="$PROJECT_DIR$/Bài tập 2/1.html" />
         <option value="$PROJECT_DIR$/Bài tập 2/22.html" />
+        <option value="$PROJECT_DIR$/Bài tập 2/123.html" />
       </list>
     </option>
   </component>
@@ -145,16 +109,16 @@
       <option name="presentableId" value="Default" />
       <updated>1578913348104</updated>
       <workItem from="1578913349199" duration="94000" />
-      <workItem from="1579087442758" duration="3705000" />
+      <workItem from="1579087442758" duration="3927000" />
+      <workItem from="1579091598244" duration="222000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3799000" />
+    <option name="totallyTimeSpent" value="4243000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24973656" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -179,37 +143,20 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Bài tập 2/2.html" />
+    <entry file="file://$PROJECT_DIR$/Bài tập 2/1.html" />
+    <entry file="file://$PROJECT_DIR$/Bài tập 2/22.html" />
+    <entry file="file://$PROJECT_DIR$/Bài tập 2/123.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="314">
+          <caret line="205" column="7" selection-start-line="205" selection-start-column="7" selection-end-line="219" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Bài tập 2/Request2.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="501">
-          <caret line="205" selection-start-line="205" selection-end-line="205" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Bài tập 2/2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="515">
-          <caret line="45" column="65" lean-forward="true" selection-start-line="45" selection-start-column="8" selection-end-line="45" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Bài tập 2/1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" selection-start-line="7" selection-end-line="17" selection-end-column="9" />
-          <folding>
-            <element signature="n#style#0;n#input#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Bài tập 2/22.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="7" lean-forward="true" selection-start-line="28" selection-start-column="7" selection-end-line="28" selection-end-column="7" />
-          <folding>
-            <element signature="n#style#0;n#input#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="93">
+          <caret line="157" column="27" lean-forward="true" selection-end-line="224" selection-end-column="7" />
         </state>
       </provider>
     </entry>
