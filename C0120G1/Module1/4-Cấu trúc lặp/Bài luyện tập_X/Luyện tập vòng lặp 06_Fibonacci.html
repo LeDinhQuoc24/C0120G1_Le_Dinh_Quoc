@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a=0;
+    let b=1;
+    let i=1,result;
+    let sum=0;
+    let count=1;
+    while(count<31){
+        if (i<=2){
+            result=i-1;
+        }else{
+            result=a+b;
+            a=b;
+            b=result;
+            if(result%7==0){
+                document.write("Hiển thị số thứ "+count+" chia hết cho 7 là  "+result+"<br>");
+                count++;
+            }
+        }
+        sum+=result;
+        i++;
+
+    }
+    document.write("Tổng của 30  số là "+sum+"<br>");
+
+
+
+
+
+
+</script>
+
+</body>
+</html>

@@ -82,7 +82,7 @@
                     "\nSố phòng thuê: " + numberRoom +
                     "\nMã giảm giá: " + salecode
                 );
-                hienthi1()
+                hienthi1();
                 break;
             case '2':
                 let suathongtin = prompt(
@@ -203,9 +203,22 @@
                         break;
 
                 }
+                //Giam gia theo do tuoi
+                let currentYear=new Date().getFullYear();
+                let birthday=new Date(dateofbirth).getFullYear();
+                let ageCustomer;
+                ageCustomer=currentYear-birthday;
 
+                let saleageCustomer;
+                if((ageCustomer>30) && (address=="Da Nang")){
+                    saleageCustomer=2;
+                }else if((ageCustomer<=30) && (ageCustomer>20) && (address=="Da Nang")){
+                    saleageCustomer=1;
+                }else{
+                    saleageCustomer=0;
+                }
 
-                let payments = serviceprices * rentDays * (1 - salecode / 100)-(saleaddress+salecustomercard);
+                let payments = serviceprices * rentDays * (1 - salecode / 100)-(saleaddress+salecustomercard+saleageCustomer);
 
                 alert("Tổng số tiền quý khách thanh toán: \n"+
                     payments

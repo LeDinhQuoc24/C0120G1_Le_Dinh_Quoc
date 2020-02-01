@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Nhập số điểm: <input type="text"id="1"><br>
+Kết quả xếp loại:<input type="text"id="2"><br>
+    <button type="button" onclick="xeploai()">Xếp loại</button>
+    <script>
+
+        function xeploai() {
+            var x=parseInt(document.getElementById("1").value);
+            if(x>75){
+                document.getElementById("2").value="Xếp loại A";
+            } else if(x>=60){
+                document.getElementById("2").value="Xếp loại B";
+            } else if(x>=45){
+                document.getElementById("2").value="Xếp loại C";
+            }else if(x>=35){
+                document.getElementById("2").value="Xếp loại D";
+            }else{
+                document.getElementById("2").value="Xếp loại E";
+            }
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    let n=prompt("Nhập giá trị n");
+    let tich=1;
+    if(n%2!=0){
+      for(let i=1;i<=n;i+=2){
+          result=i;
+          tich*=result;
+      }
+    }else{
+        for(let j=2;j<=n;j+=2){
+            result=j;
+            tich*=result;
+        }
+
+    }
+    document.write(tich);
+
+</script>
+
+
+</body>
+</html>

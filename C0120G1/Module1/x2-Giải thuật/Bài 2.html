@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+Nhập vào: <input type="text" id="1" value="nhập năm"> năm
+          <input type="text" id="2" value="nhập tháng"> tháng<br>
+In ra số ngày tương ứng:<br>
+(Tính trung bình 1 tháng có 30 ngày)<br>
+<button type="button"onclick="tinh()">In ra</button><br>
+<input type="text" id ="3"> ngày
+<script>
+    function tinh() {
+        let a=document.getElementById("1").value;
+        let b=document.getElementById("2").value;
+        let c=document.getElementById("3");
+            c.value=parseInt(a)*365+parseInt(b)*24;
+
+
+    }
+</script>
+
+
+</body>
+</html>
