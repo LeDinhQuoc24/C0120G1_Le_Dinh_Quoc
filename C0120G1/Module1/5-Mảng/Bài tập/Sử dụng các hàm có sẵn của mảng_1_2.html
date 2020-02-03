@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var myColor=["Red","Green","White","Black"];
+    var sum="";
+    var i;
+    for(i=0;i<myColor.length;i++){
+        if(i<myColor.length-1){
+            sum +=(myColor[i]+",");
+        }else {
+            sum +=myColor[i];
+        }
+    }
+    alert('"'+sum+'"');
+</script>
+
+</body>
+</html>

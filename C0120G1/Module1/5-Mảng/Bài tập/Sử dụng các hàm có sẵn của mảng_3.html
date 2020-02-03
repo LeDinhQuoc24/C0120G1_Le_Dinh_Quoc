@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let word=prompt("Nhập 1 từ bất kỳ");
+    let UPPER = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    let LOWER = 'abcdefghijklmnopqrstuvwxyz';
+    let result = [];
+    for(let i=0;i<word.length;i++){
+        if(UPPER.indexOf(word[i])!==-1){
+            result.push(word[i].toLowerCase());
+        }else if(LOWER.indexOf(word[i])!==-1){
+            result.push(word[i].toUpperCase());
+        }else{
+            result.push(word[i]);
+        }
+    }
+    alert(result.join(""));
+</script>
+
+</body>
+</html>
