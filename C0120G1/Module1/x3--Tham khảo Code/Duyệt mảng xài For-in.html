@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var array = ["A","B", "C", "D", "E"];
+    for (var item in array) {
+        document.write("item " + item + " has value " + array[item] + "<br>");
+    }
+    document.write("======================================================<br>");
+    for (var item = 0; item < array.length; item++) {
+        document.write("item " + item + " has value " + array[item] + "<br>");
+    }
+    // array.sort(function (a,b) {
+    //     return a - b;
+    // });
+</script>
+</body>
+</html>
