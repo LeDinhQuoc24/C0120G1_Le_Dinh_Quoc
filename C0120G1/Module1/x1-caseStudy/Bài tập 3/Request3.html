@@ -7,11 +7,12 @@
 <body>
 <script>
     //Khai báo giá trị
-    let address;
+
     let customercard;
     let typeofservice;
     let serviceprices;
     //Hàm prompt để nhập giá trị
+
     //Xét tính hợp lệ của tên Khách hàng
     let name;
     name=prompt('Chọn tên');
@@ -94,11 +95,15 @@
         let countAt = 0;
         let i;
         for(i=0;i< emailaddress.length;i++){
-            if(emailaddress.charAt(i)==="."){
-                countDoc++;
-            }
+
             if(emailaddress.charAt(i)==="@"){
                 countAt++;
+                for(let j=i+1;j<emailaddress.length;j++) {
+                    if(emailaddress.charAt(j)==="."){
+                        countDoc++;
+                    }
+                }
+
             }
         }
         if (countDoc < 1 || countAt !== 1) {
@@ -106,9 +111,28 @@
             alert("Vui lòng nhập lại địa chỉ Email");
         }
     }
-    address=prompt('Chọn địa chỉ sinh sống');
+
 
     customercard=prompt('Chọn loại thẻ khách hàng');
+
+    //Xét tính hợp lệ của địa chỉ sinh sống
+
+    let address;
+    address=prompt('Chọn địa chỉ sinh sống');
+
+    let addressStandardized="";
+    address=address.trim().toLocaleLowerCase();
+    for(let i=0;i<address.length;i++){
+        if(address.charAt(i)===" "&&(address.charAt(i+1))===" "){
+            continue;
+        }
+        if(i===0||address.charAt(i-1)===" "){
+            addressStandardized+=address.charAt(i).toLocaleUpperCase();
+            continue;
+        }
+        addressStandardized+=address.charAt(i);
+    }
+    address=addressStandardized;
 
     //Kiểm tra tính hợp lệ Ngày thuê
     let rentDays;

@@ -130,13 +130,17 @@
             let countAt = 0;
             let i;
             for (i = 0; i < emailaddress.length; i++) {
-                if (emailaddress.charAt(i) === ".") {
-                    countDoc++;
-                }
                 if (emailaddress.charAt(i) === "@") {
                     countAt++;
+                    for (let j = i + 1; j < emailaddress.length; j++) {
+                        if (emailaddress.charAt(j) === ".") {
+                            countDoc++;
+                        }
+                    }
                 }
             }
+        
+
             if ( countAt == 1 && countDoc>=1) {
                 checkemail = true;
                 alert("Nhập địa chỉ Email thành công");
