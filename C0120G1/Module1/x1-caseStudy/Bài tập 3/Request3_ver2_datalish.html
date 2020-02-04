@@ -10,7 +10,7 @@
 
     <tr >
         <td style="width:120px">Tên khách hàng </td>
-        <td style="width:120px"><input type="text"  placeholder="ID Name" id="name"/></td>
+        <td style="width:120px"><input type="text"  placeholder="ID Name" id="name" onchange="checkname()"/></td>
     </tr>
     <tr>
         <td style="width:120px">CMND </td>
@@ -32,11 +32,11 @@
         <td style="width:120px"> Thẻ khách hàng </td>
         <td style="width:120px"><input style="width: 169px" placeholder="TypeCustomer" list="typeCustomer">
             <datalist id="typeCustomer">
-            <option value="Diamond">Diamond</option>
-            <option value="Platinum">Platinum</option>
-            <option value="Gold">Gold</option>
-            <option value="Silver">Silver</option>
-            <option value="Member">Member</option></datalist></td>
+                <option value="Diamond">Diamond</option>
+                <option value="Platinum">Platinum</option>
+                <option value="Gold">Gold</option>
+                <option value="Silver">Silver</option>
+                <option value="Member">Member</option></datalist></td>
     </tr>
     <tr>
         <td style="width:120px">Giảm giá </td>
@@ -54,9 +54,9 @@
         <td style="width:120px"> Loại dịch vụ </td>
         <td style="width:120px"><input style="width: 169px" placeholder="TypeService" list="typeService">
             <datalist id="typeService">
-            <option value="Villa">Villa</option>
-            <option value="House">House</option>
-            <option value="Room">Room</option></datalist></td>
+                <option value="Villa">Villa</option>
+                <option value="House">House</option>
+                <option value="Room">Room</option></datalist></td>
     </tr>
 
     <tr>
@@ -73,6 +73,26 @@
 
 </table>
 <script>
+    //Xét tính hợp lệ của tên khách hàng
+    function checkname() {
+        let name = document.getElementById("name").value;
+        let nameStandardized = "";
+        name = name.trim().toLocaleLowerCase();
+        for (let i = 0; i < name.length; i++) {
+            if (name.charAt(i) === " " && (name.charAt(i + 1)) === " ") {
+                continue;
+            }
+            if (i === 0 || name.charAt(i - 1) === " ") {
+                nameStandardized += name.charAt(i).toLocaleUpperCase();
+                continue;
+            }
+            nameStandardized += name.charAt(i);
+        }
+        document.getElementById("name").value = nameStandardized;
+        alert("Nhập tên khách hàng thành công");
+        document.getElementById("name").style.color = "blue";
+    }
+
     //Xét tính hợp lệ của chứng minh nhân dân
     //Chưa thông báo được trường hợp nhập dấu -
     //Nếu click vào lại mà không thay đổi thì không hiện thông báo nhập sai

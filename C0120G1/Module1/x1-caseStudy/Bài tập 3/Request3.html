@@ -15,6 +15,19 @@
     //Xét tính hợp lệ của tên Khách hàng
     let name;
     name=prompt('Chọn tên');
+    let nameStandardized="";
+    name=name.trim().toLocaleLowerCase();
+    for(let i=0;i<name.length;i++){
+        if(name.charAt(i)===" "&&(name.charAt(i+1))===" "){
+            continue;
+        }
+        if(i===0||name.charAt(i-1)===" "){
+            nameStandardized+=name.charAt(i).toLocaleUpperCase();
+            continue;
+        }
+        nameStandardized+=name.charAt(i);
+    }
+    name=nameStandardized;
     //Xét tính hợp lệ của chứng minh nhân dân
     let identitycard;
     let checkidentitycard=true;

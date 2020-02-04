@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let dem = prompt("Nhap so luong: ");
+    let a = [];
+    for(let j=1;j<=dem;j++){
+        a.push( prompt("Nhap so thu "+ j));
+    }
+    alert(a);
+    let max=parseFloat(a[0]);
+    let index=0;
+    for(let i=1;i<a.length;i++){
+        if(parseFloat(a[i])>max){
+            max=a[i];
+            index=i;
+        }
+    }
+    alert("Phần tử có giá trị lớn nhất là "+max+" tại vị trí "+index);
+</script>
+
+</body>
+</html>
