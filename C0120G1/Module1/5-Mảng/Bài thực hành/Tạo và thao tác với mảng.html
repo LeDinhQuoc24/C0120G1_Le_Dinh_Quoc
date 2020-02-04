@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text"id="Name"><br><br>
+<input type="button"value="Add"onclick="Add()">
+<input type="button"value="Display"onclick="Display()"><br><br>
+<div id="messenger"style="color: blue"></div>
+-------------------------------------------------------------<br>
+<div id="show"></div>
+<script>
+    let arrName=new Array();
+    function Add() {
+        arrName.push(document.getElementById("Name").value);
+        document.getElementById("messenger").innerText="Nhập "+document.getElementById("Name").value + " thành công";
+        document.getElementById("Name").value="";
+    }
+    function Display() {
+        let ketqua="";
+        for(i=0;i<arrName.length;i++){
+            ketqua += "Giá trị "+(i+1)+" là : " + arrName[i] + "\n";
+            document.getElementById("show").innerText = ketqua ;
+        }
+
+    }
+</script>
+
+</body>
+</html>

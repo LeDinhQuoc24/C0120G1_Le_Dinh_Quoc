@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="c1233afc-c98a-4973-aad7-1b39e458d56d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
+=======
+    <list default="true" id="c1233afc-c98a-4973-aad7-1b39e458d56d" name="Default Changelist" comment="" />
+>>>>>>> 3d5ae587248611b2e898399727caf28eab6b6c3e
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -15,6 +19,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+<<<<<<< HEAD
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Bài tập 2/Request2.html">
           <provider selected="true" editor-type-id="text-editor">
@@ -22,6 +27,53 @@
               <caret line="157" column="27" lean-forward="true" selection-end-line="224" selection-end-column="7" />
             </state>
           </provider>
+=======
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Bài tập 2/Request2.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3485">
+              <caret line="205" selection-start-line="205" selection-end-line="205" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Bài tập 3/Request3_ver2_select.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="23" column="19" selection-end-line="310" selection-end-column="7" />
+              <folding>
+                <element signature="n#style#0;n#td#0;n#tr#5;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#1;n#tr#5;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#select#0;n#td#1;n#tr#5;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Bài tập 3/Request3_ver2_datalish.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="58" column="62" lean-forward="true" selection-start-line="58" selection-start-column="62" selection-end-line="58" selection-end-column="62" />
+              <folding>
+                <element signature="n#style#0;n#td#0;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#1;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#0;n#tr#5;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#1;n#tr#5;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#select#0;n#td#1;n#tr#5;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#0;n#tr#9;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#1;n#tr#9;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#select#0;n#td#1;n#tr#9;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Bài tập 3/Request3_ver2.html">
+          <provider selected="true" editor-type-id="text-editor" />
+>>>>>>> 3d5ae587248611b2e898399727caf28eab6b6c3e
         </entry>
       </file>
     </leaf>
@@ -43,7 +95,13 @@
         <option value="$PROJECT_DIR$/Bài tập 2/2.html" />
         <option value="$PROJECT_DIR$/Bài tập 2/1.html" />
         <option value="$PROJECT_DIR$/Bài tập 2/22.html" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/Bài tập 2/123.html" />
+=======
+        <option value="$PROJECT_DIR$/Bài tập 3/Request3_ver2_check_email_CMND_rentDays.html" />
+        <option value="$PROJECT_DIR$/Bài tập 3/1.html" />
+        <option value="$PROJECT_DIR$/Bài tập 3/Request3_ver2_datalish.html" />
+>>>>>>> 3d5ae587248611b2e898399727caf28eab6b6c3e
       </list>
     </option>
   </component>
@@ -59,30 +117,30 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="caseStudy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="caseStudy" type="462c0819:PsiDirectoryNode" />
+              <item name="x1-caseStudy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="x1-caseStudy" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="caseStudy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="caseStudy" type="462c0819:PsiDirectoryNode" />
-              <item name="Bài tập 2" type="462c0819:PsiDirectoryNode" />
+              <item name="x1-caseStudy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="x1-caseStudy" type="462c0819:PsiDirectoryNode" />
+              <item name="Bài tập 3" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -109,18 +167,31 @@
       <option name="presentableId" value="Default" />
       <updated>1578913348104</updated>
       <workItem from="1578913349199" duration="94000" />
+<<<<<<< HEAD
       <workItem from="1579087442758" duration="3927000" />
       <workItem from="1579091598244" duration="222000" />
+=======
+      <workItem from="1579087442758" duration="3705000" />
+      <workItem from="1580691897201" duration="295000" />
+      <workItem from="1580692306010" duration="3339000" />
+>>>>>>> 3d5ae587248611b2e898399727caf28eab6b6c3e
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="4243000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+=======
+    <option name="totallyTimeSpent" value="7433000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+>>>>>>> 3d5ae587248611b2e898399727caf28eab6b6c3e
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24973656" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24963397" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -146,6 +217,7 @@
     <entry file="file://$PROJECT_DIR$/Bài tập 2/2.html" />
     <entry file="file://$PROJECT_DIR$/Bài tập 2/1.html" />
     <entry file="file://$PROJECT_DIR$/Bài tập 2/22.html" />
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/Bài tập 2/123.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="314">
@@ -157,6 +229,44 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="93">
           <caret line="157" column="27" lean-forward="true" selection-end-line="224" selection-end-column="7" />
+=======
+    <entry file="file://$PROJECT_DIR$/Bài tập 2/Request2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3485">
+          <caret line="205" selection-start-line="205" selection-end-line="205" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Bài tập 3/Request3_ver2.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Bài tập 3/Request3_ver2_select.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="23" column="19" selection-end-line="310" selection-end-column="7" />
+          <folding>
+            <element signature="n#style#0;n#td#0;n#tr#5;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#1;n#tr#5;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#select#0;n#td#1;n#tr#5;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Bài tập 3/Request3_ver2_datalish.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="58" column="62" lean-forward="true" selection-start-line="58" selection-start-column="62" selection-end-line="58" selection-end-column="62" />
+          <folding>
+            <element signature="n#style#0;n#td#0;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#1;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#tr#5;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#1;n#tr#5;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#select#0;n#td#1;n#tr#5;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#tr#9;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#1;n#tr#9;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#select#0;n#td#1;n#tr#9;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+>>>>>>> 3d5ae587248611b2e898399727caf28eab6b6c3e
         </state>
       </provider>
     </entry>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arrTiengViet=["lam","trắng","đỏ","vàng","lục","tím","đen"];
+    let arrTiengAnh=["blue","white","red","yellow","green","purple","black"];
+    let search=prompt("nhập từ khóa cần tìm");
+    let result;
+    for(let i=0;i<arrTiengAnh.length;i++){
+        if(search===arrTiengAnh[i]){
+            result=arrTiengViet[i];
+            break;
+        }else{
+            result="Không tìm thấy từ khóa";
+        }
+    }
+    alert(result);
+</script>
+
+</body>
+</html>
