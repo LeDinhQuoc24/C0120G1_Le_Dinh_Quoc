@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arrNameCustomers=[];
+    let choose=prompt("1.Thêm tên khách hàng."+"\n2.Xóa tên khách hàng");
+    switch (choose) {
+        case"1":
+            let arrLength=prompt("Nhập số lượng khách hàng cần thêm");
+            for(var i=0;i<arrLength;i++){
+                arrNameCustomers.push(prompt("Nhập tên khách hàng "+(i+1)));
+            }
+            let result="";
+            for(var i=0;i<arrLength;i++){
+                result+="\n"+(i+1)+"."+arrNameCustomers[i];
+            }
+            alert(result);
+            arrNameCustomers.sort();
+            result="";
+            for(var i=0;i<arrLength;i++){
+                result+="\n"+(i+1)+"."+arrNameCustomers[i];
+            }
+            alert(result);
+
+            break;
+        case"2":
+            alert("Mới làm yêu cầu 4,task 1");
+            break;
+        default:
+            alert("Vui lòng nhập 1 hoặc 2");
+    }
+</script>
+
+</body>
+</html>

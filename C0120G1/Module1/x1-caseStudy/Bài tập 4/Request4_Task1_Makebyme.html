@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let choose=prompt("1.Thêm tên khách hàng"+"\n2.Xóa tên khách hàng");
+    let arrTenkhachhang=[];
+    switch (choose) {
+        case "1":
+            let arrLength=prompt("Nhập số lương khách hàng thêm vào");
+            for(let i=0;i<arrLength;i++){
+                arrTenkhachhang.push(prompt("Nhập tên khách hàng "+(i+1)))
+            }
+            let result="";
+            arrTenkhachhang.sort();
+            for(let i=0;i<arrLength;i++){
+                result+="\n"+(i+1)+"."+arrTenkhachhang[i];
+            }
+            alert(result);
+
+    }
+</script>
+
+</body>
+</html>
