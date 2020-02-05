@@ -18,7 +18,7 @@
     </tr>
     <tr>
         <td style="width:120px">Năm sinh </td>
-        <td style="width:120px"><input type="date" id="birthdayCustomer"style="width: 168px" onblur="checkbirthday()"></td>
+        <td style="width:120px"><input type="date" id="birthdayCustomer"style="width: 168px" onmouseout="checkbirthday()"></td>
     </tr>
     <tr >
         <td style="width:120px">  Địa chỉ email</td>
@@ -131,7 +131,7 @@
                 document.getElementById("birthdayCustomer").style.color = "black";
 
             }else {
-                alert("Nhập thành công");
+                alert("Nhập năm sinh thành công");
                 document.getElementById("birthdayCustomer").style.color = "blue";
             }
         }else{
