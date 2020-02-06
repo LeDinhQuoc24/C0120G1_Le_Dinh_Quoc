@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<center>
+    <h1>Chuyển đổi nhiệt độ</h1>
+    <strong><u>Nhập giá trị độ F cần chuyển sang độ C</u></strong><br><br>
+    Độ F:<input type="text" id="doF" onkeyup="chuyendoi()"><br><br>
+    Độ C:<span id="doC"></span>
+</center>
+<script>
+    function chuyendoi() {
+        let doF=parseFloat(document.getElementById("doF").value);
+        let doC;
+        doC=(doF-32)/1.8;
+        document.getElementById("doC").innerText=doC;
+        if(isNaN(doF)){
+            document.getElementById("doC").innerText="Vui lòng nhập số vào"
+        }
+    }
+</script>
+
+
+
+</body>
+</html>

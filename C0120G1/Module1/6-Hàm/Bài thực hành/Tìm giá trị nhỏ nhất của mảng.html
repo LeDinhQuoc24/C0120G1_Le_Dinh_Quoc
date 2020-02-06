@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arrLength=prompt("Nhập số lượng của mảng");
+    let arr=[];
+    for(i=0;i<arrLength;i++){
+        arr.push(prompt("Nhập giá trị thứ "+(i+1)));
+    }
+    alert("Mảng tạo ra là "+arr);
+    minarray();
+    function minarray() {
+        let min=arr[0];
+        for(let j=1;j<arr.length;j++){
+            if(arr[j]<min){
+                min=arr[j];
+            }
+        }
+        alert("Giá trị nhỏ nhất của mảng là: "+min);
+    }
+</script>
+
+
+
+
+
+
+
+
+</body>
+</html>

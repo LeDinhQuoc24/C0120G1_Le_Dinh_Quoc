@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Mảng tạo ra là:<span  id="1"></span><br>
+Mảng tạo ra là:<input type="text" id="3"><br>
+Giá trị nhỏ nhất của mảng là:<span  id="2"></span></input><br>
+Giá trị nhỏ nhất của mảng là:<input type="text"  id="4"><br>
+<script>
+    let arrLength=prompt("Nhập số lượng của mảng");
+    let arr=[];
+    for(i=0;i<arrLength;i++){
+        arr.push(prompt("Nhập giá trị thứ "+(i+1)));
+    }
+    document.getElementById("1").innerText=arr;
+    document.getElementById("3").value=arr;
+    minarray();
+    function minarray() {
+        let min=arr[0];
+        for(let j=1;j<arr.length;j++){
+            if(arr[j]<min){
+                min=arr[j];
+            }
+        }
+        document.getElementById("2").innerText=min;
+        document.getElementById("4").value=min;
+    }
+</script>
+
+
+
+
+
+
+
+
+
+</body>
+</html>
