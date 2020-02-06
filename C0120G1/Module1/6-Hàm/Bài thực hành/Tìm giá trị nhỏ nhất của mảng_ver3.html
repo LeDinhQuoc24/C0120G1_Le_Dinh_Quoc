@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    Nhập số cần tìm: <input type="text" id="nhapso"/>
+    <input type="submit" value="Add"onclick="add();return false; " /><br><br>
+    <input type="button"  value="Find" onclick="kiemtra();return false;"/>
+    Giá trị nhỏ nhất là: <span id="hienthi"></span>
+
+</form>
+
+<script>
+    let arr=[];
+    function add() {
+        arr.push(document.getElementById("nhapso").value);
+        alert("Dãy các số đã nhập: "+arr);
+    }
+    function kiemtra() {
+        let min=arr[0];
+        for(let j=1;j<arr.length;j++) {
+            if (arr[j] < min) {
+                min = arr[j];
+            }
+        }
+        document.getElementById("hienthi").innerText=min;
+    }
+
+</script>
+
+</body>
+</html>

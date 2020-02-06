@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr=[];
+    let arrLength=prompt("nhập số lượng số cần tìm");
+    for(let i=0;i<arrLength;i++){
+        arr.push(parseInt(prompt("nhập số thứ "+(i+1))));
+    }
+    alert("Các số cần xem xét phải là số nguyên tố hay không "+arr);
+    findNumberPrime()
+    function findNumberPrime() {
+
+        for(let j=0;j<arr.length;j++){
+            if(arr[j]<2) {
+                arr.splice(j,1);
+                j--;
+            }
+           for(let k=2;k<arr[j];k++){
+               if(arr[j]% k ===0){
+                   arr.splice(j,1);
+                   j--;
+                   break;
+               }
+           }
+
+        }
+        alert("Các số nguyên tố được tìm thấy: "+arr)
+    }
+</script>
+
+</body>
+</html>
