@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Add New Product</h1>
+<input type="text" id="nhap"/>
+<button type="button" value="Add" onclick="them()">Add</button>
+<button type="button" value="Show" onclick="hienthi()">Show</button>
+<br><br><br>
+<h1>Display All Product</h1>
+<h3>Product Name</h3>
+<table id="hienthi"></table>
+<script>
+    function them() {
+        let arr=[];
+        nhap=document.getElementById("nhap").value;
+        arr.push(nhap);
+        alert("Đã nhập vào sản phẩm "+nhap);
+    }
+    function hienthi() {
+        let ketqua="";
+        for(let i=0;i<arr.length;i++){
+            ketqua+=arr[i];
+        }
+        document.getElementById("hienthi").innerHTML += "<tr><td>" + document.getElementById("nhap").value + "</td>"+
+            "<td>"+"<button type='button'onclick='edit()'>Edit</button>"+"</td>"+
+         "<td>"+"<button type='button' onclick='deletex()'>Delete</button>"+"</td></tr>";
+    }
+    function edit() {
+        document.getElementById("hienthi").innerHTML += "<tr><td>" + prompt("nhập tên muốn thay đổi") + "</td>"+
+            "<td>"+"<button type='button'onclick='edit()'>Edit</button>"+"</td>"+
+            "<td>"+"<button type='button' onclick='deletex()'>Delete</button>"+"</td></tr>";
+    }
+</script>
+
+</body>
+</html>
