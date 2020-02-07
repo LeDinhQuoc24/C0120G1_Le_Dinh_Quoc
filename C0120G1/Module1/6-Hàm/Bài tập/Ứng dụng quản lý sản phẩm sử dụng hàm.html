@@ -3,37 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <style>
+        td{
+            width: 150px;
+        }
+    </style>
 </head>
 <body>
 <h1>Add New Product</h1>
 <input type="text" id="nhap"/>
-<button type="button" value="Add" onclick="them()">Add</button>
-<button type="button" value="Show" onclick="hienthi()">Show</button>
+<button type="button" value="Add"style="background-color: green" onclick="them()">Add</button>
+<button type="button" value="Show" style="background-color: green"onclick="hienthi()">Show</button>
 <br><br><br>
 <h1>Display All Product</h1>
 <h3>Product Name</h3>
-<table id="hienthi"></table>
+<table id="ketqua"></table>
 <script>
+    let arr=[];
     function them() {
-        let arr=[];
         nhap=document.getElementById("nhap").value;
         arr.push(nhap);
         alert("Đã nhập vào sản phẩm "+nhap);
+        document.getElementById("nhap").value="";
     }
     function hienthi() {
-        let ketqua="";
+        let ketqua="<tr><td>"+"<strong>STT</strong>"+"</td>"+
+            "<td>"+"<strong>Tên sản phẩm</strong>"+ "</td>"+
+            "<td>"+"<strong>Chỉnh sửa TTSP</strong>"+"</td>"+
+            "<td>"+"<strong>Xóa TTSP</strong>"+"<td style='color: red'>"+
+            arr.length+" products"+"</td></tr>";
         for(let i=0;i<arr.length;i++){
-            ketqua+=arr[i];
+            ketqua+= "<tr><td>"+(i+1)+"</td>"+"<td>"+arr[i]+"</td>"+
+                "<td>"+"<button type='button' style=\"background-color: green\"onclick='edit(this.value)' value="+i+">Edit</button>"+"</td>"+
+                "<td>"+"<button type='button' style=\"background-color: green\"onclick='deletex(this.value)' value="+i+">Delete</button>"+"</td></tr>"
         }
-        document.getElementById("hienthi").innerHTML += "<tr><td>" + document.getElementById("nhap").value + "</td>"+
-            "<td>"+"<button type='button'onclick='edit()'>Edit</button>"+"</td>"+
-         "<td>"+"<button type='button' onclick='deletex()'>Delete</button>"+"</td></tr>";
+        document.getElementById("ketqua").innerHTML = ketqua ;
     }
-    function edit() {
-        document.getElementById("hienthi").innerHTML += "<tr><td>" + prompt("nhập tên muốn thay đổi") + "</td>"+
-            "<td>"+"<button type='button'onclick='edit()'>Edit</button>"+"</td>"+
-            "<td>"+"<button type='button' onclick='deletex()'>Delete</button>"+"</td></tr>";
+    function edit(t) {
+        arr[t]= prompt("Nhập tên sản phẩm mới");
+        hienthi();
     }
+    function deletex(t){
+       arr.splice(t,1);
+        hienthi();
+    }
+
+
 </script>
 
 </body>
