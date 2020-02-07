@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<select id="a1" onchange="chuyendoi(this.value)">
+    <option value="meter">Meter</option>
+    <option value="foot">Foot</option>
+</select>
+To
+<select id="a2"onchange="chuyendoi2(this.value)">
+    <option value="foot">Foot</option>
+    <option value="meter">Meter</option>
+</select>
+<input type="text" id="nhap"placeholder="Nhập số vào"onkeyup="hienthi()"/>
+<br>
+Kết quả chuyển đổi:<span id="ketqua"></span>
+<script>
+    function chuyendoi(t) {
+        if(t==="meter"){
+            document.getElementById("a2").value="foot";
+        }else if(t==="foot"){
+            document.getElementById("a2").value="meter";
+        }
+    }
+    function chuyendoi2(t) {
+        if(t==="meter"){
+            document.getElementById("a1").value="foot";
+        }else if(t==="foot"){
+            document.getElementById("a1").value="meter";
+        }
+    }
+    function hienthi() {
+        let nhap=parseFloat(document.getElementById("nhap").value);
+        let a1=document.getElementById("a1").value;
+        let ketqua=document.getElementById("ketqua");
+        if(a1==="meter"){
+            ketqua.innerText=0.305*nhap;
+        }
+        else if(a1==="foot"){
+            ketqua.innerText=3.279*nhap;
+        }
+    }
+
+</script>
+</body>
+</html>

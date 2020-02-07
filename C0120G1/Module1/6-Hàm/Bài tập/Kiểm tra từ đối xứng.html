@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="nhap" placeholder="Nhập 1 từ"/>
+<input type="button" value="Kiểm tra" onclick="kiemtra()">
+<br>
+<span id="ketqua"></span>
+<script>
+    let arr=[];
+    function kiemtra(){
+        let word=document.getElementById('nhap').value;
+        for (let i=0;i<word.length;i++ ) {
+            dem = word.slice(i,i+1);
+            //cắt từ thành từng chữ một
+            arr.push(dem);
+            //ghép từng chữ một vào lại mảng trên
+        }
+
+        arr.reverse();
+        
+        //đảo ngược mảng
+        if(word===arr.join("")){
+            //kiểm tra mảng đảo ngươc với từ nhập ban đầu
+            //để kiểm tra tính đối xứng
+            //join("" )để xóa dấu phẩy giữa các chữ trong mảng
+            alert("Từ này là từ đối xứng");
+        }else{
+            alert("Từ này không phải là từ đối xứng");
+        }
+        arr=[];
+    }
+</script>
+</body>
+</html>

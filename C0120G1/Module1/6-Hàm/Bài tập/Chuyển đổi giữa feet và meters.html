@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="nhap"/>
+<select id="a1">
+    <option value="meter">Meter</option>
+    <option value="foot">Foot</option>
+</select>
+<input type="text"id="ketqua"/>
+<select id="a2">
+    <option value="meter">Meter</option>
+    <option value="foot">Foot</option>
+</select>
+<input type="button" value="Chuyển đổi"onclick="chuyendoi()"/>
+<script>
+    function chuyendoi() {
+   let nhap=parseFloat(document.getElementById("nhap").value);
+   let a1=document.getElementById("a1").value;
+   let a2=document.getElementById("a2").value;
+   let ketqua=document.getElementById("ketqua");
+   if((a1==="meter")&&(a2==="foot")){
+       ketqua.value=0.305*nhap;
+   }
+   else if((a1==="foot")&&(a2==="meter")){
+       ketqua.value=3.279*nhap;
+   }else{
+       ketqua.value="Chọn đúng giá trị chuyển đổi";
+   }
+   if(isNaN(nhap)){
+       ketqua.value="Vui lòng nhập số vào";
+   }
+    }
+</script>
+
+</body>
+</html>

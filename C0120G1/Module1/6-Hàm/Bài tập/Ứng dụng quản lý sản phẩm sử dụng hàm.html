@@ -16,7 +16,6 @@
 <button type="button" value="Show" style="background-color: green"onclick="hienthi()">Show</button>
 <br><br><br>
 <h1>Display All Product</h1>
-<h3>Product Name</h3>
 <table id="ketqua"></table>
 <script>
     let arr=[];
@@ -34,8 +33,8 @@
             arr.length+" products"+"</td></tr>";
         for(let i=0;i<arr.length;i++){
             ketqua+= "<tr><td>"+(i+1)+"</td>"+"<td>"+arr[i]+"</td>"+
-                "<td>"+"<button type='button' style=\"background-color: green\"onclick='edit(this.value)' value="+i+">Edit</button>"+"</td>"+
-                "<td>"+"<button type='button' style=\"background-color: green\"onclick='deletex(this.value)' value="+i+">Delete</button>"+"</td></tr>"
+                "<td>"+"<button type='button' style=\"background-color: green\" onclick='edit(this.value)' value="+i+">Edit</button>"+"</td>"+
+                "<td>"+"<button type='button' style=\"background-color: green\" onclick='deletex(this.value)' value="+i+">Delete</button>"+"</td></tr>"
         }
         document.getElementById("ketqua").innerHTML = ketqua ;
     }
