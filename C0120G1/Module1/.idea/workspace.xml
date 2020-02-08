@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="df88910e-952b-405f-86a4-e4df73b81871" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/x1-caseStudy/Bài tập 5/ver1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/x1-caseStudy/Bài tập 5/ver1.html" beforeDir="false" afterPath="$PROJECT_DIR$/x1-caseStudy/Bài tập 5/ver1.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -46,8 +45,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/x1-caseStudy/Bài tập 5/ver1.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="282">
-              <caret line="40" column="23" lean-forward="true" selection-start-line="40" selection-start-column="23" selection-end-line="40" selection-end-column="23" />
+            <state relative-caret-position="426">
+              <caret line="74" column="19" lean-forward="true" selection-start-line="74" selection-start-column="19" selection-end-line="74" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -466,12 +465,12 @@
       <workItem from="1580864864533" duration="20661000" />
       <workItem from="1580952346030" duration="15814000" />
       <workItem from="1581038074067" duration="25087000" />
-      <workItem from="1581124500131" duration="8629000" />
+      <workItem from="1581124500131" duration="11024000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="236728000" />
+    <option name="totallyTimeSpent" value="239123000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -809,8 +808,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/x1-caseStudy/Bài tập 5/ver1.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="40" column="23" lean-forward="true" selection-start-line="40" selection-start-column="23" selection-end-line="40" selection-end-column="23" />
+        <state relative-caret-position="426">
+          <caret line="74" column="19" lean-forward="true" selection-start-line="74" selection-start-column="19" selection-end-line="74" selection-end-column="19" />
         </state>
       </provider>
     </entry>

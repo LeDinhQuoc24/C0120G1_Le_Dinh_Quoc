@@ -33,15 +33,45 @@
             }
     }
     function hienthi() {
-            let ketqua = "Danh sách khách hàng";
+            let ketquahienthi = "Danh sách khách hàng";
             for (let i = 0; i < arrKhachHang.length; i++) {
-                ketqua += "\n" + (i + 1) + "." + arrKhachHang[i];
+                ketquahienthi += "\n" + (i + 1) + "." + arrKhachHang[i];
             }
-            alert(ketqua);
+            alert(ketquahienthi);
             giaodien();
     }
+    function chinhsua() {
+        let ketquachinhsua1 = "Danh sách khách hàng muốn chỉnh sửa";
+        let ketquachinhsua2 = "Danh sách khách hàng sau khi chỉnh sửa";
+        for (let i = 0; i < arrKhachHang.length; i++) {
+            ketquachinhsua1 += "\n" + (i + 1) + "." + arrKhachHang[i];
+        }
+        alert(ketquachinhsua1);
+        let x=prompt("Nhập số thứ tự của khách hàng muốn chỉnh sửa");
+        arrKhachHang[x-1]=prompt("Nhập tên muốn chỉnh sửa của khách hàng ");
+        for (let j = 0; j < arrKhachHang.length; j++) {
+            ketquachinhsua2 += "\n" + (j + 1) + "." + arrKhachHang[j];
+        }
+        alert(ketquachinhsua2);
+        giaodien();
+    }
     function them() {
-        arrKhachHang.push(prompt("Nhập tên khách hàng cần thêm vào"));
+        arrKhachHang.push(prompt("Nhập tên khách hàng muốn thêm"));
+        giaodien();
+    }
+    function xoa() {
+        let ketquaxoa1="Danh sách khách hàng muốn xóa";
+        for (let k = 0; k < arrKhachHang.length; k++) {
+            ketquaxoa1 += "\n" + (k + 1) + "." + arrKhachHang[k];
+        }
+        alert(ketquaxoa1);
+        let ketquaxoa2="Danh sách khách hàng sau khi xóa";
+        let y=prompt("Nhập số thứ tự của khách hàng muốn xóa");
+        arrKhachHang.splice((y-1),1);
+        for(let l=0;l<arrKhachHang.length;l++){
+            ketquaxoa2+="\n"+(l+1)+"."+ arrKhachHang[l];
+        }
+        alert(ketquaxoa2);
         giaodien();
     }
 
