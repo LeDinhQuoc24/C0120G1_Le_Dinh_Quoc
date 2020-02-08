@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr=["Trường","Kỳ","Code","Gym","Nhất","Định","Phát","Khùng"];
+    let ketqua="Danh sách khách hàng";
+    for(let i=0;i<arr.length;i++){
+        ketqua+="\n"+(i+1)+"."+arr[i];
+    }
+    alert(ketqua);
+   arr.splice(parseInt(prompt("Chọn tên khách hàng muốn xóa"))-1,1);
+    let ketqua2="Danh sách khách hàng";
+    for(let j=0;j<arr.length;j++){
+        ketqua2+="\n"+(j+1)+"."+arr[j];
+    }
+    alert(ketqua2);
+</script>
+
+</body>
+</html>

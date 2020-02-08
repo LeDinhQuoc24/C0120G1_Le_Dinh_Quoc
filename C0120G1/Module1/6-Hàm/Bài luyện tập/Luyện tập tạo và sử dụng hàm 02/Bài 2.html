@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Nhập bán kính đường tròn : <input type="text" id="nhap"/><br>
+<input type="button" value="Tính chu vi" onclick="chuvi(parseFloat(document.getElementById('nhap').value))"/>
+<input type="text" id="ketquachuvi"/><br>
+<input type="button" value="Tính diện tích" onclick="dientich(parseFloat(document.getElementById('nhap').value))"/>
+<input type="text" id="ketquadientich"/><br>
+<script>
+    function chuvi(t) {
+        ketqua1=2*t*314/100;
+        document.getElementById("ketquachuvi").value=ketqua1;
+    }
+    function dientich(t) {
+        ketqua2=t*t*314/100;
+        document.getElementById("ketquadientich").value=ketqua2;
+    }
+
+</script>
+
+</body>
+</html>

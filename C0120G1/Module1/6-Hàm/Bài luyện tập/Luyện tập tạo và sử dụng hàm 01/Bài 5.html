@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Ursa Minor, Tarurus, Cygnus, Lyra, Aquila, Ursa Major và Leo <br>
+<input type="text" id="nhap"placeholder="Nhập 1 trong những từ trên"/>
+<input type="button" value="Kiểm tra"onclick="kiemtra(document.getElementById('nhap').value)"/><br>
+<input type="text" id="ketqua"/>
+
+<script>
+    function kiemtra(t){
+        let a=["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe" ,"Regulus"];
+        let b=["Ursa Minor", "Tarurus"," Cygnus", "Lyra", "Aquila", "Ursa Major", "Leo"];
+        for(let i=0;i<b.length;i++){
+            if(t===b[i]){
+                document.getElementById('ketqua').value=a[i];
+                break;
+            }else{
+                document.getElementById('ketqua').value="Vui lòng nhập đúng từ"
+            }
+        }
+    }
+
+</script>
+
+</body>
+</html>

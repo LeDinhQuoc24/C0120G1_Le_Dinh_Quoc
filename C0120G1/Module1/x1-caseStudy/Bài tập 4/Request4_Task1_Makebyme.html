@@ -6,22 +6,48 @@
 </head>
 <body>
 <script>
-    let choose=prompt("1.Thêm tên khách hàng"+"\n2.Xóa tên khách hàng");
-    let arrTenkhachhang=[];
-    switch (choose) {
-        case "1":
-            let arrLength=prompt("Nhập số lương khách hàng thêm vào");
-            for(let i=0;i<arrLength;i++){
-                arrTenkhachhang.push(prompt("Nhập tên khách hàng "+(i+1)))
-            }
-            let result="";
-            arrTenkhachhang.sort();
-            for(let i=0;i<arrLength;i++){
-                result+="\n"+(i+1)+"."+arrTenkhachhang[i];
-            }
-            alert(result);
+    let arrTenkhachhang = [];
+    let x=[];
+    hienthi();
+    function hienthi() {
+        let choose = prompt("1.Thêm tên khách hàng" + "\n2.Xóa tên khách hàng"+"\n3.Hiển thị khách hàng");
+        switch (choose) {
+            case "1":
+                let arrLength = prompt("Nhập số lương khách hàng thêm vào");
+                for (let i = 0; i < arrLength; i++) {
+                    arrTenkhachhang.push(prompt("Nhập tên khách hàng " + (i + 1)))
+                }
+                let result1 = "Danh sách khách hàng ";
+                arrTenkhachhang.sort();
+                for (let i = 0; i < arrTenkhachhang.length; i++) {
+                    result1 += "\n" + (i + 1) + "." + arrTenkhachhang[i];
+                }
+                alert(result1);
+                hienthi();
 
+             break;
+            case "2":
+                let result2 = "Danh sách khách hàng ";
+                arrTenkhachhang.sort();
+                for (let i = 0; i < arrTenkhachhang.length; i++) {
+                    result2 += "\n" + (i + 1) + "." + arrTenkhachhang[i];
+                }
+                alert(result2);
+                hienthi();
+                break;
+
+            case "3":
+                let result3 = "Danh sách khách hàng ";
+                arrTenkhachhang.sort();
+                for (let i = 0; i < arrTenkhachhang.length; i++) {
+                    result3 += "\n" + (i + 1) + "." + arrTenkhachhang[i];
+                }
+                alert(result3);
+                hienthi();
+        }
     }
+
+
 </script>
 
 </body>

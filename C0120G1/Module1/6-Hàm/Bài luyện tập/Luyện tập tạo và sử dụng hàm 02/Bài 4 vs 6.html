@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let nhap=prompt("nhập giá trị đầu vào")
+    kiemtra(nhap);
+    function kiemtra(t) {
+        if(isNaN(t)){
+            alert("vui lòng nhập số,không nhập chữ");
+        }else{
+            if((t>=0)&&t-parseInt(t)==0){
+                alert("số này là số nguyên dương")
+            }else{
+                alert("số này không phải là số nguyên dương")
+            }
+        }
+
+    }
+</script>
+
+</body>
+</html>

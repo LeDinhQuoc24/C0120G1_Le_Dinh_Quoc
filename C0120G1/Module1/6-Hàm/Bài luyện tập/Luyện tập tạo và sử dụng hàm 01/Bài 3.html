@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Nhập số thứ 1 : <input type="text" id="so1"/><br>
+Nhập số thứ 2 : <input type="text" id="so2"/><br>
+<input type="button" value="Kiểm tra" onclick="hienthi(parseFloat(document.getElementById('so1').value),parseFloat(document.getElementById('so2').value))"/><br>
+Kết quả: <input type="text" id="ketqua"/>
+<script>
+    function hienthi(a,b) {
+        if(a>b){
+            hieu=a-b;
+            document.getElementById("ketqua").value=hieu;
+        }else{
+            tong=a+b;
+            document.getElementById("ketqua").value=tong;
+        }
+
+    }
+</script>
+
+
+</body>
+</html>

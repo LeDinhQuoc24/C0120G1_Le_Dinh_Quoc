@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="nhap"/>
+<input type="button" value="Kiểm tra"onclick="tanggiatri(parseFloat(document.getElementById('nhap').value))"/>
+<input type="text" placeholder="kết quả" id="ketqua"/>
+<script>
+    function tanggiatri(t) {
+        ketqua=t+1;
+        document.getElementById("ketqua").value=ketqua;
+    }
+</script>
+
+</body>
+</html>
