@@ -6,9 +6,7 @@
 </head>
 <body>
 <script>
-
     let arrKhachHang=[];
-
     giaodien();
     function giaodien() {
         let chon = prompt("1.Hiển thị thông tin khách hàng" + "\n" +
@@ -36,6 +34,7 @@
     function hienthi() {
         let ketquahienthi = "Danh sách khách hàng";
         for (let i = 0; i < arrKhachHang.length; i++) {
+            ketquahienthi+= "\n"+"Thông tin khách hàng thứ "+(i+1);
             for(let i2=0;i2<arrKhachHang[i].length;i2++) {
                 ketquahienthi += "\n" + arrKhachHang[i][i2];
             }
@@ -53,9 +52,6 @@
         arrKhachHang.push(arrthem);
         giaodien();
     }
-
-
 </script>
-
 </body>
 </html>
