@@ -46,8 +46,8 @@
         for (let i = 0; i < arrKhachHang.length; i++) {
             ketquachinhsua1 += "\n" + (i + 1) + "." + arrKhachHang[i];
         }
-        alert(ketquachinhsua1);
-        let x=prompt("Nhập số thứ tự của khách hàng muốn chỉnh sửa");
+
+        let x=prompt(ketquachinhsua1+"\n"+"Nhập số thứ tự của khách hàng muốn chỉnh sửa");
         arrKhachHang[x-1]=prompt("Nhập tên muốn chỉnh sửa của khách hàng ");
         for (let j = 0; j < arrKhachHang.length; j++) {
             ketquachinhsua2 += "\n" + (j + 1) + "." + arrKhachHang[j];
@@ -64,10 +64,9 @@
         for (let k = 0; k < arrKhachHang.length; k++) {
             ketquaxoa1 += "\n" + (k + 1) + "." + arrKhachHang[k];
         }
-        alert(ketquaxoa1);
         if(confirm("Bạn có chắc muốn xóa hay không")) {
             let ketquaxoa2 = "Danh sách khách hàng sau khi xóa";
-            let y = prompt("Nhập số thứ tự của khách hàng muốn xóa");
+            let y = prompt(ketquaxoa1+"\n"+"Nhập số thứ tự của khách hàng muốn xóa");
             arrKhachHang.splice((y - 1), 1);
             for (let l = 0; l < arrKhachHang.length; l++) {
                 ketquaxoa2 += "\n" + (l + 1) + "." + arrKhachHang[l];
@@ -79,7 +78,6 @@
         }
 
     }
-
 
 </script>
 
