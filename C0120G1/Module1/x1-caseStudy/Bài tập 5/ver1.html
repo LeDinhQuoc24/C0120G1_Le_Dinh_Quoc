@@ -65,14 +65,19 @@
             ketquaxoa1 += "\n" + (k + 1) + "." + arrKhachHang[k];
         }
         alert(ketquaxoa1);
-        let ketquaxoa2="Danh sách khách hàng sau khi xóa";
-        let y=prompt("Nhập số thứ tự của khách hàng muốn xóa");
-        arrKhachHang.splice((y-1),1);
-        for(let l=0;l<arrKhachHang.length;l++){
-            ketquaxoa2+="\n"+(l+1)+"."+ arrKhachHang[l];
+        if(confirm("Bạn có chắc muốn xóa hay không")) {
+            let ketquaxoa2 = "Danh sách khách hàng sau khi xóa";
+            let y = prompt("Nhập số thứ tự của khách hàng muốn xóa");
+            arrKhachHang.splice((y - 1), 1);
+            for (let l = 0; l < arrKhachHang.length; l++) {
+                ketquaxoa2 += "\n" + (l + 1) + "." + arrKhachHang[l];
+            }
+            alert(ketquaxoa2);
+            giaodien();
+        }else{
+            giaodien();
         }
-        alert(ketquaxoa2);
-        giaodien();
+
     }
 
 
