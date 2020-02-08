@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arrKhachHang=[];
+    let arrtem=["Tên : ","ngày sinh : ","địa chỉ : ","nghề nghiệp : ","giới tính : "];
+    giaodien();
+    function giaodien() {
+        let chon = prompt("1.Hiển thị thông tin khách hàng" + "\n" +
+            "2.Chỉnh sửa thông tin khách hàng" + "\n" +
+            "3.Thêm thông tin khách hàng" + "\n" +
+            "4.Xóa thông tin khách hàng" + "\n" +
+            "5.Thoát"+"\n"+"Lựa chọn tính năng");
+        switch (chon) {
+            case "1":
+                hienthi();
+                break;
+            case "2":
+                chinhsua();
+                break;
+            case "3":
+                them();
+                break;
+            case "4":
+                xoa();
+                break;
+            case "5":
+                thoat();
+        }
+    }
+    function hienthi() {
+        let ketquahienthi = "Danh sách khách hàng";
+        for (let i = 0; i < arrKhachHang.length; i++) {
+            let tem="";
+            for (let j=0;j< arrtem.length; j++){
+                tem += arrtem[j] + arrKhachHang[i][j] + ", ";
+            }
+            ketquahienthi += "\n" + (i+1) + ". " + tem;
+        }
+        alert(ketquahienthi);
+        giaodien();
+    }
+    function them() {
+        let arrthem=[];
+        arrthem.push(prompt("Nhập tên khách hàng"));
+        arrthem.push(prompt("Nhập ngày tháng năm sinh"));
+        arrthem.push(prompt("Nhập địa chỉ sinh sống"));
+        arrthem.push(prompt("Nhập nghề nghiệp khách hàng"));
+        arrthem.push(prompt("Nhập giới tính khách hàng"));
+        arrKhachHang.push(arrthem);
+        giaodien();
+    }
+    function chinhsua() {
+        let ketquachinhsua = "Danh sách khách hàng";
+        for (let i = 0; i < arrKhachHang.length; i++) {
+            let tem="";
+            for (let j=0;j< arrtem.length; j++){
+                tem += arrtem[j] + arrKhachHang[i][j] + ", ";
+            }
+            ketquachinhsua += "\n" + (i+1) + ". " + tem;
+        }
+        let x=prompt(ketquachinhsua+"\n"+"Nhập số thứ tự khách hàng muốn chỉnh sửa");
+        let y=prompt(ketquachinhsua+"\n"+"Nhập vị trí thông tin muốn chỉnh sửa"+"\n"+"1.Tên 2.Ngày sinh 3.Địa chỉ 4.Nghề Nghiệp 5.Giới tính");
+        arrKhachHang[x-1][y-1]=prompt("Nhập thông tin chỉnh sửa");
+        let ketquachinhsua2 = "Danh sách khách hàng";
+        for (let i = 0; i < arrKhachHang.length; i++) {
+            let tem="";
+            for (let j=0;j< arrtem.length; j++){
+                tem += arrtem[j] + arrKhachHang[i][j] + ", ";
+            }
+            ketquachinhsua2 += "\n" + (i+1) + ". " + tem;
+        }
+        alert(ketquachinhsua2);
+        giaodien();
+    }
+    function xoa() {
+        let ketquaxoa1="Danh sách khách hàng muốn xóa";
+        for (let i = 0; i < arrKhachHang.length; i++) {
+            let tem="";
+            for (let j=0;j< arrtem.length; j++){
+                tem += arrtem[j] + arrKhachHang[i][j] + ", ";
+            }
+            ketquaxoa1 += "\n" + (i+1) + ". " + tem;
+        }
+        if(confirm("Bạn có chắc muốn xóa hay không")) {
+            let y = prompt(ketquaxoa1+"\n"+"Nhập số thứ tự của khách hàng muốn xóa");
+            arrKhachHang.splice((y - 1),1);
+            let ketquaxoa2 = "Danh sách khách hàng sau khi xóa";
+            for (let i = 0; i < arrKhachHang.length; i++) {
+                let tem="";
+                for (let j=0;j< arrtem.length; j++){
+                    tem += arrtem[j] + arrKhachHang[i][j] + ", ";
+                }
+                ketquaxoa2 += "\n" + (i+1) + ". " + tem;
+            }
+            alert(ketquaxoa2);
+            giaodien();
+
+        }else{
+            giaodien();
+        }
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arrKhachHang=[];
+    let arrtem=["Tên : ","ngày sinh : ","địa chỉ : ","nghề nghiệp : ","giới tính : "];
+    giaodien();
+    function giaodien() {
+        let chon = prompt("1.Hiển thị thông tin khách hàng" + "\n" +
+            "2.Chỉnh sửa thông tin khách hàng" + "\n" +
+            "3.Thêm thông tin khách hàng" + "\n" +
+            "4.Xóa thông tin khách hàng" + "\n" +
+            "5.Thoát"+"\n"+"Lựa chọn tính năng");
+        switch (chon) {
+            case "1":
+                hienthi();
+                break;
+            case "2":
+                chinhsua();
+                break;
+            case "3":
+                them();
+                break;
+            case "4":
+                xoa();
+                break;
+            case "5":
+                thoat();
+        }
+    }
+    function hienthi() {
+        let ketquahienthi = "Danh sách khách hàng";
+        for (let i = 0; i < arrKhachHang.length; i++) {
+            let tem="";
+            for (let j=0;j< arrtem.length; j++){
+                tem += arrtem[j] + arrKhachHang[i][j] + ", ";
+            }
+            ketquahienthi += "\n" + (i+1) + ". " + tem;
+        }
+        alert(ketquahienthi);
+        giaodien();
+    }
+    function them() {
+        let arrthem=[];
+        arrthem.push(prompt("Nhập tên khách hàng"));
+        arrthem.push(prompt("Nhập ngày tháng năm sinh"));
+        arrthem.push(prompt("Nhập địa chỉ sinh sống"));
+        arrthem.push(prompt("Nhập nghề nghiệp khách hàng"));
+        arrthem.push(prompt("Nhập giới tính khách hàng"));
+        arrKhachHang.push(arrthem);
+        giaodien();
+    }
+</script>
+
+</body>
+</html>
