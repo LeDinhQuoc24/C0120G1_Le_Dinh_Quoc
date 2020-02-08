@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="df88910e-952b-405f-86a4-e4df73b81871" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/x1-caseStudy/Bài tập 5/ver1.html" beforeDir="false" afterPath="$PROJECT_DIR$/x1-caseStudy/Bài tập 5/ver1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x1-caseStudy/Bài tập 5/ver2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -42,11 +43,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/x1-caseStudy/Bài tập 5/ver1.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="43" column="68" lean-forward="true" selection-start-line="43" selection-start-column="68" selection-end-line="43" selection-end-column="68" />
+            <state relative-caret-position="162">
+              <caret line="14" column="29" selection-end-line="84" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/x1-caseStudy/Bài tập 5/ver2.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="14" column="55" lean-forward="true" selection-start-line="14" selection-start-column="55" selection-end-line="14" selection-end-column="55" />
             </state>
           </provider>
         </entry>
@@ -86,15 +96,6 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/6-Hàm/Bài luyện tập/Luyện tập tạo và sử dụng hàm 02/Bài 3.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/6-Hàm/Bài luyện tập/Luyện tập tạo và sử dụng hàm 02/Bài 4 vs 6.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="24">
@@ -128,8 +129,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/6-Hàm/script.jv.js" />
-        <option value="$PROJECT_DIR$/6-Hàm/script.js" />
         <option value="$PROJECT_DIR$/6-Hàm/Demo Hàm.html" />
         <option value="$PROJECT_DIR$/6-Hàm/Demo hàm/Demo Hàm.html" />
         <option value="$PROJECT_DIR$/6-Hàm/Demo hàm/script.js" />
@@ -179,10 +178,12 @@
         <option value="$PROJECT_DIR$/x1-caseStudy/Bài tập 4/Request4_Task1_Makebyme.html" />
         <option value="$PROJECT_DIR$/x1-caseStudy/Bài tập 4/2.html" />
         <option value="$PROJECT_DIR$/x1-caseStudy/Bài tập 5/ver1.html" />
+        <option value="$PROJECT_DIR$/x1-caseStudy/Bài tập 5/1.html" />
+        <option value="$PROJECT_DIR$/x1-caseStudy/Bài tập 5/ver2.html" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="228" />
     <option name="y" value="130" />
     <option name="width" value="1346" />
@@ -465,12 +466,12 @@
       <workItem from="1580864864533" duration="20661000" />
       <workItem from="1580952346030" duration="15814000" />
       <workItem from="1581038074067" duration="25087000" />
-      <workItem from="1581124500131" duration="12089000" />
+      <workItem from="1581124500131" duration="15138000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="240188000" />
+    <option name="totallyTimeSpent" value="243237000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -544,7 +545,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/x1-caseStudy/Bài tập 3/Request3_ver2.html" />
     <entry file="file://$PROJECT_DIR$/x1-caseStudy/Bài tập 1/Request1-Tast1.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -808,8 +808,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/x1-caseStudy/Bài tập 5/ver1.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="43" column="68" lean-forward="true" selection-start-line="43" selection-start-column="68" selection-end-line="43" selection-end-column="68" />
+        <state relative-caret-position="162">
+          <caret line="14" column="29" selection-end-line="84" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/x1-caseStudy/Bài tập 5/ver2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="14" column="55" lean-forward="true" selection-start-line="14" selection-start-column="55" selection-end-line="14" selection-end-column="55" />
         </state>
       </provider>
     </entry>
