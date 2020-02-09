@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    let word=prompt("nhập 1 từ bất kỳ");
+    let character=prompt("nhập 1 ký tự bất kỳ");
+    let ketqua=0;
+    word.split();
+    for (let i=0;i<word.length;i++){
+        if (character=== word[i]){
+            ketqua += 1;
+        }else {
+            ketqua += 0 ;
+        }
+    }
+    if(ketqua>0){
+        alert(character+" xuất hiện " + ketqua + " lần trong mảng");
+    }else {
+        alert(character+" không xuất hiện trong mảng");
+    }
+</script>
+</body>
+</html>
