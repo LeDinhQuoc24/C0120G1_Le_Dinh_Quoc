@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let nhap=prompt("nhap 1 tu bat ky");
+    let arr=[];
+    for(let i=0;i<nhap.length;i++){
+      arr.push(nhap.slice(i,i+1));
+    }
+
+     arr.reverse();
+    let ketqua=arr.join("");
+    if(ketqua===nhap){
+        alert("Tu nay la tu doi xung");
+
+    }else{
+        alert("Tu nay khong phai la tu doi xung");
+    }
+
+</script>
+
+</body>
+</html>

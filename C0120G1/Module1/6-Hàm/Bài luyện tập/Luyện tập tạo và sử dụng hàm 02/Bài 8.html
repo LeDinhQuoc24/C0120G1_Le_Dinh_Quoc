@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr=[];
+    kiemtranhap();
+    function kiemtranhap() {
+        let nhap = prompt("nhap 1 so bat ky");
+        if (isNaN(nhap) || (parseInt(nhap) - nhap) !== 0) {
+            alert("Vui lòng nhập đúng số nguyên");
+            kiemtranhap();
+        } else {
+            daonguoc();
+        }
+    }
+    function daonguoc() {
+        let nhap = prompt("nhap 1 so bat ky lan 2");
+        for(let i=0;i<nhap.length;i++){
+            arr.push(nhap.slice(i,i+1));
+        }
+        arr.reverse();
+        alert(arr.join(""));
+        arr=[];
+        kiemtranhap();
+    }
+</script>
+
+</body>
+</html>

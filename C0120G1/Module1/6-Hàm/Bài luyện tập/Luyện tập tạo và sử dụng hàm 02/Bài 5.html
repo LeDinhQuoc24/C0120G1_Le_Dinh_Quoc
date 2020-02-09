@@ -6,10 +6,13 @@
 </head>
 <body>
 <script>
-    let a=prompt("Nhập số thứ 1");
-    let b=prompt("Nhập số thứ 2");
-    let c=prompt("Nhập số thứ 3");
-    sosanh(a,b,c);
+    nhapso();
+    function nhapso() {
+        let a = parseFloat(prompt("Nhập số thứ 1"));
+        let b = parseFloat(prompt("Nhập số thứ 2"));
+        let c = parseFloat(prompt("Nhập số thứ 3"));
+        sosanh(a, b, c);
+    }
     function sosanh(x,y,z) {
         let min=x;
         if(y<min){
@@ -17,10 +20,13 @@
             if(z<min){
                 min=z;
             }
-        }else(z<min){
-            min=z;
+        }else{
+            if(z<min) {
+                min = z;
+            }
         }
         alert("Giá trị nhỏ nhất là "+min);
+        nhapso();
     }
 </script>
 

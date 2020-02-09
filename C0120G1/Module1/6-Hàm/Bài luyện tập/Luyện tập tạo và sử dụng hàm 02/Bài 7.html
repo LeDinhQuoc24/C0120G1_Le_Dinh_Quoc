@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" placeholder="nhap so thu nhat" id="1"/><br><br>
+<input type="text" placeholder="nhap so thu hai" id="2"/><br><br>
+<input type="button" value="Đảo ngược" onclick="swap(document.getElementById('1').value,document.getElementById('2').value)"/>
+<script>
+    function swap(a,b) {
+        let c=a;
+        a=b;
+        b=c;
+        document.getElementById('1').value= a;
+            document.getElementById('2').value=b;
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let word=prompt("nhập 1 từ bất kỳ");
+    let character=prompt("nhập 1 ký tự bất kỳ");
+    let ketqua="";
+    for(let i=0;i<word.length;i++){
+        if(word.indexOf(character)===-1){
+            ketqua+="Không tìm thấy ký tự cần tìm trong từ trên";
+            break;
+        }else{
+            ketqua+="Xuất hiện tại vị trí "+(word.indexOf(character)+1)+"\n";
+            break;
+        }
+    }
+    alert(ketqua);
+</script>
+
+</body>
+</html>
