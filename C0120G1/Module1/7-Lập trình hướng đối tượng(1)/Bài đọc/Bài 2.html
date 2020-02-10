@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let apple = {
+        type: "macintosh",
+        color: "red",
+        getInfo: function () {
+            return this.color + ' ' + this.type + ' apple';
+        }
+    }
+    apple.color = "reddish";
+    alert(apple.getInfo());
+</script>
+
+</body>
+</html>
