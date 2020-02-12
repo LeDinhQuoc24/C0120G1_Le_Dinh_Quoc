@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let array = [];
+    let student = new Student();
+    student.setIndex(1);
+    student.setName("Linh");
+    student.setBirthday("16/10/1998");
+    student.setAverage(8);
+    array.push(student);
+    function displayMainMenu() {
+        let choose = prompt(
+            "1. Add New Student" +
+            "\n2. Display Information Student" +
+            "\n3. Exit");
+        switch (choose) {
+            case "1":
+                addStudent();
+                break;
+            case "2":
+                displayStudent()
+                break;
+            case "3":
+                return;
+            default:
+                alert("Failed !!!!!");
+                break;
+        }
+    }
+    function addStudent() {
+        let stu = new Student();
+        stu.setIndex(prompt("Enter index of student: "));
+        stu.setName(prompt("Enter name of student: "));
+        stu.setBirthday(prompt("Enter day of birth of student: "));
+        stu.setAverage(prompt("Enter avarage of score of student: "));
+        array.push(stu);
+        displayMainMenu();
+    }
+    function displayStudent() {
+        let result = "";
+        for (let i = 0; i < array.length; i++)
+        {
+            result += "\n" + (i+1) + "." + " Name: " + array[i].getName();
+        }
+        result += "\n" + (array.length +1)+ " Back to Menu";
+        let  chooseDisplayInfo = prompt(result);
+        if (chooseDisplayInfo.toString() !== (array.length+1).toString()) {
+            displayInformationStudent(Number.parseInt(chooseDisplayInfo) - 1);
+        }
+    }
+    function displayInformationStudent(index) {
+        alert("Information of Student:\n" +
+            "Index :" +array[index].getIndex()+
+            "\nName :" + array[index].getName()+
+            "\nBirthday :" + array[index].getBirthday()+
+            "\nAvarage Score :" + array[index].getAverage()+
+            "\nType: "+type(array[index])
+        );
+        displayMainMenu();
+    }
+    function type(student) {
+        if(student.getAverage() > 8)
+            return "Great";
+        else if(student.getAverage() >=6.5)
+            return  "Good";
+        else if(student.getAverage() >=5)
+            return  "Avarage";
+        else if(student.getAverage() >=3.5)
+            return "Weak";
+        else return "Very Weak";
+    }
+    displayMainMenu();
+</script>
+</body>
+</html>

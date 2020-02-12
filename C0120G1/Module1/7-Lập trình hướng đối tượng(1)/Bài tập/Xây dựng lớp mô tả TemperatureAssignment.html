@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function Temperature() {
+        this.setDoC=function (doC) {
+            this.doC=doC;
+        };
+        this.getDoC=function (doC) {
+            return this.doC;
+        };
+        this.doF=function () {
+            return (this.getDoC()*1.8)+32;
+        };
+        this.doK=function () {
+            return (this.getDoC()+273.15)
+        };
+    }
+    function chuyendoi() {
+        var temperature = new Temperature();
+        temperature.setDoC(prompt("nhập giá trị độ C"));
+        alert("Chuyển sang độ F có giá trị: "+temperature.doF()+"\n"+"Chuyển sang độ K có giá trị: "+temperature.doK());
+    }
+    chuyendoi();
+</script>
+
+</body>
+</html>

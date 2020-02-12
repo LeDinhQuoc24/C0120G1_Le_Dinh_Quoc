@@ -10,16 +10,19 @@
     let word=prompt("nhập 1 từ bất kỳ");
     let character=prompt("nhập 1 ký tự bất kỳ");
     let ketqua=0;
-    word.split();
-    for (let i=0;i<word.length;i++){
-        if (character=== word[i]){
+    let index = "";
+    let arrword=word.split("");
+
+    for (let i=0;i<arrword.length;i++){
+        if (character=== arrword[i]){
             ketqua += 1;
+            index+=(i+1)+",";
         }else {
             ketqua += 0 ;
         }
     }
     if(ketqua>0){
-        alert(character+" xuất hiện " + ketqua + " lần trong mảng");
+        alert(character+" xuất hiện " + ketqua + " lần trong mảng.Tại các vị trí "+index);
     }else {
         alert(character+" không xuất hiện trong mảng");
     }

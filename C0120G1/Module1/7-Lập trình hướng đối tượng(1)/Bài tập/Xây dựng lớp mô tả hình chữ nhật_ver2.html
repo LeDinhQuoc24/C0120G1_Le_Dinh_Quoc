@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<canvas id="myCanvas" width="2000" height="2000"></canvas>
+
+
+
+
+<script>
+    function Rectangle(length,width) {
+        this.length = length;
+        this.width = width;
+
+        this.getLength=function () {
+            return this.length;
+        };
+
+        this.getWidth=function () {
+            return this.width;
+        };
+        this.getChuvi=function () {
+            return (this.width+this.length)*2;
+        }
+        this.getDientich=function () {
+            return(this.width*this.length);
+        }
+
+        this.setLength=function (length) {
+            this.length = length;
+        };
+
+        this.setWidth=function (width) {
+            this.width = width;
+        };
+    }
+    function createRectangle() {
+        var ctx = document.getElementById("myCanvas").getContext("2d");
+        var rectangle = new Rectangle();
+        rectangle.setLength(parseFloat(prompt("nhập chiều dài hình chữ nhật")));
+        rectangle.setWidth(parseFloat(prompt("nhập chiều rộng hình chữ nhật")));
+        alert("Chu vi hình chữ nhật "+rectangle.getChuvi()+"\n"+"Diện tích hình chữ nhật "+rectangle.getDientich());
+        var grd = ctx.createLinearGradient(0, 0, 200, 0);
+        grd.addColorStop(0, "red");
+        grd.addColorStop(1, "red");
+        ctx.fillStyle=grd;
+        ctx.fillRect(10,10,rectangle.getLength(),rectangle.getWidth());
+
+    }
+    createRectangle();
+
+</script>
+
+</body>
+</html>

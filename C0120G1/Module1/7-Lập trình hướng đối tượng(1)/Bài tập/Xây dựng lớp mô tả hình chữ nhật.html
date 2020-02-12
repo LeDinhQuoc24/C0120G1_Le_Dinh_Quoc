@@ -1,0 +1,35 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Chu vi hình chữ nhật:<span id=chuvi></span><br>
+Diện tích hình chữ nhật:<span id="dientich"></span>
+<canvas id="myCanvas" width="2000" height="2000"></canvas>
+
+
+
+
+<script>
+    function Rectangle(length,width) {
+        this.length=length;
+        this.width=width;
+    }
+    function createRectangle() {
+        var ctx = document.getElementById("myCanvas").getContext("2d");
+        var rectangle = new Rectangle(100,40);
+        var grd = ctx.createLinearGradient(0, 0, 200, 0);
+        grd.addColorStop(0, "red");
+        grd.addColorStop(1, "white");
+        ctx.fillStyle=grd;
+        ctx.fillRect(10,30,rectangle.length,rectangle.width);
+        document.getElementById("chuvi").innerText=(rectangle.length+rectangle.width)*2;
+        document.getElementById("dientich").innerText=rectangle.length*rectangle.width;
+    }
+    createRectangle();
+</script>
+
+</body>
+</html>
