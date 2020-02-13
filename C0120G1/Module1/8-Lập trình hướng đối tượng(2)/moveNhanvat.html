@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="game"></div>
+<button onclick="moveRight()">Right</button>
+<button onclick="moveLeft()">Left</button>
+<button onclick="moveTop()">Top</button>
+<button onclick="moveBot()">Bot</button>
+
+<script>
+    let Hero=function (image,left,top,size) {
+        this.left=left;
+        this.top=top;
+        this.size=size;
+        this.image=image;
+    this.load=function () {
+        return '"<img width="'+this.size+'"'+
+            'height="'+this.size+'"'+
+            'src="'+this.image+'"' +
+            'style="top:'+this.top+'px;left:'+
+                this.left+'px;position:absolute;"/>';
+
+         };
+     this.moveRight=function(){
+            this.left+=20;
+        };
+        this.moveLeft=function(){
+            this.left-=20;
+        };
+        this.moveTop=function(){
+            this.top-=20;
+        };
+        this.moveBot=function(){
+            this.top+=20;
+        };
+    };
+ let hero=new Hero('pikachu.png',30,30,200);
+    function moveRight(){
+        if(hero.left < window.innerWidth - hero.size){
+            hero.moveRight();
+        }
+        document.getElementById('game').innerHTML = hero.load();
+        setTimeout(start, 500)
+    }
+    function moveLeft(){
+        if(hero.left < window.innerWidth -hero.size){
+            hero.moveLeft();
+        }
+        document.getElementById('game').innerHTML = hero.load();
+        setTimeout(start, 500)
+    }
+    function moveTop(){
+        if(hero.left < window.innerHeight - hero.size){
+            hero.moveTop();
+        }
+        document.getElementById('game').innerHTML = hero.load();
+        setTimeout(start, 500)
+    }
+    function moveBot(){
+        if(hero.left < window.innerHeight - hero.size){
+            hero.moveBot();
+        }
+        document.getElementById('game').innerHTML = hero.load();
+        setTimeout(start, 500)
+    }
+
+
+
+
+
+
+
+</script>
+
+</body>
+</html>
