@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="df88910e-952b-405f-86a4-e4df73b81871" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/4-Cấu trúc lặp/Bài đọc/1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/7-Lập trình hướng đối tượng(1)/Bài tập/Xây dựng lớp mô tả TemperatureAssignment.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/x3--Tham khảo Code/1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/x3--Tham khảo Code/a.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/x4-Các đối tượng thông dụng/Các phương thức của đối tượng Date.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/x4-Các đối tượng thông dụng/Các phương thức của đối tượng String.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/6-Hàm/Bài luyện tập/Luyện tập tạo và sử dụng hàm 02/Bài 9_ver2.html" beforeDir="false" afterPath="$PROJECT_DIR$/6-Hàm/Bài luyện tập/Luyện tập tạo và sử dụng hàm 02/Bài 9_ver2.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -23,17 +16,17 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/4-Cấu trúc lặp/Bài đọc/1.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="96">
-              <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/5-Mảng/Bài luyện tập/3.html">
           <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/7-Lập trình hướng đối tượng(1)/Bài tập/Xây dựng lớp mô tả hình chữ nhật.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="264">
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -53,7 +46,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/6-Hàm/Bài luyện tập/Luyện tập tạo và sử dụng hàm 02/Bài 9.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="402">
+            <state relative-caret-position="504">
               <caret line="21" column="9" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
             </state>
           </provider>
@@ -77,7 +70,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/x4-Các đối tượng thông dụng/Các phương thức của đối tượng String.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="384">
@@ -182,7 +175,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -366,6 +358,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -443,12 +436,13 @@
       <workItem from="1581383977759" duration="12260000" />
       <workItem from="1581401773470" duration="8226000" />
       <workItem from="1581470254826" duration="2501000" />
-      <workItem from="1581488534352" duration="780000" />
+      <workItem from="1581488534352" duration="1065000" />
+      <workItem from="1581490362949" duration="352000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="302661000" />
+    <option name="totallyTimeSpent" value="303298000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -737,13 +731,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/7-Lập trình hướng đối tượng(1)/Bài tập/Xây dựng lớp mô tả hình chữ nhật.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/4-Cấu trúc lặp/Bài đọc/1.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="96">
@@ -764,19 +751,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://F:/CodyGym/Exam/Exam/Cau4/Run.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1008">
-          <caret line="42" column="18" selection-end-line="68" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://F:/CodyGym/Exam/Exam/Cau3/Run.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/6-Hàm/Bài luyện tập/Luyện tập tạo và sử dụng hàm 02/Bài 9.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="402">
+        <state relative-caret-position="504">
           <caret line="21" column="9" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
         </state>
       </provider>
@@ -799,6 +776,23 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="384">
           <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://F:/CodyGym/Exam/Exam/Cau4/Run.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1008">
+          <caret line="42" column="18" selection-end-line="68" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://F:/CodyGym/Exam/Exam/Cau3/Run.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/7-Lập trình hướng đối tượng(1)/Bài tập/Xây dựng lớp mô tả hình chữ nhật.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
         </state>
       </provider>
     </entry>

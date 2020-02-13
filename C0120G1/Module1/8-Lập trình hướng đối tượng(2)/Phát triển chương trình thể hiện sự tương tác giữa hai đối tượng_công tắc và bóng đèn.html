@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<img id="bongden" src="images/bong den tat.png"  width="200" />
+<button ><img id="congtac" src="images/turnoff.png" height="80" width="90" onclick="onclick1()"/></button>
+<script>
+    let SwithchButton=function () {
+        this.setStatus=function (t) {
+            if (t === "ON") {
+                this.status=true;
+            }else if (t === "OFF") {
+                this.status=false;
+            }
+
+        };
+        this.getStatus=function () {
+            return this.status;
+        };
+        this.switchOn=function () {
+            this.status=true;
+        };
+        this.switchOff=function () {
+            this.status=false;
+        };
+    };
+    let ElectricLamp=function () {
+        this.getLampStatus = function () {
+            return this.lampstatus.getStatus();
+        };
+        this.setLampStatus=function (switchButton) {
+            this.lampstatus=switchButton;
+            };
+        this.getLampSwitchOn=function () {
+            return this.lampstatus.switchOn();
+        };
+        this.getLampSwitchOff=function () {
+            return this.lampstatus.switchOff();
+        };
+        this.light=function () {
+            if (this.getLampStatus()) {
+                document.getElementById("congtac").src = "images/turnon.png";
+               document.getElementById("bongden").src="images/bong den bat.png";
+            }else{
+                document.getElementById("congtac").src = "images/turnoff.png";
+                document.getElementById("bongden").src="images/bong den tat.png";
+            }
+        };
+    };
+    function onclick1(){
+        if(electricLamp.getLampStatus()){
+            electricLamp.getLampSwitchOff();
+        }else{
+            electricLamp.getLampSwitchOn();
+        }
+        electricLamp.light();
+    }
+    let switchButton = new SwithchButton();
+    switchButton.setStatus("ON");
+    let electricLamp=new ElectricLamp();
+    electricLamp.setLampStatus(switchButton);
+    electricLamp.light();
+    // electricLamp.getLampSwitchOff();
+    // electricLamp.light();
+
+</script>
+
+</body>
+</html>

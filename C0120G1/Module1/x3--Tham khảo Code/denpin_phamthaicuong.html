@@ -1,0 +1,107 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>đèn pin</title>
+</head>
+<h1 id="battery">battery 100%</h1>
+<div style="width: 400px;">
+    <img name="hinhSacPin" style="position: absolute;margin-left: 180px;margin-top: 20px;" src="" height="60">
+    <img name="hinhBongDen" src="hinh anh/bong den tat.PNG" height="430">
+    <br></div>
+
+<input type="button" id="button1" onclick="batDenPin();" value="bật đèn pin">
+<input type="button" id="button2" onclick="tatDenPin();" value="tắt đèn pin">
+<input type="button" id="button3" onclick="sacPin();" value="Sạc Pin">
+<input type="button" id="button4" onclick="ngatSacPin();" value="Ngắt Sạc Pin">
+
+<body>
+<script>
+    var tSuDungPin = 0;
+    var tSacPin = 0;
+    var Battery = function () {
+
+        this.setEnergy = function (energy) {
+            this.energy = energy;
+        };
+
+        this.getEnergy = function () {
+            return this.energy;
+        };
+
+        this.decreaseEnergy = function () {
+            if (this.energy > 0) {
+                this.energy--;
+            }
+        }
+    };
+
+    function giamPinKhiSuDung() {
+        if (flashLamp.getBatteryInfo() > 0 && flashLamp.light() === true) {
+            flashLamp.battery.decreaseEnergy();
+            document.getElementById("battery").innerHTML = "battery " + flashLamp.getBatteryInfo() + "%";
+            tSuDungPin = setTimeout(giamPinKhiSuDung, 100);
+        } else tatDenPin();
+    }
+
+    var FlashLamp = function () {
+
+        this.setBattery = function (battery) {
+            this.battery = battery;
+        };
+
+        this.getBatteryInfo = function () {
+            return this.battery.getEnergy();
+        };
+
+        this.light = function () {
+            return this.status;
+        };
+        this.turnOn = function () {
+            if (this.getBatteryInfo() > 0)
+                this.status = true;
+        };
+
+        this.turnOff = function () {
+            this.status = false;
+        }
+    };
+    var battery = new Battery();
+    battery.setEnergy(100);
+
+    var flashLamp = new FlashLamp();
+    flashLamp.setBattery(battery);
+
+    function sacPin() {
+        //battery.setEnergy(100);
+        //document.getElementById("battery").innerHTML = "battery " + flashLamp.getBatteryInfo() + "%";
+        document.images['hinhSacPin'].src = 'hinh anh/icon.PNG';
+        if (flashLamp.getBatteryInfo() < 100) {
+            flashLamp.battery.energy = flashLamp.getBatteryInfo() + 1;
+        }
+        document.getElementById("battery").innerHTML = "battery " + flashLamp.getBatteryInfo() + "%";
+        tSacPin = setTimeout(sacPin, 80);
+    }
+
+    function ngatSacPin() {
+        clearTimeout(tSacPin);
+        document.images['hinhSacPin'].src = '';
+    }
+
+    function batDenPin() {
+        flashLamp.turnOn();
+        if (flashLamp.light()) {
+            document.images['hinhBongDen'].src = 'hinh anh/bong den bat.PNG';
+            giamPinKhiSuDung();
+        }
+    }
+
+    function tatDenPin() {
+        document.images['hinhBongDen'].src = 'hinh anh/bong den tat.PNG';
+        flashLamp.turnOff();
+        clearTimeout(tSuDungPin);
+    }
+
+</script>
+</body>
+</html>
