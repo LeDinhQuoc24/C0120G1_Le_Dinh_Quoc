@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var patt=/^[A-Za-z0-9]+@[A-Za-z0-9]+(\.[A-Za-z0-9]+)$/;
+    check("rtyyy6@gmail.com");
+    check("ab@yahoo.com");
+    check("abc.hotmail.com");
+    
+    function check(str) {
+        if(patt.test(str)){
+            alert("hợp lệ");
+        }else{
+            alert("không hợp lệ");
+        }
+
+    }
+
+    
+</script>
+
+</body>
+</html>

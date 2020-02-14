@@ -5,27 +5,31 @@
     <title>Title</title>
 </head>
 <body>
-<div id="game"></div>
-<button onclick="moveRight()">Right</button>
-<button onclick="moveLeft()">Left</button>
-<button onclick="moveTop()">Top</button>
-<button onclick="moveBot()">Bot</button>
 
+<div style="width: 1200px;height: 680px;">
+    <button onclick="moveRight()">Right</button>
+    <button onclick="moveLeft()">Left</button>
+    <button onclick="moveTop()">Top</button>
+    <button onclick="moveBot()">Bot</button>
+    <div id="game" ></div>
+</div>
 <script>
     let Hero=function (image,left,top,size) {
         this.left=left;
         this.top=top;
         this.size=size;
+        this.getSize = function () {
+            return this.size;
+        };
         this.image=image;
-    this.load=function () {
-        return '"<img width="'+this.size+'"'+
-            'height="'+this.size+'"'+
-            'src="'+this.image+'"' +
-            'style="top:'+this.top+'px;left:'+
+        this.load=function () {
+            return '<img width="'+this.size+'"'+
+                'height="'+this.size+'"'+
+                'src="'+this.image+'"' +
+                'style="top:'+this.top+'px;left:'+
                 this.left+'px;position:absolute;"/>';
-
-         };
-     this.moveRight=function(){
+        };
+        this.moveRight=function(){
             this.left+=20;
         };
         this.moveLeft=function(){
@@ -38,41 +42,37 @@
             this.top+=20;
         };
     };
- let hero=new Hero('pikachu.png',30,30,200);
+    let hero=new Hero('pikachu.png',30,30,200);
     function moveRight(){
-        if(hero.left < window.innerWidth - hero.size){
+        if(hero.left < window.innerWidth-hero.getSize()){
             hero.moveRight();
         }
         document.getElementById('game').innerHTML = hero.load();
-        setTimeout(start, 500)
+        // setTimeout(start,500);
     }
     function moveLeft(){
-        if(hero.left < window.innerWidth -hero.size){
+        if(hero.left >10){
             hero.moveLeft();
+            console.log(hero.left);
+            console.log(window.innerWidth-hero.getSize());
         }
         document.getElementById('game').innerHTML = hero.load();
-        setTimeout(start, 500)
+        // setTimeout(start,500);
     }
     function moveTop(){
-        if(hero.left < window.innerHeight - hero.size){
+        if(hero.top > 10){
             hero.moveTop();
         }
         document.getElementById('game').innerHTML = hero.load();
-        setTimeout(start, 500)
+        // setTimeout(start,500);
     }
     function moveBot(){
-        if(hero.left < window.innerHeight - hero.size){
+        if(hero.top < window.innerHeight-hero.getSize()){
             hero.moveBot();
         }
         document.getElementById('game').innerHTML = hero.load();
-        setTimeout(start, 500)
-    }
-
-
-
-
-
-
+        // setTimeout(start,500);
+    };
 
 </script>
 

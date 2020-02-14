@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var patt=/^[_a-z0-9]{6,}$/;
+    function check(str) {
+        if(patt.test(str)){
+            alert("hop le");
+        }else{
+            alert("khong hop le");
+        }
+    }
+
+    check("_abc123");
+    alert("1");
+    check("abcdefg")
+    alert("2");
+    check("avnb");
+    alert("3");
+
+
+</script>
+
+</body>
+</html>
