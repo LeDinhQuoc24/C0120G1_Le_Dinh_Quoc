@@ -174,43 +174,6 @@ function exit() {
     alert("Cảm ơn quý khách đã sử dịch vụ của chúng tôi");
 }
 
-function editInformationCustomer(index) {
-    let editInfo = prompt("Nhập vào thông tin bạn muốn thay đổi:");
-    switch (index) {
-        case 0:
-            listCustomer[index].setNameCustomer(editInfo);
-            break;
-        case 1:
-            listCustomer[index].setIDCustomer(editInfo);
-            break;
-        case 2:
-            listCustomer[index].setAddressCustomer(editInfo);
-            break;
-        case 3:
-            listCustomer[index].setBirthdayCustomer(editInfo);
-            break;
-        case 4:
-            listCustomer[index].setEmailCustomer(editInfo);
-            break;
-        case 5:
-            listCustomer[index].setTypeCustomer(editInfo);
-            break;
-        case 6:
-            listCustomer[index].setRentDay(editInfo);
-            break;
-        case 7:
-            listCustomer[index].setDiscount(editInfo);
-            break;
-        case 8:
-            listCustomer[index].setTypeService(editInfo);
-            break;
-        default:
-            alert("Nhập sai");
-            return;
-    }
-    checkEditCustomer = false;
-    displayMainMenu();
-}
     displayMainMenu();
 
 
