@@ -111,7 +111,7 @@ function displayInfomationCustomer(index) {
             "\n10.Quay lại giao diện"+
             "\nNhập 1-10 để lựa chọn tính năng"
         );
-        if(chooseEdit.toString()!=="9"){
+        if(chooseEdit.toString()!=="10"){
             editInformationCustomer(Number.parseInt(chooseEdit)-1);
         }else{
             displayMainMenu();
@@ -143,6 +143,7 @@ function chooseEditCustomer() {
 function exit() {
     alert("Cảm ơn quý khách đã sử dịch vụ của chúng tôi");
 }
+
 function editInformationCustomer(index) {
     let editInfo = prompt("Nhập vào thông tin bạn muốn thay đổi:");
     switch (index) {
@@ -177,8 +178,10 @@ function editInformationCustomer(index) {
             alert("Nhập sai");
             return;
     }
+    checkEditCustomer = false;
+    displayMainMenu();
 }
-displayMainMenu();
+    displayMainMenu();
 
 
 
