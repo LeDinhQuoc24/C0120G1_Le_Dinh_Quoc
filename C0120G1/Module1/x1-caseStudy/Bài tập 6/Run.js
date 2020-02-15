@@ -3,6 +3,7 @@ let validateBirthday=/^((0)[1-9]|[1-2][0-9]|[3][0-1])(\/)((0)[1-9]|(1)[0-2])(\/)
 let validateEmail=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 let checkDeleteCustomer=false;
 let checkEditCustomer=false;
+let checkDisplayTotalPay=false;
 
 function displayMainMenu() {
     let choose = prompt("1.Hiển thị thông tin khách hàng" + "\n" +
@@ -16,7 +17,7 @@ function displayMainMenu() {
             displayCustomer();
             break;
         case "2":
-            displayTotalPays();
+            choosedisplayTotalPays();
             break;
         case "3":
             chooseEditCustomer();
@@ -73,10 +74,12 @@ function displayCustomer() {
     result += "\n" + (listCustomer.length + 1) + ".Quay lại giao diện";
     let chooseDisplayInfo = prompt(result);
     if(chooseDisplayInfo.toString()!==(listCustomer.length+1).toString()){
-        if(!checkDeleteCustomer){
+        if(!checkDeleteCustomer&&!checkDisplayTotalPay){
             displayInfomationCustomer(Number.parseInt(chooseDisplayInfo) - 1);
+        }else if(checkDeleteCustomer){
+            deleteCustomer(Number.parseInt(chooseDisplayInfo) - 1);
         }else{
-            deleteCustomer(Number.parseInt(chooseDisplayInfo) - 1)
+            displayTotalPays(Number.parseInt(chooseDisplayInfo) - 1);
         }
 
     }else{
@@ -172,6 +175,15 @@ function chooseEditCustomer() {
 }
 function exit() {
     alert("Cảm ơn quý khách đã sử dịch vụ của chúng tôi");
+}
+function choosedisplayTotalPays() {
+    checkDisplayTotalPay=true;
+    displayCustomer();
+}
+function displayTotalPays(index) {
+    alert(listCustomer[index].totalPays());
+    checkDisplayTotalPay=false;
+    displayMainMenu();
 }
 
     displayMainMenu();
