@@ -41,7 +41,7 @@ function chooseAddNewCustomer() {
         if (validateBirthday.test(cus.getBirthdayCustomer())) {
             checkBirthday = true;
         } else {
-            alert("Nhập ngày sinh không hợp lệ")
+            alert("Nhập ngày sinh không hợp lệ");
         }
     }while (!checkBirthday);
     do {
@@ -49,7 +49,7 @@ function chooseAddNewCustomer() {
         if (validateEmail.test(cus.getEmailCustomer())) {
             checkEmail = true;
         } else {
-            alert("Nhập địa chỉ email không hợp lệ")
+            alert("Nhập địa chỉ email không hợp lệ");
         }
     }while (!checkEmail);
     cus.setTypeCustomer(prompt("Nhập vào loại thẻ khách hàng"));
@@ -85,12 +85,11 @@ function displayInfomationCustomer(index) {
         "\n2.CMND: " + listCustomer[index].getIDCustomer() +
         "\n3.Địa chỉ khách hàng: " + listCustomer[index].getAddressCustomer() +
         "\n4.Ngày tháng năm sinh: " + listCustomer[index].getBirthdayCustomer()+
-        "\n5.Địa chỉ email: " + listCustomer[index][4].getEmailCustomer() +
+        "\n5.Địa chỉ email: " + listCustomer[index].getEmailCustomer() +
         "\n6.Loại thẻ khách hàng: " + listCustomer[index].getTypeCustomer() +
         "\n7.Số ngày thuê: " + listCustomer[index].getRentDay() +
         "\n8.Mã giảm giá: " + listCustomer[index].getDiscount() +
-        "\n9.Loại dịch vu: " + listCustomer[index].getTypeService()+
-        "\n10.Quay lại giao diện."
+        "\n9.Loại dịch vu: " + listCustomer[index].getTypeService()
     );
     displayMainMenu();
 }
