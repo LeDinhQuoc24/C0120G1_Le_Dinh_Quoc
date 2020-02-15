@@ -111,8 +111,38 @@ function displayInfomationCustomer(index) {
             "\n10.Quay lại giao diện"+
             "\nNhập 1-10 để lựa chọn tính năng"
         );
-        if(chooseEdit.toString()!=="10"){
-            editInformationCustomer(Number.parseInt(chooseEdit)-1);
+        if(chooseEdit!=="10"){
+            switch (chooseEdit) {
+                case "1":
+                    listCustomer[index].setNameCustomer(prompt("Nhập tên khách hàng muốn thay đổi"));
+                    break;
+                case "2":
+                    listCustomer[index].setIDCustomer(prompt("Nhập CMND muốn thay đổi"));
+                    break;
+                case "3":
+                    listCustomer[index].setAddressCustomer(prompt("Nhập địa chỉ khách hàng muốn thay đổi"));
+                    break;
+                case "4":
+                    listCustomer[index].setBirthdayCustomer(prompt("Nhập ngày tháng năm sinh muốn thay đổi"));
+                    break;
+                case "5":
+                    listCustomer[index].setEmailCustomer(prompt("Nhập địa chỉ Email muốn thay đổi"));
+                    break;
+                case "6":
+                    listCustomer[index].setTypeCustomer(prompt("Nhập loại thẻ khách hàng muốn thay đổi"));
+                    break;
+                case "7":
+                    listCustomer[index].setRentDay(prompt("Nhập số ngày thuê  muốn thay đổi"));
+                    break;
+                case "8":
+                    listCustomer[index].setDiscount(prompt("Nhập mã giảm giá muốn thay đổi"));
+                    break;
+                case "9":
+                    listCustomer[index].setTypeService(prompt("Nhập loại dịch vụ muốn thay đổi"));
+                    break;
+            }
+            checkEditCustomer=false;
+            displayMainMenu();
         }else{
             displayMainMenu();
         }
