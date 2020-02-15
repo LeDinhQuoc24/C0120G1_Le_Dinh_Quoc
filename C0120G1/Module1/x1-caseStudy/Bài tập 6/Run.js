@@ -2,27 +2,32 @@ let listCustomer = [];
 let validateBirthday=/^((0)[1-9]|[1-2][0-9]|[3][0-1])(\/)((0)[1-9]|(1)[0-2])(\/)\d{4}$/;
 let validateEmail=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 let checkDeleteCustomer=false;
+let checkEditCustomer=false;
 
 function displayMainMenu() {
     let choose = prompt("1.Hiển thị thông tin khách hàng" + "\n" +
-        "2.Chỉnh sửa thông tin khách hàng" + "\n" +
-        "3.Thêm thông tin khách hàng" + "\n" +
-        "4.Xóa thông tin khách hàng" + "\n" +
-        "5.Thoát" + "\n" + "Lựa chọn tính năng");
+        "2.Hiển thị tiền cần thanh toán"+ "\n" +
+        "3.Chỉnh sửa thông tin khách hàng" + "\n" +
+        "4.Thêm thông tin khách hàng" + "\n" +
+        "5.Xóa thông tin khách hàng" + "\n" +
+        "6.Thoát" + "\n" + "Lựa chọn tính năng");
     switch (choose) {
         case "1":
             displayCustomer();
             break;
         case "2":
-            editCustomer();
+            displayTotalPays();
             break;
         case "3":
-            chooseAddNewCustomer();
+            chooseEditCustomer();
             break;
         case "4":
-            chooseDeleteCustomer();
+            chooseAddNewCustomer();
             break;
         case "5":
+            chooseDeleteCustomer();
+            break;
+        case "6":
             exit();
             break;
         default:
@@ -75,22 +80,44 @@ function displayCustomer() {
         }
 
     }else{
+        checkEditCustomer=false;
         displayMainMenu();
     }
 }
 
 function displayInfomationCustomer(index) {
-    alert("Thông tin khách hàng: " +
-        "\n1.Tên khách hàng: " + listCustomer[index].getNameCustomer() +
-        "\n2.CMND: " + listCustomer[index].getIDCustomer() +
-        "\n3.Địa chỉ khách hàng: " + listCustomer[index].getAddressCustomer() +
-        "\n4.Ngày tháng năm sinh: " + listCustomer[index].getBirthdayCustomer()+
-        "\n5.Địa chỉ email: " + listCustomer[index].getEmailCustomer() +
-        "\n6.Loại thẻ khách hàng: " + listCustomer[index].getTypeCustomer() +
-        "\n7.Số ngày thuê: " + listCustomer[index].getRentDay() +
-        "\n8.Mã giảm giá: " + listCustomer[index].getDiscount() +
-        "\n9.Loại dịch vu: " + listCustomer[index].getTypeService()
-    );
+    if(!checkEditCustomer) {
+        alert("Thông tin khách hàng: " +
+            "\n1.Tên khách hàng: " + listCustomer[index].getNameCustomer() +
+            "\n2.CMND: " + listCustomer[index].getIDCustomer() +
+            "\n3.Địa chỉ khách hàng: " + listCustomer[index].getAddressCustomer() +
+            "\n4.Ngày tháng năm sinh: " + listCustomer[index].getBirthdayCustomer() +
+            "\n5.Địa chỉ email: " + listCustomer[index].getEmailCustomer() +
+            "\n6.Loại thẻ khách hàng: " + listCustomer[index].getTypeCustomer() +
+            "\n7.Số ngày thuê: " + listCustomer[index].getRentDay() +
+            "\n8.Mã giảm giá: " + listCustomer[index].getDiscount() +
+            "\n9.Loại dịch vu: " + listCustomer[index].getTypeService());
+    }else {
+        let chooseEdit=prompt(
+            "\n1.Tên khách hàng: " + listCustomer[index].getNameCustomer() +
+            "\n2.CMND: " + listCustomer[index].getIDCustomer() +
+            "\n3.Địa chỉ khách hàng: " + listCustomer[index].getAddressCustomer() +
+            "\n4.Ngày tháng năm sinh: " + listCustomer[index].getBirthdayCustomer() +
+            "\n5.Địa chỉ email: " + listCustomer[index].getEmailCustomer() +
+            "\n6.Loại thẻ khách hàng: " + listCustomer[index].getTypeCustomer() +
+            "\n7.Số ngày thuê: " + listCustomer[index].getRentDay() +
+            "\n8.Mã giảm giá: " + listCustomer[index].getDiscount() +
+            "\n9.Loại dịch vu: " + listCustomer[index].getTypeService()+
+            "\n10.Quay lại giao diện"+
+            "\nNhập 1-10 để lựa chọn tính năng"
+        );
+        if(chooseEdit.toString()!=="9"){
+            editInformationCustomer(Number.parseInt(chooseEdit)-1);
+        }else{
+            displayMainMenu();
+        }
+
+    }
     displayMainMenu();
 }
 function chooseDeleteCustomer() {
@@ -108,7 +135,48 @@ function deleteCustomer(index) {
     }
     checkDeleteCustomer=false;
     displayMainMenu();
-
+}
+function chooseEditCustomer() {
+    checkEditCustomer=true;
+    displayCustomer();
+}
+function exit() {
+    alert("Cảm ơn quý khách đã sử dịch vụ của chúng tôi");
+}
+function editInformationCustomer(index) {
+    let editInfo = prompt("Nhập vào thông tin bạn muốn thay đổi:");
+    switch (index) {
+        case 0:
+            listCustomer[index].setNameCustomer(editInfo);
+            break;
+        case 1:
+            listCustomer[index].setIDCustomer(editInfo);
+            break;
+        case 2:
+            listCustomer[index].setAddressCustomer(editInfo);
+            break;
+        case 3:
+            listCustomer[index].setBirthdayCustomer(editInfo);
+            break;
+        case 4:
+            listCustomer[index].setEmailCustomer(editInfo);
+            break;
+        case 5:
+            listCustomer[index].setTypeCustomer(editInfo);
+            break;
+        case 6:
+            listCustomer[index].setRentDay(editInfo);
+            break;
+        case 7:
+            listCustomer[index].setDiscount(editInfo);
+            break;
+        case 8:
+            listCustomer[index].setTypeService(editInfo);
+            break;
+        default:
+            alert("Nhập sai");
+            return;
+    }
 }
 displayMainMenu();
 
