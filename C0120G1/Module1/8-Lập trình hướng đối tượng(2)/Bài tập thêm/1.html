@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var Candidate = function () {
+        this.setName = function (name) {
+            this.name = name;
+        };
+        this.getName = function () {
+            return this.name;
+        }
+        this.setId = function (id) {
+            this.id = id;
+        };
+        this.getId = function () {
+            return this.id;
+        };
+        this.setBirthday = function (birthday) {
+            this.birthday = birthday;
+        };
+        this.getBirthday = function () {
+            return this.birthday;
+        };
+        this.setDiemThiToan = function (diemThiToan) {
+            this.diemThiToan = diemThiToan;
+        };
+        this.getDiemThiToan = function () {
+            return this.diemThiToan;
+        }
+        this.setDiemThiLy = function (diemThiLy) {
+            this.diemThiLy = diemThiLy;
+        };
+        this.getDiemThiLy = function () {
+            return this.diemThiLy;
+        };
+        this.setDiemThiHoa = function (diemThiHoa) {
+            this.diemThiHoa = diemThiHoa;
+        };
+        this.getDiemThiHoa = function () {
+            return this.diemThiHoa;
+        };
+
+        this.tongDiem = function () {
+            return this.getDiemThiToan() + this.getDiemThiLy() + this.getDiemThiHoa()
+        }
+
+    };
+    let arrayCandidate = [];
+    displayMainMenu();
+    function displayMainMenu() {
+        let choose = prompt("" +
+            "1. Add new candidate" +
+            "\n2. Display information candidate diem >15 :)) "
+        );
+        switch (choose) {
+            case "1":
+                addNewCandidate();
+                break;
+            case "2":
+                displayCandidate();
+                break;
+            default:
+                alert("fail");
+                displayMainMenu();
+                break;
+
+
+        }
+
+    }
+
+    function addNewCandidate() {
+        let candidate = new Candidate();
+        candidate.setId(prompt("nhap Id"));
+        candidate.setName(prompt("nhap ten"));
+        candidate.setBirthday(prompt("nhap ngay sinh"));
+        candidate.setDiemThiToan(parseInt(prompt("nhap diem Toan")));
+        candidate.setDiemThiLy(parseInt(prompt("nhap diem ly")));
+        candidate.setDiemThiHoa(parseInt(prompt("nhap diem hoa")));
+        arrayCandidate.push(candidate);
+        displayMainMenu();
+    }
+</script>
+
+</body>
+</html>

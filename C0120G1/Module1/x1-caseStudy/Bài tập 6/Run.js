@@ -1,9 +1,11 @@
 let listCustomer = [];
 let validateBirthday=/^((0)[1-9]|[1-2][0-9]|[3][0-1])(\/)((0)[1-9]|(1)[0-2])(\/)\d{4}$/;
 let validateEmail=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+let validateID=/\d{9}/;
 let checkDeleteCustomer=false;
 let checkEditCustomer=false;
 let checkDisplayTotalPay=false;
+
 
 function displayMainMenu() {
     let choose = prompt("1.Hiển thị thông tin khách hàng" + "\n" +
@@ -38,9 +40,17 @@ function displayMainMenu() {
 function chooseAddNewCustomer() {
     let checkBirthday=false;
     let checkEmail=false;
+    let checkID=false;
     let cus = new Customer();
     cus.setNameCustomer(prompt("Nhập vào tên khách hàng"));
-    cus.setIDCustomer(prompt("Nhập vào thẻ CMND"));
+    do{
+        cus.setIDCustomer(prompt("Nhập vào thẻ CMND"));
+        if(validateID.test(cus.getIDCustomer())){
+            checkID=true;
+        }else{
+            alert("Nhập chứng minh nhân dân không hợp lệ")
+        }
+    }while(!checkID);
     cus.setAddressCustomer(prompt("Nhập vào địa chỉ khách hàng"));
     do {
         cus.setBirthdayCustomer(prompt("Nhập vào ngày tháng năm sinh"));
