@@ -155,7 +155,7 @@ function displayInfomationCustomer(index) {
                     break;
             }
             checkEditCustomer=false;
-            displayMainMenu();
+            displayCustomer();
         }else{
             displayMainMenu();
         }

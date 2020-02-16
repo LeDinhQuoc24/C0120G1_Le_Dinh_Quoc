@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>yeu cau 5</title>
+</head>
+<body>
+<h1>Yêu Cầu 6</h1>
+<input type="button"; onclick="beginMenu=true;
+    displayMainMenu();" value="Run">
+
+<script>
+
+    function OopCustomer(){
+        this.fullName =null;
+        this.idCard=null;
+        this.birthDay=null;
+        this.email=null;
+        this.address=null;
+        this.typeCustomer=null;
+        this.discount=null;
+        this.number=null;
+        this.rentDays=null;
+        this.serviceRoom=null;
+        this.rentRoom=null;
+        this.getFullName=function () {
+            return this.fullName;
+        };
+        this.getIdCard=function () {
+            return this.idCard;
+        };
+        this.getBirthDay=function () {
+            return this.birthDay;
+        };
+        this.getEmail=function () {
+            return this.email;
+        };
+        this.getAddress=function () {
+            return this.address;
+        };
+        this.getTypeCustomer=function () {
+            return this.typeCustomer;
+        };
+        this.getDiscount=function () {
+            return this.discount;
+        };
+        this.getNumber=function () {
+            return this.number;
+        };
+        this.getRentDays=function () {
+            return this.rentDays;
+        };this.getServiceRoom=function () {
+            return this.serviceRoom;
+        };
+        this.getRentRoom=function () {
+            return this.rentRoom;
+        };
+
+        this.setFullName=function (fullName) {
+            this.fullName =fullName ;
+        };
+        this.setIdCard=function (idCard) {
+            this.idCard=idCard;
+        };
+        this.setBirthDay=function (birthDay) {
+            this.birthDay=birthDay;
+        };
+        this.setEmail=function (email) {
+            this.email=email;
+        };
+        this.setAddress=function (address) {
+            this.address=address;
+        };
+        this.setTypeCustomer=function (typeCustomer) {
+            this.typeCustomer=typeCustomer;
+        };
+        this.setDiscount=function (discount) {
+            this.discount=discount;
+        };
+        this.setNumber=function (number) {
+            this.number=number;
+        };
+        this.setRentDays=function (rentDays) {
+            this.rentDays=rentDays;
+        };
+        this.setServiceRoom=function (serviceRoom) {
+            this.serviceRoom=serviceRoom;
+        };
+        this.setRentRoom=function (rentRoom) {
+            this.rentRoom=rentRoom;
+        };
+        this.amount=function () {
+            let discountAddress,
+                discountTypeCustomer,
+                ageCustomer,
+                discountYearOld,
+                moneyRoom,
+                currentYear,
+                yearOfBirth,
+                totalDiscount,
+                money,
+                discountRentDays;
+
+            switch (this.address) {
+                case "Đà Nẵng": discountAddress=20;break;
+                case "Huế": discountAddress=10;break;
+                case "Quảng Nam": discountAddress=5;break;
+                default:
+            }
+            //***************************************************************giảm giá theo thời gian thuê phòng
+            if(this.rentDays<2)
+                discountRentDays=0;
+            else if(this.rentDays<5)
+                discountRentDays=10;
+            else if(this.rentDays<7)
+                discountRentDays=20;
+            else if(this.rentDays>7)
+                discountRentDays=30;
+            //*****************************************************************giảm giá theo typeCustomer
+            switch (this.typeCustomer) {
+                case "Diamond": discountTypeCustomer=15;break;
+                case "Platium": discountTypeCustomer=10;break;
+                case "Gold": discountTypeCustomer=5;break;
+                case "Silver": discountTypeCustomer=2;break;
+                case "Member": discountTypeCustomer=0;break;
+                default:
+            }
+            //****************************************************************giảm theo tuổi
+            currentYear=new Date().getFullYear();
+            yearOfBirth=new Date(this.birthDay).getFullYear();
+
+            if(new Date().getMonth()>new Date(this.birthDay).getMonth())
+                ageCustomer=currentYear-yearOfBirth;
+            else if((new Date().getMonth()===new Date(this.birthDay).getMonth()) && new Date().getDate()>new Date(this.birthDay).getDate())
+                ageCustomer=currentYear-yearOfBirth;
+            else ageCustomer=(currentYear-yearOfBirth-1);
+
+            if(ageCustomer>=30&& this.address==="Đà Nẵng")
+                discountYearOld=2;
+            else if(ageCustomer>=20&& this.address==="Đà Nẵng")
+                discountYearOld=1;
+            else discountYearOld=0;
+            //****************************************************************Tổng giảm giá
+            totalDiscount=discountAddress+discountRentDays+discountTypeCustomer+discountYearOld;
+            //****************************************************************
+            switch (this.serviceRoom) {
+                case "Villa": moneyRoom=500;break;
+                case "House": moneyRoom=300;break;
+                case "Room": moneyRoom=100; break;
+                default:
+            }
+            money=moneyRoom*this.rentDays*(1-this.discount/100)-totalDiscount;
+            return  money;
+        };
+    }
+
+    //customer1=new OopCustomer();
+    // customer1.setAddress("Đà Nẵng");
+    // customer1.setRentDays(10);
+    // customer1.setTypeCustomer("Gold");
+    // customer1.setBirthDay(10/10/1980);
+    // customer1.setServiceRoom("Villa");
+    // customer1.setDiscount(10);
+    // customer1.setFullName();
+
+    let listCustomers=[];
+    let listEmployee=[];
+    var beginMenu=true;
+    displayMainMenu();
+    //********************************************menu chính
+    function displayMainMenu() {
+        while (beginMenu) {
+            menu = prompt("1. Add New Customer.\n" +
+                "2. Display Information Customer.\n" +
+                "3. displayTotalPayOfCustomner.\n" +
+                "4. Edit Information Customer.\n" +
+                "5. Delete Customer.\n" +
+                "6. Add New Employee.\n" +
+                "7. Exit.\n");
+            if (menu === "1") {
+                listCustomers.push(addNewCustomer());
+                displayMainMenu();
+            } else if (menu === "2") {
+                displayCustomers();
+            } else if (menu === "3") {
+                displayTotalPayOfCustomers();
+            } else if (menu === "4") {
+                editCustomer();
+            } else if (menu === "5") {
+                deleteCustomer();
+            }else if (menu === "6") {
+                listEmployee.push(addNewEmployee());
+            } else if (menu === "7") {
+                beginMenu=false;
+            } else
+                displayMainMenu();
+        }
+    }
+
+    function addNewCustomer () {
+        let customer=new OopCustomer();
+        customer.setFullName(prompt("điền vào Tên:"));
+        customer.setIdCard(addIdCard());
+        customer.setBirthDay(addBirthDay());
+        customer.setEmail(addEmail());
+        customer.setAddress(prompt("điền vào Địa Chỉ:"));
+        customer.setTypeCustomer(prompt("điền vào Loại Customer:"));
+        customer.setDiscount(prompt("điền vào Giảm Giá:"));
+        customer.setNumber(prompt("điền vào Số Lượng Đi Kèm:"));
+        customer.setRentDays(prompt("điền vào Số Ngày thuê:"));
+        customer.setServiceRoom(prompt("điền vào Loại Dịch Vụ:"));
+        customer.setRentRoom(prompt("điền vào Loại Phòng Thuê:"));
+        return customer;
+    }
+
+    function displayCustomers() {
+        let customers1;
+        customers1 = prompt("Chọn khách hàng cần hiển thị thông tin: \n"+
+            chuoiHienThiTenCMND(listCustomers)+
+            (listCustomers.length + 1) + ". back", listCustomers.length+1);
+        if (customers1 ==listCustomers.length+1) {
+            displayMainMenu();
+        } else if (customers1 < (listCustomers.length+1)) {
+            displayInfomationCustomer(listCustomers[customers1-1]);
+            displayMainMenu();
+        }
+    }
+
+    function displayInfomationCustomer (customer) {
+        alert("\n1. Tên: " +customer.getFullName()+
+            "\n2. CMND: "+customer.getIdCard()+
+            "\n3.Ngày Tháng Năm Sinh: " +customer.getBirthDay()+
+            "\n4.Email: "+customer.getEmail()+
+            "\n5.Địa Chỉ: "+customer.getAddress()+
+            "\n6.Loại Customer: "+customer.getTypeCustomer()+
+            "\n7.Giảm Giá: "+customer.getDiscount()+
+            "\n8. Số Lượng Đi Kèm: "+customer.getNumber()+
+            "\n9. Số Ngày Thuê: "+customer.getRentDays()+
+            "\n10. Loại Dịch Vụ: "+customer.getServiceRoom()+
+            "\n11. Loại Phòng Thuê: "+customer.getRentRoom());
+
+    }
+
+    function chuoiHienThiTenCMND(arr) {
+        let chuoiHienThi = "";
+        for (let i = 0; i < arr.length; i++) {
+            chuoiHienThi+=((i+1)+". tên: "+listCustomers[i].getFullName()+"     CMND: "+listCustomers[i].getIdCard()+"\n");
+        }
+        return chuoiHienThi;
+    }
+
+    function displayTotalPayOfCustomers(){
+        let customers1;
+        customers1 = prompt("Chọn khách hàng cần tính tổng tiền:\n"+
+            chuoiHienThiTenCMND(listCustomers)+
+            (listCustomers.length + 1)+ ". back", listCustomers.length+1);
+        if (customers1 ==listCustomers.length+1) {
+            displayMainMenu();
+        } else if (customers1 < (listCustomers.length+1)) {
+            alert("Tổng Tiền: "+listCustomers[customers1-1].amount());
+            displayMainMenu();
+        }
+    }
+
+    function editCustomer() {
+        let customers1;
+        customers1 = prompt("Chọn khách hàng chỉnh sửa thông tin :\n"+
+            chuoiHienThiTenCMND(listCustomers)+
+            (listCustomers.length + 1)+ ". back", listCustomers.length+1);
+        if (customers1 ==listCustomers.length+1) {
+            displayMainMenu();
+        } else if (customers1 < (listCustomers.length+1)) {
+            edit(listCustomers[customers1-1]);
+            displayMainMenu();
+        }
+    }
+
+    function edit(customer) {
+        let ediwhile=1;
+        while(ediwhile) {
+            ip = prompt("\n1. Tên: " +customer.getFullName()+
+                "\n2. CMND: "+customer.getIdCard()+
+                "\n3.Ngày Tháng Năm Sinh: " +customer.getBirthDay()+
+                "\n4.Email: "+customer.getEmail()+
+                "\n5.Địa Chỉ: "+customer.getAddress()+
+                "\n6.Loại Customer: "+customer.getTypeCustomer()+
+                "\n7.Giảm Giá: "+customer.getDiscount()+
+                "\n8. Số Lượng Đi Kèm: "+customer.getNumber()+
+                "\n9. Số Ngày Thuê: "+customer.getRentDays()+
+                "\n10. Loại Dịch Vụ: "+customer.getServiceRoom()+
+                "\n11. Loại Phòng Thuê: "+customer.getRentRoom()+
+                "\n12. thay đổi xong.");
+            switch (ip) {
+                case "1":
+                    customer.setFullName(prompt("điền vào Tên:"));
+                    ip = "";
+                    break;
+                case "2":
+                    customer.setIdCard(prompt("điền vào CMND:"));
+                    ip = "";
+                    break;
+                case "3":
+                    customer.setBirthDay(prompt("điền vào Ngày Tháng Năm Sinh:"));
+                    ip = "";
+                    break;
+                case "4":
+                    customer.setEmail(prompt("điền vào Email:"));
+                    ip = "";
+                    break;
+                case "5":
+                    customer.setAddress(prompt("điền vào Địa Chỉ:"));
+                    ip = "";
+                    break;
+                case "6":
+                    customer.setTypeCustomer(prompt("điền vào Loại Customer:"));
+                    ip = "";
+                    break;
+                case "7":
+                    customer.setDiscount(prompt("điền vào Giảm Giá:"));
+                    ip = "";
+                    break;
+                case "8":
+                    customer.setNumber(prompt("điền vào Số Lượng Đi Kèm:"));
+                    ip = "";
+                    break;
+                case "9":
+                    customer.setRentDays(prompt("điền vào Số Ngày thuê:"));
+                    ip = "";
+                    break;
+                case "10":
+                    customer.setServiceRoom(prompt("điền vào Loại Dịch Vụ:"));
+                    ip = "";
+                    break;
+                case "11":
+                    customer.setRentRoom(prompt("điền vào Loại Phòng Thuê:"));
+                    ip = "";
+                    break;
+                case "12":
+                    ip = "";
+                    displayInfomationCustomer(customer);
+                    ediwhile=0;
+                    break;
+                default:
+                    ip = prompt("\n1. Tên: " +customer.getFullName()+
+                        "\n2. CMND: "+customer.getIdCard()+
+                        "\n3.Ngày Tháng Năm Sinh: " +customer.getBirthDay()+
+                        "\n4.Email: "+customer.getEmail()+
+                        "\n5.Địa Chỉ: "+customer.getAddress()+
+                        "\n6.Loại Customer: "+customer.getTypeCustomer()+
+                        "\n7.Giảm Giá: "+customer.getDiscount()+
+                        "\n8. Số Lượng Đi Kèm: "+customer.getNumber()+
+                        "\n9. Số Ngày Thuê: "+customer.getRentDays()+
+                        "\n10. Loại Dịch Vụ: "+customer.getServiceRoom()+
+                        "\n11. Loại Phòng Thuê: "+customer.getRentRoom()+
+                        "\n12. thay đổi xong.");
+            }
+        }
+    }
+
+    function deleteCustomer() {
+        let customers1;
+        let confirmDelete;
+        customers1 = prompt("Chọn khách hàng muốn xóa thông tin :\n"+
+            chuoiHienThiTenCMND(listCustomers)+
+            (listCustomers.length + 1)+ ". back", listCustomers.length+1);
+        if (customers1 ==listCustomers.length+1) {
+            displayMainMenu();
+        } else if (customers1 < (listCustomers.length+1)) {
+            confirmDelete = prompt("bạn có chắc muốn xóa:\n1.No\n2.Yes",1);
+            if(confirmDelete==="2")
+                listCustomers.splice(customers1-1,1);
+            displayMainMenu();
+        }
+    }
+    function addIdCard(){
+        let itemIdCard;
+        let checkIdCard=/^[0-9]{9}$/;
+        do{
+            itemIdCard=prompt("điền vào CMND:")}
+        while(!checkIdCard.test(itemIdCard));
+        return itemIdCard;
+    }
+    function addEmail(){
+        let itemEmail;
+        let checkEmail=/^[0-9a-zA-Z]+@[0-9a-zA-Z]+\.[0-9a-zA-Z]+$/;
+        do{
+            itemEmail=prompt("điền vào Email:")}
+        while(!checkEmail.test(itemEmail));
+        return itemEmail;
+    }
+    function addBirthDay(){
+        let itemBirthDay;
+        let checkBirthDay=/^[0-2][0-9]|3[0-1]\/([0][0-9])|([1][1-2])\/[0-9]{4}$/;
+        do{itemBirthDay=prompt("điền vào Birthday:")}
+        while(!checkBirthDay.test(itemBirthDay));
+        return itemBirthDay;
+    }
+
+
+    // yc6 t2
+
+    function Employee (){
+        // this.fullName =null;
+        // this.birthDay=null;
+        // this.idCard=null;
+        // this.phoneNumber=null;
+        // this.email=null;
+        // this.level=null;
+        // this.workingPosition=null;
+        // this.salary=null;
+        // this.address=null;
+        // this.typeCustomer=null;
+        // this.discount=null;
+        // this.number=null;
+        // this.rentDays=null;
+        // this.serviceRoom=null;
+        // this.rentRoom=null;
+        this.getFullName=function () {
+            return this.fullName;
+        };
+        this.getBirthDay=function () {
+            return this.birthDay;
+        };
+        this.getIdCard=function () {
+            return this.idCard;
+        };
+        this.getPhoneNumber=function () {
+            return this.phoneNumber;
+        };
+        this.getEmail=function () {
+            return this.email;
+        };
+        this.getLevel=function () {
+            return this.level;
+        };
+        this.getWorkingPosition=function () {
+            return this.workingPosition;
+        };
+        this.getSalary=function () {
+            return this.salary;
+        };
+        this.getAddress=function () {
+            return this.address;
+        };
+        this.getTypeCustomer=function () {
+            return this.typeCustomer;
+        };
+        this.getDiscount=function () {
+            return this.discount;
+        };
+        this.getNumber=function () {
+            return this.number;
+        };
+        this.getRentDays=function () {
+            return this.rentDays;
+        };this.getServiceRoom=function () {
+            return this.serviceRoom;
+        };
+        this.getRentRoom=function () {
+            return this.rentRoom;
+        };
+
+        this.setFullName=function (fullName) {
+            this.fullName =fullName ;
+        };
+        this.setBirthDay=function (birthDay) {
+            this.birthDay=birthDay;
+        };
+        this.setIdCard=function (idCard) {
+            this.idCard=idCard;
+        };
+        this.setPhoneNumber=function (phoneNumber) {
+            this.birthDay=phoneNumber;
+        };
+        this.setEmail=function (email) {
+            this.email=email;
+        };
+        this.setLevel=function (level) {
+            this.level=level;
+        };
+        this.setWorkingPosition=function (workingPosition) {
+            this.level=workingPosition;
+        };
+        this.setSalary=function (salary) {
+            this.level=salary;
+        };
+        this.setAddress=function (address) {
+            this.address=address;
+        };
+        this.setTypeCustomer=function (typeCustomer) {
+            this.typeCustomer=typeCustomer;
+        };
+        this.setDiscount=function (discount) {
+            this.discount=discount;
+        };
+        this.setNumber=function (number) {
+            this.number=number;
+        };
+        this.setRentDays=function (rentDays) {
+            this.rentDays=rentDays;
+        };
+        this.setServiceRoom=function (serviceRoom) {
+            this.serviceRoom=serviceRoom;
+        };
+        this.setRentRoom=function (rentRoom) {
+            this.rentRoom=rentRoom;
+        };
+        this.amount=function () {
+            let discountAddress,
+                discountTypeCustomer,
+                ageCustomer,
+                discountYearOld,
+                moneyRoom,
+                currentYear,
+                yearOfBirth,
+                totalDiscount,
+                money,
+                discountRentDays;
+
+            switch (this.address) {
+                case "Đà Nẵng": discountAddress=20;break;
+                case "Huế": discountAddress=10;break;
+                case "Quảng Nam": discountAddress=5;break;
+                default:
+            }
+            //***************************************************************giảm giá theo thời gian thuê phòng
+            if(this.rentDays<2)
+                discountRentDays=0;
+            else if(this.rentDays<5)
+                discountRentDays=10;
+            else if(this.rentDays<7)
+                discountRentDays=20;
+            else if(this.rentDays>7)
+                discountRentDays=30;
+            //*****************************************************************giảm giá theo typeCustomer
+            switch (this.typeCustomer) {
+                case "Diamond": discountTypeCustomer=15;break;
+                case "Platium": discountTypeCustomer=10;break;
+                case "Gold": discountTypeCustomer=5;break;
+                case "Silver": discountTypeCustomer=2;break;
+                case "Member": discountTypeCustomer=0;break;
+                default:
+            }
+            //****************************************************************giảm theo tuổi
+            currentYear=new Date().getFullYear();
+            yearOfBirth=new Date(this.birthDay).getFullYear();
+
+            if(new Date().getMonth()>new Date(this.birthDay).getMonth())
+                ageCustomer=currentYear-yearOfBirth;
+            else if((new Date().getMonth()===new Date(this.birthDay).getMonth()) && new Date().getDate()>new Date(this.birthDay).getDate())
+                ageCustomer=currentYear-yearOfBirth;
+            else ageCustomer=(currentYear-yearOfBirth-1);
+
+            if(ageCustomer>=30&& this.address==="Đà Nẵng")
+                discountYearOld=2;
+            else if(ageCustomer>=20&& this.address==="Đà Nẵng")
+                discountYearOld=1;
+            else discountYearOld=0;
+            //****************************************************************Tổng giảm giá
+            totalDiscount=discountAddress+discountRentDays+discountTypeCustomer+discountYearOld;
+            //****************************************************************
+            switch (this.serviceRoom) {
+                case "Villa": moneyRoom=500;break;
+                case "House": moneyRoom=300;break;
+                case "Room": moneyRoom=100; break;
+                default:
+            }
+            money=moneyRoom*this.rentDays*(1-this.discount/100)-totalDiscount;
+            return  money;
+        };
+        this.payroll = function () {
+            var PatternManager=/^manager$/i;
+            var Patternsale=/^sale$/i;
+            var PatternMarketing=/^marketing$/i;
+            if(Patternsale.test(workingPosition)){
+                return 500 + this.salary;
+            } else
+            if(PatternManager.test(workingPosition)){
+                return 300 + this.salary;
+            } else
+            if(PatternMarketing.test(workingPosition)){
+                return 200 + this.salary;
+            }
+        }
+    }
+
+
+    function addNewEmployee () {
+        let employee=new Employee();
+        employee.setFullName(prompt("điền vào Tên:"));
+        employee.setBirthDay(prompt("điền vào Ngày Tháng Năm Sinh:"));
+        employee.setIdCard(prompt("điền vào CMND:"));
+        employee.setPhoneNumber(prompt("điền vào số điện thoại:"));
+        employee.setEmail(prompt("điền vào Email:"));
+        employee.setLevel(prompt("điền vào trình độ:"));
+        employee.setWorkingPosition(prompt("điền vào chức vụ làm việc:"));
+        employee.setSalary(prompt("điền vào lương:"));
+        employee.setAddress(prompt("điền vào Địa Chỉ:"));
+        employee.setTypeCustomer(prompt("điền vào Loại Customer:"));
+        employee.setDiscount(prompt("điền vào Giảm Giá:"));
+        employee.setNumber(prompt("điền vào Số Lượng Đi Kèm:"));
+        employee.setRentDays(prompt("điền vào Số Ngày thuê:"));
+        employee.setServiceRoom(prompt("điền vào Loại Dịch Vụ:"));
+        employee.setRentRoom(prompt("điền vào Loại Phòng Thuê:"));
+        return employee;
+    }
+
+
+
+
+
+
+    /*
+        //***********************yc6 t2
+        let menu;
+        let arrListCustomer = [];
+        displayMainMenu();
+        function displayMainMenu() {
+            menu = prompt("1. Add New Customer.\n" +
+                "2. Display Information Customer.\n" +
+                "3. Edit Information Customer.\n" +
+                "4. Delete Customer.\n" +
+                "5. Exit.\n");
+            if (menu === "1") {
+                addNewCustomer(arrListCustomer.length);
+                displayMainMenu();
+            }
+            if (menu === "2") {
+                displayCustomers();
+            }
+            if (menu === "3") {
+                editCustomer();
+            }
+            if (menu === "4") {
+                deleteCustomer();
+            }
+        }
+        function deleteCustomer() {
+            let CustomersNeedToDelete;
+            let confirmDelete;
+            CustomersNeedToDelete = prompt(chuoiHienThiTenCMND(arrListCustomer) + (arrListCustomer.length + 1) + ". back",arrListCustomer.length+1);
+            if (CustomersNeedToDelete == (arrListCustomer.length + 1)) {
+                displayMainMenu();
+            } else if (CustomersNeedToDelete < (arrListCustomer.length + 1)) {
+                confirmDelete = prompt("bạn có chắc muốn xóa:\n1.No\n2.Yes",1);
+                if(confirmDelete==="2")
+                    arrListCustomer.splice(CustomersNeedToDelete-1,1);
+                displayMainMenu();
+            }
+        }
+        function editCustomer() {
+            let displayCustomers1;
+            displayCustomers1 = prompt(chuoiHienThiTenCMND(arrListCustomer) + (arrListCustomer.length + 1) + ". back",arrListCustomer.length+1);
+            if (displayCustomers1 == (arrListCustomer.length + 1)) {
+                displayMainMenu();
+            } else if (displayCustomers1 < (arrListCustomer.length + 1)) {
+                edit((displayCustomers1-1));
+            }
+        }
+        function edit(location) {
+            let ediwhile=1;
+            let checkIdCard;
+            let checkBirthDay;
+            let checkEmail;
+            let ip;
+            while(ediwhile) {
+                ip = prompt("1. Tên: " + arrListCustomer[location][0] +
+                    "\n2. CMND: " + arrListCustomer[location][1] +
+                    "\n3.Ngày Tháng Năm Sinh: " + arrListCustomer[location][2] +
+                    "\n4.Email: " + arrListCustomer[location][3] +
+                    "\n5.Địa Chỉ: " + arrListCustomer[location][4] +
+                    "\n6.Loại Customer: " + arrListCustomer[location][5] +
+                    "\n7.Giảm Giá: " + arrListCustomer[location][6] +
+                    "\n8. Số Lượng Đi Kèm: " + arrListCustomer[location][7] +
+                    "\n9. Số Ngày Thuê: " + arrListCustomer[location][8] +
+                    "\n10. Loại Dịch Vụ: " + arrListCustomer[location][9] +
+                    "\n11. Loại Phòng Thuê: " + arrListCustomer[location][10]+
+                    "\n12. không cần thay đổi.",12);
+                switch (ip) {
+                    case "1":
+                        do {
+                            arrListCustomer[location][0]=prompt("điền vào Tên:");
+                        }
+                        while (arrListCustomer[location][0]==="");
+                        arrListCustomer[location][0]=xuLyChuoi(arrListCustomer[location][0]);
+                        ip = "";
+                        displayInfomationCustomer(location);
+                        ediwhile=0;
+                        break;
+                    case "2":
+                        do {
+                            arrListCustomer[location][1]=prompt("điền vào CMND:");
+                            if(arrListCustomer[location][1].length===9)
+                                checkIdCard=kiemtraso(arrListCustomer[location][1]);
+                        }
+                        while (!checkIdCard);
+                        ip = "";
+                        displayInfomationCustomer(location);
+                        ediwhile=0;
+                        break;
+                    case "3":
+                        do {
+                            let checkBirthDayTemporary="";
+                            arrListCustomer[location][2]=prompt("điền vào Ngày Tháng Năm Sinh:"+checkBirthDayTemporary);
+                            if(arrListCustomer[location][2].length===10 && birthDay[2]==="/" && birthDay[5]==="/") {
+                                for(let i=0; i<10;i++)
+                                    if(i!==2 && i!==5)
+                                        checkBirthDayTemporary = checkBirthDayTemporary + arrListCustomer[location][2].charAt(i);
+                                checkBirthDay=kiemtraso(checkBirthDayTemporary);
+                            }
+                        }
+                        while (!checkBirthDay);
+                        ip = "";
+                        displayInfomationCustomer(location);
+                        ediwhile=0;
+                        break;
+                    case "4":
+                        do {
+                            arrListCustomer[location][3]=prompt("điền vào Email:");
+                            if(arrListCustomer[location][3].indexOf("@")>0 && arrListCustomer[location][3].indexOf(".")<arrListCustomer[location][3].length-1)
+                                checkEmail=arrListCustomer[location][3].indexOf(".")-arrListCustomer[location][3].indexOf("@")-1;
+                            else checkEmail=-1;
+                        }
+                        while(checkEmail<=0);
+                        ip = "";
+                        displayInfomationCustomer(location);
+                        ediwhile=0;
+                        break;
+                    case "5":
+                        do {
+                            arrListCustomer[location][4] = prompt("điền vào Địa Chỉ:");
+                        }
+                        while (arrListCustomer[location][4]==="");
+                        arrListCustomer[location][4]=xuLyChuoi(arrListCustomer[location][4]);
+                        ip = "";
+                        displayInfomationCustomer(location);
+                        ediwhile=0;
+                        break;
+                    case "6":
+                        do {
+                            arrListCustomer[location][5] = prompt("điền vào Loại Customer:");
+                        }
+                        while (arrListCustomer[location][5]==="");
+                        arrListCustomer[location][5]=xuLyChuoi(arrListCustomer[location][5]);
+                        ip = "";
+                        displayInfomationCustomer(location);
+                        ediwhile=0;
+                        break;
+                    case "7":
+                        do {
+                            arrListCustomer[location][6]=prompt("điền vào Giảm Giá:");
+                        }
+                        while(!kiemtraso(arrListCustomer[location][6]));
+                        ip = "";
+                        displayInfomationCustomer(location);
+                        ediwhile=0;
+                        break;
+                    case "8":
+                        do {
+                            arrListCustomer[location][7]=prompt("điền vào Số Lượng Đi Kèm:");
+                        }
+                        while(!kiemtraso(arrListCustomer[location][7]));
+                        ip = "";
+                        displayInfomationCustomer(location);
+                        ediwhile=0;
+                        break;
+                    case "9":
+                        do {
+                            arrListCustomer[location][8]=prompt("điền vào Số Ngày thuê:");
+                        }
+                        while(!kiemtraso(arrListCustomer[location][8]));
+                        ip = "";
+                        displayInfomationCustomer(location);
+                        ediwhile=0;
+                        break;
+                    case "10":
+                        do {
+                            arrListCustomer[location][9] = prompt("điền vào Loại Dịch Vụ:");
+                        }while (arrListCustomer[location][9] ==="");
+                        ip = "";
+                        displayInfomationCustomer(location);
+                        ediwhile=0;
+                        break;
+                    case "11":
+                        do {
+                            arrListCustomer[location][10] = prompt("điền vào Loại Phòng Thuê:");
+                        }while (arrListCustomer[location][10]==="");
+                        ip = "";
+                        displayInfomationCustomer(location);
+                        ediwhile=0;
+                        break;
+                    case "12":
+                        ip = "";
+                        ediwhile=0;
+                        displayMainMenu();
+                        break;
+                    default:
+                        ip = prompt("1. Tên: " + arrListCustomer[location][0] +
+                            "\n2. CMND: " + arrListCustomer[location][1] +
+                            "\n3.Ngày Tháng Năm Sinh: " + arrListCustomer[location][2] +
+                            "\n4.Email: " + arrListCustomer[location][3] +
+                            "\n5.Địa Chỉ: " + arrListCustomer[location][4] +
+                            "\n6.Loại Customer: " + arrListCustomer[location][5] +
+                            "\n7.Giảm Giá: " + arrListCustomer[location][6] +
+                            "\n8. Số Lượng Đi Kèm: " + arrListCustomer[location][7] +
+                            "\n9. Số Ngày Thuê: " + arrListCustomer[location][8] +
+                            "\n10. Loại Dịch Vụ: " + arrListCustomer[location][9] +
+                            "\n11. Loại Phòng Thuê: " + arrListCustomer[location][10]+
+                            "\n12. back");
+                }
+            }
+        }
+        function displayCustomers() {
+            let displayCustomers1;
+            displayCustomers1 = prompt(chuoiHienThiTenCMND(arrListCustomer) + (arrListCustomer.length + 1) + ". back", arrListCustomer.length+1);
+            if (displayCustomers1 ==arrListCustomer.length+1) {
+                displayMainMenu();
+            } else if (displayCustomers1 < (arrListCustomer.length+1)) {
+                displayInfomationCustomer(displayCustomers1-1);
+                displayMainMenu();
+            }
+        }
+        function chuoiHienThiTenCMND(arr) {
+            let chuoiHienThi = "";
+            for (let i = 0; i < arr.length; i++) {
+                for (let j = 0; j < 2; j++) {
+                    if (j === 0) {
+                        chuoiHienThi += (i + 1) + ". Tên: "
+                    }
+                    if (j === 1) {
+                        chuoiHienThi += "  CMND: "
+                    }
+                    chuoiHienThi += arr[i][j];
+                }
+                if (i < arr.length) {
+                    chuoiHienThi += "\n";
+                }
+            }
+            return chuoiHienThi;
+        }
+        function displayInfomationCustomer(location) {
+            alert(
+                "Customer số "+location+":"+
+                "\n1. Tên: " +arrListCustomer[location][0]+
+                "\n2. CMND: "+arrListCustomer[location][1]+
+                "\n3.Ngày Tháng Năm Sinh: " +arrListCustomer[location][2]+
+                "\n4.Email: "+arrListCustomer[location][3]+
+                "\n5.Địa Chỉ: "+arrListCustomer[location][4]+
+                "\n6.Loại Customer: "+arrListCustomer[location][5]+
+                "\n7.Giảm Giá: "+arrListCustomer[location][6]+
+                "\n8. Số Lượng Đi Kèm: "+arrListCustomer[location][7]+
+                "\n9. Số Ngày Thuê: "+arrListCustomer[location][8]+
+                "\n10. Loại Dịch Vụ: "+arrListCustomer[location][9]+
+                "\n11. Loại Phòng Thuê: "+arrListCustomer[location][10]);
+            displayMainMenu();
+        }
+        function addNewCustomer(location) {
+            let checkIdCard;
+            let checkBirthDayTemporary;
+            let checkBirthDay;
+            let checkEmail;
+            arrListCustomer[location]=new Array();
+            //**********************nhập vào và xữ lý tên
+            alert("Nhập Vào Customer "+(location+1)+" :")
+            do {
+                arrListCustomer[location][0] = prompt("điền vào Tên:");
+            }
+            while (arrListCustomer[location][0] === "") ;
+            arrListCustomer[location][0] = xuLyChuoi(arrListCustomer[location][0]);
+            //**********************nhập vào và xử lý cmnd
+            do {
+                arrListCustomer[location][1] = prompt("điền vào CMND:");
+                if (arrListCustomer[location][1].length === 9)
+                    checkIdCard = kiemtraso(arrListCustomer[location][1]);
+            }
+            while (!checkIdCard);
+            //***************************nhập vào và xử lý ngày tháng năm sinh
+            do {
+                checkBirthDayTemporary = "";
+                arrListCustomer[location][2] = prompt("điền vào Ngày Tháng Năm Sinh:" + checkBirthDayTemporary);
+                if (arrListCustomer[location][2].length === 10 && arrListCustomer[location][2].charAt(2) === "/" && arrListCustomer[location][2].charAt(5) === "/") {
+                    for (let i = 0; i < 10; i++)
+                        if (i !== 2 && i !== 5)
+                            checkBirthDayTemporary = checkBirthDayTemporary + arrListCustomer[location][2][i];
+                    checkBirthDay = kiemtraso(checkBirthDayTemporary);
+                }
+            }
+            while (!checkBirthDay);
+            //*****************************nhập vào và xử lý email
+            do {
+                arrListCustomer[location][3] = prompt("điền vào Email:");
+                if (arrListCustomer[location][3].indexOf("@") > 0 && arrListCustomer[location][3].indexOf(".") < arrListCustomer[location][3].length - 1)
+                    checkEmail = arrListCustomer[location][3].indexOf(".") - arrListCustomer[location][3].indexOf("@") - 1;
+                else checkEmail = -1;
+            }
+            while (checkEmail <= 0);
+            //***********************nhập vào và xử lý địa chỉ
+            do {
+                arrListCustomer[location][4] = prompt("điền vào Địa Chỉ:");
+            }
+            while (arrListCustomer[location][4] === "");
+            arrListCustomer[location][4] = xuLyChuoi(arrListCustomer[location][4]);
+            //*************************nhập vào và xử lý loại Customer
+            do {
+                arrListCustomer[location][5] = prompt("điền vào Loại Customer:");
+            }
+            while (arrListCustomer[location][5] === "");
+            arrListCustomer[location][5] = xuLyChuoi(arrListCustomer[location][5]);
+            //*****************************nhập vào và xử lý giảm giá
+            do {
+                arrListCustomer[location][6] = prompt("điền vào Giảm Giá:");
+            }
+            while (!kiemtraso(arrListCustomer[location][6]));
+            //*****************************nhập vào và xử lý số lượng đi kèm
+            do {
+                arrListCustomer[location][7] = prompt("điền vào Số Lượng Đi Kèm:");
+            }
+            while (!kiemtraso(arrListCustomer[location][7]));
+            //****************************nhập vào và xử lý số ngày thuê
+            do {
+                arrListCustomer[location][8] = prompt("điền vào Số Ngày thuê:");
+            }
+            while (!kiemtraso(arrListCustomer[location][8]));
+            //***************************nhập vào và xử lý loại dịch vụ
+            do {
+                arrListCustomer[location][9] = prompt("điền vào Loại Dịch Vụ:");
+            } while (!kiemtraso(arrListCustomer[location][9]));
+            //***************************nhập vào và xử lý phòng thuê
+            do {
+                arrListCustomer[location][10] = prompt("điền vào Loại Phòng Thuê:");
+            } while (!kiemtraso(arrListCustomer[location][10]));
+        }
+        function kiemtraso(biencankiemtra) {
+            let kt;
+            for (let i = 0; i < biencankiemtra.length; i++)
+                if (!Number.isInteger(parseInt(biencankiemtra.charAt(i)))) {
+                    kt = false;
+                    break;
+                } else kt = true;
+            return kt;
+        }
+        function xuLyChuoi(chuoi) {
+            let chuoi1;
+            let chuoi2 = "";
+            let j;
+            while (chuoi.indexOf("  ") >= 0) {
+                chuoi = chuoi.replace("  ", " ");
+            }
+            while (chuoi[chuoi.length - 1] === " ") {
+                chuoi = chuoi.substring(0, chuoi.length - 2);
+            }
+            chuoi = chuoi.toLowerCase();
+            for (let i = -1; i < chuoi.length; i++) {
+                if (chuoi[i] === " " || i === -1) {
+                    i++;
+                    chuoi1 = chuoi[i].toUpperCase();
+                    for (j = i; j < chuoi.length; j++)
+                        if (chuoi[j] === " ") {
+                            j++;
+                            break;
+                        }
+                    chuoi1 = chuoi1 + chuoi.substring(i + 1, j);
+                    chuoi2 = chuoi2 + chuoi1;
+                }
+            }
+            return chuoi2;
+        }
+        */
+</script>
+
+
+</body>
+</html>

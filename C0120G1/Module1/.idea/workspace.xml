@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="df88910e-952b-405f-86a4-e4df73b81871" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/8-Lập trình hướng đối tượng(2)/Bài tập thêm/1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/x1-caseStudy/Bài tập 6/Run.js" beforeDir="false" afterPath="$PROJECT_DIR$/x1-caseStudy/Bài tập 6/Run.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,8 +13,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -97,7 +98,7 @@
       <workItem from="1581769397661" duration="34000" />
       <workItem from="1581769443653" duration="4000" />
       <workItem from="1581813921895" duration="14526000" />
-      <workItem from="1581837569823" duration="321000" />
+      <workItem from="1581837569823" duration="895000" />
     </task>
     <servers />
   </component>
