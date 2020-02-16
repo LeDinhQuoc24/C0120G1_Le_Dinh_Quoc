@@ -78,7 +78,7 @@ function chooseAddNewCustomer() {
 function displayCustomer() {
     let result = "";
     for (let i = 0; i < listCustomer.length; i++) {
-        result += "\n" + (i + 1 + ".") + "Tên khách hàng: " + listCustomer[i].getNameCustomer() +
+        result += "\n" + (i + 1) + "." + "Tên khách hàng: " + listCustomer[i].getNameCustomer() +
             ";CMND: " + listCustomer[i].getIDCustomer();
     }
     result += "\n" + (listCustomer.length + 1) + ".Quay lại giao diện";

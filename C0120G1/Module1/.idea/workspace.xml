@@ -2,16 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="df88910e-952b-405f-86a4-e4df73b81871" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/8-Lập trình hướng đối tượng(2)/Bài tập thêm/1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/8-Lập trình hướng đối tượng(2)/Bài tập thêm/bài 1_NguyenDinhHoa.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/8-Lập trình hướng đối tượng(2)/Bài tập thêm/bài 2_NguyenDinhHoa.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/8-Lập trình hướng đối tượng(2)/Bài tập thêm/exercise1.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/8-Lập trình hướng đối tượng(2)/Bài tập thêm/exercise2.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/8-Lập trình hướng đối tượng(2)/Bài tập thêm/run1.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/8-Lập trình hướng đối tượng(2)/Bài tập thêm/run2.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/x1-caseStudy/Bài tập 6/Request6.html" beforeDir="false" afterPath="$PROJECT_DIR$/x1-caseStudy/Bài tập 6/Request6_Task1.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/x1-caseStudy/Bài tập 6/Run.js" beforeDir="false" afterPath="$PROJECT_DIR$/x1-caseStudy/Bài tập 6/Run.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/x2-Giải thuật/Bài 8.html" beforeDir="false" afterPath="$PROJECT_DIR$/x2-Giải thuật/Bài 8.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,8 +14,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -105,12 +98,18 @@
       <workItem from="1581760744068" duration="5000" />
       <workItem from="1581769397661" duration="34000" />
       <workItem from="1581769443653" duration="4000" />
-      <workItem from="1581813921895" duration="12786000" />
+      <workItem from="1581813921895" duration="14526000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="690" y="268" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1581828909772">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="690" y="268" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1581828909772" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
