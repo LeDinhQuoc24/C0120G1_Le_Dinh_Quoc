@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = [];
+    let arrLength = prompt("nhập số lượng muốn thêm vào");
+    for (let i = 0; i < arrLength; i++) {
+        arr.push(prompt("nhập số thứ " + (i + 1)));
+    }
+    let max = arr[0];
+    let index = 0;
+    for(let i=1;i<arrLength;i++){
+        if(arr[i]>max){
+            max = arr[i];
+            index=i+1;
+        }else{
+            break;
+        }
+    }
+    alert("Giá trị lớn nhất là "+max+" tại vị trí "+index);
+</script>
+
+</body>
+</html>

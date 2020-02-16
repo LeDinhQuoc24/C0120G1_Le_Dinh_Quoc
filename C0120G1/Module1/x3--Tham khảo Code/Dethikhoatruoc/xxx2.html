@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    hamnhapso();
+    function hamnhapso() {
+        let nhapso = prompt("nhập 1 số bất kỳ");
+        if (isNaN(nhapso)) {
+            alert("vui lòng không nhập chữ");
+            hamnhapso();
+        }else if(parseInt(nhapso)-nhapso!==0){
+            alert("vui lòng không nhập số thập phân");
+            hamnhapso();
+        }else{
+            alert("số này là số nguyên");
+            hamnhapso();
+        }
+
+    }
+</script>
+
+</body>
+</html>
