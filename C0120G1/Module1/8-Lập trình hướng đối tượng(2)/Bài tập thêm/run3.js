@@ -1,4 +1,5 @@
-let arrCanBo = [];
+let danhSachCanBo = [];
+
 
 function hienThiDanhSach() {
     let nhapthongtin = prompt("1.Thêm thông tin cán bộ" +
@@ -27,8 +28,29 @@ function hienThiDanhSach() {
                 hienThiDanhSach();
         }
 }
-function themcanbo() {
-    let
-
+function themCanBo() {
+    let canbo=new CanBo();
+    canbo.setTen(prompt("nhập thông tin tên"));
+    canbo.setGioiTinh(prompt("nhập thông tin giới tính"));
+    canbo.setQueQuan(prompt("nhập thông tin quê quán"));
+    canbo.setNamSinh(prompt("nhập thông tin năm sinh"));
+    canbo.setTrinhDo(prompt("nhập thông tin trình độ"));
+    canbo.setHeSoLuong(prompt("nhập thông tin hệ số lương"));
+    canbo.setPhuCap(prompt("nhập thông tin phụ cấp"));
+    danhSachCanBo.push(canbo);
+    hienThiDanhSach()
+}
+function hienThiCanBo() {
+    let ketqua = "Danh sách cán bộ:";
+    for (let i = 0; i < danhSachCanBo.length; i++) {
+        ketqua+="\n"+(i+1)+"."+danhSachCanBo[i].getTen();
+    }
+    ketqua+= "\n" + (danhSachCanBo.length+1) + "." + "Quay về hiển thị chính";
+    let chon = prompt(ketqua);
+    if (chon != (danhSachCanBo.length + 1)) {
+        hienThiDanhSachCanBo()
+    }else{
+        hienThiDanhSach();
+    }
 }
 hienThiDanhSach();
