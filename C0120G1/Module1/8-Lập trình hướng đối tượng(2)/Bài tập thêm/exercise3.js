@@ -26,6 +26,9 @@ let CanBo=function () {
     this.setChuyenMon=function (chuyenmon) {
         this.chuyenmon=chuyenmon;
     };
+    this.getChuyenMon=function () {
+        return this.chuyenmon;
+    };
     this.setTrinhDo=function (trinhdo) {
         this.trinhdo=trinhdo;
     };
@@ -45,7 +48,7 @@ let CanBo=function () {
         return this.phucap;
     };
     this.thuclinh=function () {
-        return (this.hesoluong+this.phucap)*450000;
+        return (parseFloat(this.getPhuCap())+parseFloat(this.getHeSoLuong()))*45;
     };
 
 
