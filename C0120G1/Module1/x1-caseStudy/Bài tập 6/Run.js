@@ -1,7 +1,7 @@
 let listCustomer = [];
-let validateBirthday=/^((0)[1-9]|[1-2][0-9]|[3][0-1])(\/)((0)[1-9]|(1)[0-2])(\/)\d{4}$/;
+let validateBirthday=/^((0)[1-9]|[1-2][0-9]|(3)[0-1])(\/)((0)[1-9]|(1)[0-2])(\/)\d{4}$/;
 let validateEmail=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-let validateID=/\d{9}/;
+let validateID=/\d{6}/;
 let checkDeleteCustomer=false;
 let checkEditCustomer=false;
 let checkDisplayTotalPay=false;

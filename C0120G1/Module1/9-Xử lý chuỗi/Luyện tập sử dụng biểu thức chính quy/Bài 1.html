@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let nhap = prompt("nhap ngay thang nam sinh");
+    let validateNhap=/^((0)[1-9]|[1-2][0-9]|(3)[0-1])(\/)(0)[1-9]|(1)[0-2](\/)(\d{4})$/;
+    if (validateNhap.test(nhap)) {
+        alert("hop le");
+    } else {
+        alert("khong hop le");
+    }
+</script>
+
+</body>
+</html>
