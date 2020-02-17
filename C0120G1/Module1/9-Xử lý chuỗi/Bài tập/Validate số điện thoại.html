@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function nhap() {
+        let nhap = prompt("nhập tên lớp học");
+        let validateNhap = /^\d{2}(0)\d{9}$/;
+        if (validateNhap.test(nhap)) {
+            alert("nhập đúng");
+        } else {
+            alert("nhập sai");
+        }
+    }
+    nhap();
+
+</script>
+
+</body>
+</html>

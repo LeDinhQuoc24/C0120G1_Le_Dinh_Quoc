@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let nhap = prompt("nhập tên lớp học");
+    let validateNhap=/^[CAP]\d{4}(GHIKLM)$/;
+    if (validateNhap.test(nhap)) {
+        alert("nhập đúng");
+    }else{
+        alert("nhập sai");
+    }
+</script>
+
+</body>
+</html>
