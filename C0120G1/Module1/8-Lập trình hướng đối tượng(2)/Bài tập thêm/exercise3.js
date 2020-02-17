@@ -1,55 +1,41 @@
-let CanBo=function () {
-    this.setTen=function (ten) {
-        this.ten = ten;
+var Student=function () {
+    this.setMSV=function (msv) {
+        this.msv=msv;
     };
-    this.getTen=function () {
-        return this.ten;
+    this.getMSV=function () {
+        return this.msv;
     };
-    this.setGioiTinh=function (gioitinh) {
-        this.gioitinh=gioitinh;
+    this.setName=function (name) {
+        this.name=name;
     };
-    this.getGioiTinh=function () {
-        return this.gioitinh;
+    this.getName=function () {
+        return this.name;
     };
-    this.setQueQuan=function (quequan) {
-        this.quequan=quequan;
+    this.setBirthday=function (birthday) {
+        this.birthday=birthday;
     };
-    this.getQueQuan=function () {
-        return this.quequan;
+    this.getBirthday=function () {
+        return this.birthday;
     };
-    this.setNamSinh=function (namsinh) {
-        this.namsinh=namsinh;
+    this.setGender=function (gender) {
+        this.gender=gender;
     };
-    this.getNamSinh=function () {
-        return this.namsinh;
+    this.getGender=function () {
+        return this.gender;
     };
-    this.setChuyenMon=function (chuyenmon) {
-        this.chuyenmon=chuyenmon;
+    this.setLop=function (lop) {
+        this.lop=lop;
     };
-    this.getChuyenMon=function () {
-        return this.chuyenmon;
+    this.getLop=function () {
+        return this.lop;
     };
-    this.setTrinhDo=function (trinhdo) {
-        this.trinhdo=trinhdo;
+    this.setKhoa=function (khoa) {
+        this.khoa=khoa;
     };
-    this.getTrinhDo=function () {
-        return this.trinhdo;
+    this.getKhoa=function () {
+        return this.khoa;
     };
-    this.setHeSoLuong=function (hesoluong) {
-        this.hesoluong=hesoluong;
-    };
-    this.getHeSoLuong=function () {
-        return this.hesoluong;
-    };
-    this.setPhuCap=function (phucap) {
-        this.phucap=phucap;
-    };
-    this.getPhuCap=function () {
-        return this.phucap;
-    };
-    this.thuclinh=function () {
-        return (parseFloat(this.getPhuCap())+parseFloat(this.getHeSoLuong()))*45;
-    };
+
 
 
 

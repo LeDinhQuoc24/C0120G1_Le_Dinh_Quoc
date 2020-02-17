@@ -2,10 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="df88910e-952b-405f-86a4-e4df73b81871" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/x1-caseStudy/Bài tập 6/Employee.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/x1-caseStudy/Bài tập 6/Request6_Task2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/x1-caseStudy/Bài tập 6/Run2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/8-Lập trình hướng đối tượng(2)/Bài tập thêm/bài 4.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/8-Lập trình hướng đối tượng(2)/Bài tập thêm/exercise4js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/8-Lập trình hướng đối tượng(2)/Bài tập thêm/run4.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8-Lập trình hướng đối tượng(2)/Bài tập thêm/bài 3.html" beforeDir="false" afterPath="$PROJECT_DIR$/8-Lập trình hướng đối tượng(2)/Bài tập thêm/bài 3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8-Lập trình hướng đối tượng(2)/Bài tập thêm/exercise3.js" beforeDir="false" afterPath="$PROJECT_DIR$/8-Lập trình hướng đối tượng(2)/Bài tập thêm/exercise3.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8-Lập trình hướng đối tượng(2)/Bài tập thêm/run3.js" beforeDir="false" afterPath="$PROJECT_DIR$/8-Lập trình hướng đối tượng(2)/Bài tập thêm/run3.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,8 +18,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -103,7 +106,7 @@
       <workItem from="1581837569823" duration="3210000" />
       <workItem from="1581866033049" duration="1081000" />
       <workItem from="1581897673607" duration="1908000" />
-      <workItem from="1581939711229" duration="956000" />
+      <workItem from="1581939711229" duration="1889000" />
     </task>
     <servers />
   </component>
