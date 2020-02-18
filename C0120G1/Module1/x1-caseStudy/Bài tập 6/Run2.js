@@ -75,35 +75,35 @@ function addNewEmployee() {
 
     function displayEmployee(index) {
         if (editflag) {
-            let numberInfo = prompt(getInformationCustomer(index));
+            let numberInfo = prompt(getInformationEmployee(index));
             editflag = false;
             switch (parseInt(numberInfo)) {
                 case 1:
-                    listEmployees[numberInfo - 1].setNameEmployee(prompt("Enter name you want edit!"));
+                    listEmployees[index].setNameEmployee(prompt("Enter name you want edit!"));
                     break;
                 case 2:
-                    listEmployees[numberInfo - 1].setNameEmployee(prompt("Enter name you want edit!"));
+                    listEmployees[index].setIdCardEmployee(prompt("Enter name you want edit!"));
                     break;
                 case 3:
-                    listEmployees[numberInfo - 1].setBirthdayEmployee(prompt("Enter name you want edit!"));
+                    listEmployees[index].setBirthdayEmployee(prompt("Enter name you want edit!"));
                     break;
                 case 4:
-                    listEmployees[numberInfo - 1].setEmailEmployee(prompt("Enter name you want edit!"));
+                    listEmployees[index].setEmailEmployee(prompt("Enter name you want edit!"));
                     break;
                 case 5:
-                    listEmployees[numberInfo - 1].setAddressEmployee(prompt("Enter name you want edit!"));
+                    listEmployees[index].setAddressEmployee(prompt("Enter name you want edit!"));
                     break;
                 case 6:
-                    listEmployees[numberInfo - 1].setTypeCustomer(prompt("Enter name you want edit!"));
+                    listEmployees[index].setTypeCustomer(prompt("Enter name you want edit!"));
                     break;
                 case 7:
-                    listEmployees[numberInfo - 1].setEducation(prompt("Enter name you want edit!"));
+                    listEmployees[index].setEducation(prompt("Enter name you want edit!"));
                     break;
                 case 8:
-                    listCustomers[numberInfo - 1].setPosition(prompt("Enter name you want edit!"));
+                    listCustomers[index].setPosition(prompt("Enter name you want edit!"));
                     break;
                 case 9:
-                    listCustomers[numberInfo - 1].setSalary(prompt("Enter name you want edit!"));
+                    listCustomers[index].setSalary(prompt("Enter name you want edit!"));
                     break;
                 default:
                     alert("failed");

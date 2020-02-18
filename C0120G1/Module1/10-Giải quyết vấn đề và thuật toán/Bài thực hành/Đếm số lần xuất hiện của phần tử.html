@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function dem(mang,so) {
+        var temp = 0;
+        for (var i = 0; i < mang.length; i++) {
+            if (mang[i] === so) {
+                temp++;
+            } else {
+                continue;
+            }
+        }
+        alert(temp);
+    }
+
+
+    var mangngaunhien = [];
+    for (var j = 0; j < 10; j++) {
+        mangngaunhien[j] = Math.floor(Math.random() * 10);
+    }
+    alert(mangngaunhien);
+
+
+    dem(mangngaunhien,parseFloat(prompt("nhap so can tim")));
+
+
+</script>
+
+</body>
+</html>
