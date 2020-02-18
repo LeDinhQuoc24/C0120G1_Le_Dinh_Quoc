@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let nhap = prompt("nhap 1 so dien thoai");
+    validateNumberPhone=/^[0][9][0]\d{7}$/;
+    if (validateNumberPhone.test(nhap)) {
+        alert("dau so dien thoai MobilePhone");
+    } else {
+        alert("khong phai dau so dien thoai MobilePhone")
+    }
+
+</script>
+
+</body>
+</html>
