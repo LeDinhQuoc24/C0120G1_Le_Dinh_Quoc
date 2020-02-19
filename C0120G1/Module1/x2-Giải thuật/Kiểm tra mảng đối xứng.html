@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = [];
+    let arrLength = prompt("nhap so phan tu cua mang");
+    for (let i = 0; i < arrLength; i++) {
+        arr.push(prompt("nhap phan tu thu " + (i + 1)));
+    }
+    let check=false;
+    for (let j = 0; j < arrLength; j++) {
+        if (arr[j]!==arr.reverse()[j]){
+            check = true;
+            alert("không đối xứng");
+            break;1
+        }
+    }
+    if (!check) {
+        alert("đối xứng");
+    }
+</script>
+
+</body>
+</html>
