@@ -78,22 +78,26 @@ function hienThiNhanVienCuThe(index) {
     "\nĐịa chỉ "+listNhanVien[index].getDiaChi()+
     "\nSố điện thoai "+listNhanVien[index].getSoDienThoai()+
     "\nEmail "+listNhanVien[index].getEmail());
+    hienThiDanhSach();
 }
 function thoat() {
     alert("cảm ơn bạn đã sử dụng dịch vụ");
 }
 function dangNhap() {
+
     let nhapID = prompt("nhập vào tên đăng nhập");
     let nhapMatKhau = prompt("nhập vào mật khẩu");
     for (let i = 0; i < listNhanVien.length; i++) {
-        if((listNhanVien[i].getTenDangNhap()===nhapID)&&(listNhanVien[i].getMatKhau()===nhapMatKhau)){
-    alert("nhập  đúng");
-         }else{
+        if ((listNhanVien[i].getTenDangNhap() === nhapID) && (listNhanVien[i].getMatKhau() === nhapMatKhau)) {
+            alert("nhập  đúng");
+            hienThiDanhSach();
+        } else {
             alert("nhập sai")
             dangNhap();
         }
     }
-    alert("làm không kịp");
+
+
 }
 
 hienThiDanhSach();
