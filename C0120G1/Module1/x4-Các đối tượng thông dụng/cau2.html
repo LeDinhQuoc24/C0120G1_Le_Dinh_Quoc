@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    isNumber();
+    function isNumber() {
+        let nhap = prompt("nhập vào 1 số có 4 chữ số");
+        let mang=nhap.split("");
+        let tongHaiSoDau = parseInt(mang[0]) +parseInt(mang[1]) ;
+        let hieuHaiSoSau =parseInt(mang[3])  - parseInt(mang[2]);
+
+        if (tongHaiSoDau === hieuHaiSoSau)  {
+            alert(nhap + " thỏa mãn điều kiện");
+        }else if (tongHaiSoDau === (hieuHaiSoSau * (-1))) {
+            alert(nhap + " thỏa mãn điều kiện");
+        }else{
+            alert(nhap + " không thỏa mãn điều kiện");
+        }
+    }
+</script>
+
+</body>
+</html>

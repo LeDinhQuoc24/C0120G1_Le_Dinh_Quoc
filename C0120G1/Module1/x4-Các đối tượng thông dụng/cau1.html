@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let mang = [];
+    nhapSo();
+    function nhapSo() {
+        let nhap = prompt("nhập 1 số nguyên dương bất kỳ lớn hơn 6");
+        if(isNaN(nhap)){
+            alert("vui lòng không nhập chữ");
+            nhapSo();
+        }else if ((parseInt(nhap) - nhap) !== 0) {
+            alert("Vui lòng không nhập số thập phân");
+            nhapSo();
+        }else if (nhap <= 6) {
+            alert("Vui lòng nhập 1 số nguyên dương lớn hơn 6");
+            nhapSo();
+        }else{
+            alert("nhập thành công");
+            hienThiMang(nhap);
+        }
+    }
+    function hienThiMang(a) {
+        mang.push(a);
+        alert(mang);
+        alert(mang.sort(function (x,y) {return x-y;})) ;
+        nhapSo();
+    }
+
+</script>
+
+</body>
+</html>

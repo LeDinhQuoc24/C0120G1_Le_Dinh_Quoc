@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    xuLyTen();
+    function xuLyTen() {
+        let nhapTen = prompt("nhập vào họ tên sinh viên");
+        let nhapTenSv = "";
+        nhapTen=nhapTen.trim().toLocaleLowerCase();
+        for (let i = 0; i < nhapTen.length; i++) {
+            if(nhapTen.charAt(i)===" "&&nhapTen.charAt(i+1)===" "){
+                continue;
+            }
+            if (i === 0 || nhapTen.charAt(i - 1) === " ") {
+                nhapTenSv += nhapTen.charAt(i).toLocaleUpperCase();
+                continue;
+            }
+            nhapTenSv += nhapTen.charAt(i);
+        }
+        alert(nhapTenSv);
+
+    }
+
+
+
+</script>
+
+</body>
+</html>
