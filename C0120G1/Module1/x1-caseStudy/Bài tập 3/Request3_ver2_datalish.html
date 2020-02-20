@@ -77,8 +77,7 @@
     function checkname() {
         let name = document.getElementById("name").value;
         let nameStandardized = "";
-        name = name.trim().toLocaleLowerCase();
-        for (let i = 0; i < name.length; i++) {
+      for (let i = 0; i < name.length; i++) {
             if (name.charAt(i) === " " && (name.charAt(i + 1)) === " ") {
                 continue;
             }
