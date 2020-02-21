@@ -6,9 +6,9 @@ public class Giai_phuong_trinh_bac_nhat {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         System.out.println("nhập vào giá trị a của ptb1 ax+b=0");
-        int nhap_a = input.nextInt();
+        double nhap_a = input.nextDouble();
         System.out.println("nhập vào giá trị b của ptb1 ax+b=0");
-        int nhap_b = input.nextInt();
+        double nhap_b = input.nextDouble();
         if (nhap_a == 0) {
             if (nhap_b == 0) {
                 System.out.println("phương trình vô số nghiệm");
