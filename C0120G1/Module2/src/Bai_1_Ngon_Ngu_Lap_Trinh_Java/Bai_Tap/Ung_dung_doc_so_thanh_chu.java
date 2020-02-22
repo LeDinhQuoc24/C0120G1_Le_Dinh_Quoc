@@ -82,7 +82,7 @@ public class Ung_dung_doc_so_thanh_chu {
                     }
                     break;
                 case 2 :
-                    System.out.println(" hai");
+                    System.out.print(" hai");
                     break;
                 case 3 :
                     System.out.print(" ba");
