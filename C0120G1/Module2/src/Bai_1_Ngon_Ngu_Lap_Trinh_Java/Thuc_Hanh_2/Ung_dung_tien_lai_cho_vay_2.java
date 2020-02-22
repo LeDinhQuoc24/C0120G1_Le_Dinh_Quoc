@@ -11,11 +11,12 @@ public class Ung_dung_tien_lai_cho_vay_2 {
         double tiLeLai = input.nextDouble();
         System.out.println("Nhập số tháng gửi");
         int soThangGui = input.nextInt();
-        double soTienLai;
+        double soTienLai1=0;
         for (int i = 0; i < soThangGui; i++) {
-            soTienLai=tienGui*(tiLeLai/100)/12;
-            tienGui+=soTienLai;
+            double soTienLai=tienGui*(tiLeLai/100)/12;
+            soTienLai1+=soTienLai;
+            tienGui+=soTienLai1;
         }
-        System.out.println("Số tiền lãi nhận được "+ "soTienLai");
+        System.out.println("Số tiền lãi nhận được "+ soTienLai1);
     }
 }
