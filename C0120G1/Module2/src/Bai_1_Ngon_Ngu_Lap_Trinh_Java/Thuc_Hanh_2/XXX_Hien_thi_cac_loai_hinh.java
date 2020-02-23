@@ -117,6 +117,7 @@ public class XXX_Hien_thi_cac_loai_hinh {
                                 length12++;
                                 System.out.println("");
                             }
+                            break;
                         case 2:
                             System.out.println("Enter half the length of isosceles triangle");
                             int length13 = input.nextInt();
@@ -133,7 +134,15 @@ public class XXX_Hien_thi_cac_loai_hinh {
                                 length15++;
                                 System.out.println("");
                             }
+                            break;
+                        default:
+                            System.out.println("Nhập lỗi,vui lòng nhập từ 1-2");
+                            continue;
                     }
+                    break;
+                case 4:
+                    System.out.println("Trường kỳ CodeGym nhất định phát khùng");
+                    check=false;
                     break;
                 default:
                     System.out.println("Nhập lỗi,vui lòng nhập từ 1-4");
