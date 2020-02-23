@@ -29,7 +29,7 @@ public class XXX_Hien_thi_cac_loai_hinh {
                     System.out.println("Print the square triangle");
                     System.out.println("1.Top-left");
                     System.out.println("2.Top-right");
-                    System.out.println("3.Top-right");
+                    System.out.println("3.Botton-left");
                     System.out.println("4.Botton-right");
                     int choice2 = input.nextInt();
                     switch (choice2) {
@@ -42,6 +42,17 @@ public class XXX_Hien_thi_cac_loai_hinh {
                                     System.out.print("*");
                                 }
                                 length2--;
+                                System.out.println("");
+                            }
+                        case 3:
+                            System.out.println("Enter the length of the square triangle");
+                            int length5 = input.nextInt();
+                            int length4=0;
+                            for (int i = 0; i < length5; i++) {
+                                for (int j = 0; j <= length4; j++) {
+                                    System.out.print("*");
+                                }
+                                length4++;
                                 System.out.println("");
                             }
                     }
