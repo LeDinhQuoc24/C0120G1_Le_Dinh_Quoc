@@ -117,6 +117,22 @@ public class XXX_Hien_thi_cac_loai_hinh {
                                 length12++;
                                 System.out.println("");
                             }
+                        case 2:
+                            System.out.println("Enter half the length of isosceles triangle");
+                            int length13 = input.nextInt();
+                            int length14=length13*2;
+                            int length15=0;
+                            for (int i = 0; i < length13+1; i++) {
+                                for (int j = 0; j < length14; j++) {
+                                    if (j<length15||j>(length14-length15)){
+                                        System.out.print(" ");
+                                    }else{
+                                        System.out.print("*");
+                                    }
+                                }
+                                length15++;
+                                System.out.println("");
+                            }
                     }
                     break;
                 default:
