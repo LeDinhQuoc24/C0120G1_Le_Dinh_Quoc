@@ -1,5 +1,6 @@
 package Bai_1_Ngon_Ngu_Lap_Trinh_Java.Thuc_Hanh_2;
 
+import javax.swing.*;
 import java.util.Scanner;
 
 public class XXX_Hien_thi_cac_loai_hinh {
@@ -95,7 +96,28 @@ public class XXX_Hien_thi_cac_loai_hinh {
                             continue;
                     }
                 case 3:
-                    System.out.println("Trình code có hạn,chưa làm được trường hợp này");
+                    System.out.println("Print isosceles triangle");
+                    System.out.println("1.Top");
+                    System.out.println("2.Botton");
+                    int choice3 = input.nextInt();
+                    switch (choice3) {
+                        case 1:
+                            System.out.println("Enter half the length of isosceles triangle");
+                            int length10 = input.nextInt();
+                            int length11=length10*2;
+                            int length12=0;
+                            for (int i = 0; i < length10; i++) {
+                                for (int j = 0; j < length11; j++) {
+                                    if (j>(length11-(length10-length12))||j<(length11-(length10+length12))){
+                                        System.out.print(" ");
+                                    }else{
+                                        System.out.print("*");
+                                    }
+                                }
+                                length12++;
+                                System.out.println("");
+                            }
+                    }
                     break;
                 default:
                     System.out.println("Nhập lỗi,vui lòng nhập từ 1-4");
