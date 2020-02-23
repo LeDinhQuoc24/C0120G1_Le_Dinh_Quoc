@@ -15,15 +15,35 @@ public class XXX_Hien_thi_cac_loai_hinh {
             int choice=input.nextInt();
             switch (choice) {
                 case 1:
-                    System.out.println("Nhập chiều dài hình chữ nhật");
-                    float length=input.nextFloat();
-                    System.out.println("Nhập chiều rộng hình chữ nhật");
-                    float width = input.nextFloat();
+                    System.out.println("Enter the length of the rectangle");
+                    int length=input.nextInt();
+                    System.out.println("Enter the width of the rectangle");
+                    int width = input.nextInt();
                     for (int i = 0; i < width; i++) {
                         for (int j = 0; j < length; j++) {
                             System.out.print("*");
                         }
                         System.out.println("");
+                    }
+                case 2:
+                    System.out.println("Print the square triangle");
+                    System.out.println("1.Top-left");
+                    System.out.println("2.Top-right");
+                    System.out.println("3.Top-right");
+                    System.out.println("4.Botton-right");
+                    int choice2 = input.nextInt();
+                    switch (choice2) {
+                        case 1:
+                            System.out.println("Enter the length of the square triangle");
+                            int length2 = input.nextInt();
+                            int length3=length2;
+                            for (int i = 0; i < length3; i++) {
+                                for (int j = 0; j < length2; j++) {
+                                    System.out.print("*");
+                                }
+                                length2--;
+                                System.out.println("");
+                            }
                     }
             }
         }
