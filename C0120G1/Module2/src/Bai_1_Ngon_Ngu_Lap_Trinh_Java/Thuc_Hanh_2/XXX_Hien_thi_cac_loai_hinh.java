@@ -55,6 +55,36 @@ public class XXX_Hien_thi_cac_loai_hinh {
                                 length4++;
                                 System.out.println("");
                             }
+                        case 2:
+                            System.out.println("Enter the length of the square triangle");
+                            int length6 = input.nextInt();
+                            int length7=1;
+                            for (int i = 0; i < length6; i++) {
+                                for (int j = 0; j < length6; j++) {
+                                    if (j < length7) {
+                                        System.out.print(" ");
+                                    }else{
+                                        System.out.print("*");
+                                    }
+                                }
+                                length7++;
+                                System.out.println("");
+                            }
+                        case 4:
+                            System.out.println("Enter the length of the square triangle");
+                            int length8 = input.nextInt();
+                            int length9=length8;
+                            for (int i = 0; i < length8; i++) {
+                                for (int j = 0; j < length8; j++) {
+                                    if (j < length9-1) {
+                                        System.out.print(" ");
+                                    }else{
+                                        System.out.print("*");
+                                    }
+                                }
+                                length9--;
+                                System.out.println("");
+                            }
                     }
             }
         }
