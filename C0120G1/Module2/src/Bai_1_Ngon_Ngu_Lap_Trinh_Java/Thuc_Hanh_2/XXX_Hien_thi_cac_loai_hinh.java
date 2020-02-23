@@ -25,6 +25,7 @@ public class XXX_Hien_thi_cac_loai_hinh {
                         }
                         System.out.println("");
                     }
+                    break;
                 case 2:
                     System.out.println("Print the square triangle");
                     System.out.println("1.Top-left");
@@ -44,6 +45,7 @@ public class XXX_Hien_thi_cac_loai_hinh {
                                 length2--;
                                 System.out.println("");
                             }
+                            break;
                         case 3:
                             System.out.println("Enter the length of the square triangle");
                             int length5 = input.nextInt();
@@ -55,6 +57,7 @@ public class XXX_Hien_thi_cac_loai_hinh {
                                 length4++;
                                 System.out.println("");
                             }
+                            break;
                         case 2:
                             System.out.println("Enter the length of the square triangle");
                             int length6 = input.nextInt();
@@ -70,6 +73,7 @@ public class XXX_Hien_thi_cac_loai_hinh {
                                 length7++;
                                 System.out.println("");
                             }
+                            break;
                         case 4:
                             System.out.println("Enter the length of the square triangle");
                             int length8 = input.nextInt();
@@ -85,7 +89,17 @@ public class XXX_Hien_thi_cac_loai_hinh {
                                 length9--;
                                 System.out.println("");
                             }
+                            break;
+                        default:
+                            System.out.println("Nhập lỗi.Vui lòng nhập từ 1-4");
+                            continue;
                     }
+                case 3:
+                    System.out.println("Trình code có hạn,chưa làm được trường hợp này");
+                    break;
+                default:
+                    System.out.println("Nhập lỗi,vui lòng nhập từ 1-4");
+                    break;
             }
         }
     }
