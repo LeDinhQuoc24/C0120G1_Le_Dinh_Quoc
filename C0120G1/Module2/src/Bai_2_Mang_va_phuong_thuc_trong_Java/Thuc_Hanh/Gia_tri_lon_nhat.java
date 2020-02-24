@@ -24,14 +24,16 @@ public class Gia_tri_lon_nhat {
             System.out.print(array[i]+"\t");
         }
         int max = array[0];
-        int index=0;
+        String index = " vị trí 0 ";
         for (int i = 1; i < array.length; i++) {
             if (array[i] > max) {
                 max = array[i];
-                index=i+1;
+                index=" vị trí "+(i+1);
+            } else if (array[i] == max) {
+                index+=" vị trí "+(i+1);
             }
         }
-        System.out.println("Phần tử lớn nhất của mảng có giá trị "+max+" tại vị trí "+index);
+        System.out.println("Phần tử lớn nhất của mảng có giá trị "+max+" tại "+index);
     }
 }
 
