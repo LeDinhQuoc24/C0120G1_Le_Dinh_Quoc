@@ -6,11 +6,11 @@ public class Tinh_chi_so_can_nang_co_the {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         System.out.println("Nhập vào cân nặng");
-        float weight = input.nextFloat();
+        double weight = input.nextDouble();
         System.out.println("Nhập vào chiều cao");
-        float height = input.nextFloat();
-        float bmi;
-        bmi = weight / (height * height);
+        double height = input.nextDouble();
+        double bmi;
+        bmi = weight / Math.pow(height, 2);
         if (bmi <= 18.5) {
             System.out.println("Underweight");
         } else if (bmi > 18.5 && bmi <= 25) {
