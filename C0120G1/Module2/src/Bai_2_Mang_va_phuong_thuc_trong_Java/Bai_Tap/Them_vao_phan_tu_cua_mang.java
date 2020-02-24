@@ -22,7 +22,10 @@ public class Them_vao_phan_tu_cua_mang {
             if (index > size) {
                 System.out.println("Nhập vị trí cần gán không vượt quá độ dài mảng");
             }
-        } while (index > size);
+            if (index < 1) {
+                System.out.println("Nhập vị trí cần gán lớn hơn 1");
+            }
+        } while (index > size||index<1);
         System.out.println("Chọn giá trị cần gán");
         array[index-1] = input.nextInt();
         System.out.println("Hiển thị các phần tử của mảng");
