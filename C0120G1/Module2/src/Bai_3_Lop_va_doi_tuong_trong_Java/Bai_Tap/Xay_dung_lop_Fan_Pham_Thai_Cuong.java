@@ -25,7 +25,13 @@ public class Xay_dung_lop_Fan_Pham_Thai_Cuong {
     private double radius=5;
     private String color = "blue";
     public void setSpeed(int speed) {
-        this.speed=speed;
+        if (speed >= 3) {
+            this.speed=FAST;
+        } else if (speed <= 1) {
+            this.speed = SLOW;
+        } else {
+            this.speed=MEDIUM;
+        }
     }
      public int getSpeed() {
          return this.speed;
@@ -34,10 +40,10 @@ public class Xay_dung_lop_Fan_Pham_Thai_Cuong {
         this.on=on;
      }
      public boolean getON() {
-         return this.on;
+        return this.on;
      }
      public void setRadius(double radius) {
-         this.radius = radius;
+        this.radius = radius;
      }
      public double getRadius() {
          return this.radius;
@@ -46,7 +52,7 @@ public class Xay_dung_lop_Fan_Pham_Thai_Cuong {
          this.color = color;
      }
      public String getColor() {
-         return this.color;
+        return this.color;
      }
      public Fan() {
      }
