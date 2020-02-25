@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.Date;
 import java.util.Random;
 
-public class Stop_watch {
+public class Stop_watch_Pham_Thai_Cuong {
     public static void main(String[] args) {
         StopWatch stopWatch = new StopWatch();
         int[] array = stopWatch.createArray(100000);
