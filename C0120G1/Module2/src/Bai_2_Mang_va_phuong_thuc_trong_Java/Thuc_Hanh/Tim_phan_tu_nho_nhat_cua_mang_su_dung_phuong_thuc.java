@@ -23,18 +23,20 @@ public class Tim_phan_tu_nho_nhat_cua_mang_su_dung_phuong_thuc {
         for (int i = 0; i < array.length; i++) {
             System.out.print(array[i]+"\t");
         }
-        int index = valueMin(array);
-        System.out.println("Phần tử nhỏ nhất của mảng có giá trị "+array[index]+" tại vị trí "+(index+1));
+        String display = valueMin(array);
+        System.out.println(display);
     }
-    public static int valueMin(int[] array) {
-        int index=0;
+    public static String valueMin(int[] array) {
+        String index="1";
         int min = array[0];
         for (int i = 1; i < array.length; i++) {
             if (array[i] < min) {
                 min = array[i];
-                index=i;
+                index=""+(i+1);
+            } else if (array[i]==min) {
+                index += "," + (i + 1);
             }
         }
-        return index;
+        return "Mảng có phần tử nhỏ nhất có giá trị "+min+" tại vị trí "+index;
     }
 }
