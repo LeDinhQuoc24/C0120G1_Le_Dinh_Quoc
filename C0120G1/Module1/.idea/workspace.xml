@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="df88910e-952b-405f-86a4-e4df73b81871" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/10-Giải quyết vấn đề và thuật toán/Bài giảng/Thuật toán tìm kiếm tuyến tính_2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/x3--Tham khảo Code/Dethikhoatruoc/1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/x4-Các đối tượng thông dụng/run4.js" beforeDir="false" afterPath="$PROJECT_DIR$/x4-Các đối tượng thông dụng/run4.js" afterDir="false" />
-    </list>
+    <list default="true" id="df88910e-952b-405f-86a4-e4df73b81871" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -119,6 +114,7 @@
       <workItem from="1582123385991" duration="676000" />
       <workItem from="1582125038846" duration="10000" />
       <workItem from="1582198043841" duration="241000" />
+      <workItem from="1582632514274" duration="11000" />
     </task>
     <servers />
   </component>
