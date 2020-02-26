@@ -21,15 +21,17 @@ package Bai_4_Ke_thua.Thuc_hanh;
                 return this.radius;
             }
             public double getArea() {
-                return 2 * Math.PI * getRadius();
+                return Math.PI * Math.pow(getRadius(), 2);
             }
             public double getPerimeter() {
-                return Math.PI * Math.pow(getRadius(), 2);
+                return 2 * Math.PI * getRadius();
             }
 
             @Override
             public String toString() {
-                return "A Circle with radius " + getRadius() + ",which is a subclass of " + super.toString();
+                return "A Circle with radius " + getRadius()
+                        +" and Area: "+getArea()
+                        + ",which is a subclass of " + super.toString();
             }
     }
 
