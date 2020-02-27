@@ -5,21 +5,37 @@ public class Point {
     private float y=2.0f;
     public Point() {
     }
-    public Point(float x,float y) {
-        this.x=x;
-        this.y=y;
-    }
-    public void setX(float x) {
-        this.x=x;
+    public Point(float x, float y) {
+        this.x = x;
+        this.y = y;
     }
     public float getX() {
-        return this.x;
-    }
-    public void setY(float y) {
-        this.y=y;
+        return x;
     }
     public float getY() {
-        return this.y;
+        return y;
     }
-
+    public void setX(float x) {
+        this.x = x;
+    }
+    public void setY(float y) {
+        this.y = y;
+    }
+    public void setXY(float x, float y) {
+        this.x=x;
+        this.y=y;
+    }
+    public float[] getXY() {
+        float[] array=new float[2];
+        array[0]=x;
+        array[1]=y;
+        return array;
+    }
+    public String toString() {
+        String resuft="";
+        for (float element : getXY()) {
+            resuft += element + "\t";
+        }
+        return "Array: "+resuft;
+    }
 }
