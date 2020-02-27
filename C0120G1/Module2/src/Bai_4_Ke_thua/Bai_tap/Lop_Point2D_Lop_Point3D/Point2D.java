@@ -1,7 +1,6 @@
 package Bai_4_Ke_thua.Bai_tap.Lop_Point2D_Lop_Point3D;
 
 public class Point2D {
-    float[] array=new float[2];
     private float x=1.0f;
     private float y=2.0f;
     public Point2D() {
@@ -23,14 +22,22 @@ public class Point2D {
         return this.y;
     }
     public void setXY(float x, float y) {
-        array[0]=x;
-        array[1]=y;
+        this.x=x;
+        this.y=y;
     }
     public float[]  getXY() {
+        float[] array=new float[2];
+        array[0]=x;
+        array[1]=y;
         return array;
     }
     @Override
     public String toString() {
-        return "Point2D with x: "+getX()+",y: "+getY()+" and Array: "+getXY();
+        String result = "";
+        for (float element : getXY()) {
+            result+=element+"\t";
+        }
+        return "Point2D with x: "+getX()+", y: "+getY()+" and Array: "+result;
+
     }
 }
