@@ -30,7 +30,7 @@ public class Xay_dung_lop_Fan_Pham_Thai_Cuong {
             this.speed=FAST;
         } else if (speed <= 0) {
             this.speed = ZERO;
-        } else if (speed > 0 && speed < 2) {
+        } else if (speed < 2) {
             this.speed=SLOW;
         } else {
             this.speed = MEDIUM;
@@ -61,7 +61,7 @@ public class Xay_dung_lop_Fan_Pham_Thai_Cuong {
      }
      @Override
      public String toString() {
-         if (this.getON() == true) {
+         if (this.getON()) {
              return "Fan is on.\tSpeed: " + this.getSpeed() + "\tRadius: " + this.getRadius() + "\tColor: "+this.getColor();
          }else{
              return "Fan is off.\tRadius: " + this.getRadius() + "\tColor: " + this.getColor();
