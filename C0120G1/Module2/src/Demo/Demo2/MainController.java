@@ -13,6 +13,7 @@ public class MainController {
     public static void addPhone() {
         Phone phone = new Phone();
         System.out.println("asdsd");
+        phone.setId(sc.nextInt());
         phone.setId(Validation.checkAndGetNumber("Id is invalid !!! please try again"));
     }
 }

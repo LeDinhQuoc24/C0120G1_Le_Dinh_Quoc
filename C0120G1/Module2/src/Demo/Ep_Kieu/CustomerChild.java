@@ -19,6 +19,7 @@ public class CustomerChild extends Customer{
     public String toString() {
         return "CustomerChild{" +
                 "age='" + age + '\'' +
+                ", name='" + name + '\'' +
                 '}';
     }
 }
