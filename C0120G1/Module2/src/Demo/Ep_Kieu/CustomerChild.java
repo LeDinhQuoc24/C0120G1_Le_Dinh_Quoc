@@ -5,6 +5,9 @@ public class CustomerChild extends Customer{
     public CustomerChild() {
     }
 
+    public CustomerChild(String age) {
+        this.age = age;
+    }
 
     public String getAge() {
         return age;
