@@ -1,12 +1,15 @@
-package Demo.Tong_Quang_Tien.models;
+package Demo.Tong_Quang_Tien.controller;
+
+import Demo.Tong_Quang_Tien.models.CanBo;
+import Demo.Tong_Quang_Tien.models.CongNhan;
+import Demo.Tong_Quang_Tien.models.KySu;
+import Demo.Tong_Quang_Tien.models.NhanVien;
 
 import java.util.ArrayList;
 import java.util.Scanner;
 
 public  class QuanLyCanBo {
-    static ArrayList<CongNhan> CongNhan = new ArrayList<>();
-    static ArrayList<KySu> KySu = new ArrayList<>();
-    static ArrayList<NhanVien> NhanVien = new ArrayList<>();
+    static ArrayList<CanBo> CanBo = new ArrayList<>();
     public static void main(String[] args) {
         menu();
     }
@@ -56,7 +59,7 @@ public  class QuanLyCanBo {
                 System.out.println("Nhập vào cấp bậc");
                 int rank=sc.nextInt();
                 CongNhan congNhan = new CongNhan(name1,age1,sex1,address1,rank);
-                CongNhan.add(congNhan);
+                CanBo.add(congNhan);
                 menu();
                 break;
             case 2:
@@ -73,7 +76,7 @@ public  class QuanLyCanBo {
                 System.out.println("Nhập vào ngành nghề");
                 String branch=sc.nextLine();
                 KySu kySu=new KySu(name2,age2,sex2,address2,branch);
-                KySu.add(kySu);
+                CanBo.add(kySu);
                 menu();
                 break;
             case 3:
@@ -90,39 +93,25 @@ public  class QuanLyCanBo {
                 System.out.println("Nhập vào công việc");
                 String job=sc.nextLine();
                 NhanVien nhanVien=new NhanVien(name3,age3,sex3,address3,job);
-                NhanVien.add(nhanVien);
+                CanBo.add(nhanVien);
                 menu();
                 break;
         }
 
     }
     public static void search() {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Nhập tên cán bộ cần tìm");
+        String nameToFind = sc.nextLine();
+        for (CanBo element : CanBo) {
+            if (element.getName().equals(nameToFind)) {
+                System.out.println(element);
+            }
+        }
 
     }
     public static void display() {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Chọn cán bộ muốn tìm thuộc danh sách:");
-        System.out.println("1.Công nhân");
-        System.out.println("2.Kỹ sư");
-        System.out.println("3.Nhân viên");
-        switch (sc.nextInt()) {
-            case 1:
-                System.out.println(CongNhan);
-                display();
-                break;
-            case 2:
-                System.out.println(KySu);
-                display();
-                break;
-            case 3:
-                System.out.println(NhanVien);
-                display();
-                break;
-            default:
-                System.out.println("Error");
-                display();
-        }
-
+        System.out.println(CanBo);
     }
     public static void exit() {
         System.out.println("Trường kỳ CodeGym nhất định phát khùng");
