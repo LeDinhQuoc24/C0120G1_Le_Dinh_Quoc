@@ -10,7 +10,7 @@ public class ArrayIndexOutOfBoundException {
             System.out.println("Hiển thị mảng với 100 phần tử ngẫu nhiên");
             for (int i = 0; i < array.length; i++) {
                 array[i] = rd.nextInt(100);
-                System.out.println(array[i]+"\t");
+                System.out.print(array[i]+"\t");
             }
             return array;
         }
@@ -19,6 +19,7 @@ public class ArrayIndexOutOfBoundException {
             ArrayIndexOutOfBoundException arrayExample=new ArrayIndexOutOfBoundException();
             Integer[] array = arrayExample.createRandom();
             Scanner input = new Scanner(System.in);
+            System.out.println("");
             System.out.println("Nhập chỉ số của một phần tử bất kỳ");
             int x = input.nextInt();
             try {
@@ -26,6 +27,6 @@ public class ArrayIndexOutOfBoundException {
             } catch (IndexOutOfBoundsException e) {
                 System.out.println("Chỉ số vượt quá giá trị của mảng");
             }
-        }
 
+        }
 }
