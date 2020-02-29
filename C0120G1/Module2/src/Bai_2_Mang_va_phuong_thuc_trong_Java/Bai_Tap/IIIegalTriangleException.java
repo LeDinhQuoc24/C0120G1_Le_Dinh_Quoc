@@ -12,7 +12,6 @@ public class IIIegalTriangleException {
     }
 
     public  static void input() {
-        Scanner sc = new Scanner(System.in);
         System.out.println("Nhập độ dài 3 cạnh của 1 tam giác:");
         int a;
         do {
