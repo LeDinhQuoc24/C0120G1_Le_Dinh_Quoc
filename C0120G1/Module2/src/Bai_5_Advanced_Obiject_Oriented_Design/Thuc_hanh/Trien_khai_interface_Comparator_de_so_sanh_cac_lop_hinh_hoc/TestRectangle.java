@@ -17,8 +17,8 @@ public class TestRectangle {
         for (Rectangle rectangle1 : rectangle) {
             System.out.println(rectangle1);
         }
-        Comparator RectangleComparator = new RectangleComparator();
-        Arrays.sort(rectangle,RectangleComparator);
+        RectangleComparator rectangleComparator = new RectangleComparator();
+        Arrays.sort(rectangle,rectangleComparator);
 
         System.out.println("After-sorted");
         for (Rectangle rectangle1 : rectangle) {

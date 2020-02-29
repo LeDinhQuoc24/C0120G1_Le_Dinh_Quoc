@@ -4,10 +4,10 @@ import java.util.Comparator;
 
 public class RectangleComparator implements Comparator<Rectangle> {
     @Override
-    public int compare(Rectangle length1, Rectangle length2) {
-        if (length1.getLength() > length2.getLength()) {
+    public int compare(Rectangle rect1, Rectangle rect2) {
+        if (rect1.getLength() > rect2.getLength()) {
             return 1;
-        } else if (length1.getLength() < length2.getLength()) {
+        } else if (rect1.getLength() < rect2.getLength()) {
             return -1;
         } else {
             return 0;
