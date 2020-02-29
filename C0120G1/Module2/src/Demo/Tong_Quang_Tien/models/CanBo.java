@@ -53,7 +53,7 @@ public class CanBo {
         return "CanBo{" +
                 "name='" + name + '\'' +
                 ", age=" + age +
-                ", sex=" + sex +
+                ", sex=" +(isSex()?"Nam":"Nu")+
                 ", address='" + address + '\'' +
                 '}';
     }
