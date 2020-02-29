@@ -3,7 +3,7 @@ package Bai_5_Advanced_Obiject_Oriented_Design.Thuc_hanh.Trien_khai_interface_Co
 import java.util.Arrays;
 import java.util.Comparator;
 
-public class Test {
+public class TestCircle {
     public static void main(String[] args) {
         Circle[] circles = new Circle[3];
         circles[0] = new Circle(3.6);
@@ -22,5 +22,6 @@ public class Test {
         for (Circle circle : circles) {
             System.out.println(circle);
         }
+
     }
 }
