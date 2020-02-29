@@ -12,12 +12,12 @@ public class Anonymous_Class {
 
             @Override
             public float tinhChuVi() {
-                return 2 * 3 * banKinh;
+                return 2 * PI * banKinh;
             }
 
             @Override
             public float tinhDienTich() {
-                return 3 * banKinh * banKinh;
+                return PI * banKinh * banKinh;
             }
 
             @Override
