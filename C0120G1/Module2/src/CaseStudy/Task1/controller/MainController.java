@@ -8,16 +8,20 @@ import CaseStudy.Task1.models.Villa;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class MainCaseStudy1 {
+public class MainController {
     static ArrayList<Service> Services = new ArrayList<>();
     public static void main(String[] args) {
         menu();
     }
     public static void menu() {
         System.out.println("Menu");
-        System.out.println("1.Register");
-        System.out.println("2.Display");
-        System.out.println("3.Exit");
+        System.out.println("1.Add New Services");
+        System.out.println("2.Show Services");
+        System.out.println("3.Add New Customer");
+        System.out.println("4.Show Information of Customer");
+        System.out.println("5.Add New Booking");
+        System.out.println("6.Show Information of Employee");
+        System.out.println("7.Exit");
         Scanner sc = new Scanner(System.in);
         switch (sc.nextInt()) {
             case 1:
@@ -27,6 +31,13 @@ public class MainCaseStudy1 {
                 display();
                 break;
             case 3:
+            case 4:
+            case 5:
+            case 6:
+                System.out.println("Number 3-6:Don't finish,please select other number.");
+                menu();
+                break;
+            case 7:
             default:
                 exit();
         }
@@ -34,9 +45,9 @@ public class MainCaseStudy1 {
     public static void register() {
         Scanner sc = new Scanner(System.in);
         System.out.println("Select type Register");
-        System.out.println("1.Villa");
-        System.out.println("2.House");
-        System.out.println("3.Room");
+        System.out.println("1.Add New Villa");
+        System.out.println("2.Add New House");
+        System.out.println("3.Add New Room");
         System.out.println("4.Back to Menu");
         switch (sc.nextInt()) {
             case 1:
