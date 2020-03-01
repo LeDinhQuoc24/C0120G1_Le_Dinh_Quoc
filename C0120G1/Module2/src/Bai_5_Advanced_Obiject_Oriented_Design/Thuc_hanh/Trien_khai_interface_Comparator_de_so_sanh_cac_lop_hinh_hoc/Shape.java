@@ -1,7 +1,7 @@
 package Bai_5_Advanced_Obiject_Oriented_Design.Thuc_hanh.Trien_khai_interface_Comparator_de_so_sanh_cac_lop_hinh_hoc;
 
 public abstract class Shape {
-     String color="black";
+     public String color="black";
      boolean filled=true;
     public Shape() {
     }
