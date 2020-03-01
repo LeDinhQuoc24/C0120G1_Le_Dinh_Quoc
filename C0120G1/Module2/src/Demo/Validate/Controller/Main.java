@@ -12,4 +12,5 @@ public class Main {
         System.out.println("Nhap tuoi cua Vo Minh Hung");
         vo_minh_hung.setAge(Validation.checkAndGetNumber("Vui long nhap so hop le"));
     }
+
 }
