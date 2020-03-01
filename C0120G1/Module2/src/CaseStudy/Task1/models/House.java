@@ -44,7 +44,7 @@ public class House extends Service{
 
 
     @Override
-    String showInfo() {
+    public String showInfo() {
         return "House{" +
                 "id='" + super.getId() + '\'' +
                 "nameService='" + super.getNameService() + '\'' +
@@ -52,7 +52,7 @@ public class House extends Service{
                 "rentalCosts='" + super.getRentalCosts() + '\'' +
                 "maxNumberOfPeople='" + super.getMaxNumberOfPeople() + '\'' +
                 "typeOfRent='" + super.getTypeOfRent() + '\'' +
-                "roomStandard='" + this.getOtherDescriptionOfUtilities() + '\'' +
+                "roomStandard='" + this.getRoomStandard() + '\'' +
                 ", otherDescriptionOfUtilities='" + this.getOtherDescriptionOfUtilities() + '\'' +
                 ", numberOfFloors=" + this.getNumberOfFloors() + '\'' +
                 '}';

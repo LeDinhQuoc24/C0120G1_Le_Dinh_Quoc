@@ -61,7 +61,7 @@ public abstract class Service {
         this.typeOfRent = typeOfRent;
     }
 
-    abstract String showInfo();
+    abstract public String showInfo();
     @Override
     public String toString() {
         return "Service{" +
