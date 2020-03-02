@@ -1,7 +1,7 @@
 package Demo.Ep_Kieu;
 
 public class Customer {
-    String name;
+    public String name;
     public Customer() {
     }
     public String getName() {
