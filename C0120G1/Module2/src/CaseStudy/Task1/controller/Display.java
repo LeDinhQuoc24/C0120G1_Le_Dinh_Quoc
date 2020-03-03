@@ -1,8 +1,8 @@
-package CaseStudy.Task1.commons.Data.Libs;
+package CaseStudy.Task1.controller;
 
 import CaseStudy.Task1.models.Service;
 
-import static CaseStudy.Task1.controller.MainController.Services;
+import static CaseStudy.Task1.views.MainController.Services;
 
 public class Display {
     public static void display() {

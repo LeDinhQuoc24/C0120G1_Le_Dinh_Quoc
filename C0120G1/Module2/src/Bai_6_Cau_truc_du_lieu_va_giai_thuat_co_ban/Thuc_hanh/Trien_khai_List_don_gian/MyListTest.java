@@ -2,7 +2,7 @@ package Bai_6_Cau_truc_du_lieu_va_giai_thuat_co_ban.Thuc_hanh.Trien_khai_List_do
 
 public class MyListTest {
     public static void main(String[] args) {
-        MyList<Integer> listInteger = new MyList<Integer>();
+        MyList<Integer> listInteger = new MyList<>();
         listInteger.add(1);
         listInteger.add(2);
         listInteger.add(3);

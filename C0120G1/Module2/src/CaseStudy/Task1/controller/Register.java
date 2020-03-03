@@ -1,11 +1,11 @@
-package CaseStudy.Task1.commons.Data.Libs;
+package CaseStudy.Task1.controller;
 
 import java.util.Scanner;
 
-import static CaseStudy.Task1.commons.Data.Libs.Menu.menu;
-import static CaseStudy.Task1.commons.Data.Libs.RegisterHouse.registerHouse;
-import static CaseStudy.Task1.commons.Data.Libs.RegisterRoom.registerRoom;
-import static CaseStudy.Task1.commons.Data.Libs.RegisterVilla.registerVilla;
+import static CaseStudy.Task1.controller.Menu.menu;
+import static CaseStudy.Task1.controller.RegisterHouse.registerHouse;
+import static CaseStudy.Task1.controller.RegisterRoom.registerRoom;
+import static CaseStudy.Task1.controller.RegisterVilla.registerVilla;
 
 public class Register {
     public static void register() {

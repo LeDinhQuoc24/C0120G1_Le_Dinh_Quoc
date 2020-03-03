@@ -1,10 +1,10 @@
-package CaseStudy.Task1.commons.Data.Libs;
+package CaseStudy.Task1.controller;
 
 import java.util.Scanner;
 
-import static CaseStudy.Task1.commons.Data.Libs.Display.display;
-import static CaseStudy.Task1.commons.Data.Libs.Exit.exit;
-import static CaseStudy.Task1.commons.Data.Libs.Register.register;
+import static CaseStudy.Task1.controller.Display.display;
+import static CaseStudy.Task1.controller.Exit.exit;
+import static CaseStudy.Task1.controller.Register.register;
 
 public class Menu {
     public static void menu() {

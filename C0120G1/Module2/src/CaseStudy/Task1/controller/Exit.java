@@ -1,4 +1,4 @@
-package CaseStudy.Task1.commons.Data.Libs;
+package CaseStudy.Task1.controller;
 
 public class Exit {
     public static void exit() {

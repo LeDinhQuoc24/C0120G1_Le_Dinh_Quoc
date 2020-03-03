@@ -1,0 +1,5 @@
+package Bai_6_Cau_truc_du_lieu_va_giai_thuat_co_ban.Bai_tap.Trien_khai_cac_phuong_thuc_cua_LinkedList_theo_thu_vien;
+
+public class TestMyList2 {
+
+}
