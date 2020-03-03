@@ -1,11 +1,11 @@
-package CaseStudy.Task1.commons.Data.Libs;
+package CaseStudy.Task1.controller;
 
 import CaseStudy.Task1.models.Villa;
 
 import java.util.Scanner;
 
-import static CaseStudy.Task1.commons.Data.Libs.Menu.menu;
-import static CaseStudy.Task1.controller.MainController.Services;
+import static CaseStudy.Task1.controller.Menu.menu;
+import static CaseStudy.Task1.views.MainController.Services;
 
 public class RegisterVilla {
     public static void registerVilla() {
