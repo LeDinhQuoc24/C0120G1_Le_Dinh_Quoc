@@ -5,6 +5,9 @@ public class CustomerChild extends Customer{
     public CustomerChild() {
     }
 
+    public CustomerChild(String age) {
+        this.age = age;
+    }
 
     public String getAge() {
         return age;
@@ -19,6 +22,7 @@ public class CustomerChild extends Customer{
     public String toString() {
         return "CustomerChild{" +
                 "age='" + age + '\'' +
+                ", name='" + name + '\'' +
                 '}';
     }
 }
