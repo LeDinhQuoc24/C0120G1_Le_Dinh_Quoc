@@ -41,11 +41,17 @@ public class TestMyList2 {
         student2MyList2.addLast(student3);
         student2MyList2.add(2,student4);
         student2MyList2.remove(2);
+        MyList2<Student2> cloneMyList2 = student2MyList2.clone();
+        System.out.println(cloneMyList2.indexOf(student2));
 
 
 
-        for (int i = 0; i < student2MyList2.size(); i++) {
-            Student2 student = (Student2) student2MyList2.get(i);
+//        for (int i = 0; i < student2MyList2.size(); i++) {
+////            Student2 student = (Student2) student2MyList2.get(i);
+////            System.out.println(student.getName()+" "+student.getId());
+////        }
+        for (int i = 0; i < cloneMyList2.size(); i++) {
+            Student2 student = (Student2) cloneMyList2.get(i);
             System.out.println(student.getName()+" "+student.getId());
         }
 
