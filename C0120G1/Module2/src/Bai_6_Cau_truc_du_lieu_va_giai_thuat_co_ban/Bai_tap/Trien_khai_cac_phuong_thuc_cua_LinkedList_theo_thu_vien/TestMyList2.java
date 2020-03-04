@@ -38,9 +38,9 @@ public class TestMyList2 {
         Student2 student6 = new Student2(11, "Tan");
         student2MyList2.addFirst(student1);
         student2MyList2.addFirst(student2);
-        student2MyList2.addFirst(student3);
+        student2MyList2.addLast(student3);
         student2MyList2.add(2,student4);
-        student2MyList2.remove(0);
+        student2MyList2.remove(2);
 
 
 

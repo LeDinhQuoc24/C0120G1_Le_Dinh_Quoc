@@ -52,7 +52,7 @@ public class MyList2<E> {
         //khai báo 1 biến temp trỏ đến head
         Node temp=head;
         //sẽ cho con trỏ chạy đến phần tử cuối cùng của danh sách
-        while (temp.next == null) {
+        while (temp.next != null) {
             temp=temp.next;
         }
         temp.next = new Node(element);
