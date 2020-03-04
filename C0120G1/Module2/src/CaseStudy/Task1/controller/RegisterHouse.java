@@ -5,7 +5,8 @@ import CaseStudy.Task1.models.House;
 import java.util.Scanner;
 
 import static CaseStudy.Task1.controller.Menu.menu;
-import static CaseStudy.Task1.views.MainController.Services;
+import static CaseStudy.Task1.views.MainController.ListService;
+
 
 public class RegisterHouse  {
     public static void registerHouse() {
@@ -30,7 +31,7 @@ public class RegisterHouse  {
         house.setOtherDescriptionOfUtilities(sc.nextLine());
         System.out.println("Nhập số tầng");
         house.setNumberOfFloors(sc.nextInt());
-        Services.add(house);
+        ListService.add(house);
         menu();
 
     }

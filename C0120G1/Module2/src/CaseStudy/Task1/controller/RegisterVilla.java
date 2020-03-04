@@ -5,7 +5,7 @@ import CaseStudy.Task1.models.Villa;
 import java.util.Scanner;
 
 import static CaseStudy.Task1.controller.Menu.menu;
-import static CaseStudy.Task1.views.MainController.Services;
+import static CaseStudy.Task1.views.MainController.ListService;
 
 public class RegisterVilla {
     public static void registerVilla() {
@@ -32,7 +32,7 @@ public class RegisterVilla {
         villa.setNumberOfFloors(sc.nextInt());
         System.out.println("Nhập diện tích bể bơi:20,50,100");
         villa.setPoolArea(sc.nextDouble());
-        Services.add(villa);
+        ListService.add(villa);
         menu();
 
     }

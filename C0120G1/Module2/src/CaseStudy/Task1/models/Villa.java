@@ -34,7 +34,7 @@ public class Villa extends House{
                 "roomStandard='" + super.getRoomStandard() + '\'' +
                 ", otherDescriptionOfUtilities='" + super.getOtherDescriptionOfUtilities() + '\'' +
                 ", numberOfFloors=" + super.getNumberOfFloors() + '\'' +
-                ", PoolArea=" + this.getPoolArea() + '\'' +  '}';
+                ", poolArea=" + this.getPoolArea() + '\'' +  '}';
     }
     @Override
     public String toString() {

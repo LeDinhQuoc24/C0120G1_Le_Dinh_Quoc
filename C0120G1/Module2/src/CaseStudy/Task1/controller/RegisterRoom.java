@@ -5,7 +5,8 @@ import CaseStudy.Task1.models.Room;
 import java.util.Scanner;
 
 import static CaseStudy.Task1.controller.Menu.menu;
-import static CaseStudy.Task1.views.MainController.Services;
+import static CaseStudy.Task1.views.MainController.ListService;
+
 
 public class RegisterRoom {
     public static void registerRoom() {
@@ -26,7 +27,7 @@ public class RegisterRoom {
         sc.nextLine();
         System.out.println("Nhập dịch vụ miễn phí kèm theo:Jav1,Jav2,Jav3");
         room.setFreeService(sc.nextLine());
-        Services.add(room);
+        ListService.add(room);
         menu();
 
     }
