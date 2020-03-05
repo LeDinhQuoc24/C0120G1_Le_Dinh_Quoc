@@ -1,78 +1,72 @@
-package CaseStudy.models;
+package CaseStudyversion2.models;
 
 import java.io.Serializable;
 
 public class House extends Service implements Serializable {
-    private String roomStandard="5 stars";
-    private String otherDescriptionOfUtilities="Karaoke";
-    private int numberOfFloors=5;
-    public House() {
-    }
+    private String roomStandard;
+    private String otherDescriptionOfUtilities;
+    private int numberOfFloors;
 
     @Override
     public String getId() {
-        return this.id;
+        return super.getId();
     }
 
     @Override
     public void setId(String id) {
-        this.id=id;
-
+        super.setId(id);
     }
 
     @Override
     public String getNameService() {
-        return this.nameService;
+        return super.getNameService();
     }
 
     @Override
     public void setNameService(String nameService) {
-        this.nameService=nameService;
-
+        super.setNameService(nameService);
     }
 
     @Override
     public double getAreaUsed() {
-        return this.areaUsed;
+        return super.getAreaUsed();
     }
 
     @Override
     public void setAreaUsed(double areaUsed) {
-        this.areaUsed=areaUsed;
+        super.setAreaUsed(areaUsed);
     }
 
     @Override
     public double getRentalCosts() {
-        return rentalCosts;
+        return super.getRentalCosts();
     }
 
     @Override
     public void setRentalCosts(double rentalCosts) {
-        this.rentalCosts=rentalCosts;
-
+        super.setRentalCosts(rentalCosts);
     }
 
     @Override
     public int getMaxNumberOfPeople() {
-        return maxNumberOfPeople;
+        return super.getMaxNumberOfPeople();
     }
 
     @Override
     public void setMaxNumberOfPeople(int maxNumberOfPeople) {
-        this.maxNumberOfPeople=maxNumberOfPeople;
-
+        super.setMaxNumberOfPeople(maxNumberOfPeople);
     }
 
     @Override
     public String getTypeOfRent() {
-        return typeOfRent;
+        return super.getTypeOfRent();
     }
 
     @Override
     public void setTypeOfRent(String typeOfRent) {
-        this.typeOfRent=typeOfRent;
-
+        super.setTypeOfRent(typeOfRent);
     }
+
     public String getRoomStandard() {
         return roomStandard;
     }
@@ -89,7 +83,6 @@ public class House extends Service implements Serializable {
         this.otherDescriptionOfUtilities = otherDescriptionOfUtilities;
     }
 
-
     public int getNumberOfFloors() {
         return numberOfFloors;
     }
@@ -97,20 +90,10 @@ public class House extends Service implements Serializable {
     public void setNumberOfFloors(int numberOfFloors) {
         this.numberOfFloors = numberOfFloors;
     }
-
-
-
     @Override
     public String showInfo() {
-        return this.getId()+"\t"+this.getNameService()+"\t"+this.getAreaUsed()+"\t"+
-                this.getRentalCosts()+"\t"+this.getMaxNumberOfPeople()+"\t"+this.getTypeOfRent()+"\t"+
-                this.getRoomStandard()+"\t"+this.getOtherDescriptionOfUtilities()+"\t"+this.getNumberOfFloors();
+        return super.showInfo()+"\tRoomStandard: "+this.getRoomStandard()+
+                "\nOtherDescriptionOfUtilities: "+this.getOtherDescriptionOfUtilities()
+                +"\tNumberOfFloors: "+this.getNumberOfFloors();
     }
-
-
-
-
-
-
-
 }

@@ -1,12 +1,12 @@
 package CaseStudy.models;
 
 public abstract class Service {
-    private String id="1";
-    private String nameService="Villa";
-    private double areaUsed=1.0;
-    private double rentalCosts=1.0;
-    private int maxNumberOfPeople=1;
-    private String typeOfRent="ByYear";
+    protected String id;
+    protected String nameService="Villa";
+    protected double areaUsed=1.0;
+    protected double rentalCosts=1.0;
+    protected int maxNumberOfPeople=1;
+    protected String typeOfRent="ByYear";
 
     public Service() {
     }
@@ -18,59 +18,24 @@ public abstract class Service {
         this.maxNumberOfPeople = maxNumberOfPeople;
         this.typeOfRent = typeOfRent;
     }
-    public String getId() {
-        return id;
-    }
-    public void setId(String id) {
-        this.id = id;
-    }
-    public String getNameService() {
-        return nameService;
-    }
-    public void setNameService(String nameService) {
-        this.nameService = nameService;
-    }
-    public double getAreaUsed() {
-        return areaUsed;
-    }
-    public void setAreaUsed(double areaUsed) {
-        this.areaUsed = areaUsed;
-    }
+    public abstract String getId() ;
+    public  abstract void setId(String id);
+    public  abstract String getNameService();
+    public  abstract void setNameService(String nameService);
+    public abstract double getAreaUsed() ;
+    public abstract void setAreaUsed(double areaUsed);
 
-    public double getRentalCosts() {
-        return rentalCosts;
-    }
+    public abstract double getRentalCosts() ;
 
-    public void setRentalCosts(double rentalCosts) {
-        this.rentalCosts = rentalCosts;
-    }
+    public abstract void setRentalCosts(double rentalCosts) ;
 
-    public int getMaxNumberOfPeople() {
-        return maxNumberOfPeople;
-    }
+    public abstract int getMaxNumberOfPeople() ;
 
-    public void setMaxNumberOfPeople(int maxNumberOfPeople) {
-        this.maxNumberOfPeople = maxNumberOfPeople;
-    }
+    public abstract void setMaxNumberOfPeople(int maxNumberOfPeople);
 
-    public String getTypeOfRent() {
-        return typeOfRent;
-    }
+    public abstract String getTypeOfRent() ;
 
-    public void setTypeOfRent(String typeOfRent) {
-        this.typeOfRent = typeOfRent;
-    }
+    public abstract void setTypeOfRent(String typeOfRent);
 
     abstract public String showInfo();
-    @Override
-    public String toString() {
-        return "Service{" +
-                "id='" + id + '\'' +
-                ", nameService='" + nameService + '\'' +
-                ", areaUsed=" + areaUsed +
-                ", rentalCosts=" + rentalCosts +
-                ", maxNumberOfPeople=" + maxNumberOfPeople +
-                ", typeOfRent='" + typeOfRent + '\'' +
-                '}';
-    }
 }

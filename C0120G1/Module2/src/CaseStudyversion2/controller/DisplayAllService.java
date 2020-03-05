@@ -1,19 +1,20 @@
-package CaseStudy.controller;
+package CaseStudyversion2.controller;
 
-import CaseStudy.models.House;
-import CaseStudy.models.Room;
-import CaseStudy.models.Service;
-import CaseStudy.models.Villa;
-import CaseStudy.views.MainController;
+
+
+import CaseStudyversion2.models.House;
+import CaseStudyversion2.models.Room;
+import CaseStudyversion2.models.Villa;
 
 import java.util.Scanner;
 
-import static CaseStudy.controller.Exit.exit;
-import static CaseStudy.controller.Menu.menu;
+import static CaseStudyversion2.controller.DisplayMenu.displayMenu;
+import static CaseStudyversion2.controller.Exit.displayExit;
+import static CaseStudyversion2.views.MainRun.*;
 
 
-public class Display {
-    public static void display() {
+public class DisplayAllService {
+    public static void displayAllService() {
         Scanner sc = new Scanner(System.in);
         System.out.println("1.Display All Service");
         System.out.println("2.Display All Villa");
@@ -26,55 +27,49 @@ public class Display {
         System.out.println("9.Exit");
         switch (sc.nextInt()) {
             case 1:
-                for (Service service : MainController.ListService) {
-                    if (service instanceof House) {
-                        System.out.println(service.showInfo());
-                    }
-
-                }
-                display();
+                displayAllService();
                 break;
             case 2:
-                for (Villa villa : MainController.ListVilla) {
+                for (Villa villa : listVilla) {
                     System.out.println(villa.showInfo());
                 }
-                display();
+                displayAllService();
                 break;
             case 3:
-                for (House house : MainController.ListHouse) {
+                for (House house : listHouse) {
                     System.out.println(house.showInfo());
                 }
-                display();
+                displayAllService();
                 break;
             case 4:
-                for (Room room : MainController.ListRoom) {
+                for (Room room : listRoom) {
                     System.out.println(room.showInfo());
                 }
-                display();
+                displayAllService();
                 break;
             case 5:
-                for (Villa villa : MainController.ListVilla) {
+                for (Villa villa : listVilla) {
                     System.out.println(villa.getNameService());
                 }
-                display();
+                displayAllService();
                 break;
             case 6:
-                for (House house : MainController.ListHouse) {
+                for (House house : listHouse) {
                     System.out.println(house.getNameService());
                 }
-                display();
+                displayAllService();
                 break;
             case 7:
-                for (Room room : MainController.ListRoom) {
+                for (Room room : listRoom) {
                     System.out.println(room.getNameService());
                 }
-                display();
+                displayAllService();
                 break;
             case 8:
-                menu();
+                displayMenu();
                 break;
             case 9:
-                exit();
+                displayExit();
                 break;
             default:
                 System.out.println("Enter Error,please try again");

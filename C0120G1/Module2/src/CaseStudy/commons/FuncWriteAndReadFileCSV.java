@@ -1,6 +1,7 @@
 package CaseStudy.commons;
 
 
+import CaseStudy.models.House;
 import CaseStudy.models.Service;
 
 import java.io.FileInputStream;
@@ -10,7 +11,7 @@ import java.io.ObjectOutputStream;
 import java.util.ArrayList;
 
 public class FuncWriteAndReadFileCSV {
-    public static boolean saveFile(ArrayList<Service> ListService, String path) {
+    public static boolean saveFile(ArrayList<House> ListService, String path) {
         try {
             FileOutputStream fos = new FileOutputStream(path);
             ObjectOutputStream oos = new ObjectOutputStream(fos);
