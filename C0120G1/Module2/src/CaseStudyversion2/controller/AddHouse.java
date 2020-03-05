@@ -27,9 +27,9 @@ public class AddHouse {
         house.setRentalCosts(sc.nextDouble());
         System.out.println("Nhập số người tối đa");
         house.setMaxNumberOfPeople(sc.nextInt());
+        sc.nextLine();
         System.out.println("Nhập kiểu thuê:prePays,afterPay");
         house.setTypeOfRent(sc.nextLine());
-        sc.nextLine();
         System.out.println("Nhập tiêu chuẩn phòng:3 stars,4 stars,5 stars");
         house.setRoomStandard(sc.nextLine());
         System.out.println("Nhập tiện nghi khác:Karaoke,Massage,Bowling");

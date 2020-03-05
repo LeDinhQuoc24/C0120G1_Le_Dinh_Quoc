@@ -105,6 +105,6 @@ public class Villa extends House implements Serializable {
 
     @Override
     public String showInfo() {
-        return super.showInfo()+this.getPoolArea();
+        return super.showInfo()+"\tPoolArea: "+this.getPoolArea();
     }
 }

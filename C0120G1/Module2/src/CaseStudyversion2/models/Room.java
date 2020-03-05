@@ -73,7 +73,7 @@ public class Room extends Service implements Serializable {
     }
     @Override
     public String showInfo() {
-        return super.showInfo()+this.getFreeService();
+        return super.showInfo()+"\tFreeService: "+this.getFreeService();
     }
 
 }

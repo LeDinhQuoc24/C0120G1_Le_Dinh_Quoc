@@ -25,9 +25,9 @@ public class AddVilla {
         villa.setRentalCosts(sc.nextDouble());
         System.out.println("Nhập số người tối đa");
         villa.setMaxNumberOfPeople(sc.nextInt());
+        sc.nextLine();
         System.out.println("Nhập kiểu thuê:prePays,afterPay");
         villa.setTypeOfRent(sc.nextLine());
-        sc.nextLine();
         System.out.println("Nhập tiêu chuẩn phòng:3 stars,4 stars,5 stars");
         villa.setRoomStandard(sc.nextLine());
         System.out.println("Nhập tiện nghi khác:Karaoke,Massage,Bowling");

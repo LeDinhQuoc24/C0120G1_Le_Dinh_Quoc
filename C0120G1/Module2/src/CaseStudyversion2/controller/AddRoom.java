@@ -25,9 +25,9 @@ public class AddRoom {
         room.setRentalCosts(sc.nextDouble());
         System.out.println("Nhập số người tối đa");
         room.setMaxNumberOfPeople(sc.nextInt());
+        sc.nextLine();
         System.out.println("Nhập kiểu thuê:prePays,afterPay");
         room.setTypeOfRent(sc.nextLine());
-        sc.nextLine();
         System.out.println("Nhập dịch vụ miễn phí kèm theo:Jav1,Jav2,Jav3");
         room.setFreeService(sc.nextLine());
         listRoom.add(room);
