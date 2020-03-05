@@ -5,25 +5,43 @@ package CaseStudyversion2.controller;
 
 
 import CaseStudyversion2.models.House;
+import CaseStudyversion2.models.Room;
+import CaseStudyversion2.models.Villa;
 
-import static CaseStudyversion2.commons.FuncWriteAndReadFileCSV.readFileHouse;
-import static CaseStudyversion2.commons.FuncWriteAndReadFileCSV.saveFileHouse;
-import static CaseStudyversion2.views.MainRun.listHouse;
+import static CaseStudyversion2.commons.FuncWriteAndReadFileCSV.*;
+import static CaseStudyversion2.views.MainRun.*;
 
 public class SaveAndLoadFile {
     public static void saveFile() {
-        boolean check = saveFileHouse(listHouse, "F:\\ProjectCodyGym\\C0120G1\\Module2\\src\\CaseStudyversion2\\data\\main1.csv");
-        if (check) {
+        boolean check1 = saveFileVilla(listVilla, "F:\\ProjectCodyGym\\C0120G1\\Module2\\src\\CaseStudyversion2\\data\\saveVilla.csv");
+
+        boolean check2 = saveFileHouse(listHouse, "F:\\ProjectCodyGym\\C0120G1\\Module2\\src\\CaseStudyversion2\\data\\saveHouse.csv");
+
+        boolean check3 = saveFileRoom(listRoom, "F:\\ProjectCodyGym\\C0120G1\\Module2\\src\\CaseStudyversion2\\data\\saveRoom.csv");
+        if (check3&&check1&&check2) {
             System.out.println("Save file succesfully");
         } else {
             System.out.println("Save file failled");
         }
     }
     public static void loadFile() {
-        listHouse= readFileHouse("F:\\ProjectCodyGym\\C0120G1\\Module2\\src\\CaseStudyversion2\\data\\main1.csv");
         System.out.println("Load file succesfully");
+        listVilla= readFileVilla("F:\\ProjectCodyGym\\C0120G1\\Module2\\src\\CaseStudyversion2\\data\\saveVilla.csv");
+        System.out.println("Villa:");
+        for (Villa villa : listVilla) {
+            System.out.println(villa.showInfo());
+        }
+        listHouse= readFileHouse("F:\\ProjectCodyGym\\C0120G1\\Module2\\src\\CaseStudyversion2\\data\\saveHouse.csv");
+        System.out.println("House:");
+
         for (House house : listHouse) {
             System.out.println(house.showInfo());
+        }
+        listRoom= readFileRoom("F:\\ProjectCodyGym\\C0120G1\\Module2\\src\\CaseStudyversion2\\data\\saveRoom.csv");
+        System.out.println("Room:");
+
+        for (Room room : listRoom) {
+            System.out.println(room.showInfo());
         }
 
     }

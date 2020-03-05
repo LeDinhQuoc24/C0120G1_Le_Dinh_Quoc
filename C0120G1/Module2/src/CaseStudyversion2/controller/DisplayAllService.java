@@ -27,6 +27,18 @@ public class DisplayAllService {
         System.out.println("9.Exit");
         switch (sc.nextInt()) {
             case 1:
+                System.out.println("Villa:\n");
+                for (Villa villa : listVilla) {
+                    System.out.println(villa.showInfo());
+                }
+                System.out.println("House:\n");
+                for (House house : listHouse) {
+                    System.out.println(house.showInfo());
+                }
+                System.out.println("Room:\n");
+                for (Room room : listRoom) {
+                    System.out.println(room.showInfo());
+                }
                 displayAllService();
                 break;
             case 2:
