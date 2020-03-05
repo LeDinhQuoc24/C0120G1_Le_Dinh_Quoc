@@ -60,20 +60,26 @@ public class DisplayAllService {
                 displayAllService();
                 break;
             case 5:
+                int n=1;
                 for (Villa villa : listVilla) {
-                    System.out.println("Villa-NameService: "+villa.getNameService());
+                    System.out.println("Villa-NameService"+n+": "+villa.getNameService());
+                    n++;
                 }
                 displayAllService();
                 break;
             case 6:
+                int m=1;
                 for (House house : listHouse) {
-                    System.out.println("House-NameService: "+house.getNameService());
+                    System.out.println("House-NameService"+m+": "+house.getNameService());
+                    m++;
                 }
                 displayAllService();
                 break;
             case 7:
+                int k=1;
                 for (Room room : listRoom) {
-                    System.out.println("Room-NameService: "+room.getNameService());
+                    System.out.println("Room-NameService"+k+": "+room.getNameService());
+                    k++;
                 }
                 displayAllService();
                 break;
