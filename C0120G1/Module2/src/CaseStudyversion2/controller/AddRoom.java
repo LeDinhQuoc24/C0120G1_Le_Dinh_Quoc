@@ -3,12 +3,7 @@ package CaseStudyversion2.controller;
 
 
 import CaseStudyversion2.models.Room;
-import Demo.Tong_Quang_Tien.commons.Data.Libs.Add;
 
-import java.util.Scanner;
-import java.util.UUID;
-
-import static CaseStudyversion2.commons.FuncValidation.checkNameService;
 import static CaseStudyversion2.controller.DisplayMenu.displayMenu;
 import static CaseStudyversion2.views.MainRun.listRoom;
 import static CaseStudyversion2.views.MainRun.sc;

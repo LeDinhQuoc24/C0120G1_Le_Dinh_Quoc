@@ -7,7 +7,7 @@ import CaseStudyversion2.models.Villa;
 
 import java.util.UUID;
 
-import static CaseStudyversion2.commons.FuncValidation.checkNameService;
+
 import static CaseStudyversion2.controller.DisplayMenu.displayMenu;
 
 import static CaseStudyversion2.views.MainRun.listVilla;
