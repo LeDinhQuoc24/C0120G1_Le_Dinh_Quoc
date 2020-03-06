@@ -1,15 +1,13 @@
 package CaseStudyversion2.controller;
 
-import CaseStudyversion2.commons.FuncValidation;
 import CaseStudyversion2.models.House;
 import CaseStudyversion2.models.Room;
 import CaseStudyversion2.models.Service;
 import CaseStudyversion2.models.Villa;
 
-import java.util.Scanner;
 import java.util.UUID;
 
-import static CaseStudyversion2.commons.FuncValidation.*;
+import static CaseStudyversion2.commons.FuncValidationService.*;
 
 
 

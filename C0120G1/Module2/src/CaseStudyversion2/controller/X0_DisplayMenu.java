@@ -36,22 +36,19 @@ public class X0_DisplayMenu {
                 break;
             case 4:
                 showInformationOfCustomer();
-                displayMenu();
                 break;
             case 5:
                 addNewBooking();
-                displayMenu();
                 break;
             case 6:
                 showInformationOfEmployee();
-                displayMenu();
                 break;
             case 7:
-                SaveAndLoadFile.saveFile();
+                X7_8_SaveAndLoadFile.saveFile();
                 displayMenu();
                 break;
             case 8:
-                SaveAndLoadFile.loadFile();
+                X7_8_SaveAndLoadFile.loadFile();
                 displayMenu();
                 break;
             case 9:

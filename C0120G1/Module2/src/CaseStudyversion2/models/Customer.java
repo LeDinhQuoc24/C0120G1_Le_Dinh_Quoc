@@ -1,6 +1,6 @@
 package CaseStudyversion2.models;
 
-public class Customer {
+public class Customer extends Service{
     private String name;
     private String birth;
     private String sex;
@@ -9,7 +9,6 @@ public class Customer {
     private String email;
     private String typeCustomer;
     private String address;
-    private String idService;
 
     public String getName() {
         return name;
@@ -75,11 +74,4 @@ public class Customer {
         this.address = address;
     }
 
-    public String getIdService() {
-        return idService;
-    }
-
-    public void setIdService(String idService) {
-        this.idService = idService;
-    }
 }

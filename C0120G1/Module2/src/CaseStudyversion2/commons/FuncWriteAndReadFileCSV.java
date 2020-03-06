@@ -21,8 +21,7 @@ public class FuncWriteAndReadFileCSV {
             oos.close();
             fos.close();
             return true;
-        } catch (Exception ex)
-        {
+        } catch (Exception ex) {
             ex.printStackTrace();
         }
         return false;

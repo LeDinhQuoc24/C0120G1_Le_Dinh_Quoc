@@ -7,7 +7,7 @@ import java.util.InputMismatchException;
 import static CaseStudyversion2.views.MainRun.sc;
 
 
-public class FuncValidation {
+public class FuncValidationService {
     //Check Input String
     public static String checkString(String regex, String errorMess) {
         while (true) {
