@@ -16,15 +16,14 @@ import static CaseStudyversion2.views.MainRun.*;
 public class DisplayAllService {
     public static void displayAllService() {
         Scanner sc = new Scanner(System.in);
-        System.out.println("1.Display All Service");
-        System.out.println("2.Display All Villa");
-        System.out.println("3.Display All House");
-        System.out.println("4.Display All Room");
-        System.out.println("5.Display All Name Villa Not Duplicate");
-        System.out.println("6.Display All Name House Not Duplicate");
-        System.out.println("7.Display All Name Name Not Duplicate");
-        System.out.println("8.Back To Menu");
-        System.out.println("9.Exit");
+        System.out.println("--------------------------------------------\n"+
+                "1.Display All Service\n"+"2.Display All Villa\n"+
+                "3.Display All House\n"+ "4.Display All Room\n"+
+                "5.Display All Name Villa Not Duplicate\n"+
+                "6.Display All Name House Not Duplicate\n"+
+                "7.Display All Name Name Not Duplicate\n"+
+                "8.Back To Menu\n"+ "9.Exit\n"+
+                "----------------------------------------------------------");
         switch (sc.nextInt()) {
             case 1:
                 System.out.println("Villa:\n");

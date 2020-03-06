@@ -6,7 +6,8 @@ import Demo.Tong_Quang_Tien.models.NhanVien;
 
 import java.util.Scanner;
 
-import static CaseStudy.controller.Menu.menu;
+
+import static Demo.Tong_Quang_Tien.commons.Data.Libs.Menu.menu;
 import static Demo.Tong_Quang_Tien.controller.QuanLyCanBo.CanBo;
 
 public class Add {

@@ -4,7 +4,8 @@ import Demo.Tong_Quang_Tien.models.CanBo;
 
 import java.util.ArrayList;
 
-import static CaseStudy.controller.Menu.menu;
+import static Demo.Tong_Quang_Tien.commons.Data.Libs.Menu.menu;
+
 
 public  class QuanLyCanBo {
     public static ArrayList<CanBo> CanBo = new ArrayList<>();

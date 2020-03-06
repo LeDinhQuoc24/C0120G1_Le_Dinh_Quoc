@@ -5,22 +5,19 @@ package CaseStudyversion2.controller;
 
 import java.util.Scanner;
 
-import static CaseStudyversion2.controller.AddService.addService;
+import static CaseStudyversion2.controller.MenuAddService.addService;
 import static CaseStudyversion2.controller.DisplayAllService.displayAllService;
 import static CaseStudyversion2.controller.Exit.displayExit;
 
 public class DisplayMenu {
     public static void displayMenu() {
-        System.out.println("Menu");
-        System.out.println("1.Add New Services");
-        System.out.println("2.Show Services");
-        System.out.println("3.Add New Customer");
-        System.out.println("4.Show Information of Customer");
-        System.out.println("5.Add New Booking");
-        System.out.println("6.Show Information of Employee");
-        System.out.println("7.Save File");
-        System.out.println("8.Load File");
-        System.out.println("9.Exit");
+        System.out.println("--------------------------------------\n");
+        System.out.println("Menu\n"+"1.Add New Services\n"+
+                "2.Show Services\n"+ "3.Add New Customer\n"+
+                "4.Show Information of Customer\n"+ "5.Add New Booking\n"+
+                "6.Show Information of Employee\n"+
+                "7.Save File\n"+"8.Load File\n"+ "9.Exit\n"+
+                "-------------------------------------------------");
         Scanner sc = new Scanner(System.in);
         switch (sc.nextInt()) {
             case 1:

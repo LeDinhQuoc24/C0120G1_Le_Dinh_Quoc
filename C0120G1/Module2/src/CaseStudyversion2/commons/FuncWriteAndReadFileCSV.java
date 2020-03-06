@@ -1,7 +1,7 @@
 package CaseStudyversion2.commons;
 
 
-import CaseStudy.models.Service;
+
 import CaseStudyversion2.models.House;
 import CaseStudyversion2.models.Room;
 import CaseStudyversion2.models.Villa;
