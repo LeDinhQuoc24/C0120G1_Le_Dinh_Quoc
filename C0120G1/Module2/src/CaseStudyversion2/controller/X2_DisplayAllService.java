@@ -8,12 +8,12 @@ import CaseStudyversion2.models.Villa;
 
 import java.util.Scanner;
 
-import static CaseStudyversion2.controller.DisplayMenu.displayMenu;
-import static CaseStudyversion2.controller.Exit.displayExit;
+import static CaseStudyversion2.controller.X0_DisplayMenu.displayMenu;
+import static CaseStudyversion2.controller.X9_Exit.displayExit;
 import static CaseStudyversion2.views.MainRun.*;
 
 
-public class DisplayAllService {
+public class X2_DisplayAllService {
     public static void displayAllService() {
         Scanner sc = new Scanner(System.in);
         System.out.println("--------------------------------------------\n"+

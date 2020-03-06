@@ -2,20 +2,19 @@ package CaseStudyversion2.controller;
 
 
 
-import CaseStudyversion2.commons.FuncValidation;
 import CaseStudyversion2.models.House;
 import CaseStudyversion2.models.Service;
 
 
 import static CaseStudyversion2.commons.FuncValidation.checkNumberInteger;
 import static CaseStudyversion2.commons.FuncValidation.checkString;
-import static CaseStudyversion2.controller.DisplayMenu.displayMenu;
+import static CaseStudyversion2.controller.X0_DisplayMenu.displayMenu;
 import static CaseStudyversion2.views.MainRun.*;
 
-public class AddHouse {
+public class X1_x2_AddHouse {
     public static void addHouse() {
         Service house=new House();
-        AddService.addService(house);
+        X1_x0_AddService.addService(house);
         System.out.println("Enter RoomStandard:Diamond/Gold/Silver");
         String regex = "^Diamond|Gold|Silver$";
         ((House)house).setRoomStandard(checkString(regex,"RoomStandard failed"));

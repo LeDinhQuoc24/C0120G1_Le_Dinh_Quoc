@@ -13,7 +13,7 @@ import static CaseStudyversion2.commons.FuncValidation.*;
 
 
 
-public class AddService {
+public class X1_x0_AddService {
     public static Service addService(Service service) {
         service.setId(UUID.randomUUID().toString().replace("-",""));
         String     regex = "";

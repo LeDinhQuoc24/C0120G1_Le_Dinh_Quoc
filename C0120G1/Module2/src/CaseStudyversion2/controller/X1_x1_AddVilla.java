@@ -3,21 +3,19 @@ package CaseStudyversion2.controller;
 
 
 import CaseStudyversion2.commons.FuncValidation;
-import CaseStudyversion2.models.House;
 import CaseStudyversion2.models.Service;
 import CaseStudyversion2.models.Villa;
 
 import static CaseStudyversion2.commons.FuncValidation.checkNumberInteger;
 import static CaseStudyversion2.commons.FuncValidation.checkString;
-import static CaseStudyversion2.controller.DisplayMenu.displayMenu;
+import static CaseStudyversion2.controller.X0_DisplayMenu.displayMenu;
 import static CaseStudyversion2.views.MainRun.listVilla;
-import static CaseStudyversion2.views.MainRun.sc;
 
 
-public class AddVilla {
+public class X1_x1_AddVilla {
     public static void addVilla() {
         Service villa = new Villa();
-        AddService.addService(villa);
+        X1_x0_AddService.addService(villa);
         String regex = "^Diamond|Gold|Silver$";
         System.out.println("Enter RoomStandard:Diamond/Gold/Silver");
         ((Villa)villa).setRoomStandard(FuncValidation.checkString(regex,"RoomStandard failed"));

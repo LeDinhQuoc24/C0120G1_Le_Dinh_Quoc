@@ -8,7 +8,7 @@ import CaseStudyversion2.models.Villa;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-import static CaseStudyversion2.controller.DisplayMenu.displayMenu;
+import static CaseStudyversion2.controller.X0_DisplayMenu.displayMenu;
 
 public class MainRun {
     public static Scanner sc = new Scanner(System.in);
