@@ -2,19 +2,25 @@ package CaseStudyversion2.commons;
 
 
 import java.util.InputMismatchException;
-import java.util.Scanner;
+
 
 import static CaseStudyversion2.views.MainRun.sc;
-import static java.lang.Integer.parseInt;
+
 
 public class FuncValidation {
     //Check Input String
     public static String checkString(String regex, String errorMess) {
-        sc.nextLine();
         while (true) {
             String inputString = sc.nextLine();
             if (inputString.matches(regex)) {
-                return inputString;
+                if( inputString.equals("byYear") || inputString.equals("byMonth") ||
+                        inputString.equals("byDay") || inputString.equals("byHour")) {
+                    System.out.println("Enter numberRent:from 1 to 299");
+                    String regex1 = "^[1-9]|([1-9][0-9])|[1-2]([0-9]{1,2})$";
+                    double numberRent = checkNumberInteger(regex1,"NumberRent failed");
+                    return inputString + ": " + numberRent;
+                }
+                    return inputString;
             } else {
                 System.out.println(errorMess);
             }
@@ -24,18 +30,33 @@ public class FuncValidation {
     public static int checkNumberInteger(String regex,String errorMess) {
         while (true) {
             try {
-                int inputInt = sc.nextInt();
-                if ((inputInt+"").matches(regex)) {
-                    return inputInt;
+                String inputInt = sc.nextLine();
+                if (inputInt.matches(regex)) {
+                    return Integer.parseInt(inputInt);
                 }else{
                     throw new IllegalArgumentException();
                 }
             } catch (InputMismatchException|IllegalArgumentException e) {
                 System.out.println(errorMess);
-                sc.nextLine();
             }
         }
     }
+    //Check Input Number Double
+    public static double checkNumberDouble(String regex,String errorMess) {
+        while (true) {
+            try {
+                String inputDouble= sc.nextLine();
+                if (inputDouble.matches(regex)) {
+                    return Double.parseDouble(inputDouble);
+                }else{
+                    throw new IllegalArgumentException();
+                }
+            } catch (InputMismatchException|IllegalArgumentException e) {
+                System.out.println(errorMess);
+            }
+        }
+    }
+
 
 
 }
