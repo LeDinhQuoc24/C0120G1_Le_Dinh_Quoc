@@ -24,6 +24,8 @@ public class X7_8_SaveAndLoadFile {
     }
     public static void loadFile() {
         System.out.println("Load file succesfully");
+        listCustomer=readFileX("F:\\ProjectCodyGym\\C0120G1\\Module2\\src\\CaseStudyversion2\\data\\saveCustomer.csv");
+
         listVilla= readFileX("F:\\ProjectCodyGym\\C0120G1\\Module2\\src\\CaseStudyversion2\\data\\saveVilla.csv");
         System.out.println("Villa:");
         for (Villa villa : listVilla) {

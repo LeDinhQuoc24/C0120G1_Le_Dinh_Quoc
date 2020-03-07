@@ -22,16 +22,16 @@ public class X3_AddNewCustomer {
         ((Customer) newCustomer).setBirth(checkString(regex, "Enter BirthdayCustomer failed"));
         regex = "^[mM][aA][lL][eE]|[fF][eE][mM][aA][lL][eE]|[uU][nN][kK][nN][oO][wW][nN]$";
         System.out.println("Enter sex:Male,Female,Unknown");
-        String birth=checkString(regex, "Enter Sex failed");
-        String birth1 = "";
-        for (int i = 0; i < birth.length(); i++) {
+        String sex=checkString(regex, "Enter Sex failed");
+        String sex1 = "";
+        for (int i = 0; i <  sex.length(); i++) {
             if (i == 0) {
-                birth1 += birth.toUpperCase().charAt(i);
+                sex1 +=  sex.toUpperCase().charAt(i);
             } else {
-                birth1 += birth.toLowerCase().charAt(i);
+                sex1 +=  sex.toLowerCase().charAt(i);
             }
         }
-        ((Customer) newCustomer).setSex(birth1);
+        ((Customer) newCustomer).setSex( sex1);
         regex = "^[0-9]{9}$";
         System.out.println("Enter IdCustomer: 9 numbers");
         ((Customer) newCustomer).setIdCustomer(checkNumberInteger(regex, "Enter IdCustomer failed"));

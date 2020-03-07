@@ -12,6 +12,5 @@ public class RectangleComparator implements Comparator<Rectangle> {
         } else {
             return 0;
         }
-
     }
 }
