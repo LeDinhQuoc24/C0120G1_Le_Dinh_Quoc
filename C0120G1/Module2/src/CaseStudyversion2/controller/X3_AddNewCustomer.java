@@ -12,7 +12,7 @@ import static CaseStudyversion2.views.MainRun.listCustomer;
 
 public class X3_AddNewCustomer {
     public static void addNewCustomer() {
-        String regex = "";
+        String regex ;
         Service newCustomer = new Customer();
         regex = "^[A-Z]([a-z]+)(( [A-Z]([a-z]+))+)*$";
         System.out.println("Enter NameCustomer:");
