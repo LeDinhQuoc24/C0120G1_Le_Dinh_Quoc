@@ -12,7 +12,7 @@ public class X3_AddNewCustomer {
         System.out.println("Enter NameCustomer:");
         ((Customer) newCustomer).setName(checkCustomer(regex, "NameCustomer failed"));
         regex = "^(0[1-9]|[12][0-9]|3[01])/(0[1-9]|1[0-2])/(19[7-9][0-9]|200[0-2])$";
-        System.out.println("BirthdayCustomer");
+        System.out.println("BirthdayCustomer:from 1970 to 2002");
         ((Customer) newCustomer).setBirth(checkCustomer(regex, "BirthdayCustomer failed"));
     }
 }

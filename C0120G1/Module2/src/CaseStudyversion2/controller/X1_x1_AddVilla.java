@@ -25,13 +25,12 @@ public class X1_x1_AddVilla {
         regex = "^[1-9]|([1][0-5])$";
         System.out.println("Enter NumberOfFloors:from 1 to 15");
         ((Villa) villa).setNumberOfFloors(checkNumberInteger(regex, "NumberOfFloors failed"));
-        regex = "^[2-4][1-9]|50$";
+        regex = "^[2-4][0-9]|50$";
         System.out.println("Enter PoolArea:from 20 to 50");
         ((Villa)villa).setPoolArea(checkNumberInteger(regex, "PoolArea failed"));
         listVilla.add((Villa)villa);
         System.out.println("Add Villa successfully");
         System.out.println(villa.showInfo());
         displayMenu();
-
     }
 }

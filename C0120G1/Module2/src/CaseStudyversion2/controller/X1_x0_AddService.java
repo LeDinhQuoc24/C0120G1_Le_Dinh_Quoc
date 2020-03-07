@@ -8,9 +8,6 @@ import CaseStudyversion2.models.Villa;
 import java.util.UUID;
 
 import static CaseStudyversion2.commons.FuncValidationService.*;
-
-
-
 public class X1_x0_AddService {
     public static Service addService(Service service) {
         service.setId(UUID.randomUUID().toString().replace("-",""));
@@ -26,22 +23,22 @@ public class X1_x0_AddService {
             regex = "^SVRO([0-9]{4})$";
         }
         service.setNameService(checkString(regex,"NameService failed"));
-        System.out.println("Enter AreaUsed:from 100 to 499");
-        regex="^[1-4][0-9]{2}$";
+        System.out.println("Enter AreaUsed:from 100 to 500");
+        regex="^[1-4][0-9]{2}|500$";
         service.setAreaUsed(checkNumberDouble(regex,"AreaUsed failed"));
         regex="^[1-9][0-9]{5,10}$";
-        System.out.println("Enter RentalCosts:>100000");
+        System.out.println("Enter RentalCosts:>99999");
         service.setRentalCosts(checkNumberDouble(regex,"RentalCosts failed"));
-        regex = "^[1-9]|([1-2][0-9])$";
-        System.out.println("Enter MaxNumberOfPeople:from 1 to 29");
-
+        regex = "^[1-9]|([1-2][0-9]|30)$";
+        System.out.println("Enter MaxNumberOfPeople:from 1 to 30");
         service.setMaxNumberOfPeople(checkNumberInteger(regex,"MaxNumberOfPeople failed"));
-
         regex = "^byYear|byMonth|byDay|byHour$";
         System.out.println("Enter TypeOfRent:byYear/byMonth/byDay/byHour");
-        service.setTypeOfRent(checkString(regex,"TypeOfRent failed"));
-
+        String inputTypeOfRent=checkString(regex,"TypeOfRent failed");
+        System.out.println("Enter numberRent:from 1 to 300");
+        String regex1 = "^[1-9]|([1-9][0-9])|[1-2]([0-9]{1,2})|300$";
+        double numberRent = checkNumberInteger(regex1,"NumberRent failed");
+        service.setTypeOfRent( inputTypeOfRent + ": " + numberRent);
         return service;
-
     }
 }
