@@ -35,8 +35,7 @@ public class FuncWriteAndReadFileCSV {
             listT= (ArrayList<T>) data;
             ois.close();
             fis.close();
-        } catch (Exception ex)
-        {
+        } catch (Exception ex) {
             ex.printStackTrace();
         }
         return listT;

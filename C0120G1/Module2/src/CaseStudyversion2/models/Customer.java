@@ -74,4 +74,14 @@ public class Customer extends Service{
         this.address = address;
     }
 
+    @Override
+    public String showInfo() {
+        return "-------------------Information Customer--------------\n" +
+                "Name: " + this.getName() + "\tBirth: " + this.getBirth() +
+                "\tSex: " + this.getSex() + "\nID: " + this.getIdCustomer() +
+                "\tNumberPhone: " + this.getNumberPhone() + "\tEmail: " +
+                this.getEmail() + "\nTypeCustomer: " + this.getTypeCustomer() +
+                "\tAddress: " + this.getAddress() +
+                "\n------------------------------------------------------";
+    }
 }

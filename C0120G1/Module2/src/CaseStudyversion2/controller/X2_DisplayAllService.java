@@ -61,7 +61,7 @@ public class X2_DisplayAllService {
             case 5:
                 int n=1;
                 for (Villa villa : listVilla) {
-                    System.out.println("Villa-NameService"+n+": "+villa.getNameService());
+                    System.out.println("NameVilla"+n+": "+villa.getNameService());
                     n++;
                 }
                 displayAllService();
@@ -69,7 +69,7 @@ public class X2_DisplayAllService {
             case 6:
                 int m=1;
                 for (House house : listHouse) {
-                    System.out.println("House-NameService"+m+": "+house.getNameService());
+                    System.out.println("NameHouse"+m+": "+house.getNameService());
                     m++;
                 }
                 displayAllService();
@@ -77,7 +77,7 @@ public class X2_DisplayAllService {
             case 7:
                 int k=1;
                 for (Room room : listRoom) {
-                    System.out.println("Room-NameService"+k+": "+room.getNameService());
+                    System.out.println("NameRoom"+k+": "+room.getNameService());
                     k++;
                 }
                 displayAllService();
@@ -89,7 +89,7 @@ public class X2_DisplayAllService {
                 displayExit();
                 break;
             default:
-                System.out.println("Enter Error,please try again");
+                System.out.println("Enter error,please try again");
         }
     }
 }

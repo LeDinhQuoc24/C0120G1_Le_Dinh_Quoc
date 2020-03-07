@@ -32,7 +32,6 @@ public class X0_DisplayMenu {
                 break;
             case 3:
                 addNewCustomer();
-                displayMenu();
                 break;
             case 4:
                 showInformationOfCustomer();
@@ -52,8 +51,11 @@ public class X0_DisplayMenu {
                 displayMenu();
                 break;
             case 9:
-            default:
                 displayExit();
+                break;
+            default:
+                System.out.println("Enter error,please try again");
+                displayMenu();
         }
     }
 }
