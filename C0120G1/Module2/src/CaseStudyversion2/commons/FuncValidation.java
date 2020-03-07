@@ -1,9 +1,5 @@
 package CaseStudyversion2.commons;
-
-
 import java.util.InputMismatchException;
-
-
 import static CaseStudyversion2.views.MainRun.sc;
 
 

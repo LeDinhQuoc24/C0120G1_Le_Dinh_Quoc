@@ -1,11 +1,5 @@
 package CaseStudyversion2.commons;
 
-
-
-import CaseStudyversion2.models.House;
-import CaseStudyversion2.models.Room;
-import CaseStudyversion2.models.Villa;
-
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.ObjectInputStream;
