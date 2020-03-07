@@ -9,12 +9,13 @@ import CaseStudyversion2.models.Service;
 import static CaseStudyversion2.commons.FuncValidation.checkNumberInteger;
 import static CaseStudyversion2.commons.FuncValidation.checkString;
 import static CaseStudyversion2.controller.X0_DisplayMenu.displayMenu;
+import static CaseStudyversion2.controller.X1_x0_AddService.addService;
 import static CaseStudyversion2.views.MainRun.*;
 
 public class X1_x2_AddHouse {
     public static void addHouse() {
         Service house=new House();
-        X1_x0_AddService.addService(house);
+        addService(house);
         System.out.println("Enter RoomStandard:Diamond/Gold/Silver");
         String regex = "^Diamond|Gold|Silver$";
         ((House)house).setRoomStandard(checkString(regex,"Enter RoomStandard failed"));

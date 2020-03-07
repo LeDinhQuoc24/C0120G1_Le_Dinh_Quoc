@@ -5,8 +5,9 @@ package CaseStudyversion2.controller;
 
 import java.util.Scanner;
 
-import static CaseStudyversion2.controller.X3_AddNewCustomer.addNewCustomer;
 import static CaseStudyversion2.controller.X1_MenuAddService.addService;
+import static CaseStudyversion2.controller.X3_AddNewCustomer.addNewCustomer;
+
 import static CaseStudyversion2.controller.X2_DisplayAllService.displayAllService;
 import static CaseStudyversion2.controller.X4_ShowInformationOfCustomer.showInformationOfCustomer;
 import static CaseStudyversion2.controller.X5_AddNewBooking.addNewBooking;
