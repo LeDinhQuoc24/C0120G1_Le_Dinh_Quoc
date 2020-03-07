@@ -21,7 +21,7 @@ public class X3_AddNewCustomer {
         regex = "^(0[1-9]|[12][0-9]|3[01])/(0[1-9]|1[0-2])/(19[7-9][0-9]|200[0-2])$";
         System.out.println("Enter BirthdayCustomer:dd/mm/yyyy,y:from 1970 to 2002");
         ((Customer) newCustomer).setBirth(checkString(regex, "Enter BirthdayCustomer failed"));
-        regex = "^[mM][aA][lL][eE]|[fF][eE][mM][aA][lL][eE]|[uU][nN][kK][nN][oO][wW][nN]$";
+        regex = "(?i)(male|female|unknown)";
         System.out.println("Enter sex:Male,Female,Unknown");
         String sex=checkString(regex, "Enter Sex failed");
         String sex1 = "";
@@ -42,7 +42,7 @@ public class X3_AddNewCustomer {
         regex = "^[0-9a-zA-Z]+([_.]?[0-9a-zA-Z]+)*@[0-9a-zA-Z]+([_.]?[0-9a-zA-Z]+)*.[a-z]{2,3}$";
         System.out.println("Enter EmailCustomer:");
         ((Customer) newCustomer).setEmail(checkString(regex, "Enter Email failed"));
-        regex = "^[rR][eE][nN][tT][vV][iI][lL][lL][aA]|[rR][eE][nN][tT][hH][oO][uU][sS][eE]|[rR][eE][nN][tT][hH][oO][mM][eE]$";
+        regex = "(?i)(rentvilla|renthouse|renthome)";
         System.out.println("Enter TypeCustomer:RentVilla/RentHouse/RentHome");
         String type=checkString(regex, "Enter TypeCustomer failed");
         String type1 = "";
