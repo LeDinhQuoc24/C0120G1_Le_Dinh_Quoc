@@ -9,7 +9,7 @@ import static CaseStudyversion2.controller.X0_DisplayMenu.displayMenu;
 import static CaseStudyversion2.views.MainRun.*;
 
 public class X5_AddNewBooking {
-    static String numberSelectCustomer = sc.nextLine();
+    static String numberSelectCustomer;
     public static void addNewBooking() {
         System.out.println("Information Customer");
         for (int i=0;i<listCustomer.size();i++) {
@@ -17,7 +17,7 @@ public class X5_AddNewBooking {
                     "\tIdCustomer: "+listCustomer.get(i).getIdCustomer());
         }
         System.out.println("Select 1 Information Customer");
-        if (Integer.parseInt(numberSelectCustomer) > listCustomer.size()) {
+        if (Integer.parseInt(numberSelectCustomer=sc.nextLine()) > listCustomer.size()) {
             System.out.println("Select error,please try again");
            displayMenu();
         } else {
