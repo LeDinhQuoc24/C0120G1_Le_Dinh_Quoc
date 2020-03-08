@@ -11,8 +11,9 @@ import static CaseStudyversion2.controller.X3_AddNewCustomer.addNewCustomer;
 import static CaseStudyversion2.controller.X2_DisplayAllService.displayAllService;
 import static CaseStudyversion2.controller.X4_ShowInformationOfCustomer.showInformationOfCustomer;
 import static CaseStudyversion2.controller.X5_AddNewBooking.addNewBooking;
-import static CaseStudyversion2.controller.X6_ShowInformationOfEmployee.showInformationOfEmployee;
-import static CaseStudyversion2.controller.X9_Exit.displayExit;
+import static CaseStudyversion2.controller.X6_ShowBookingCustomer.showBookingCustomer;
+import static CaseStudyversion2.controller.X7_ShowInformationOfEmployee.showInformationOfEmployee;
+import static CaseStudyversion2.controller.X10_Exit.displayExit;
 
 public class X0_DisplayMenu {
     public static void displayMenu() {
@@ -20,8 +21,9 @@ public class X0_DisplayMenu {
         System.out.println("Menu\n"+"1.Add New Services\n"+
                 "2.Show Services\n"+ "3.Add New Customer\n"+
                 "4.Show Information of Customer\n"+ "5.Add New Booking\n"+
-                "6.Show Information of Employee\n"+
-                "7.Save File\n"+"8.Load File\n"+ "9.Exit\n"+
+                "6.Show Booking Customer\n"+
+                "7.Show Information of Employee\n"+
+                "8.Save File\n"+"9.Load File\n"+ "10.Exit\n"+
                 "-------------------------------------------------");
         Scanner sc = new Scanner(System.in);
         switch (Integer.parseInt(sc.nextLine())) {
@@ -41,17 +43,20 @@ public class X0_DisplayMenu {
                 addNewBooking();
                 break;
             case 6:
-                showInformationOfEmployee();
-                break;
+                showBookingCustomer();
             case 7:
-                X7_8_SaveAndLoadFile.saveFile();
+                showInformationOfEmployee();
                 displayMenu();
                 break;
             case 8:
-                X7_8_SaveAndLoadFile.loadFile();
+                X8_9_SaveAndLoadFile.saveFile();
                 displayMenu();
                 break;
             case 9:
+                X8_9_SaveAndLoadFile.loadFile();
+                displayMenu();
+                break;
+            case 10:
                 displayExit();
                 break;
             default:
