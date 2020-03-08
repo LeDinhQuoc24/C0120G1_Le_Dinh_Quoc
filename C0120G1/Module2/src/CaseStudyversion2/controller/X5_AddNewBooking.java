@@ -1,11 +1,12 @@
 package CaseStudyversion2.controller;
 
-
-
-
 import static CaseStudyversion2.commons.SaveAndLoadBooking.loadBooking;
 import static CaseStudyversion2.commons.SaveAndLoadBooking.saveBooking;
+import static CaseStudyversion2.commons.SaveAndLoadHouse.loadFileHouse;
 import static CaseStudyversion2.commons.SaveAndLoadInformationCustomer.loadInformationCustomer;
+import static CaseStudyversion2.commons.SaveAndLoadInformationCustomer.saveInformationCustomer;
+import static CaseStudyversion2.commons.SaveAndLoadRoom.loadFileRoom;
+import static CaseStudyversion2.commons.SaveAndLoadVilla.loadFileVilla;
 import static CaseStudyversion2.controller.X0_DisplayMenu.displayMenu;
 import static CaseStudyversion2.controller.X1_x1_AddVilla.addVilla;
 import static CaseStudyversion2.controller.X1_x2_AddHouse.addHouse;
@@ -39,6 +40,7 @@ public class X5_AddNewBooking {
                 "4.Back to menu");
         switch (Integer.parseInt(sc.nextLine())) {
             case 1:
+                loadFileVilla();
                 if (listVilla.size() == 0) {
                     System.out.println("List information Villa is null.Please add new Villa");
                     System.out.println("Do you want register a Villa?\n1.Yes\n2.No");
@@ -50,6 +52,7 @@ public class X5_AddNewBooking {
                             listBooking.add(listCustomer.get(Integer.parseInt(numberSelectCustomer)-1));
                             listCustomer.remove(listCustomer.get(Integer.parseInt(numberSelectCustomer)-1));
                             saveBooking();
+                            saveInformationCustomer();
                             addNewBooking2();
                             break;
                         case 2:
@@ -74,11 +77,13 @@ public class X5_AddNewBooking {
                         listCustomer.remove(listCustomer.get(Integer.parseInt(numberSelectCustomer)-1));
                         System.out.println("Add Booking successfully");
                         saveBooking();
+                        saveInformationCustomer();
                         addNewBooking2();
                     }
                 }
                 break;
             case 2:
+                loadFileHouse();
                 if (listHouse.size() == 0) {
                     System.out.println("List information House is null.Please add new House");
                     System.out.println("Do you want register a House?\n1.Yes\n2.No");
@@ -90,6 +95,7 @@ public class X5_AddNewBooking {
                             listBooking.add(listCustomer.get(Integer.parseInt(numberSelectCustomer)-1));
                             listCustomer.remove(listCustomer.get(Integer.parseInt(numberSelectCustomer)-1));
                             saveBooking();
+                            saveInformationCustomer();
                             addNewBooking2();
                             break;
                         case 2:
@@ -115,11 +121,13 @@ public class X5_AddNewBooking {
                         listCustomer.remove(listCustomer.get(Integer.parseInt(numberSelectCustomer)-1));
                         System.out.println("Add Booking successfully");
                         saveBooking();
+                        saveInformationCustomer();
                         addNewBooking2();
                     }
                 }
                 break;
             case 3:
+                loadFileRoom();
                 if (listRoom.size() == 0) {
                     System.out.println("List information Room is null.Please add new Room");
                     System.out.println("Do you want register a Room?\n1.Yes\n2.No");
@@ -131,6 +139,7 @@ public class X5_AddNewBooking {
                             listBooking.add(listCustomer.get(Integer.parseInt(numberSelectCustomer)-1));
                             listCustomer.remove(listCustomer.get(Integer.parseInt(numberSelectCustomer)-1));
                             saveBooking();
+                            saveInformationCustomer();
                             addNewBooking2();
                             break;
                         case 2:
@@ -155,6 +164,7 @@ public class X5_AddNewBooking {
                             listCustomer.remove(listCustomer.get(Integer.parseInt(numberSelectCustomer)-1));
                             System.out.println("Add Booking successfully");
                             saveBooking();
+                            saveInformationCustomer();
                             addNewBooking2();
                         }
                     }
