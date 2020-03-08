@@ -2,12 +2,10 @@ package CaseStudyversion2.controller;
 
 
 
-import CaseStudyversion2.models.Customer;
 
-import java.util.ArrayList;
-
-import static CaseStudyversion2.commons.FuncWriteAndReadFileCSV.readFileX;
+import static CaseStudyversion2.commons.SaveAndLoadBooking.loadBooking;
 import static CaseStudyversion2.commons.SaveAndLoadBooking.saveBooking;
+import static CaseStudyversion2.commons.SaveAndLoadInformationCustomer.loadInformationCustomer;
 import static CaseStudyversion2.controller.X0_DisplayMenu.displayMenu;
 import static CaseStudyversion2.controller.X1_x1_AddVilla.addVilla;
 import static CaseStudyversion2.controller.X1_x2_AddHouse.addHouse;
@@ -17,7 +15,7 @@ import static CaseStudyversion2.views.MainRun.*;
 public class X5_AddNewBooking {
     static String numberSelectCustomer;
     public static void addNewBooking() {
-        ArrayList<Customer> listCustomer=readFileX("F:\\ProjectCodyGym\\C0120G1\\Module2\\src\\CaseStudyversion2\\data\\saveBooking.csv" );
+        loadInformationCustomer();
         System.out.println("Information Customer");
         if (listCustomer.size() == 0) {
             System.out.println("List information customer is null.Please add new Customer");
@@ -47,7 +45,10 @@ public class X5_AddNewBooking {
                     switch (Integer.parseInt(sc.nextLine())) {
                         case 1:
                             addVilla();
+                            loadBooking();
                             listCustomer.get(Integer.parseInt(numberSelectCustomer)-1).setService(listVilla.get(0));
+                            listBooking.add(listCustomer.get(Integer.parseInt(numberSelectCustomer)-1));
+                            listCustomer.remove(listCustomer.get(Integer.parseInt(numberSelectCustomer)-1));
                             saveBooking();
                             addNewBooking2();
                             break;
@@ -69,6 +70,8 @@ public class X5_AddNewBooking {
                         addNewBooking2();
                     } else {
                         listCustomer.get(Integer.parseInt(numberSelectCustomer)-1).setService(listVilla.get(numberSelectVilla-1));
+                        listBooking.add(listCustomer.get(Integer.parseInt(numberSelectCustomer)-1));
+                        listCustomer.remove(listCustomer.get(Integer.parseInt(numberSelectCustomer)-1));
                         System.out.println("Add Booking successfully");
                         saveBooking();
                         addNewBooking2();
@@ -82,7 +85,10 @@ public class X5_AddNewBooking {
                     switch (Integer.parseInt(sc.nextLine())) {
                         case 1:
                             addHouse();
+                            loadBooking();
                             listCustomer.get(Integer.parseInt(numberSelectCustomer)-1).setService(listHouse.get(0));
+                            listBooking.add(listCustomer.get(Integer.parseInt(numberSelectCustomer)-1));
+                            listCustomer.remove(listCustomer.get(Integer.parseInt(numberSelectCustomer)-1));
                             saveBooking();
                             addNewBooking2();
                             break;
@@ -103,7 +109,10 @@ public class X5_AddNewBooking {
                         System.out.println("Select error,please try again");
                         addNewBooking2();
                     } else {
+                        loadBooking();
                         listCustomer.get(Integer.parseInt(numberSelectCustomer)-1).setService(listHouse.get(numberSelectHouse-1));
+                        listBooking.add(listCustomer.get(Integer.parseInt(numberSelectCustomer)-1));
+                        listCustomer.remove(listCustomer.get(Integer.parseInt(numberSelectCustomer)-1));
                         System.out.println("Add Booking successfully");
                         saveBooking();
                         addNewBooking2();
@@ -117,7 +126,10 @@ public class X5_AddNewBooking {
                     switch (Integer.parseInt(sc.nextLine())) {
                         case 1:
                             addRoom();
+                            loadBooking();
                             listCustomer.get(Integer.parseInt(numberSelectCustomer)-1).setService(listRoom.get(0));
+                            listBooking.add(listCustomer.get(Integer.parseInt(numberSelectCustomer)-1));
+                            listCustomer.remove(listCustomer.get(Integer.parseInt(numberSelectCustomer)-1));
                             saveBooking();
                             addNewBooking2();
                             break;
@@ -137,14 +149,16 @@ public class X5_AddNewBooking {
                             System.out.println("Select error,please try again");
                             addNewBooking2();
                         } else {
+                            loadBooking();
                             listCustomer.get(Integer.parseInt(numberSelectCustomer)-1).setService(listRoom.get(numberSelectRoom-1));
+                            listBooking.add(listCustomer.get(Integer.parseInt(numberSelectCustomer)-1));
+                            listCustomer.remove(listCustomer.get(Integer.parseInt(numberSelectCustomer)-1));
                             System.out.println("Add Booking successfully");
                             saveBooking();
                             addNewBooking2();
                         }
                     }
                 }
-
                 break;
             case 4:
                 displayMenu();
