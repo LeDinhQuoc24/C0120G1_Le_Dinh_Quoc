@@ -91,7 +91,6 @@ public class Customer extends Service{
                 "\tSex: " + this.getSex() + "\nID: " + this.getIdCustomer() +
                 "\tNumberPhone: " + this.getNumberPhone() + "\tEmail: " +
                 this.getEmail() + "\nTypeCustomer: " + this.getTypeCustomer() +
-                "\tAddress: " + this.getAddress() +"\nService: "+this.getService()+
-                "\n------------------------------------------------------";
+                "\tAddress: " + this.getAddress() ;
     }
 }

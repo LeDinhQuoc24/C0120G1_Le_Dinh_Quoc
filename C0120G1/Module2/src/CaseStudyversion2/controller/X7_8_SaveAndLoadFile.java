@@ -23,7 +23,8 @@ public class X7_8_SaveAndLoadFile {
         }
     }
     public static void loadFile() {
-        System.out.println("Load file succesfully");
+        System.out.println("Load file succesfully\n\n");
+        System.out.println("xxxxxxxxxxxxList Servicexxxxxxxxxxxxxxx\n\n");
         listCustomer=readFileX("F:\\ProjectCodyGym\\C0120G1\\Module2\\src\\CaseStudyversion2\\data\\saveCustomer.csv");
 
         listVilla= readFileX("F:\\ProjectCodyGym\\C0120G1\\Module2\\src\\CaseStudyversion2\\data\\saveVilla.csv");
@@ -31,15 +32,18 @@ public class X7_8_SaveAndLoadFile {
         for (Villa villa : listVilla) {
             System.out.println(villa.showInfo());
         }
+        System.out.println("\n\n");
         listHouse= readFileX("F:\\ProjectCodyGym\\C0120G1\\Module2\\src\\CaseStudyversion2\\data\\saveHouse.csv");
         System.out.println("House:");
         for (House house : listHouse) {
             System.out.println(house.showInfo());
         }
+        System.out.println("\n\n");
         listRoom= readFileX("F:\\ProjectCodyGym\\C0120G1\\Module2\\src\\CaseStudyversion2\\data\\saveRoom.csv");
         System.out.println("Room:");
         for (Room room : listRoom) {
             System.out.println(room.showInfo());
         }
+        System.out.println("\n\n");
     }
 }
