@@ -8,6 +8,7 @@ import CaseStudyversion2.models.Service;
 
 import static CaseStudyversion2.commons.FuncValidation.checkNumberInteger;
 import static CaseStudyversion2.commons.FuncValidation.checkString;
+import static CaseStudyversion2.commons.SaveAndLoadHouse.loadFileHouse;
 import static CaseStudyversion2.commons.SaveAndLoadHouse.saveFileHouse;
 import static CaseStudyversion2.controller.X1_x0_AddService.addService;
 import static CaseStudyversion2.views.MainRun.*;
@@ -27,6 +28,7 @@ public class X1_x2_AddHouse {
         ((House) house).setNumberOfFloors(checkNumberInteger(regex, "Enter NumberOfFloors failed"));
         listHouse.add((House)house);
         System.out.println("Add House successfully");
+        loadFileHouse();
         System.out.println(house.showInfo());
         saveFileHouse();
     }
