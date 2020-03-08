@@ -20,7 +20,7 @@ public class X1_x2_AddHouse {
         System.out.println("Enter RoomStandard:Diamond/Gold/Silver");
         String regex = "(?i)(Diamond|Gold|Silver)";
         ((House)house).setRoomStandard(checkString(regex,"Enter RoomStandard failed").toLowerCase());
-         regex = "(?i)(Massage|Karaoke|Food|Drink|[Car])";
+         regex = "(?i)(Massage|Karaoke|Food|Drink|Car)";
         System.out.println("Enter OtherDescriptionOfUtilities:Massage/Karaoke/Food/Drink/Car");
         ((House)house).setOtherDescriptionOfUtilities(checkString(regex,"Enter OtherDescriptionOfUtilities failed").toLowerCase());
          regex = "^[1-9]|([1][0-5])$";
