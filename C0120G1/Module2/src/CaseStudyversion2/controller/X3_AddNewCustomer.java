@@ -24,16 +24,7 @@ public class X3_AddNewCustomer {
         ((Customer) newCustomer).setBirth(checkString(regex, "Enter BirthdayCustomer failed"));
         regex = "(?i)(male|female|unknown)";
         System.out.println("Enter sex:Male,Female,Unknown");
-        String sex=checkString(regex, "Enter Sex failed");
-        String sex1 = "";
-        for (int i = 0; i <  sex.length(); i++) {
-            if (i == 0) {
-                sex1 +=  sex.toUpperCase().charAt(i);
-            } else {
-                sex1 +=  sex.toLowerCase().charAt(i);
-            }
-        }
-        ((Customer) newCustomer).setSex( sex1);
+        ((Customer) newCustomer).setSex( checkString(regex, "Enter Sex failed").toLowerCase());
         regex = "^[0-9]{9}$";
         System.out.println("Enter IdCustomer: 9 numbers");
         ((Customer) newCustomer).setIdCustomer(checkNumberInteger(regex, "Enter IdCustomer failed"));
@@ -45,23 +36,13 @@ public class X3_AddNewCustomer {
         ((Customer) newCustomer).setEmail(checkString(regex, "Enter Email failed"));
         regex = "(?i)(rentvilla|renthouse|renthome)";
         System.out.println("Enter TypeCustomer:RentVilla/RentHouse/RentHome");
-        String type=checkString(regex, "Enter TypeCustomer failed");
-        String type1 = "";
-        for (int i = 0; i < type.length(); i++) {
-            if (i == 0) {
-                type1 += type.toUpperCase().charAt(i);
-            } else {
-                type1 += type.toLowerCase().charAt(i);
-            }
-        }
-        ((Customer) newCustomer).setTypeCustomer(type1);
+        ((Customer) newCustomer).setTypeCustomer(checkString(regex, "Enter TypeCustomer failed").toLowerCase());
         regex = "^[A-Z]([a-z]+)(( [A-Z]([a-z]+))+)*$";
         System.out.println("Enter Address:");
         ((Customer) newCustomer).setAddress(checkString(regex, "Enter Address failed"));
         //Show add new Customer Successfully
         System.out.println("Add new Customer successfully");
         System.out.println(newCustomer.showInfo());
-        listCustomer=readFileX("F:\\ProjectCodyGym\\C0120G1\\Module2\\src\\CaseStudyversion2\\data\\saveCustomer.csv");
         loadInformationCustomer();
         listCustomer.add((Customer)newCustomer);
         saveInformationCustomer();

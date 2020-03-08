@@ -32,9 +32,9 @@ public class X1_x0_AddService {
         regex = "^[1-9]|([1-2][0-9]|30)$";
         System.out.println("Enter MaxNumberOfPeople:from 1 to 30");
         service.setMaxNumberOfPeople(checkNumberInteger(regex,"Enter MaxNumberOfPeople failed"));
-        regex = "^byYear|byMonth|byDay|byHour$";
+        regex = "(?i)(byYear|byMonth|byDay|byHour)";
         System.out.println("Enter TypeOfRent:byYear/byMonth/byDay/byHour");
-        String inputTypeOfRent=checkString(regex,"Enter TypeOfRent failed");
+        String inputTypeOfRent=checkString(regex,"Enter TypeOfRent failed").toLowerCase();
         System.out.println("Enter numberRent:from 1 to 300");
         String regex1 = "^[1-9]|([1-9][0-9])|[1-2]([0-9]{1,2})|300$";
         double numberRent = checkNumberInteger(regex1,"Enter NumberRent failed");

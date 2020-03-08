@@ -178,6 +178,7 @@ public class X5_AddNewBooking {
                 addNewBooking2();
         }
     }
+
 //    public static void addNewBooking3(ArrayList<Service> listT) {
 //        for (int i=0;i<listT.size();i++) {
 //            System.out.println("Số thứ tự "+(i+1)+":\n"+listT.get(i).showInfo());

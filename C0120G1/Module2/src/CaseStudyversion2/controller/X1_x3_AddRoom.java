@@ -16,13 +16,13 @@ public class X1_x3_AddRoom {
     public static void addRoom() {
         Room room=new Room();
         addService(room);
-        String regex = "^Jav1|Jav2|Jav3$";
+        String regex = "(?i)(Jav1|Jav2|Jav3)";
         System.out.println("Enter FreeService:Jav1/Jav2/Jav3");
-        room.setFreeService(checkString(regex,"Enter FreeService failed"));
-        listRoom.add(room);
+        room.setFreeService(checkString(regex,"Enter FreeService failed").toLowerCase());
         System.out.println("Add Room successfully");
         loadFileRoom();
-        System.out.println(room.showInfo());
+        listRoom.add(room);
         saveFileRoom();
+        System.out.println(room.showInfo());
     }
 }

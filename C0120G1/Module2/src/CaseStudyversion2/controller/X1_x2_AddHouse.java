@@ -18,18 +18,18 @@ public class X1_x2_AddHouse {
         Service house=new House();
         addService(house);
         System.out.println("Enter RoomStandard:Diamond/Gold/Silver");
-        String regex = "^Diamond|Gold|Silver$";
-        ((House)house).setRoomStandard(checkString(regex,"Enter RoomStandard failed"));
-         regex = "^Massage|Karaoke|Food|Drink|[Car]$";
+        String regex = "(?i)(Diamond|Gold|Silver)";
+        ((House)house).setRoomStandard(checkString(regex,"Enter RoomStandard failed").toLowerCase());
+         regex = "(?i)(Massage|Karaoke|Food|Drink|[Car])";
         System.out.println("Enter OtherDescriptionOfUtilities:Massage/Karaoke/Food/Drink/Car");
-        ((House)house).setOtherDescriptionOfUtilities(checkString(regex,"Enter OtherDescriptionOfUtilities failed"));
+        ((House)house).setOtherDescriptionOfUtilities(checkString(regex,"Enter OtherDescriptionOfUtilities failed").toLowerCase());
          regex = "^[1-9]|([1][0-5])$";
         System.out.println("Enter NumberOfFloors:from 1 to 15");
         ((House) house).setNumberOfFloors(checkNumberInteger(regex, "Enter NumberOfFloors failed"));
-        listHouse.add((House)house);
         System.out.println("Add House successfully");
         loadFileHouse();
-        System.out.println(house.showInfo());
+        listHouse.add((House)house);
         saveFileHouse();
+        System.out.println(house.showInfo());
     }
 }

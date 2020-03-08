@@ -18,22 +18,22 @@ public class X1_x1_AddVilla {
     public static void addVilla() {
         Service villa = new Villa();
         addService(villa);
-        String regex = "^Diamond|Gold|Silver$";
+        String regex = "(?i)(Diamond|Gold|Silver)";
         System.out.println("Enter RoomStandard:Diamond/Gold/Silver");
-        ((Villa)villa).setRoomStandard(FuncValidation.checkString(regex,"Enter RoomStandard failed"));
-        regex = "^Massage|Karaoke|Food|Drink|Car$";
+        ((Villa)villa).setRoomStandard(FuncValidation.checkString(regex,"Enter RoomStandard failed").toLowerCase());
+        regex = "(?i)(Massage|Karaoke|Food|Drink|Car)";
         System.out.println("Enter OtherDescriptionOfUtilities:Massage/Karaoke/Food/Drink/Car");
-        ((Villa)villa).setOtherDescriptionOfUtilities(checkString(regex,"Enter OtherDescriptionOfUtilities failed"));
+        ((Villa)villa).setOtherDescriptionOfUtilities(checkString(regex,"Enter OtherDescriptionOfUtilities failed").toLowerCase());
         regex = "^[1-9]|([1][0-5])$";
         System.out.println("Enter NumberOfFloors:from 1 to 15");
         ((Villa) villa).setNumberOfFloors(checkNumberInteger(regex, "Enter NumberOfFloors failed"));
         regex = "^[2-4][0-9]|50$";
         System.out.println("Enter PoolArea:from 20 to 50");
         ((Villa)villa).setPoolArea(checkNumberInteger(regex, "Enter PoolArea failed"));
-        listVilla.add((Villa)villa);
         System.out.println("Add Villa successfully");
         loadFileVilla();
-        System.out.println(villa.showInfo());
+        listVilla.add((Villa)villa);
         saveFileVilla();
+        System.out.println(villa.showInfo());
     }
 }
