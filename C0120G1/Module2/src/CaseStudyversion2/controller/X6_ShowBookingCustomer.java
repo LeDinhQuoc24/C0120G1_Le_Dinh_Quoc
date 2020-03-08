@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 import static CaseStudyversion2.commons.FuncWriteAndReadFileCSV.readFileX;
-import static CaseStudyversion2.controller.X0_DisplayMenu.displayMenu;
+
 
 public class X6_ShowBookingCustomer {
     public static void showBookingCustomer() {
@@ -22,6 +22,5 @@ public class X6_ShowBookingCustomer {
                         +customer.getService().showInfo()+"\n");
         }
         System.out.println("\n");
-        displayMenu();
     }
 }

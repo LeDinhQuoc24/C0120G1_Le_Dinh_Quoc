@@ -8,7 +8,7 @@ import CaseStudyversion2.models.Villa;
 
 import static CaseStudyversion2.commons.FuncValidation.checkNumberInteger;
 import static CaseStudyversion2.commons.FuncValidation.checkString;
-import static CaseStudyversion2.controller.X0_DisplayMenu.displayMenu;
+import static CaseStudyversion2.commons.SaveAndLoadVilla.saveFileVilla;
 import static CaseStudyversion2.controller.X1_x0_AddService.addService;
 import static CaseStudyversion2.views.MainRun.listVilla;
 
@@ -32,6 +32,6 @@ public class X1_x1_AddVilla {
         listVilla.add((Villa)villa);
         System.out.println("Add Villa successfully");
         System.out.println(villa.showInfo());
-        displayMenu();
+        saveFileVilla();
     }
 }

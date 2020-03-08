@@ -8,8 +8,11 @@ import CaseStudyversion2.models.Villa;
 
 import java.util.Scanner;
 
+import static CaseStudyversion2.commons.SaveAndLoadHouse.loadFileHouse;
+import static CaseStudyversion2.commons.SaveAndLoadRoom.loadFileRoom;
+import static CaseStudyversion2.commons.SaveAndLoadVilla.loadFileVilla;
 import static CaseStudyversion2.controller.X0_DisplayMenu.displayMenu;
-import static CaseStudyversion2.controller.X10_Exit.displayExit;
+import static CaseStudyversion2.controller.X8_Exit.displayExit;
 import static CaseStudyversion2.views.MainRun.*;
 
 
@@ -26,6 +29,9 @@ public class X2_DisplayAllService {
                 "----------------------------------------------------------");
         switch (sc.nextInt()) {
             case 1:
+                loadFileVilla();
+                loadFileHouse();
+                loadFileRoom();
                 System.out.println("******** Information List Service ***********\n\n");
                 System.out.println("Villa:\n");
                 for (Villa villa : listVilla) {
@@ -45,6 +51,7 @@ public class X2_DisplayAllService {
                 displayAllService();
                 break;
             case 2:
+                loadFileVilla();
                 System.out.println("******** Information List Villa **************\n");
                 for (Villa villa : listVilla) {
                     System.out.println(villa.showInfo()+"\n");
@@ -52,6 +59,7 @@ public class X2_DisplayAllService {
                 displayAllService();
                 break;
             case 3:
+                loadFileHouse();
                 System.out.println("******** Information List House **************\n");
                 for (House house : listHouse) {
                     System.out.println(house.showInfo()+"\n");
@@ -59,6 +67,7 @@ public class X2_DisplayAllService {
                 displayAllService();
                 break;
             case 4:
+                loadFileRoom();
                 System.out.println("******** Information List Room **************\n");
                 for (Room room : listRoom) {
                     System.out.println(room.showInfo()+"\n");
@@ -66,6 +75,7 @@ public class X2_DisplayAllService {
                 displayAllService();
                 break;
             case 5:
+                loadFileVilla();
                 System.out.println("********List NameVilla *******\n");
                 int n=1;
                 for (Villa villa : listVilla) {
@@ -75,6 +85,7 @@ public class X2_DisplayAllService {
                 displayAllService();
                 break;
             case 6:
+                loadFileHouse();
                 System.out.println("********List NameHouse*******\n");
                 int m=1;
                 for (House house : listHouse) {
@@ -84,6 +95,7 @@ public class X2_DisplayAllService {
                 displayAllService();
                 break;
             case 7:
+                loadFileRoom();
                 System.out.println("********List NameRoom *******\n");
                 int k=1;
                 for (Room room : listRoom) {

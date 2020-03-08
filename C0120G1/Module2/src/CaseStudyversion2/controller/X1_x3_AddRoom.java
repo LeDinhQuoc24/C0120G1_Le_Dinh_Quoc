@@ -6,7 +6,7 @@ package CaseStudyversion2.controller;
 import CaseStudyversion2.models.Room;
 
 import static CaseStudyversion2.commons.FuncValidation.checkString;
-import static CaseStudyversion2.controller.X0_DisplayMenu.displayMenu;
+import static CaseStudyversion2.commons.SaveAndLoadRoom.saveFileRoom;
 import static CaseStudyversion2.controller.X1_x0_AddService.addService;
 import static CaseStudyversion2.views.MainRun.listRoom;
 
@@ -21,7 +21,6 @@ public class X1_x3_AddRoom {
         listRoom.add(room);
         System.out.println("Add Room successfully");
         System.out.println(room.showInfo());
-        displayMenu();
-
+        saveFileRoom();
     }
 }

@@ -5,7 +5,7 @@ import CaseStudyversion2.models.Service;
 
 import static CaseStudyversion2.commons.FuncValidation.checkNumberInteger;
 import static CaseStudyversion2.commons.FuncValidation.checkString;
-import static CaseStudyversion2.commons.FuncWriteAndReadFileCSV.saveFileX;
+import static CaseStudyversion2.commons.FuncWriteAndReadFileCSV.readFileX;
 import static CaseStudyversion2.commons.SaveInformationCustomer.saveInformationCustomer;
 import static CaseStudyversion2.controller.X0_DisplayMenu.displayMenu;
 import static CaseStudyversion2.views.MainRun.listCustomer;
@@ -60,8 +60,10 @@ public class X3_AddNewCustomer {
         //Show add new Customer Successfully
         System.out.println("Add new Customer successfully");
         System.out.println(newCustomer.showInfo());
+        listCustomer=readFileX("F:\\ProjectCodyGym\\C0120G1\\Module2\\src\\CaseStudyversion2\\data\\saveCustomer.csv");
         listCustomer.add((Customer)newCustomer);
         saveInformationCustomer();
         displayMenu();
+
     }
 }

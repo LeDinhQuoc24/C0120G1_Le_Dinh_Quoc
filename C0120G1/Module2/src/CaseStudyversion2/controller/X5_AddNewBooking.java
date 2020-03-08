@@ -2,6 +2,11 @@ package CaseStudyversion2.controller;
 
 
 
+import CaseStudyversion2.models.Customer;
+
+import java.util.ArrayList;
+
+import static CaseStudyversion2.commons.FuncWriteAndReadFileCSV.readFileX;
 import static CaseStudyversion2.commons.SaveBooking.saveBooking;
 import static CaseStudyversion2.controller.X0_DisplayMenu.displayMenu;
 import static CaseStudyversion2.controller.X1_x1_AddVilla.addVilla;
@@ -12,6 +17,7 @@ import static CaseStudyversion2.views.MainRun.*;
 public class X5_AddNewBooking {
     static String numberSelectCustomer;
     public static void addNewBooking() {
+        ArrayList<Customer> listCustomer=readFileX("F:\\ProjectCodyGym\\C0120G1\\Module2\\src\\CaseStudyversion2\\data\\saveBooking.csv" );
         System.out.println("Information Customer");
         if (listCustomer.size() == 0) {
             System.out.println("List information customer is null.Please add new Customer");
@@ -37,13 +43,27 @@ public class X5_AddNewBooking {
             case 1:
                 if (listVilla.size() == 0) {
                     System.out.println("List information Villa is null.Please add new Villa");
-                    addVilla();
+                    System.out.println("Do you want register a Villa?\n1.Yes\n2.No");
+                    switch (Integer.parseInt(sc.nextLine())) {
+                        case 1:
+                            addVilla();
+                            listCustomer.get(Integer.parseInt(numberSelectCustomer)-1).setService(listVilla.get(0));
+                            saveBooking();
+                            addNewBooking2();
+                            break;
+                        case 2:
+                            displayMenu();
+                            break;
+                        default:
+                            System.out.println("Enter error.Auto back to menu.");
+                            displayMenu();
+                    }
                 } else {
                     for (int i=0;i<listVilla.size();i++) {
                         System.out.println("Số thứ tự "+(i+1)+":\n"+listVilla.get(i).showInfo());
                     }
                     System.out.println("Select Villa you want booking:");
-                    int numberSelectVilla = sc.nextInt();
+                    int numberSelectVilla = Integer.parseInt(sc.nextLine());
                     if (numberSelectVilla > listVilla.size()) {
                         System.out.println("Select error,please try again");
                         addNewBooking2();
@@ -58,13 +78,27 @@ public class X5_AddNewBooking {
             case 2:
                 if (listHouse.size() == 0) {
                     System.out.println("List information House is null.Please add new House");
-                    addHouse();
+                    System.out.println("Do you want register a House?\n1.Yes\n2.No");
+                    switch (Integer.parseInt(sc.nextLine())) {
+                        case 1:
+                            addHouse();
+                            listCustomer.get(Integer.parseInt(numberSelectCustomer)-1).setService(listHouse.get(0));
+                            saveBooking();
+                            addNewBooking2();
+                            break;
+                        case 2:
+                            displayMenu();
+                            break;
+                        default:
+                            System.out.println("Enter error.Auto back to menu.");
+                            displayMenu();
+                    }
                 } else {
                     for (int i=0;i<listHouse.size();i++) {
                         System.out.println("Số thứ tự "+(i+1)+":\n"+listHouse.get(i).showInfo());
                     }
                     System.out.println("Select House you want booking:");
-                    int numberSelectHouse = sc.nextInt();
+                    int numberSelectHouse = Integer.parseInt(sc.nextLine());
                     if (numberSelectHouse > listHouse.size()) {
                         System.out.println("Select error,please try again");
                         addNewBooking2();
@@ -75,17 +109,30 @@ public class X5_AddNewBooking {
                         addNewBooking2();
                     }
                 }
-
                 break;
             case 3:
                 if (listRoom.size() == 0) {
                     System.out.println("List information Room is null.Please add new Room");
-                    addRoom();
+                    System.out.println("Do you want register a Room?\n1.Yes\n2.No");
+                    switch (Integer.parseInt(sc.nextLine())) {
+                        case 1:
+                            addRoom();
+                            listCustomer.get(Integer.parseInt(numberSelectCustomer)-1).setService(listRoom.get(0));
+                            saveBooking();
+                            addNewBooking2();
+                            break;
+                        case 2:
+                            displayMenu();
+                            break;
+                        default:
+                            System.out.println("Enter error.Auto back to menu.");
+                            displayMenu();
+                    }
                 } else {
                     for (int i=0;i<listRoom.size();i++) {
                         System.out.println("Số thứ tự "+(i+1)+":\n"+listRoom.get(i).showInfo());
                         System.out.println("Select Room you want booking:");
-                        int numberSelectRoom = sc.nextInt();
+                        int numberSelectRoom = Integer.parseInt(sc.nextLine());
                         if (numberSelectRoom > listRoom.size()) {
                             System.out.println("Select error,please try again");
                             addNewBooking2();
