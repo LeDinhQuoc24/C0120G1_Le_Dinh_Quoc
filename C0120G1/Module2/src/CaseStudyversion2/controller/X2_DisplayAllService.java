@@ -12,7 +12,7 @@ import static CaseStudyversion2.commons.SaveAndLoadHouse.loadFileHouse;
 import static CaseStudyversion2.commons.SaveAndLoadRoom.loadFileRoom;
 import static CaseStudyversion2.commons.SaveAndLoadVilla.loadFileVilla;
 import static CaseStudyversion2.controller.X0_DisplayMenu.displayMenu;
-import static CaseStudyversion2.controller.X8_Exit.displayExit;
+import static CaseStudyversion2.controller.X9_Exit.displayExit;
 import static CaseStudyversion2.views.MainRun.*;
 
 
@@ -29,49 +29,23 @@ public class X2_DisplayAllService {
                 "----------------------------------------------------------");
         switch (sc.nextInt()) {
             case 1:
-                loadFileVilla();
-                loadFileHouse();
-                loadFileRoom();
                 System.out.println("******** Information List Service ***********\n\n");
-                System.out.println("Villa:\n");
-                for (Villa villa : listVilla) {
-                    System.out.println(villa.showInfo()+"\n");
-                }
-                System.out.println("\n\n");
-                System.out.println("House:\n");
-                for (House house : listHouse) {
-                    System.out.println(house.showInfo()+"\n");
-                }
-                System.out.println("\n\n");
-                System.out.println("Room:\n");
-                for (Room room : listRoom) {
-                    System.out.println(room.showInfo()+"\n");
-                }
+                displayVilla();
+                displayHouse();
+                displayRoom();
                 System.out.println("\n\n");
                 displayAllService();
                 break;
             case 2:
-                loadFileVilla();
-                System.out.println("******** Information List Villa **************\n");
-                for (Villa villa : listVilla) {
-                    System.out.println(villa.showInfo()+"\n");
-                }
+                displayVilla();
                 displayAllService();
                 break;
             case 3:
-                loadFileHouse();
-                System.out.println("******** Information List House **************\n");
-                for (House house : listHouse) {
-                    System.out.println(house.showInfo()+"\n");
-                }
+                displayHouse();
                 displayAllService();
                 break;
             case 4:
-                loadFileRoom();
-                System.out.println("******** Information List Room **************\n");
-                for (Room room : listRoom) {
-                    System.out.println(room.showInfo()+"\n");
-                }
+                displayRoom();
                 displayAllService();
                 break;
             case 5:
@@ -113,6 +87,33 @@ public class X2_DisplayAllService {
             default:
                 System.out.println("Enter error,please try again");
                 displayAllService();
+        }
+    }
+    public static void displayVilla() {
+        loadFileVilla();
+        System.out.println("******** Information List Villa **************\n");
+        int i=1;
+        for (Villa villa : listVilla) {
+            System.out.println("Số thứ tự: "+i+"\n"+villa.showInfo()+"\n");
+            i++;
+        }
+    }
+    public static void displayHouse() {
+        loadFileHouse();
+        int i=1;
+        System.out.println("******** Information List House **************\n");
+        for (House house : listHouse) {
+            System.out.println("Số thứ tự: "+i+"\n"+house.showInfo()+"\n");
+            i++;
+        }
+    }
+    public static void displayRoom() {
+        loadFileRoom();
+        System.out.println("******** Information List Room **************\n");
+        int i=1;
+        for (Room room : listRoom) {
+            System.out.println("Số thứ tự: "+i+"\n"+room.showInfo()+"\n");
+            i++;
         }
     }
 }

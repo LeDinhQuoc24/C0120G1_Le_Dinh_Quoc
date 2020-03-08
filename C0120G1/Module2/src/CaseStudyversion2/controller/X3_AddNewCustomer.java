@@ -5,10 +5,8 @@ import CaseStudyversion2.models.Service;
 
 import static CaseStudyversion2.commons.FuncValidation.checkNumberInteger;
 import static CaseStudyversion2.commons.FuncValidation.checkString;
-import static CaseStudyversion2.commons.FuncWriteAndReadFileCSV.readFileX;
 import static CaseStudyversion2.commons.SaveAndLoadInformationCustomer.loadInformationCustomer;
 import static CaseStudyversion2.commons.SaveAndLoadInformationCustomer.saveInformationCustomer;
-import static CaseStudyversion2.controller.X0_DisplayMenu.displayMenu;
 import static CaseStudyversion2.views.MainRun.listCustomer;
 
 

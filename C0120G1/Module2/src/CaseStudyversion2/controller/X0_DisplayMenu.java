@@ -13,7 +13,8 @@ import static CaseStudyversion2.controller.X4_ShowInformationOfCustomer.showInfo
 import static CaseStudyversion2.controller.X5_AddNewBooking.addNewBooking;
 import static CaseStudyversion2.controller.X6_ShowBookingCustomer.showBookingCustomer;
 import static CaseStudyversion2.controller.X7_ShowInformationOfEmployee.showInformationOfEmployee;
-import static CaseStudyversion2.controller.X8_Exit.displayExit;
+import static CaseStudyversion2.controller.X8_Delete.deleteInformation;
+import static CaseStudyversion2.controller.X9_Exit.displayExit;
 
 public class X0_DisplayMenu {
     public static void displayMenu() {
@@ -23,7 +24,7 @@ public class X0_DisplayMenu {
                 "4.Show Information of Customer\n"+ "5.Add New Booking\n"+
                 "6.Show Booking Customer\n"+
                 "7.Show Information of Employee\n"+
-                "8.Exit\n"+
+                "8.Delete\n"+ "9.Exit\n"+
                 "-------------------------------------------------");
         Scanner sc = new Scanner(System.in);
         switch (Integer.parseInt(sc.nextLine())) {
@@ -55,6 +56,10 @@ public class X0_DisplayMenu {
                 displayMenu();
                 break;
             case 8:
+                deleteInformation();
+                displayMenu();
+                break;
+            case 9:
                 displayExit();
                 break;
             default:

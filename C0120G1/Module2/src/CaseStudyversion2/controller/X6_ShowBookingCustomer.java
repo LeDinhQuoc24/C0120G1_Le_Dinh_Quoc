@@ -18,10 +18,12 @@ public class X6_ShowBookingCustomer {
         System.out.println("\nxxxxxxxxxxxxx List Booking xxxxxxxxxxxxxxx\n\n");
         Comparator comparator = new Comparator();
         Collections.sort(listBooking,comparator);
+        int i=1;
         for (Customer customer : listBooking) {
-                System.out.println(customer.showInfo()+"\n"+
+                System.out.println("Số thứ tự: "+i+"\n"+customer.showInfo()+"\n"+
                         "************Register Service**************\n"
                         +customer.getService().showInfo()+"\n");
+                i++;
         }
         System.out.println("\n");
     }

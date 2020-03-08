@@ -1,5 +1,7 @@
 package CaseStudyversion2.controller;
 
+import CaseStudyversion2.models.Customer;
+
 import static CaseStudyversion2.commons.SaveAndLoadBooking.loadBooking;
 import static CaseStudyversion2.commons.SaveAndLoadBooking.saveBooking;
 import static CaseStudyversion2.commons.SaveAndLoadHouse.loadFileHouse;
@@ -28,11 +30,45 @@ public class X5_AddNewBooking {
             }
         }
         System.out.println("Select Information Customer");
-        if (Integer.parseInt(numberSelectCustomer=sc.nextLine()) > listCustomer.size()) {
+        numberSelectCustomer=sc.nextLine();
+        if (Integer.parseInt(numberSelectCustomer) > listCustomer.size()) {
             System.out.println("Select error,please try again");
            addNewBooking();
         } else {
-            addNewBooking2();
+            if ((listCustomer.get(Integer.parseInt(numberSelectCustomer ) - 1) == null)) {
+                addNewBooking2();
+            } else {
+                System.out.println("This Customer registered.You want:\n"
+                +"1.Register override\n"+"2.Register more\n"+"3.Back to menu");
+                switch (Integer.parseInt( sc.nextLine())) {
+                    case 1:
+                        loadBooking();
+                        int i=1;
+                        for (Customer customer : listBooking) {
+                            if (customer.getName().equals(listCustomer.get(Integer.parseInt(numberSelectCustomer) - 1).getName())) {
+                                System.out.println("Số thứ tự: "+i+"\n"+customer.showInfo()+"\n"+
+                                        "************Register Service**************\n"
+                                        +customer.getService().showInfo()+"\n");
+                            }
+                            i++;
+                        }
+                        System.out.println("Select booking to register override");
+                        int choice = Integer.parseInt(sc.nextLine());
+
+
+                        addNewBooking2();
+                        break;
+                    case 2:
+                        addNewBooking2();
+                        break;
+                    case 3:
+                        displayMenu();
+                        break;
+                    default:
+                        System.out.println("Enter error,please try again");
+                        addNewBooking();
+                }
+            }
         }
     }
     public static void addNewBooking2() {
@@ -47,12 +83,11 @@ public class X5_AddNewBooking {
                     switch (Integer.parseInt(sc.nextLine())) {
                         case 1:
                             addVilla();
+                            System.out.println("Add Booking successfully");
                             loadBooking();
                             listCustomer.get(Integer.parseInt(numberSelectCustomer)-1).setService(listVilla.get(0));
                             listBooking.add(listCustomer.get(Integer.parseInt(numberSelectCustomer)-1));
-                            listCustomer.remove(listCustomer.get(Integer.parseInt(numberSelectCustomer)-1));
                             saveBooking();
-                            saveInformationCustomer();
                             addNewBooking2();
                             break;
                         case 2:
@@ -72,10 +107,10 @@ public class X5_AddNewBooking {
                         System.out.println("Select error,please try again");
                         addNewBooking2();
                     } else {
+                        System.out.println("Add Booking successfully");
+                        loadBooking();
                         listCustomer.get(Integer.parseInt(numberSelectCustomer)-1).setService(listVilla.get(numberSelectVilla-1));
                         listBooking.add(listCustomer.get(Integer.parseInt(numberSelectCustomer)-1));
-                        listCustomer.remove(listCustomer.get(Integer.parseInt(numberSelectCustomer)-1));
-                        System.out.println("Add Booking successfully");
                         saveBooking();
                         saveInformationCustomer();
                         addNewBooking2();
@@ -90,10 +125,10 @@ public class X5_AddNewBooking {
                     switch (Integer.parseInt(sc.nextLine())) {
                         case 1:
                             addHouse();
+                            System.out.println("Add Booking successfully");
                             loadBooking();
                             listCustomer.get(Integer.parseInt(numberSelectCustomer)-1).setService(listHouse.get(0));
                             listBooking.add(listCustomer.get(Integer.parseInt(numberSelectCustomer)-1));
-                            listCustomer.remove(listCustomer.get(Integer.parseInt(numberSelectCustomer)-1));
                             saveBooking();
                             saveInformationCustomer();
                             addNewBooking2();
@@ -115,11 +150,10 @@ public class X5_AddNewBooking {
                         System.out.println("Select error,please try again");
                         addNewBooking2();
                     } else {
+                        System.out.println("Add Booking successfully");
                         loadBooking();
                         listCustomer.get(Integer.parseInt(numberSelectCustomer)-1).setService(listHouse.get(numberSelectHouse-1));
                         listBooking.add(listCustomer.get(Integer.parseInt(numberSelectCustomer)-1));
-                        listCustomer.remove(listCustomer.get(Integer.parseInt(numberSelectCustomer)-1));
-                        System.out.println("Add Booking successfully");
                         saveBooking();
                         saveInformationCustomer();
                         addNewBooking2();
@@ -134,10 +168,10 @@ public class X5_AddNewBooking {
                     switch (Integer.parseInt(sc.nextLine())) {
                         case 1:
                             addRoom();
+                            System.out.println("Add Booking successfully");
                             loadBooking();
                             listCustomer.get(Integer.parseInt(numberSelectCustomer)-1).setService(listRoom.get(0));
                             listBooking.add(listCustomer.get(Integer.parseInt(numberSelectCustomer)-1));
-                            listCustomer.remove(listCustomer.get(Integer.parseInt(numberSelectCustomer)-1));
                             saveBooking();
                             saveInformationCustomer();
                             addNewBooking2();
@@ -158,10 +192,10 @@ public class X5_AddNewBooking {
                             System.out.println("Select error,please try again");
                             addNewBooking2();
                         } else {
+                            System.out.println("Add Booking successfully");
                             loadBooking();
                             listCustomer.get(Integer.parseInt(numberSelectCustomer)-1).setService(listRoom.get(numberSelectRoom-1));
                             listBooking.add(listCustomer.get(Integer.parseInt(numberSelectCustomer)-1));
-                            listCustomer.remove(listCustomer.get(Integer.parseInt(numberSelectCustomer)-1));
                             System.out.println("Add Booking successfully");
                             saveBooking();
                             saveInformationCustomer();
