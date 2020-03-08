@@ -20,7 +20,7 @@ public class X4_ShowInformationOfCustomer {
                 System.out.println(customer.showInfo()+"\n");
             } else {
                 System.out.println(customer.showInfo()+"\n"+
-                        "************Service***************\n"
+                        "************Register Service**************\n"
                         +customer.getService().showInfo()+"\n");
             }
         }

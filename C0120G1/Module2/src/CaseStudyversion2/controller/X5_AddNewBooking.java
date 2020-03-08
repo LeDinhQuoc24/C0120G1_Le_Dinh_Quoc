@@ -43,6 +43,7 @@ public class X5_AddNewBooking {
                     saveInformationCustomer();
                     addNewBooking2();
                 }
+
                 break;
             case 2:
                 for (int i=0;i<listHouse.size();i++) {
@@ -59,6 +60,7 @@ public class X5_AddNewBooking {
                     saveInformationCustomer();
                     addNewBooking2();
                 }
+
                 break;
             case 3:
                 for (int i=0;i<listRoom.size();i++) {
@@ -94,7 +96,7 @@ public class X5_AddNewBooking {
 //            System.out.println("Select error,please try again");
 //            addNewBooking2();
 //        } else {
-//            listCustomer.get(numberSelectCustomer-1).setService(listT.get(numberSelect-1));
+//            listCustomer.get(Integer.parseInt(numberSelectCustomer)-1).setService(listT.get(numberSelect-1));
 //            System.out.println("Add Booking successfully");
 //            saveInformationCustomer();
 //            addNewBooking2();
