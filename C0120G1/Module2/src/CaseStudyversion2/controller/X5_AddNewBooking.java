@@ -7,7 +7,7 @@ import CaseStudyversion2.models.Customer;
 import java.util.ArrayList;
 
 import static CaseStudyversion2.commons.FuncWriteAndReadFileCSV.readFileX;
-import static CaseStudyversion2.commons.SaveBooking.saveBooking;
+import static CaseStudyversion2.commons.SaveAndLoadBooking.saveBooking;
 import static CaseStudyversion2.controller.X0_DisplayMenu.displayMenu;
 import static CaseStudyversion2.controller.X1_x1_AddVilla.addVilla;
 import static CaseStudyversion2.controller.X1_x2_AddHouse.addHouse;
