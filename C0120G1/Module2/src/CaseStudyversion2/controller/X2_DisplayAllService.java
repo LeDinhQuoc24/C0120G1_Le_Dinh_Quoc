@@ -6,6 +6,7 @@ import CaseStudyversion2.models.House;
 import CaseStudyversion2.models.Room;
 import CaseStudyversion2.models.Villa;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.TreeSet;
 

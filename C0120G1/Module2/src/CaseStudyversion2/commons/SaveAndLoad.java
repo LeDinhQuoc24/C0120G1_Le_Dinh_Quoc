@@ -13,39 +13,38 @@ public class SaveAndLoad {
         saveFile(listVilla,pathVilla,"Villa");
     }
     public static void loadFileVilla() {
-        loadFile(listVilla,pathVilla);
+        listVilla=readFileX(pathVilla);
     }
     public static void saveFileHouse() {
         saveFile(listHouse,pathHouse,"House");
     }
     public static void loadFileHouse() {
-        loadFile(listHouse,pathHouse);
+        listHouse=readFileX(pathHouse);
     }
     public static void saveFileRoom() {
         saveFile(listRoom,pathRoom,"Room");
     }
     public static void loadFileRoom() {
-        loadFile(listRoom,pathRoom);
+        listRoom=readFileX(pathRoom);
     }
     public static void saveBooking() {
         saveFile(listBooking,pathBooking,"Booking");
     }
     public static void loadBooking() {
-        loadFile(listBooking,pathBooking);
+        listBooking=readFileX(pathBooking);
     }
     public static void saveFileEmployee() {
         saveFile(listEmployee,pathEmployee,"Employee");
     }
     public static void loadFileEmployee() {
-        loadFile(listEmployee,pathEmployee);
+        listEmployee=readFileX(pathEmployee);
     }
     public static void saveInformationCustomer() {
         saveFile(listCustomer,pathCustomer,"Customer");
     }
     public static void loadInformationCustomer() {
-        loadFile(listCustomer,pathCustomer);
+        listCustomer=readFileX(pathCustomer);
     }
-
 
     public static <T> void saveFile(ArrayList<T> listT, String path, String name) {
         boolean check=saveFileX(listT,path);
@@ -54,8 +53,5 @@ public class SaveAndLoad {
         } else {
             System.out.println("Save "+name+" Failed,try again");
         }
-    }
-    public static <T> void loadFile(ArrayList<T> listT, String path) {
-        listT=readFileX(path );
     }
 }

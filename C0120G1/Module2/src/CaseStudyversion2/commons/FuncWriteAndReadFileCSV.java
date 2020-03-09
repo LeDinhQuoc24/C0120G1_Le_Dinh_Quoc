@@ -11,7 +11,7 @@ public class FuncWriteAndReadFileCSV {
         try {
             FileOutputStream fos = new FileOutputStream(path);
             ObjectOutputStream oos = new ObjectOutputStream(fos);
-            oos.writeObject( listT);
+            oos.writeObject(listT);
             oos.close();
             fos.close();
             return true;
