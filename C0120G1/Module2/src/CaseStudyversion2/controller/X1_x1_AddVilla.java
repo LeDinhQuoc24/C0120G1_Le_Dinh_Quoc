@@ -3,13 +3,13 @@ package CaseStudyversion2.controller;
 
 
 import CaseStudyversion2.commons.FuncValidation;
-import CaseStudyversion2.models.Service;
 import CaseStudyversion2.models.Villa;
 
 import static CaseStudyversion2.commons.FuncValidation.checkNumberInteger;
 import static CaseStudyversion2.commons.FuncValidation.checkString;
-import static CaseStudyversion2.commons.SaveAndLoadVilla.loadFileVilla;
-import static CaseStudyversion2.commons.SaveAndLoadVilla.saveFileVilla;
+import static CaseStudyversion2.commons.SaveAndLoad.loadFileVilla;
+import static CaseStudyversion2.commons.SaveAndLoad.saveFileVilla;
+
 import static CaseStudyversion2.controller.X1_x0_AddService.addService;
 import static CaseStudyversion2.views.MainRun.listVilla;
 

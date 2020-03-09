@@ -5,7 +5,8 @@ import CaseStudyversion2.commons.Comparator2;
 
 import java.util.Collections;
 
-import static CaseStudyversion2.commons.SaveAndLoadEmployee.loadFileEmployee;
+
+import static CaseStudyversion2.commons.SaveAndLoad.loadFileEmployee;
 import static CaseStudyversion2.views.MainRun.listEmployee;
 
 public class X9_ShowInformationOfEmployee {

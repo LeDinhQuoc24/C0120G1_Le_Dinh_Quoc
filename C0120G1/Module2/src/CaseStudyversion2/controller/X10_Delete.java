@@ -4,18 +4,6 @@ import java.util.ArrayList;
 
 import static CaseStudyversion2.commons.FuncWriteAndReadFileCSV.readFileX;
 import static CaseStudyversion2.commons.FuncWriteAndReadFileCSV.saveFileX;
-import static CaseStudyversion2.commons.SaveAndLoadBooking.loadBooking;
-import static CaseStudyversion2.commons.SaveAndLoadBooking.saveBooking;
-import static CaseStudyversion2.commons.SaveAndLoadEmployee.loadFileEmployee;
-import static CaseStudyversion2.commons.SaveAndLoadEmployee.saveFileEmployee;
-import static CaseStudyversion2.commons.SaveAndLoadHouse.loadFileHouse;
-import static CaseStudyversion2.commons.SaveAndLoadHouse.saveFileHouse;
-import static CaseStudyversion2.commons.SaveAndLoadInformationCustomer.loadInformationCustomer;
-import static CaseStudyversion2.commons.SaveAndLoadInformationCustomer.saveInformationCustomer;
-import static CaseStudyversion2.commons.SaveAndLoadRoom.loadFileRoom;
-import static CaseStudyversion2.commons.SaveAndLoadRoom.saveFileRoom;
-import static CaseStudyversion2.commons.SaveAndLoadVilla.loadFileVilla;
-import static CaseStudyversion2.commons.SaveAndLoadVilla.saveFileVilla;
 import static CaseStudyversion2.controller.X0_DisplayMenu.displayMenu;
 import static CaseStudyversion2.controller.X2_DisplayAllService.*;
 import static CaseStudyversion2.controller.X4_ShowInformationOfCustomer.showInformationOfCustomer;

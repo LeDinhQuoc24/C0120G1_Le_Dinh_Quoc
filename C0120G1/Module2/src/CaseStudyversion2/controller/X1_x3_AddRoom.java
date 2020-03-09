@@ -6,8 +6,8 @@ package CaseStudyversion2.controller;
 import CaseStudyversion2.models.Room;
 
 import static CaseStudyversion2.commons.FuncValidation.checkString;
-import static CaseStudyversion2.commons.SaveAndLoadRoom.loadFileRoom;
-import static CaseStudyversion2.commons.SaveAndLoadRoom.saveFileRoom;
+import static CaseStudyversion2.commons.SaveAndLoad.loadFileRoom;
+import static CaseStudyversion2.commons.SaveAndLoad.saveFileRoom;
 import static CaseStudyversion2.controller.X1_x0_AddService.addService;
 import static CaseStudyversion2.views.MainRun.listRoom;
 

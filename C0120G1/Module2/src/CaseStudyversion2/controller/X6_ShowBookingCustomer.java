@@ -7,7 +7,7 @@ import CaseStudyversion2.models.Customer;
 import java.util.Collections;
 
 
-import static CaseStudyversion2.commons.SaveAndLoadBooking.loadBooking;
+import static CaseStudyversion2.commons.SaveAndLoad.loadBooking;
 import static CaseStudyversion2.views.MainRun.listBooking;
 
 

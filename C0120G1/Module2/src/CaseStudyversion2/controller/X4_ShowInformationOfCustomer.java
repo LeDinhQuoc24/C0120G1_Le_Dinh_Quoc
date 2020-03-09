@@ -7,7 +7,8 @@ import CaseStudyversion2.models.Room;
 import CaseStudyversion2.models.Villa;
 
 import java.util.Collections;
-import static CaseStudyversion2.commons.SaveAndLoadInformationCustomer.loadInformationCustomer;
+
+import static CaseStudyversion2.commons.SaveAndLoad.loadInformationCustomer;
 import static CaseStudyversion2.views.MainRun.listCustomer;
 
 

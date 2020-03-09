@@ -9,9 +9,7 @@ import CaseStudyversion2.models.Villa;
 import java.util.Scanner;
 import java.util.TreeSet;
 
-import static CaseStudyversion2.commons.SaveAndLoadHouse.loadFileHouse;
-import static CaseStudyversion2.commons.SaveAndLoadRoom.loadFileRoom;
-import static CaseStudyversion2.commons.SaveAndLoadVilla.loadFileVilla;
+import static CaseStudyversion2.commons.SaveAndLoad.*;
 import static CaseStudyversion2.controller.X0_DisplayMenu.displayMenu;
 import static CaseStudyversion2.controller.X11_Exit.displayExit;
 import static CaseStudyversion2.views.MainRun.*;

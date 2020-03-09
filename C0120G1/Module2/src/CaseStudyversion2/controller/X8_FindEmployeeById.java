@@ -6,7 +6,8 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
 
-import static CaseStudyversion2.commons.SaveAndLoadEmployee.loadFileEmployee;
+
+import static CaseStudyversion2.commons.SaveAndLoad.loadFileEmployee;
 import static CaseStudyversion2.views.MainRun.listEmployee;
 import static CaseStudyversion2.views.MainRun.sc;
 

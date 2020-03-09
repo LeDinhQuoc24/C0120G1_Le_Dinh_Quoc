@@ -5,13 +5,7 @@ import CaseStudyversion2.models.Room;
 import CaseStudyversion2.models.Villa;
 
 
-import static CaseStudyversion2.commons.SaveAndLoadBooking.loadBooking;
-import static CaseStudyversion2.commons.SaveAndLoadBooking.saveBooking;
-import static CaseStudyversion2.commons.SaveAndLoadHouse.loadFileHouse;
-import static CaseStudyversion2.commons.SaveAndLoadInformationCustomer.loadInformationCustomer;
-import static CaseStudyversion2.commons.SaveAndLoadInformationCustomer.saveInformationCustomer;
-import static CaseStudyversion2.commons.SaveAndLoadRoom.loadFileRoom;
-import static CaseStudyversion2.commons.SaveAndLoadVilla.loadFileVilla;
+import static CaseStudyversion2.commons.SaveAndLoad.*;
 import static CaseStudyversion2.controller.X0_DisplayMenu.displayMenu;
 import static CaseStudyversion2.controller.X10_Delete.deleteBooking;
 import static CaseStudyversion2.controller.X1_x1_AddVilla.addVilla;
