@@ -4,6 +4,7 @@ import CaseStudyversion2.models.House;
 import CaseStudyversion2.models.Room;
 import CaseStudyversion2.models.Villa;
 
+
 import static CaseStudyversion2.commons.SaveAndLoadBooking.loadBooking;
 import static CaseStudyversion2.commons.SaveAndLoadBooking.saveBooking;
 import static CaseStudyversion2.commons.SaveAndLoadHouse.loadFileHouse;
@@ -219,10 +220,7 @@ public class X5_AddNewBooking {
         }
     }
 
-//    public static void addNewBooking3(ArrayList<Service> listT) {
-//        for (int i=0;i<listT.size();i++) {
-//            System.out.println("Số thứ tự "+(i+1)+":\n"+listT.get(i).showInfo());
-//        }
+//    public static <T> void addNewBooking3(ArrayList<T> listT) {
 //        System.out.println("Select Service you want booking:");
 //        int numberSelect = sc.nextInt();
 //        if (numberSelect> listT.size()) {
