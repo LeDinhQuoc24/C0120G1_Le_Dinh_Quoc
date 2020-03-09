@@ -1,8 +1,8 @@
 package CaseStudyversion2.commons;
 
-import static CaseStudyversion2.commons.FuncWriteAndReadFileCSV.readFileX;
-import static CaseStudyversion2.commons.FuncWriteAndReadFileCSV.saveFileX;
-import static CaseStudyversion2.views.MainRun.*;
+        import static CaseStudyversion2.commons.FuncWriteAndReadFileCSV.readFileX;
+        import static CaseStudyversion2.commons.FuncWriteAndReadFileCSV.saveFileX;
+        import static CaseStudyversion2.views.MainRun.*;
 
 public class SaveAndLoadHouse {
     public static void saveFileHouse() {

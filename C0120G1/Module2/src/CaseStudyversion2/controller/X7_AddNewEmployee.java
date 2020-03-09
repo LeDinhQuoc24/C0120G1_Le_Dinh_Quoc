@@ -9,7 +9,6 @@ import static CaseStudyversion2.commons.FuncValidation.checkString;
 import static CaseStudyversion2.commons.SaveAndLoadEmployee.loadFileEmployee;
 import static CaseStudyversion2.commons.SaveAndLoadEmployee.saveFileEmployee;
 
-import static CaseStudyversion2.views.MainRun.listCustomer;
 import static CaseStudyversion2.views.MainRun.listEmployee;
 
 public class X7_AddNewEmployee {
