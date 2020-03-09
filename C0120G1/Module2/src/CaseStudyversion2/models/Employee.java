@@ -1,6 +1,8 @@
 package CaseStudyversion2.models;
 
-public class Employee {
+import java.io.Serializable;
+
+public class Employee implements Serializable {
     private String nameEmployee;
     private int idEmployee;
     private int ageEmployee;
