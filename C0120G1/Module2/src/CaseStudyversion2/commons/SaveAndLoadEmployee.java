@@ -3,10 +3,11 @@ package CaseStudyversion2.commons;
 import static CaseStudyversion2.commons.FuncWriteAndReadFileCSV.readFileX;
 import static CaseStudyversion2.commons.FuncWriteAndReadFileCSV.saveFileX;
 import static CaseStudyversion2.views.MainRun.listHouse;
+import static CaseStudyversion2.views.MainRun.pathEmployee;
 
 public class SaveAndLoadEmployee {
     public static void saveFileEmployee() {
-        boolean check = saveFileX(listHouse, "D:\\CodeGym\\ProjectCodeGym\\C0120G1_Le_Dinh_Quoc\\C0120G1\\Module2\\src\\CaseStudyversion2\\data2\\saveEmployee.csv");
+        boolean check = saveFileX(listHouse, pathEmployee);
         if (check) {
             System.out.println("Save file succesfully");
         } else {
@@ -14,6 +15,6 @@ public class SaveAndLoadEmployee {
         }
     }
     public static void loadFileEmployee() {
-        listHouse= readFileX("D:\\CodeGym\\ProjectCodeGym\\C0120G1_Le_Dinh_Quoc\\C0120G1\\Module2\\src\\CaseStudyversion2\\data2\\saveEmployee.csv");
+        listHouse= readFileX(pathEmployee);
     }
 }

@@ -1,5 +1,9 @@
 package CaseStudyversion2.controller;
 
+import java.util.ArrayList;
+
+import static CaseStudyversion2.commons.FuncWriteAndReadFileCSV.readFileX;
+import static CaseStudyversion2.commons.FuncWriteAndReadFileCSV.saveFileX;
 import static CaseStudyversion2.commons.SaveAndLoadBooking.loadBooking;
 import static CaseStudyversion2.commons.SaveAndLoadBooking.saveBooking;
 import static CaseStudyversion2.commons.SaveAndLoadEmployee.loadFileEmployee;
@@ -42,13 +46,14 @@ public class X10_Delete {
                 deleteInformation();
                 break;
             case 5:
-                deleteBooKing();
+                deleteBooking();
                 deleteInformation();
                 break;
             case 6:
                 deleteEmployee();
                 deleteInformation();
-            case 7:
+                break;
+           case 7:
                 displayMenu();
                 break;
             default:
@@ -58,86 +63,44 @@ public class X10_Delete {
     }
     public static void deleteVilla() {
         displayVilla();
-        System.out.println("Select Information Villa to delete:");
-        loadFileVilla();
-        int choice=Integer.parseInt(sc.nextLine());
-        if (choice >= 1 && choice <= listVilla.size()) {
-            listVilla.remove(listVilla.get(choice - 1));
-        } else {
-            System.out.println("Enter error,please try again");
-            deleteBooKing();
-        }
-        saveFileVilla();
-        System.out.println("Deleted");
+        deleteListT(listVilla, "Villa", pathVilla);
     }
     public static void deleteHouse() {
         displayHouse();
-        System.out.println("Select Information House to delete:");
-        loadFileHouse();
-        int choice=Integer.parseInt(sc.nextLine());
-        if (choice >= 1 && choice <= listHouse.size()) {
-            listHouse.remove(listHouse.get(choice - 1));
-        } else {
-            System.out.println("Enter error,please try again");
-            deleteBooKing();
-        }
-        saveFileHouse();
-        System.out.println("Deleted");
+        deleteListT(listHouse, "House", pathHouse);
     }
     public static void deleteRoom() {
         displayRoom();
-        System.out.println("Select Information Room to delete:");
-        loadFileRoom();
-        int choice=Integer.parseInt(sc.nextLine());
-        if (choice >= 1 && choice <= listRoom.size()) {
-            listRoom.remove(listRoom.get(choice - 1));
-        } else {
-            System.out.println("Enter error,please try again");
-            deleteBooKing();
-        }
-        saveFileRoom();
-        System.out.println("Deleted");
+        deleteListT(listRoom, "Room", pathRoom);
     }
     public static void deleteCustomer() {
         showInformationOfCustomer();
-        System.out.println("Select Information Customer to delete:");
-        loadInformationCustomer();
-        int choice=Integer.parseInt(sc.nextLine());
-        if (choice >= 1 && choice <= listCustomer.size()) {
-            listCustomer.remove(listCustomer.get(choice - 1));
-        } else {
-            System.out.println("Enter error,please try again");
-            deleteBooKing();
-        }
-        saveInformationCustomer();
-        System.out.println("Deleted");
+        deleteListT(listCustomer, "Customer", pathCustomer);
     }
-    public static void deleteBooKing() {
+    public static void deleteBooking() {
         showBookingCustomer();
-        System.out.println("Select Information Booking to delete:");
-        loadBooking();
-        int choice=Integer.parseInt(sc.nextLine());
-        if (choice >= 1 && choice <= listBooking.size()) {
-            listBooking.remove(listBooking.get(choice - 1));
-        } else {
-            System.out.println("Enter error,please try again");
-            deleteBooKing();
-        }
-        saveBooking();
-        System.out.println("Deleted");
+        deleteListT(listCustomer, "Booking", pathBooking);
     }
     public static void deleteEmployee() {
         showInformationOfEmployee();
-        System.out.println("Select Information Employee to delete:");
-        loadFileEmployee();
-        int choice=Integer.parseInt(sc.nextLine());
-        if (choice >= 1 && choice <= listEmployee.size()) {
-            listEmployee.remove(listEmployee.get(choice - 1));
+        deleteListT(listEmployee, "Employee", pathEmployee);
+    }
+    public static <T> void deleteListT(ArrayList<T> listT,String name,String path) {
+        if (listT.size() == 0) {
+            System.out.println(listT+"is null,please add Employee");
+            displayMenu();
         } else {
-            System.out.println("Enter error,please try again");
-            deleteBooKing();
+            System.out.println("Select Information "+name+" to delete:");
+            readFileX(path);
+            int choice=Integer.parseInt(sc.nextLine());
+            if (choice >= 1 && choice <= listT.size()) {
+                listT.remove(listT.get(choice - 1));
+            } else {
+                System.out.println("Enter error,please try again");
+                deleteBooking();
+            }
+            saveFileX(listT,path);
+            System.out.println("Deleted");
         }
-        saveFileEmployee();
-        System.out.println("Deleted");
     }
 }

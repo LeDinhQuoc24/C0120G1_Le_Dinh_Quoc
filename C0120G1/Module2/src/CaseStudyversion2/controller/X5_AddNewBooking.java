@@ -12,10 +12,11 @@ import static CaseStudyversion2.commons.SaveAndLoadInformationCustomer.saveInfor
 import static CaseStudyversion2.commons.SaveAndLoadRoom.loadFileRoom;
 import static CaseStudyversion2.commons.SaveAndLoadVilla.loadFileVilla;
 import static CaseStudyversion2.controller.X0_DisplayMenu.displayMenu;
+import static CaseStudyversion2.controller.X10_Delete.deleteBooking;
 import static CaseStudyversion2.controller.X1_x1_AddVilla.addVilla;
 import static CaseStudyversion2.controller.X1_x2_AddHouse.addHouse;
 import static CaseStudyversion2.controller.X1_x3_AddRoom.addRoom;
-import static CaseStudyversion2.controller.X10_Delete.deleteBooKing;
+
 import static CaseStudyversion2.views.MainRun.*;
 
 public class X5_AddNewBooking {
@@ -60,8 +61,7 @@ public class X5_AddNewBooking {
                 +"1.Register override\n"+"2.Register more\n"+"3.Back to menu");
                 switch (Integer.parseInt( sc.nextLine())) {
                     case 1:
-
-                        deleteBooKing();
+                        deleteBooking();
                         addNewBooking2();
                         break;
                     case 2:
