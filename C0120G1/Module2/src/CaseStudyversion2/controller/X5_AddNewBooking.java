@@ -1,11 +1,8 @@
 package CaseStudyversion2.controller;
 
-import CaseStudyversion2.models.Customer;
 import CaseStudyversion2.models.House;
 import CaseStudyversion2.models.Room;
 import CaseStudyversion2.models.Villa;
-
-import java.util.ArrayList;
 
 import static CaseStudyversion2.commons.SaveAndLoadBooking.loadBooking;
 import static CaseStudyversion2.commons.SaveAndLoadBooking.saveBooking;
@@ -18,7 +15,7 @@ import static CaseStudyversion2.controller.X0_DisplayMenu.displayMenu;
 import static CaseStudyversion2.controller.X1_x1_AddVilla.addVilla;
 import static CaseStudyversion2.controller.X1_x2_AddHouse.addHouse;
 import static CaseStudyversion2.controller.X1_x3_AddRoom.addRoom;
-import static CaseStudyversion2.controller.X8_Delete.deleteBooKing;
+import static CaseStudyversion2.controller.X10_Delete.deleteBooKing;
 import static CaseStudyversion2.views.MainRun.*;
 
 public class X5_AddNewBooking {

@@ -7,12 +7,13 @@ import CaseStudyversion2.models.Room;
 import CaseStudyversion2.models.Villa;
 
 import java.util.Scanner;
+import java.util.TreeSet;
 
 import static CaseStudyversion2.commons.SaveAndLoadHouse.loadFileHouse;
 import static CaseStudyversion2.commons.SaveAndLoadRoom.loadFileRoom;
 import static CaseStudyversion2.commons.SaveAndLoadVilla.loadFileVilla;
 import static CaseStudyversion2.controller.X0_DisplayMenu.displayMenu;
-import static CaseStudyversion2.controller.X9_Exit.displayExit;
+import static CaseStudyversion2.controller.X11_Exit.displayExit;
 import static CaseStudyversion2.views.MainRun.*;
 
 
@@ -49,33 +50,15 @@ public class X2_DisplayAllService {
                 displayAllService();
                 break;
             case 5:
-                loadFileVilla();
-                System.out.println("********List NameVilla *******\n");
-                int n=1;
-                for (Villa villa : listVilla) {
-                    System.out.println("NameVilla"+n+": "+villa.getNameService());
-                    n++;
-                }
+                displayVillaName();
                 displayAllService();
                 break;
             case 6:
-                loadFileHouse();
-                System.out.println("********List NameHouse*******\n");
-                int m=1;
-                for (House house : listHouse) {
-                    System.out.println("NameHouse"+m+": "+house.getNameService());
-                    m++;
-                }
+                displayHouseName();
                 displayAllService();
                 break;
             case 7:
-                loadFileRoom();
-                System.out.println("********List NameRoom *******\n");
-                int k=1;
-                for (Room room : listRoom) {
-                    System.out.println("NameRoom"+k+": "+room.getNameService());
-                    k++;
-                }
+                displayRoomName();
                 displayAllService();
                 break;
             case 8:
@@ -114,6 +97,45 @@ public class X2_DisplayAllService {
         for (Room room : listRoom) {
             System.out.println("Số thứ tự: "+i+"\n"+room.showInfo()+"\n");
             i++;
+        }
+    }
+    public static void displayVillaName() {
+        loadFileVilla();
+        System.out.println("********List NameVilla *******\n");
+        TreeSet<String> treeSetVilla = new TreeSet<>();
+        for (int i = 0; i < listVilla.size(); i++) {
+            treeSetVilla.add(listVilla.get(i).getNameService());
+        }
+        int m=1;
+        for (String item : treeSetVilla) {
+            System.out.println("NameVilla: "+m+"\t"+item);
+            m++;
+        }
+    }
+    public static void displayHouseName() {
+        loadFileHouse();
+        System.out.println("********List NameHouse*******\n");
+        TreeSet<String> treeSetHouse = new TreeSet<>();
+        for (int i = 0; i < listHouse.size(); i++) {
+            treeSetHouse.add(listHouse.get(i).getNameService());
+        }
+        int m=1;
+        for (String item : treeSetHouse) {
+            System.out.println("NameHouse: "+m+"\t"+item);
+            m++;
+        }
+    }
+    public static void displayRoomName() {
+        loadFileRoom();
+        System.out.println("********List NameRoom *******\n");
+        TreeSet<String> treeSetRoom = new TreeSet<>();
+        for (int i = 0; i < listRoom.size(); i++) {
+            treeSetRoom.add(listRoom.get(i).getNameService());
+        }
+        int m=1;
+        for (String item : treeSetRoom) {
+            System.out.println("NameRoom: "+m+"\t"+item);
+            m++;
         }
     }
 }

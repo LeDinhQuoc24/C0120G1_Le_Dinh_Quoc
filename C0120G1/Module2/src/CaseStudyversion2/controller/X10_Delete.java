@@ -2,6 +2,8 @@ package CaseStudyversion2.controller;
 
 import static CaseStudyversion2.commons.SaveAndLoadBooking.loadBooking;
 import static CaseStudyversion2.commons.SaveAndLoadBooking.saveBooking;
+import static CaseStudyversion2.commons.SaveAndLoadEmployee.loadFileEmployee;
+import static CaseStudyversion2.commons.SaveAndLoadEmployee.saveFileEmployee;
 import static CaseStudyversion2.commons.SaveAndLoadHouse.loadFileHouse;
 import static CaseStudyversion2.commons.SaveAndLoadHouse.saveFileHouse;
 import static CaseStudyversion2.commons.SaveAndLoadInformationCustomer.loadInformationCustomer;
@@ -14,12 +16,14 @@ import static CaseStudyversion2.controller.X0_DisplayMenu.displayMenu;
 import static CaseStudyversion2.controller.X2_DisplayAllService.*;
 import static CaseStudyversion2.controller.X4_ShowInformationOfCustomer.showInformationOfCustomer;
 import static CaseStudyversion2.controller.X6_ShowBookingCustomer.showBookingCustomer;
+import static CaseStudyversion2.controller.X9_ShowInformationOfEmployee.showInformationOfEmployee;
 import static CaseStudyversion2.views.MainRun.*;
 
-public class X8_Delete {
+public class X10_Delete {
     public static void deleteInformation() {
         System.out.println("Select Information you want to delete:\n"
-        +"1.Villa\n"+"2.House\n"+"3.Room\n"+"4.Customer\n"+"5.Booking\n"+"6.Back to menu\n");
+        +"1.Villa\n"+"2.House\n"+"3.Room\n"+"4.Customer\n"+"5.Booking\n"+"6.Employee\n"+"7.Back to menu\n"
+        );
         switch (Integer.parseInt(sc.nextLine())) {
             case 1:
                 deleteVilla();
@@ -42,6 +46,9 @@ public class X8_Delete {
                 deleteInformation();
                 break;
             case 6:
+                deleteEmployee();
+                deleteInformation();
+            case 7:
                 displayMenu();
                 break;
             default:
@@ -117,6 +124,20 @@ public class X8_Delete {
             deleteBooKing();
         }
         saveBooking();
+        System.out.println("Deleted");
+    }
+    public static void deleteEmployee() {
+        showInformationOfEmployee();
+        System.out.println("Select Information Employee to delete:");
+        loadFileEmployee();
+        int choice=Integer.parseInt(sc.nextLine());
+        if (choice >= 1 && choice <= listEmployee.size()) {
+            listEmployee.remove(listEmployee.get(choice - 1));
+        } else {
+            System.out.println("Enter error,please try again");
+            deleteBooKing();
+        }
+        saveFileEmployee();
         System.out.println("Deleted");
     }
 }

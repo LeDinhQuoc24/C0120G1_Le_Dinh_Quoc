@@ -15,6 +15,7 @@ public class MainRun {
     static public ArrayList<House> listHouse = new ArrayList<>();
     static public ArrayList<Room> listRoom = new ArrayList<>();
     static public ArrayList<Villa> listVilla = new ArrayList<>();
+    static public ArrayList<Employee> listEmployee = new ArrayList<>();
     public static void main(String[] args) {
         displayMenu();
     }
