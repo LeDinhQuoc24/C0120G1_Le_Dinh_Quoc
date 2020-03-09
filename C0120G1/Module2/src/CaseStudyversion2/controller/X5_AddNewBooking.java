@@ -1,6 +1,11 @@
 package CaseStudyversion2.controller;
 
 import CaseStudyversion2.models.Customer;
+import CaseStudyversion2.models.House;
+import CaseStudyversion2.models.Room;
+import CaseStudyversion2.models.Villa;
+
+import java.util.ArrayList;
 
 import static CaseStudyversion2.commons.SaveAndLoadBooking.loadBooking;
 import static CaseStudyversion2.commons.SaveAndLoadBooking.saveBooking;
@@ -13,6 +18,7 @@ import static CaseStudyversion2.controller.X0_DisplayMenu.displayMenu;
 import static CaseStudyversion2.controller.X1_x1_AddVilla.addVilla;
 import static CaseStudyversion2.controller.X1_x2_AddHouse.addHouse;
 import static CaseStudyversion2.controller.X1_x3_AddRoom.addRoom;
+import static CaseStudyversion2.controller.X8_Delete.deleteBooKing;
 import static CaseStudyversion2.views.MainRun.*;
 
 public class X5_AddNewBooking {
@@ -25,8 +31,23 @@ public class X5_AddNewBooking {
             displayMenu();
         } else {
             for (int i=0;i<listCustomer.size();i++) {
-                System.out.println("Số thứ tự "+(i+1)+":\n"+"NameCustomer: "+ listCustomer.get(i).getName()+
-                        "\tIdCustomer: "+listCustomer.get(i).getIdCustomer());
+                if (listCustomer.get(i).getService() == null) {
+                    System.out.println("Số thứ tự: "+(i+1)+"\nName: "+listCustomer.get(i).getName() +
+                            "\nIdCustomer: "+listCustomer.get(i).getIdCustomer()+"\nStatus : Not registered");
+                } else {
+                    if (listCustomer.get(i).getService() instanceof Villa) {
+                        System.out.println("Số thứ tự: "+(i+1)+"\nName: "+listCustomer.get(i).getName()+
+                                "\nIdCustomer: "+listCustomer.get(i).getIdCustomer()+"\nStatus : Registered Villa");
+                    }
+                    if (listCustomer.get(i).getService() instanceof House) {
+                        System.out.println("Số thứ tự: "+(i+1)+"\nName:"+listCustomer.get(i).getName() +
+                                "\nIdCustomer: "+listCustomer.get(i).getIdCustomer()+"\nStatus : Registered House");
+                    }
+                    if (listCustomer.get(i).getService() instanceof Room) {
+                        System.out.println("Số thứ tự: "+(i+1)+"\nName:"+listCustomer.get(i).getName() +
+                                "\nIdCustomer: "+listCustomer.get(i).getIdCustomer()+"\nStatus : Registered Room");
+                    }
+                }
             }
         }
         System.out.println("Select Information Customer");
@@ -35,27 +56,15 @@ public class X5_AddNewBooking {
             System.out.println("Select error,please try again");
            addNewBooking();
         } else {
-            if ((listCustomer.get(Integer.parseInt(numberSelectCustomer ) - 1) == null)) {
+            if ((listCustomer.get(Integer.parseInt(numberSelectCustomer ) - 1).getService() == null)) {
                 addNewBooking2();
             } else {
                 System.out.println("This Customer registered.You want:\n"
                 +"1.Register override\n"+"2.Register more\n"+"3.Back to menu");
                 switch (Integer.parseInt( sc.nextLine())) {
                     case 1:
-                        loadBooking();
-                        int i=1;
-                        for (Customer customer : listBooking) {
-                            if (customer.getName().equals(listCustomer.get(Integer.parseInt(numberSelectCustomer) - 1).getName())) {
-                                System.out.println("Số thứ tự: "+i+"\n"+customer.showInfo()+"\n"+
-                                        "************Register Service**************\n"
-                                        +customer.getService().showInfo()+"\n");
-                            }
-                            i++;
-                        }
-                        System.out.println("Select booking to register override");
-                        int choice = Integer.parseInt(sc.nextLine());
 
-
+                        deleteBooKing();
                         addNewBooking2();
                         break;
                     case 2:

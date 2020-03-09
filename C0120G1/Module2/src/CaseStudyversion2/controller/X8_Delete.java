@@ -40,30 +40,15 @@ public class X8_Delete {
                 deleteInformation();
                 break;
             case 3:
-                displayRoom();
-                System.out.println("Select Information Room to delete:");
-                loadFileRoom();
-                listRoom.remove(listRoom.get(Integer.parseInt(sc.nextLine()) - 1));
-                saveFileRoom();
-                System.out.println("Deleted");
+                deleteRoom();
                 deleteInformation();
                 break;
             case 4:
-                showInformationOfCustomer();
-                System.out.println("Select Information Customer to delete:");
-                loadInformationCustomer();
-                listCustomer.remove(listCustomer.get(Integer.parseInt(sc.nextLine()) - 1));
-                saveInformationCustomer();
-                System.out.println("Deleted");
+                deleteCustomer();
                 deleteInformation();
                 break;
             case 5:
-                showBookingCustomer();
-                System.out.println("Select Information Booking to delete:");
-                loadBooking();
-                listBooking.remove(listBooking.get(Integer.parseInt(sc.nextLine()) - 1));
-                saveBooking();
-                System.out.println("Deleted");
+                deleteBooKing();
                 deleteInformation();
                 break;
             case 6:
@@ -73,5 +58,47 @@ public class X8_Delete {
                 System.out.println("Enter error,please try again");
                 deleteInformation();
         }
+    }
+    public static void deleteRoom() {
+        displayRoom();
+        System.out.println("Select Information Room to delete:");
+        loadFileRoom();
+        int choice=Integer.parseInt(sc.nextLine());
+        if (choice >= 1 && choice <= listRoom.size()) {
+            listRoom.remove(listRoom.get(choice - 1));
+        } else {
+            System.out.println("Enter error,please try again");
+            deleteBooKing();
+        }
+        saveFileRoom();
+        System.out.println("Deleted");
+    }
+    public static void deleteCustomer() {
+        showInformationOfCustomer();
+        System.out.println("Select Information Customer to delete:");
+        loadInformationCustomer();
+        int choice=Integer.parseInt(sc.nextLine());
+        if (choice >= 1 && choice <= listCustomer.size()) {
+            listCustomer.remove(listCustomer.get(choice - 1));
+        } else {
+            System.out.println("Enter error,please try again");
+            deleteBooKing();
+        }
+        saveInformationCustomer();
+        System.out.println("Deleted");
+    }
+    public static void deleteBooKing() {
+        showBookingCustomer();
+        System.out.println("Select Information Booking to delete:");
+        loadBooking();
+        int choice=Integer.parseInt(sc.nextLine());
+        if (choice >= 1 && choice <= listBooking.size()) {
+            listBooking.remove(listBooking.get(choice - 1));
+        } else {
+            System.out.println("Enter error,please try again");
+            deleteBooKing();
+        }
+        saveBooking();
+        System.out.println("Deleted");
     }
 }
