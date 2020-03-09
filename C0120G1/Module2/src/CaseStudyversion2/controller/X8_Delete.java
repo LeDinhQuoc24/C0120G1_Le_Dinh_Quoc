@@ -22,21 +22,11 @@ public class X8_Delete {
         +"1.Villa\n"+"2.House\n"+"3.Room\n"+"4.Customer\n"+"5.Booking\n"+"6.Back to menu\n");
         switch (Integer.parseInt(sc.nextLine())) {
             case 1:
-                displayVilla();
-                System.out.println("Select Information Villa to delete:");
-                loadFileVilla();
-                listVilla.remove(listVilla.get(Integer.parseInt(sc.nextLine()) - 1));
-                saveFileVilla();
-                System.out.println("Deleted");
+                deleteVilla();
                 deleteInformation();
                 break;
             case 2:
-                displayHouse();
-                System.out.println("Select Information House to delete:");
-                loadFileHouse();
-                listHouse.remove(listHouse.get(Integer.parseInt(sc.nextLine()) - 1));
-                saveFileHouse();
-                System.out.println("Deleted");
+                deleteHouse();
                 deleteInformation();
                 break;
             case 3:
@@ -58,6 +48,34 @@ public class X8_Delete {
                 System.out.println("Enter error,please try again");
                 deleteInformation();
         }
+    }
+    public static void deleteVilla() {
+        displayVilla();
+        System.out.println("Select Information Villa to delete:");
+        loadFileVilla();
+        int choice=Integer.parseInt(sc.nextLine());
+        if (choice >= 1 && choice <= listVilla.size()) {
+            listVilla.remove(listVilla.get(choice - 1));
+        } else {
+            System.out.println("Enter error,please try again");
+            deleteBooKing();
+        }
+        saveFileVilla();
+        System.out.println("Deleted");
+    }
+    public static void deleteHouse() {
+        displayHouse();
+        System.out.println("Select Information House to delete:");
+        loadFileHouse();
+        int choice=Integer.parseInt(sc.nextLine());
+        if (choice >= 1 && choice <= listHouse.size()) {
+            listHouse.remove(listHouse.get(choice - 1));
+        } else {
+            System.out.println("Enter error,please try again");
+            deleteBooKing();
+        }
+        saveFileHouse();
+        System.out.println("Deleted");
     }
     public static void deleteRoom() {
         displayRoom();
