@@ -6,7 +6,7 @@ import static CaseStudyversion2.views.MainRun.*;
 
 public class SaveAndLoadHouse {
     public static void saveFileHouse() {
-        boolean check = saveFileX(listHouse, "F:\\ProjectCodyGym\\C0120G1\\Module2\\src\\CaseStudyversion2\\data\\saveHouse.csv");
+        boolean check = saveFileX(listHouse, "D:\\CodeGym\\ProjectCodeGym\\C0120G1_Le_Dinh_Quoc\\C0120G1\\Module2\\src\\CaseStudyversion2\\data2\\saveHouse.csv");
         if (check) {
             System.out.println("Save file succesfully");
         } else {
@@ -14,6 +14,6 @@ public class SaveAndLoadHouse {
         }
     }
     public static void loadFileHouse() {
-        listHouse= readFileX("F:\\ProjectCodyGym\\C0120G1\\Module2\\src\\CaseStudyversion2\\data\\saveHouse.csv");
+        listHouse= readFileX("D:\\CodeGym\\ProjectCodeGym\\C0120G1_Le_Dinh_Quoc\\C0120G1\\Module2\\src\\CaseStudyversion2\\data2\\saveHouse.csv");
     }
 }

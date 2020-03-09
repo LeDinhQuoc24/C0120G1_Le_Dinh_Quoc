@@ -29,7 +29,6 @@ public class Comparator implements java.util.Comparator<Customer> {
                     } else if (day1 < day2) {
                         return -1;
                     } else {
-                        System.out.println("Lầy quá,em xin dừng cuộc chơi ở đây");
                         return 0;
                     }
                 }

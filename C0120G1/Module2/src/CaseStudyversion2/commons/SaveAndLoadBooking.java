@@ -7,7 +7,7 @@ import static CaseStudyversion2.views.MainRun.listBooking;
 
 public class SaveAndLoadBooking {
     public static void saveBooking() {
-        boolean check=saveFileX(listBooking,"F:\\ProjectCodyGym\\C0120G1\\Module2\\src\\CaseStudyversion2\\data\\saveBooking.csv");
+        boolean check=saveFileX(listBooking,"D:\\CodeGym\\ProjectCodeGym\\C0120G1_Le_Dinh_Quoc\\C0120G1\\Module2\\src\\CaseStudyversion2\\data2\\saveBooking.csv");
         if (check) {
             System.out.println("Save Booking successfully");
         } else {
@@ -15,6 +15,6 @@ public class SaveAndLoadBooking {
         }
     }
     public static void loadBooking() {
-        listBooking=readFileX("F:\\ProjectCodyGym\\C0120G1\\Module2\\src\\CaseStudyversion2\\data\\saveBooking.csv" );
+        listBooking=readFileX("D:\\CodeGym\\ProjectCodeGym\\C0120G1_Le_Dinh_Quoc\\C0120G1\\Module2\\src\\CaseStudyversion2\\data2\\saveBooking.csv" );
     }
 }

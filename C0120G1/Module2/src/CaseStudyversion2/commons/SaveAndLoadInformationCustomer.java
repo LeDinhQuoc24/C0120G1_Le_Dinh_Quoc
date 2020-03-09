@@ -6,7 +6,7 @@ import static CaseStudyversion2.views.MainRun.listCustomer;
 
 public class SaveAndLoadInformationCustomer {
     public static void saveInformationCustomer() {
-        boolean check=saveFileX(listCustomer,"F:\\ProjectCodyGym\\C0120G1\\Module2\\src\\CaseStudyversion2\\data\\saveCustomer.csv");
+        boolean check=saveFileX(listCustomer,"D:\\CodeGym\\ProjectCodeGym\\C0120G1_Le_Dinh_Quoc\\C0120G1\\Module2\\src\\CaseStudyversion2\\data2\\saveCustomer.csv");
         if (check) {
             System.out.println("Save Information Customer successfully");
         } else {
@@ -14,6 +14,6 @@ public class SaveAndLoadInformationCustomer {
         }
     }
     public static void loadInformationCustomer() {
-        listCustomer=readFileX("F:\\ProjectCodyGym\\C0120G1\\Module2\\src\\CaseStudyversion2\\data\\saveCustomer.csv" );
+        listCustomer=readFileX("D:\\CodeGym\\ProjectCodeGym\\C0120G1_Le_Dinh_Quoc\\C0120G1\\Module2\\src\\CaseStudyversion2\\data2\\saveCustomer.csv" );
     }
 }
