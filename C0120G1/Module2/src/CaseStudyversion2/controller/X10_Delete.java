@@ -5,16 +5,18 @@ import java.util.ArrayList;
 import static CaseStudyversion2.commons.FuncWriteAndReadFileCSV.readFileX;
 import static CaseStudyversion2.commons.FuncWriteAndReadFileCSV.saveFileX;
 import static CaseStudyversion2.controller.X0_DisplayMenu.displayMenu;
+import static CaseStudyversion2.controller.X11_Service_Film4D.showListViewer;
 import static CaseStudyversion2.controller.X2_DisplayAllService.*;
 import static CaseStudyversion2.controller.X4_ShowInformationOfCustomer.showInformationOfCustomer;
 import static CaseStudyversion2.controller.X6_ShowBookingCustomer.showBookingCustomer;
 import static CaseStudyversion2.controller.X9_ShowInformationOfEmployee.showInformationOfEmployee;
 import static CaseStudyversion2.views.MainRun.*;
+import static CaseStudyversion2.views.MainRun.pathViewer;
 
 public class X10_Delete {
     public static void deleteInformation() {
         System.out.println("Select Information you want to delete:\n"
-        +"1.Villa\n"+"2.House\n"+"3.Room\n"+"4.Customer\n"+"5.Booking\n"+"6.Employee\n"+"7.Back to menu\n"
+        +"1.Villa\n"+"2.House\n"+"3.Room\n"+"4.Customer\n"+"5.Booking\n"+"6.Employee\n"+"7.Viewer\n"+"8.Back to menu\n"
         );
         switch (Integer.parseInt(sc.nextLine())) {
             case 1:
@@ -41,7 +43,11 @@ public class X10_Delete {
                 deleteEmployee();
                 deleteInformation();
                 break;
-           case 7:
+            case 7:
+                deleteViewer();
+                deleteInformation();
+                break;
+            case 8:
                 displayMenu();
                 break;
             default:
@@ -72,6 +78,10 @@ public class X10_Delete {
     public static void deleteEmployee() {
         showInformationOfEmployee();
         deleteListT(listEmployee, "Employee", pathEmployee);
+    }
+    public static void deleteViewer() {
+        showListViewer();
+        deleteListT(listViewer, "Viewer", pathViewer);
     }
     public static <T> void deleteListT(ArrayList<T> listT,String name,String path) {
         if (listT.size() == 0) {
