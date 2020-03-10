@@ -67,7 +67,7 @@ public class X10_Delete {
     }
     public static void deleteBooking() {
         showBookingCustomer();
-        deleteListT(listCustomer, "Booking", pathBooking);
+        deleteListT(listBooking, "Booking", pathBooking);
     }
     public static void deleteEmployee() {
         showInformationOfEmployee();

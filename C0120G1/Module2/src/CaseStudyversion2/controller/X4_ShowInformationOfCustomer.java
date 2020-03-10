@@ -19,23 +19,27 @@ public class X4_ShowInformationOfCustomer {
         System.out.println("\nxxxxxxxxxxxxx List Customer xxxxxxxxxxxxxxx\n\n");
         Comparator comparator = new Comparator();
         Collections.sort(listCustomer,comparator);
-        int i=1;
-        for (Customer customer : listCustomer) {
-            if (customer.getService() == null) {
-                System.out.println("Số thứ tự: "+i+"\n"+customer.showInfo() + "\n"+"Status : Not registered");
-            } else {
-                if (customer.getService() instanceof Villa) {
-                    System.out.println("Số thứ tự: "+i+"\n"+customer.showInfo() + "\n"+"Status : Registered Villa");
-                }
-                if (customer.getService() instanceof House) {
-                    System.out.println("Số thứ tự: "+i+"\n"+customer.showInfo() + "\n"+"Status : Registered House");
-                }
-                if (customer.getService() instanceof Room) {
-                    System.out.println("Số thứ tự: "+i+"\n"+customer.showInfo() + "\n"+"Status : Registered Room");
+
+        if (listCustomer.size() == 0) {
+            System.out.println("List Customer is null");
+        } else {
+            for (int i = 1; i <= listCustomer.size(); i++) {
+                if (listCustomer.get(i-1).getService() == null) {
+                    System.out.println("Số thứ tự: "+i+"\n"+listCustomer.get(i-1).showInfo() + "\n"+"Status : Not registered");
+                } else {
+                    if (listCustomer.get(i-1).getService() instanceof Villa) {
+                        System.out.println("Số thứ tự: "+i+"\n"+listCustomer.get(i-1).showInfo() + "\n"+"Status : Registered Villa");
+                    }
+                    if (listCustomer.get(i-1).getService() instanceof House) {
+                        System.out.println("Số thứ tự: "+i+"\n"+listCustomer.get(i-1).showInfo() + "\n"+"Status : Registered House");
+                    }
+                    if (listCustomer.get(i-1).getService() instanceof Room) {
+                        System.out.println("Số thứ tự: "+i+"\n"+listCustomer.get(i-1).showInfo() + "\n"+"Status : Registered Room");
+                    }
+
                 }
             }
-            i++;
+            System.out.println("\n");
         }
-        System.out.println("\n");
     }
 }

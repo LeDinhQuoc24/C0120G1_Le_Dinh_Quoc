@@ -23,26 +23,8 @@ public class X5_AddNewBooking {
             System.out.println("List information customer is null.Please add new Customer");
             displayMenu();
         } else {
-            for (int i=0;i<listCustomer.size();i++) {
-                if (listCustomer.get(i).getService() == null) {
-                    System.out.println("Số thứ tự: "+(i+1)+"\nName: "+listCustomer.get(i).getName() +
-                            "\nIdCustomer: "+listCustomer.get(i).getIdCustomer()+"\nStatus : Not registered");
-                } else {
-                    if (listCustomer.get(i).getService() instanceof Villa) {
-                        System.out.println("Số thứ tự: "+(i+1)+"\nName: "+listCustomer.get(i).getName()+
-                                "\nIdCustomer: "+listCustomer.get(i).getIdCustomer()+"\nStatus : Registered Villa");
-                    }
-                    if (listCustomer.get(i).getService() instanceof House) {
-                        System.out.println("Số thứ tự: "+(i+1)+"\nName:"+listCustomer.get(i).getName() +
-                                "\nIdCustomer: "+listCustomer.get(i).getIdCustomer()+"\nStatus : Registered House");
-                    }
-                    if (listCustomer.get(i).getService() instanceof Room) {
-                        System.out.println("Số thứ tự: "+(i+1)+"\nName:"+listCustomer.get(i).getName() +
-                                "\nIdCustomer: "+listCustomer.get(i).getIdCustomer()+"\nStatus : Registered Room");
-                    }
-                }
+              showStastusCustomer();
             }
-        }
         System.out.println("Select Information Customer");
         numberSelectCustomer=sc.nextLine();
         if (Integer.parseInt(numberSelectCustomer) > listCustomer.size()) {
@@ -109,6 +91,7 @@ public class X5_AddNewBooking {
                         addNewBooking2();
                     } else {
                         System.out.println("Add Booking successfully");
+                        loadInformationCustomer();
                         loadBooking();
                         listCustomer.get(Integer.parseInt(numberSelectCustomer)-1).setService(listVilla.get(numberSelectVilla-1));
                         listBooking.add(listCustomer.get(Integer.parseInt(numberSelectCustomer)-1));
@@ -152,6 +135,7 @@ public class X5_AddNewBooking {
                         addNewBooking2();
                     } else {
                         System.out.println("Add Booking successfully");
+                        loadInformationCustomer();
                         loadBooking();
                         listCustomer.get(Integer.parseInt(numberSelectCustomer)-1).setService(listHouse.get(numberSelectHouse-1));
                         listBooking.add(listCustomer.get(Integer.parseInt(numberSelectCustomer)-1));
@@ -194,6 +178,7 @@ public class X5_AddNewBooking {
                             addNewBooking2();
                         } else {
                             System.out.println("Add Booking successfully");
+                            loadInformationCustomer();
                             loadBooking();
                             listCustomer.get(Integer.parseInt(numberSelectCustomer)-1).setService(listRoom.get(numberSelectRoom-1));
                             listBooking.add(listCustomer.get(Integer.parseInt(numberSelectCustomer)-1));
@@ -211,6 +196,27 @@ public class X5_AddNewBooking {
             default:
                 System.out.println("Enter error,please try again");
                 addNewBooking2();
+        }
+    }
+    public static void showStastusCustomer() {
+        for (int i=0;i<listCustomer.size();i++) {
+            if (listCustomer.get(i).getService() == null) {
+                System.out.println("Số thứ tự: "+(i+1)+"\nName: "+listCustomer.get(i).getName() +
+                        "\nIdCustomer: "+listCustomer.get(i).getIdCustomer()+"\nStatus : Not registered");
+            } else {
+                if (listCustomer.get(i).getService() instanceof Villa) {
+                    System.out.println("Số thứ tự: "+(i+1)+"\nName: "+listCustomer.get(i).getName()+
+                            "\nIdCustomer: "+listCustomer.get(i).getIdCustomer()+"\nStatus : Registered Villa");
+                }
+                if (listCustomer.get(i).getService() instanceof House) {
+                    System.out.println("Số thứ tự: "+(i+1)+"\nName:"+listCustomer.get(i).getName() +
+                            "\nIdCustomer: "+listCustomer.get(i).getIdCustomer()+"\nStatus : Registered House");
+                }
+                if (listCustomer.get(i).getService() instanceof Room) {
+                    System.out.println("Số thứ tự: "+(i+1)+"\nName:"+listCustomer.get(i).getName() +
+                            "\nIdCustomer: "+listCustomer.get(i).getIdCustomer()+"\nStatus : Registered Room");
+                }
+            }
         }
     }
 

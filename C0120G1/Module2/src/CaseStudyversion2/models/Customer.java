@@ -9,7 +9,7 @@ public class Customer extends Service{
     private String email;
     private String typeCustomer;
     private String address;
-
+    private Service service;
 
 
     public String getName() {
@@ -75,6 +75,13 @@ public class Customer extends Service{
     public void setAddress(String address) {
         this.address = address;
     }
+    public Service getService() {
+        return service;
+    }
+    public void setService(Service service) {
+        this.service = service;
+    }
+
 
 
     @Override
