@@ -85,7 +85,7 @@ public class X10_Delete {
     }
     public static <T> void deleteListT(ArrayList<T> listT,String name,String path) {
         if (listT.size() == 0) {
-            System.out.println("list"+name+" is null,please add Employee");
+            System.out.println("list"+name+" is null,please add "+name);
             displayMenu();
         } else {
             System.out.println("Select Information "+name+" to delete:");

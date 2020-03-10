@@ -9,6 +9,7 @@ import java.util.Queue;
 import static CaseStudyversion2.commons.FuncValidation.checkNumberInteger;
 import static CaseStudyversion2.commons.FuncValidation.checkString;
 import static CaseStudyversion2.commons.SaveAndLoad.*;
+import static CaseStudyversion2.controller.X0_DisplayMenu.displayMenu;
 import static CaseStudyversion2.views.MainRun.*;
 
 public class X11_Service_Film4D {
@@ -33,6 +34,12 @@ public class X11_Service_Film4D {
             case 2:
                 showListViewer();
                 break;
+            case 3:
+                displayMenu();
+                break;
+            default:
+                System.out.println("Enter error,please try again");
+                serviceFilm4D();
         }
     }
     public static void  showListViewer() {

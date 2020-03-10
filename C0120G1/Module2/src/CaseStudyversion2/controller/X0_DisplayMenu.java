@@ -14,7 +14,7 @@ import static CaseStudyversion2.controller.X4_ShowInformationOfCustomer.showInfo
 import static CaseStudyversion2.controller.X5_AddNewBooking.addNewBooking;
 import static CaseStudyversion2.controller.X6_ShowBookingCustomer.showBookingCustomer;
 import static CaseStudyversion2.controller.X7_AddNewEmployee.addNewEmployee;
-import static CaseStudyversion2.controller.X8_FindEmployeeById.findEmployeeById;
+import static CaseStudyversion2.controller.X8_FindEmployee.findEmployee;
 import static CaseStudyversion2.controller.X10_Delete.deleteInformation;
 import static CaseStudyversion2.controller.X12_Exit.displayExit;
 import static CaseStudyversion2.controller.X9_ShowInformationOfEmployee.showInformationOfEmployee;
@@ -60,7 +60,7 @@ public class X0_DisplayMenu {
                         addNewEmployee();
                         displayMenu();
                     case 8:
-                        findEmployeeById();
+                        findEmployee();
                         displayMenu();
                         break;
                     case 9:
