@@ -87,9 +87,10 @@ trangThaiKhaDung varchar(45) not null
 );
 create table hopDongChiTiet(
 idHopDongChiTiet int primary key,
-idHopDong int references hopDong(idHopDong),
+idHopDong int not null,
 idDichVuDiKem int not null,
 soLuong int not null,
+foreign key (idHopDong) references hopDong(idHopDong),
 foreign key (idDichVuDiKem) references dichVuDiKem(idDichVuDiKem)
 );
 
