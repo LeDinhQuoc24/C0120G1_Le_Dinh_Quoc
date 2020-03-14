@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="df88910e-952b-405f-86a4-e4df73b81871" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Module2/src/Demo/Ep_Kieu/Customer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Module2/src/Demo/Ep_Kieu/CustomerChild.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Module2/src/Demo/Ep_Kieu/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Module2/src/Demo/Ep_Kieu/Main_2.java" afterDir="false" />
-    </list>
+    <list default="true" id="df88910e-952b-405f-86a4-e4df73b81871" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -121,6 +116,7 @@
       <workItem from="1582198043841" duration="241000" />
       <workItem from="1582632514274" duration="11000" />
       <workItem from="1582811958144" duration="15000" />
+      <workItem from="1583930429163" duration="1298000" />
     </task>
     <servers />
   </component>
