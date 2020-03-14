@@ -1,5 +1,5 @@
-create database Jav_MoeAmatsuka;
-use Jav_MoeAmatsuka;
+create database demo;
+use demo;
 create table productlines1(
 productLine varchar(50) primary key,
 textDescription text,
