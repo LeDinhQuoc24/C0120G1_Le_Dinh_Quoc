@@ -5,7 +5,6 @@ import java.util.ArrayList;
 import static CaseStudyversion2.commons.FuncWriteAndReadFileCSV.readFileX;
 import static CaseStudyversion2.commons.FuncWriteAndReadFileCSV.saveFileX;
 import static CaseStudyversion2.views.MainRun.*;
-import static CaseStudyversion2.views.MainRun.pathCustomer;
 
 
 public class SaveAndLoad {
@@ -44,6 +43,12 @@ public class SaveAndLoad {
     }
     public static void loadInformationCustomer() {
         listCustomer=readFileX(pathCustomer);
+    }
+    public static void saveFileViewer() {
+        saveFile(listViewer,pathViewer,"Viewer");
+    }
+    public static void loadFileViewer() {
+        listViewer=readFileX(pathViewer);
     }
 
     public static <T> void saveFile(ArrayList<T> listT, String path, String name) {
