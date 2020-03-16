@@ -96,18 +96,19 @@ CREATE TABLE hop_dong_chi_tiet (
     FOREIGN KEY (idDichVuDiKem)
         REFERENCES dich_vu_di_kem (idDichVuDiKem)
 );
--- Task 2
 -- Tạo thông tin cho 3 thông tin bảng mà khóa ngoại của bảng nhân viên tham chiếu đến,sau đó tạo bảng nhân viên
-insert into vi_tri(idViTri,tenViTri) value (01,"Hoa Quả Sơn"),(02,"Thủy Liêm Động"),(03,"Cao Lão Trang"),(04,"Nữ Nhi Quốc"),(05,"Tây Trúc");
-insert into trinh_do(idTrinhDo,trinhDo) value (01,"Bạch Mã Ôn"),(02,"Thiên Bồng Nguyên Soái"),(03,"Đấu Chiến Thắng Phật"),(04,"Mỹ Hầu Vương"),(05,"Đường Trưởng Lão");
-insert into bo_phan(idBoPhan,tenBoPhan) value (01,"Ngộ Không"),(02,"Đường Huyền Trang"),(03,"Trư Ngộ Năng"),(04,"Sa Ngộ Tĩnh"),(05,"Tiểu Long Mã");
+insert into vi_tri(idViTri,tenViTri) value (85,"XVSR497"),(90,"WANZ-468"),(91,"SSPD-130"),(93,"ABP-145"),(86,"LLR-008");
+insert into trinh_do(idTrinhDo,trinhDo) value (60,"HUNTA-316"),(56,"MIAD-758"),(58,"DV-1602"),(65,"ABP-171"),(61,"NTR-003");
+insert into bo_phan(idBoPhan,tenBoPhan) value (90,"HUNTA-127"),(85,"TMHP-051​​​​​​​"),(86,"SNIS-851"),(94,"ABP-138"),(88,"APAA-280");
 insert into nhan_vien(hoTen,idViTri,idTrinhDo,idBoPhan,ngaySinh,soCMTND,luong,sDT,email,diaChi)
-value ("Đông Phương Bất Bại",01,01,01,"1998-12-24","20501","2000000","0905000001","batbai@gmail.com","Quảng Nam"),
- ("Tần Thủy Hoàng",02,02,02,"1999-02-01","20502","10","0905000002","doanhchinh@gmail.com","Quế Xuân"),
-  ("Võ Tắc Thiên",03,03,03,"2000-04-03","20503","400000","0905000003","tacthien@gmail.com","Đà Nẵng"),
- ("Tây Môn Khánh",04,04,04,"1990-05-04","20504","750000","0905000004","monkhanh@gmail.com","Huế"),
-  ("Trương Vô Kỵ",05,05,05,"1985-06-07","20505","3600000","0905000005","voky@gmail.com","Quảng Ngãi");
-  select * from nhan_vien where (hoTen like 'H%' or hoTen like'T%' or hoTen like'K%')and length(hoTen)<=40;
+value ("HSuzumiya Kotone",85,60,90,"1992-06-27","Java01"," 157","XVSR-491","kotone@gmail.com","Japan"),
+ ("Abe Mikako",90,56,85,"1994-02-21","Java02","160","JUY-863","mikako@gmail.com","Tokyo"),
+  ("Tsukasa Aoi",91,58,86,"1990-08-14","Java03","163","SNIS-519","tsukasa@gmail.com","Osaka"),
+ ("Erika Momotani",93,65,94,"1994-06-15","Java04","165","ABP-159","erika@gmail.com","Tokyo"),
+  ("KEmiri Suzuhara",86,61,88,"1994-04-20","Java05","161","HBAD-267","suzuhara@gmail.com","Japan");
+  -- Task 2:Lệnh truy xuất
+-- select * from nhan_vien where (hoTen like 'H%' or hoTen like'T%' or hoTen like'K%')and length(hoTen)<=40;
+
  
 
  
