@@ -14,8 +14,8 @@ idBoPhan int primary key,
 tenBoPhan varchar(45) not null
 );
 create table nhan_vien(
-idNhanVien int primary key,
-hoTen int not null,
+idNhanVien int auto_increment primary key,
+hoTen varchar(50) not null,
 idViTri int not null,
 idTrinhDo int not null,
 idBoPhan int not null,
@@ -86,13 +86,30 @@ gia int not null,
 donVi int not null,
 trangThaiKhaDung varchar(45) not null
 );
-create table hop_dong_chi_tiet(
-idHopDongChiTiet int primary key,
-idHopDong int not null,
-idDichVuDiKem int not null,
-soLuong int not null,
-foreign key (idHopDong) references hop_dong(idHopDong),
-foreign key (idDichVuDiKem) references dich_vu_di_kem(idDichVuDiKem)
+CREATE TABLE hop_dong_chi_tiet (
+    idHopDongChiTiet INT PRIMARY KEY,
+    idHopDong INT NOT NULL,
+    idDichVuDiKem INT NOT NULL,
+    soLuong INT NOT NULL,
+    FOREIGN KEY (idHopDong)
+        REFERENCES hop_dong (idHopDong),
+    FOREIGN KEY (idDichVuDiKem)
+        REFERENCES dich_vu_di_kem (idDichVuDiKem)
 );
+-- Task 2
+-- Tạo thông tin cho 3 thông tin bảng mà khóa ngoại của bảng nhân viên tham chiếu đến,sau đó tạo bảng nhân viên
+insert into vi_tri(idViTri,tenViTri) value (01,"Hoa Quả Sơn"),(02,"Thủy Liêm Động"),(03,"Cao Lão Trang"),(04,"Nữ Nhi Quốc"),(05,"Tây Trúc");
+insert into trinh_do(idTrinhDo,trinhDo) value (01,"Bạch Mã Ôn"),(02,"Thiên Bồng Nguyên Soái"),(03,"Đấu Chiến Thắng Phật"),(04,"Mỹ Hầu Vương"),(05,"Đường Trưởng Lão");
+insert into bo_phan(idBoPhan,tenBoPhan) value (01,"Ngộ Không"),(02,"Đường Huyền Trang"),(03,"Trư Ngộ Năng"),(04,"Sa Ngộ Tĩnh"),(05,"Tiểu Long Mã");
+insert into nhan_vien(hoTen,idViTri,idTrinhDo,idBoPhan,ngaySinh,soCMTND,luong,sDT,email,diaChi)
+value ("Đông Phương Bất Bại",01,01,01,"1998-12-24","20501","2000000","0905000001","batbai@gmail.com","Quảng Nam"),
+ ("Tần Thủy Hoàng",02,02,02,"1999-02-01","20502","10","0905000002","doanhchinh@gmail.com","Quế Xuân"),
+  ("Võ Tắc Thiên",03,03,03,"2000-04-03","20503","400000","0905000003","tacthien@gmail.com","Đà Nẵng"),
+ ("Tây Môn Khánh",04,04,04,"1990-05-04","20504","750000","0905000004","monkhanh@gmail.com","Huế"),
+  ("Trương Vô Kỵ",05,05,05,"1985-06-07","20505","3600000","0905000005","voky@gmail.com","Quảng Ngãi");
+  select * from nhan_vien where (hoTen like 'H%' or hoTen like'T%' or hoTen like'K%')and length(hoTen)<=40;
+ 
+
+ 
 
 
