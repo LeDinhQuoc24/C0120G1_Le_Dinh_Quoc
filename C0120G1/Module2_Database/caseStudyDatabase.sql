@@ -369,17 +369,35 @@ insert into hop_dong_chi_tiet(idHopDong,idDichVuDiKem,soLuong) value
 --         OR khach_hang.diaChi = 'Vinh')
 --         AND tenLoaiKhach = 'Diamond'; 
 -- Task 12:
--- select hop_dong.idHopDong,nhan_vien.hoTen,khach_hang.hoTen,khach_hang.sDT,dich_vu.tenDichVu,
--- count(idHopDongChiTiet) as Số_Lượng_Dịch_Vụ_Đi_Kèm,hop_dong.ngayLamHopDong from
--- (((hop_dong 
--- join dich_vu on hop_dong.idDichVu=dich_vu.idDichVu)
--- join hop_dong_chi_tiet on hop_dong.idHopDong=hop_dong_chi_tiet.idHopDong)
--- join nhan_vien on hop_dong.idNhanVien=nhan_vien.idNhanVien)
--- join khach_hang on khach_hang.idKhachHang=hop_dong.idKhachHang
--- where exists (select khach_hang.hoTen from khach_hang
--- where ngayLamHopDong between '2019-9-1' and '2019-12-31')
--- and not exists (select khach_hang.hoTen from khach_hang
--- where ngayLamHopDong between '2019-1-1' and '2019-6-31') group by khach_hang.hoTen;
+-- SELECT 
+--     hop_dong.idHopDong,
+--     nhan_vien.hoTen,
+--     khach_hang.hoTen,
+--     khach_hang.sDT,
+--     dich_vu.tenDichVu,
+--     COUNT(idHopDongChiTiet) AS Số_Lượng_Dịch_Vụ_Đi_Kèm,
+--     hop_dong.ngayLamHopDong
+-- FROM
+--     (((hop_dong
+--     JOIN dich_vu ON hop_dong.idDichVu = dich_vu.idDichVu)
+--     JOIN hop_dong_chi_tiet ON hop_dong.idHopDong = hop_dong_chi_tiet.idHopDong)
+--     JOIN nhan_vien ON hop_dong.idNhanVien = nhan_vien.idNhanVien)
+--         JOIN
+--     khach_hang ON khach_hang.idKhachHang = hop_dong.idKhachHang
+-- WHERE
+--     EXISTS( SELECT 
+--             khach_hang.hoTen
+--         FROM
+--             khach_hang
+--         WHERE
+--             ngayLamHopDong BETWEEN '2019-9-1' AND '2019-12-31')
+--         AND NOT EXISTS( SELECT 
+--             khach_hang.hoTen
+--         FROM
+--             khach_hang
+--         WHERE
+--             ngayLamHopDong BETWEEN '2019-1-1' AND '2019-6-31')
+-- GROUP BY khach_hang.hoTen;
 
 
 
