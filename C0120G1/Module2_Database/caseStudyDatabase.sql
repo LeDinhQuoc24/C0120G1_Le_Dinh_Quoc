@@ -81,14 +81,14 @@ foreign key (idKhachHang) references khach_hang(idKhachHang),
 foreign key (idDichVu) references dich_vu(idDichVu)
 );
 create table dich_vu_di_kem(
-idDichVuDiKem int primary key,
+idDichVuDiKem int auto_increment primary key,
 tenDichVuDiKem varchar(45) not null,
 gia int not null,
 donVi int not null,
 trangThaiKhaDung varchar(45) not null
 );
 CREATE TABLE hop_dong_chi_tiet (
-    idHopDongChiTiet INT PRIMARY KEY,
+    idHopDongChiTiet INT auto_increment PRIMARY KEY,
     idHopDong INT NOT NULL,
     idDichVuDiKem INT NOT NULL,
     soLuong INT NOT NULL,
@@ -114,8 +114,7 @@ value ("HSuzumiya Kotone",85,60,90,"1992-06-27","Java01"," 157","XVSR-491","koto
 
 -- Task 3:
 -- Tạo thông tin cho bảng loại khách mà khóa ngoại của bảng khách hàng tham chiếu đến,sau đó tạo bảng khách hàng
-insert into loai_khach(tenLoaiKhach) value ('Diamond'),('Silver'),('Gold'),
-('Diamond'),('Iron'),('Wood');
+insert into loai_khach(tenLoaiKhach) value ('Diamond'),('Silver'),('Gold'),('Diamond'),('Iron'),('Wood');
 insert into khach_hang(idLoaiKhach,hoTen,ngaySinh,soCMTND,sDT,email,diaChi) value
 (001,'Nguyễn Anh Đức','1965-01-01','205001','0905001','naduc@gmail.com','Quảng Trị'),
 (002,'Nguyễn Đức Thông','2000-02-02','205002','0905002','ndthong@gmail.com','Đà Nẵng'),
@@ -138,7 +137,7 @@ insert into hop_dong(idNhanVien,idKhachHang,idDichVu,ngayLamHopDong,ngayKetThuc,
 (5,1,3,'1980-01-01','1980-03-03',10,200),
 (4,4,1,'2000-02-02','2000-04-04',50,1000),
 (2,1,2,'1985-05-05','1985-10-10',18,420),
-(3,3,2,'2019-08-08','2019-12-12',100,900);
+(3,3,2,'2019-02-02','2019-3-1',100,900);
 -- Lệnh hiển thị tất cả thông tin nối các bảng hợp đồng,khách hàng, loại khách
 -- select  * from (khach_hang join hop_dong on khach_hang.idKhachHang=hop_dong.idKhachHang)
 -- join loai_khach on khach_hang.idLoaiKhach=loai_khach.idLoaiKhach;
@@ -148,6 +147,37 @@ insert into hop_dong(idNhanVien,idKhachHang,idDichVu,ngayLamHopDong,ngayKetThuc,
 -- join loai_khach on khach_hang.idLoaiKhach=loai_khach.idLoaiKhach
 -- where loai_khach.tenLoaiKhach='Diamond'
 -- group by hoTen order by Số_Lần_Đặt_Phòng;
+-- Task 5:
+-- Tạo thông tin bảng dịch vụ đi kèm, và bảng hợp đồng chi tiết
+insert into dich_vu_di_kem(tenDichVuDiKem,gia,donVi,trangThaiKhaDung) value
+('football',50,1,'empty'),('cinemar3D',200,10,'full'),('boilling',20,4,'half-full');
+insert into hop_dong_chi_tiet(idHopDong,idDichVuDiKem,soLuong) value
+(4,2,1),(2,3,10),(2,1,5);
+-- Task 5:Lệnh truy xuất
+-- select khach_hang.idKhachHang,khach_hang.hoTen,loai_khach.tenLoaiKhach,hop_dong.idHopDong,
+-- dich_vu.tenDichVu,hop_dong.ngayLamHopDong,hop_dong.ngayKetThuc,(dich_vu.chiPhiThue+
+-- hop_dong_chi_tiet.soLuong*dich_vu_di_kem.gia) as Tổng_tiền
+-- from
+-- ((((khach_hang left join loai_khach on khach_hang.idLoaiKhach=loai_khach.idLoaiKhach)
+-- left join hop_dong on khach_hang.idKhachHang=hop_dong.idKhachHang)
+-- left join dich_vu on hop_dong.idDichVu=dich_vu.idDichVu)
+-- left join hop_dong_chi_tiet on hop_dong.idHopDong=hop_dong_chi_tiet.idHopDong)
+-- left join dich_vu_di_kem on hop_dong_chi_tiet.idDichVuDiKem=dich_vu_di_kem.idDichVuDiKem;
+
+-- Task 6:Lệnh truy xuất
+-- select dich_vu.idDichVu,dich_vu.tenDichVu,dich_vu.dienTich,dich_vu.soNguoiToiDa,dich_vu.chiPhiThue,
+-- loai_dich_vu.tenLoaiDichVu
+-- from dich_vu join loai_dich_vu on dich_vu.idLoaiDichVu=loai_dich_vu.idLoaiDichVu
+-- where not exists
+-- (select hop_dong.idDichVu from hop_dong where (hop_dong.ngayLamHopDong between '2019-01-01' and 
+-- '2019-03-03') and hop_dong.idDichVu=dich_vu.idDichVu);
+
+
+
+
+
+
+
 
 
 
