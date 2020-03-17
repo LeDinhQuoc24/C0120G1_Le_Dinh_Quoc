@@ -148,10 +148,10 @@ insert into dich_vu(tenDichVu,dienTich,soTang,soNguoiToiDa,chiPhiThue,idKieuThue
 ('java1',10,8,2,'30000',1,3,'high'),('java2',20,10,4,'500000',2,1,'feed'),('java3',15,3,3,'300000',3,4,'crazy');
 -- Tạo thông tin tại bảng hợp đồng,sau đó từ bảng khách hàng join đến để hiển thị thông tin khách đặt phòng
 insert into hop_dong(idNhanVien,idKhachHang,idDichVu,ngayLamHopDong,ngayKetThuc,tienDatCoc,tongTien) value
-(5,1,3,'2019-12-01','2019-12-28',10,200),
-(4,4,1,'2018-07-07','2018-11-04',50,1000),
-(2,1,2,'2019-09-05','2019-10-10',18,420),
-(3,3,2,'2019-02-02','2019-3-1',100,900);
+(5,1,3,'2019-03-01','2019-12-28',10,200),
+(4,4,1,'2019-10-07','2019-11-04',50,1000),
+(2,1,2,'2019-12-24','2019-12-25',18,420),
+(3,3,2,'2019-011-02','2019-12-27',100,900);
 -- Lệnh hiển thị tất cả thông tin nối các bảng hợp đồng,khách hàng, loại khách
 -- SELECT 
 --     *
@@ -178,7 +178,7 @@ insert into hop_dong(idNhanVien,idKhachHang,idDichVu,ngayLamHopDong,ngayKetThuc,
 insert into dich_vu_di_kem(tenDichVuDiKem,gia,donVi,trangThaiKhaDung) value
 ('football',50,1,'empty'),('cinemar3D',200,10,'full'),('boilling',20,4,'half-full');
 insert into hop_dong_chi_tiet(idHopDong,idDichVuDiKem,soLuong) value
-(4,2,1),(2,3,10),(2,1,5);
+(4,2,1),(2,3,10),(2,1,5),(1,1,5);
 -- Task 5:Lệnh truy xuất
 -- SELECT 
 --     khach_hang.idKhachHang,
@@ -356,7 +356,30 @@ insert into hop_dong_chi_tiet(idHopDong,idDichVuDiKem,soLuong) value
 --                                 OR khach_hang.diaChi = 'Vinh')
 --                                 AND tenLoaiKhach = 'Diamond')));
 -- Cách 2:
-
+-- SELECT 
+--     *
+-- FROM
+--     (((dich_vu_di_kem
+--     JOIN hop_dong_chi_tiet ON dich_vu_di_kem.idDichVuDiKem = hop_dong_chi_tiet.idDichVuDiKem)
+--     JOIN hop_dong ON hop_dong.idHopDong = hop_dong_chi_tiet.idHopDong)
+--     JOIN khach_hang ON khach_hang.idKhachHang = hop_dong.idKhachHang)
+--         JOIN
+--     loai_khach ON loai_khach.idLoaiKhach = khach_hang.idLoaiKhach
+--         AND (khach_hang.diaChi = 'Quảng Ngãi'
+--         OR khach_hang.diaChi = 'Vinh')
+--         AND tenLoaiKhach = 'Diamond'; 
+-- Task 12:
+-- select hop_dong.idHopDong,nhan_vien.hoTen,khach_hang.hoTen,khach_hang.sDT,dich_vu.tenDichVu,
+-- count(idHopDongChiTiet) as Số_Lượng_Dịch_Vụ_Đi_Kèm,hop_dong.ngayLamHopDong from
+-- (((hop_dong 
+-- join dich_vu on hop_dong.idDichVu=dich_vu.idDichVu)
+-- join hop_dong_chi_tiet on hop_dong.idHopDong=hop_dong_chi_tiet.idHopDong)
+-- join nhan_vien on hop_dong.idNhanVien=nhan_vien.idNhanVien)
+-- join khach_hang on khach_hang.idKhachHang=hop_dong.idKhachHang
+-- where exists (select khach_hang.hoTen from khach_hang
+-- where ngayLamHopDong between '2019-9-1' and '2019-12-31')
+-- and not exists (select khach_hang.hoTen from khach_hang
+-- where ngayLamHopDong between '2019-1-1' and '2019-6-31') group by khach_hang.hoTen;
 
 
 
