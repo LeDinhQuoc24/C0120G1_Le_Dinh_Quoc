@@ -398,6 +398,25 @@ insert into hop_dong_chi_tiet(idHopDong,idDichVuDiKem,soLuong) value
 --         WHERE
 --             ngayLamHopDong BETWEEN '2019-1-1' AND '2019-6-31')
 -- GROUP BY khach_hang.hoTen;
+-- Task 13
+-- select *,count(dich_vu_di_kem.idDichVuDiKem) as Số_lần_đặt from ((dich_vu_di_kem 
+-- join hop_dong_chi_tiet on dich_vu_di_kem.idDichVuDiKem=hop_dong_chi_tiet.idDichVuDiKem)
+-- join hop_dong on hop_dong_chi_tiet.idHopDong=hop_dong.idHopDong)
+-- join khach_hang on khach_hang.idKhachHang=hop_dong.idKhachHang 
+-- group by dich_vu_di_kem.idDichVuDiKem
+-- order by count(dich_vu_di_kem.idDichVuDiKem)  desc limit 1;
+-- Task 14
+-- select * from ((dich_vu_di_kem 
+-- join hop_dong_chi_tiet on dich_vu_di_kem.idDichVuDiKem=hop_dong_chi_tiet.idDichVuDiKem)
+-- join hop_dong on hop_dong_chi_tiet.idHopDong=hop_dong.idHopDong)
+-- join khach_hang on khach_hang.idKhachHang=hop_dong.idKhachHang 
+-- where dich_vu_di_kem.idDichVuDiKem in (select idDichVuDiKem from hop_dong_chi_tiet 
+-- group by idDichVuDiKem having count(idDichVuDiKem)=1)
+-- ;
+
+
+
+
 
 
 
