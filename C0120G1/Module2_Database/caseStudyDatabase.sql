@@ -147,7 +147,7 @@ WHERE
         OR dia_chi = 'Đà Nẵng');
 -- Task 4:
 -- Tạo bảng loại dịch vụ,kiểu thuê mà khóa ngoại của bảng dịch vụ tham chiếu đến
-insert into loai_dich_vu(ten_loai_dich_vu) value ('massage'),('aj'),('bj'),('hj');
+insert into loai_dich_vu(ten_loai_dich_vu) value ('massage'),('caj'),('cbj'),('chj');
 insert into kieu_thue(ten_kieu_thue,gia) value ('oneshot',30000),('longshot',200000),('a-z',1000000);	
 -- Tạo bảng dịch vụ mà khóa ngoại của bảng hợp đồng tham chiếu đến
 insert into dich_vu(ten_dich_vu,dien_tich,so_tang,so_nguoi_toi_da,chi_phi_thue,id_kieu_thue,id_loai_dich_vu,trang_thai) value
