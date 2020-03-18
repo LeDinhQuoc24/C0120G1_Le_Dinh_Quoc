@@ -1,6 +1,6 @@
-drop database if exists furama_resort;
-create database furama_resort;
-use furama_resort;
+drop database if exists furama_resort_le_dinh_quoc;
+create database furama_resort_le_dinh_quoc;
+use furama_resort_le_dinh_quoc;
 -- Task 1:Tạo Bảng
 create table vi_tri(
 idViTri int primary key,
@@ -466,6 +466,9 @@ insert into hop_dong_chi_tiet(idHopDong,idDichVuDiKem,soLuong) value
 -- Kiểm tra nhân viên trước và sau khi xóa
 -- select * from nhan_vien;
 -- Task 17:
+-- select * from khach_hang join loai_khach on khach_hang.idLoaiKhach=loai_khach.idLoaiKhach
+-- update loai_khach set tenLoaiKhach='Diamond' where tenLoaiKhach='Platinium' and idLoaiKhach in
+-- (select idLoaiKhach from 
 
 
  
