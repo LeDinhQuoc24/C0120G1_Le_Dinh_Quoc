@@ -135,7 +135,14 @@ SELECT
 FROM
     khach_hang
 WHERE
-    (YEAR(NOW()) - YEAR(ngay_sinh)) BETWEEN 18 AND 50
+	((YEAR(NOW()) - YEAR(ngay_sinh)) BETWEEN 19 AND 49)
+    and (YEAR(NOW())-YEAR(ngay_sinh))=18 and MONTH(NOW())>MONTH(ngay_sinh) or 
+    (MONTH(NOW())=MONTH(ngay_sinh) and DAY(NOW())>DAY(ngay_sinh))
+    or (YEAR(NOW())-YEAR(ngay_sinh))=50 and MONTH(NOW())<MONTH(ngay_sinh) or 
+    (MONTH(NOW())=MONTH(ngay_sinh) and DAY(NOW())<DAY(ngay_sinh))
+-- Nếu xài câu lệnh 145 thay cho các câu lệnh (138-142) sẽ thêm trường hợp
+-- Nguyễn Đình Hòa Ngày sinh 2002-05-05
+--  (YEAR(NOW()) - YEAR(ngay_sinh)) BETWEEN 18 AND 50
         AND (dia_chi = 'Quảng Trị'
         OR dia_chi = 'Đà Nẵng');
 -- Task 4:
@@ -462,9 +469,9 @@ WHERE
 -- Kiểm tra nhân viên trước và sau khi xóa
 select * from nhan_vien;
 -- Task 17:
-select * from khach_hang join loai_khach on khach_hang.id_loai_khach=loai_khach.id_loai_khach;
-update loai_khach set ten_loai_khach='Diamond' where ten_loai_khach='Platinium' 
-and id_dich_vu_di_kem
+-- select * from khach_hang join loai_khach on khach_hang.id_loai_khach=loai_khach.id_loai_khach;
+-- update loai_khach set ten_loai_khach='Diamond' where ten_loai_khach='Platinium' 
+-- and id_dich_vu_di_kem
 
 
  
