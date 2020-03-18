@@ -110,14 +110,14 @@ value ("HSuzumiya Kotone",85,60,90,"1992-06-27","Java01"," 157","XVSR-491","koto
   ("KEmiri Suzuhara",86,61,88,"1994-04-20","Java05","161","HBAD-267","suzuhara@gmail.com","Japan");
   
   -- Task 2:Lệnh truy xuất
--- SELECT 
---     *
--- FROM
---     nhan_vien
--- WHERE
---     (ho_ten LIKE 'H%' OR ho_ten LIKE 'T%'
---         OR ho_ten LIKE 'K%')
---         AND LENGTH(ho_ten) <= 40;
+SELECT 
+    *
+FROM
+    nhan_vien
+WHERE
+    (ho_ten LIKE 'H%' OR ho_ten LIKE 'T%'
+        OR ho_ten LIKE 'K%')
+        AND LENGTH(ho_ten) <= 40;
 -- Task 3:
 -- Tạo thông tin cho bảng loại khách mà khóa ngoại của bảng khách hàng tham chiếu đến,sau đó tạo bảng khách hàng
 insert into loai_khach(ten_loai_khach) value ('Platinium'),('Silver'),('Gold'),('Diamond'),('Iron'),('Wood');
@@ -130,14 +130,14 @@ insert into khach_hang(id_loai_khach,ho_ten,ngay_sinh,so_cmtnd,sdt,email,dia_chi
 (4,'Trần Ngọc Tân','1969-06-06','205006','0905006','tntan@gmail.com','Đà Nẵng'),
 (4,'Nguyễn Anh Đức','1986-09-09','205007','0905007','anhduc@gmail.com','Vinh');
 -- Task 3:Lệnh truy xuất
--- SELECT 
---     *
--- FROM
---     khach_hang
--- WHERE
---     (YEAR(NOW()) - YEAR(ngay_sinh)) BETWEEN 18 AND 50
---         AND (dia_chi = 'Quảng Trị'
---         OR dia_chi = 'Đà Nẵng');
+SELECT 
+    *
+FROM
+    khach_hang
+WHERE
+    (YEAR(NOW()) - YEAR(ngay_sinh)) BETWEEN 18 AND 50
+        AND (dia_chi = 'Quảng Trị'
+        OR dia_chi = 'Đà Nẵng');
 -- Task 4:
 -- Tạo bảng loại dịch vụ,kiểu thuê mà khóa ngoại của bảng dịch vụ tham chiếu đến
 insert into loai_dich_vu(ten_loai_dich_vu) value ('massage'),('aj'),('bj'),('hj');
@@ -156,26 +156,26 @@ insert into hop_dong(id_nhan_vien,id_khach_hang,id_dich_vu,ngay_lam_hop_dong,nga
 (2,6,2,'2020-12-24','2020-12-25',18,420),
 (3,3,3,'2018-011-02','2020-12-27',100,900);
 -- Lệnh hiển thị tất cả thông tin nối các bảng hợp đồng,khách hàng, loại khách
--- SELECT 
---     *
--- FROM
---     (khach_hang
---     JOIN hop_dong ON khach_hang.id_khach_hang = hop_dong.id_khach_hang)
---         JOIN
---     loai_khach ON khach_hang.id_loai_khach = loai_khach.id_loai_khach;
+SELECT 
+    *
+FROM
+    (khach_hang
+    JOIN hop_dong ON khach_hang.id_khach_hang = hop_dong.id_khach_hang)
+        JOIN
+    loai_khach ON khach_hang.id_loai_khach = loai_khach.id_loai_khach;
 -- Task 4: Lệnh truy xuất
--- SELECT 
---     ho_ten,
---     COUNT(hop_dong.id_khach_hang) AS Số_Lần_Đặt_Phòng
--- FROM
---     (khach_hang
---     JOIN hop_dong ON khach_hang.id_khach_hang = hop_dong.id_khach_hang)
---         JOIN
---     loai_khach ON khach_hang.id_loai_khach = loai_khach.id_loai_khach
--- WHERE
---     loai_khach.ten_loai_khach = 'Diamond'
--- GROUP BY ho_ten
--- ORDER BY Số_Lần_Đặt_Phòng;
+SELECT 
+    ho_ten,
+    COUNT(hop_dong.id_khach_hang) AS Số_Lần_Đặt_Phòng
+FROM
+    (khach_hang
+    JOIN hop_dong ON khach_hang.id_khach_hang = hop_dong.id_khach_hang)
+        JOIN
+    loai_khach ON khach_hang.id_loai_khach = loai_khach.id_loai_khach
+WHERE
+    loai_khach.ten_loai_khach = 'Diamond'
+GROUP BY ho_ten
+ORDER BY Số_Lần_Đặt_Phòng;
 -- Task 5:
 -- Tạo thông tin bảng dịch vụ đi kèm, và bảng hợp đồng chi tiết
 insert into dich_vu_di_kem(ten_dich_vu_di_kem,gia,don_vi,trang_thai_kha_dung) value
@@ -183,284 +183,284 @@ insert into dich_vu_di_kem(ten_dich_vu_di_kem,gia,don_vi,trang_thai_kha_dung) va
 insert into hop_dong_chi_tiet(id_hop_dong,id_dich_vu_di_kem,so_luong) value
 (4,2,1),(2,2,10),(2,1,5),(1,1,5),(8,3,3);
 -- Task 5:Lệnh truy xuất
--- SELECT 
---     khach_hang.id_khach_hang,
---     khach_hang.ho_ten,
---     loai_khach.ten_loai_khach,
---     hop_dong.id_hop_dong,
---     dich_vu.ten_dich_vu,
---     hop_dong.ngay_lam_hop_dong,
---     hop_dong.ngay_ket_thuc,
---     (dich_vu.chi_phi_thue + hop_dong_chi_tiet.so_luong * dich_vu_di_kem.gia) AS Tổng_tiền
--- FROM
---     ((((khach_hang
---     LEFT JOIN loai_khach ON khach_hang.id_loai_khach = loai_khach.id_loai_khach)
---     LEFT JOIN hop_dong ON khach_hang.id_khach_hang = hop_dong.id_khach_hang)
---     LEFT JOIN dich_vu ON hop_dong.id_dich_vu = dich_vu.id_dich_vu)
---     LEFT JOIN hop_dong_chi_tiet ON hop_dong.id_hop_dong = hop_dong_chi_tiet.id_hop_dong)
---         LEFT JOIN
---     dich_vu_di_kem ON hop_dong_chi_tiet.id_dich_vu_di_kem = dich_vu_di_kem.id_dich_vu_di_kem;
+SELECT 
+    khach_hang.id_khach_hang,
+    khach_hang.ho_ten,
+    loai_khach.ten_loai_khach,
+    hop_dong.id_hop_dong,
+    dich_vu.ten_dich_vu,
+    hop_dong.ngay_lam_hop_dong,
+    hop_dong.ngay_ket_thuc,
+    (dich_vu.chi_phi_thue + hop_dong_chi_tiet.so_luong * dich_vu_di_kem.gia) AS Tổng_tiền
+FROM
+    ((((khach_hang
+    LEFT JOIN loai_khach ON khach_hang.id_loai_khach = loai_khach.id_loai_khach)
+    LEFT JOIN hop_dong ON khach_hang.id_khach_hang = hop_dong.id_khach_hang)
+    LEFT JOIN dich_vu ON hop_dong.id_dich_vu = dich_vu.id_dich_vu)
+    LEFT JOIN hop_dong_chi_tiet ON hop_dong.id_hop_dong = hop_dong_chi_tiet.id_hop_dong)
+        LEFT JOIN
+    dich_vu_di_kem ON hop_dong_chi_tiet.id_dich_vu_di_kem = dich_vu_di_kem.id_dich_vu_di_kem;
 
 -- Task 6:Lệnh truy xuất
--- SELECT 
---     dich_vu.id_dich_vu,
---     dich_vu.ten_dich_vu,
---     dich_vu.dien_tich,
---     dich_vu.so_nguoi_toi_da,
---     dich_vu.chi_phi_thue,
---     loai_dich_vu.ten_loai_dich_vu
--- FROM
---     dich_vu
---         JOIN
---     loai_dich_vu ON dich_vu.id_loai_dich_vu = loai_dich_vu.id_loai_dich_vu
--- WHERE
---     NOT EXISTS( SELECT 
---             hop_dong.id_dich_vu
---         FROM
---             hop_dong
---         WHERE
---             (hop_dong.ngay_lam_hop_dong BETWEEN '2019-01-01' AND '2019-03-03')
---                 AND hop_dong.id_dich_vu = dich_vu.id_dich_vu);
+SELECT 
+    dich_vu.id_dich_vu,
+    dich_vu.ten_dich_vu,
+    dich_vu.dien_tich,
+    dich_vu.so_nguoi_toi_da,
+    dich_vu.chi_phi_thue,
+    loai_dich_vu.ten_loai_dich_vu
+FROM
+    dich_vu
+        JOIN
+    loai_dich_vu ON dich_vu.id_loai_dich_vu = loai_dich_vu.id_loai_dich_vu
+WHERE
+    NOT EXISTS( SELECT 
+            hop_dong.id_dich_vu
+        FROM
+            hop_dong
+        WHERE
+            (hop_dong.ngay_lam_hop_dong BETWEEN '2019-01-01' AND '2019-03-03')
+                AND hop_dong.id_dich_vu = dich_vu.id_dich_vu);
 
 -- Task 7:Lệnh truy xuất
--- SELECT 
---     dich_vu.id_dich_vu,
---     dich_vu.ten_dich_vu,
---     dich_vu.dien_tich,
---     dich_vu.so_nguoi_toi_da,
---     dich_vu.chi_phi_thue,
---     loai_dich_vu.ten_loai_dich_vu
--- FROM
---     dich_vu
---         JOIN
---     loai_dich_vu ON dich_vu.id_loai_dich_vu = loai_dich_vu.id_loai_dich_vu
--- WHERE
---     EXISTS( SELECT 
---             hop_dong.id_dich_vu
---         FROM
---             hop_dong
---         WHERE
---             (hop_dong.ngay_lam_hop_dong BETWEEN '2018-01-01' AND '2018-12-31')
---                 AND hop_dong.id_dich_vu = dich_vu.id_dich_vu)
---         AND NOT EXISTS( SELECT 
---             hop_dong.id_dich_vu
---         FROM
---             hop_dong
---         WHERE
---             (hop_dong.ngay_lam_hop_dong BETWEEN '2019-01-01' AND '2019-12-31')
---                 AND hop_dong.id_dich_vu = dich_vu.id_dich_vu);
+SELECT 
+    dich_vu.id_dich_vu,
+    dich_vu.ten_dich_vu,
+    dich_vu.dien_tich,
+    dich_vu.so_nguoi_toi_da,
+    dich_vu.chi_phi_thue,
+    loai_dich_vu.ten_loai_dich_vu
+FROM
+    dich_vu
+        JOIN
+    loai_dich_vu ON dich_vu.id_loai_dich_vu = loai_dich_vu.id_loai_dich_vu
+WHERE
+    EXISTS( SELECT 
+            hop_dong.id_dich_vu
+        FROM
+            hop_dong
+        WHERE
+            (hop_dong.ngay_lam_hop_dong BETWEEN '2018-01-01' AND '2018-12-31')
+                AND hop_dong.id_dich_vu = dich_vu.id_dich_vu)
+        AND NOT EXISTS( SELECT 
+            hop_dong.id_dich_vu
+        FROM
+            hop_dong
+        WHERE
+            (hop_dong.ngay_lam_hop_dong BETWEEN '2019-01-01' AND '2019-12-31')
+                AND hop_dong.id_dich_vu = dich_vu.id_dich_vu);
 
 -- Task 8:Lệnh truy xuất
--- SELECT DISTINCT
---     ho_Ten as Họ_Tên_Khách_Hàng
--- FROM
---     khach_hang;
--- SELECT 
---     ho_ten as Họ_Tên_Khách_Hàng
--- FROM
---     khach_hang
--- GROUP BY ho_ten;
+SELECT DISTINCT
+    ho_Ten as Họ_Tên_Khách_Hàng
+FROM
+    khach_hang;
+SELECT 
+    ho_ten as Họ_Tên_Khách_Hàng
+FROM
+    khach_hang
+GROUP BY ho_ten;
 -- Task 9:Lệnh truy xuất
--- SELECT 
---     MONTH(ngay_lam_hop_dong) AS Tháng,
---     COUNT(MONTH(ngay_lam_hop_dong)) AS Số_Lượng_Khách,
---     ngay_lam_hop_dong AS Ngày_Làm_Hợp_Đồng
--- FROM
---     hop_dong
--- WHERE
---     YEAR(ngay_lam_hop_dong) = 2019 
--- GROUP BY Tháng
--- ORDER BY Tháng;
+SELECT 
+    MONTH(ngay_lam_hop_dong) AS Tháng,
+    COUNT(MONTH(ngay_lam_hop_dong)) AS Số_Lượng_Khách,
+    ngay_lam_hop_dong AS Ngày_Làm_Hợp_Đồng
+FROM
+    hop_dong
+WHERE
+    YEAR(ngay_lam_hop_dong) = 2019 
+GROUP BY Tháng
+ORDER BY Tháng;
 -- Task 9:Tham khảo
--- drop table if exists Temp;
--- create temporary table Temp
--- select 1 as Month
--- union
--- select 2 as Month
--- union
--- select 3 as Month
--- union
--- select 4 as Month
--- union
--- select 5 as Month
--- union
--- select 6 as Month
--- union
--- select 7 as Month
--- union
--- select 8 as Month
--- union
--- select 9 as Month
--- union
--- select 10 as Month
--- union
--- select 11 as Month
--- union
--- select 12 as Month;
--- Select Month, count(month(ngay_lam_hop_dong)) as Số_lần_đặt
--- From Temp
--- Left join hop_dong on month(ngay_lam_hop_dong) = Month
--- and year(ngay_lam_hop_dong) = 2019
--- group by Month
--- order by Month;
+drop table if exists Temp;
+create temporary table Temp
+select 1 as Month
+union
+select 2 as Month
+union
+select 3 as Month
+union
+select 4 as Month
+union
+select 5 as Month
+union
+select 6 as Month
+union
+select 7 as Month
+union
+select 8 as Month
+union
+select 9 as Month
+union
+select 10 as Month
+union
+select 11 as Month
+union
+select 12 as Month;
+Select Month, count(month(ngay_lam_hop_dong)) as Số_lần_đặt
+From Temp
+Left join hop_dong on month(ngay_lam_hop_dong) = Month
+and year(ngay_lam_hop_dong) = 2019
+group by Month
+order by Month;
 
 -- Task 10:Lệnh truy xuất
 -- Cách 1:
--- SELECT 
---     hop_dong.id_hop_dong,
---     ngay_lam_hop_dong,
---     ngay_ket_thuc,
---     tien_dat_coc,
---     COUNT(hop_dong_chi_tiet.id_dich_vu_di_kem) AS Số_lượng_dịch_vụ_đi_kèm
--- FROM
---     hop_dong
---         JOIN
---     hop_dong_chi_tiet ON hop_dong.id_hop_dong = hop_dong_chi_tiet.id_hop_dong
--- GROUP BY hop_dong.id_hop_dong; 
+SELECT 
+    hop_dong.id_hop_dong,
+    ngay_lam_hop_dong,
+    ngay_ket_thuc,
+    tien_dat_coc,
+    COUNT(hop_dong_chi_tiet.id_dich_vu_di_kem) AS Số_lượng_dịch_vụ_đi_kèm
+FROM
+    hop_dong
+        JOIN
+    hop_dong_chi_tiet ON hop_dong.id_hop_dong = hop_dong_chi_tiet.id_hop_dong
+GROUP BY hop_dong.id_hop_dong; 
 -- Cách 2:
--- SELECT 
---     hop_dong.id_hop_dong,
---     ngay_lam_hop_dong,
---     ngay_ket_thuc,
---     tien_dat_coc,
---     COUNT(hop_dong_chi_tiet.id_dich_vu_di_kem) AS Số_lượng_dịch_vụ_đi_kèm
--- FROM
---     hop_dong,
---     hop_dong_chi_tiet
--- WHERE
---     hop_dong.id_hop_dong = hop_dong_chi_tiet.id_hop_dong
--- GROUP BY hop_dong.id_hop_dong; 
+SELECT 
+    hop_dong.id_hop_dong,
+    ngay_lam_hop_dong,
+    ngay_ket_thuc,
+    tien_dat_coc,
+    COUNT(hop_dong_chi_tiet.id_dich_vu_di_kem) AS Số_lượng_dịch_vụ_đi_kèm
+FROM
+    hop_dong,
+    hop_dong_chi_tiet
+WHERE
+    hop_dong.id_hop_dong = hop_dong_chi_tiet.id_hop_dong
+GROUP BY hop_dong.id_hop_dong; 
 -- Task 11:
 -- Cách 1:
--- SELECT 
---     *
--- FROM
---     dich_vu_di_kem
--- WHERE
---     id_dich_vu_di_kem IN (SELECT 
---             id_dich_vu_di_kem
---         FROM
---             hop_dong_chi_tiet
---         WHERE
---             id_hop_dong IN (SELECT 
---                     id_hop_dong
---                 FROM
---                     hop_dong
---                 WHERE
---                     id_khach_hang IN (SELECT 
---                             id_khach_hang
---                         FROM
---                             khach_hang,
---                             loai_khach
---                         WHERE
---                             loai_khach.id_loai_khach = khach_hang.id_khach_hang
---                                 AND (khach_hang.dia_chi = 'Quảng Ngãi'
---                                 OR khach_hang.dia_chi = 'Vinh')
---                                 AND ten_loai_khach = 'Diamond')));
+SELECT 
+    *
+FROM
+    dich_vu_di_kem
+WHERE
+    id_dich_vu_di_kem IN (SELECT 
+            id_dich_vu_di_kem
+        FROM
+            hop_dong_chi_tiet
+        WHERE
+            id_hop_dong IN (SELECT 
+                    id_hop_dong
+                FROM
+                    hop_dong
+                WHERE
+                    id_khach_hang IN (SELECT 
+                            id_khach_hang
+                        FROM
+                            khach_hang,
+                            loai_khach
+                        WHERE
+                            loai_khach.id_loai_khach = khach_hang.id_khach_hang
+                                AND (khach_hang.dia_chi = 'Quảng Ngãi'
+                                OR khach_hang.dia_chi = 'Vinh')
+                                AND ten_loai_khach = 'Diamond')));
 -- Cách 2:
--- SELECT 
---     *
--- FROM
---     (((dich_vu_di_kem
---     JOIN hop_dong_chi_tiet ON dich_vu_di_kem.id_dich_vu_di_kem = hop_dong_chi_tiet.id_dich_vu_di_kem)
---     JOIN hop_dong ON hop_dong.id_hop_dong = hop_dong_chi_tiet.id_hop_dong)
---     JOIN khach_hang ON khach_hang.id_khach_hang = hop_dong.id_khach_hang)
---         JOIN
---     loai_khach ON loai_khach.id_loai_khach = khach_hang.id_loai_khach
---         AND (khach_hang.dia_chi = 'Quảng Ngãi'
---         OR khach_hang.dia_chi = 'Vinh')
---         AND ten_loai_khach = 'Diamond'; 
+SELECT 
+    *
+FROM
+    (((dich_vu_di_kem
+    JOIN hop_dong_chi_tiet ON dich_vu_di_kem.id_dich_vu_di_kem = hop_dong_chi_tiet.id_dich_vu_di_kem)
+    JOIN hop_dong ON hop_dong.id_hop_dong = hop_dong_chi_tiet.id_hop_dong)
+    JOIN khach_hang ON khach_hang.id_khach_hang = hop_dong.id_khach_hang)
+        JOIN
+    loai_khach ON loai_khach.id_loai_khach = khach_hang.id_loai_khach
+        AND (khach_hang.dia_chi = 'Quảng Ngãi'
+        OR khach_hang.dia_chi = 'Vinh')
+        AND ten_loai_khach = 'Diamond'; 
 -- Task 12:
--- SELECT 
---     hop_dong.id_hop_dong,
---     nhan_vien.ho_ten,
---     khach_hang.ho_ten,
---     khach_hang.sdt,
---     dich_vu.ten_dich_vu,
---     COUNT(id_hop_dong_chi_tiet) AS Số_Lượng_Dịch_Vụ_Đi_Kèm,
---     hop_dong.ngay_lam_hop_dong
--- FROM
---     (((hop_dong
---     JOIN dich_vu ON hop_dong.id_dich_vu = dich_vu.id_dich_vu)
---     JOIN hop_dong_chi_tiet ON hop_dong.id_hop_dong = hop_dong_chi_tiet.id_hop_dong)
---     JOIN nhan_vien ON hop_dong.id_nhan_vien = nhan_vien.id_nhan_vien)
---         JOIN
---     khach_hang ON khach_hang.id_khach_hang = hop_dong.id_khach_hang
--- WHERE
---     EXISTS( SELECT 
---             khach_hang.ho_ten
---         FROM
---             khach_hang
---         WHERE
---             ngay_lam_hop_dong BETWEEN '2019-9-1' AND '2019-12-31')
---         AND NOT EXISTS( SELECT 
---             khach_hang.ho_ten
---         FROM
---             khach_hang
---         WHERE
---             ngay_lam_hop_dong BETWEEN '2019-1-1' AND '2019-6-31')
--- GROUP BY khach_hang.ho_ten;
+SELECT 
+    hop_dong.id_hop_dong,
+    nhan_vien.ho_ten,
+    khach_hang.ho_ten,
+    khach_hang.sdt,
+    dich_vu.ten_dich_vu,
+    COUNT(id_hop_dong_chi_tiet) AS Số_Lượng_Dịch_Vụ_Đi_Kèm,
+    hop_dong.ngay_lam_hop_dong
+FROM
+    (((hop_dong
+    JOIN dich_vu ON hop_dong.id_dich_vu = dich_vu.id_dich_vu)
+    JOIN hop_dong_chi_tiet ON hop_dong.id_hop_dong = hop_dong_chi_tiet.id_hop_dong)
+    JOIN nhan_vien ON hop_dong.id_nhan_vien = nhan_vien.id_nhan_vien)
+        JOIN
+    khach_hang ON khach_hang.id_khach_hang = hop_dong.id_khach_hang
+WHERE
+    EXISTS( SELECT 
+            khach_hang.ho_ten
+        FROM
+            khach_hang
+        WHERE
+            ngay_lam_hop_dong BETWEEN '2019-9-1' AND '2019-12-31')
+        AND NOT EXISTS( SELECT 
+            khach_hang.ho_ten
+        FROM
+            khach_hang
+        WHERE
+            ngay_lam_hop_dong BETWEEN '2019-1-1' AND '2019-6-31')
+GROUP BY khach_hang.ho_ten;
 -- Task 13:
--- SELECT 
---     *, COUNT(dich_vu_di_kem.id_dich_vu_di_kem) AS Số_lần_đặt
--- FROM
---     ((dich_vu_di_kem
---     JOIN hop_dong_chi_tiet ON dich_vu_di_kem.id_dich_vu_di_kem = hop_dong_chi_tiet.id_dich_vu_di_kem)
---     JOIN hop_dong ON hop_dong_chi_tiet.id_hop_dong = hop_dong.id_hop_dong)
---         JOIN
---     khach_hang ON khach_hang.id_khach_hang = hop_dong.id_khach_hang
--- GROUP BY dich_vu_di_kem.id_dich_vu_di_kem
--- ORDER BY COUNT(dich_vu_di_kem.id_dich_vu_di_kem) DESC
--- LIMIT 1;
+SELECT 
+    *, COUNT(dich_vu_di_kem.id_dich_vu_di_kem) AS Số_lần_đặt
+FROM
+    ((dich_vu_di_kem
+    JOIN hop_dong_chi_tiet ON dich_vu_di_kem.id_dich_vu_di_kem = hop_dong_chi_tiet.id_dich_vu_di_kem)
+    JOIN hop_dong ON hop_dong_chi_tiet.id_hop_dong = hop_dong.id_hop_dong)
+        JOIN
+    khach_hang ON khach_hang.id_khach_hang = hop_dong.id_khach_hang
+GROUP BY dich_vu_di_kem.id_dich_vu_di_kem
+ORDER BY COUNT(dich_vu_di_kem.id_dich_vu_di_kem) DESC
+LIMIT 1;
 -- Task 14:
--- SELECT 
---     *
--- FROM
---     ((dich_vu_di_kem
---     JOIN hop_dong_chi_tiet ON dich_vu_di_kem.id_dich_vu_di_kem = hop_dong_chi_tiet.id_dich_vu_di_kem)
---     JOIN hop_dong ON hop_dong_chi_tiet.id_hop_dong = hop_dong.id_hop_dong)
---         JOIN
---     khach_hang ON khach_hang.id_khach_hang = hop_dong.id_khach_hang
--- WHERE
---     dich_vu_di_kem.id_dich_vu_di_kem IN (SELECT 
---             id_dich_vu_di_kem
---         FROM
---             hop_dong_chi_tiet
---         GROUP BY id_dich_vu_di_kem
---         HAVING COUNT(id_dich_vu_di_kem) = 1);
+SELECT 
+    *
+FROM
+    ((dich_vu_di_kem
+    JOIN hop_dong_chi_tiet ON dich_vu_di_kem.id_dich_vu_di_kem = hop_dong_chi_tiet.id_dich_vu_di_kem)
+    JOIN hop_dong ON hop_dong_chi_tiet.id_hop_dong = hop_dong.id_hop_dong)
+        JOIN
+    khach_hang ON khach_hang.id_khach_hang = hop_dong.id_khach_hang
+WHERE
+    dich_vu_di_kem.id_dich_vu_di_kem IN (SELECT 
+            id_dich_vu_di_kem
+        FROM
+            hop_dong_chi_tiet
+        GROUP BY id_dich_vu_di_kem
+        HAVING COUNT(id_dich_vu_di_kem) = 1);
 -- Task 15:
--- SELECT 
---     nhan_vien.id_nhan_vien,
---     nhan_vien.ho_ten,
---     trinh_do.trinh_do,
---     bo_phan.ten_bo_phan,
---     nhan_vien.sdt,
---     nhan_vien.dia_chi,
---     id_hop_dong,
---     hop_dong.ngay_lam_hop_dong,
---     COUNT(id_hop_dong)
--- FROM
---     ((nhan_vien
---     JOIN bo_phan ON nhan_vien.id_bo_phan = bo_phan.id_bo_phan)
---     JOIN hop_dong ON nhan_vien.id_nhan_vien = hop_dong.id_nhan_vien)
---         JOIN
---     trinh_do ON nhan_vien.id_trinh_do = trinh_do.id_trinh_do
--- WHERE
---     YEAR(ngay_lam_hop_dong) BETWEEN 2018 AND 2019
--- GROUP BY ho_ten
--- HAVING COUNT(id_hop_dong) <= 3;
+SELECT 
+    nhan_vien.id_nhan_vien,
+    nhan_vien.ho_ten,
+    trinh_do.trinh_do,
+    bo_phan.ten_bo_phan,
+    nhan_vien.sdt,
+    nhan_vien.dia_chi,
+    id_hop_dong,
+    hop_dong.ngay_lam_hop_dong,
+    COUNT(id_hop_dong)
+FROM
+    ((nhan_vien
+    JOIN bo_phan ON nhan_vien.id_bo_phan = bo_phan.id_bo_phan)
+    JOIN hop_dong ON nhan_vien.id_nhan_vien = hop_dong.id_nhan_vien)
+        JOIN
+    trinh_do ON nhan_vien.id_trinh_do = trinh_do.id_trinh_do
+WHERE
+    YEAR(ngay_lam_hop_dong) BETWEEN 2018 AND 2019
+GROUP BY ho_ten
+HAVING COUNT(id_hop_dong) <= 3;
 -- Task 16:
--- SET SQL_SAFE_UPDATES=0;
--- DELETE FROM nhan_vien 
--- WHERE
---     id_nhan_vien NOT IN (SELECT 
---         id_nhan_vien
---     FROM
---         hop_dong
---     WHERE
---         YEAR(ngay_lam_hop_dong) BETWEEN 2017 AND 2019);
+SET SQL_SAFE_UPDATES=0;
+DELETE FROM nhan_vien 
+WHERE
+    id_nhan_vien NOT IN (SELECT 
+        id_nhan_vien
+    FROM
+        hop_dong
+    WHERE
+        YEAR(ngay_lam_hop_dong) BETWEEN 2017 AND 2019);
 -- Kiểm tra nhân viên trước và sau khi xóa
--- select * from nhan_vien;
+select * from nhan_vien;
 -- Task 17:
 select * from khach_hang join loai_khach on khach_hang.id_loai_khach=loai_khach.id_loai_khach;
 update loai_khach set ten_loai_khach='Diamond' where ten_loai_khach='Platinium' 
