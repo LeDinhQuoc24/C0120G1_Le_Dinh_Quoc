@@ -121,7 +121,7 @@ value ("HSuzumiya Kotone",85,60,90,"1992-06-27","Java01"," 157","XVSR-491","koto
 
 -- Task 3:
 -- Tạo thông tin cho bảng loại khách mà khóa ngoại của bảng khách hàng tham chiếu đến,sau đó tạo bảng khách hàng
-insert into loai_khach(tenLoaiKhach) value ('Diamond'),('Silver'),('Gold'),('Diamond'),('Iron'),('Wood');
+insert into loai_khach(tenLoaiKhach) value ('Platinium'),('Silver'),('Gold'),('Diamond'),('Iron'),('Wood');
 insert into khach_hang(idLoaiKhach,hoTen,ngaySinh,soCMTND,sDT,email,diaChi) value
 (1,'Nguyễn Anh Đức','1965-01-01','205001','0905001','naduc@gmail.com','Quảng Trị'),
 (2,'Nguyễn Đức Thông','2000-02-02','205002','0905002','ndthong@gmail.com','Đà Nẵng'),
@@ -453,9 +453,16 @@ insert into hop_dong_chi_tiet(idHopDong,idDichVuDiKem,soLuong) value
 -- GROUP BY hoTen
 -- HAVING COUNT(idHopDong) <= 3;
 -- Task 16:
--- SET SQL_SAFE_UPDATES=0;  
--- delete from nhan_vien where idNhanVien not in (select idNhanVien from hop_dong 
--- where year(ngayLamHopDong) between 2017 and 2019);
+-- SET SQL_SAFE_UPDATES=0;
+-- DELETE FROM nhan_vien 
+-- WHERE
+--     idNhanVien NOT IN (SELECT 
+--         idNhanVien
+--     FROM
+--         hop_dong
+--     
+--     WHERE
+--         YEAR(ngayLamHopDong) BETWEEN 2017 AND 2019);
 -- Kiểm tra nhân viên trước và sau khi xóa
 -- select * from nhan_vien;
 -- Task 17:
