@@ -149,9 +149,13 @@ insert into dich_vu(tenDichVu,dienTich,soTang,soNguoiToiDa,chiPhiThue,idKieuThue
 -- Tạo thông tin tại bảng hợp đồng,sau đó từ bảng khách hàng join đến để hiển thị thông tin khách đặt phòng
 insert into hop_dong(idNhanVien,idKhachHang,idDichVu,ngayLamHopDong,ngayKetThuc,tienDatCoc,tongTien) value
 (5,1,3,'2019-03-01','2019-12-28',10,200),
-(4,4,1,'2019-10-07','2019-11-04',50,1000),
+(5,4,1,'2019-10-07','2019-11-04',50,1000),
 (2,1,2,'2019-12-24','2019-12-25',18,420),
-(3,3,2,'2019-011-02','2019-12-27',100,900);
+(3,3,2,'2019-011-02','2019-12-27',100,900),
+(5,1,3,'2019-03-01','2019-12-28',10,200),
+(5,4,1,'2019-10-07','2019-11-04',50,1000),
+(2,1,2,'2020-12-24','2020-12-25',18,420),
+(3,3,2,'2020-011-02','2020-12-27',100,900);
 -- Lệnh hiển thị tất cả thông tin nối các bảng hợp đồng,khách hàng, loại khách
 -- SELECT 
 --     *
@@ -398,21 +402,67 @@ insert into hop_dong_chi_tiet(idHopDong,idDichVuDiKem,soLuong) value
 --         WHERE
 --             ngayLamHopDong BETWEEN '2019-1-1' AND '2019-6-31')
 -- GROUP BY khach_hang.hoTen;
--- Task 13
--- select *,count(dich_vu_di_kem.idDichVuDiKem) as Số_lần_đặt from ((dich_vu_di_kem 
--- join hop_dong_chi_tiet on dich_vu_di_kem.idDichVuDiKem=hop_dong_chi_tiet.idDichVuDiKem)
--- join hop_dong on hop_dong_chi_tiet.idHopDong=hop_dong.idHopDong)
--- join khach_hang on khach_hang.idKhachHang=hop_dong.idKhachHang 
--- group by dich_vu_di_kem.idDichVuDiKem
--- order by count(dich_vu_di_kem.idDichVuDiKem)  desc limit 1;
--- Task 14
--- select * from ((dich_vu_di_kem 
--- join hop_dong_chi_tiet on dich_vu_di_kem.idDichVuDiKem=hop_dong_chi_tiet.idDichVuDiKem)
--- join hop_dong on hop_dong_chi_tiet.idHopDong=hop_dong.idHopDong)
--- join khach_hang on khach_hang.idKhachHang=hop_dong.idKhachHang 
--- where dich_vu_di_kem.idDichVuDiKem in (select idDichVuDiKem from hop_dong_chi_tiet 
--- group by idDichVuDiKem having count(idDichVuDiKem)=1)
+-- Task 13:
+-- SELECT 
+--     *, COUNT(dich_vu_di_kem.idDichVuDiKem) AS Số_lần_đặt
+-- FROM
+--     ((dich_vu_di_kem
+--     JOIN hop_dong_chi_tiet ON dich_vu_di_kem.idDichVuDiKem = hop_dong_chi_tiet.idDichVuDiKem)
+--     JOIN hop_dong ON hop_dong_chi_tiet.idHopDong = hop_dong.idHopDong)
+--         JOIN
+--     khach_hang ON khach_hang.idKhachHang = hop_dong.idKhachHang
+-- GROUP BY dich_vu_di_kem.idDichVuDiKem
+-- ORDER BY COUNT(dich_vu_di_kem.idDichVuDiKem) DESC
+-- LIMIT 1;
+-- Task 14:
+-- SELECT 
+--     *
+-- FROM
+--     ((dich_vu_di_kem
+--     JOIN hop_dong_chi_tiet ON dich_vu_di_kem.idDichVuDiKem = hop_dong_chi_tiet.idDichVuDiKem)
+--     JOIN hop_dong ON hop_dong_chi_tiet.idHopDong = hop_dong.idHopDong)
+--         JOIN
+--     khach_hang ON khach_hang.idKhachHang = hop_dong.idKhachHang
+-- WHERE
+--     dich_vu_di_kem.idDichVuDiKem IN (SELECT 
+--             idDichVuDiKem
+--         FROM
+--             hop_dong_chi_tiet
+--         GROUP BY idDichVuDiKem
+--         HAVING COUNT(idDichVuDiKem) = 1)
 -- ;
+-- Task 15:
+-- SELECT 
+--     nhan_vien.idNhanVien,
+--     nhan_vien.hoTen,
+--     trinh_do.trinhDo,
+--     bo_phan.tenBoPhan,
+--     nhan_vien.sDT,
+--     nhan_vien.diaChi,
+--     idHopDong,
+--     hop_dong.ngayLamHopDong,
+--     COUNT(idHopDong)
+-- FROM
+--     ((nhan_vien
+--     JOIN bo_phan ON nhan_vien.idBoPhan = bo_phan.idBoPhan)
+--     JOIN hop_dong ON nhan_vien.idNhanVien = hop_dong.idNhanVien)
+--         JOIN
+--     trinh_do ON nhan_vien.idTrinhDo = trinh_do.idTrinhDo
+-- WHERE
+--     YEAR(ngayLamHopDong) BETWEEN 2018 AND 2019
+-- GROUP BY hoTen
+-- HAVING COUNT(idHopDong) <= 3;
+-- Task 16:
+-- SET SQL_SAFE_UPDATES=0;  
+-- delete from nhan_vien where idNhanVien not in (select idNhanVien from hop_dong 
+-- where year(ngayLamHopDong) between 2017 and 2019);
+-- Kiểm tra nhân viên trước và sau khi xóa
+-- select * from nhan_vien;
+-- Task 17:
+
+
+ 
+
 
 
 
