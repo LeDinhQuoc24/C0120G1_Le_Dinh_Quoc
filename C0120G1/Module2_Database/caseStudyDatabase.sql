@@ -128,7 +128,8 @@ insert into khach_hang(id_loai_khach,ho_ten,ngay_sinh,so_cmtnd,sdt,email,dia_chi
 (4,'Võ Minh Hùng','1998-04-04','205004','0905004','vmhung@gmail.com','Quảng Ngãi'),
 (5,'Nguyễn Đình Hòa','2002-05-05','205005','0905005','ndhoa@gmail.com','Quảng Trị'),
 (1,'Trần Ngọc Tân','1969-06-06','205006','0905006','tntan@gmail.com','Đà Nẵng'),
-(4,'Nguyễn Anh Đức','1986-09-09','205007','0905007','anhduc@gmail.com','Vinh');
+(4,'Nguyễn Anh Đức','1986-09-09','205007','0905007','anhduc@gmail.com','Vinh'),
+(4,'Văn Nhân Lam','1970-02-02','205008','0905008','vnnhnlm@gmail.com','Vinh');
 -- Task 3:Lệnh truy xuất
 SELECT 
     *
@@ -161,7 +162,8 @@ insert into hop_dong(id_nhan_vien,id_khach_hang,id_dich_vu,ngay_lam_hop_dong,nga
 (5,1,1,'2019-03-01','2019-12-28',10,200),
 (5,4,1,'2019-10-07','2019-11-04',50,1000),
 (2,6,2,'2019-12-24','2019-12-25',18,2020),
-(3,3,3,'2018-011-02','2020-12-27',100,900);
+(3,3,3,'2018-011-02','2020-12-27',100,900),
+(3,8,1,'2015-011-02','2015-12-27',300,800);
 -- Lệnh hiển thị tất cả thông tin nối các bảng hợp đồng,khách hàng, loại khách
 SELECT 
     *
@@ -498,8 +500,60 @@ select * from nhan_vien;
 --         JOIN
 --     hop_dong ON khach_hang.id_khach_hang = hop_dong.id_khach_hang
 -- GROUP BY id_khach_hang,Year(ngay_lam_hop_dong);
--- Task 18
-
+-- Task 18(Chưa hoàn thành)
+-- Không xóa được khách hàng có năm làm hợp đồng <2016
+-- ALTER TABLE `furama_resort_le_dinh_quoc`.`khach_hang` 
+-- DROP FOREIGN KEY `khach_hang_ibfk_1`;
+-- ALTER TABLE `furama_resort_le_dinh_quoc`.`khach_hang` 
+-- ADD CONSTRAINT `khach_hang_ibfk_1`
+--   FOREIGN KEY (`id_loai_khach`)
+--   REFERENCES `furama_resort_le_dinh_quoc`.`loai_khach` (`id_loai_khach`);
+--   delete from khach_hang where id_khach_hang in (select id_khach_hang from hop_dong
+-- where  year(ngay_lam_hop_dong)<2016);
+  -- Kiểm tra danh sách khách hàng trước và sau khi xóa
+SELECT 
+    khach_hang.ho_ten,
+    YEAR(hop_dong.ngay_lam_hop_dong) AS Năm_làm_hợp_đồng
+FROM
+    khach_hang
+        JOIN
+    hop_dong ON khach_hang.id_khach_hang = hop_dong.id_khach_hang;
+-- Task 19
+-- Kiểm tra trước và sau khi update
+SELECT 
+    dich_vu_di_kem.ten_dich_vu_di_kem,
+    dich_vu_di_kem.gia,
+    hop_dong.ngay_lam_hop_dong,
+    dich_vu_di_kem.id_dich_vu_di_kem
+FROM
+    (dich_vu_di_kem
+    JOIN hop_dong_chi_tiet ON dich_vu_di_kem.id_dich_vu_di_kem = hop_dong_chi_tiet.id_dich_vu_di_kem)
+        JOIN
+    hop_dong ON hop_dong_chi_tiet.id_hop_dong = hop_dong.id_hop_dong;
+    -- Xài lệnh update ở bên dưới
+-- UPDATE dich_vu_di_kem 
+-- SET 
+--     gia = gia * 2
+-- WHERE
+--     id_dich_vu_di_kem IN (SELECT 
+--             id_dich_vu_di_kem
+--         FROM
+--             hop_dong_chi_tiet
+--                 JOIN
+--             hop_dong ON hop_dong_chi_tiet.id_hop_dong = hop_dong.id_hop_dong
+--         WHERE
+--             YEAR(ngay_lam_hop_dong) = 2019
+--         GROUP BY id_dich_vu_di_kem
+--         HAVING COUNT(ten_dich_vu_di_kem) > 1);
+-- Task 20
+SELECT 
+    id_nhan_vien AS ID, ho_ten, email, sdt, ngay_sinh, dia_chi
+FROM
+    nhan_vien 
+UNION ALL SELECT 
+    id_khach_hang AS ID, ho_ten, email, sdt, ngay_sinh, dia_chi
+FROM
+    khach_hang
 
 
  
