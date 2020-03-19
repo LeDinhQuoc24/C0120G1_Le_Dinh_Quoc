@@ -540,7 +540,9 @@ select * from nhan_vien;
 -- ALTER TABLE `furama_resort_le_dinh_quoc`.`khach_hang` 
 -- ADD CONSTRAINT `khach_hang_ibfk_1`
 --   FOREIGN KEY (`id_loai_khach`)
---   REFERENCES `furama_resort_le_dinh_quoc`.`loai_khach` (`id_loai_khach`);
+--   REFERENCES `furama_resort_le_dinh_quoc`.`loai_khach` (`id_loai_khach`)
+--   ON DELETE CASCADE
+--   ON UPDATE CASCADE;
 --   delete from khach_hang where id_khach_hang in (select id_khach_hang 
 --   from hop_dong where  year(ngay_lam_hop_dong)<2016);
   -- Kiểm tra danh sách khách hàng trước và sau khi xóa
