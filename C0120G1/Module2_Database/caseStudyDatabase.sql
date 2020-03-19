@@ -127,7 +127,7 @@ insert into khach_hang(id_loai_khach,ho_ten,ngay_sinh,so_cmtnd,sdt,email,dia_chi
 (3,'Phạm Minh Hưng','2006-03-03','205003','0905003','pmhung@gmail.com','Đà Nẵng'),
 (4,'Võ Minh Hùng','1998-04-04','205004','0905004','vmhung@gmail.com','Quảng Ngãi'),
 (5,'Nguyễn Đình Hòa','2002-05-05','205005','0905005','ndhoa@gmail.com','Quảng Trị'),
-(4,'Trần Ngọc Tân','1969-06-06','205006','0905006','tntan@gmail.com','Đà Nẵng'),
+(1,'Trần Ngọc Tân','1969-06-06','205006','0905006','tntan@gmail.com','Đà Nẵng'),
 (4,'Nguyễn Anh Đức','1986-09-09','205007','0905007','anhduc@gmail.com','Vinh');
 -- Task 3:Lệnh truy xuất
 SELECT 
@@ -155,12 +155,12 @@ insert into dich_vu(ten_dich_vu,dien_tich,so_tang,so_nguoi_toi_da,chi_phi_thue,i
 -- Tạo thông tin tại bảng hợp đồng,sau đó từ bảng khách hàng join đến để hiển thị thông tin khách đặt phòng
 insert into hop_dong(id_nhan_vien,id_khach_hang,id_dich_vu,ngay_lam_hop_dong,ngay_ket_thuc,tien_dat_coc,tong_tien) value
 (5,1,1,'2019-03-01','2019-12-28',10,200),
-(5,4,1,'2019-10-07','2019-11-04',50,1000),
-(2,1,2,'2018-12-24','2019-12-25',18,420),
-(3,2,2,'2018-011-02','2019-12-27',100,900),
+(5,4,1,'2019-10-07','2019-11-04',50,1200),
+(2,1,2,'2018-12-24','2019-12-25',18,820),
+(3,2,2,'2018-011-02','2019-12-27',100,1200),
 (5,1,1,'2019-03-01','2019-12-28',10,200),
 (5,4,1,'2019-10-07','2019-11-04',50,1000),
-(2,6,2,'2020-12-24','2020-12-25',18,420),
+(2,6,2,'2019-12-24','2019-12-25',18,2020),
 (3,3,3,'2018-011-02','2020-12-27',100,900);
 -- Lệnh hiển thị tất cả thông tin nối các bảng hợp đồng,khách hàng, loại khách
 SELECT 
@@ -469,9 +469,37 @@ WHERE
 -- Kiểm tra nhân viên trước và sau khi xóa
 select * from nhan_vien;
 -- Task 17:
--- select * from khach_hang join loai_khach on khach_hang.id_loai_khach=loai_khach.id_loai_khach;
--- update loai_khach set ten_loai_khach='Diamond' where ten_loai_khach='Platinium' 
--- and id_dich_vu_di_kem
+-- Lệnh update comment 473-485,comment lại để dễ kiểm tra
+-- UPDATE khach_hang 
+-- SET 
+--     id_loai_khach = 4
+-- WHERE
+--     id_loai_khach = 1
+--         AND id_khach_hang IN (SELECT 
+--             id_khach_hang
+--         FROM
+--             hop_dong
+--         WHERE
+--             YEAR(ngay_lam_hop_dong) = 2019
+--         GROUP BY hop_dong.id_khach_hang
+--         HAVING SUM(tong_tien) > 1200);
+-- Kiểm tra thông tin khách hàng trước và khi update
+-- Trần Ngọc Tân set từ Platium->Diamond
+-- SELECT 
+--     khach_hang.id_khach_hang,
+--     khach_hang.ho_ten,
+--     khach_hang.ngay_sinh,
+--     sum(tong_tien),
+--     loai_khach.ten_loai_khach,
+--     year(hop_dong.ngay_lam_hop_dong) as Năm_làm_hợp_đồng
+-- FROM
+--     (khach_hang
+--     JOIN loai_khach ON khach_hang.id_loai_khach = loai_khach.id_loai_khach)
+--         JOIN
+--     hop_dong ON khach_hang.id_khach_hang = hop_dong.id_khach_hang
+-- GROUP BY id_khach_hang,Year(ngay_lam_hop_dong);
+-- Task 18
+
 
 
  
