@@ -26,9 +26,9 @@ luong varchar(45) not null,
 sdt varchar(45) not null,
 email varchar(45) not null,
 dia_chi varchar(45) not null,
-foreign key (id_vi_tri) references vi_tri(id_vi_tri),
-foreign key (id_trinh_do) references trinh_do(id_trinh_do),
-foreign key (id_bo_phan) references bo_phan(id_bo_phan)
+foreign key (id_vi_tri) references vi_tri(id_vi_tri) ON DELETE CASCADE,
+foreign key (id_trinh_do) references trinh_do(id_trinh_do) ON DELETE CASCADE,
+foreign key (id_bo_phan) references bo_phan(id_bo_phan) ON DELETE CASCADE
 );
 create table loai_dich_vu(
 id_loai_dich_vu int auto_increment primary key,
@@ -49,8 +49,8 @@ chi_phi_thue varchar(45) not null,
 id_kieu_thue int not null,
 id_loai_dich_vu int(45) not null,
 trang_thai varchar(45) not null,
-foreign key (id_kieu_thue) references kieu_thue(id_kieu_thue),
-foreign key (id_loai_dich_vu) references loai_dich_vu(id_loai_dich_vu)
+foreign key (id_kieu_thue) references kieu_thue(id_kieu_thue) ON DELETE CASCADE,
+foreign key (id_loai_dich_vu) references loai_dich_vu(id_loai_dich_vu) ON DELETE CASCADE
 );
 create table loai_khach(
 id_loai_khach int auto_increment primary key,
@@ -65,7 +65,7 @@ so_cmtnd varchar(45) not null,
 sdt varchar(45) not null,
 email varchar(45) not null,
 dia_chi varchar(45) not null,
-foreign key (id_loai_khach) references loai_khach(id_loai_khach)
+foreign key (id_loai_khach) references loai_khach(id_loai_khach) ON DELETE CASCADE
 );
 create table hop_dong(
 id_hop_dong int auto_increment primary key,
@@ -76,9 +76,9 @@ ngay_lam_hop_dong date not null,
 ngay_ket_thuc date not null,
 tien_dat_coc int not null,
 tong_tien int not null,
-foreign key (id_nhan_vien) references nhan_vien(id_nhan_vien),
-foreign key (id_khach_hang) references khach_hang(id_khach_hang),
-foreign key (id_dich_vu) references dich_vu(id_dich_vu)
+foreign key (id_nhan_vien) references nhan_vien(id_nhan_vien) ON DELETE CASCADE,
+foreign key (id_khach_hang) references khach_hang(id_khach_hang) ON DELETE CASCADE,
+foreign key (id_dich_vu) references dich_vu(id_dich_vu) ON DELETE CASCADE
 );
 create table dich_vu_di_kem(
 id_dich_vu_di_kem int auto_increment primary key,
@@ -93,9 +93,9 @@ CREATE TABLE hop_dong_chi_tiet (
     id_dich_vu_di_kem INT NOT NULL,
     so_luong INT NOT NULL,
     FOREIGN KEY (id_hop_dong)
-        REFERENCES hop_dong (id_hop_dong),
+        REFERENCES hop_dong (id_hop_dong) ON DELETE CASCADE,
     FOREIGN KEY (id_dich_vu_di_kem)
-        REFERENCES dich_vu_di_kem (id_dich_vu_di_kem)
+        REFERENCES dich_vu_di_kem (id_dich_vu_di_kem) ON DELETE CASCADE
 );
 -- Task 2:Hiển thị thông tin của tất cả nhân viên có trong hệ thống có tên bắt đầu 
 -- là một trong các ký tự “H”, “T” hoặc “K” và có tối đa 15 ký tự.
@@ -535,16 +535,16 @@ select * from nhan_vien;
 -- GROUP BY id_khach_hang,Year(ngay_lam_hop_dong);
 -- Task 18(Chưa hoàn thành)Xóa những khách hàng có hợp đồng trước năm 2016 (chú ý ràngbuộc giữa các bảng).
 -- Không xóa được khách hàng có năm làm hợp đồng <2016
--- ALTER TABLE `furama_resort_le_dinh_quoc`.`khach_hang` 
--- DROP FOREIGN KEY `khach_hang_ibfk_1`;
--- ALTER TABLE `furama_resort_le_dinh_quoc`.`khach_hang` 
--- ADD CONSTRAINT `khach_hang_ibfk_1`
---   FOREIGN KEY (`id_loai_khach`)
---   REFERENCES `furama_resort_le_dinh_quoc`.`loai_khach` (`id_loai_khach`)
---   ON DELETE CASCADE
---   ON UPDATE CASCADE;
---   delete from khach_hang where id_khach_hang in (select id_khach_hang 
---   from hop_dong where  year(ngay_lam_hop_dong)<2016);
+DELETE FROM khach_hang 
+WHERE
+    id_khach_hang IN (SELECT 
+        id_khach_hang
+    FROM
+        hop_dong
+    
+    WHERE
+        YEAR(ngay_lam_hop_dong) < 2016);
+  
   -- Kiểm tra danh sách khách hàng trước và sau khi xóa
 SELECT 
     khach_hang.ho_ten,
@@ -593,12 +593,6 @@ FROM
 
 
  
-
-
-
-
-
-
 
 
 
