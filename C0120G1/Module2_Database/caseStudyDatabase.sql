@@ -1,7 +1,7 @@
 drop database if exists furama_resort_le_dinh_quoc;
 create database furama_resort_le_dinh_quoc;
 use furama_resort_le_dinh_quoc;
--- Task 1:Tạo Bảng
+-- Task 1:Tạo Bảng---------------------------------------------
 create table vi_tri(
 id_vi_tri int primary key,
 ten_vi_tri varchar(45) not null
@@ -97,7 +97,8 @@ CREATE TABLE hop_dong_chi_tiet (
     FOREIGN KEY (id_dich_vu_di_kem)
         REFERENCES dich_vu_di_kem (id_dich_vu_di_kem)
 );
--- Task 2
+-- Task 2:Hiển thị thông tin của tất cả nhân viên có trong hệ thống có tên bắt đầu 
+-- là một trong các ký tự “H”, “T” hoặc “K” và có tối đa 15 ký tự.
 -- Tạo thông tin cho 3 thông tin bảng mà khóa ngoại của bảng nhân viên tham chiếu đến,sau đó tạo bảng nhân viên
 insert into vi_tri(id_vi_tri,ten_vi_tri) value (85,"XVSR497"),(90,"WANZ-468"),(91,"SSPD-130"),(93,"ABP-145"),(86,"LLR-008");
 insert into trinh_do(id_trinh_do,trinh_do) value (60,"HUNTA-316"),(56,"MIAD-758"),(58,"DV-1602"),(65,"ABP-171"),(61,"NTR-003");
@@ -108,7 +109,6 @@ value ("HSuzumiya Kotone",85,60,90,"1992-06-27","Java01"," 157","XVSR-491","koto
   ("Tsukasa Aoi",91,58,86,"1990-08-14","Java03","163","SNIS-519","tsukasa@gmail.com","Osaka"),
  ("Erika Momotani",93,65,94,"1994-06-15","Java04","165","ABP-159","erika@gmail.com","Tokyo"),
   ("KEmiri Suzuhara",86,61,88,"1994-04-20","Java05","161","HBAD-267","suzuhara@gmail.com","Japan");
-  
   -- Task 2:Lệnh truy xuất
 SELECT 
     *
@@ -118,7 +118,8 @@ WHERE
     (ho_ten LIKE 'H%' OR ho_ten LIKE 'T%'
         OR ho_ten LIKE 'K%')
         AND LENGTH(ho_ten) <= 40;
--- Task 3:
+-- Task 3:Hiển thị thông tin của tất cả khách hàng có độ tuổi từ 18 đến 50 tuổi và có địa chỉ ở 
+-- “Đà Nẵng” hoặc “Quảng Trị”.
 -- Tạo thông tin cho bảng loại khách mà khóa ngoại của bảng khách hàng tham chiếu đến,sau đó tạo bảng khách hàng
 insert into loai_khach(ten_loai_khach) value ('Platinium'),('Silver'),('Gold'),('Diamond'),('Iron'),('Wood');
 insert into khach_hang(id_loai_khach,ho_ten,ngay_sinh,so_cmtnd,sdt,email,dia_chi) value
@@ -130,7 +131,7 @@ insert into khach_hang(id_loai_khach,ho_ten,ngay_sinh,so_cmtnd,sdt,email,dia_chi
 (1,'Trần Ngọc Tân','1969-06-06','205006','0905006','tntan@gmail.com','Đà Nẵng'),
 (4,'Nguyễn Anh Đức','1986-09-09','205007','0905007','anhduc@gmail.com','Vinh'),
 (4,'Văn Nhân Lam','1970-02-02','205008','0905008','vnnhnlm@gmail.com','Vinh');
--- Task 3:Lệnh truy xuất
+-- Task 3:Lệnh truy xuất--------------------------------------------------------
 SELECT 
     *
 FROM
@@ -146,7 +147,9 @@ WHERE
 --  (YEAR(NOW()) - YEAR(ngay_sinh)) BETWEEN 18 AND 50
         AND (dia_chi = 'Quảng Trị'
         OR dia_chi = 'Đà Nẵng');
--- Task 4:
+-- Task 4:Đếm xem tương ứng với mỗi khách hàng đã từng đặt phòng bao nhiêu lần. Kết quả hiển thị được 
+-- sắp xếp tăng dần theo số lần đặt phòng của khách hàng. Chỉ đếm những khách hàng nào có Tên 
+-- loại khách hàng là “Diamond”.
 -- Tạo bảng loại dịch vụ,kiểu thuê mà khóa ngoại của bảng dịch vụ tham chiếu đến
 insert into loai_dich_vu(ten_loai_dich_vu) value ('massage'),('caj'),('cbj'),('chj');
 insert into kieu_thue(ten_kieu_thue,gia) value ('oneshot',30000),('longshot',200000),('a-z',1000000);	
@@ -172,7 +175,7 @@ FROM
     JOIN hop_dong ON khach_hang.id_khach_hang = hop_dong.id_khach_hang)
         JOIN
     loai_khach ON khach_hang.id_loai_khach = loai_khach.id_loai_khach;
--- Task 4: Lệnh truy xuất
+-- Task 4: Lệnh truy xuất---------------------------------------------------------
 SELECT 
     ho_ten,
     COUNT(hop_dong.id_khach_hang) AS Số_Lần_Đặt_Phòng
@@ -185,13 +188,16 @@ WHERE
     loai_khach.ten_loai_khach = 'Diamond'
 GROUP BY ho_ten
 ORDER BY Số_Lần_Đặt_Phòng;
--- Task 5:
+-- Task 5:Hiển thị IDKhachHang, HoTen, TenLoaiKhach, IDHopDong, TenDichVu, NgayLamHopDong, NgayKetThuc, 
+-- TongTien (Với TongTien được tính theo công thức như sau: ChiPhiThue + SoLuong*Gia, với SoLuong và 
+-- Giá là từ bảng DichVuDiKem) cho tất cả các Khách hàng đã từng đặt phỏng. (Những Khách hàng nào chưa 
+-- từng đặt phòng cũng phải hiển thị ra).
 -- Tạo thông tin bảng dịch vụ đi kèm, và bảng hợp đồng chi tiết
 insert into dich_vu_di_kem(ten_dich_vu_di_kem,gia,don_vi,trang_thai_kha_dung) value
 ('football',50,1,'empty'),('cinemar3D',200,10,'full'),('boilling',20,4,'half-full');
 insert into hop_dong_chi_tiet(id_hop_dong,id_dich_vu_di_kem,so_luong) value
 (4,2,1),(2,2,10),(2,1,5),(1,1,5),(8,3,3);
--- Task 5:Lệnh truy xuất
+-- Task 5:Lệnh truy xuất--------------------------------------------------------------------
 SELECT 
     khach_hang.id_khach_hang,
     khach_hang.ho_ten,
@@ -210,7 +216,8 @@ FROM
         LEFT JOIN
     dich_vu_di_kem ON hop_dong_chi_tiet.id_dich_vu_di_kem = dich_vu_di_kem.id_dich_vu_di_kem;
 
--- Task 6:Lệnh truy xuất
+-- Task 6:Hiển thị IDDichVu, TenDichVu, DienTich, ChiPhiThue, TenLoaiDichVu của tất cả các loại Dịch vụ 
+-- chưa từng được Khách hàng thực hiện đặt từ quý 1 của năm 2019 (Quý 1 là tháng 1, 2, 3).
 SELECT 
     dich_vu.id_dich_vu,
     dich_vu.ten_dich_vu,
@@ -231,7 +238,9 @@ WHERE
             (hop_dong.ngay_lam_hop_dong BETWEEN '2019-01-01' AND '2019-03-03')
                 AND hop_dong.id_dich_vu = dich_vu.id_dich_vu);
 
--- Task 7:Lệnh truy xuất
+-- Task 7:Hiển thị thông tin IDDichVu, TenDichVu, DienTich, SoNguoiToiDa, ChiPhiThue, TenLoaiDichVu của 
+-- tất cả các loại dịch vụ đã từng được Khách hàng đặt phòng trong năm 2018 nhưng chưa từng được Khách 
+-- hàng đặt phòng  trong năm 2019.
 SELECT 
     dich_vu.id_dich_vu,
     dich_vu.ten_dich_vu,
@@ -259,17 +268,31 @@ WHERE
             (hop_dong.ngay_lam_hop_dong BETWEEN '2019-01-01' AND '2019-12-31')
                 AND hop_dong.id_dich_vu = dich_vu.id_dich_vu);
 
--- Task 8:Lệnh truy xuất
+-- Task 8:Hiển thị thông tin HoTenKhachHang có trong hệ thống, với yêu cầu HoThenKhachHang không trùng nhau.
+-- Học viên sử dụng theo 3 cách khác nhau để thực hiện yêu cầu trên
+-- Cách 1: Dùng Distinct
 SELECT DISTINCT
     ho_Ten as Họ_Tên_Khách_Hàng
 FROM
     khach_hang;
+-- Cách 2: Nhóm lại dùng Group by
 SELECT 
     ho_ten as Họ_Tên_Khách_Hàng
 FROM
     khach_hang
 GROUP BY ho_ten;
--- Task 9:Lệnh truy xuất
+-- Cách 3: Dùng union
+SELECT 
+    ho_ten
+FROM
+    khach_hang
+UNION SELECT 
+    ho_ten
+FROM
+    khach_hang;
+-- Task 9:Thực hiện thống kê doanh thu theo tháng, nghĩa là tương ứng với mỗi tháng trong năm 2019
+-- thì sẽ có bao nhiêu khách hàng thực hiện đặt phòng.
+-- Chỉ hiện những tháng có khách đặt hợp đồng
 SELECT 
     MONTH(ngay_lam_hop_dong) AS Tháng,
     COUNT(MONTH(ngay_lam_hop_dong)) AS Số_Lượng_Khách,
@@ -280,7 +303,7 @@ WHERE
     YEAR(ngay_lam_hop_dong) = 2019 
 GROUP BY Tháng
 ORDER BY Tháng;
--- Task 9:Tham khảo
+-- Hiện cả những tháng không có khách đặt hợp đồng
 drop table if exists Temp;
 create temporary table Temp
 select 1 as Month
@@ -313,7 +336,9 @@ and year(ngay_lam_hop_dong) = 2019
 group by Month
 order by Month;
 
--- Task 10:Lệnh truy xuất
+-- Task 10:Hiển thị thông tin tương ứng với từng Hợp đồng thì đã sử dụng bao nhiêu Dịch vụ đi kèm. 
+-- Kết quả hiển thị bao gồm IDHopDong, NgayLamHopDong, NgayKetthuc, TienDatCoc, SoLuongDichVuDiKem 
+-- (được tính dựa trên việc count các IDHopDongChiTiet).
 -- Cách 1:
 SELECT 
     hop_dong.id_hop_dong,
@@ -339,7 +364,8 @@ FROM
 WHERE
     hop_dong.id_hop_dong = hop_dong_chi_tiet.id_hop_dong
 GROUP BY hop_dong.id_hop_dong; 
--- Task 11:
+-- Task 11:Hiển thị thông tin các Dịch vụ đi kèm đã được sử dụng bởi những Khách hàng có TenLoaiKhachHang
+-- là “Diamond” và có địa chỉ là “Vinh” hoặc “Quảng Ngãi”.
 -- Cách 1:
 SELECT 
     *
@@ -379,7 +405,10 @@ FROM
         AND (khach_hang.dia_chi = 'Quảng Ngãi'
         OR khach_hang.dia_chi = 'Vinh')
         AND ten_loai_khach = 'Diamond'; 
--- Task 12:
+-- Task 12:Hiển thị thông tin IDHopDong, TenNhanVien, TenKhachHang, SoDienThoaiKhachHang, TenDichVu, 
+-- SoLuongDichVuDikem (được tính dựa trên tổng Hợp đồng chi tiết), TienDatCoc của tất cả các dịch vụ
+-- đã từng được khách hàng đặt vào 3 tháng cuối năm 2019 nhưng chưa từng được khách hàng đặt vào 6 tháng 
+-- đầu năm 2019.
 SELECT 
     hop_dong.id_hop_dong,
     nhan_vien.ho_ten,
@@ -409,7 +438,8 @@ WHERE
         WHERE
             ngay_lam_hop_dong BETWEEN '2019-1-1' AND '2019-6-31')
 GROUP BY khach_hang.ho_ten;
--- Task 13:
+-- Task 13:Hiển thị thông tin các Dịch vụ đi kèm được sử dụng nhiều nhất bởi các Khách hàng đã đặt phòng.
+-- (Lưu ý là có thể có nhiều dịch vụ có số lần sử dụng nhiều như nhau).
 SELECT 
     *, COUNT(dich_vu_di_kem.id_dich_vu_di_kem) AS Số_lần_đặt
 FROM
@@ -421,7 +451,8 @@ FROM
 GROUP BY dich_vu_di_kem.id_dich_vu_di_kem
 ORDER BY COUNT(dich_vu_di_kem.id_dich_vu_di_kem) DESC
 LIMIT 1;
--- Task 14:
+-- Task 14:Hiển thị thông tin tất cả các Dịch vụ đi kèm chỉ mới được sử dụng một lần duy nhất.
+-- Thông tin hiển thị bao gồm IDHopDong, TenLoaiDichVu, TenDichVuDiKem, SoLanSuDung.
 SELECT 
     *
 FROM
@@ -437,7 +468,8 @@ WHERE
             hop_dong_chi_tiet
         GROUP BY id_dich_vu_di_kem
         HAVING COUNT(id_dich_vu_di_kem) = 1);
--- Task 15:
+-- Task 15:Hiển thi thông tin của tất cả nhân viên bao gồm IDNhanVien, HoTen, TrinhDo, TenBoPhan, 
+-- SoDienThoai, DiaChi mới chỉ lập được tối đa 3 hợp đồng từ năm 2018 đến 2019.
 SELECT 
     nhan_vien.id_nhan_vien,
     nhan_vien.ho_ten,
@@ -458,7 +490,7 @@ WHERE
     YEAR(ngay_lam_hop_dong) BETWEEN 2018 AND 2019
 GROUP BY ho_ten
 HAVING COUNT(id_hop_dong) <= 3;
--- Task 16:
+-- Task 16: Xóa những Nhân viên chưa từng lập được hợp đồng nào từ năm 2017 đến năm 2019.
 SET SQL_SAFE_UPDATES=0;
 DELETE FROM nhan_vien 
 WHERE
@@ -470,7 +502,8 @@ WHERE
         YEAR(ngay_lam_hop_dong) BETWEEN 2017 AND 2019);
 -- Kiểm tra nhân viên trước và sau khi xóa
 select * from nhan_vien;
--- Task 17:
+-- Task 17:Cập nhật thông tin những khách hàng có TenLoaiKhachHang từ  Platinium lên Diamond, chỉ cập nhật 
+-- những khách hàng đã từng đặt phòng với tổng Tiền thanh toán trong năm 2019 là lớn hơn 10.000.000 VNĐ.
 -- Lệnh update comment 473-485,comment lại để dễ kiểm tra
 -- UPDATE khach_hang 
 -- SET 
@@ -500,7 +533,7 @@ select * from nhan_vien;
 --         JOIN
 --     hop_dong ON khach_hang.id_khach_hang = hop_dong.id_khach_hang
 -- GROUP BY id_khach_hang,Year(ngay_lam_hop_dong);
--- Task 18(Chưa hoàn thành)
+-- Task 18(Chưa hoàn thành)Xóa những khách hàng có hợp đồng trước năm 2016 (chú ý ràngbuộc giữa các bảng).
 -- Không xóa được khách hàng có năm làm hợp đồng <2016
 -- ALTER TABLE `furama_resort_le_dinh_quoc`.`khach_hang` 
 -- DROP FOREIGN KEY `khach_hang_ibfk_1`;
@@ -508,8 +541,8 @@ select * from nhan_vien;
 -- ADD CONSTRAINT `khach_hang_ibfk_1`
 --   FOREIGN KEY (`id_loai_khach`)
 --   REFERENCES `furama_resort_le_dinh_quoc`.`loai_khach` (`id_loai_khach`);
---   delete from khach_hang where id_khach_hang in (select id_khach_hang from hop_dong
--- where  year(ngay_lam_hop_dong)<2016);
+--   delete from khach_hang where id_khach_hang in (select id_khach_hang 
+--   from hop_dong where  year(ngay_lam_hop_dong)<2016);
   -- Kiểm tra danh sách khách hàng trước và sau khi xóa
 SELECT 
     khach_hang.ho_ten,
@@ -518,7 +551,7 @@ FROM
     khach_hang
         JOIN
     hop_dong ON khach_hang.id_khach_hang = hop_dong.id_khach_hang;
--- Task 19
+-- Task 19 Cập nhật giá cho các Dịch vụ đi kèm được sử dụng trên 10 lần trong năm 2019 lên gấp đôi.
 -- Kiểm tra trước và sau khi update
 SELECT 
     dich_vu_di_kem.ten_dich_vu_di_kem,
@@ -545,7 +578,8 @@ FROM
 --             YEAR(ngay_lam_hop_dong) = 2019
 --         GROUP BY id_dich_vu_di_kem
 --         HAVING COUNT(ten_dich_vu_di_kem) > 1);
--- Task 20
+-- Task 20 Hiển thị thông tin của tất cả các Nhân viên và Khách hàng có trong hệ thống, thông tin
+-- hiển thị bao gồm ID (IDNhanVien, IDKhachHang), HoTen, Email, SoDienThoai, NgaySinh, DiaChi.
 SELECT 
     id_nhan_vien AS ID, ho_ten, email, sdt, ngay_sinh, dia_chi
 FROM
