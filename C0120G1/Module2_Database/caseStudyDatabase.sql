@@ -142,7 +142,7 @@ WHERE
     (MONTH(NOW())=MONTH(ngay_sinh) and DAY(NOW())>DAY(ngay_sinh))
     or (YEAR(NOW())-YEAR(ngay_sinh))=50 and MONTH(NOW())<MONTH(ngay_sinh) or 
     (MONTH(NOW())=MONTH(ngay_sinh) and DAY(NOW())<DAY(ngay_sinh))
--- Nếu xài câu lệnh 145 thay cho các câu lệnh (138-142) sẽ thêm trường hợp
+-- Nếu xài câu lệnh 147 thay cho các câu lệnh (140-144) sẽ thêm trường hợp
 -- Nguyễn Đình Hòa Ngày sinh 2002-05-05
 --  (YEAR(NOW()) - YEAR(ngay_sinh)) BETWEEN 18 AND 50
         AND (dia_chi = 'Quảng Trị'
@@ -505,20 +505,20 @@ select * from nhan_vien;
 -- Task 17:Cập nhật thông tin những khách hàng có TenLoaiKhachHang từ  Platinium lên Diamond, chỉ cập nhật 
 -- những khách hàng đã từng đặt phòng với tổng Tiền thanh toán trong năm 2019 là lớn hơn 10.000.000 VNĐ.
 -- Lệnh update comment 473-485,comment lại để dễ kiểm tra
--- UPDATE khach_hang 
--- SET 
---     id_loai_khach = 4
--- WHERE
---     id_loai_khach = 1
---         AND id_khach_hang IN (SELECT 
---             id_khach_hang
---         FROM
---             hop_dong
---         WHERE
---             YEAR(ngay_lam_hop_dong) = 2019
---         GROUP BY hop_dong.id_khach_hang
---         HAVING SUM(tong_tien) > 1200);
--- Kiểm tra thông tin khách hàng trước và khi update
+UPDATE khach_hang 
+SET 
+    id_loai_khach = 4
+WHERE
+    id_loai_khach = 1
+        AND id_khach_hang IN (SELECT 
+            id_khach_hang
+        FROM
+            hop_dong
+        WHERE
+            YEAR(ngay_lam_hop_dong) = 2019
+        GROUP BY hop_dong.id_khach_hang
+        HAVING SUM(tong_tien) > 1200);
+-- Kiểm tra thông tin khách hàng trước và khi update 523-535
 -- Trần Ngọc Tân set từ Platium->Diamond
 -- SELECT 
 --     khach_hang.id_khach_hang,
@@ -546,40 +546,40 @@ WHERE
         YEAR(ngay_lam_hop_dong) < 2016);
   
   -- Kiểm tra danh sách khách hàng trước và sau khi xóa
-SELECT 
-    khach_hang.ho_ten,
-    YEAR(hop_dong.ngay_lam_hop_dong) AS Năm_làm_hợp_đồng
-FROM
-    khach_hang
-        JOIN
-    hop_dong ON khach_hang.id_khach_hang = hop_dong.id_khach_hang;
+-- SELECT 
+--     khach_hang.ho_ten,
+--     YEAR(hop_dong.ngay_lam_hop_dong) AS Năm_làm_hợp_đồng
+-- FROM
+--     khach_hang
+--         JOIN
+--     hop_dong ON khach_hang.id_khach_hang = hop_dong.id_khach_hang;
 -- Task 19 Cập nhật giá cho các Dịch vụ đi kèm được sử dụng trên 10 lần trong năm 2019 lên gấp đôi.
+UPDATE dich_vu_di_kem 
+SET 
+    gia = gia * 2
+WHERE
+    id_dich_vu_di_kem IN (SELECT 
+            id_dich_vu_di_kem
+        FROM
+            hop_dong_chi_tiet
+                JOIN
+            hop_dong ON hop_dong_chi_tiet.id_hop_dong = hop_dong.id_hop_dong
+        WHERE
+            YEAR(ngay_lam_hop_dong) = 2019
+        GROUP BY id_dich_vu_di_kem
+        HAVING COUNT(ten_dich_vu_di_kem) > 1);
 -- Kiểm tra trước và sau khi update
-SELECT 
-    dich_vu_di_kem.ten_dich_vu_di_kem,
-    dich_vu_di_kem.gia,
-    hop_dong.ngay_lam_hop_dong,
-    dich_vu_di_kem.id_dich_vu_di_kem
-FROM
-    (dich_vu_di_kem
-    JOIN hop_dong_chi_tiet ON dich_vu_di_kem.id_dich_vu_di_kem = hop_dong_chi_tiet.id_dich_vu_di_kem)
-        JOIN
-    hop_dong ON hop_dong_chi_tiet.id_hop_dong = hop_dong.id_hop_dong;
-    -- Xài lệnh update ở bên dưới
--- UPDATE dich_vu_di_kem 
--- SET 
---     gia = gia * 2
--- WHERE
---     id_dich_vu_di_kem IN (SELECT 
---             id_dich_vu_di_kem
---         FROM
---             hop_dong_chi_tiet
---                 JOIN
---             hop_dong ON hop_dong_chi_tiet.id_hop_dong = hop_dong.id_hop_dong
---         WHERE
---             YEAR(ngay_lam_hop_dong) = 2019
---         GROUP BY id_dich_vu_di_kem
---         HAVING COUNT(ten_dich_vu_di_kem) > 1);
+-- SELECT 
+--     dich_vu_di_kem.ten_dich_vu_di_kem,
+--     dich_vu_di_kem.gia,
+--     hop_dong.ngay_lam_hop_dong,
+--     dich_vu_di_kem.id_dich_vu_di_kem
+-- FROM
+--     (dich_vu_di_kem
+--     JOIN hop_dong_chi_tiet ON dich_vu_di_kem.id_dich_vu_di_kem = hop_dong_chi_tiet.id_dich_vu_di_kem)
+--         JOIN
+--     hop_dong ON hop_dong_chi_tiet.id_hop_dong = hop_dong.id_hop_dong;
+
 -- Task 20 Hiển thị thông tin của tất cả các Nhân viên và Khách hàng có trong hệ thống, thông tin
 -- hiển thị bao gồm ID (IDNhanVien, IDKhachHang), HoTen, Email, SoDienThoai, NgaySinh, DiaChi.
 SELECT 
@@ -590,6 +590,8 @@ UNION ALL SELECT
     id_khach_hang AS ID, ho_ten, email, sdt, ngay_sinh, dia_chi
 FROM
     khach_hang
+    
+    -- From: casestudy.Trần Ngọc Tân,Phạm Thái Cường,Phạm Minh Hưng,Võ Minh Hùng,Nguyễn Đình Hòa.
 
 
  
