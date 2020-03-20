@@ -42,7 +42,7 @@ select * from sach where id_loai_sach
 in(select id_loai_sach from loai_sach where ten_loai_sach='Lập Trình');
 -- 3:Hiển thị các sách đang được mượn
 select * from sach join lich_su_muon_sach on sach.ma_sach=lich_su_muon_sach.ma_sach 
-where ngay_tra_sach <> null;
+where ngay_tra_sach = null;
 -- 4:Hiển thị tất cả học viên mượn sách nhưng chưa trả 
 select sinh_vien.ma_sinh_vien,sinh_vien.ma_sinh_vien from sinh_vien join lich_su_muon_sach
-on sinh_vien.ma_sinh_vien=lich_su_muon_sach.ma_sinh_vien where ngay_tra_sach <> null;
+on sinh_vien.ma_sinh_vien=lich_su_muon_sach.ma_sinh_vien where ngay_tra_sach = null;
