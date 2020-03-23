@@ -137,18 +137,20 @@ SELECT
 FROM
     khach_hang
 WHERE
+(
 	((YEAR(NOW()) - YEAR(ngay_sinh)) BETWEEN 19 AND 49)
-    and ((YEAR(NOW())-YEAR(ngay_sinh)=18 and 
+    or 
+    (YEAR(NOW())-YEAR(ngay_sinh)=18 and 
     (MONTH(NOW())>MONTH(ngay_sinh) or 
     MONTH(NOW())=MONTH(ngay_sinh) and DAY(NOW())>DAY(ngay_sinh)
     ))
     or 
-    YEAR(NOW())-YEAR(ngay_sinh)=50 and 
-    (
-    MONTH(NOW())<MONTH(ngay_sinh) or 
+    (YEAR(NOW())-YEAR(ngay_sinh)=50 and 
+    (MONTH(NOW())<MONTH(ngay_sinh) or 
     MONTH(NOW())=MONTH(ngay_sinh) and DAY(NOW())<DAY(ngay_sinh)
-    )
-    )
+    ))
+)
+    
 -- Cách 2:
 -- Nếu xài câu lệnh 147 thay cho các câu lệnh (140-144) sẽ thêm trường hợp
 -- Nguyễn Đình Hòa Ngày sinh 2002-05-05
