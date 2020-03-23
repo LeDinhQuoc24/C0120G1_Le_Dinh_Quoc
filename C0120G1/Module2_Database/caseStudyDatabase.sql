@@ -184,18 +184,18 @@ SELECT
     *
 FROM
     (khach_hang
-    JOIN hop_dong ON khach_hang.id_khach_hang = hop_dong.id_khach_hang)
+    JOIN hop_dong USING (id_khach_hang))
         JOIN
-    loai_khach ON khach_hang.id_loai_khach = loai_khach.id_loai_khach;
+    loai_khach USING (id_loai_khach);
 -- Task 4: Lệnh truy xuất---------------------------------------------------------
 SELECT 
     ho_ten,
     COUNT(hop_dong.id_khach_hang) AS Số_Lần_Đặt_Phòng
 FROM
     (khach_hang
-    JOIN hop_dong ON khach_hang.id_khach_hang = hop_dong.id_khach_hang)
+    JOIN hop_dong using(id_khach_hang) )
         JOIN
-    loai_khach ON khach_hang.id_loai_khach = loai_khach.id_loai_khach
+    loai_khach using(id_loai_khach) 
 WHERE
     loai_khach.ten_loai_khach = 'Diamond'
 GROUP BY ho_ten
@@ -221,12 +221,11 @@ SELECT
     (dich_vu.chi_phi_thue + hop_dong_chi_tiet.so_luong * dich_vu_di_kem.gia) AS Tổng_tiền
 FROM
     ((((khach_hang
-    LEFT JOIN loai_khach ON khach_hang.id_loai_khach = loai_khach.id_loai_khach)
-    LEFT JOIN hop_dong ON khach_hang.id_khach_hang = hop_dong.id_khach_hang)
-    LEFT JOIN dich_vu ON hop_dong.id_dich_vu = dich_vu.id_dich_vu)
-    LEFT JOIN hop_dong_chi_tiet ON hop_dong.id_hop_dong = hop_dong_chi_tiet.id_hop_dong)
-        LEFT JOIN
-    dich_vu_di_kem ON hop_dong_chi_tiet.id_dich_vu_di_kem = dich_vu_di_kem.id_dich_vu_di_kem;
+    LEFT JOIN loai_khach using(id_loai_khach))
+    LEFT JOIN hop_dong using(id_khach_hang))
+    LEFT JOIN dich_vu using(id_dich_vu))
+    LEFT JOIN hop_dong_chi_tiet using(id_hop_dong))
+	LEFT JOIN dich_vu_di_kem using(id_dich_vu_di_kem);
 
 -- Task 6:Hiển thị IDDichVu, TenDichVu, DienTich, ChiPhiThue, TenLoaiDichVu của tất cả các loại Dịch vụ 
 -- chưa từng được Khách hàng thực hiện đặt từ quý 1 của năm 2019 (Quý 1 là tháng 1, 2, 3).
@@ -240,7 +239,7 @@ SELECT
 FROM
     dich_vu
         JOIN
-    loai_dich_vu ON dich_vu.id_loai_dich_vu = loai_dich_vu.id_loai_dich_vu
+    loai_dich_vu using(id_loai_dich_vu)
 WHERE
     NOT EXISTS( SELECT 
             hop_dong.id_dich_vu
@@ -263,7 +262,7 @@ SELECT
 FROM
     dich_vu
         JOIN
-    loai_dich_vu ON dich_vu.id_loai_dich_vu = loai_dich_vu.id_loai_dich_vu
+    loai_dich_vu using(id_loai_dich_vu) 
 WHERE
     EXISTS( SELECT 
             hop_dong.id_dich_vu
@@ -361,7 +360,7 @@ SELECT
 FROM
     hop_dong
         JOIN
-    hop_dong_chi_tiet ON hop_dong.id_hop_dong = hop_dong_chi_tiet.id_hop_dong
+    hop_dong_chi_tiet using(id_hop_dong)
 GROUP BY hop_dong.id_hop_dong; 
 -- Cách 2:
 SELECT 
@@ -409,12 +408,12 @@ SELECT
     *
 FROM
     (((dich_vu_di_kem
-    JOIN hop_dong_chi_tiet ON dich_vu_di_kem.id_dich_vu_di_kem = hop_dong_chi_tiet.id_dich_vu_di_kem)
-    JOIN hop_dong ON hop_dong.id_hop_dong = hop_dong_chi_tiet.id_hop_dong)
-    JOIN khach_hang ON khach_hang.id_khach_hang = hop_dong.id_khach_hang)
+    JOIN hop_dong_chi_tiet using(id_dich_vu_di_kem))
+    JOIN hop_dong using(id_hop_dong))
+    JOIN khach_hang using(id_khach_hang))
         JOIN
-    loai_khach ON loai_khach.id_loai_khach = khach_hang.id_loai_khach
-        AND (khach_hang.dia_chi = 'Quảng Ngãi'
+    loai_khach using(id_loai_khach)
+        where (khach_hang.dia_chi = 'Quảng Ngãi'
         OR khach_hang.dia_chi = 'Vinh')
         AND ten_loai_khach = 'Diamond'; 
 -- Task 12:Hiển thị thông tin IDHopDong, TenNhanVien, TenKhachHang, SoDienThoaiKhachHang, TenDichVu, 
@@ -431,11 +430,11 @@ SELECT
     hop_dong.ngay_lam_hop_dong
 FROM
     (((hop_dong
-    JOIN dich_vu ON hop_dong.id_dich_vu = dich_vu.id_dich_vu)
-    JOIN hop_dong_chi_tiet ON hop_dong.id_hop_dong = hop_dong_chi_tiet.id_hop_dong)
-    JOIN nhan_vien ON hop_dong.id_nhan_vien = nhan_vien.id_nhan_vien)
+    JOIN dich_vu using(id_dich_vu))
+    JOIN hop_dong_chi_tiet using(id_hop_dong))
+    JOIN nhan_vien using(id_nhan_vien))
         JOIN
-    khach_hang ON khach_hang.id_khach_hang = hop_dong.id_khach_hang
+    khach_hang using(id_khach_hang)
 WHERE
     EXISTS( SELECT 
             khach_hang.ho_ten
@@ -456,10 +455,10 @@ SELECT
     *, COUNT(dich_vu_di_kem.id_dich_vu_di_kem) AS Số_lần_đặt
 FROM
     ((dich_vu_di_kem
-    JOIN hop_dong_chi_tiet ON dich_vu_di_kem.id_dich_vu_di_kem = hop_dong_chi_tiet.id_dich_vu_di_kem)
-    JOIN hop_dong ON hop_dong_chi_tiet.id_hop_dong = hop_dong.id_hop_dong)
+    JOIN hop_dong_chi_tiet using(id_dich_vu_di_kem))
+    JOIN hop_dong using(id_hop_dong))
         JOIN
-    khach_hang ON khach_hang.id_khach_hang = hop_dong.id_khach_hang
+    khach_hang using(id_khach_hang)
 GROUP BY dich_vu_di_kem.id_dich_vu_di_kem
 ORDER BY COUNT(dich_vu_di_kem.id_dich_vu_di_kem) DESC
 LIMIT 1;
@@ -469,10 +468,9 @@ SELECT
     *
 FROM
     ((dich_vu_di_kem
-    JOIN hop_dong_chi_tiet ON dich_vu_di_kem.id_dich_vu_di_kem = hop_dong_chi_tiet.id_dich_vu_di_kem)
-    JOIN hop_dong ON hop_dong_chi_tiet.id_hop_dong = hop_dong.id_hop_dong)
-        JOIN
-    khach_hang ON khach_hang.id_khach_hang = hop_dong.id_khach_hang
+    JOIN hop_dong_chi_tiet using(id_dich_vu_di_kem))
+    JOIN hop_dong using(id_hop_dong))
+	JOIN khach_hang using(id_khach_hang)
 WHERE
     dich_vu_di_kem.id_dich_vu_di_kem IN (SELECT 
             id_dich_vu_di_kem
@@ -494,10 +492,10 @@ SELECT
     COUNT(id_hop_dong)
 FROM
     ((nhan_vien
-    JOIN bo_phan ON nhan_vien.id_bo_phan = bo_phan.id_bo_phan)
-    JOIN hop_dong ON nhan_vien.id_nhan_vien = hop_dong.id_nhan_vien)
+    JOIN bo_phan using(id_bo_phan))
+    JOIN hop_dong using(id_nhan_vien))
         JOIN
-    trinh_do ON nhan_vien.id_trinh_do = trinh_do.id_trinh_do
+    trinh_do using(id_trinh_do)
 WHERE
     YEAR(ngay_lam_hop_dong) BETWEEN 2018 AND 2019
 GROUP BY ho_ten
@@ -541,9 +539,9 @@ WHERE
 --     year(hop_dong.ngay_lam_hop_dong) as Năm_làm_hợp_đồng
 -- FROM
 --     (khach_hang
---     JOIN loai_khach ON khach_hang.id_loai_khach = loai_khach.id_loai_khach)
+--     JOIN loai_khach using(id_loai_khach))
 --         JOIN
---     hop_dong ON khach_hang.id_khach_hang = hop_dong.id_khach_hang
+--     hop_dong using(id_khach_hang)
 -- GROUP BY id_khach_hang,Year(ngay_lam_hop_dong);
 -- Task 18(Chưa hoàn thành)Xóa những khách hàng có hợp đồng trước năm 2016 (chú ý ràngbuộc giữa các bảng).
 -- Không xóa được khách hàng có năm làm hợp đồng <2016
@@ -575,7 +573,7 @@ WHERE
         FROM
             hop_dong_chi_tiet
                 JOIN
-            hop_dong ON hop_dong_chi_tiet.id_hop_dong = hop_dong.id_hop_dong
+            hop_dong using(id_hop_dong)
         WHERE
             YEAR(ngay_lam_hop_dong) = 2019
         GROUP BY id_dich_vu_di_kem
@@ -588,9 +586,8 @@ WHERE
 --     dich_vu_di_kem.id_dich_vu_di_kem
 -- FROM
 --     (dich_vu_di_kem
---     JOIN hop_dong_chi_tiet ON dich_vu_di_kem.id_dich_vu_di_kem = hop_dong_chi_tiet.id_dich_vu_di_kem)
---         JOIN
---     hop_dong ON hop_dong_chi_tiet.id_hop_dong = hop_dong.id_hop_dong;
+--     JOIN hop_dong_chi_tiet using(id_dich_vu_di_kem))
+-- 	JOIN hop_dong using(id_hop_dong);
 
 -- Task 20 Hiển thị thông tin của tất cả các Nhân viên và Khách hàng có trong hệ thống, thông tin
 -- hiển thị bao gồm ID (IDNhanVien, IDKhachHang), HoTen, Email, SoDienThoai, NgaySinh, DiaChi.
