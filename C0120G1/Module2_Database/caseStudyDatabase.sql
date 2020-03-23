@@ -454,8 +454,8 @@ GROUP BY khach_hang.ho_ten;
 -- from:Phạm Thái Cường
  SELECT 
     *
-FROM hop_dong_chi_tiet HDCT
-inner join hop_dong HD using(id_hop_dong)
+FROM hop_dong_chi_tiet 
+inner join hop_dong  using(id_hop_dong)
 inner join dich_vu_di_kem using(id_dich_vu_di_kem)
 WHERE
     id_dich_vu_di_kem IN (SELECT 
@@ -471,6 +471,7 @@ WHERE
                 FROM
                     hop_dong_chi_tiet
                 GROUP BY id_dich_vu_di_kem) a));
+	-- a là định danh,có thể đặt tên bất kỳ
 
 
 -- Task 14:Hiển thị thông tin tất cả các Dịch vụ đi kèm chỉ mới được sử dụng một lần duy nhất.
