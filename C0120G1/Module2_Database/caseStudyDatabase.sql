@@ -451,17 +451,28 @@ WHERE
 GROUP BY khach_hang.ho_ten;
 -- Task 13:Hiển thị thông tin các Dịch vụ đi kèm được sử dụng nhiều nhất bởi các Khách hàng đã đặt phòng.
 -- (Lưu ý là có thể có nhiều dịch vụ có số lần sử dụng nhiều như nhau).
-SELECT 
-    *, COUNT(dich_vu_di_kem.id_dich_vu_di_kem) AS Số_lần_đặt
-FROM
-    ((dich_vu_di_kem
-    JOIN hop_dong_chi_tiet using(id_dich_vu_di_kem))
-    JOIN hop_dong using(id_hop_dong))
-        JOIN
-    khach_hang using(id_khach_hang)
-GROUP BY dich_vu_di_kem.id_dich_vu_di_kem
-ORDER BY COUNT(dich_vu_di_kem.id_dich_vu_di_kem) DESC
-LIMIT 1;
+-- from:Phạm Thái Cường
+ SELECT 
+    *
+FROM hop_dong_chi_tiet HDCT
+inner join hop_dong HD using(id_hop_dong)
+inner join dich_vu_di_kem using(id_dich_vu_di_kem)
+WHERE
+    id_dich_vu_di_kem IN (SELECT 
+            id_dich_vu_di_kem
+        FROM
+            hop_dong_chi_tiet
+        GROUP BY id_dich_vu_di_kem
+        HAVING COUNT(id_dich_vu_di_kem) = (SELECT 
+                MAX(so_luongDV)
+            FROM
+                (SELECT 
+                    id_dich_vu_di_kem, COUNT(*) AS so_luongDV
+                FROM
+                    hop_dong_chi_tiet
+                GROUP BY id_dich_vu_di_kem) a));
+
+
 -- Task 14:Hiển thị thông tin tất cả các Dịch vụ đi kèm chỉ mới được sử dụng một lần duy nhất.
 -- Thông tin hiển thị bao gồm IDHopDong, TenLoaiDichVu, TenDichVuDiKem, SoLanSuDung.
 SELECT 
