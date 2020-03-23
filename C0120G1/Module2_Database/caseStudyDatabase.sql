@@ -317,7 +317,7 @@ GROUP BY Tháng
 ORDER BY Tháng;
 -- Hiện cả những tháng không có khách đặt hợp đồng
 drop table if exists Temp;
-create temporary table Temp
+create table Temp
 select 1 as Month
 union
 select 2 as Month
