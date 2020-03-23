@@ -124,7 +124,7 @@ WHERE
 insert into loai_khach(ten_loai_khach) value ('Platinium'),('Silver'),('Gold'),('Diamond'),('Iron'),('Wood');
 insert into khach_hang(id_loai_khach,ho_ten,ngay_sinh,so_cmtnd,sdt,email,dia_chi) value
 (1,'Nguyễn Anh Đức','1965-01-01','205001','0905001','naduc@gmail.com','Quảng Trị'),
-(1,'Nguyễn Đức Thông','2000-02-02','205002','0905002','ndthong@gmail.com','Đà Nẵng'),
+(1,'Nguyễn Đức Thông','2002-02-02','205002','0905002','ndthong@gmail.com','Đà Nẵng'),
 (3,'Phạm Minh Hưng','2006-03-03','205003','0905003','pmhung@gmail.com','Đà Nẵng'),
 (4,'Võ Minh Hùng','1998-04-04','205004','0905004','vmhung@gmail.com','Quảng Ngãi'),
 (5,'Nguyễn Đình Hòa','2002-05-05','205005','0905005','ndhoa@gmail.com','Quảng Trị'),
@@ -138,13 +138,23 @@ FROM
     khach_hang
 WHERE
 	((YEAR(NOW()) - YEAR(ngay_sinh)) BETWEEN 19 AND 49)
-    and (YEAR(NOW())-YEAR(ngay_sinh))=18 and MONTH(NOW())>MONTH(ngay_sinh) or 
-    (MONTH(NOW())=MONTH(ngay_sinh) and DAY(NOW())>DAY(ngay_sinh))
-    or (YEAR(NOW())-YEAR(ngay_sinh))=50 and MONTH(NOW())<MONTH(ngay_sinh) or 
-    (MONTH(NOW())=MONTH(ngay_sinh) and DAY(NOW())<DAY(ngay_sinh))
+    and ((YEAR(NOW())-YEAR(ngay_sinh)=18 and 
+    (MONTH(NOW())>MONTH(ngay_sinh) or 
+    MONTH(NOW())=MONTH(ngay_sinh) and DAY(NOW())>DAY(ngay_sinh)
+    ))
+    or 
+    YEAR(NOW())-YEAR(ngay_sinh)=50 and 
+    (
+    MONTH(NOW())<MONTH(ngay_sinh) or 
+    MONTH(NOW())=MONTH(ngay_sinh) and DAY(NOW())<DAY(ngay_sinh)
+    )
+    )
+-- Cách 2:
 -- Nếu xài câu lệnh 147 thay cho các câu lệnh (140-144) sẽ thêm trường hợp
 -- Nguyễn Đình Hòa Ngày sinh 2002-05-05
 --  (YEAR(NOW()) - YEAR(ngay_sinh)) BETWEEN 18 AND 50
+-- Cách 3:
+ -- datediff(now(),ngay_sinh) between 18*365 and 50*365
         AND (dia_chi = 'Quảng Trị'
         OR dia_chi = 'Đà Nẵng');
 -- Task 4:Đếm xem tương ứng với mỗi khách hàng đã từng đặt phòng bao nhiêu lần. Kết quả hiển thị được 
