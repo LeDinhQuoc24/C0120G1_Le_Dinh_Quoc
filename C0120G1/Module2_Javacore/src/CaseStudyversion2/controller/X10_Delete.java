@@ -11,7 +11,7 @@ import static CaseStudyversion2.controller.X4_ShowInformationOfCustomer.showInfo
 import static CaseStudyversion2.controller.X6_ShowBookingCustomer.showBookingCustomer;
 import static CaseStudyversion2.controller.X9_ShowInformationOfEmployee.showInformationOfEmployee;
 import static CaseStudyversion2.views.MainRun.*;
-import static CaseStudyversion2.views.MainRun.pathViewer;
+
 
 public class X10_Delete {
     public static void deleteInformation() {

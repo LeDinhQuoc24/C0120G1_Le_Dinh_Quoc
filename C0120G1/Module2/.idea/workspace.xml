@@ -2,42 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2105cae8-7c1b-4ad1-9fa8-4f2235a000b0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/out/production/Module2/Bai_7_CleanCode/BaiTap/Tennis.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Module2/Bai_7_CleanCode/Thuc_hanh/Refactoring_Doi_ten_bien_va_tach_hang.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Module2/Bai_7_CleanCode/Thuc_hanh/Refactoring_Tach_bien.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Module2/Bai_7_CleanCode/Thuc_hanh/Refactoring_Tach_phuong_thuc$Cylinder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Module2/Bai_7_CleanCode/Thuc_hanh/Refactoring_Tach_phuong_thuc.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Module2/CaseStudyversion2/controller/X11_Service_Film4D.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Module2/CaseStudyversion2/controller/X8_FindEmployee.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Module2/CaseStudyversion2/data2/saveViewer.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Module2/CaseStudyversion2/models/Viewer.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Bai_7_CleanCode/BaiTap/Tennis_Pham_Thai_Cuong.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Bai_7_CleanCode/Thuc_hanh/Refactoring_Doi_ten_bien_va_tach_hang.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Bai_7_CleanCode/Thuc_hanh/Refactoring_Tach_bien.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Bai_7_CleanCode/Thuc_hanh/Refactoring_Tach_phuong_thuc.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CaseStudyversion2/controller/X11_Service_Film4D.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CaseStudyversion2/controller/X8_FindEmployee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CaseStudyversion2/data2/saveViewer.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CaseStudyversion2/models/Viewer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Module2/CaseStudyversion2/commons/SaveAndLoad.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Module2/CaseStudyversion2/commons/SaveAndLoad.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Module2/CaseStudyversion2/controller/X0_DisplayMenu.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Module2/CaseStudyversion2/controller/X0_DisplayMenu.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Module2/CaseStudyversion2/controller/X10_Delete.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Module2/CaseStudyversion2/controller/X10_Delete.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Module2/CaseStudyversion2/controller/X11_Exit.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Module2/CaseStudyversion2/controller/X12_Exit.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Module2/CaseStudyversion2/controller/X2_DisplayAllService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Module2/CaseStudyversion2/controller/X2_DisplayAllService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Module2/CaseStudyversion2/controller/X8_FindEmployeeById.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Module2/CaseStudyversion2/controller/X9_ShowInformationOfEmployee.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Module2/CaseStudyversion2/controller/X9_ShowInformationOfEmployee.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Module2/CaseStudyversion2/data2/saveBooking.csv" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Module2/CaseStudyversion2/data2/saveBooking.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Module2/CaseStudyversion2/data2/saveEmployee.csv" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Module2/CaseStudyversion2/data2/saveEmployee.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Module2/CaseStudyversion2/views/MainRun.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Module2/CaseStudyversion2/views/MainRun.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CaseStudyversion2/commons/SaveAndLoad.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CaseStudyversion2/commons/SaveAndLoad.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CaseStudyversion2/controller/X0_DisplayMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CaseStudyversion2/controller/X0_DisplayMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CaseStudyversion2/controller/X10_Delete.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CaseStudyversion2/controller/X10_Delete.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CaseStudyversion2/controller/X11_Exit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CaseStudyversion2/controller/X12_Exit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CaseStudyversion2/controller/X2_DisplayAllService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CaseStudyversion2/controller/X2_DisplayAllService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CaseStudyversion2/controller/X8_FindEmployeeById.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CaseStudyversion2/controller/X9_ShowInformationOfEmployee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CaseStudyversion2/controller/X9_ShowInformationOfEmployee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CaseStudyversion2/data2/saveEmployee.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/CaseStudyversion2/data2/saveEmployee.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CaseStudyversion2/views/MainRun.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CaseStudyversion2/views/MainRun.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +13,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="ProjectId" id="1YvEPsEVeJb5R9yuUieVZQJY3l5" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -57,7 +23,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Module2_Javacore" />
   </component>
   <component name="RunManager">
     <configuration name="MainRun" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -92,6 +58,7 @@
       <workItem from="1583814648594" duration="660000" />
       <workItem from="1583907334819" duration="63000" />
       <workItem from="1583907548560" duration="128000" />
+      <workItem from="1585034809788" duration="59000" />
     </task>
     <servers />
   </component>
@@ -99,10 +66,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="463" y="118" key="FileChooserDialogImpl" timestamp="1583814695393">
+    <state x="463" y="118" key="FileChooserDialogImpl" timestamp="1585034872158">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1583814695393" />
+    <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1585034872158" />
     <state width="1323" height="415" key="GridCell.Tab.0.bottom" timestamp="1583815308321">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -119,9 +86,9 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1323" height="415" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1583815308321" />
-    <state x="359" y="187" key="com.intellij.ide.util.TipDialog" timestamp="1583907555463">
+    <state x="359" y="187" key="com.intellij.ide.util.TipDialog" timestamp="1585034811701">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="359" y="187" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1583907555463" />
+    <state x="359" y="187" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1585034811701" />
   </component>
 </project>
