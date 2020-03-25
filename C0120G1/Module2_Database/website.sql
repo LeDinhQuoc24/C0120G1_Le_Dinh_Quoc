@@ -39,8 +39,8 @@ insert into products value
 (null,'iphone01','www.iphones/info/pic.iphone01',2000,'20',12,1,5,'12in'),
 (null,'iphone02','www.iphones/info/pic.iphone02',2200,'25',5,2,1,'13in'),
 (null,'iphone03','www.iphones/info/pic.iphone03',2400,'15',9,3,2,'14in'),
-(null,'iphone04','www.iphones/info/pic.iphone04',2600,'10',20,4,3,'15in'),
-(null,'iphone05','www.iphones/info/pic.iphone05',2800,'5',3,5,4,'16in'),
+(null,'iphone04','www.iphones/info/pic.iphone04',2600,'10',20,4,5,'15in'),
+(null,'iphone05','www.iphones/info/pic.iphone05',2800,'5',3,3,4,'16in'),
 (null,'iphone06','www.iphones/info/pic.iphone06',3000,'5',3,2,4,'16in');
 create table employees(
 id int(11) auto_increment primary key,
@@ -148,11 +148,33 @@ insert into orderdetails value
 -- select * from products join categories on products.category_id=categories.id
 -- join suppliers on products.supplier_id=suppliers.id;
 -- Câu 19: Hiển thị tất cả danh mục (Categories) với số lượng hàng hóa trong mỗi danh mục(Viết 2 cách)
+-- Cách 1:
 -- select categories.name,count(categories.id) from categories join products 
 -- on products.category_id=categories.id group by categories.id;
+-- Cách 2:
+-- drop temporary table  if exists Temp1;
+-- create temporary table  Temp1
+-- select 1 as categories_id
+-- union select 2 as categories_id
+-- union select 3 as categories_id
+-- union select 4 categories_id
+-- union select 5 as categories_id;
+-- select categories_id,count(category_id) as Số_sản_phẩm from Temp1 left join products
+-- on categories_id=products.category_id group by category_id;
 -- Câu 20: Hiển thị tất cả nhà cung cấp (Suppliers) với số lượng hàng hóa mỗi nhà cung cấp(Viết 2 cách)
+-- Cách 1:
 -- select suppliers.name,count(suppliers.id) from suppliers join products 
 -- on products.supplier_id=suppliers.id group by suppliers.id;
+-- Cách 2:
+-- drop temporary table  if exists Temp2;
+-- create temporary table  Temp2
+-- select 1 as suppliers_id
+-- union select 2 as suppliers_id
+-- union select 3 as suppliers_id
+-- union select 4 suppliers_id
+-- union select 5 as suppliers_id;
+-- select suppliers_id,count(supplier_id) as Số_sản_phẩm from Temp2 left join products
+-- on suppliers_id=products.supplier_id group by supplier_id;
 -- câu 21: Hiển thị tất cả các mặt hàng được bán trong khoảng từ ngày, đến ngày(Khoảng cách ngày 
 -- các bạn tuỳ chọn theo data phù hợp với mỗi người) 
 -- select products.name from products join orderdetails on products.id=orderdetails.product_id
