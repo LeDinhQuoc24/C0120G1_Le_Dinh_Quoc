@@ -148,10 +148,10 @@ insert into orderdetails value
 -- select * from products join categories on products.category_id=categories.id
 -- join suppliers on products.supplier_id=suppliers.id;
 -- Câu 19: Hiển thị tất cả danh mục (Categories) với số lượng hàng hóa trong mỗi danh mục(Viết 2 cách)
--- select categories.id,categories.name,products.stock from categories join products
+-- select categories.id,categories.name,sum(products.stock) from categories join products
 -- on categories.id=products.category_id group by categories.id;
 -- Câu 20: Hiển thị tất cả nhà cung cấp (Suppliers) với số lượng hàng hóa mỗi nhà cung cấp(Viết 2 cách)
--- select suppliers.id,suppliers.name,products.stock from suppliers join products
+-- select suppliers.id,suppliers.name,sum(products.stock) from suppliers join products
 -- on suppliers.id=products.supplier_id group by suppliers.id;
 -- câu 21: Hiển thị tất cả các mặt hàng được bán trong khoảng từ ngày, đến ngày(Khoảng cách ngày 
 -- các bạn tuỳ chọn theo data phù hợp với mỗi người) 
