@@ -41,7 +41,7 @@ insert into products value
 (null,'iphone03','www.iphones/info/pic.iphone03',2400,'15',9,3,2,'14in'),
 (null,'iphone04','www.iphones/info/pic.iphone04',2600,'10',20,4,5,'15in'),
 (null,'iphone05','www.iphones/info/pic.iphone05',2800,'5',3,3,4,'16in'),
-(null,'iphone06','www.iphones/info/pic.iphone06',3000,'5',3,2,4,'16in');
+(null,'iphone06','www.iphones/info/pic.iphone06',3000,'5',3,5,3,'16in');
 create table employees(
 id int(11) auto_increment primary key,
 first_name varchar(50) not null,
@@ -148,6 +148,42 @@ insert into orderdetails value
 -- select * from products join categories on products.category_id=categories.id
 -- join suppliers on products.supplier_id=suppliers.id;
 -- Câu 19: Hiển thị tất cả danh mục (Categories) với số lượng hàng hóa trong mỗi danh mục(Viết 2 cách)
+-- select categories.id,categories.name,products.stock from categories join products
+-- on categories.id=products.category_id group by categories.id;
+-- Câu 20: Hiển thị tất cả nhà cung cấp (Suppliers) với số lượng hàng hóa mỗi nhà cung cấp(Viết 2 cách)
+-- select suppliers.id,suppliers.name,products.stock from suppliers join products
+-- on suppliers.id=products.supplier_id group by suppliers.id;
+-- câu 21: Hiển thị tất cả các mặt hàng được bán trong khoảng từ ngày, đến ngày(Khoảng cách ngày 
+-- các bạn tuỳ chọn theo data phù hợp với mỗi người) 
+-- select products.name from products join orderdetails on products.id=orderdetails.product_id
+-- join orders on orderdetails.order_id=orders.id where created_date between '2020-02-15' and '2020-03-10';
+-- Câu 22: Hiển thị tất cả các khách hàng mua hàng trong khoảng từ ngày, đến ngày((Khoảng cách ngày 
+-- các bạn tuỳ chọn theo data phù hợp với mỗi người))
+-- select customers.first_name,customers.last_name from customers join orders
+-- on customers.id=orders.customer_id where created_date between '2020-02-15' and '2020-03-10';
+-- Câu 23: Hiển thị tất cả các khách hàng mua hàng (với tổng số tiền) trong khoảng từ ngày, 
+-- đến ngày(viêt bằng 2 cách, ngày tuỳ chọn )
+-- select customers.first_name,customers.last_name,sum(price) as TongTien from customers 
+-- join orders on customers.id=orders.customer_id 
+-- join orderdetails on orders.id=orderdetails.order_id
+-- join products on orderdetails.product_id=products.id
+-- where created_date between '2020-02-15' and '2020-03-10' and status<>'CANCEL'
+-- group by customers.id;
+-- Câu 24: Hiển thị tất cả đơn hàng với tổng số tiền
+-- select orders.id,sum(price) from orders join orderdetails on orders.id=orderdetails.order_id
+-- join products on orderdetails.product_id=products.id where status<>'CANCEL' group by orders.id;
+-- câu 25: Hiển thị tất cả các nhân viên bán hàng với tổng số tiền bán được
+-- select employees.first_name,employees.last_name,sum(price) from employees
+-- join orders on employees.id=orders.employee_id
+-- join orderdetails on orderdetails.order_id=orders.id
+-- join products on orderdetails.product_id=products.id where status<>'CANCEL' group by employees.id;
+
+
+
+
+
+-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+-- Câu 19: Hiển thị tất cả danh mục (Categories) với số lượng hàng hóa trong mỗi danh mục(Viết 2 cách)
 -- Cách 1:
 -- select categories.name,count(categories.id) from categories join products 
 -- on products.category_id=categories.id group by categories.id;
@@ -175,29 +211,5 @@ insert into orderdetails value
 -- union select 5 as suppliers_id;
 -- select suppliers_id,count(supplier_id) as Số_sản_phẩm from Temp2 left join products
 -- on suppliers_id=products.supplier_id group by supplier_id;
--- câu 21: Hiển thị tất cả các mặt hàng được bán trong khoảng từ ngày, đến ngày(Khoảng cách ngày 
--- các bạn tuỳ chọn theo data phù hợp với mỗi người) 
--- select products.name from products join orderdetails on products.id=orderdetails.product_id
--- join orders on orderdetails.order_id=orders.id where created_date between '2020-02-15' and '2020-03-10';
--- Câu 22: Hiển thị tất cả các khách hàng mua hàng trong khoảng từ ngày, đến ngày((Khoảng cách ngày 
--- các bạn tuỳ chọn theo data phù hợp với mỗi người))
--- select customers.first_name,customers.last_name from customers join orders
--- on customers.id=orders.customer_id where created_date between '2020-02-15' and '2020-03-10';
--- Câu 23: Hiển thị tất cả các khách hàng mua hàng (với tổng số tiền) trong khoảng từ ngày, 
--- đến ngày(viêt bằng 2 cách, ngày tuỳ chọn )
--- select customers.first_name,customers.last_name,sum(price) as TongTien from customers 
--- join orders on customers.id=orders.customer_id 
--- join orderdetails on orders.id=orderdetails.order_id
--- join products on orderdetails.product_id=products.id
--- where created_date between '2020-02-15' and '2020-03-10'
--- group by customers.id;
--- Câu 24: Hiển thị tất cả đơn hàng với tổng số tiền
--- select orders.id,sum(price) from orders join orderdetails on orders.id=orderdetails.order_id
--- join products on orderdetails.product_id=products.id group by orders.id;
--- câu 25: Hiển thị tất cả các nhân viên bán hàng với tổng số tiền bán được
--- select employees.first_name,employees.last_name,sum(price) from employees
--- join orders on employees.id=orders.employee_id
--- join orderdetails on orderdetails.order_id=orders.id
--- join products on orderdetails.product_id=products.id group by employees.id;
 
 
