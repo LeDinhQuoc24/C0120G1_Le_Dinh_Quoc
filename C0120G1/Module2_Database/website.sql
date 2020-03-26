@@ -188,10 +188,17 @@ left join orderdetails on products.id=orderdetails.product_id
 left join orders on orders.id=orderdetails.order_id 
 where  date(created_date) between '2020-02-15' and '2020-03-03'and status='COMPLETED');
 -- (((((right join products để chọn ra những nhà cung cấp có sản phẩm trong products
--- join orderdetails để chọn ra những nhà cung cấp có sản phẩm và có trong đơn hàng chi tiết))))))
-
--- 
-
+-- left join orderdetails để chọn ra những nhà cung cấp có sản phẩm và có trong đơn hàng chi tiết))))))
+-- Câu 28: Hiển thị top 3 các nhân viên bán hàng với tổng số tiền bán được từ 
+-- cao đến thấp trong khoảng từ ngày, đến ngày
+select employees.first_name,employees.last_name,sum(price),orders.created_date from employees
+join orders on employees.id=orders.employee_id
+join orderdetails on orderdetails.order_id=orders.id
+join products on orderdetails.product_id=products.id where status<>'CANCEL' 
+and date(created_date) between '2020-02-02' and '2020-04-04' 
+group by employees.id
+order by sum(price) desc limit 3 ;
+-- ((((((Bỏ 2 dòng 198 và 200,sau đó thêm 2 dòng đó và so sánh 2 kết quả.)))))))))))
 
 
 -- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
