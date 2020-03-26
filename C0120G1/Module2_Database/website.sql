@@ -181,14 +181,14 @@ insert into orderdetails value
 -- select * from products where not exists(select products.id from orderdetails 
 -- where products.id=orderdetails.product_id);
 -- Câu 27: Hiển thị tất cả các nhà cung cấp không bán được trong khoảng từ ngày, đến ngày
--- select suppliers.*,orders.* from suppliers right join products on suppliers.id=products.supplier_id
--- join orderdetails on products.id=orderdetails.product_id
--- join orders on orders.id=orderdetails.order_id 
--- where date(created_date) between '2020-02-15' and '2020-03-03' and status='COMPLETED';
+select suppliers.*,orders.* from suppliers right join products on suppliers.id=products.supplier_id
+left join orderdetails on products.id=orderdetails.product_id
+left join orders on orders.id=orderdetails.order_id 
+where date(created_date) not between '2020-02-15' and '2020-03-03' or status<>'COMPLETED';
 -- (((((right join products để chọn ra những nhà cung cấp có sản phẩm trong products
 -- join orderdetails để chọn ra những nhà cung cấp có sản phẩm và có trong đơn hàng chi tiết))))))
 
-
+-- 
 
 
 
