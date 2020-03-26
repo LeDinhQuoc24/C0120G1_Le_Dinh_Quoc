@@ -68,10 +68,13 @@ birthday date
 );
 insert into customers value
 (null,'Miss','Tâm','090101','Hải Châu','tam@gmail.com','1980-01-01'),
-(null,'Mrs','Trung','090102','Hòa Khánh','trung@gmail.com','1985-02-02'),
+(null,'Mrs','Trung','090102','Hòa Vang','trung@gmail.com','1985-02-02'),
 (null,'Mrs','Hải','090103','Liên Chiểu','hai@gmail.com','1998-03-25'),
 (null,'Mrs','Kiên','090104','Thanh Khê','kien@gmail.com','1994-03-25'),
-(null,'Mrs','Đức','090105','Hải Châu','duc@gmail.com','1990-05-05');
+(null,'Mrs','Đức','090105','Hải Châu','duc@gmail.com','1990-05-05'),
+(null,'Miss','Hà','090106','Hòa Vang','duc@gmail.com','1990-05-05'),
+(null,'Miss','Hiền','090107','Sơn Trà','duc@gmail.com','1990-05-05'),
+(null,'Miss','Thu','090108','Cẩm Lệ','duc@gmail.com','1990-05-05');
 create table orders(
 id int(11) auto_increment primary key,
 created_date datetime not null,
@@ -91,7 +94,10 @@ insert into orders value
 (null,'2020-02-15','2020-02-19','CANCELED','description2','Tô Hiến Thành','Sài Gòn','CREADIT CARD',1,3),
 (null,'2020-01-07','2020-01-11','COMPLETED','description3','Cầu Giấy','Hà Nội','CREADIT CARD',3,4),
 (null,'2020-03-11','2020-03-25','CANCELED','description4','Quế Xuân','Quảng Nam','CREADIT CARD',4,5),
-(null,'2020-02-15','2020-03-25','COMPLETED','description5','Hùng Vương','Vũng Tàu','CASH',5,1);
+(null,'2020-02-15','2020-03-25','COMPLETED','description5','Hùng Vương','Vũng Tàu','CASH',5,1),
+(null,'2020-03-14','2020-03-27','COMPLETED','description6','Điện Biên Phủ','Đà Nẵng','CREADIT CARD',6,2),
+(null,'2020-02-11','2020-02-22','COMPLETED','description7','Nguyễn Tất Thành','Đà Nẵng','CASH',7,4),
+(null,'2020-02-07','2020-03-04','COMPLETED','description8','Hà Huy Tập','Đà Nẵng','CREADIT CARD',8,5);
 create table orderdetails(
 id int(11) auto_increment primary key,
 order_id int(11),
@@ -101,7 +107,8 @@ foreign key (order_id) references orders(id) on delete cascade,
 foreign key (product_id) references products(id) on delete cascade
 );
 insert into orderdetails value
-(null,1,3,5),(null,1,4,8),(null,3,5,20),(null,4,1,10),(null,5,2,15);
+(null,1,3,5),(null,1,4,8),(null,3,5,20),(null,4,1,10),(null,5,2,15),
+(null,6,3,12),(null,7,5,14),(null,8,2,1);
 
 -- Câu 1: Viết câu lệnh UPDATE để cập nhật Price với điều kiện: Các mặt hàng có Price <= 100000 
 -- thì tăng thêm 10%
@@ -181,24 +188,44 @@ insert into orderdetails value
 -- select * from products where not exists(select products.id from orderdetails 
 -- where products.id=orderdetails.product_id);
 -- Câu 27: Hiển thị tất cả các nhà cung cấp không bán được trong khoảng từ ngày, đến ngày
-select suppliers.* from suppliers 
-where suppliers.id not in (select suppliers.id from suppliers
-right join products on suppliers.id=products.supplier_id
-left join orderdetails on products.id=orderdetails.product_id
-left join orders on orders.id=orderdetails.order_id 
-where  date(created_date) between '2020-02-15' and '2020-03-03'and status='COMPLETED');
+-- select suppliers.* from suppliers 
+-- where suppliers.id not in (select suppliers.id from suppliers
+-- right join products on suppliers.id=products.supplier_id
+-- left join orderdetails on products.id=orderdetails.product_id
+-- left join orders on orders.id=orderdetails.order_id 
+-- where  date(created_date) between '2020-02-15' and '2020-03-03'and status='COMPLETED');
 -- (((((right join products để chọn ra những nhà cung cấp có sản phẩm trong products
 -- left join orderdetails để chọn ra những nhà cung cấp có sản phẩm và có trong đơn hàng chi tiết))))))
 -- Câu 28: Hiển thị top 3 các nhân viên bán hàng với tổng số tiền bán được từ 
 -- cao đến thấp trong khoảng từ ngày, đến ngày
-select employees.first_name,employees.last_name,sum(price),orders.created_date from employees
-join orders on employees.id=orders.employee_id
-join orderdetails on orderdetails.order_id=orders.id
-join products on orderdetails.product_id=products.id where status<>'CANCEL' 
-and date(created_date) between '2020-02-02' and '2020-04-04' 
-group by employees.id
-order by sum(price) desc limit 3 ;
+-- select employees.first_name,employees.last_name,sum(price),orders.created_date from employees
+-- join orders on employees.id=orders.employee_id
+-- join orderdetails on orderdetails.order_id=orders.id
+-- join products on orderdetails.product_id=products.id where status<>'CANCEL' 
+-- and date(created_date) between '2020-02-02' and '2020-04-04' 
+-- group by employees.id
+-- order by sum(price) desc limit 3 ;
 -- ((((((Bỏ 2 dòng 198 và 200,sau đó thêm 2 dòng đó và so sánh 2 kết quả.)))))))))))
+-- Câu 29: Hiển thị top 5 các khách hàng mua hàng với tổng số tiền 
+-- mua được từ cao đến thấp trong khoảng từ ngày, đến ngày
+-- select customers.first_name,customers.last_name,sum(price) as TongTien,orders.created_date from customers 
+-- join orders on customers.id=orders.customer_id 
+-- join orderdetails on orders.id=orderdetails.order_id
+-- join products on orderdetails.product_id=products.id
+-- where created_date between '2020-02-02' and '2020-04-04' and status<>'CANCEL'
+-- group by customers.id order by TongTien desc limit 5;
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 -- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
