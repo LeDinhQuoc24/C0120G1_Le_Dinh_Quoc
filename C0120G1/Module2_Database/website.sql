@@ -56,7 +56,7 @@ insert into employees value
 (null,'Abe','Mikako','090202','Tokyo','mikako@gmail.com','1994-02-21'),
 (null,'Tsukasa','Aoi','090203','Osaka','aoi@gmail.com','1990-08-14'),
 (null,'Erika','Momotani','090204','Tokyo','momotani@gmail.com','1994-06-15'),
-(null,'Emiri','Suzuhara','090205','Japan','suzuhara@gmail.com','1994-03-25');
+(null,'Emiri','Suzuhara','090205','Japan','suzuhara@gmail.com','1994-03-26');
 create table customers(
 id int(11) auto_increment primary key,
 first_name varchar(50) not null,
@@ -121,7 +121,7 @@ insert into orderdetails value
 -- update products set discount=discount+5 where discount<=10;
 -- select * from products;
 -- Câu 3: Hiển thị tất cả các mặt hàng có giảm giá <= 10%
--- select * from products where discount<=10/100;
+-- select * from products where discount<=10;
 -- Câu 4: Hiển thị tất cả các mặt hàng có tồn kho <= 5
 -- select * from products where stock<=5;
 -- Câu 5 : Hiển thị tất cả các khách hàng có địa chỉ ở Quận Hải Châu
@@ -173,28 +173,33 @@ insert into orderdetails value
 -- where suppliers.id=products.supplier_id group by suppliers.id;
 -- câu 21: Hiển thị tất cả các mặt hàng được bán trong khoảng từ ngày, đến ngày(Khoảng cách ngày 
 -- các bạn tuỳ chọn theo data phù hợp với mỗi người) 
--- select products.name from products join orderdetails on products.id=orderdetails.product_id
--- join orders on orderdetails.order_id=orders.id where created_date between '2020-02-15' and '2020-03-10';
+-- select products.* from products join orderdetails on products.id=orderdetails.product_id
+-- join orders on orderdetails.order_id=orders.id where created_date between '2020-02-15' and '2020-03-10'
+-- and status='COMPLETED';
 -- Câu 22: Hiển thị tất cả các khách hàng mua hàng trong khoảng từ ngày, đến ngày((Khoảng cách ngày 
 -- các bạn tuỳ chọn theo data phù hợp với mỗi người))
--- select customers.first_name,customers.last_name from customers join orders
--- on customers.id=orders.customer_id where created_date between '2020-02-15' and '2020-03-10';
+-- select customers.*,orders.created_date,orders.status from customers join orders
+-- on customers.id=orders.customer_id where created_date between '2020-02-15' and '2020-03-10'
+-- and status='COMPLETED';
 -- Câu 23: Hiển thị tất cả các khách hàng mua hàng (với tổng số tiền) trong khoảng từ ngày, 
 -- đến ngày(viêt bằng 2 cách, ngày tuỳ chọn )
--- select customers.first_name,customers.last_name,sum(price) as TongTien from customers 
+-- select customers.*,sum(price*quantity*(100-discount)/100) as TongTien from customers 
 -- join orders on customers.id=orders.customer_id 
 -- join orderdetails on orders.id=orderdetails.order_id
 -- join products on orderdetails.product_id=products.id
 -- where created_date between '2020-02-15' and '2020-03-10' and status<>'CANCEL'
 -- group by customers.id;
 -- Câu 24: Hiển thị tất cả đơn hàng với tổng số tiền
--- select orders.id,sum(price) from orders join orderdetails on orders.id=orderdetails.order_id
--- join products on orderdetails.product_id=products.id where status<>'CANCEL' group by orders.id;
+-- select orders.id,sum(price*quantity*(100-discount)/100) from orders 
+-- join orderdetails on orders.id=orderdetails.order_id
+-- join products on orderdetails.product_id=products.id 
+-- where status<>'CANCEL' group by orders.id;
 -- câu 25: Hiển thị tất cả các nhân viên bán hàng với tổng số tiền bán được
--- select employees.first_name,employees.last_name,sum(price) from employees
+-- select employees.first_name,employees.last_name,sum(price*quantity*(100-discount)/100) from employees
 -- join orders on employees.id=orders.employee_id
 -- join orderdetails on orderdetails.order_id=orders.id
--- join products on orderdetails.product_id=products.id where status<>'CANCEL' group by employees.id;
+-- join products on orderdetails.product_id=products.id 
+-- where status<>'CANCEL' group by employees.id;
 -- Câu 26: Hiển thị tất cả các mặt hàng không bán được
 -- select * from products where not exists(select products.id from orderdetails 
 -- where products.id=orderdetails.product_id);
@@ -209,7 +214,8 @@ insert into orderdetails value
 -- left join orderdetails để chọn ra những nhà cung cấp có sản phẩm và có trong đơn hàng chi tiết))))))
 -- Câu 28: Hiển thị top 3 các nhân viên bán hàng với tổng số tiền bán được từ 
 -- cao đến thấp trong khoảng từ ngày, đến ngày
--- select employees.first_name,employees.last_name,sum(price),orders.created_date from employees
+-- select employees.first_name,employees.last_name,
+-- sum(price*quantity*(100-discount)/100),orders.created_date from employees
 -- join orders on employees.id=orders.employee_id
 -- join orderdetails on orderdetails.order_id=orders.id
 -- join products on orderdetails.product_id=products.id where status<>'CANCEL' 
@@ -219,7 +225,8 @@ insert into orderdetails value
 -- ((((((Bỏ 2 dòng and date... và order by...,sau đó thêm 2 dòng đó và so sánh 2 kết quả.)))))))))))
 -- Câu 29: Hiển thị top 5 các khách hàng mua hàng với tổng số tiền 
 -- mua được từ cao đến thấp trong khoảng từ ngày, đến ngày
--- select customers.first_name,customers.last_name,sum(price) as TongTien,orders.created_date from customers 
+-- select customers.first_name,customers.last_name,
+-- sum(price*quantity*(100-discount)/100) as TongTien,orders.created_date from customers 
 -- join orders on customers.id=orders.customer_id 
 -- join orderdetails on orders.id=orderdetails.order_id
 -- join products on orderdetails.product_id=products.id
@@ -229,11 +236,13 @@ insert into orderdetails value
 -- select id,name,discount from products;
 -- Câu 31: Hiển thị tất cả danh mục (Categories) với tổng số tiền bán được trong mỗi danh mục
 -- Cách 1:
--- select categories.id,categories.name,sum(products.price) from categories join products
--- on categories.id=products.category_id group by categories.id;
+-- select categories.id,categories.name,sum(price*quantity*(100-discount)/100) from categories 
+-- join products on categories.id=products.category_id group by categories.id;
 -- Cách 2:
--- select category_id,sum(products.price) from products where exists(select category_id from categories
--- where category_id= categories.id)group by category_id;
+-- select category_id,sum(price*quantity*(100-discount)/100) from products 
+-- where exists(select category_id from categories
+-- where category_id= categories.id)
+-- group by category_id;
 
 
 
