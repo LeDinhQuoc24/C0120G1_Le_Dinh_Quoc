@@ -20,8 +20,8 @@ name varchar(50) not null,
 description varchar(500)
 );
 insert into categories value 
-(null,'FTX001','blue color'),(null,'FTX002','red color'),
-(null,'FTX003','green color'),(null,'FTX004','purple color'),(null,'FTX005','black color');
+(null,'FTX001','blue color'),(null,'FTX002','red color'),(null,'FTX003','green color'),
+(null,'FTX004','purple color'),(null,'FTX005','black color'),(null,'FTX006','white color');
 create table products(
 id int(11) auto_increment primary key,
 name varchar(50) not null,
@@ -155,11 +155,21 @@ insert into orderdetails value
 -- select * from products join categories on products.category_id=categories.id
 -- join suppliers on products.supplier_id=suppliers.id;
 -- Câu 19: Hiển thị tất cả danh mục (Categories) với số lượng hàng hóa trong mỗi danh mục(Viết 2 cách)
--- select categories.id,categories.name,sum(products.stock) from categories join products
+-- Cách 1:
+-- select categories.id,categories.name,sum(products.stock) from categories  join products
 -- on categories.id=products.category_id group by categories.id;
--- Câu 20: Hiển thị tất cả nhà cung cấp (Suppliers) với số lượng hàng hóa mỗi nhà cung cấp(Viết 2 cách)
+-- Cách 2:
+-- select category_id,sum(products.stock)  from products where exists(select category_id from categories
+-- where category_id= categories.id)group by category_id;
+-- Câu 20: Hiển thị tất cả nhà cung cấp (Suppliers) với số lượng hàng hóa mỗi nhà cung cấp(Viết 2 cách)\
+-- Cách 1:
 -- select suppliers.id,suppliers.name,sum(products.stock) from suppliers join products
 -- on suppliers.id=products.supplier_id group by suppliers.id;
+-- Cách 2:
+-- select supplier_id,sum(products.stock) from  products where exists(select supplier_id from suppliers
+-- where supplier_id= suppliers.id)group by supplier_id;
+-- select suppliers.id,suppliers.name,sum(products.stock) from suppliers,products
+-- where suppliers.id=products.supplier_id group by suppliers.id;
 -- câu 21: Hiển thị tất cả các mặt hàng được bán trong khoảng từ ngày, đến ngày(Khoảng cách ngày 
 -- các bạn tuỳ chọn theo data phù hợp với mỗi người) 
 -- select products.name from products join orderdetails on products.id=orderdetails.product_id
@@ -205,7 +215,7 @@ insert into orderdetails value
 -- and date(created_date) between '2020-02-02' and '2020-04-04' 
 -- group by employees.id
 -- order by sum(price) desc limit 3 ;
--- ((((((Bỏ 2 dòng 198 và 200,sau đó thêm 2 dòng đó và so sánh 2 kết quả.)))))))))))
+-- ((((((Bỏ 2 dòng and date... và order by...,sau đó thêm 2 dòng đó và so sánh 2 kết quả.)))))))))))
 -- Câu 29: Hiển thị top 5 các khách hàng mua hàng với tổng số tiền 
 -- mua được từ cao đến thấp trong khoảng từ ngày, đến ngày
 -- select customers.first_name,customers.last_name,sum(price) as TongTien,orders.created_date from customers 
@@ -214,6 +224,17 @@ insert into orderdetails value
 -- join products on orderdetails.product_id=products.id
 -- where created_date between '2020-02-02' and '2020-04-04' and status<>'CANCEL'
 -- group by customers.id order by TongTien desc limit 5;
+-- Câu 30: Hiển thị danh sách các mức giảm giá của cửa hàng
+-- select id,name,discount from products;
+-- Câu 31: Hiển thị tất cả danh mục (Categories) với tổng số tiền bán được trong mỗi danh mục
+-- Cách 1:
+-- select categories.id,categories.name,sum(products.price) from categories join products
+-- on categories.id=products.category_id group by categories.id;
+-- Cách 2:
+-- select category_id,sum(products.price) from products where exists(select category_id from categories
+-- where category_id= categories.id)group by category_id;
+
+
 
 
 
