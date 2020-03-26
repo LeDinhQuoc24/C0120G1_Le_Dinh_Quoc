@@ -236,13 +236,22 @@ insert into orderdetails value
 -- select id,name,discount from products;
 -- Câu 31: Hiển thị tất cả danh mục (Categories) với tổng số tiền bán được trong mỗi danh mục
 -- Cách 1:
--- select categories.id,categories.name,sum(price*quantity*(100-discount)/100) from categories 
--- join products on categories.id=products.category_id group by categories.id;
--- Cách 2:
--- select category_id,sum(price*quantity*(100-discount)/100) from products 
--- where exists(select category_id from categories
--- where category_id= categories.id)
--- group by category_id;
+-- select categories.id,categories.name,sum(price) from categories 
+--  join products on categories.id=products.category_id group by categories.id;
+-- -- Cách 2:
+-- -- select category_id,sum(price) from products 
+-- -- where exists(select category_id from categories
+-- -- where category_id= categories.id)
+-- -- group by category_id;
+-- select categories.id
+-- ,categories.name
+-- , (select sum(products.price) from products 
+-- where products.category_id = categories.id group by categories.id) as total from categories;
+
+-- select categories.id
+-- ,categories.name
+-- , sum(products.price)as total from categories,products 
+-- where products.category_id = categories.id group by categories.id;
 
 
 
