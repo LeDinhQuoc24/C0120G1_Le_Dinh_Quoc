@@ -117,7 +117,8 @@ insert into orderdetails value
 -- select * from products;
 -- Câu 2: Viết câu lệnh UPDATE để cập nhật DISCOUNT với điều kiện: Các mặt hàng có Discount <= 10% 
 -- thì tăng thêm 5%
--- update products set discount=discount*105/100 where discount<=10;
+-- SET SQL_SAFE_UPDATES = 0;
+-- update products set discount=discount+5 where discount<=10;
 -- select * from products;
 -- Câu 3: Hiển thị tất cả các mặt hàng có giảm giá <= 10%
 -- select * from products where discount<=10/100;
