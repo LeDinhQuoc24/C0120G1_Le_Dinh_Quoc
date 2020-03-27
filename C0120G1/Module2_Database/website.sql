@@ -252,6 +252,28 @@ insert into orderdetails value
 -- ,categories.name
 -- , sum(products.price)as total from categories,products 
 -- where products.category_id = categories.id group by categories.id;
+-- Câu 32: Hiển thị tất cả đơn hàng với tổng số tiền mà đã được giao hàng thành công 
+-- trong khoảng từ ngày, đến ngày
+-- select orders.*,sum(price*quantity*(100-discount)/100) as Tổng_Tiền from orders 
+-- join orderdetails on orders.id=orderdetails.order_id
+-- join products on products.id=orderdetails.product_id 
+-- where created_date between '2020-02-15' and '2020-03-11' group by orders.id;
+-- Câu 33: Hiển thị tất cả đơn hàng có tổng số tiền bán hàng nhiều nhất trong khoảng từ ngày, đến ngày
+-- select orders.*,max(price*quantity*(100-discount)/100) as Tổng_Tiền from orders 
+-- join orderdetails on orders.id=orderdetails.order_id
+-- join products on products.id=orderdetails.product_id 
+-- where created_date between '2020-02-15' and '2020-03-11' group by orders.id;
+-- Câu 34: Hiển thị tất cả đơn hàng có tổng số tiền bán hàng ít nhất trong khoảng từ ngày, đến ngày
+-- select orders.*,min(price*quantity*(100-discount)/100) as Tổng_Tiền from orders 
+-- join orderdetails on orders.id=orderdetails.order_id
+-- join products on products.id=orderdetails.product_id 
+-- where created_date between '2020-02-15' and '2020-03-11' group by orders.id;
+-- Câu 35: Hiển thị trung bình cộng giá trị các đơn hàng trong khoảng từ ngày, đến ngày
+-- select orders.*,avg(price*quantity*(100-discount)/100) as Tổng_Tiền from orders 
+-- join orderdetails on orders.id=orderdetails.order_id
+-- join products on products.id=orderdetails.product_id 
+-- where created_date between '2020-02-15' and '2020-03-11' group by orders.id;
+
 
 
 
