@@ -238,16 +238,16 @@ insert into orderdetails value
 -- Cách 1:
 -- select categories.id,categories.name,sum(price) from categories 
 --  join products on categories.id=products.category_id group by categories.id;
--- -- Cách 2:
--- -- select category_id,sum(price) from products 
--- -- where exists(select category_id from categories
--- -- where category_id= categories.id)
--- -- group by category_id;
+-- Cách 2.1:
+-- select category_id,sum(price) from products 
+-- where exists(select category_id from categories
+-- where category_id= categories.id)
+-- group by category_id;
 -- select categories.id
 -- ,categories.name
 -- , (select sum(products.price) from products 
 -- where products.category_id = categories.id group by categories.id) as total from categories;
-
+-- Cách 2.2:
 -- select categories.id
 -- ,categories.name
 -- , sum(products.price)as total from categories,products 
