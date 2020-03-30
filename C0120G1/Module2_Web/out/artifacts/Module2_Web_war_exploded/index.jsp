@@ -11,6 +11,6 @@
     <title>$Title$</title>
   </head>
   <body>
-  $END$
+  Văn Nhân Lam
   </body>
 </html>
