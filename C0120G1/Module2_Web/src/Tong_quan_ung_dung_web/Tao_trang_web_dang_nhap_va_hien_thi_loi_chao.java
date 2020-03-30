@@ -27,6 +27,20 @@ public class Tao_trang_web_dang_nhap_va_hien_thi_loi_chao extends HttpServlet {
         writer.println("</html>");
     }
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        String username = request.getParameter("username");
+        String password = request.getParameter("password");
+
+        PrintWriter writer = response.getWriter();
+        writer.println("<html>");
+
+        if("admin".equals(username) && "admin".equals(password)) {
+            writer.println("<h1>Welcome "+username+" to website</h1>");
+        } else if("vannhanlam".equals(username) && "123".equals(password)) {
+            writer.println("<h1>Welcome " + username + " to website</h1>");
+        }else{
+            writer.println("<h1>Login Error</h1>");
+        }
+        writer.println("</html>");
 
 
     }
