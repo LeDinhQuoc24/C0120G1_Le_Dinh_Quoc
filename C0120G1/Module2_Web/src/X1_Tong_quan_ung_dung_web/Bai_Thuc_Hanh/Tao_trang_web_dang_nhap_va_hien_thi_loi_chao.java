@@ -1,4 +1,4 @@
-package Tong_quan_ung_dung_web;
+package X1_Tong_quan_ung_dung_web;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;

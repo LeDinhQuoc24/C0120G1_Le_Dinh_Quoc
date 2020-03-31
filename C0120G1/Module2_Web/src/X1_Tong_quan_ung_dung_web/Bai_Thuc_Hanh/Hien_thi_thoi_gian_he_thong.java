@@ -1,4 +1,4 @@
-package Bai1;
+package X1_Tong_quan_ung_dung_web;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -7,19 +7,20 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.Date;
 
-@WebServlet(name = "HelloServlet",urlPatterns="/hello")
-public class HelloServlet extends HttpServlet {
+
+@WebServlet(name = "Hien_thi_thoi_gian_he_thong",urlPatterns ="/getTime")
+public class Hien_thi_thoi_gian_he_thong extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        String name = request.getParameter("fullname");
-        PrintWriter writer=response.getWriter();
-        writer.println("fullname"+name);
 
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        PrintWriter writer=response.getWriter();
-        String name = request.getParameter("name");
-        writer.println("hello"+name);
+        PrintWriter writer = response.getWriter();
+        writer.println("<html>");
+        Date today = new Date();
+        writer.println("<h1>" + today + "</h1>");
+        writer.println("</html>");
     }
 }
