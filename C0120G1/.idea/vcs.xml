@@ -3,5 +3,7 @@
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$/.." vcs="Git" />
     <mapping directory="$PROJECT_DIR$/Module1/1-Nhập môn lập trình căn bản/Phần thực hành/Clone dự án từ Git/wf-hello" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Module2_JavaWeb" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Module2_Web" vcs="Git" />
   </component>
 </project>
