@@ -318,27 +318,27 @@ ORDER BY Tháng;
 drop table if exists Temp;
 create table Temp
 select 1 as Month
-union
+union 
 select 2 as Month
-union
+union 
 select 3 as Month
 union
 select 4 as Month
-union
+union 
 select 5 as Month
-union
+union 
 select 6 as Month
-union
+union 
 select 7 as Month
-union
+union 
 select 8 as Month
-union
+union 
 select 9 as Month
-union
+union 
 select 10 as Month
-union
+union 
 select 11 as Month
-union
+union 
 select 12 as Month;
 Select Month, count(month(ngay_lam_hop_dong)) as Số_lần_đặt
 From Temp

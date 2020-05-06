@@ -1,0 +1,13 @@
+.navbar{
+    position: fixed;
+    top: 30px;
+    height: 30px;
+    width: 100%;
+    background: black;
+    color: white;
+}
+.navbar > a {
+    text-decoration: none;
+    color :white;
+    background: gray;
+}

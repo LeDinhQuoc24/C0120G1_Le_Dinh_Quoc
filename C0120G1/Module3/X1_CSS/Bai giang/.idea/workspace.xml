@@ -1,0 +1,1028 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="0baadc5b-85a0-451e-838b-70353c2314c7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X3_MVC_Model/Bai_tap/Tao_ung_dung_quan_ly_san_pham/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X3_MVC_Model/Bai_tap/Tao_ung_dung_quan_ly_san_pham/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X3_MVC_Model/Bai_tap/Tao_ung_dung_quan_ly_san_pham/.idea/artifacts/Tudqlsp_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X3_MVC_Model/Bai_tap/Tao_ung_dung_quan_ly_san_pham/.idea/libraries/taglibs_standard_impl_1_2_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X3_MVC_Model/Bai_tap/Tao_ung_dung_quan_ly_san_pham/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X3_MVC_Model/Bai_tap/Tao_ung_dung_quan_ly_san_pham/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X3_MVC_Model/Bai_tap/Tao_ung_dung_quan_ly_san_pham/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X3_MVC_Model/Bai_tap/Tao_ung_dung_quan_ly_san_pham/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X3_MVC_Model/Bai_tap/Tao_ung_dung_quan_ly_san_pham/Tudqlsp.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X3_MVC_Model/Bai_tap/Tao_ung_dung_quan_ly_san_pham/out/artifacts/Tudqlsp_war_exploded/WEB-INF/classes/controller/ProductServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X3_MVC_Model/Bai_tap/Tao_ung_dung_quan_ly_san_pham/out/artifacts/Tudqlsp_war_exploded/WEB-INF/classes/model/Product.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X3_MVC_Model/Bai_tap/Tao_ung_dung_quan_ly_san_pham/out/artifacts/Tudqlsp_war_exploded/WEB-INF/classes/service/ProductService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X3_MVC_Model/Bai_tap/Tao_ung_dung_quan_ly_san_pham/out/artifacts/Tudqlsp_war_exploded/WEB-INF/classes/service/ProductServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X3_MVC_Model/Bai_tap/Tao_ung_dung_quan_ly_san_pham/out/artifacts/Tudqlsp_war_exploded/WEB-INF/lib/taglibs-standard-impl-1.2.5.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X3_MVC_Model/Bai_tap/Tao_ung_dung_quan_ly_san_pham/out/artifacts/Tudqlsp_war_exploded/WEB-INF/lib/taglibs-standard-spec-1.2.5.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X3_MVC_Model/Bai_tap/Tao_ung_dung_quan_ly_san_pham/out/artifacts/Tudqlsp_war_exploded/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X3_MVC_Model/Bai_tap/Tao_ung_dung_quan_ly_san_pham/out/artifacts/Tudqlsp_war_exploded/create.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X3_MVC_Model/Bai_tap/Tao_ung_dung_quan_ly_san_pham/out/artifacts/Tudqlsp_war_exploded/delete.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X3_MVC_Model/Bai_tap/Tao_ung_dung_quan_ly_san_pham/out/artifacts/Tudqlsp_war_exploded/edit.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X3_MVC_Model/Bai_tap/Tao_ung_dung_quan_ly_san_pham/out/artifacts/Tudqlsp_war_exploded/error-404.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X3_MVC_Model/Bai_tap/Tao_ung_dung_quan_ly_san_pham/out/artifacts/Tudqlsp_war_exploded/img/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X3_MVC_Model/Bai_tap/Tao_ung_dung_quan_ly_san_pham/out/artifacts/Tudqlsp_war_exploded/img/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X3_MVC_Model/Bai_tap/Tao_ung_dung_quan_ly_san_pham/out/artifacts/Tudqlsp_war_exploded/img/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X3_MVC_Model/Bai_tap/Tao_ung_dung_quan_ly_san_pham/out/artifacts/Tudqlsp_war_exploded/img/4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X3_MVC_Model/Bai_tap/Tao_ung_dung_quan_ly_san_pham/out/artifacts/Tudqlsp_war_exploded/img/5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X3_MVC_Model/Bai_tap/Tao_ung_dung_quan_ly_san_pham/out/artifacts/Tudqlsp_war_exploded/img/6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X3_MVC_Model/Bai_tap/Tao_ung_dung_quan_ly_san_pham/out/artifacts/Tudqlsp_war_exploded/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X3_MVC_Model/Bai_tap/Tao_ung_dung_quan_ly_san_pham/out/artifacts/Tudqlsp_war_exploded/list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X3_MVC_Model/Bai_tap/Tao_ung_dung_quan_ly_san_pham/out/artifacts/Tudqlsp_war_exploded/view.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X3_MVC_Model/Bai_tap/Tao_ung_dung_quan_ly_san_pham/out/production/Tudqlsp/controller/ProductServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X3_MVC_Model/Bai_tap/Tao_ung_dung_quan_ly_san_pham/out/production/Tudqlsp/model/Product.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X3_MVC_Model/Bai_tap/Tao_ung_dung_quan_ly_san_pham/out/production/Tudqlsp/service/ProductService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X3_MVC_Model/Bai_tap/Tao_ung_dung_quan_ly_san_pham/out/production/Tudqlsp/service/ProductServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X3_MVC_Model/Bai_tap/Tao_ung_dung_quan_ly_san_pham/src/controller/ProductServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X3_MVC_Model/Bai_tap/Tao_ung_dung_quan_ly_san_pham/src/model/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X3_MVC_Model/Bai_tap/Tao_ung_dung_quan_ly_san_pham/src/service/ProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X3_MVC_Model/Bai_tap/Tao_ung_dung_quan_ly_san_pham/src/service/ProductServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X3_MVC_Model/Bai_tap/Tao_ung_dung_quan_ly_san_pham/web/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X3_MVC_Model/Bai_tap/Tao_ung_dung_quan_ly_san_pham/web/create.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X3_MVC_Model/Bai_tap/Tao_ung_dung_quan_ly_san_pham/web/delete.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X3_MVC_Model/Bai_tap/Tao_ung_dung_quan_ly_san_pham/web/edit.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X3_MVC_Model/Bai_tap/Tao_ung_dung_quan_ly_san_pham/web/error-404.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X3_MVC_Model/Bai_tap/Tao_ung_dung_quan_ly_san_pham/web/img/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X3_MVC_Model/Bai_tap/Tao_ung_dung_quan_ly_san_pham/web/img/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X3_MVC_Model/Bai_tap/Tao_ung_dung_quan_ly_san_pham/web/img/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X3_MVC_Model/Bai_tap/Tao_ung_dung_quan_ly_san_pham/web/img/4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X3_MVC_Model/Bai_tap/Tao_ung_dung_quan_ly_san_pham/web/img/5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X3_MVC_Model/Bai_tap/Tao_ung_dung_quan_ly_san_pham/web/img/6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X3_MVC_Model/Bai_tap/Tao_ung_dung_quan_ly_san_pham/web/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X3_MVC_Model/Bai_tap/Tao_ung_dung_quan_ly_san_pham/web/list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X3_MVC_Model/Bai_tap/Tao_ung_dung_quan_ly_san_pham/web/view.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Bai_tap/Ung_dung_chuyen_doi_tien_te/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Bai_tap/Ung_dung_chuyen_doi_tien_te/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Bai_tap/Ung_dung_chuyen_doi_tien_te/.idea/artifacts/Udcdtt_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Bai_tap/Ung_dung_chuyen_doi_tien_te/.idea/libraries/Spring_5_2_3_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Bai_tap/Ung_dung_chuyen_doi_tien_te/.idea/libraries/Spring_MVC_5_2_3_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Bai_tap/Ung_dung_chuyen_doi_tien_te/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Bai_tap/Ung_dung_chuyen_doi_tien_te/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Bai_tap/Ung_dung_chuyen_doi_tien_te/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Bai_tap/Ung_dung_chuyen_doi_tien_te/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Bai_tap/Ung_dung_chuyen_doi_tien_te/Udcdtt.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Bai_tap/Ung_dung_chuyen_doi_tien_te/lib/aopalliance-1.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Bai_tap/Ung_dung_chuyen_doi_tien_te/lib/commons-logging-1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Bai_tap/Ung_dung_chuyen_doi_tien_te/lib/spring-aop-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Bai_tap/Ung_dung_chuyen_doi_tien_te/lib/spring-aspects-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Bai_tap/Ung_dung_chuyen_doi_tien_te/lib/spring-beans-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Bai_tap/Ung_dung_chuyen_doi_tien_te/lib/spring-context-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Bai_tap/Ung_dung_chuyen_doi_tien_te/lib/spring-context-support-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Bai_tap/Ung_dung_chuyen_doi_tien_te/lib/spring-core-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Bai_tap/Ung_dung_chuyen_doi_tien_te/lib/spring-expression-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Bai_tap/Ung_dung_chuyen_doi_tien_te/lib/spring-instrument-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Bai_tap/Ung_dung_chuyen_doi_tien_te/lib/spring-jdbc-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Bai_tap/Ung_dung_chuyen_doi_tien_te/lib/spring-jms-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Bai_tap/Ung_dung_chuyen_doi_tien_te/lib/spring-messaging-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Bai_tap/Ung_dung_chuyen_doi_tien_te/lib/spring-orm-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Bai_tap/Ung_dung_chuyen_doi_tien_te/lib/spring-oxm-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Bai_tap/Ung_dung_chuyen_doi_tien_te/lib/spring-test-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Bai_tap/Ung_dung_chuyen_doi_tien_te/lib/spring-tx-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Bai_tap/Ung_dung_chuyen_doi_tien_te/lib/spring-web-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Bai_tap/Ung_dung_chuyen_doi_tien_te/lib/spring-webmvc-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Bai_tap/Ung_dung_chuyen_doi_tien_te/out/artifacts/Udcdtt_war_exploded/WEB-INF/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Bai_tap/Ung_dung_chuyen_doi_tien_te/out/artifacts/Udcdtt_war_exploded/WEB-INF/classes/controllers/Convert.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Bai_tap/Ung_dung_chuyen_doi_tien_te/out/artifacts/Udcdtt_war_exploded/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Bai_tap/Ung_dung_chuyen_doi_tien_te/out/artifacts/Udcdtt_war_exploded/WEB-INF/lib/aopalliance-1.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Bai_tap/Ung_dung_chuyen_doi_tien_te/out/artifacts/Udcdtt_war_exploded/WEB-INF/lib/commons-logging-1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Bai_tap/Ung_dung_chuyen_doi_tien_te/out/artifacts/Udcdtt_war_exploded/WEB-INF/lib/spring-aop-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Bai_tap/Ung_dung_chuyen_doi_tien_te/out/artifacts/Udcdtt_war_exploded/WEB-INF/lib/spring-aspects-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Bai_tap/Ung_dung_chuyen_doi_tien_te/out/artifacts/Udcdtt_war_exploded/WEB-INF/lib/spring-beans-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Bai_tap/Ung_dung_chuyen_doi_tien_te/out/artifacts/Udcdtt_war_exploded/WEB-INF/lib/spring-context-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Bai_tap/Ung_dung_chuyen_doi_tien_te/out/artifacts/Udcdtt_war_exploded/WEB-INF/lib/spring-context-support-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Bai_tap/Ung_dung_chuyen_doi_tien_te/out/artifacts/Udcdtt_war_exploded/WEB-INF/lib/spring-core-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Bai_tap/Ung_dung_chuyen_doi_tien_te/out/artifacts/Udcdtt_war_exploded/WEB-INF/lib/spring-expression-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Bai_tap/Ung_dung_chuyen_doi_tien_te/out/artifacts/Udcdtt_war_exploded/WEB-INF/lib/spring-instrument-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Bai_tap/Ung_dung_chuyen_doi_tien_te/out/artifacts/Udcdtt_war_exploded/WEB-INF/lib/spring-jdbc-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Bai_tap/Ung_dung_chuyen_doi_tien_te/out/artifacts/Udcdtt_war_exploded/WEB-INF/lib/spring-jms-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Bai_tap/Ung_dung_chuyen_doi_tien_te/out/artifacts/Udcdtt_war_exploded/WEB-INF/lib/spring-messaging-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Bai_tap/Ung_dung_chuyen_doi_tien_te/out/artifacts/Udcdtt_war_exploded/WEB-INF/lib/spring-orm-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Bai_tap/Ung_dung_chuyen_doi_tien_te/out/artifacts/Udcdtt_war_exploded/WEB-INF/lib/spring-oxm-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Bai_tap/Ung_dung_chuyen_doi_tien_te/out/artifacts/Udcdtt_war_exploded/WEB-INF/lib/spring-test-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Bai_tap/Ung_dung_chuyen_doi_tien_te/out/artifacts/Udcdtt_war_exploded/WEB-INF/lib/spring-tx-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Bai_tap/Ung_dung_chuyen_doi_tien_te/out/artifacts/Udcdtt_war_exploded/WEB-INF/lib/spring-web-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Bai_tap/Ung_dung_chuyen_doi_tien_te/out/artifacts/Udcdtt_war_exploded/WEB-INF/lib/spring-webmvc-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Bai_tap/Ung_dung_chuyen_doi_tien_te/out/artifacts/Udcdtt_war_exploded/WEB-INF/views/index1.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Bai_tap/Ung_dung_chuyen_doi_tien_te/out/artifacts/Udcdtt_war_exploded/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Bai_tap/Ung_dung_chuyen_doi_tien_te/out/artifacts/Udcdtt_war_exploded/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Bai_tap/Ung_dung_chuyen_doi_tien_te/out/production/Udcdtt/controllers/Convert.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Bai_tap/Ung_dung_chuyen_doi_tien_te/src/controllers/Convert.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Bai_tap/Ung_dung_chuyen_doi_tien_te/web/WEB-INF/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Bai_tap/Ung_dung_chuyen_doi_tien_te/web/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Bai_tap/Ung_dung_chuyen_doi_tien_te/web/WEB-INF/views/index1.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Bai_tap/Ung_dung_chuyen_doi_tien_te/web/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Bai_tap/Ung_dung_chuyen_doi_tien_te/web/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Bai_tap/Ung_dung_tu_dien_don_gian/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Bai_tap/Ung_dung_tu_dien_don_gian/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Bai_tap/Ung_dung_tu_dien_don_gian/.idea/artifacts/Udtddg_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Bai_tap/Ung_dung_tu_dien_don_gian/.idea/libraries/Spring_5_2_3_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Bai_tap/Ung_dung_tu_dien_don_gian/.idea/libraries/Spring_MVC_5_2_3_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Bai_tap/Ung_dung_tu_dien_don_gian/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Bai_tap/Ung_dung_tu_dien_don_gian/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Bai_tap/Ung_dung_tu_dien_don_gian/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Bai_tap/Ung_dung_tu_dien_don_gian/Udtddg.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Bai_tap/Ung_dung_tu_dien_don_gian/lib/aopalliance-1.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Bai_tap/Ung_dung_tu_dien_don_gian/lib/commons-logging-1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Bai_tap/Ung_dung_tu_dien_don_gian/lib/spring-aop-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Bai_tap/Ung_dung_tu_dien_don_gian/lib/spring-aspects-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Bai_tap/Ung_dung_tu_dien_don_gian/lib/spring-beans-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Bai_tap/Ung_dung_tu_dien_don_gian/lib/spring-context-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Bai_tap/Ung_dung_tu_dien_don_gian/lib/spring-context-support-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Bai_tap/Ung_dung_tu_dien_don_gian/lib/spring-core-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Bai_tap/Ung_dung_tu_dien_don_gian/lib/spring-expression-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Bai_tap/Ung_dung_tu_dien_don_gian/lib/spring-instrument-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Bai_tap/Ung_dung_tu_dien_don_gian/lib/spring-jdbc-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Bai_tap/Ung_dung_tu_dien_don_gian/lib/spring-jms-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Bai_tap/Ung_dung_tu_dien_don_gian/lib/spring-messaging-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Bai_tap/Ung_dung_tu_dien_don_gian/lib/spring-orm-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Bai_tap/Ung_dung_tu_dien_don_gian/lib/spring-oxm-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Bai_tap/Ung_dung_tu_dien_don_gian/lib/spring-test-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Bai_tap/Ung_dung_tu_dien_don_gian/lib/spring-tx-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Bai_tap/Ung_dung_tu_dien_don_gian/lib/spring-web-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Bai_tap/Ung_dung_tu_dien_don_gian/lib/spring-webmvc-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Bai_tap/Ung_dung_tu_dien_don_gian/out/artifacts/Udtddg_war_exploded/WEB-INF/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Bai_tap/Ung_dung_tu_dien_don_gian/out/artifacts/Udtddg_war_exploded/WEB-INF/classes/controllers/Simple_Dictionary.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Bai_tap/Ung_dung_tu_dien_don_gian/out/artifacts/Udtddg_war_exploded/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Bai_tap/Ung_dung_tu_dien_don_gian/out/artifacts/Udtddg_war_exploded/WEB-INF/lib/aopalliance-1.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Bai_tap/Ung_dung_tu_dien_don_gian/out/artifacts/Udtddg_war_exploded/WEB-INF/lib/commons-logging-1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Bai_tap/Ung_dung_tu_dien_don_gian/out/artifacts/Udtddg_war_exploded/WEB-INF/lib/spring-aop-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Bai_tap/Ung_dung_tu_dien_don_gian/out/artifacts/Udtddg_war_exploded/WEB-INF/lib/spring-aspects-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Bai_tap/Ung_dung_tu_dien_don_gian/out/artifacts/Udtddg_war_exploded/WEB-INF/lib/spring-beans-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Bai_tap/Ung_dung_tu_dien_don_gian/out/artifacts/Udtddg_war_exploded/WEB-INF/lib/spring-context-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Bai_tap/Ung_dung_tu_dien_don_gian/out/artifacts/Udtddg_war_exploded/WEB-INF/lib/spring-context-support-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Bai_tap/Ung_dung_tu_dien_don_gian/out/artifacts/Udtddg_war_exploded/WEB-INF/lib/spring-core-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Bai_tap/Ung_dung_tu_dien_don_gian/out/artifacts/Udtddg_war_exploded/WEB-INF/lib/spring-expression-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Bai_tap/Ung_dung_tu_dien_don_gian/out/artifacts/Udtddg_war_exploded/WEB-INF/lib/spring-instrument-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Bai_tap/Ung_dung_tu_dien_don_gian/out/artifacts/Udtddg_war_exploded/WEB-INF/lib/spring-jdbc-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Bai_tap/Ung_dung_tu_dien_don_gian/out/artifacts/Udtddg_war_exploded/WEB-INF/lib/spring-jms-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Bai_tap/Ung_dung_tu_dien_don_gian/out/artifacts/Udtddg_war_exploded/WEB-INF/lib/spring-messaging-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Bai_tap/Ung_dung_tu_dien_don_gian/out/artifacts/Udtddg_war_exploded/WEB-INF/lib/spring-orm-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Bai_tap/Ung_dung_tu_dien_don_gian/out/artifacts/Udtddg_war_exploded/WEB-INF/lib/spring-oxm-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Bai_tap/Ung_dung_tu_dien_don_gian/out/artifacts/Udtddg_war_exploded/WEB-INF/lib/spring-test-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Bai_tap/Ung_dung_tu_dien_don_gian/out/artifacts/Udtddg_war_exploded/WEB-INF/lib/spring-tx-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Bai_tap/Ung_dung_tu_dien_don_gian/out/artifacts/Udtddg_war_exploded/WEB-INF/lib/spring-web-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Bai_tap/Ung_dung_tu_dien_don_gian/out/artifacts/Udtddg_war_exploded/WEB-INF/lib/spring-webmvc-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Bai_tap/Ung_dung_tu_dien_don_gian/out/artifacts/Udtddg_war_exploded/WEB-INF/view/index2.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Bai_tap/Ung_dung_tu_dien_don_gian/out/artifacts/Udtddg_war_exploded/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Bai_tap/Ung_dung_tu_dien_don_gian/out/artifacts/Udtddg_war_exploded/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Bai_tap/Ung_dung_tu_dien_don_gian/out/production/Udtddg/controllers/Simple_Dictionary.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Bai_tap/Ung_dung_tu_dien_don_gian/src/controllers/Simple_Dictionary.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Bai_tap/Ung_dung_tu_dien_don_gian/web/WEB-INF/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Bai_tap/Ung_dung_tu_dien_don_gian/web/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Bai_tap/Ung_dung_tu_dien_don_gian/web/WEB-INF/view/index2.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Bai_tap/Ung_dung_tu_dien_don_gian/web/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Bai_tap/Ung_dung_tu_dien_don_gian/web/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Thuc_hanh/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Thuc_hanh/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Thuc_hanh/.idea/artifacts/tao_ung_dung_spring_greeting_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Thuc_hanh/.idea/libraries/Spring_5_2_3_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Thuc_hanh/.idea/libraries/Spring_MVC_5_2_3_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Thuc_hanh/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Thuc_hanh/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Thuc_hanh/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Thuc_hanh/lib/aopalliance-1.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Thuc_hanh/lib/commons-logging-1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Thuc_hanh/lib/spring-aop-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Thuc_hanh/lib/spring-aspects-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Thuc_hanh/lib/spring-beans-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Thuc_hanh/lib/spring-context-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Thuc_hanh/lib/spring-context-support-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Thuc_hanh/lib/spring-core-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Thuc_hanh/lib/spring-expression-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Thuc_hanh/lib/spring-instrument-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Thuc_hanh/lib/spring-jdbc-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Thuc_hanh/lib/spring-jms-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Thuc_hanh/lib/spring-messaging-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Thuc_hanh/lib/spring-orm-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Thuc_hanh/lib/spring-oxm-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Thuc_hanh/lib/spring-test-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Thuc_hanh/lib/spring-tx-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Thuc_hanh/lib/spring-web-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Thuc_hanh/lib/spring-webmvc-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Thuc_hanh/out/artifacts/tao_ung_dung_spring_greeting_war_exploded/WEB-INF/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Thuc_hanh/out/artifacts/tao_ung_dung_spring_greeting_war_exploded/WEB-INF/classes/controllers/GreetingController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Thuc_hanh/out/artifacts/tao_ung_dung_spring_greeting_war_exploded/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Thuc_hanh/out/artifacts/tao_ung_dung_spring_greeting_war_exploded/WEB-INF/lib/aopalliance-1.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Thuc_hanh/out/artifacts/tao_ung_dung_spring_greeting_war_exploded/WEB-INF/lib/commons-logging-1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Thuc_hanh/out/artifacts/tao_ung_dung_spring_greeting_war_exploded/WEB-INF/lib/spring-aop-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Thuc_hanh/out/artifacts/tao_ung_dung_spring_greeting_war_exploded/WEB-INF/lib/spring-aspects-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Thuc_hanh/out/artifacts/tao_ung_dung_spring_greeting_war_exploded/WEB-INF/lib/spring-beans-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Thuc_hanh/out/artifacts/tao_ung_dung_spring_greeting_war_exploded/WEB-INF/lib/spring-context-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Thuc_hanh/out/artifacts/tao_ung_dung_spring_greeting_war_exploded/WEB-INF/lib/spring-context-support-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Thuc_hanh/out/artifacts/tao_ung_dung_spring_greeting_war_exploded/WEB-INF/lib/spring-core-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Thuc_hanh/out/artifacts/tao_ung_dung_spring_greeting_war_exploded/WEB-INF/lib/spring-expression-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Thuc_hanh/out/artifacts/tao_ung_dung_spring_greeting_war_exploded/WEB-INF/lib/spring-instrument-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Thuc_hanh/out/artifacts/tao_ung_dung_spring_greeting_war_exploded/WEB-INF/lib/spring-jdbc-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Thuc_hanh/out/artifacts/tao_ung_dung_spring_greeting_war_exploded/WEB-INF/lib/spring-jms-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Thuc_hanh/out/artifacts/tao_ung_dung_spring_greeting_war_exploded/WEB-INF/lib/spring-messaging-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Thuc_hanh/out/artifacts/tao_ung_dung_spring_greeting_war_exploded/WEB-INF/lib/spring-orm-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Thuc_hanh/out/artifacts/tao_ung_dung_spring_greeting_war_exploded/WEB-INF/lib/spring-oxm-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Thuc_hanh/out/artifacts/tao_ung_dung_spring_greeting_war_exploded/WEB-INF/lib/spring-test-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Thuc_hanh/out/artifacts/tao_ung_dung_spring_greeting_war_exploded/WEB-INF/lib/spring-tx-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Thuc_hanh/out/artifacts/tao_ung_dung_spring_greeting_war_exploded/WEB-INF/lib/spring-web-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Thuc_hanh/out/artifacts/tao_ung_dung_spring_greeting_war_exploded/WEB-INF/lib/spring-webmvc-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Thuc_hanh/out/artifacts/tao_ung_dung_spring_greeting_war_exploded/WEB-INF/views/index1.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Thuc_hanh/out/artifacts/tao_ung_dung_spring_greeting_war_exploded/WEB-INF/views/index2.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Thuc_hanh/out/artifacts/tao_ung_dung_spring_greeting_war_exploded/WEB-INF/views/index3.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Thuc_hanh/out/artifacts/tao_ung_dung_spring_greeting_war_exploded/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Thuc_hanh/out/production/tao_ung_dung_spring_greeting/controllers/GreetingController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Thuc_hanh/src/controllers/GreetingController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Thuc_hanh/tao_ung_dung_spring_greeting.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Thuc_hanh/web/WEB-INF/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Thuc_hanh/web/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Thuc_hanh/web/WEB-INF/views/index1.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Thuc_hanh/web/WEB-INF/views/index2.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Thuc_hanh/web/WEB-INF/views/index3.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X4_Tong_quan_Spring_MVC/Thuc_hanh/web/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Bai_tap/May_tinh_ca_nhan/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Bai_tap/May_tinh_ca_nhan/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Bai_tap/May_tinh_ca_nhan/.gradle/5.2.1/fileChanges/last-build.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Bai_tap/May_tinh_ca_nhan/.gradle/5.2.1/fileContent/fileContent.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Bai_tap/May_tinh_ca_nhan/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Bai_tap/May_tinh_ca_nhan/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Bai_tap/May_tinh_ca_nhan/.gradle/5.2.1/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Bai_tap/May_tinh_ca_nhan/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Bai_tap/May_tinh_ca_nhan/.gradle/5.2.1/javaCompile/taskHistory.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Bai_tap/May_tinh_ca_nhan/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Bai_tap/May_tinh_ca_nhan/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Bai_tap/May_tinh_ca_nhan/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Bai_tap/May_tinh_ca_nhan/.gradle/vcs-1/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Bai_tap/May_tinh_ca_nhan/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Bai_tap/May_tinh_ca_nhan/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Bai_tap/May_tinh_ca_nhan/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Bai_tap/May_tinh_ca_nhan/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Bai_tap/May_tinh_ca_nhan/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Bai_tap/May_tinh_ca_nhan/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Bai_tap/May_tinh_ca_nhan/build/classes/java/main/controller/CaculatorController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Bai_tap/May_tinh_ca_nhan/build/classes/java/main/controller/Calculator.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Bai_tap/May_tinh_ca_nhan/build/libs/May_tinh_ca_nhan-1.0-SNAPSHOT.war" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Bai_tap/May_tinh_ca_nhan/build/tmp/war/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Bai_tap/May_tinh_ca_nhan/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Bai_tap/May_tinh_ca_nhan/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Bai_tap/May_tinh_ca_nhan/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Bai_tap/May_tinh_ca_nhan/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Bai_tap/May_tinh_ca_nhan/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Bai_tap/May_tinh_ca_nhan/src/main/java/controller/CaculatorController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Bai_tap/May_tinh_ca_nhan/src/main/java/controller/Calculator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Bai_tap/May_tinh_ca_nhan/src/main/webapp/WEB-INF/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Bai_tap/May_tinh_ca_nhan/src/main/webapp/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Bai_tap/May_tinh_ca_nhan/src/main/webapp/WEB-INF/views/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Bai_tap/May_tinh_ca_nhan/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Bai_tap/Ud_hienthi_giavi_Sandwich1/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Bai_tap/Ud_hienthi_giavi_Sandwich1/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Bai_tap/Ud_hienthi_giavi_Sandwich1/.gradle/5.2.1/fileChanges/last-build.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Bai_tap/Ud_hienthi_giavi_Sandwich1/.gradle/5.2.1/fileContent/fileContent.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Bai_tap/Ud_hienthi_giavi_Sandwich1/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Bai_tap/Ud_hienthi_giavi_Sandwich1/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Bai_tap/Ud_hienthi_giavi_Sandwich1/.gradle/5.2.1/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Bai_tap/Ud_hienthi_giavi_Sandwich1/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Bai_tap/Ud_hienthi_giavi_Sandwich1/.gradle/5.2.1/javaCompile/taskHistory.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Bai_tap/Ud_hienthi_giavi_Sandwich1/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Bai_tap/Ud_hienthi_giavi_Sandwich1/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Bai_tap/Ud_hienthi_giavi_Sandwich1/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Bai_tap/Ud_hienthi_giavi_Sandwich1/.gradle/vcs-1/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Bai_tap/Ud_hienthi_giavi_Sandwich1/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Bai_tap/Ud_hienthi_giavi_Sandwich1/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Bai_tap/Ud_hienthi_giavi_Sandwich1/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Bai_tap/Ud_hienthi_giavi_Sandwich1/.idea/libraries/Spring_5_2_3_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Bai_tap/Ud_hienthi_giavi_Sandwich1/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Bai_tap/Ud_hienthi_giavi_Sandwich1/.idea/modules/Ud_hienthi_giavi_Sandwich1.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Bai_tap/Ud_hienthi_giavi_Sandwich1/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Bai_tap/Ud_hienthi_giavi_Sandwich1/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Bai_tap/Ud_hienthi_giavi_Sandwich1/build/classes/java/main/controller/SandwichController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Bai_tap/Ud_hienthi_giavi_Sandwich1/build/libs/Ud_hienthi_giavi_Sandwich1-1.0-SNAPSHOT.war" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Bai_tap/Ud_hienthi_giavi_Sandwich1/build/tmp/war/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Bai_tap/Ud_hienthi_giavi_Sandwich1/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Bai_tap/Ud_hienthi_giavi_Sandwich1/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Bai_tap/Ud_hienthi_giavi_Sandwich1/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Bai_tap/Ud_hienthi_giavi_Sandwich1/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Bai_tap/Ud_hienthi_giavi_Sandwich1/lib/aopalliance-1.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Bai_tap/Ud_hienthi_giavi_Sandwich1/lib/commons-logging-1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Bai_tap/Ud_hienthi_giavi_Sandwich1/lib/spring-aop-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Bai_tap/Ud_hienthi_giavi_Sandwich1/lib/spring-aspects-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Bai_tap/Ud_hienthi_giavi_Sandwich1/lib/spring-beans-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Bai_tap/Ud_hienthi_giavi_Sandwich1/lib/spring-context-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Bai_tap/Ud_hienthi_giavi_Sandwich1/lib/spring-context-support-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Bai_tap/Ud_hienthi_giavi_Sandwich1/lib/spring-core-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Bai_tap/Ud_hienthi_giavi_Sandwich1/lib/spring-expression-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Bai_tap/Ud_hienthi_giavi_Sandwich1/lib/spring-instrument-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Bai_tap/Ud_hienthi_giavi_Sandwich1/lib/spring-jdbc-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Bai_tap/Ud_hienthi_giavi_Sandwich1/lib/spring-jms-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Bai_tap/Ud_hienthi_giavi_Sandwich1/lib/spring-messaging-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Bai_tap/Ud_hienthi_giavi_Sandwich1/lib/spring-orm-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Bai_tap/Ud_hienthi_giavi_Sandwich1/lib/spring-oxm-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Bai_tap/Ud_hienthi_giavi_Sandwich1/lib/spring-test-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Bai_tap/Ud_hienthi_giavi_Sandwich1/lib/spring-tx-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Bai_tap/Ud_hienthi_giavi_Sandwich1/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Bai_tap/Ud_hienthi_giavi_Sandwich1/src/main/java/controller/SandwichController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Bai_tap/Ud_hienthi_giavi_Sandwich1/src/main/webapp/WEB-INF/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Bai_tap/Ud_hienthi_giavi_Sandwich1/src/main/webapp/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Bai_tap/Ud_hienthi_giavi_Sandwich1/src/main/webapp/WEB-INF/views/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Bai_tap/Ud_hienthi_giavi_Sandwich1/src/main/webapp/WEB-INF/views/sandwich.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Bai_tap/Ud_hienthi_giavi_Sandwich1/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Form và Data Binding/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Form và Data Binding/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Form và Data Binding/.gradle/5.2.1/fileChanges/last-build.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Form và Data Binding/.gradle/5.2.1/fileContent/fileContent.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Form và Data Binding/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Form và Data Binding/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Form và Data Binding/.gradle/5.2.1/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Form và Data Binding/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Form và Data Binding/.gradle/5.2.1/javaCompile/taskHistory.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Form và Data Binding/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Form và Data Binding/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Form và Data Binding/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Form và Data Binding/.gradle/vcs-1/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Form và Data Binding/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Form và Data Binding/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Form và Data Binding/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Form và Data Binding/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Form và Data Binding/.idea/libraries/Spring_5_2_3_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Form và Data Binding/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Form và Data Binding/.idea/modules/spring-mvc-form-tutorial.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Form và Data Binding/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Form và Data Binding/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Form và Data Binding/build/classes/java/main/controller/EmployeeController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Form và Data Binding/build/classes/java/main/model/Employee.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Form và Data Binding/build/libs/spring-mvc-form-tutorial-1.0-SNAPSHOT.war" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Form và Data Binding/build/tmp/war/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Form và Data Binding/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Form và Data Binding/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Form và Data Binding/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Form và Data Binding/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Form và Data Binding/lib/aopalliance-1.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Form và Data Binding/lib/commons-logging-1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Form và Data Binding/lib/spring-aop-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Form và Data Binding/lib/spring-aspects-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Form và Data Binding/lib/spring-beans-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Form và Data Binding/lib/spring-context-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Form và Data Binding/lib/spring-context-support-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Form và Data Binding/lib/spring-core-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Form và Data Binding/lib/spring-expression-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Form và Data Binding/lib/spring-instrument-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Form và Data Binding/lib/spring-jdbc-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Form và Data Binding/lib/spring-jms-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Form và Data Binding/lib/spring-messaging-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Form và Data Binding/lib/spring-orm-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Form và Data Binding/lib/spring-oxm-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Form và Data Binding/lib/spring-test-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Form và Data Binding/lib/spring-tx-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Form và Data Binding/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Form và Data Binding/src/main/java/controller/EmployeeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Form và Data Binding/src/main/java/model/Employee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Form và Data Binding/src/main/webapp/WEB-INF/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Form và Data Binding/src/main/webapp/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Form và Data Binding/src/main/webapp/WEB-INF/views/employee/create.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Form và Data Binding/src/main/webapp/WEB-INF/views/employee/error.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Form và Data Binding/src/main/webapp/WEB-INF/views/employee/info.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Form và Data Binding/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Form và Data Binding/src/main/webapp/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ud_kt_email_hople_Grable/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ud_kt_email_hople_Grable/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ud_kt_email_hople_Grable/.gradle/5.2.1/fileChanges/last-build.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ud_kt_email_hople_Grable/.gradle/5.2.1/fileContent/fileContent.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ud_kt_email_hople_Grable/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ud_kt_email_hople_Grable/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ud_kt_email_hople_Grable/.gradle/5.2.1/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ud_kt_email_hople_Grable/.gradle/5.2.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ud_kt_email_hople_Grable/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ud_kt_email_hople_Grable/.gradle/5.2.1/javaCompile/taskHistory.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ud_kt_email_hople_Grable/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ud_kt_email_hople_Grable/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ud_kt_email_hople_Grable/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ud_kt_email_hople_Grable/.gradle/vcs-1/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ud_kt_email_hople_Grable/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ud_kt_email_hople_Grable/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ud_kt_email_hople_Grable/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ud_kt_email_hople_Grable/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ud_kt_email_hople_Grable/.idea/libraries/Spring_5_2_3_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ud_kt_email_hople_Grable/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ud_kt_email_hople_Grable/.idea/modules/emailvalidate.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ud_kt_email_hople_Grable/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ud_kt_email_hople_Grable/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ud_kt_email_hople_Grable/build/classes/java/main/controllers/EmailController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ud_kt_email_hople_Grable/build/libs/emailvalidate-1.0-SNAPSHOT.war" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ud_kt_email_hople_Grable/build/tmp/war/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ud_kt_email_hople_Grable/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ud_kt_email_hople_Grable/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ud_kt_email_hople_Grable/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ud_kt_email_hople_Grable/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ud_kt_email_hople_Grable/lib/aopalliance-1.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ud_kt_email_hople_Grable/lib/commons-logging-1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ud_kt_email_hople_Grable/lib/spring-aop-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ud_kt_email_hople_Grable/lib/spring-aspects-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ud_kt_email_hople_Grable/lib/spring-beans-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ud_kt_email_hople_Grable/lib/spring-context-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ud_kt_email_hople_Grable/lib/spring-context-support-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ud_kt_email_hople_Grable/lib/spring-core-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ud_kt_email_hople_Grable/lib/spring-expression-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ud_kt_email_hople_Grable/lib/spring-instrument-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ud_kt_email_hople_Grable/lib/spring-jdbc-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ud_kt_email_hople_Grable/lib/spring-jms-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ud_kt_email_hople_Grable/lib/spring-messaging-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ud_kt_email_hople_Grable/lib/spring-orm-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ud_kt_email_hople_Grable/lib/spring-oxm-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ud_kt_email_hople_Grable/lib/spring-test-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ud_kt_email_hople_Grable/lib/spring-tx-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ud_kt_email_hople_Grable/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ud_kt_email_hople_Grable/src/main/java/controllers/EmailController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ud_kt_email_hople_Grable/src/main/webapp/WEB-INF/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ud_kt_email_hople_Grable/src/main/webapp/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ud_kt_email_hople_Grable/src/main/webapp/WEB-INF/views/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ud_kt_email_hople_Grable/src/main/webapp/WEB-INF/views/success.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ud_kt_email_hople_Grable/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ud_kt_email_hople_Grable/src/main/webapp/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ud_kt_email_hople_Maven7/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ud_kt_email_hople_Maven7/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ud_kt_email_hople_Maven7/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ud_kt_email_hople_Maven7/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ud_kt_email_hople_Maven7/Ud_kt_email_hople_Maven7.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ud_kt_email_hople_Maven7/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ud_kt_email_hople_Maven7/src/main/java/controllers/HomeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ud_kt_email_hople_Maven7/src/main/webapp/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ud_kt_email_hople_Maven7/src/main/webapp/WEB-INF/views/home.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ud_kt_email_hople_Maven7/src/main/webapp/WEB-INF/views/success.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ud_kt_email_hople_Maven7/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ud_kt_email_hople_Maven7/target/Ud_kt_email_hople_Maven7.war" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ud_kt_email_hople_Maven7/target/Ud_kt_email_hople_Maven7/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ud_kt_email_hople_Maven7/target/Ud_kt_email_hople_Maven7/WEB-INF/classes/controllers/HomeController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ud_kt_email_hople_Maven7/target/Ud_kt_email_hople_Maven7/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ud_kt_email_hople_Maven7/target/Ud_kt_email_hople_Maven7/WEB-INF/lib/commons-logging-1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ud_kt_email_hople_Maven7/target/Ud_kt_email_hople_Maven7/WEB-INF/lib/spring-aop-4.3.16.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ud_kt_email_hople_Maven7/target/Ud_kt_email_hople_Maven7/WEB-INF/lib/spring-beans-4.3.16.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ud_kt_email_hople_Maven7/target/Ud_kt_email_hople_Maven7/WEB-INF/lib/spring-context-4.3.16.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ud_kt_email_hople_Maven7/target/Ud_kt_email_hople_Maven7/WEB-INF/lib/spring-core-4.3.16.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ud_kt_email_hople_Maven7/target/Ud_kt_email_hople_Maven7/WEB-INF/lib/spring-expression-4.3.16.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ud_kt_email_hople_Maven7/target/Ud_kt_email_hople_Maven7/WEB-INF/lib/spring-web-4.3.16.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ud_kt_email_hople_Maven7/target/Ud_kt_email_hople_Maven7/WEB-INF/lib/spring-webmvc-4.3.16.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ud_kt_email_hople_Maven7/target/Ud_kt_email_hople_Maven7/WEB-INF/views/home.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ud_kt_email_hople_Maven7/target/Ud_kt_email_hople_Maven7/WEB-INF/views/success.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ud_kt_email_hople_Maven7/target/Ud_kt_email_hople_Maven7/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ud_kt_email_hople_Maven7/target/classes/controllers/HomeController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ud_xem_gio_cac_thpho/.classpath" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ud_xem_gio_cac_thpho/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ud_xem_gio_cac_thpho/.idea/artifacts/timezone_war.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ud_xem_gio_cac_thpho/.idea/artifacts/timezone_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ud_xem_gio_cac_thpho/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ud_xem_gio_cac_thpho/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ud_xem_gio_cac_thpho/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ud_xem_gio_cac_thpho/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ud_xem_gio_cac_thpho/.idea/libraries/Maven__javax_servlet_javax_servlet_api_3_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ud_xem_gio_cac_thpho/.idea/libraries/Maven__org_springframework_spring_aop_4_3_16_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ud_xem_gio_cac_thpho/.idea/libraries/Maven__org_springframework_spring_beans_4_3_16_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ud_xem_gio_cac_thpho/.idea/libraries/Maven__org_springframework_spring_context_4_3_16_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ud_xem_gio_cac_thpho/.idea/libraries/Maven__org_springframework_spring_core_4_3_16_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ud_xem_gio_cac_thpho/.idea/libraries/Maven__org_springframework_spring_expression_4_3_16_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ud_xem_gio_cac_thpho/.idea/libraries/Maven__org_springframework_spring_web_4_3_16_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ud_xem_gio_cac_thpho/.idea/libraries/Maven__org_springframework_spring_webmvc_4_3_16_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ud_xem_gio_cac_thpho/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ud_xem_gio_cac_thpho/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ud_xem_gio_cac_thpho/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ud_xem_gio_cac_thpho/.project" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ud_xem_gio_cac_thpho/.settings/.jsdtscope" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ud_xem_gio_cac_thpho/.settings/org.eclipse.core.resources.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ud_xem_gio_cac_thpho/.settings/org.eclipse.jdt.core.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ud_xem_gio_cac_thpho/.settings/org.eclipse.m2e.core.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ud_xem_gio_cac_thpho/.settings/org.eclipse.wst.common.component" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ud_xem_gio_cac_thpho/.settings/org.eclipse.wst.common.project.facet.core.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ud_xem_gio_cac_thpho/.settings/org.eclipse.wst.jsdt.ui.superType.container" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ud_xem_gio_cac_thpho/.settings/org.eclipse.wst.jsdt.ui.superType.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ud_xem_gio_cac_thpho/.settings/org.eclipse.wst.validation.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ud_xem_gio_cac_thpho/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ud_xem_gio_cac_thpho/src/main/java/controller/TimeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ud_xem_gio_cac_thpho/src/main/webapp/WEB-INF/configs/spring-config-mvc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ud_xem_gio_cac_thpho/src/main/webapp/WEB-INF/views/worldclock.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ud_xem_gio_cac_thpho/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ud_xem_gio_cac_thpho/src/main/webapp/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ud_xem_gio_cac_thpho/target/classes/controller/TimeController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ud_xem_gio_cac_thpho/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ud_xem_gio_cac_thpho/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ud_xem_gio_cac_thpho/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ud_xem_gio_cac_thpho/target/timezone.war" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ud_xem_gio_cac_thpho/target/timezone/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ud_xem_gio_cac_thpho/target/timezone/WEB-INF/classes/controller/TimeController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ud_xem_gio_cac_thpho/target/timezone/WEB-INF/configs/spring-config-mvc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ud_xem_gio_cac_thpho/target/timezone/WEB-INF/lib/commons-logging-1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ud_xem_gio_cac_thpho/target/timezone/WEB-INF/lib/spring-aop-4.3.16.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ud_xem_gio_cac_thpho/target/timezone/WEB-INF/lib/spring-beans-4.3.16.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ud_xem_gio_cac_thpho/target/timezone/WEB-INF/lib/spring-context-4.3.16.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ud_xem_gio_cac_thpho/target/timezone/WEB-INF/lib/spring-core-4.3.16.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ud_xem_gio_cac_thpho/target/timezone/WEB-INF/lib/spring-expression-4.3.16.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ud_xem_gio_cac_thpho/target/timezone/WEB-INF/lib/spring-web-4.3.16.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ud_xem_gio_cac_thpho/target/timezone/WEB-INF/lib/spring-webmvc-4.3.16.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ud_xem_gio_cac_thpho/target/timezone/WEB-INF/views/worldclock.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ud_xem_gio_cac_thpho/target/timezone/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ud_xem_gio_cac_thpho/target/timezone/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ud_xem_gio_cac_thpho/timezone.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ung_dung_login/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ung_dung_login/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ung_dung_login/.idea/artifacts/Ung_dung_login_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ung_dung_login/.idea/libraries/Spring_5_2_3_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ung_dung_login/.idea/libraries/Spring_MVC_5_2_3_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ung_dung_login/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ung_dung_login/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ung_dung_login/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ung_dung_login/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ung_dung_login/Ung_dung_login.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ung_dung_login/lib/aopalliance-1.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ung_dung_login/lib/commons-logging-1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ung_dung_login/lib/spring-aop-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ung_dung_login/lib/spring-aspects-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ung_dung_login/lib/spring-beans-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ung_dung_login/lib/spring-context-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ung_dung_login/lib/spring-context-support-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ung_dung_login/lib/spring-core-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ung_dung_login/lib/spring-expression-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ung_dung_login/lib/spring-instrument-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ung_dung_login/lib/spring-jdbc-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ung_dung_login/lib/spring-jms-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ung_dung_login/lib/spring-messaging-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ung_dung_login/lib/spring-orm-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ung_dung_login/lib/spring-oxm-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ung_dung_login/lib/spring-test-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ung_dung_login/lib/spring-tx-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ung_dung_login/lib/spring-web-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ung_dung_login/lib/spring-webmvc-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ung_dung_login/out/artifacts/Ung_dung_login_war_exploded/WEB-INF/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ung_dung_login/out/artifacts/Ung_dung_login_war_exploded/WEB-INF/classes/META-INF/Ung_dung_login.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ung_dung_login/out/artifacts/Ung_dung_login_war_exploded/WEB-INF/classes/controllers/UserController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ung_dung_login/out/artifacts/Ung_dung_login_war_exploded/WEB-INF/classes/dao/UserDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ung_dung_login/out/artifacts/Ung_dung_login_war_exploded/WEB-INF/classes/model/Login.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ung_dung_login/out/artifacts/Ung_dung_login_war_exploded/WEB-INF/classes/model/User.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ung_dung_login/out/artifacts/Ung_dung_login_war_exploded/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ung_dung_login/out/artifacts/Ung_dung_login_war_exploded/WEB-INF/lib/aopalliance-1.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ung_dung_login/out/artifacts/Ung_dung_login_war_exploded/WEB-INF/lib/commons-logging-1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ung_dung_login/out/artifacts/Ung_dung_login_war_exploded/WEB-INF/lib/spring-aop-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ung_dung_login/out/artifacts/Ung_dung_login_war_exploded/WEB-INF/lib/spring-aspects-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ung_dung_login/out/artifacts/Ung_dung_login_war_exploded/WEB-INF/lib/spring-beans-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ung_dung_login/out/artifacts/Ung_dung_login_war_exploded/WEB-INF/lib/spring-context-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ung_dung_login/out/artifacts/Ung_dung_login_war_exploded/WEB-INF/lib/spring-context-support-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ung_dung_login/out/artifacts/Ung_dung_login_war_exploded/WEB-INF/lib/spring-core-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ung_dung_login/out/artifacts/Ung_dung_login_war_exploded/WEB-INF/lib/spring-expression-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ung_dung_login/out/artifacts/Ung_dung_login_war_exploded/WEB-INF/lib/spring-instrument-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ung_dung_login/out/artifacts/Ung_dung_login_war_exploded/WEB-INF/lib/spring-jdbc-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ung_dung_login/out/artifacts/Ung_dung_login_war_exploded/WEB-INF/lib/spring-jms-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ung_dung_login/out/artifacts/Ung_dung_login_war_exploded/WEB-INF/lib/spring-messaging-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ung_dung_login/out/artifacts/Ung_dung_login_war_exploded/WEB-INF/lib/spring-orm-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ung_dung_login/out/artifacts/Ung_dung_login_war_exploded/WEB-INF/lib/spring-oxm-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ung_dung_login/out/artifacts/Ung_dung_login_war_exploded/WEB-INF/lib/spring-test-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ung_dung_login/out/artifacts/Ung_dung_login_war_exploded/WEB-INF/lib/spring-tx-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ung_dung_login/out/artifacts/Ung_dung_login_war_exploded/WEB-INF/lib/spring-web-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ung_dung_login/out/artifacts/Ung_dung_login_war_exploded/WEB-INF/lib/spring-webmvc-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ung_dung_login/out/artifacts/Ung_dung_login_war_exploded/WEB-INF/views/error.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ung_dung_login/out/artifacts/Ung_dung_login_war_exploded/WEB-INF/views/home.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ung_dung_login/out/artifacts/Ung_dung_login_war_exploded/WEB-INF/views/user.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ung_dung_login/out/artifacts/Ung_dung_login_war_exploded/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ung_dung_login/out/artifacts/Ung_dung_login_war_exploded/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ung_dung_login/out/production/Ung_dung_login/controllers/UserController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ung_dung_login/out/production/Ung_dung_login/dao/UserDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ung_dung_login/out/production/Ung_dung_login/model/Login.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ung_dung_login/out/production/Ung_dung_login/model/User.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ung_dung_login/src/controllers/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ung_dung_login/src/dao/UserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ung_dung_login/src/model/Login.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ung_dung_login/src/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ung_dung_login/web/WEB-INF/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ung_dung_login/web/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ung_dung_login/web/WEB-INF/views/error.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ung_dung_login/web/WEB-INF/views/home.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ung_dung_login/web/WEB-INF/views/user.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ung_dung_login/web/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Ung_dung_login/web/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Upload file/.classpath" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Upload file/.gradle/5.2.1/fileChanges/last-build.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Upload file/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Upload file/.gradle/5.2.1/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Upload file/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Upload file/.idea/artifacts/emailvalidate_war.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Upload file/.idea/artifacts/emailvalidate_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Upload file/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Upload file/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Upload file/.idea/libraries/Java_EE_6_Java_EE_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Upload file/.idea/libraries/Maven__commons_fileupload_commons_fileupload_1_3_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Upload file/.idea/libraries/Maven__commons_io_commons_io_2_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Upload file/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Upload file/.idea/libraries/Maven__javax_servlet_javax_servlet_api_3_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Upload file/.idea/libraries/Maven__javax_servlet_jsp_jsp_api_2_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Upload file/.idea/libraries/Maven__javax_servlet_jstl_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Upload file/.idea/libraries/Maven__junit_junit_3_8_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Upload file/.idea/libraries/Maven__org_springframework_spring_aop_4_3_3_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Upload file/.idea/libraries/Maven__org_springframework_spring_beans_4_3_3_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Upload file/.idea/libraries/Maven__org_springframework_spring_context_4_3_3_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Upload file/.idea/libraries/Maven__org_springframework_spring_core_4_3_3_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Upload file/.idea/libraries/Maven__org_springframework_spring_expression_4_3_3_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Upload file/.idea/libraries/Maven__org_springframework_spring_web_4_3_3_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Upload file/.idea/libraries/Maven__org_springframework_spring_webmvc_4_3_3_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Upload file/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Upload file/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Upload file/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Upload file/.project" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Upload file/.settings/.jsdtscope" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Upload file/.settings/org.eclipse.core.resources.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Upload file/.settings/org.eclipse.jdt.core.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Upload file/.settings/org.eclipse.m2e.core.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Upload file/.settings/org.eclipse.wst.common.component" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Upload file/.settings/org.eclipse.wst.common.project.facet.core.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Upload file/.settings/org.eclipse.wst.jsdt.ui.superType.container" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Upload file/.settings/org.eclipse.wst.jsdt.ui.superType.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Upload file/.settings/org.eclipse.wst.validation.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Upload file/.tern-project" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Upload file/emailvalidate.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Upload file/lib/javax.annotation.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Upload file/lib/javax.ejb.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Upload file/lib/javax.jms.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Upload file/lib/javax.persistence.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Upload file/lib/javax.resource.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Upload file/lib/javax.servlet.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Upload file/lib/javax.servlet.jsp.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Upload file/lib/javax.servlet.jsp.jstl.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Upload file/lib/javax.transaction.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Upload file/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Upload file/src/main/java/controller/MyFileUploadController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Upload file/src/main/java/form/MyUploadForm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Upload file/src/main/webapp/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Upload file/src/main/webapp/WEB-INF/configs/spring-config-mvc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Upload file/src/main/webapp/WEB-INF/configs/spring-config-upload.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Upload file/src/main/webapp/WEB-INF/views/_menu.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Upload file/src/main/webapp/WEB-INF/views/uploadMultiFile.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Upload file/src/main/webapp/WEB-INF/views/uploadOneFile.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Upload file/src/main/webapp/WEB-INF/views/uploadResult.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Upload file/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Upload file/target/classes/controller/MyFileUploadController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Upload file/target/classes/form/MyUploadForm.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Upload file/target/m2e-wtp/web-resources/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Upload file/target/m2e-wtp/web-resources/META-INF/maven/vn.codegym/emailvalidate/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Upload file/target/m2e-wtp/web-resources/META-INF/maven/vn.codegym/emailvalidate/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Upload file/target/uploadfile/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Upload file/target/uploadfile/WEB-INF/classes/controller/MyFileUploadController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Upload file/target/uploadfile/WEB-INF/classes/form/MyUploadForm.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Upload file/target/uploadfile/WEB-INF/configs/spring-config-mvc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Upload file/target/uploadfile/WEB-INF/configs/spring-config-upload.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Upload file/target/uploadfile/WEB-INF/lib/commons-fileupload-1.3.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Upload file/target/uploadfile/WEB-INF/lib/commons-io-2.4.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Upload file/target/uploadfile/WEB-INF/lib/commons-logging-1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Upload file/target/uploadfile/WEB-INF/lib/jstl-1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Upload file/target/uploadfile/WEB-INF/lib/spring-aop-4.3.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Upload file/target/uploadfile/WEB-INF/lib/spring-beans-4.3.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Upload file/target/uploadfile/WEB-INF/lib/spring-context-4.3.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Upload file/target/uploadfile/WEB-INF/lib/spring-core-4.3.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Upload file/target/uploadfile/WEB-INF/lib/spring-expression-4.3.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Upload file/target/uploadfile/WEB-INF/lib/spring-web-4.3.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Upload file/target/uploadfile/WEB-INF/lib/spring-webmvc-4.3.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Upload file/target/uploadfile/WEB-INF/views/_menu.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Upload file/target/uploadfile/WEB-INF/views/uploadMultiFile.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Upload file/target/uploadfile/WEB-INF/views/uploadOneFile.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Upload file/target/uploadfile/WEB-INF/views/uploadResult.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Upload file/target/uploadfile/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Xem_gio_cac_thpho_tren_the_gioi2/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Xem_gio_cac_thpho_tren_the_gioi2/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Xem_gio_cac_thpho_tren_the_gioi2/.gradle/5.2.1/fileChanges/last-build.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Xem_gio_cac_thpho_tren_the_gioi2/.gradle/5.2.1/fileContent/fileContent.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Xem_gio_cac_thpho_tren_the_gioi2/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Xem_gio_cac_thpho_tren_the_gioi2/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Xem_gio_cac_thpho_tren_the_gioi2/.gradle/5.2.1/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Xem_gio_cac_thpho_tren_the_gioi2/.gradle/5.2.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Xem_gio_cac_thpho_tren_the_gioi2/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Xem_gio_cac_thpho_tren_the_gioi2/.gradle/5.2.1/javaCompile/taskHistory.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Xem_gio_cac_thpho_tren_the_gioi2/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Xem_gio_cac_thpho_tren_the_gioi2/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Xem_gio_cac_thpho_tren_the_gioi2/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Xem_gio_cac_thpho_tren_the_gioi2/.gradle/vcs-1/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Xem_gio_cac_thpho_tren_the_gioi2/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Xem_gio_cac_thpho_tren_the_gioi2/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Xem_gio_cac_thpho_tren_the_gioi2/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Xem_gio_cac_thpho_tren_the_gioi2/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Xem_gio_cac_thpho_tren_the_gioi2/.idea/libraries/Spring_5_2_3_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Xem_gio_cac_thpho_tren_the_gioi2/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Xem_gio_cac_thpho_tren_the_gioi2/.idea/modules/spring-timezone.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Xem_gio_cac_thpho_tren_the_gioi2/.idea/modules/spring-timezone.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Xem_gio_cac_thpho_tren_the_gioi2/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Xem_gio_cac_thpho_tren_the_gioi2/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Xem_gio_cac_thpho_tren_the_gioi2/build/classes/java/main/controller/TimeController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Xem_gio_cac_thpho_tren_the_gioi2/build/libs/spring-timezone-1.0-SNAPSHOT.war" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Xem_gio_cac_thpho_tren_the_gioi2/build/tmp/war/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Xem_gio_cac_thpho_tren_the_gioi2/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Xem_gio_cac_thpho_tren_the_gioi2/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Xem_gio_cac_thpho_tren_the_gioi2/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Xem_gio_cac_thpho_tren_the_gioi2/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Xem_gio_cac_thpho_tren_the_gioi2/lib/aopalliance-1.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Xem_gio_cac_thpho_tren_the_gioi2/lib/commons-logging-1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Xem_gio_cac_thpho_tren_the_gioi2/lib/spring-aop-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Xem_gio_cac_thpho_tren_the_gioi2/lib/spring-aspects-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Xem_gio_cac_thpho_tren_the_gioi2/lib/spring-beans-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Xem_gio_cac_thpho_tren_the_gioi2/lib/spring-context-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Xem_gio_cac_thpho_tren_the_gioi2/lib/spring-context-support-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Xem_gio_cac_thpho_tren_the_gioi2/lib/spring-core-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Xem_gio_cac_thpho_tren_the_gioi2/lib/spring-expression-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Xem_gio_cac_thpho_tren_the_gioi2/lib/spring-instrument-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Xem_gio_cac_thpho_tren_the_gioi2/lib/spring-jdbc-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Xem_gio_cac_thpho_tren_the_gioi2/lib/spring-jms-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Xem_gio_cac_thpho_tren_the_gioi2/lib/spring-messaging-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Xem_gio_cac_thpho_tren_the_gioi2/lib/spring-orm-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Xem_gio_cac_thpho_tren_the_gioi2/lib/spring-oxm-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Xem_gio_cac_thpho_tren_the_gioi2/lib/spring-test-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Xem_gio_cac_thpho_tren_the_gioi2/lib/spring-tx-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Xem_gio_cac_thpho_tren_the_gioi2/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Xem_gio_cac_thpho_tren_the_gioi2/src/main/java/controller/TimeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Xem_gio_cac_thpho_tren_the_gioi2/src/main/webapp/WEB-INF/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Xem_gio_cac_thpho_tren_the_gioi2/src/main/webapp/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Xem_gio_cac_thpho_tren_the_gioi2/src/main/webapp/WEB-INF/views/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Xem_gio_cac_thpho_tren_the_gioi2/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X5_Spring_Controller/Thuc_hanh/Xem_gio_cac_thpho_tren_the_gioi2/src/main/webapp/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X6_Views_Thymeleaf/Bai_tap/Ud_quanly_sanpham/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X6_Views_Thymeleaf/Bai_tap/Ud_quanly_sanpham/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X6_Views_Thymeleaf/Bai_tap/Ud_quanly_sanpham/.gradle/5.2.1/fileChanges/last-build.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X6_Views_Thymeleaf/Bai_tap/Ud_quanly_sanpham/.gradle/5.2.1/fileContent/fileContent.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X6_Views_Thymeleaf/Bai_tap/Ud_quanly_sanpham/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X6_Views_Thymeleaf/Bai_tap/Ud_quanly_sanpham/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X6_Views_Thymeleaf/Bai_tap/Ud_quanly_sanpham/.gradle/5.2.1/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X6_Views_Thymeleaf/Bai_tap/Ud_quanly_sanpham/.gradle/5.2.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X6_Views_Thymeleaf/Bai_tap/Ud_quanly_sanpham/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X6_Views_Thymeleaf/Bai_tap/Ud_quanly_sanpham/.gradle/5.2.1/javaCompile/taskHistory.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X6_Views_Thymeleaf/Bai_tap/Ud_quanly_sanpham/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X6_Views_Thymeleaf/Bai_tap/Ud_quanly_sanpham/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X6_Views_Thymeleaf/Bai_tap/Ud_quanly_sanpham/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X6_Views_Thymeleaf/Bai_tap/Ud_quanly_sanpham/.gradle/vcs-1/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X6_Views_Thymeleaf/Bai_tap/Ud_quanly_sanpham/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X6_Views_Thymeleaf/Bai_tap/Ud_quanly_sanpham/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X6_Views_Thymeleaf/Bai_tap/Ud_quanly_sanpham/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X6_Views_Thymeleaf/Bai_tap/Ud_quanly_sanpham/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X6_Views_Thymeleaf/Bai_tap/Ud_quanly_sanpham/.idea/libraries/Spring_5_2_3_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X6_Views_Thymeleaf/Bai_tap/Ud_quanly_sanpham/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X6_Views_Thymeleaf/Bai_tap/Ud_quanly_sanpham/.idea/modules/Ud_quanly_sanpham.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X6_Views_Thymeleaf/Bai_tap/Ud_quanly_sanpham/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X6_Views_Thymeleaf/Bai_tap/Ud_quanly_sanpham/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X6_Views_Thymeleaf/Bai_tap/Ud_quanly_sanpham/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X6_Views_Thymeleaf/Bai_tap/Ud_quanly_sanpham/build/classes/java/main/com/codegym/AppConfiguration.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X6_Views_Thymeleaf/Bai_tap/Ud_quanly_sanpham/build/classes/java/main/com/codegym/controller/ProductController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X6_Views_Thymeleaf/Bai_tap/Ud_quanly_sanpham/build/classes/java/main/com/codegym/model/Product.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X6_Views_Thymeleaf/Bai_tap/Ud_quanly_sanpham/build/classes/java/main/com/codegym/service/ProductService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X6_Views_Thymeleaf/Bai_tap/Ud_quanly_sanpham/build/classes/java/main/com/codegym/service/ProductServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X6_Views_Thymeleaf/Bai_tap/Ud_quanly_sanpham/build/libs/Ud_quanly_sanpham-1.0-SNAPSHOT.war" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X6_Views_Thymeleaf/Bai_tap/Ud_quanly_sanpham/build/tmp/war/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X6_Views_Thymeleaf/Bai_tap/Ud_quanly_sanpham/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X6_Views_Thymeleaf/Bai_tap/Ud_quanly_sanpham/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X6_Views_Thymeleaf/Bai_tap/Ud_quanly_sanpham/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X6_Views_Thymeleaf/Bai_tap/Ud_quanly_sanpham/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X6_Views_Thymeleaf/Bai_tap/Ud_quanly_sanpham/lib/aopalliance-1.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X6_Views_Thymeleaf/Bai_tap/Ud_quanly_sanpham/lib/commons-logging-1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X6_Views_Thymeleaf/Bai_tap/Ud_quanly_sanpham/lib/spring-aop-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X6_Views_Thymeleaf/Bai_tap/Ud_quanly_sanpham/lib/spring-aspects-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X6_Views_Thymeleaf/Bai_tap/Ud_quanly_sanpham/lib/spring-beans-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X6_Views_Thymeleaf/Bai_tap/Ud_quanly_sanpham/lib/spring-context-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X6_Views_Thymeleaf/Bai_tap/Ud_quanly_sanpham/lib/spring-context-support-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X6_Views_Thymeleaf/Bai_tap/Ud_quanly_sanpham/lib/spring-core-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X6_Views_Thymeleaf/Bai_tap/Ud_quanly_sanpham/lib/spring-expression-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X6_Views_Thymeleaf/Bai_tap/Ud_quanly_sanpham/lib/spring-instrument-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X6_Views_Thymeleaf/Bai_tap/Ud_quanly_sanpham/lib/spring-jdbc-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X6_Views_Thymeleaf/Bai_tap/Ud_quanly_sanpham/lib/spring-jms-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X6_Views_Thymeleaf/Bai_tap/Ud_quanly_sanpham/lib/spring-messaging-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X6_Views_Thymeleaf/Bai_tap/Ud_quanly_sanpham/lib/spring-orm-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X6_Views_Thymeleaf/Bai_tap/Ud_quanly_sanpham/lib/spring-oxm-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X6_Views_Thymeleaf/Bai_tap/Ud_quanly_sanpham/lib/spring-test-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X6_Views_Thymeleaf/Bai_tap/Ud_quanly_sanpham/lib/spring-tx-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X6_Views_Thymeleaf/Bai_tap/Ud_quanly_sanpham/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X6_Views_Thymeleaf/Bai_tap/Ud_quanly_sanpham/src/main/java/com/codegym/AppConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X6_Views_Thymeleaf/Bai_tap/Ud_quanly_sanpham/src/main/java/com/codegym/controller/ProductController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X6_Views_Thymeleaf/Bai_tap/Ud_quanly_sanpham/src/main/java/com/codegym/model/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X6_Views_Thymeleaf/Bai_tap/Ud_quanly_sanpham/src/main/java/com/codegym/service/ProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X6_Views_Thymeleaf/Bai_tap/Ud_quanly_sanpham/src/main/java/com/codegym/service/ProductServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X6_Views_Thymeleaf/Bai_tap/Ud_quanly_sanpham/src/main/webapp/WEB-INF/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X6_Views_Thymeleaf/Bai_tap/Ud_quanly_sanpham/src/main/webapp/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X6_Views_Thymeleaf/Bai_tap/Ud_quanly_sanpham/src/main/webapp/WEB-INF/views/create.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X6_Views_Thymeleaf/Bai_tap/Ud_quanly_sanpham/src/main/webapp/WEB-INF/views/delete.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X6_Views_Thymeleaf/Bai_tap/Ud_quanly_sanpham/src/main/webapp/WEB-INF/views/edit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X6_Views_Thymeleaf/Bai_tap/Ud_quanly_sanpham/src/main/webapp/WEB-INF/views/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X6_Views_Thymeleaf/Bai_tap/Ud_quanly_sanpham/src/main/webapp/WEB-INF/views/layout.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X6_Views_Thymeleaf/Bai_tap/Ud_quanly_sanpham/src/main/webapp/WEB-INF/views/view.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X6_Views_Thymeleaf/Bai_tap/Ud_quanly_sanpham/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X6_Views_Thymeleaf/Bai_tap/Ud_quanly_sanpham/src/main/webapp/img/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X6_Views_Thymeleaf/Bai_tap/Ud_quanly_sanpham/src/main/webapp/img/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X6_Views_Thymeleaf/Bai_tap/Ud_quanly_sanpham/src/main/webapp/img/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X6_Views_Thymeleaf/Bai_tap/Ud_quanly_sanpham/src/main/webapp/img/4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X6_Views_Thymeleaf/Bai_tap/Ud_quanly_sanpham/src/main/webapp/img/5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X6_Views_Thymeleaf/Bai_tap/Ud_quanly_sanpham/src/main/webapp/img/6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X6_Views_Thymeleaf/Thuc_hanh/Ud_quanly_khachhang/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X6_Views_Thymeleaf/Thuc_hanh/Ud_quanly_khachhang/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X6_Views_Thymeleaf/Thuc_hanh/Ud_quanly_khachhang/.gradle/5.2.1/fileChanges/last-build.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X6_Views_Thymeleaf/Thuc_hanh/Ud_quanly_khachhang/.gradle/5.2.1/fileContent/fileContent.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X6_Views_Thymeleaf/Thuc_hanh/Ud_quanly_khachhang/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X6_Views_Thymeleaf/Thuc_hanh/Ud_quanly_khachhang/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X6_Views_Thymeleaf/Thuc_hanh/Ud_quanly_khachhang/.gradle/5.2.1/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X6_Views_Thymeleaf/Thuc_hanh/Ud_quanly_khachhang/.gradle/5.2.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X6_Views_Thymeleaf/Thuc_hanh/Ud_quanly_khachhang/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X6_Views_Thymeleaf/Thuc_hanh/Ud_quanly_khachhang/.gradle/5.2.1/javaCompile/taskHistory.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X6_Views_Thymeleaf/Thuc_hanh/Ud_quanly_khachhang/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X6_Views_Thymeleaf/Thuc_hanh/Ud_quanly_khachhang/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X6_Views_Thymeleaf/Thuc_hanh/Ud_quanly_khachhang/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X6_Views_Thymeleaf/Thuc_hanh/Ud_quanly_khachhang/.gradle/vcs-1/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X6_Views_Thymeleaf/Thuc_hanh/Ud_quanly_khachhang/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X6_Views_Thymeleaf/Thuc_hanh/Ud_quanly_khachhang/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X6_Views_Thymeleaf/Thuc_hanh/Ud_quanly_khachhang/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X6_Views_Thymeleaf/Thuc_hanh/Ud_quanly_khachhang/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X6_Views_Thymeleaf/Thuc_hanh/Ud_quanly_khachhang/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X6_Views_Thymeleaf/Thuc_hanh/Ud_quanly_khachhang/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X6_Views_Thymeleaf/Thuc_hanh/Ud_quanly_khachhang/build/classes/java/main/com/codegym/AppConfiguration.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X6_Views_Thymeleaf/Thuc_hanh/Ud_quanly_khachhang/build/classes/java/main/com/codegym/controller/CustomerController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X6_Views_Thymeleaf/Thuc_hanh/Ud_quanly_khachhang/build/classes/java/main/com/codegym/model/Customer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X6_Views_Thymeleaf/Thuc_hanh/Ud_quanly_khachhang/build/classes/java/main/com/codegym/service/CustomerService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X6_Views_Thymeleaf/Thuc_hanh/Ud_quanly_khachhang/build/classes/java/main/com/codegym/service/CustomerServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X6_Views_Thymeleaf/Thuc_hanh/Ud_quanly_khachhang/build/libs/Ud_quanly_khachhang-1.0-SNAPSHOT.war" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X6_Views_Thymeleaf/Thuc_hanh/Ud_quanly_khachhang/build/tmp/war/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X6_Views_Thymeleaf/Thuc_hanh/Ud_quanly_khachhang/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X6_Views_Thymeleaf/Thuc_hanh/Ud_quanly_khachhang/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X6_Views_Thymeleaf/Thuc_hanh/Ud_quanly_khachhang/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X6_Views_Thymeleaf/Thuc_hanh/Ud_quanly_khachhang/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X6_Views_Thymeleaf/Thuc_hanh/Ud_quanly_khachhang/lib/aopalliance-1.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X6_Views_Thymeleaf/Thuc_hanh/Ud_quanly_khachhang/lib/commons-logging-1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X6_Views_Thymeleaf/Thuc_hanh/Ud_quanly_khachhang/lib/spring-aop-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X6_Views_Thymeleaf/Thuc_hanh/Ud_quanly_khachhang/lib/spring-aspects-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X6_Views_Thymeleaf/Thuc_hanh/Ud_quanly_khachhang/lib/spring-beans-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X6_Views_Thymeleaf/Thuc_hanh/Ud_quanly_khachhang/lib/spring-context-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X6_Views_Thymeleaf/Thuc_hanh/Ud_quanly_khachhang/lib/spring-context-support-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X6_Views_Thymeleaf/Thuc_hanh/Ud_quanly_khachhang/lib/spring-core-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X6_Views_Thymeleaf/Thuc_hanh/Ud_quanly_khachhang/lib/spring-expression-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X6_Views_Thymeleaf/Thuc_hanh/Ud_quanly_khachhang/lib/spring-instrument-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X6_Views_Thymeleaf/Thuc_hanh/Ud_quanly_khachhang/lib/spring-jdbc-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X6_Views_Thymeleaf/Thuc_hanh/Ud_quanly_khachhang/lib/spring-jms-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X6_Views_Thymeleaf/Thuc_hanh/Ud_quanly_khachhang/lib/spring-messaging-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X6_Views_Thymeleaf/Thuc_hanh/Ud_quanly_khachhang/lib/spring-orm-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X6_Views_Thymeleaf/Thuc_hanh/Ud_quanly_khachhang/lib/spring-oxm-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X6_Views_Thymeleaf/Thuc_hanh/Ud_quanly_khachhang/lib/spring-test-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X6_Views_Thymeleaf/Thuc_hanh/Ud_quanly_khachhang/lib/spring-tx-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X6_Views_Thymeleaf/Thuc_hanh/Ud_quanly_khachhang/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X6_Views_Thymeleaf/Thuc_hanh/Ud_quanly_khachhang/src/main/java/com/codegym/AppConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X6_Views_Thymeleaf/Thuc_hanh/Ud_quanly_khachhang/src/main/java/com/codegym/controller/CustomerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X6_Views_Thymeleaf/Thuc_hanh/Ud_quanly_khachhang/src/main/java/com/codegym/model/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X6_Views_Thymeleaf/Thuc_hanh/Ud_quanly_khachhang/src/main/java/com/codegym/service/CustomerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X6_Views_Thymeleaf/Thuc_hanh/Ud_quanly_khachhang/src/main/java/com/codegym/service/CustomerServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X6_Views_Thymeleaf/Thuc_hanh/Ud_quanly_khachhang/src/main/webapp/WEB-INF/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X6_Views_Thymeleaf/Thuc_hanh/Ud_quanly_khachhang/src/main/webapp/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X6_Views_Thymeleaf/Thuc_hanh/Ud_quanly_khachhang/src/main/webapp/WEB-INF/views/create.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X6_Views_Thymeleaf/Thuc_hanh/Ud_quanly_khachhang/src/main/webapp/WEB-INF/views/delete.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X6_Views_Thymeleaf/Thuc_hanh/Ud_quanly_khachhang/src/main/webapp/WEB-INF/views/edit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X6_Views_Thymeleaf/Thuc_hanh/Ud_quanly_khachhang/src/main/webapp/WEB-INF/views/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X6_Views_Thymeleaf/Thuc_hanh/Ud_quanly_khachhang/src/main/webapp/WEB-INF/views/layout.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X6_Views_Thymeleaf/Thuc_hanh/Ud_quanly_khachhang/src/main/webapp/WEB-INF/views/view.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X6_Views_Thymeleaf/Thuc_hanh/Ud_quanly_khachhang/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X7_Thao_tac_voi_CSDL_ORM/Thuc_hanh/Ud_ql_khach_hang/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X7_Thao_tac_voi_CSDL_ORM/Thuc_hanh/Ud_ql_khach_hang/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X7_Thao_tac_voi_CSDL_ORM/Thuc_hanh/Ud_ql_khach_hang/.gradle/5.2.1/fileChanges/last-build.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X7_Thao_tac_voi_CSDL_ORM/Thuc_hanh/Ud_ql_khach_hang/.gradle/5.2.1/fileContent/fileContent.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X7_Thao_tac_voi_CSDL_ORM/Thuc_hanh/Ud_ql_khach_hang/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X7_Thao_tac_voi_CSDL_ORM/Thuc_hanh/Ud_ql_khach_hang/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X7_Thao_tac_voi_CSDL_ORM/Thuc_hanh/Ud_ql_khach_hang/.gradle/5.2.1/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X7_Thao_tac_voi_CSDL_ORM/Thuc_hanh/Ud_ql_khach_hang/.gradle/5.2.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X7_Thao_tac_voi_CSDL_ORM/Thuc_hanh/Ud_ql_khach_hang/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X7_Thao_tac_voi_CSDL_ORM/Thuc_hanh/Ud_ql_khach_hang/.gradle/5.2.1/javaCompile/taskHistory.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X7_Thao_tac_voi_CSDL_ORM/Thuc_hanh/Ud_ql_khach_hang/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X7_Thao_tac_voi_CSDL_ORM/Thuc_hanh/Ud_ql_khach_hang/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X7_Thao_tac_voi_CSDL_ORM/Thuc_hanh/Ud_ql_khach_hang/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X7_Thao_tac_voi_CSDL_ORM/Thuc_hanh/Ud_ql_khach_hang/.gradle/vcs-1/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X7_Thao_tac_voi_CSDL_ORM/Thuc_hanh/Ud_ql_khach_hang/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X7_Thao_tac_voi_CSDL_ORM/Thuc_hanh/Ud_ql_khach_hang/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X7_Thao_tac_voi_CSDL_ORM/Thuc_hanh/Ud_ql_khach_hang/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X7_Thao_tac_voi_CSDL_ORM/Thuc_hanh/Ud_ql_khach_hang/.idea/libraries/Spring_5_2_3_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X7_Thao_tac_voi_CSDL_ORM/Thuc_hanh/Ud_ql_khach_hang/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X7_Thao_tac_voi_CSDL_ORM/Thuc_hanh/Ud_ql_khach_hang/.idea/modules/Ud_ql_khach_hang.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X7_Thao_tac_voi_CSDL_ORM/Thuc_hanh/Ud_ql_khach_hang/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X7_Thao_tac_voi_CSDL_ORM/Thuc_hanh/Ud_ql_khach_hang/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X7_Thao_tac_voi_CSDL_ORM/Thuc_hanh/Ud_ql_khach_hang/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X7_Thao_tac_voi_CSDL_ORM/Thuc_hanh/Ud_ql_khach_hang/build/classes/java/main/com/codegym/cms/ApplicationConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X7_Thao_tac_voi_CSDL_ORM/Thuc_hanh/Ud_ql_khach_hang/build/classes/java/main/com/codegym/cms/ApplicationInitializer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X7_Thao_tac_voi_CSDL_ORM/Thuc_hanh/Ud_ql_khach_hang/build/classes/java/main/com/codegym/cms/controller/CustomerController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X7_Thao_tac_voi_CSDL_ORM/Thuc_hanh/Ud_ql_khach_hang/build/classes/java/main/com/codegym/cms/model/Customer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X7_Thao_tac_voi_CSDL_ORM/Thuc_hanh/Ud_ql_khach_hang/build/classes/java/main/com/codegym/cms/repository/CustomerRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X7_Thao_tac_voi_CSDL_ORM/Thuc_hanh/Ud_ql_khach_hang/build/classes/java/main/com/codegym/cms/repository/Repository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X7_Thao_tac_voi_CSDL_ORM/Thuc_hanh/Ud_ql_khach_hang/build/classes/java/main/com/codegym/cms/repository/impl/CustomerRepositoryImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X7_Thao_tac_voi_CSDL_ORM/Thuc_hanh/Ud_ql_khach_hang/build/classes/java/main/com/codegym/cms/service/CustomerService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X7_Thao_tac_voi_CSDL_ORM/Thuc_hanh/Ud_ql_khach_hang/build/classes/java/main/com/codegym/cms/service/impl/CustomerServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X7_Thao_tac_voi_CSDL_ORM/Thuc_hanh/Ud_ql_khach_hang/build/libs/Ud_ql_khach_hang-1.0-SNAPSHOT.war" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X7_Thao_tac_voi_CSDL_ORM/Thuc_hanh/Ud_ql_khach_hang/build/tmp/war/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X7_Thao_tac_voi_CSDL_ORM/Thuc_hanh/Ud_ql_khach_hang/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X7_Thao_tac_voi_CSDL_ORM/Thuc_hanh/Ud_ql_khach_hang/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X7_Thao_tac_voi_CSDL_ORM/Thuc_hanh/Ud_ql_khach_hang/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X7_Thao_tac_voi_CSDL_ORM/Thuc_hanh/Ud_ql_khach_hang/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X7_Thao_tac_voi_CSDL_ORM/Thuc_hanh/Ud_ql_khach_hang/lib/aopalliance-1.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X7_Thao_tac_voi_CSDL_ORM/Thuc_hanh/Ud_ql_khach_hang/lib/commons-logging-1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X7_Thao_tac_voi_CSDL_ORM/Thuc_hanh/Ud_ql_khach_hang/lib/spring-aop-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X7_Thao_tac_voi_CSDL_ORM/Thuc_hanh/Ud_ql_khach_hang/lib/spring-aspects-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X7_Thao_tac_voi_CSDL_ORM/Thuc_hanh/Ud_ql_khach_hang/lib/spring-beans-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X7_Thao_tac_voi_CSDL_ORM/Thuc_hanh/Ud_ql_khach_hang/lib/spring-context-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X7_Thao_tac_voi_CSDL_ORM/Thuc_hanh/Ud_ql_khach_hang/lib/spring-context-support-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X7_Thao_tac_voi_CSDL_ORM/Thuc_hanh/Ud_ql_khach_hang/lib/spring-core-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X7_Thao_tac_voi_CSDL_ORM/Thuc_hanh/Ud_ql_khach_hang/lib/spring-expression-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X7_Thao_tac_voi_CSDL_ORM/Thuc_hanh/Ud_ql_khach_hang/lib/spring-instrument-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X7_Thao_tac_voi_CSDL_ORM/Thuc_hanh/Ud_ql_khach_hang/lib/spring-jdbc-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X7_Thao_tac_voi_CSDL_ORM/Thuc_hanh/Ud_ql_khach_hang/lib/spring-jms-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X7_Thao_tac_voi_CSDL_ORM/Thuc_hanh/Ud_ql_khach_hang/lib/spring-messaging-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X7_Thao_tac_voi_CSDL_ORM/Thuc_hanh/Ud_ql_khach_hang/lib/spring-orm-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X7_Thao_tac_voi_CSDL_ORM/Thuc_hanh/Ud_ql_khach_hang/lib/spring-oxm-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X7_Thao_tac_voi_CSDL_ORM/Thuc_hanh/Ud_ql_khach_hang/lib/spring-test-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X7_Thao_tac_voi_CSDL_ORM/Thuc_hanh/Ud_ql_khach_hang/lib/spring-tx-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X7_Thao_tac_voi_CSDL_ORM/Thuc_hanh/Ud_ql_khach_hang/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X7_Thao_tac_voi_CSDL_ORM/Thuc_hanh/Ud_ql_khach_hang/src/main/java/com/codegym/cms/ApplicationConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X7_Thao_tac_voi_CSDL_ORM/Thuc_hanh/Ud_ql_khach_hang/src/main/java/com/codegym/cms/ApplicationInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X7_Thao_tac_voi_CSDL_ORM/Thuc_hanh/Ud_ql_khach_hang/src/main/java/com/codegym/cms/controller/CustomerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X7_Thao_tac_voi_CSDL_ORM/Thuc_hanh/Ud_ql_khach_hang/src/main/java/com/codegym/cms/model/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X7_Thao_tac_voi_CSDL_ORM/Thuc_hanh/Ud_ql_khach_hang/src/main/java/com/codegym/cms/repository/CustomerRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X7_Thao_tac_voi_CSDL_ORM/Thuc_hanh/Ud_ql_khach_hang/src/main/java/com/codegym/cms/repository/Repository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X7_Thao_tac_voi_CSDL_ORM/Thuc_hanh/Ud_ql_khach_hang/src/main/java/com/codegym/cms/repository/impl/CustomerRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X7_Thao_tac_voi_CSDL_ORM/Thuc_hanh/Ud_ql_khach_hang/src/main/java/com/codegym/cms/service/CustomerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X7_Thao_tac_voi_CSDL_ORM/Thuc_hanh/Ud_ql_khach_hang/src/main/java/com/codegym/cms/service/impl/CustomerServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X7_Thao_tac_voi_CSDL_ORM/Thuc_hanh/Ud_ql_khach_hang/src/main/webapp/WEB-INF/views/customer/create.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X7_Thao_tac_voi_CSDL_ORM/Thuc_hanh/Ud_ql_khach_hang/src/main/webapp/WEB-INF/views/customer/delete.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X7_Thao_tac_voi_CSDL_ORM/Thuc_hanh/Ud_ql_khach_hang/src/main/webapp/WEB-INF/views/customer/edit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_JavaWeb/Java_Web/X7_Thao_tac_voi_CSDL_ORM/Thuc_hanh/Ud_ql_khach_hang/src/main/webapp/WEB-INF/views/customer/list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module2_Database/caseStudyDatabase.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Module2_Database/caseStudyDatabase.sql" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="CSS File" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+  </component>
+  <component name="ProjectId" id="1bVrlgcs2YYaza8pa8K2tQZQoel" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="CSS" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Thuc_hanh/Tao_bo_cuc_cac_fixed_header_va_fixed_footer" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+  </component>
+  <component name="RunManager" selected="JavaScript Debug.CSS1.html">
+    <configuration name="CSS1.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Bai giang/CSS1.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="Mo_hinh_hinh_hop_trong_CSS.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Bai giang/Mo_hinh_hinh_hop_trong_CSS.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="Position_Relative.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Bai giang/Position_Relative.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="Position_absolute.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Bai giang/Position_absolute.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="Tao_Layout_voi_div_va_Css.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Bai giang/Tao_Layout_voi_div_va_Css.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.CSS1.html" />
+        <item itemvalue="JavaScript Debug.Position_absolute.html" />
+        <item itemvalue="JavaScript Debug.Position_Relative.html" />
+        <item itemvalue="JavaScript Debug.Mo_hinh_hinh_hop_trong_CSS.html" />
+        <item itemvalue="JavaScript Debug.Tao_Layout_voi_div_va_Css.html" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0baadc5b-85a0-451e-838b-70353c2314c7" name="Default Changelist" comment="" />
+      <created>1588728254745</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1588728254745</updated>
+      <workItem from="1588728256550" duration="1909000" />
+      <workItem from="1588730716863" duration="7244000" />
+      <workItem from="1588746694238" duration="2883000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="137" y="20" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1588728807519">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="137" y="20" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1588728807519" />
+    <state x="463" y="120" key="FileChooserDialogImpl" timestamp="1588759185887">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="120" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1588759185887" />
+  </component>
+</project>
