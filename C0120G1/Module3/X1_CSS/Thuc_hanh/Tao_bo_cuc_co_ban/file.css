@@ -143,14 +143,17 @@
     top: 30px;
     left: 54px;
 
-
+}
+.columnCenter-bot{
+    position: relative;
 }
 .child-ctb {
     height: 111px;
     width: 27%;
     border: 1px solid black;
     float: left;
-    margin-right: 26px;
+    margin-right: 16px;
+    margin-left: 10px;
 
     margin-top: 19px;
     background-image: url("img/7.png");
