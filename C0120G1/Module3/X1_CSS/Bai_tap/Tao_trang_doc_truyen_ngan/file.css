@@ -1,0 +1,273 @@
+
+body{
+    background: black;
+}
+
+.head{
+    background: black;
+    height:35px;
+    width:100%;
+    border: 2px solid #ff9600;
+
+
+
+}
+.head  a{
+    margin-right: 15px;
+
+    margin-top: 10px;
+    margin-bottom:0px;
+    text-decoration: none;
+    color: #ff9600;
+
+    font-size: 12px;
+    float:left;
+}
+.head input{
+    position: relative;
+    margin-top: 8px;
+    background: black;
+    font-size: 10px;
+    color: white;
+
+}
+.logo1{
+    background-image:url("img/1.png");
+    height: 60%;
+    width: 14%;
+    float:left;
+    background-repeat: no-repeat;
+    margin-left:15px ;
+    background-size: 80px;
+    margin-top: 10px;
+
+}
+.login{
+    float: right;
+    font-size: 16px;
+
+}
+.login a{
+    border-right: 2px solid white ;
+    border-right-style: double;
+    padding-right: 10px;
+}
+.login a:last-child{
+    border-right: none;
+}
+
+.search {
+    float:left;
+}
+.search input{
+    float:left;
+    width: 80%;
+
+}
+.img{
+    height:20px;
+    width: 20px;
+    float:right;
+    background-image:url("img/3.png");
+    background-size: 14px;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-top: 10px;
+    right:22px;
+
+
+}
+.head-logo{
+    clear: both;
+    margin-left: 80px;
+    margin-right: 80px;
+    background: black;
+    height: 80px;
+    top:0px;
+    border: white 1px outset;
+
+}
+.logoBig{
+    background-image: url("img/2.png");
+    background-size: 140px;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 50%;
+    position: relative;
+    bottom: 8px;
+
+
+    margin-left: 30px;
+}
+.menu{
+
+    margin-left: 80px;
+    margin-right: 80px;
+    background:linear-gradient(#ff9600,black);
+    height: 30px;
+}
+.logo2{
+    background-image: url("img/4.png");
+    background-size: 30px;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 50px;
+    width: 50px;
+    float: left;
+}
+.menu ul li a{
+    color: white;
+    padding: 8px 8px;
+    text-decoration: none;
+    position: relative;
+    top: 5px;
+    display: block;
+    list-style-type: none;
+
+
+}
+.menu a:hover{
+    display:none;
+
+}
+.notification{
+    border: white 1px outset;
+    margin-left: 80px;
+    margin-right: 80px;
+    background: black;
+    height: 100px;
+}
+.notification a{
+   top:10px;
+    clear:both;
+    position: relative;
+    color: #02fb1f;
+}
+#a1{
+    color: #ff9600;
+    margin-left: 49px;
+}
+.advertisement{
+    border: white 1px outset;
+    margin-left: 80px;
+    margin-right: 80px;
+    background: black;
+    height: 100px;
+}
+.center{
+    margin-left: 80px;
+    margin-right: 80px;
+    width:81%;
+    border: white 1px outset;
+    position: relative;
+    height: 760px;
+}
+.title{
+    color: #ff9600;
+}
+
+.title1 {
+    color: #f15b0e;
+    padding: 15px 15px;
+    font-family: Arial;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.show1{
+    margin: 10px;
+    clear: both;
+    position: relative;
+    height: 220px;
+    width: 65%;
+    border: white 1px outset;
+
+}
+
+.show2{
+    background-image: url("img/5.png");
+    float: left;
+    position: relative;
+    height:150px ;
+    width:30%;
+    top:15px;
+    left:15px;
+    background-size:75% ;
+    background-repeat: no-repeat;
+}
+.show3{
+    float:right;
+    height:200px ;
+    position: relative;
+    width:70%;
+    font-size: 12px;
+}
+
+.show1 .show3 ul li{
+    color: #c1c2c3;
+    line-height: 20px;
+
+}
+.show1 .show3 .show4 a{
+    color: #f15b0e;
+    position: relative;
+    top :10px;
+    left:120px;
+    font-size: 15px;
+}
+.show1 .show3 .show5{
+    color: #c1c2c3;
+    font-size: 12px;
+}
+.show6{
+    margin: 10px;
+    position: relative;
+    height: 420px;
+    width: 65%;
+    border: white 1px outset;
+}
+.imgP{
+    height:40%;
+    width:20%;
+    float:left;
+    position: relative;
+    right:21px;
+    margin-right: 20px;
+}
+.imgP img{
+    height:150px;
+    width:90px;
+}
+.imgQ{
+
+    position: relative;
+    font-size: 10px;
+    color: #f15b0e;
+}
+.imgO{
+    font-size: 10px;
+    color: gray;
+}
+
+
+.title2{
+    color: #f15b0e;
+    font-size: 10px;
+    width:500px;
+}
+.title3{
+    color: grey;
+    font-size: 10px;
+    width:25%;
+}
+.right{
+    margin: 10px;
+    position: relative;
+    left:450px;
+    height: 705px;
+    top:-355px;
+    width: 46%;
+    border: white 1px outset;
+}
+
+
