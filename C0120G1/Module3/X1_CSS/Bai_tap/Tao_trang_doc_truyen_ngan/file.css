@@ -269,5 +269,34 @@ body{
     width: 46%;
     border: white 1px outset;
 }
+.right ul li a{
+    position: relative;
+    top:-310px;
+    color: #f15b0e;
+    font-size: 12px;
+    right: 10px;
+}
+.right1 a{
+    float:left;
+}
+.right1 .right3{
+    float: right;
+    color: gray;
+}
+.right4 {
+
+    position: relative;
+    top:10px;
+    margin-right: 10px;
+    color: grey;
+}
+.right ul li{
+    position: relative;
+    top: 5px;
+    width: 120px;
+
+    line-height: 30px;
+
+}
 
 
