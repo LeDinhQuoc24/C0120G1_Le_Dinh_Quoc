@@ -15,7 +15,7 @@ header {
     border-bottom: 1px dotted gray;
     margin: 0px;
 }
-/*.shopping-mall>h5{*/
-/*    margin-top: 5px;*/
-/*    letter-spacing: 0.5px;*/
-/*}*/
+.shopping-mall>h5{
+    margin-top: 5px;
+    letter-spacing: 0.5px;
+}
