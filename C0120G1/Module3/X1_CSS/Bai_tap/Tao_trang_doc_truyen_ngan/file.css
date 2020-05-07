@@ -121,13 +121,18 @@ body{
     text-decoration: none;
     position: relative;
     top: 5px;
-    display: block;
+
     list-style-type: none;
 
-
+}
+.menu a{
+    color: white;
+    padding: 10px 10px;
+    top: 5px;
+    position: relative;
 }
 .menu a:hover{
-    display:none;
+   color: blue;
 
 }
 .notification{
