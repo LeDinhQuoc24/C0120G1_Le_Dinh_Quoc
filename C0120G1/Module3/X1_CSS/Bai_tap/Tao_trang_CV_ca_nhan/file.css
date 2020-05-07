@@ -1,0 +1,68 @@
+.main{
+    margin: auto;
+    width: 50%;
+    height:  520px;
+    background: deepskyblue;
+}
+
+
+.left{
+    width: 40%;
+    height: 100%;
+    float: left;
+    background:  #203864;
+
+}
+.right{
+    width: 60%;
+    height: 100%;
+    float: right;
+    background: #dae3f4;
+}
+.left img{
+    margin:20px;
+    border-radius:10px ;
+
+}
+.left h2{
+    color: white;
+    font-size: 13px;
+}
+h4{
+    color: white;
+    font-size: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.right h2{
+    color: black;
+    font-size: 15px;
+}
+.center{
+    position: relative;
+    border: blue 1px solid;
+    height: 96%;
+    width: 90%;
+    left: 5%;
+    top: 2%;
+}
+
+.left1{
+    float: left;
+    font-size: 12px;
+    margin-left: 10px;
+    margin-top: -3px;
+
+
+}
+.right1{
+    float: right;
+    font-size: 12px;
+    margin-right: 10px;
+    margin-top: -3px;
+    width:65%;
+
+}
+.clear{
+    clear: both;
+}
