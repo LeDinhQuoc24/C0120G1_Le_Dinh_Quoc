@@ -238,10 +238,13 @@ body{
     position: relative;
     right:21px;
     margin-right: 20px;
+
+
 }
 .imgP img{
     height:150px;
     width:90px;
+
 }
 .imgQ{
 
@@ -273,6 +276,7 @@ body{
     top:-355px;
     width: 46%;
     border: white 1px outset;
+
 }
 .right ul li a{
     position: relative;
@@ -302,6 +306,10 @@ body{
 
     line-height: 30px;
 
+}
+.right2{
+    border-bottom: 1px darkgray dotted;
+    width: 150px;
 }
 
 
