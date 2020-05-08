@@ -1,26 +1,28 @@
-.col-sm-3 img{
+.col-sm-6 img{
     border: black 1px solid;
-    width: 296px;
+    width: 100%;
     margin-left: 15px;
 
 
 }
-.col-sm-3{
+.col-sm-6{
 
     padding-left: 0px;
     padding-right:15px;
     height: 350px;
 
 
+
 }
 .desc{
     border: black 1px solid;
+    width: 100%;
     height: 50px;
     margin-left:15px ;
-    position: relative;
     top:5px;
     margin-top: 5px;
     padding-top: 10px;
+
 
 
 }
