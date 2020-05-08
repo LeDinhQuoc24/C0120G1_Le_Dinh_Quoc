@@ -1,0 +1,31 @@
+.col-sm-3 img{
+    border: black 1px solid;
+    width: 296px;
+    margin-left: 15px;
+
+
+}
+.col-sm-3{
+
+    padding-left: 0px;
+    padding-right:15px;
+    height: 350px;
+
+
+}
+.desc{
+    border: black 1px solid;
+    height: 50px;
+    margin-left:15px ;
+    position: relative;
+    top:5px;
+    margin-top: 5px;
+    padding-top: 10px;
+
+
+}
+.clearfix{
+    clear: both;
+    height: 20px;
+
+}
