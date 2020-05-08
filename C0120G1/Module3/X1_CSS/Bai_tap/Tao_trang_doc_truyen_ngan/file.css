@@ -128,6 +128,7 @@ body{
 .menu a{
     color: white;
     padding: 10px 10px;
+
     top: 5px;
     position: relative;
 }
@@ -162,7 +163,7 @@ body{
 .center{
     margin-left: 80px;
     margin-right: 80px;
-    width:81%;
+    width:1127px;
     border: white 1px outset;
     position: relative;
     height: 760px;
@@ -177,6 +178,8 @@ body{
     font-family: Arial;
     font-size: 12px;
     font-weight: bold;
+    margin-left: 25px;
+    margin-right: 40px;
 }
 
 .show1{
@@ -193,11 +196,12 @@ body{
     background-image: url("img/5.png");
     float: left;
     position: relative;
-    height:150px ;
+    height:180px ;
     width:30%;
-    top:15px;
-    left:15px;
-    background-size:75% ;
+    top:25px;
+    left:35px;
+
+    background-size:50% ;
     background-repeat: no-repeat;
 }
 .show3{
@@ -211,6 +215,9 @@ body{
 .show1 .show3 ul li{
     color: #c1c2c3;
     line-height: 20px;
+    font-size: 18px;
+    margin-top: 5px;
+    margin-left: -50px;
 
 }
 .show1 .show3 .show4 a{
@@ -218,11 +225,12 @@ body{
     position: relative;
     top :10px;
     left:120px;
-    font-size: 15px;
+    font-size: 20px;
 }
 .show1 .show3 .show5{
     color: #c1c2c3;
-    font-size: 12px;
+    font-size: 16px;
+    margin-left: -5px;
 }
 .show6{
     margin: 10px;
@@ -244,6 +252,7 @@ body{
 .imgP img{
     height:150px;
     width:90px;
+    margin-left: 60px;
 
 }
 .imgQ{
@@ -251,10 +260,15 @@ body{
     position: relative;
     font-size: 10px;
     color: #f15b0e;
+    margin-left: 60px;
+
+
 }
 .imgO{
     font-size: 10px;
     color: gray;
+    margin-left: 60px;
+
 }
 
 
@@ -271,26 +285,31 @@ body{
 .right{
     margin: 10px;
     position: relative;
-    left:450px;
+    left:750px;
     height: 705px;
     top:-355px;
     width: 46%;
     border: white 1px outset;
-
+}
+.right ul li{
+    width: 200px;
 }
 .right ul li a{
     position: relative;
     top:-310px;
     color: #f15b0e;
-    font-size: 12px;
+    font-size:14px;
     right: 10px;
 }
 .right1 a{
     float:left;
+
 }
 .right1 .right3{
     float: right;
     color: gray;
+    right: -100px;
+
 }
 .right4 {
 
@@ -309,7 +328,10 @@ body{
 }
 .right2{
     border-bottom: 1px darkgray dotted;
-    width: 150px;
+    width: 280px;
+    margin-bottom: 10px;
+
 }
+
 
 
