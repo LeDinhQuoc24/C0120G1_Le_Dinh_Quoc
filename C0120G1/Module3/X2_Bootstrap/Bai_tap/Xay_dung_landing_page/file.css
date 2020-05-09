@@ -48,6 +48,23 @@
 
 .carousel-inner div img{
     width: 1400px;
+}
+.x1{
+    float: left;
+}
 
+.x1 a img{
+    margin-top:60px;
+    width: 200px;
+    height: 90px;
+    list-style-type: none;
+
+    padding-left: 150px;
+    margin-left: 50px;
+}
+.x1 div{
+    margin-left: 140px;
+    font-size: 18px;
+    color: dodgerblue;
 
 }
