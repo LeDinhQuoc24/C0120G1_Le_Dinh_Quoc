@@ -80,5 +80,15 @@ body{
     left: -340px;
     top:-30px;
     z-index: -1;
-
+}
+.t12{
+    position: fixed;
+    top: 10px;
+    left: 20px;
+    z-index: 99;
+}
+.main{
+    width: 75%;
+    margin: auto;
+    margin-top:150px;
 }
