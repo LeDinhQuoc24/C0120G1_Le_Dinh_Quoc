@@ -1,5 +1,6 @@
 body{
     background: black;
+    z-index: -99;
 }
 
 .navbar{
@@ -87,8 +88,229 @@ body{
     left: 20px;
     z-index: 99;
 }
-.main{
-    width: 75%;
+.main1{
+    position: absolute;
+    width: 1040px;
+    height: 150px;
     margin: auto;
     margin-top:150px;
+    margin-left: 160px;
+    background: url("img/main.png") 0px 0px ;
+    z-index: 100;
+}
+.main2{
+    position: absolute;
+    right:105px;
+    width: 1040px;
+    height: 50px;
+    margin: auto;
+    background: url("img/main.png") 0px -90px ;
+    z-index: 100;
+    margin-top: 298px;
+}
+.main3{
+    position: absolute;
+    right:105px;
+    width: 1040px;
+    height: 50px;
+    margin: auto;
+    background: url("img/main.png") 0px -90px ;
+    z-index: 100;
+    margin-top: 348px;
+}
+.main4{
+    position: absolute;
+    right:105px;
+    width: 1040px;
+    height: 50px;
+    margin: auto;
+    background: url("img/main.png") 0px -90px ;
+    z-index: 100;
+    margin-top: 398px;
+}
+.main5{
+    position: absolute;
+    right:105px;
+    width: 1040px;
+    height: 50px;
+    margin: auto;
+    background: url("img/main.png") 0px -90px ;
+    z-index: 100;
+    margin-top: 448px;
+}
+.main6{
+    position: absolute;
+    right:105px;
+    width: 1040px;
+    height: 50px;
+    margin: auto;
+    background: url("img/main.png") 0px -90px ;
+    z-index: 100;
+    margin-top: 498px;
+}
+.main7{
+    position: absolute;
+    right:105px;
+    width: 1040px;
+    height: 50px;
+    margin: auto;
+    background: url("img/main.png") 0px -90px ;
+    z-index: 100;
+    margin-top: 548px;
+}
+.main8{
+    position: absolute;
+    right:105px;
+    width: 1040px;
+    height: 50px;
+    margin: auto;
+    background: url("img/main.png") 0px -90px ;
+    z-index: 100;
+    margin-top:598px;
+}
+.main9{
+    position: absolute;
+    right:105px;
+    width: 1040px;
+    height: 50px;
+    margin: auto;
+    background: url("img/main.png") 0px -90px ;
+    z-index: 100;
+    margin-top: 648px;
+}
+.main10{
+    position: absolute;
+    right:105px;
+    width: 1040px;
+    height: 50px;
+    margin: auto;
+    background: url("img/main.png") 0px -90px ;
+    z-index: 100;
+    margin-top:698px;
+}
+.main11{
+    position: absolute;
+    right:105px;
+    width: 1040px;
+    height: 50px;
+    margin: auto;
+    background: url("img/main.png") 0px -90px ;
+    z-index: 100;
+    margin-top: 748px;
+}
+.main12{
+    position: absolute;
+    right:105px;
+    width: 1040px;
+    height: 50px;
+    margin: auto;
+    background: url("img/main.png") 0px -90px ;
+    z-index: 100;
+    margin-top: 798px;
+}
+.main13{
+    position: absolute;
+    right:105px;
+    width: 1040px;
+    height: 50px;
+    margin: auto;
+    background: url("img/main.png") 0px -90px ;
+    z-index: 100;
+    margin-top: 848px;
+}
+.main14{
+    position: absolute;
+    right:105px;
+    width: 1040px;
+    height: 50px;
+    margin: auto;
+    background: url("img/main.png") 0px -360px ;
+    z-index: 100;
+    margin-top: 898px;
+}
+.main15{
+    position: absolute;
+    right:105px;
+    width: 1040px;
+    height: 40px;
+    margin: auto;
+    background: url("img/main.png") 0px -410px ;
+    z-index: 100;
+    margin-top: 180px;
+}
+.mainx1{
+    position: absolute;
+    margin-left: 200px;
+    margin-top: 193px;
+    z-index: 101;
+
+}
+.mainx1 a{
+    color: white;
+    padding-left:50px;
+    border-right: 2px white solid;
+    padding-right: 50px;
+}
+.banner1{
+    width: 140px;
+    height: 100px;
+    position: absolute;
+    z-index: 100;
+    margin-left: 830px;
+    margin-top: 250px;
+
+}
+.banner2{
+    width: 140px;
+    height: 100px;
+    position: absolute;
+    z-index: 100;
+    margin-left: 830px;
+    margin-top: 540px;
+}
+.mainy1{
+    margin-top:230px ;
+    margin-left: 200px;
+    width: 300px;
+    height: 320px;
+    position: absolute;
+    z-index: 100;
+    border: 5px white double;
+    background-image: url("img/ls.jpg");
+    background-size: 108%;
+}
+.mainy2{
+    margin-top:230px ;
+    margin-left: 520px;
+    width: 300px;
+    height: 320px;
+    position: absolute;
+    z-index: 100;
+    border: 5px white double;
+    background-image: url("img/ys.jpg") ;
+    background-size: 98%;
+
+}
+.mainy3{
+    margin-top:570px ;
+    margin-left: 200px;
+    width: 300px;
+    height: 320px;
+    position: absolute;
+    z-index: 100;
+    border: 5px white double;
+    background-image: url("img/sd.jpg") ;
+    background-size: 110%;
+
+}
+.mainy4{
+    margin-top:570px ;
+    margin-left: 520px;
+    width: 300px;
+    height: 320px;
+    position: absolute;
+    z-index: 100;
+    border: 5px white double;
+    background-image: url("img/lux.jpg") ;
+    background-size: 110%;
 }
