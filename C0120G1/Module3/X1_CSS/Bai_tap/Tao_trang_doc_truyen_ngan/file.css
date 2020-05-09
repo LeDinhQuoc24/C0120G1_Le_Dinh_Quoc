@@ -291,9 +291,7 @@ body{
     width: 46%;
     border: white 1px outset;
 }
-.right ul li{
-    width: 200px;
-}
+
 .right ul li a{
     position: relative;
     top:-310px;
@@ -301,14 +299,18 @@ body{
     font-size:14px;
     right: 10px;
 }
+
 .right1 a{
     float:left;
+    width: 130px;
+
 
 }
 .right1 .right3{
-    float: right;
+    float: left;
     color: gray;
     right: -100px;
+    width: 10px;
 
 }
 .right4 {
@@ -321,12 +323,12 @@ body{
 .right ul li{
     position: relative;
     top: 5px;
-    width: 120px;
+    width: 200px;
 
     line-height: 30px;
 
 }
-.right2{
+.right ul li .right2{
     border-bottom: 1px darkgray dotted;
     width: 280px;
     margin-bottom: 10px;
