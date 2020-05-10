@@ -1,0 +1,70 @@
+body{
+    background: black;
+}
+.left{
+    width: 20%;
+    height: 1000px;
+    border: white 5px double;
+    float:left;
+}
+.left ul li{
+    color: white;
+    width:90%;
+    margin:auto;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+.right{
+    width: 78%;
+    height: 700px;
+    border: white 5px double;
+    float:right;
+}
+#draggable{
+    height: 200px;
+    width: 150px;
+    position: absolute;
+    background: #eee;
+}
+#draggable p{
+    margin-top: 70px;
+}
+#droppable-1{
+    height: 200px;
+    width: 150px;
+    position: absolute;
+    background: #eee;
+    margin-left: 200px;
+}
+#droppable-1 p{
+    margin-top: 70px;
+}
+
+#box{
+    height: 400px;
+    width: 900px;
+    position: absolute;
+    margin-top: 250px;
+    margin-left: 293px;
+}
+
+#droppable-2,#droppable-3, #droppable-4,#droppable-5 {
+    width: 200px;
+    height: 350px;
+    margin-right: 50px;
+    float: left;
+    position: absolute;
+    z-index: -1;
+}
+
+#droppable-3 {
+    margin-left: 250px;
+}
+#droppable-4 {
+    margin-left: 500px;
+
+}
+#droppable-5 {
+    margin-left: 750px;
+
+}

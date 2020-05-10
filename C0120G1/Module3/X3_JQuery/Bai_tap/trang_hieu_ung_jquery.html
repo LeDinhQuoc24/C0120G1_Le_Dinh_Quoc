@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Website</title>
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.0.min.js"></script>
+    <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+<!--    <script src = "https://code.jquery.com/jquery-1.10.2.js"></script>-->
+    <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css"
+          rel = "stylesheet">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="css.css">
+
+
+
+
+
+
+</head>
+<body>
+
+<div class="left">
+    <ul>
+        <li>Draggable</li>
+        <li>Droppable</li>
+        <li>Resizable</li>
+        <li>Selectable</li>
+        <li>Sortable</li>
+        <li>Accordion</li>
+        <li>Autocomplete</li>
+    </ul>
+
+</div>
+
+<div class="right">
+    <div id="draggable">
+        <center><p>Drag me around</p></center>
+    </div>
+    <div id="droppable-1" class = "ui-widget-header">
+        <center><p>Drop me </p></center>
+    </div>
+</div>
+    <div id="box" >
+        <div id = "droppable-2" class = "ui-widget-header">
+            <p>Drop here</p>
+        </div>
+<!--        <div id = "droppable-3" class = "ui-widget-header">-->
+<!--            <p>I'm disabled, you can't drop here!</p>-->
+<!--        </div>-->
+<!--        <div id = "droppable-4" class = "ui-widget-header">-->
+<!--            <p>Tolerance Touch!</p>-->
+<!--        </div>-->
+<!--        <div id = "droppable-5" class = "ui-widget-header">-->
+<!--            <p>Tolerance Fit!</p>-->
+<!--        </div>-->
+    </div>
+
+
+
+
+
+
+
+<script>
+    $(document).ready(function () {
+        $("#draggable").draggable();
+    });
+    $(document).ready(function () {
+        $("#droppable-1").draggable();
+    });
+    // $( "#droppable-2" ).droppable({
+    //     drop: function( event, ui ) {
+    //         $( this )
+    //             .addClass( "ui-state-highlight" )
+    //             .find( "p" )
+    //             .html( "Dropped!" );
+    //     }
+    // });
+    // $( "#droppable-3" ).droppable({
+    //     disabled : "true",
+    //     drop: function( event, ui ) {
+    //         $( this )
+    //             .addClass( "ui-state-highlight" )
+    //             .find( "p" )
+    //             .html( "Dropped!" );
+    //     }
+    // });
+    //
+    // $( "#droppable-4" ).droppable({
+    //     tolerance: 'touch',
+    //     drop: function( event, ui ) {
+    //         $( this )
+    //             .addClass( "ui-state-highlight" )
+    //             .find( "p" )
+    //             .html( "Dropped with a touch!" );
+    //     }
+    // });
+    //
+    // $( "#droppable-5" ).droppable({
+    //     tolerance: 'fit',
+    //     drop: function( event, ui ) {
+    //         $( this )
+    //             .addClass( "ui-state-highlight" )
+    //             .find( "p" )
+    //             .html( "Dropped only when fully fit on the me!" );
+    //     }
+    // });
+</script>
+
+
+
+
+
+</body>
+</html>

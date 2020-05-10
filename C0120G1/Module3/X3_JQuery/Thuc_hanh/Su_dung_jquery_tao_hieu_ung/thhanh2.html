@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>thuchanh2</title>
+    <link rel="stylesheet" href="file.css">
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.0.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+<button>Start Animation</button><br>
+<p>By default, all HTML elements have a static position,
+    and cannot be moved. To manipulate the position,
+    remember to first set the CSS position property
+    of the element to relative, fixed, or absolute!</p><br>
+
+<p class="action">Hello</p>
+
+<script>
+    $(document).ready(function () {
+        $("button").click(function () {
+            var action=$(".action");
+            action.animate({background:'black'}, "slow");
+            action.animate({right: '200px'}, "slow");
+            action.animate({fontSize:'100px'}, "slow");
+
+            action.animate({left: '200px'}, "slow");
+
+
+
+
+            // $(".action").animate({left: '200px'}, "slow");
+            // $(".action").animate( {fontSize:'100px'}, "slow");
+
+
+
+
+
+        });
+
+    });
+</script>
+
+</body>
+</html>
