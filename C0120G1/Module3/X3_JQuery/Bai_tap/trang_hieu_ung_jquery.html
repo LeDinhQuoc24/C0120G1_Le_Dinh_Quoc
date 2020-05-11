@@ -37,27 +37,23 @@
 </div>
 
 <div class="right">
-    <div id="draggable">
-        <center><p>Drag me around</p></center>
-    </div>
     <div id="droppable-1" class = "ui-widget-header">
         <center><p>Drop me </p></center>
     </div>
-</div>
-    <div id="box" >
-        <div id = "droppable-2" class = "ui-widget-header">
-            <p>Drop here</p>
-        </div>
-<!--        <div id = "droppable-3" class = "ui-widget-header">-->
-<!--            <p>I'm disabled, you can't drop here!</p>-->
-<!--        </div>-->
-<!--        <div id = "droppable-4" class = "ui-widget-header">-->
-<!--            <p>Tolerance Touch!</p>-->
-<!--        </div>-->
-<!--        <div id = "droppable-5" class = "ui-widget-header">-->
-<!--            <p>Tolerance Fit!</p>-->
-<!--        </div>-->
+    <div id = "droppable-2" class = "ui-widget-header">
+        <p>Drop here</p>
     </div>
+    <div id = "droppable-3" class = "ui-widget-header">
+        <p>I'm disabled, you can't drop here!</p>
+    </div>
+    <div id = "droppable-4" class = "ui-widget-header">
+        <p>Tolerance Touch!</p>
+    </div>
+    <div id = "droppable-5" class = "ui-widget-header">
+        <p>Tolerance Fit!</p>
+    </div>
+</div>
+
 
 
 
@@ -67,48 +63,45 @@
 
 <script>
     $(document).ready(function () {
-        $("#draggable").draggable();
-    });
-    $(document).ready(function () {
         $("#droppable-1").draggable();
     });
-    // $( "#droppable-2" ).droppable({
-    //     drop: function( event, ui ) {
-    //         $( this )
-    //             .addClass( "ui-state-highlight" )
-    //             .find( "p" )
-    //             .html( "Dropped!" );
-    //     }
-    // });
-    // $( "#droppable-3" ).droppable({
-    //     disabled : "true",
-    //     drop: function( event, ui ) {
-    //         $( this )
-    //             .addClass( "ui-state-highlight" )
-    //             .find( "p" )
-    //             .html( "Dropped!" );
-    //     }
-    // });
-    //
-    // $( "#droppable-4" ).droppable({
-    //     tolerance: 'touch',
-    //     drop: function( event, ui ) {
-    //         $( this )
-    //             .addClass( "ui-state-highlight" )
-    //             .find( "p" )
-    //             .html( "Dropped with a touch!" );
-    //     }
-    // });
-    //
-    // $( "#droppable-5" ).droppable({
-    //     tolerance: 'fit',
-    //     drop: function( event, ui ) {
-    //         $( this )
-    //             .addClass( "ui-state-highlight" )
-    //             .find( "p" )
-    //             .html( "Dropped only when fully fit on the me!" );
-    //     }
-    // });
+    $( "#droppable-2" ).droppable({
+        drop: function( event, ui ) {
+            $( this )
+                .addClass( "ui-state-highlight" )
+                .find( "p" )
+                .html( "Dropped!" );
+        }
+    });
+    $( "#droppable-3" ).droppable({
+        disabled : "true",
+        drop: function( event, ui ) {
+            $( this )
+                .addClass( "ui-state-highlight" )
+                .find( "p" )
+                .html( "Dropped!" );
+        }
+    });
+
+    $( "#droppable-4" ).droppable({
+        tolerance: 'touch',
+        drop: function( event, ui ) {
+            $( this )
+                .addClass( "ui-state-highlight" )
+                .find( "p" )
+                .html( "Dropped with a touch!" );
+        }
+    });
+
+    $( "#droppable-5" ).droppable({
+        tolerance: 'fit',
+        drop: function( event, ui ) {
+            $( this )
+                .addClass( "ui-state-highlight" )
+                .find( "p" )
+                .html( "Dropped only when fully fit on the me!" );
+        }
+    });
 </script>
 
 
