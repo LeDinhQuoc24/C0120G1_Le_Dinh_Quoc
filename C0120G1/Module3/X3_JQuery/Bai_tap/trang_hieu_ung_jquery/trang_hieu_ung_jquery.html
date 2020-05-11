@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Website</title>
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.0.min.js"></script>
+    <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+<!--    <script src = "https://code.jquery.com/jquery-1.10.2.js"></script>-->
+    <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css"
+          rel = "stylesheet">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="css.css">
+
+
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+
+
+
+
+</head>
+<body>
+<div class="container-fluid">
+    <div class="left">
+        <ol>
+            <li>Draggable</li>
+            <li>Droppable</li>
+            <li>Resizable</li>
+            <li>Selectable</li>
+            <li>Sortable</li>
+            <li>Accordion</li>
+            <li>Autocomplete</li>
+            <li>Datepicker</li>
+            <li>Dialog</li>
+            <li>Slider</li>
+            <li>Progressbar</li>
+            <li>Spinner</li>
+            <li>Tabs</li>
+            <li>Add class</li>
+            <li>Remove class</li>
+        </ol>
+
+    </div>
+
+    <div class="right">
+<!--       1&2.Draggable and Droppable-->
+        <div class="box1">
+            <p class="title1">1&2.Draggable and Droppable</p>
+            <div id="droppable-1" class = "ui-widget-header">
+                <center><p>Drop me </p></center>
+            </div>
+            <div id = "droppable-2" class = "ui-widget-header">
+                <p>Drop here</p>
+            </div>
+            <div id = "droppable-3" class = "ui-widget-header">
+                <p>I'm disabled, you can't drop here!</p>
+            </div>
+            <div id = "droppable-4" class = "ui-widget-header">
+                <p>Tolerance Touch!</p>
+            </div>
+            <div id = "droppable-5" class = "ui-widget-header">
+                <p>Tolerance Fit!</p>
+            </div>
+        </div>
+<!--       3.Resizable-->
+        <div class="box1">
+            <p class="title1">3.Resizable</p>
+            <div id="main">
+                <div id="resizable" class="ui-widget-content">
+                    <p class="ui-widget-header">Resizable</p>
+                </div>
+            </div>
+        </div>
+<!--        4.Selectable-->
+        <div class="box1">
+            <p class="title1">4.Selectable</p>
+            <ol id="selectable">
+                <li class="ui-widget-content">Nguyễn Đình Hòa</li>
+                <li class="ui-widget-content">Trần Ngọc Tân</li>
+                <li class="ui-widget-content">Võ Minh Hùng</li>
+                <li class="ui-widget-content">Phạm Thái Cường</li>
+                <li class="ui-widget-content">Văn Nhân Lam</li>
+            </ol>
+        </div>
+<!--        5.Sortable-->
+        <div class="box1">
+            <p class="title1">5.Sortable</p>
+            <ol id="sortable">
+                <li class="ui-widget-content">Nguyễn Đình Hòa</li>
+                <li class="ui-widget-content">Trần Ngọc Tân</li>
+                <li class="ui-widget-content">Võ Minh Hùng</li>
+                <li class="ui-widget-content">Phạm Thái Cường</li>
+                <li class="ui-widget-content">Văn Nhân Lam</li>
+            </ol>
+<!--            6.Accordion-->
+        </div>
+        <div class="box2">
+            <p class="title1">6.Accordion</p>
+            <div id="accordion" style="height: 200px" >
+                <h3>Section 1</h3>
+                <div>
+                    <img src="img/ls.jpg">
+
+                </div>
+                <h3>Section 2</h3>
+                <div>
+                    <img src="img/ls.jpg">
+
+                </div>
+                <h3>Section 3</h3>
+                <div>
+                    <img src="img/sd.jpg">
+
+                </div>
+                <h3>Section 4</h3>
+                <div>
+                    <img src="img/lux.jpg">
+                </div>
+            </div>
+        </div>
+<!--        7.Autocomplete-->
+        <div class="box1">
+            <p class="title1">7.Autocomplete</p>
+            <div class="ui-widget" style="text-align: center;margin-top: 30px;font-size: 60px" >
+                <label for="tags" style="color: white">Tags: </label>
+                <input id="tags" type="text" placeholder="Input keyword" style="text-align: center;
+                background:linear-gradient(orange,rebeccapurple)">
+            </div>
+        </div>
+<!--        8.Datepicker-->
+        <div class="box1">
+            <p class="title1">8.Datepicker</p>
+            <p style="text-align: center;margin-top: 30px;font-size: 60px;color: white">Date:
+                <input type="text" id="datepicker" style="background:linear-gradient(orange,rebeccapurple);text-align: center ;"
+                       placeholder="Click me"></p>
+        </div>
+<!--        9.Dialog-->
+        <div class="box1">
+            <p class="title1">9.Dialog</p>
+                <div id="dialog" title="Basic dialog" style="background:linear-gradient(orange,rebeccapurple )!important">
+                <p>This is the default dialog which is useful for displaying information.
+                    The dialog window can be moved, resized and closed with the 'x' icon.</p>
+            </div>
+        </div>
+<!--        10.Slider-->
+        <div class="box1">
+            <p class="title1">10.Slider</p>
+            <div id="slider" style="margin-top: 50px"></div>
+
+        </div>
+        <div class="box1">
+        </div>
+        <div class="box1">
+        </div>
+
+
+
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    // 1&2.Draggable and Droppable
+    $(document).ready(function () {
+        $("#droppable-1").draggable();
+    });
+    $( "#droppable-2" ).droppable({
+        drop: function( event, ui ) {
+            $( this )
+                .addClass( "ui-state-highlight" )
+                .find( "p" )
+                .html( "Dropped!" );
+        }
+    });
+    $( "#droppable-3" ).droppable({
+        disabled : "true",
+        drop: function( event, ui ) {
+            $( this )
+                .addClass( "ui-state-highlight" )
+                .find( "p" )
+                .html( "Dropped!" );
+        }
+    });
+
+    $( "#droppable-4" ).droppable({
+        tolerance: 'touch',
+        drop: function( event, ui ) {
+            $( this )
+                .addClass( "ui-state-highlight" )
+                .find( "p" )
+                .html( "Dropped with a touch!" );
+        }
+    });
+
+    $( "#droppable-5" ).droppable({
+        tolerance: 'fit',
+        drop: function( event, ui ) {
+            $( this )
+                .addClass( "ui-state-highlight" )
+                .find( "p" )
+                .html( "Dropped only when fully fit on the me!" );
+        }
+    });
+
+    // 3.Resizable
+    $(document).ready(function() {
+        $('#main').resizable();
+
+    });
+
+    // 4.Selectable
+    $( function() {
+        $( "#selectable" ).selectable();
+    } );
+
+    // 5.Sortable
+    $( function() {
+        var sort= $( "#sortable" );
+        sort.sortable();
+        sort.disableSelection();
+    } );
+    // 6.Accordion
+    $( function() {
+        $( "#accordion" ).accordion();
+    } );
+    // 7.Autocomplete
+    $( function() {
+        var availableTags = [
+            "ActionScript",
+            "AppleScript",
+            "Asp",
+            "BASIC",
+            "C",
+            "C++",
+            "Clojure",
+            "COBOL",
+            "ColdFusion",
+            "Erlang",
+            "Fortran",
+            "Groovy",
+            "Haskell",
+            "Java",
+            "JavaScript",
+            "Lisp",
+            "Perl",
+            "PHP",
+            "Python",
+            "Ruby",
+            "Scala",
+            "Scheme"
+        ];
+        $( "#tags" ).autocomplete({
+            source: availableTags
+        });
+    } );
+    // 8.Datepicker
+    $( function() {
+        $( "#datepicker" ).datepicker();
+    } );
+    // 9.Dialog
+    $( function() {
+        $( "#dialog" ).dialog();
+    } );
+    // 10.Slider
+    $( function() {
+        $( "#slider" ).slider();
+    } );
+
+
+
+
+
+
+</script>
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,111 @@
+body{
+    background: black;
+
+}
+.left{
+    width: 20%;
+    height: 4000px;
+    border: white 5px double;
+    float:left;
+    border-radius: 20px;
+
+}
+.left ol li{
+    color: white;
+    width:90%;
+    margin:auto;
+    font-size: 25px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.right{
+    width: 78%;
+    height: 4000px;
+    border: white 5px double;
+    float:right;
+    border-radius: 20px;
+}
+.box1{
+    width: 95%;
+    height: 200px;
+    margin: auto;
+    border: white 3px double;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+.box2{
+    width: 95%;
+    height: 605px;
+    margin: auto;
+    border: white 3px double;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+
+.box1 .title1,.box2 .title1{
+    color: white;
+    font-style: italic;
+    text-decoration: underline;
+
+}
+/*1.Draggable and Droppable*/
+#droppable-1{
+    height: 100px;
+    width: 70px;
+    background: #eee;
+    float: left;
+    cursor: url(img/cursor4.png),auto;
+}
+#droppable-1 p{
+    margin-top: 30px;
+    color: black;
+
+
+}
+
+#droppable-2,#droppable-3, #droppable-4,#droppable-5 {
+    width: 100px;
+    height: 150px;
+    margin-right: 50px;
+    float: left;
+    z-index: -1;
+}
+/*2.Resizable*/
+#main {
+    width: 100px;
+    box-shadow: #254C58 1px 0px;
+    border: #3C7D91 5px double;
+    padding: 10px 10px 10px 10px;
+    max-height: 433px;
+    cursor: url(img/cursor4.png),auto;
+
+}
+/*3.Selectable*/
+#selectable .ui-selecting{ background: #FECA40; }
+#selectable .ui-selected { background: #F39814; color: white; }
+#selectable,#sortable {
+    list-style-type: none;
+    padding: 0;
+    width: 30%;
+    text-align: center;
+    margin-top: 13px;
+    margin-left: 30px;
+
+
+}
+#selectable li,#sortable li {
+    margin-top: 15px;
+    font-size: 15px;
+    height: 18px; }
+#selectable:hover,#sortable:hover{
+    /*cursor: pointer;*/
+    cursor: url(img/cursor4.png),auto;
+}
+#sortable:hover{
+    background: #F39814; color: white;
+}
+.ui-draggable .ui-dialog-titlebar  {
+    background:linear-gradient(greenyellow,blueviolet,red);
+}
+
+
