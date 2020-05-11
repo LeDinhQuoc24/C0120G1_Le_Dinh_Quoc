@@ -4,7 +4,7 @@ body{
 }
 .left{
     width: 20%;
-    height: 4000px;
+    height: 4020px;
     border: white 5px double;
     float:left;
     border-radius: 20px;
@@ -20,7 +20,7 @@ body{
 }
 .right{
     width: 78%;
-    height: 4000px;
+    height: 4020px;
     border: white 5px double;
     float:right;
     border-radius: 20px;
@@ -107,5 +107,17 @@ body{
 .ui-draggable .ui-dialog-titlebar  {
     background:linear-gradient(greenyellow,blueviolet,red);
 }
-
+#tabs{
+    background-image: url("img/lol.jpg");
+}
+/*14*/
+.toggler1 { width: 500px; height: 200px; position: relative; }
+#button1 { padding: .5em 1em; text-decoration: none;margin-top: -380px; margin-left: 260px}
+#effect1 { width: 240px;  padding: 1em; border: 1px solid #000; background: #eee; color: #333; }
+.newClass { text-indent: 40px; letter-spacing: .4em; width: 410px; height: 120px; padding: 30px; margin: 10px; font-size: 1.1em; }
+/*15*/
+.toggler2 { width: 500px; height: 200px; position: relative; }
+#button2 { padding: .5em 1em; text-decoration: none;margin-top: -380px; margin-left: 260px }
+#effect2 { position: relative;  width: 240px;  padding: 1em;  letter-spacing: 0; font-size: 1.2em; border: 1px solid #000; background: #eee; color: #333; }
+.newClass { text-indent: 40px; letter-spacing: .4em; width: 410px; height: 100px; padding: 30px; margin: 10px; font-size: 1.6em; }
 
