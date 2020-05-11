@@ -4,15 +4,10 @@
     <meta charset="UTF-8">
     <title>ListMusic</title>
 
-    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.0.min.js"></script>
-    <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
-    <!--    <script src = "https://code.jquery.com/jquery-1.10.2.js"></script>-->
-    <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css"
-          rel = "stylesheet">
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
 
     <link rel="stylesheet" href="file.css">
@@ -25,15 +20,60 @@
 </div>
 <div class="main">
     <div class="left">
-        <div class="img1">
+        <div id="song1" style="display: none">
+            <div class="img1">
+            </div>
+            <p>Muốn cùng anh nói chuyện yêu đương</p>
+            <audio controls>
+                <source src="file/love1.mp3">
+            </audio>
         </div>
-        <p>Muốn cùng anh nói chuyện yêu đương</p>
-        <audio controls>
-            <source src="file/love1.mp3">
-        </audio>
+        <div id="song2" style="display: none">
+            <div class="img2">
+            </div>
+            <p style="text-align: center;font-size: 30px">Sóng gió</p>
+            <audio controls>
+                <source src="file/love2.mp3">
+            </audio>
+        </div>
+        <div id="song3" style="display: none">
+            <div class="img3">
+            </div>
+            <p style="text-align: center;font-size: 30px">Đau để trưởng thành</p>
+            <audio controls>
+                <source src="file/love3.mp3">
+            </audio>
+        </div>
+        <div id="song4" style="display: none">
+            <div class="img4">
+            </div>
+            <p style="text-align: center;font-size: 30px">God Father</p>
+            <audio controls>
+                <source src="file/love4.mp3">
+            </audio>
+        </div>
+        <div id="song5" style="display: block">
+            <div class="img5">
+            </div>
+            <p style="text-align: center;font-size: 30px">Độ ta không độ nàng</p>
+            <audio controls>
+                <source src="file/love5.mp3">
+            </audio>
+        </div>
+
 
     </div>
     <div class="right">
+        <div class="box1">
+            <p class="title1">PlayList VnNhnLm</p>
+            <ol id="selectable">
+                <li class="ui-widget-content"><a id="s1" onclick="click1()">Muốn cùng em nói chuyện yêu đương</a></li>
+                <li class="ui-widget-content"><a id="s2" onclick="click2()">Sóng gió</a></li>
+                <li class="ui-widget-content"><a id="s3" onclick="click3()">Đau để trưởng thành</a></li>
+                <li class="ui-widget-content"><a id="s4" onclick="click4()">God Father</a></li>
+                <li class="ui-widget-content"><a id="s5" onclick="click5()">Độ ta không độ nàng</a></li>
+            </ol>
+        </div>
 
     </div>
 
@@ -41,6 +81,47 @@
 
 
 
+<script>
+    function click1() {
+        document.getElementById("song1").style.display="block";
+        document.getElementById("song2").style.display="none";
+        document.getElementById("song3").style.display="none";
+        document.getElementById("song4").style.display="none";
+        document.getElementById("song5").style.display="none";
+    }
+    function click2() {
+        document.getElementById("song1").style.display="none";
+        document.getElementById("song2").style.display="block";
+        document.getElementById("song3").style.display="none";
+        document.getElementById("song4").style.display="none";
+        document.getElementById("song5").style.display="none";
+    }
+    function click3() {
+        document.getElementById("song1").style.display="none";
+        document.getElementById("song2").style.display="none";
+        document.getElementById("song3").style.display="block";
+        document.getElementById("song4").style.display="none";
+        document.getElementById("song5").style.display="none";
+    }
+    function click4() {
+        document.getElementById("song1").style.display="none";
+        document.getElementById("song2").style.display="none";
+        document.getElementById("song3").style.display="none";
+        document.getElementById("song4").style.display="block";
+        document.getElementById("song5").style.display="none";
+    }
+    function click5() {
+        document.getElementById("song1").style.display="none";
+        document.getElementById("song2").style.display="none";
+        document.getElementById("song3").style.display="none";
+        document.getElementById("song4").style.display="none";
+        document.getElementById("song5").style.display="block";
+    }
+
+
+
+
+</script>
 
 
 </body>
