@@ -97,6 +97,6 @@ body{
 
 #selectable li { padding: 0.4em; font-size: 1.4em; height: 18px;
     margin-top: 27px;
-    background: linear-gradient(orange,rebeccapurple);
+    background: linear-gradient(black,white);
     text-align: center;
 }
