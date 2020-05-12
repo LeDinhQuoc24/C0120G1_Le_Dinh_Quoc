@@ -1,7 +1,7 @@
 <h2>Girl profile</h2>
 <label>
   Select girl Image:
-  <select class="form-input" [value]="girlImage" (change)="onSelectChange($event.target.value)">
+  <select class="form-input" [value]="girlImage" (change)="onSelectChange($event.target.value)" (change)="calculate($event.target.value)">>
     <option value="assets/x1.png">Hot Girl 1</option>
     <option value="assets/x2.png">Hot Girl 2</option>
     <option value="assets/x3.png">Hot Girl 3</option>
@@ -12,4 +12,6 @@
 <label><img src="{{girlImage}}" style="width: 40px;height: 30px"></label>
 <br><br>
 <h2>Kết quả</h2>
+<label style="background: linear-gradient(orange,rebeccapurple);color: aliceblue;font-size: 50px;margin-left: 120px">{{girlName}}</label>
+<br><br><br>
 <label><img src="{{girlImage}}"></label>
