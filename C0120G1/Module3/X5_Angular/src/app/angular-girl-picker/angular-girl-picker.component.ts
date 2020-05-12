@@ -17,9 +17,6 @@ export class AngularGirlPickerComponent implements OnInit {
   }
   onSelectChange(value) {
     this.girlImage = value;
-
-  }
-  calculate(value) {
     switch (value) {
       case 'assets/x1.png':
         this.girlName = 'Hứa Lưu Liễm';
@@ -34,8 +31,8 @@ export class AngularGirlPickerComponent implements OnInit {
         this.girlName = 'Văn Nhân Mục Nguyệt';
         break;
     }
-  }
 
+  }
   ngOnInit() {
   }
 
