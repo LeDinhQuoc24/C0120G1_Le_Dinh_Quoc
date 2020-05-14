@@ -6,6 +6,7 @@ import { NameCardComponent } from './name-card/name-card.component';
 import { ProgressBarComponent } from './progress-bar/progress-bar.component';
 import { AngularRatingBarComponent } from './angular-rating-bar/angular-rating-bar.component';
 import {FormsModule} from '@angular/forms';
+import { AngularCountdownComponent } from './angular-countdown/angular-countdown.component';
 
 
 
@@ -15,6 +16,7 @@ import {FormsModule} from '@angular/forms';
     NameCardComponent,
     ProgressBarComponent,
     AngularRatingBarComponent,
+    AngularCountdownComponent,
   ],
   imports: [
     BrowserModule,
