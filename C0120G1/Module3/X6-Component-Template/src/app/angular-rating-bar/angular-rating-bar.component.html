@@ -1,4 +1,54 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
 <h2>Rating bar</h2>
-<div class="riding-bar" >
+<h3>Enter rating vote:</h3>
+
+<select (change)="onSelectChange($event.target.value)">
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+  <option value="5">5</option>
+  <option value="6">6</option>
+  <option value="7">7</option>
+  <option value="8">8</option>
+  <option value="9">9</option>
+  <option value="10">10</option>
+</select>
+<br><br><br>
+<h3>Result: {{ratingVote}}</h3>
+
+<div class="likes">
+
+
+  <form action="">
+    <input  id="1" class="glyphicon glyphicon-thumbs-up like-1"  type="radio"  name="like">
+    <label class="	glyphicon glyphicon-thumbs-up like-1" for="1" ></label>
+    <input  id="2" class="glyphicon glyphicon-thumbs-up like-2	" type="radio"  name="like">
+    <label class="	glyphicon glyphicon-thumbs-up like-2 "  for="2" ></label>
+    <input  id="3" class="	glyphicon glyphicon-thumbs-up like-3 " type="radio"  name="like">
+    <label class="	glyphicon glyphicon-thumbs-up like-3 " for="3" ></label>
+    <input  id="4" class="	glyphicon glyphicon-thumbs-up like-4 " type="radio"  name="like">
+    <label class="	glyphicon glyphicon-thumbs-up like-4 " for="4" ></label>
+    <input  id="5" class="	glyphicon glyphicon-thumbs-up like-5 " type="radio"  name="like">
+    <label class="	glyphicon glyphicon-thumbs-up like-5 " for="5" ></label>
+    <input  id="6" class="	glyphicon glyphicon-thumbs-up like-6 " type="radio"  name="like">
+    <label class="	glyphicon glyphicon-thumbs-up like-6 " for="6" ></label>
+    <input  id="7" class="	glyphicon glyphicon-thumbs-up like-7 " type="radio"  name="like">
+    <label class="	glyphicon glyphicon-thumbs-up like-7 " for="7" ></label>
+    <input  id="8" class="	glyphicon glyphicon-thumbs-up like-8 " type="radio"  name="like">
+    <label class="	glyphicon glyphicon-thumbs-up like-8 " for="8" ></label>
+    <input  id="9" class="	glyphicon glyphicon-thumbs-up like-9 " type="radio"  name="like">
+    <label class="	glyphicon glyphicon-thumbs-up like-9 " for="9" ></label>
+    <input  id="10" class="	glyphicon glyphicon-thumbs-up like-10 " type="radio" name="like">
+    <label class="	glyphicon glyphicon-thumbs-up like-10 " for="10" ></label>
+
+
+  </form>
+
 
 </div>
+
+
+
+

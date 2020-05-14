@@ -3,14 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="f9f019e7-7a5a-4685-a94a-155bf5ecc1ac" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bai_tap/bt.js" beforeDir="false" afterPath="$PROJECT_DIR$/Bai_tap/bt.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bai_tap/bt.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Bai_tap/bt.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bai_tap/show.html" beforeDir="false" afterPath="$PROJECT_DIR$/Bai_tap/show.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../X6-Component-Template/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/../X6-Component-Template/angular.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../X6-Component-Template/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../X6-Component-Template/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../X6-Component-Template/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../X6-Component-Template/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../X6-Component-Template/src/app/name-card/name-card.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../X6-Component-Template/src/app/name-card/name-card.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../X6-Component-Template/src/app/name-card/name-card.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../X6-Component-Template/src/app/name-card/name-card.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../X6-Component-Template/src/app/angular-rating-bar/angular-rating-bar.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../X6-Component-Template/src/app/angular-rating-bar/angular-rating-bar.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../X6-Component-Template/src/app/angular-rating-bar/angular-rating-bar.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../X6-Component-Template/src/app/angular-rating-bar/angular-rating-bar.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../X6-Component-Template/src/app/angular-rating-bar/angular-rating-bar.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../X6-Component-Template/src/app/angular-rating-bar/angular-rating-bar.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../X6-Component-Template/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../X6-Component-Template/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../X6-Component-Template/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../X6-Component-Template/src/app/app.module.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +38,11 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2019.3.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\ProjectCodyGym\C0120G1_Le_Dinh_Quoc\C0120G1\Module3\X4_TypeScript\Bai_tap" />
+    </key>
+  </component>
   <component name="RunManager" selected="JavaScript Debug.show2.html">
     <configuration name="show2.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/X4_TypeScript/Bai_tap/show2.html" useBuiltInWebServerPort="true">
       <method v="2" />
@@ -66,7 +68,7 @@
       <option name="presentableId" value="Default" />
       <updated>1589250328482</updated>
       <workItem from="1589250329937" duration="90000" />
-      <workItem from="1589358878807" duration="529000" />
+      <workItem from="1589358878807" duration="2962000" />
     </task>
     <servers />
   </component>
