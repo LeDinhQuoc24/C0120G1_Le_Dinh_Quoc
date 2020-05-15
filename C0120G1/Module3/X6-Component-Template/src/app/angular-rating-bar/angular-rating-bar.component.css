@@ -23,6 +23,7 @@ label{
 }
 
 .glyphicon:checked ~ label.glyphicon:before{
+  /*content: '\f0a4';*/
   color: red;
   transition: all 1s;
   text-shadow: 0 0 20px #952;
