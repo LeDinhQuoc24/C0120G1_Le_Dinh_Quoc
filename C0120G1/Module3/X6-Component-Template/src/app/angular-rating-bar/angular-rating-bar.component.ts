@@ -1,5 +1,7 @@
+// @ts-ignore
 import {Component, Input, OnChanges, OnInit} from '@angular/core';
 
+// @ts-ignore
 @Component({
   selector: 'app-angular-rating-bar',
   templateUrl: './angular-rating-bar.component.html',
@@ -24,8 +26,6 @@ export class AngularRatingBarComponent implements OnInit {
   onRatingVote(value) {
     switch (value) {
       case '1':
-
-
 
 
     }
