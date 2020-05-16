@@ -57,6 +57,7 @@ export class AngularCountdownComponent implements OnInit, OnDestroy {
         this.clearTimer();
       } else {
         this.message = `T-${this.remainingTime} seconds and counting`;
+
       }
     }, 1000);
   }

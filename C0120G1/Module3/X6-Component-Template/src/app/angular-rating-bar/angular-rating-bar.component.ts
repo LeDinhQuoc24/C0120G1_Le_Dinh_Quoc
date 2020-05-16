@@ -22,13 +22,4 @@ export class AngularRatingBarComponent implements OnInit {
   onSelectChange(value) {
     this.ratingVote = value;
   }
-
-  onRatingVote(value) {
-    switch (value) {
-      case '1':
-
-
-    }
-
-  }
 }
