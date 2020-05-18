@@ -1,4 +1,6 @@
+// @ts-ignore
 import { Component, OnInit } from '@angular/core';
+// @ts-ignore
 import {AbstractControl, FormBuilder, Validators, FormGroup} from "@angular/forms";
 
 function comparePassword(c: AbstractControl) {
@@ -7,6 +9,7 @@ function comparePassword(c: AbstractControl) {
     passwordnotmatch: true
   };
 }
+// @ts-ignore
 @Component({
   selector: 'app-register',
   templateUrl: './register.component.html',

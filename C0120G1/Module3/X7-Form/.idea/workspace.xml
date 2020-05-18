@@ -2,102 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e2a61c44-7e24-4be1-b366-a2c458c7f1dd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.editorconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/X7-Form.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/browserslist" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/e2e/protractor.conf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/e2e/src/app.e2e-spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/e2e/src/app.po.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/e2e/tsconfig.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/karma.conf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/app-routing.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/app.component.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/app.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/app.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/app.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/app.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/login/login.component.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/login/login.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/login/login.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/login/login.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/menu/menu.component.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/menu/menu.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/menu/menu.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/menu/menu.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/register/register.component.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/register/register.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/register/register.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/register/register.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/todo/todo.component.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/todo/todo.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/todo/todo.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/todo/todo.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/.gitkeep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/s1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/environments/environment.prod.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/environments/environment.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/polyfills.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tsconfig.app.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tsconfig.spec.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tslint.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../X8-Routing/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../X8-Routing/.idea/X8-Routing.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../X8-Routing/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../X8-Routing/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../X8-Routing/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../X8-Routing/Service-Router/.editorconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../X8-Routing/Service-Router/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../X8-Routing/Service-Router/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../X8-Routing/Service-Router/angular.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../X8-Routing/Service-Router/browserslist" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../X8-Routing/Service-Router/e2e/protractor.conf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../X8-Routing/Service-Router/e2e/src/app.e2e-spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../X8-Routing/Service-Router/e2e/src/app.po.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../X8-Routing/Service-Router/e2e/tsconfig.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../X8-Routing/Service-Router/karma.conf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../X8-Routing/Service-Router/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../X8-Routing/Service-Router/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../X8-Routing/Service-Router/src/app/app-routing.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../X8-Routing/Service-Router/src/app/app.component.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../X8-Routing/Service-Router/src/app/app.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../X8-Routing/Service-Router/src/app/app.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../X8-Routing/Service-Router/src/app/app.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../X8-Routing/Service-Router/src/app/app.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../X8-Routing/Service-Router/src/app/login/login.component.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../X8-Routing/Service-Router/src/app/login/login.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../X8-Routing/Service-Router/src/app/login/login.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../X8-Routing/Service-Router/src/app/login/login.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../X8-Routing/Service-Router/src/app/register/register.component.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../X8-Routing/Service-Router/src/app/register/register.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../X8-Routing/Service-Router/src/app/register/register.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../X8-Routing/Service-Router/src/app/register/register.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../X8-Routing/Service-Router/src/assets/.gitkeep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../X8-Routing/Service-Router/src/assets/img/s1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../X8-Routing/Service-Router/src/environments/environment.prod.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../X8-Routing/Service-Router/src/environments/environment.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../X8-Routing/Service-Router/src/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../X8-Routing/Service-Router/src/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../X8-Routing/Service-Router/src/main.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../X8-Routing/Service-Router/src/polyfills.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../X8-Routing/Service-Router/src/styles.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../X8-Routing/Service-Router/src/test.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../X8-Routing/Service-Router/tsconfig.app.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../X8-Routing/Service-Router/tsconfig.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../X8-Routing/Service-Router/tsconfig.spec.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../X8-Routing/Service-Router/tslint.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/login/login.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/login/login.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/register/register.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/register/register.component.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,13 +35,13 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../X8-Service-Router" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="ts.external.directory.path" value="F:\ProjectCodyGym\C0120G1_Le_Dinh_Quoc\C0120G1\Module3\X8-Routing\Service-Router\node_modules\typescript\lib" />
+    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2019.3.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -181,6 +92,7 @@
       <workItem from="1589787975413" duration="1483000" />
       <workItem from="1589793978800" duration="1627000" />
       <workItem from="1589806527271" duration="110000" />
+      <workItem from="1589808292986" duration="2505000" />
     </task>
     <servers />
   </component>
@@ -188,13 +100,34 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="552" y="179" width="816" height="729" key="#Intentions" timestamp="1589808401903">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="179" width="816" height="729" key="#Intentions/0.0.1920.1040@0.0.1920.1040" timestamp="1589808401903" />
     <state x="275" y="23" key="#TSLint" timestamp="1589788692048">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="275" y="23" key="#TSLint/0.0.1366.728@0.0.1366.728" timestamp="1589788692048" />
-    <state x="463" y="120" key="FileChooserDialogImpl" timestamp="1589808024359">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="651" y="171" key="FileChooserDialogImpl" timestamp="1589810212717">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="463" y="120" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1589808024359" />
+    <state x="651" y="171" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1589810212717" />
+    <state width="1899" height="282" key="GridCell.Tab.0.bottom" timestamp="1589810800355">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1589810800355" />
+    <state width="1899" height="282" key="GridCell.Tab.0.center" timestamp="1589810800355">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1589810800355" />
+    <state width="1899" height="282" key="GridCell.Tab.0.left" timestamp="1589810800355">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1589810800355" />
+    <state width="1899" height="282" key="GridCell.Tab.0.right" timestamp="1589810800355">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1589810800355" />
   </component>
 </project>
