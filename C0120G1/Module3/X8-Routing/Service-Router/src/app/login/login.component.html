@@ -1,5 +1,5 @@
-
 <div>
+
   <h2 class="text-center" style="color: white">Login</h2>
   <form [formGroup]="loginForm" (ngSubmit)="onSubmit()" class="col-md-6 offset-md-3" style="text-align: center">
     <div class="form-group row">
@@ -27,7 +27,6 @@
       <button class="btn btn-info" type="submit" [disabled]="loginForm.invalid">Submit</button>
     </div>
   </form>
-
   <pre>
 {{ loginForm.value | json}}
 </pre>

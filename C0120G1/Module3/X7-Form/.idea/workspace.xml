@@ -2,43 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="800be69f-d8d6-45eb-be43-6c4d06827c02" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../X6-Component-Template/src/app/angular-rating-bar2/angular-rating-bar2.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../X6-Component-Template/src/app/angular-rating-bar2/angular-rating-bar2.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/X7-Form.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/X7-Form.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Module2_Javacore/out/production/Module2/Bai_5_Advanced_Obiject_Oriented_Design/Thuc_hanh/.idea/Thuc_hanh.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../X8-Routing/.idea/X8-Routing.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../untitled/.editorconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../untitled/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../untitled/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../untitled/angular.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../untitled/browserslist" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../untitled/e2e/protractor.conf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../untitled/e2e/src/app.e2e-spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../untitled/e2e/src/app.po.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../untitled/e2e/tsconfig.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../untitled/karma.conf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../untitled/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../untitled/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../untitled/src/app/app.component.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../untitled/src/app/app.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../untitled/src/app/app.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../untitled/src/app/app.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../untitled/src/app/app.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../untitled/src/app/todo/todo.component.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../untitled/src/app/todo/todo.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../untitled/src/app/todo/todo.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../untitled/src/app/todo/todo.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../untitled/src/assets/.gitkeep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../untitled/src/environments/environment.prod.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../untitled/src/environments/environment.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../untitled/src/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../untitled/src/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../untitled/src/main.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../untitled/src/polyfills.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../untitled/src/styles.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../untitled/src/test.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../untitled/tsconfig.app.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../untitled/tsconfig.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../untitled/tsconfig.spec.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../untitled/tslint.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/login/login.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/login/login.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/menu/menu.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/menu/menu.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/register/register.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/register/register.component.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,14 +28,20 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../X8-Routing" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="ts.external.directory.path" value="F:\ProjectCodyGym\C0120G1_Le_Dinh_Quoc\C0120G1\Module3\X7-Form\node_modules\typescript\lib" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\ProjectCodyGym\C0120G1_Le_Dinh_Quoc\C0120G1\Module3\X7-Form\src\app" />
+    </key>
   </component>
   <component name="RunManager" selected="npm.Angular CLI Server">
     <configuration name="Tests (X7-Form)" type="JavaScriptTestRunnerKarma">
@@ -109,7 +86,9 @@
       <workItem from="1589683574791" duration="1493000" />
       <workItem from="1589685339581" duration="1186000" />
       <workItem from="1589716119896" duration="1403000" />
-      <workItem from="1589765281266" duration="9398000" />
+      <workItem from="1589765281266" duration="14320000" />
+      <workItem from="1589787386720" duration="1212000" />
+      <workItem from="1589794275930" duration="76000" />
     </task>
     <servers />
   </component>
@@ -117,9 +96,9 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="463" y="120" key="FileChooserDialogImpl" timestamp="1589780308970">
+    <state x="463" y="120" key="FileChooserDialogImpl" timestamp="1589787972268">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="120" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1589780308970" />
+    <state x="463" y="120" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1589787972268" />
   </component>
 </project>

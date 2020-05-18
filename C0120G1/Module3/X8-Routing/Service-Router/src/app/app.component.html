@@ -1,4 +1,4 @@
-<!--&lt;!&ndash;The content below is only a placeholder and can be replaced.&ndash;&gt;-->
+<!--The content below is only a placeholder and can be replaced.-->
 <!--<div style="text-align:center">-->
 <!--  <h1>-->
 <!--    Welcome to {{ title }}!-->
@@ -17,10 +17,30 @@
 <!--    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>-->
 <!--  </li>-->
 <!--</ul>-->
-<!--1-bai thuc hanh todo-->
-<!--<app-todo></app-todo>-->
-<!--2-bai tap login-register-->
-<!--<app-login></app-login>-->
-<!--<app-register></app-register>-->
 
-<app-menu></app-menu>
+
+<div class="container-fluid">
+  <header>
+    <div>
+      <h1>Web Motor Online</h1>
+      <h5>Lái tự tin-Chuẩn phong cách</h5>
+      <div>
+
+        <a href="#"> Giới thiệu</a>
+        <a routerLink="/login"> Đăng nhập</a>
+        <a routerLink="/register"> Đăng ký</a>
+        <a href="#"> Liên hệ</a>
+        <a href="#"> Góp ý</a>
+      </div>
+    </div>
+    <img>
+  </header>
+  <div class="main">
+    <!--    <app-login></app-login>-->
+    <!--    <app-register></app-register>-->
+    <router-outlet></router-outlet>
+
+  </div>
+</div>
+
+
