@@ -10,7 +10,7 @@ describe('workspace-project App', () => {
 
   it('should display welcome message', () => {
     page.navigateTo();
-    expect(page.getTitleText()).toEqual('Welcome to X7-Form!');
+    expect(page.getTitleText()).toEqual('Welcome to Service-Router!');
   });
 
   afterEach(async () => {

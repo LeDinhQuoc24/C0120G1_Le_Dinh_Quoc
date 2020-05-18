@@ -1,5 +1,5 @@
-import {Component, OnInit} from '@angular/core';
-import {AbstractControl, FormBuilder, FormGroup, Validators} from '@angular/forms';
+import { Component, OnInit } from '@angular/core';
+import {AbstractControl, FormBuilder, Validators, FormGroup} from "@angular/forms";
 
 function comparePassword(c: AbstractControl) {
   const v = c.value;
@@ -7,7 +7,6 @@ function comparePassword(c: AbstractControl) {
     passwordnotmatch: true
   };
 }
-
 @Component({
   selector: 'app-register',
   templateUrl: './register.component.html',
