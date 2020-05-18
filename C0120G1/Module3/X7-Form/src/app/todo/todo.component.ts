@@ -1,20 +1,19 @@
-import {Component, OnInit} from '@angular/core';
-import {FormControl} from '@angular/forms';
-
+import { Component, OnInit } from '@angular/core';
+import {FormBuilder, FormControl, FormGroup, Validators} from '@angular/forms';
 interface ITodo {
   id: number;
   content: string;
   complete: boolean;
 }
 
-let _id = 1;
-
+let id = 1;
 @Component({
   selector: 'app-todo',
   templateUrl: './todo.component.html',
   styleUrls: ['./todo.component.css']
 })
 export class TodoComponent implements OnInit {
+
   userInput = new FormControl();
   todos: Array<ITodo> = [];
   constructor() {
@@ -26,7 +25,7 @@ export class TodoComponent implements OnInit {
     const {value} = this.userInput;
     if (value) {
       const todo: ITodo = {
-        id: _id++,
+        id: id++,
         content: value,
         complete: false
       };

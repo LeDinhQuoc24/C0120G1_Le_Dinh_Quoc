@@ -25,6 +25,7 @@ export class AngularRatingBar2Component implements OnInit, OnChanges {
 
   constructor() {
   }
+
   ngOnChanges(changes: SimpleChanges) {
     if ('max' in changes) {
       let max = changes.max.currentValue;
