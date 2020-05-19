@@ -29,7 +29,7 @@ export class RegisterComponent implements OnInit {
       country: ['', Validators.required],
       age: ['', [Validators.required, Validators.min(18)]],
       gender: ['', Validators.required],
-      phone: ['', [Validators.required, Validators.pattern(/^\+84\d{9,10}$/)]]
+      phone: ['', [Validators.pattern(/^\+84\d{9,10}$/), Validators.required ]]
     });
 
     // update form state
