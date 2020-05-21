@@ -11,7 +11,9 @@ export class ImageGalleryComponent implements OnInit {
     'https://via.placeholder.com/1280x420/e91e63/ffffff?text=1',
     'https://via.placeholder.com/1280x420/e91e63/ffffff?text=2',
     'https://via.placeholder.com/1280x420/e91e63/ffffff?text=3',
-    'https://via.placeholder.com/1280x420/e91e63/ffffff?text=4'
+    'https://via.placeholder.com/1280x420/e91e63/ffffff?text=4',
+    'https://via.placeholder.com/1280x420/e91e63/ffffff?text=5',
+    'https://via.placeholder.com/1280x420/e91e63/ffffff?text=6'
   ];
   itemWidth: number;
   config = 4;

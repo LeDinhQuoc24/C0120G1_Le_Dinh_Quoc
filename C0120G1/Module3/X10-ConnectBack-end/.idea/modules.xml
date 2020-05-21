@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/X10-ConnectBack-end.iml" filepath="$PROJECT_DIR$/.idea/X10-ConnectBack-end.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/angular-http.iml" filepath="$PROJECT_DIR$/.idea/angular-http.iml" />
     </modules>
   </component>
 </project>

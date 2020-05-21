@@ -31,7 +31,7 @@ import { GalleryConfig } from './image-gallery/token';
     },
     // {provide: 'API_URL', useValue: 'abc.com'},
     // {provide: 'API_URL', useExisting: 'api.com'}
-    {provide: GalleryConfig, useValue: 2}
+    {provide: GalleryConfig, useValue: 4}
   ],
   bootstrap: [AppComponent]
 })
