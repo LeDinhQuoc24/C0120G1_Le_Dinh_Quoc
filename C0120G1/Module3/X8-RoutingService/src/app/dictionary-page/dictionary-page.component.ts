@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {DictionaryService, IWord} from "../dictionary.service";
+import {AuthService} from "../auth.service";
 
 @Component({
   selector: 'app-dictionary-page',
@@ -12,7 +13,7 @@ export class DictionaryPageComponent implements OnInit {
   // @ts-ignore
   constructor(
     private dictionaryService: DictionaryService,
-    // public authService: AuthService
+    public authService: AuthService
   ) { }
 
   ngOnInit() {

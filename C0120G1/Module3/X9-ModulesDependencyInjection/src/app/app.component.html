@@ -11,22 +11,33 @@
 <!--    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>-->
 <!--  </li>-->
 <!--  <li>-->
-<!--    <h2><a target="_blank" rel="noopener" href="https://angular.io/cli">CLI Documentation</a></h2>-->
+<!--    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>-->
 <!--  </li>-->
 <!--  <li>-->
 <!--    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>-->
 <!--  </li>-->
 <!--</ul>-->
-<div style="background-image: url('./src/assets/girl1.png');height: 1000px">
-<!--  <div style="background:red;height: 1000px">-->
-  <a routerLink="timelines">TimeLife</a>
-  <br>
-  <nav>
-    <a routerLink="youtube" class="link">Youtube</a>
-  </nav>
-  <nav>
-    <a routerLink="dictionary" class="link">Dictionary</a>
-  </nav>
 
-  <router-outlet></router-outlet>
-</div>
+<app-img-slider>
+  <app-img-slide>
+    <img src="https://via.placeholder.com/1280x420/e91e63/ffffff?text=1" alt="">
+  </app-img-slide>
+  <app-img-slide>
+    <img src="https://via.placeholder.com/1280x420/e91e63/ffffff?text=2" alt="">
+  </app-img-slide>
+  <app-img-slide>
+    <img src="https://via.placeholder.com/1280x420/e91e63/ffffff?text=3" alt="">
+  </app-img-slide>
+</app-img-slider>
+
+<app-image-gallery></app-image-gallery>
+
+
+<app-content-projection>
+  <app-content-child></app-content-child>
+</app-content-projection>
+
+<h2>From service</h2>
+<input type="text"
+  [value]="authService.user"
+  (input)="authService.user = $event.target.value">

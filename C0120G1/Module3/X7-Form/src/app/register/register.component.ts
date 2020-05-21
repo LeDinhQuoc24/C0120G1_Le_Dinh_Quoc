@@ -1,7 +1,7 @@
 // @ts-ignore
 import { Component, OnInit } from '@angular/core';
 // @ts-ignore
-import {AbstractControl, FormBuilder, Validators, FormGroup} from "@angular/forms";
+import {AbstractControl, FormBuilder, Validators, FormGroup} from '@angular/forms';
 
 function comparePassword(c: AbstractControl) {
   const v = c.value;

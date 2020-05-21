@@ -1,6 +1,6 @@
-// @ts-ignore
+
 import { NgModule } from '@angular/core';
-// @ts-ignore
+
 import { Routes, RouterModule } from '@angular/router';
 import {RegisterComponent} from './register/register.component';
 import {LoginComponent} from './login/login.component';
