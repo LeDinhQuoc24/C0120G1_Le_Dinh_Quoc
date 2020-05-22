@@ -9,7 +9,7 @@ import { ImgSlideComponent } from './img-slide/img-slide.component';
 })
 export class ImgSliderComponent implements OnInit, AfterContentInit {
   @ContentChildren(ImgSlideComponent) slides: QueryList<ImgSlideComponent>;
-  component;
+  abc;
   activeIndex = 0;
   constructor() { }
 
@@ -18,20 +18,20 @@ export class ImgSliderComponent implements OnInit, AfterContentInit {
 
   ngAfterContentInit() {
     console.log(this.slides);
-    this.component = this.slides.first;
+    this.abc = this.slides.first;
   }
 
-  previos() {
+  previous() {
     if (this.activeIndex > 0) {
       this.activeIndex--;
     }
-    this.component = this.slides.toArray()[this.activeIndex];
+    this.abc = this.slides.toArray()[this.activeIndex];
   }
   next() {
     if (this.activeIndex < this.slides.length - 1) {
       this.activeIndex++;
     }
-    this.component = this.slides.toArray()[this.activeIndex];
+    this.abc = this.slides.toArray()[this.activeIndex];
   }
 
 }

@@ -1,0 +1,61 @@
+
+.left{
+  border: blue 3px double;
+  border-radius: 12px;
+  height: 1000px;
+
+}
+.right{
+  border: blue 3px double;
+  border-radius: 12px;
+  height: 1000px;
+
+}
+.navbar{
+  border: black 3px solid;
+  border-radius: 10px;
+}
+header {
+  position: relative;
+  height: 200px;
+  background: black;
+  margin-bottom: 40px;
+}
+.shopping-mall{
+  position: absolute;
+  bottom: 20px;
+  font-variant: small-caps;
+  margin-left: 80px;
+}
+
+.shopping-mall>h1{
+  font-family: Impact;
+  font-size: 50px;
+  color: white;
+  letter-spacing: 0.3px;
+  text-shadow: 0 0 2px black;
+  padding-bottom: 0px;
+  border-bottom: 1px dotted gray;
+  margin: 0px;
+  margin-left: 80px;
+
+}
+.shopping-mall>h5{
+  margin-top: 5px;
+  letter-spacing: 0.5px;
+  color: white;
+}
+header .pull-right {
+  width: 42%;
+  height: 300px;
+  margin-right: -500px;
+  background-image: url("src/assets/img/bg.png");
+  background-repeat: no-repeat;
+  margin-top: -60px;
+}
+/*.row a{*/
+/*  color: white;*/
+/*  width: 400px;*/
+/*  font-size: 50px;*/
+/*}*/
+
