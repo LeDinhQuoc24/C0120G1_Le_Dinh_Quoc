@@ -3,13 +3,16 @@ import {NgModule} from '@angular/core';
 
 import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
-import {ServiceComponent} from './service/service.component';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import { MenuComponent } from './Menu/menu/menu.component';
+import { ListServiceComponent } from './Service/list-service/list-service.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    ServiceComponent
+    MenuComponent,
+    ListServiceComponent,
   ],
   imports: [
     BrowserModule,

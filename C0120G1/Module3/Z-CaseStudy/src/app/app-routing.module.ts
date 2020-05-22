@@ -1,11 +1,31 @@
-import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
-import {ServiceComponent} from './service/service.component';
-
+import {NgModule} from '@angular/core';
+import {Routes, RouterModule} from '@angular/router';
+import {MenuComponent} from './Menu/menu/menu.component';
+import {ListServiceComponent} from './Service/list-service/list-service.component';
 
 
 const routes: Routes = [
-  {path: 'service', component: ServiceComponent}
+  {path: '', component: MenuComponent},
+  {path: 'home', component: MenuComponent},
+  {path: 'service/list', component: ListServiceComponent}
+  // {
+  //   path: 'service',
+  //   component: ServiceComponent,
+  //   children: [
+  //     {
+  //       path: 'add',
+  //       component: AddComponent
+  //     },
+  //     {
+  //       path: 'edit',
+  //       component: EditComponent
+  //     },
+  //     {
+  //       path: 'remove',
+  //       component: RemoveComponent
+  //     },
+  //   ]
+  // }
 ];
 
 
@@ -13,4 +33,5 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {
+}
