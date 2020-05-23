@@ -18,7 +18,6 @@ export class ListCustomerComponent implements OnInit, OnDestroy {
   ngOnInit() {
     this.subscription = this.customerService.getAllCustomers().subscribe((data: Customer[]) => {
       this.customers = data;
-      console.log(this.customers);
     });
   }
 
@@ -28,4 +27,11 @@ export class ListCustomerComponent implements OnInit, OnDestroy {
     }
   }
 
+
+  onDeleteCustomer(id: number) {
+    this.subscription = this.customerService.deleteCustomer(id).subscribe((data: Customer) => {
+      console.log(data);
+      // this.customers = data;
+    });
+  }
 }

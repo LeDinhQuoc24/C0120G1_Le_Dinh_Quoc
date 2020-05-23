@@ -16,4 +16,13 @@ export class CustomerService {
     // @ts-ignore
     return this.http.get(this.API);
   }
+
+  addCustomer(customer: Customer): Observable<Customer> {
+    // @ts-ignore
+    return this.http.post(this.API, customer);
+  }
+  deleteCustomer( id: number): Observable<Customer> {
+    // @ts-ignore
+    return this.http.delete(`${this.API}/${id}`);
+  }
 }
