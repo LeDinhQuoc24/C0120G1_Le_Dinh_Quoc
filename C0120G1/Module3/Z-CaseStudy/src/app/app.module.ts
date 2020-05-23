@@ -11,6 +11,7 @@ import { AddCustomerComponent } from './Component/add-customer/add-customer.comp
 import { EditCustomerComponent } from './Component/edit-customer/edit-customer.component';
 import {CustomerService} from './Service/customer.service';
 import {HttpClientModule} from '@angular/common/http';
+import { CustomersComponent } from './Component/customers/customers.component';
 
 
 @NgModule({
@@ -22,6 +23,7 @@ import {HttpClientModule} from '@angular/common/http';
     ListCustomerComponent,
     AddCustomerComponent,
     EditCustomerComponent,
+    CustomersComponent,
 
   ],
   imports: [
