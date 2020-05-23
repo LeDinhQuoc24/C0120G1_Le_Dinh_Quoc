@@ -17,17 +17,18 @@
 <!--    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>-->
 <!--  </li>-->
 <!--</ul>-->
+
 <header class="container-fluid">
 <div class="row">
 <!--  header1-->
-  <div class="shopping-mall col-md-6">
+  <div class="shopping-mall col-md-6 col-sm-12 col-xs-24 ">
     <h1>CaseStudy_Module3</h1>
     <h5>C0120G1-VnNhnLm-Furama-05/2020-CodyGym Da Nang</h5>
+    <img class="pull-right">
   </div>
-  <img class="pull-right">
 
 <!--  header2-->
-  <div id="header2" class="col-md-6" style="margin-left: 600px;">
+  <div id="header2" class="col-md-6 col-sm-12 col-xs-24 " style="margin-left: 600px;">
     <div id="mycarousel" class="carousel slide" data-ride="carousel">
 
       <!--Cho hiện thị chỉ số nếu muốn-->
@@ -65,7 +66,6 @@
       <!--Hết tạo điều khiển chuyển Slide-->
 
     </div>
-
   </div>
 </div>
 </header>
@@ -105,7 +105,7 @@
   <div class="row">
     <div class="col-md-3 col-sm-6 col-xs-12 left">
       <ul>
-        <li><a routerLink="service/list">Serice</a> </li>
+        <li><a routerLink="customers">List Customers</a> </li>
         <li><a routerLink="service/add">Serice2</a> </li>
         <li><a href="">Line3</a></li>
         <li><a href="">Line4</a></li>
@@ -114,7 +114,7 @@
 
 
     </div>
-    <div class="col-md-9 col sm-18 col-xs-36 right">
+    <div id="main" class="col-md-9 col sm-18 col-xs-36 right">
      <router-outlet></router-outlet>
     </div>
 
