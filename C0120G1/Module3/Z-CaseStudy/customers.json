@@ -61,7 +61,7 @@
       "address": "Nha Trang"
     },
     {
-      "id": "7",
+      "id": 7,
       "typeCustomer": "SuperVip",
       "name": "MoeAmatsuka",
       "birthday": "1998-01-01",
@@ -69,6 +69,41 @@
       "phone": 905977000,
       "email": "moe@gmail.com",
       "address": "Japan"
+    },
+    {
+      "id": 8,
+      "typeCustomer": "8",
+      "name": "8",
+      "idCard": "8"
+    }
+  ],
+  "services": [
+    {
+      "id": 1,
+      "name": "VL-1234",
+      "areaUsed": "300",
+      "amount": "300000",
+      "maximumPeople": "3",
+      "typeRent": "byDay",
+      "typeService": "Villa"
+    },
+    {
+      "id": 2,
+      "name": "HO-1234",
+      "areaUsed": 200,
+      "amount": 2500000,
+      "maximumPeople": 5,
+      "typeRent": "byMonth",
+      "typeService": "House"
+    },
+    {
+      "id": 3,
+      "name": "4",
+      "areaUsed": 4,
+      "typeRent": "byMonth",
+      "typeService": "3",
+      "maximumPeople": 2,
+      "amount": 300000
     }
   ]
 }

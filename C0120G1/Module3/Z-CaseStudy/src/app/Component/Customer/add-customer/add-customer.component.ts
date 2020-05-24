@@ -1,8 +1,8 @@
 import {Component, OnDestroy, OnInit} from '@angular/core';
 import {AbstractControl, FormBuilder, FormGroup, Validators} from '@angular/forms';
-import {Customer} from '../../Model/customer.model';
+import {Customer} from '../../../Model/customer.model';
 import {Subscription} from 'rxjs';
-import {CustomerService} from '../../Service/customer.service';
+import {CustomerService} from '../../../Service/customer.service';
 import {Router} from '@angular/router';
 
 function comparePassword(c: AbstractControl) {

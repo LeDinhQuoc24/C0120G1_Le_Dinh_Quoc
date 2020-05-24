@@ -1,0 +1,56 @@
+<h2 class="text-center">Add new Service</h2>
+<form  class="col-md-8 offset-md-4" style="text-align: center">
+  <div class=" row">
+    <label class="col">
+      Id:
+      <input type="number" class="form-control" [(ngModel)]="service.id" name="id">
+    </label>
+  </div>
+  <div >
+    <label class="col">
+      Tên dịch vụ:
+      <input type="text" class="form-control"  [(ngModel)]="service.name" name="name">
+    </label>
+  </div>
+  <div >
+    <label class="col">
+      Diện tích sử dụng:
+      <input type="number" class="form-control"   [(ngModel)]="service.areaUsed" name="areaUsed">
+    </label>
+  </div>
+  <div >
+    <label class="col">
+      Chi phí thuê:
+      <input type="number" class="form-control"   [(ngModel)]="service.amount" name="amount">
+    </label>
+  </div>
+  <div >
+    <label class="col">
+      Số người tối đa:
+      <input type="number" class="form-control"  [(ngModel)]="service.maximumPeople" name="maximumPeople">
+    </label>
+  </div>
+  <div >
+    <label class="col">
+      Kiểu thuê:
+      <select type="text" class="form-control"  [(ngModel)]="service.typeRent" name="typeService">
+        <option value="byDay">By Day</option>
+        <option value="byMonth">By Month</option>
+        <option value="byYear">By Year</option>
+      </select>
+    </label>
+  </div>
+  <div >
+    <label class="col">
+      Loại dịch vụ:
+      <input type="text" class="form-control"  [(ngModel)]="service.typeService" name="typeService">
+
+    </label>
+  </div>
+
+  <div >
+    <button class="btn btn-info" type="submit" style="color: black" (click)="onAddService()">
+      Submit
+    </button>
+  </div>
+</form>

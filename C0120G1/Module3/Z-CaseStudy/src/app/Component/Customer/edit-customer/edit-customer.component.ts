@@ -1,8 +1,8 @@
 import {Component, OnDestroy, OnInit} from '@angular/core';
-import {Customer} from '../../Model/customer.model';
+import {Customer} from '../../../Model/customer.model';
 import {Subscription} from 'rxjs';
 import {Router, ActivatedRoute, Params} from '@angular/router';
-import {CustomerService} from '../../Service/customer.service';
+import {CustomerService} from '../../../Service/customer.service';
 
 @Component({
   selector: 'app-edit-customer',
