@@ -5,7 +5,6 @@ import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { MenuComponent } from './Component/menu/menu.component';
-import { ListServiceComponent } from './Service/list-service/list-service.component';
 import { ListCustomerComponent } from './Component/list-customer/list-customer.component';
 import { AddCustomerComponent } from './Component/add-customer/add-customer.component';
 import { EditCustomerComponent } from './Component/edit-customer/edit-customer.component';
@@ -18,8 +17,6 @@ import { CustomersComponent } from './Component/customers/customers.component';
   declarations: [
     AppComponent,
     MenuComponent,
-    ListServiceComponent,
-
     ListCustomerComponent,
     AddCustomerComponent,
     EditCustomerComponent,
