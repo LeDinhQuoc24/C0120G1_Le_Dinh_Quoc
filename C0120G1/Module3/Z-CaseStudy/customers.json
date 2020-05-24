@@ -2,68 +2,73 @@
   "customers": [
     {
       "id": 1,
-      "typeCustomer": "diamond",
+      "typeCustomer": "Diamond",
       "name": "Trần Ngọc Tân",
-      "birthday": "02/02/1998",
+      "birthday": "1998-03-03",
       "idCard": "201775702",
-      "phone": "0905294321",
+      "phone": 905123450,
       "email": "tan@gmail.com",
-      "address": "Da Nang"
+      "address": "Đà Nẵng"
     },
     {
       "id": 2,
-      "typeCustomer": "diamond",
-      "name": "Nguyen My Linh",
-      "birthday": "02/02/1998",
-      "idCard": "201775702",
-      "phone": "0905294321",
-      "email": "tan@gmail.com",
-      "address": "Nong Son"
+      "typeCustomer": "Diamond",
+      "name": "Võ Minh Hùng",
+      "birthday": "1990-02-02",
+      "idCard": "205331234",
+      "phone": 905123452,
+      "email": "vominhhung@gmail.com",
+      "address": "Quế Sơn"
     },
     {
       "id": 3,
-      "typeCustomer": "gold",
-      "name": "Nguyen Dinh Hoa",
-      "birthday": "02/02/1998",
+      "typeCustomer": "Gold",
+      "name": "Nguyễn Đình Hòa",
+      "birthday": "1994-01-01",
       "idCard": "201775702",
       "phone": "0905294321",
       "email": "tan@gmail.com",
-      "address": "Da Nang"
+      "address": "Đại Lộc"
     },
     {
       "id": 4,
-      "typeCustomer": "member",
-      "name": "Le Dinh Quoc",
-      "birthday": "02/02/1998",
+      "typeCustomer": "Member",
+      "name": "Lê Đình Quốc",
+      "birthday": "2000-12-24",
       "idCard": "201775702",
       "phone": "0905294321",
       "email": "tan@gmail.com",
-      "address": "Da Nang"
+      "address": "Quảng Nam"
     },
     {
       "id": 5,
-      "typeCustomer": "diamond",
-      "name": "Pham Minh Hung",
-      "birthday": "02/02/1998",
+      "typeCustomer": "Diamond",
+      "name": "Phạm Minh Hưng",
+      "birthday": "1996-08-08",
       "idCard": "201775702",
-      "phone": "0905294321",
-      "email": "tan@gmail.com",
-      "address": "Da Nang"
+      "phone": 905123454,
+      "email": "minhhung@gmail.com",
+      "address": "Gia Lai"
     },
     {
       "id": 6,
-      "typeCustomer": "diamond",
-      "name": "Pham Thai Cuong",
-      "birthday": "02/02/1998",
+      "typeCustomer": "Diamond",
+      "name": "Phạm Thái Cường",
+      "birthday": "1994-05-05",
       "idCard": "201775702",
-      "phone": "0905294321",
-      "email": "tan@gmail.com",
+      "phone": 905123453,
+      "email": "thaicuong@gmail.com",
       "address": "Nha Trang"
     },
     {
       "id": "7",
-      "typeCustomer": "8",
-      "name": "9"
+      "typeCustomer": "SuperVip",
+      "name": "MoeAmatsuka",
+      "birthday": "1998-01-01",
+      "idCard": "123456789",
+      "phone": 905977000,
+      "email": "moe@gmail.com",
+      "address": "Japan"
     }
   ]
 }
