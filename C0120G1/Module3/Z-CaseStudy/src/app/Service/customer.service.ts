@@ -17,6 +17,11 @@ export class CustomerService {
     return this.http.get(this.API);
   }
 
+  getCustomer(id: number): Observable<Customer> {
+    // @ts-ignore
+    return this.http.get(`${this.API}/${id}`);
+  }
+
   addCustomer(customer: Customer): Observable<Customer> {
     // @ts-ignore
     return this.http.post(this.API, customer);
