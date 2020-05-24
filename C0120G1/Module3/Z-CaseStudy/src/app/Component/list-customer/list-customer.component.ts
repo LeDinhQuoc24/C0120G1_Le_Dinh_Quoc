@@ -30,8 +30,16 @@ export class ListCustomerComponent implements OnInit, OnDestroy {
 
   onDeleteCustomer(id: number) {
     this.subscription = this.customerService.deleteCustomer(id).subscribe((data: Customer) => {
-      console.log(data);
-      // this.customers = data;
+      this.updateDataAfterDelete(id);
     });
+  }
+  updateDataAfterDelete(id: number) {
+    for (let i = 0; i < this.customers.length; i++) {
+      // tslint:disable-next-line:triple-equals
+      if (this.customers[i].id == id) {
+        this.customers.splice(i, 1);
+        break;
+      }
+    }
   }
 }

@@ -22,8 +22,10 @@
       <td>{{item.typeCustomer}}</td>
       <td>{{item.address}}</td>
       <td>{{item.birthday}}</td>
-      <td><button type="button" class="btn btn-success" routerLink="addCustomer">Edit</button></td>
-      <td><button type="button" class="btn btn-danger" (click)="onDeleteCustomer(item.id)"><a href="/customers">Delete</a></button></td>
+      <td><button type="button" class="btn btn-success" [routerLink]="['/customers',item.id,'edit']">Edit</button></td>
+      <td><button type="button" class="btn btn-danger" (click)="onDeleteCustomer(item.id)">
+        Delete
+      </button></td>
 
     </tr>
     </tbody>

@@ -20,22 +20,20 @@ function comparePassword(c: AbstractControl) {
 export class AddCustomerComponent implements OnInit, OnDestroy {
   public customer: Customer;
   public subscription: Subscription;
-  public routerService: Router;
 
-  constructor(public customerService: CustomerService, private router: Router) {
-  }
-
+  constructor(
+    public customerService: CustomerService,
+    public routerService: Router
+  ) {}
   ngOnInit() {
     this.customer = new Customer();
   }
 
-  onSubmit() {
-    // @ts-ignore
+  onAddCustomer() {
     this.subscription = this.customerService.addCustomer(this.customer).subscribe(data => {
       if (data && data.id) {
         this.routerService.navigate(['customers']);
       }
-      console.log(this.customer);
     });
   }
 

@@ -21,7 +21,13 @@ export class CustomerService {
     // @ts-ignore
     return this.http.post(this.API, customer);
   }
-  deleteCustomer( id: number): Observable<Customer> {
+
+  updateCustomer(customer: Customer): Observable<Customer> {
+    // @ts-ignore
+    return this.http.put(`${this.API}/${customer.id}`, customer);
+  }
+
+  deleteCustomer(id: number): Observable<Customer> {
     // @ts-ignore
     return this.http.delete(`${this.API}/${id}`);
   }

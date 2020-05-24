@@ -59,6 +59,11 @@
       "phone": "0905294321",
       "email": "tan@gmail.com",
       "address": "Nha Trang"
+    },
+    {
+      "id": "7",
+      "typeCustomer": "8",
+      "name": "9"
     }
   ]
 }

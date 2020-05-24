@@ -5,6 +5,7 @@ import {ListServiceComponent} from './Service/list-service/list-service.componen
 import {ListCustomerComponent} from './Component/list-customer/list-customer.component';
 import {AddCustomerComponent} from './Component/add-customer/add-customer.component';
 import {CustomersComponent} from './Component/customers/customers.component';
+import {EditCustomerComponent} from './Component/edit-customer/edit-customer.component';
 
 
 const routes: Routes = [
@@ -15,9 +16,9 @@ const routes: Routes = [
     path: 'customers',
     component: CustomersComponent,
     children: [
-      {path: '', component: ListCustomerComponent},
-      {path: 'listCustomer', component: ListCustomerComponent},
-      {path: 'addCustomer', component: AddCustomerComponent}
+      {path: '', component: ListCustomerComponent, pathMatch: 'full'},
+      {path: 'addCustomer', component: AddCustomerComponent},
+      {path: ':id/edit', component: EditCustomerComponent}
     ]
   },
   // {path: 'addCustomer', component: AddCustomerComponent},
