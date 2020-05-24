@@ -15,6 +15,10 @@ import { ServicesComponent } from './Component/Service/services/services.compone
 import { AddServiceComponent } from './Component/Service/add-service/add-service.component';
 import { EditServiceComponent } from './Component/Service/edit-service/edit-service.component';
 import { ListServiceComponent } from './Component/Service/list-service/list-service.component';
+import { EmployeesComponent } from './Component/Employee/employees/employees.component';
+import { ListEmployeeComponent } from './Component/Employee/list-employee/list-employee.component';
+import { AddEmployeeComponent } from './Component/Employee/add-employee/add-employee.component';
+import { EditEmployeeComponent } from './Component/Employee/edit-employee/edit-employee.component';
 
 
 @NgModule({
@@ -29,6 +33,10 @@ import { ListServiceComponent } from './Component/Service/list-service/list-serv
     AddServiceComponent,
     EditServiceComponent,
     ListServiceComponent,
+    EmployeesComponent,
+    ListEmployeeComponent,
+    AddEmployeeComponent,
+    EditEmployeeComponent,
 
   ],
   imports: [

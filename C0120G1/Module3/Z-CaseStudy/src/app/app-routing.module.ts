@@ -9,6 +9,10 @@ import {ServicesComponent} from './Component/Service/services/services.component
 import {ListServiceComponent} from './Component/Service/list-service/list-service.component';
 import {AddServiceComponent} from './Component/Service/add-service/add-service.component';
 import {EditServiceComponent} from './Component/Service/edit-service/edit-service.component';
+import {EmployeesComponent} from './Component/Employee/employees/employees.component';
+import {ListEmployeeComponent} from './Component/Employee/list-employee/list-employee.component';
+import {AddEmployeeComponent} from './Component/Employee/add-employee/add-employee.component';
+import {EditEmployeeComponent} from './Component/Employee/edit-employee/edit-employee.component';
 
 
 const routes: Routes = [
@@ -30,6 +34,15 @@ const routes: Routes = [
       {path: '', component: ListServiceComponent},
       {path: 'add', component: AddServiceComponent},
       {path: ':id/edit', component: EditServiceComponent}
+    ]
+  },
+  {
+    path: 'employees',
+    component: EmployeesComponent,
+    children: [
+      {path: '', component: ListEmployeeComponent},
+      {path: 'add', component: AddEmployeeComponent},
+      {path: ':id/edit', component: EditEmployeeComponent}
     ]
   },
 ];

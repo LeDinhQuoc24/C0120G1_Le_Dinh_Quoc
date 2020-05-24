@@ -1,0 +1,89 @@
+<h2 class="text-center">Add new Employee</h2>
+<form  class="col-md-8 offset-md-4" style="text-align: center">
+  <div class=" row">
+    <label class="col">
+      Id:
+      <input type="number" class="form-control" [(ngModel)]="employee.id" name="id">
+    </label>
+  </div>
+  <div >
+    <label class="col">
+      Tên nhân viên:
+      <input type="text" class="form-control"  [(ngModel)]="employee.name" name="name">
+    </label>
+  </div>
+  <div >
+    <label class="col">
+      Ngày sinh:
+      <input type="date" class="form-control"   [(ngModel)]="employee.birthday" name="birthday">
+    </label>
+  </div>
+  <div >
+    <label class="col">
+      Chứng minh nhân dân:
+      <input type="number" class="form-control"  [(ngModel)]="employee.idCard" name="idCard">
+    </label>
+  </div>
+  <div >
+    <label class="col">
+      Số điện thoại:
+      <input type="number" class="form-control"  [(ngModel)]="employee.phone" name="phone">
+    </label>
+  </div>
+  <div >
+    <label class="col">
+      Email:
+      <input type="email" class="form-control"  [(ngModel)]="employee.email" name="email">
+    </label>
+  </div>
+
+  <div >
+    <label class="col">
+      Trình độ:
+      <select type="text" class="form-control"   [(ngModel)]="employee.degree" name="degree">
+        <option value="Trung cấp">Trung cấp</option>
+        <option value="Cao đẳng">Cao đẳng</option>
+        <option value="Đại học">Đại học</option>
+        <option value="Sau đại học">Sau đại học</option>
+      </select>
+    </label>
+  </div>
+  <div >
+    <label class="col">
+      Vị trí:
+      <select type="text" class="form-control"   [(ngModel)]="employee.part" name="part">
+        <option>Lễ tân</option>
+        <option value="Phục vụ">Phục vụ</option>
+        <option value="Chuyên viên">Chuyên viên</option>
+        <option value="Giám sát">Giám sát</option>
+        <option value="Quản lý">Quản lý</option>
+        <option value="Giám đốc">Giám đốc</option>
+      </select>
+    </label>
+  </div>
+  <div >
+    <label class="col">
+      Bộ phận:
+      <select type="text" class="form-control"   [(ngModel)]="employee.position" name="position">
+        <option value="Sale-Marketing">Sale-Marketing</option>
+        <option value="Phục vụ">Phục vụ</option>
+        <option value="Hành chính">Hành chính</option>
+        <option value="Quản lý">Quản lý</option>
+      </select>
+    </label>
+  </div>
+
+  <div >
+    <button class="btn btn-info" type="submit" style="color: black" (click)="onAddEmployee()">
+      Submit
+    </button>
+  </div>
+</form>
+
+
+<!--<pre>-->
+<!--{{ registerFormService.value | json}}-->
+<!--</pre>-->
+
+<!--[disabled]="registerFormService.invalid"-->
+

@@ -98,12 +98,25 @@
     },
     {
       "id": 3,
-      "name": "4",
-      "areaUsed": 4,
-      "typeRent": "byMonth",
-      "typeService": "3",
-      "maximumPeople": 2,
-      "amount": 300000
+      "name": "RO-1234",
+      "areaUsed": 500,
+      "typeRent": "byYear",
+      "typeService": "Room",
+      "maximumPeople": 8,
+      "amount": 30000000
+    }
+  ],
+  "employees": [
+    {
+      "id": 1,
+      "name": "Nguyễn Đình Hòa",
+      "birthday": "1995-04-04",
+      "idCard": "123456778",
+      "phone": 905123456,
+      "email": "ngdinhhoa@gmail.com",
+      "degree": "Trung cấp",
+      "part": "Chuyên viên",
+      "position": "Sale-Marketing"
     }
   ]
 }
