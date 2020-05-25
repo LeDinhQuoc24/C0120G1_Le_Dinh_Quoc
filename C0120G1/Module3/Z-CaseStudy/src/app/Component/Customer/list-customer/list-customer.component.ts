@@ -12,15 +12,17 @@ export class ListCustomerComponent implements OnInit, OnDestroy {
   public subscription: Subscription;
   public customers: Customer[];
 
+
+
   constructor(public customerService: CustomerService) {
   }
 
   ngOnInit() {
     this.subscription = this.customerService.getAllCustomers().subscribe((data: Customer[]) => {
       this.customers = data;
+
     });
   }
-
   ngOnDestroy() {
     if (this.subscription) {
       this.subscription.unsubscribe();
@@ -36,8 +38,7 @@ export class ListCustomerComponent implements OnInit, OnDestroy {
 
   updateDataAfterDelete(id: number) {
     for (let i = 0; i < this.customers.length; i++) {
-      // tslint:disable-next-line:triple-equals
-      if (this.customers[i].id == id) {
+      if (this.customers[i].id === id) {
         this.customers.splice(i, 1);
         break;
       }

@@ -9,16 +9,6 @@
       "email": "ngoctan@gmail.com",
       "address": "Đà Nẵng",
       "id": 1
-    },
-    {
-      "typeCustomer": "Platinium",
-      "name": "32",
-      "birthday": "",
-      "idCard": 313,
-      "phone": "313",
-      "email": "313",
-      "address": "313",
-      "id": 2
     }
   ],
   "services": [

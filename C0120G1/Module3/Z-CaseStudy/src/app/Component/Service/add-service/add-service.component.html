@@ -74,7 +74,7 @@
   </div>
 
   <div >
-    <button class="btn btn-info" type="submit" style="color: black" (click)="onAddService()">
+    <button class="btn btn-info" type="submit" style="color: black" [disabled]="addServiceForm.invalid " (click)="onAddService()">
       Thêm mới
     </button>
   </div>
