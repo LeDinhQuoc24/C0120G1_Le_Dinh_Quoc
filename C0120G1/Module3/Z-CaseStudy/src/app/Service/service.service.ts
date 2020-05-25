@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core';
+import {Injectable} from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 import {Observable} from 'rxjs';
 import {Service} from '../Model/service.model';
@@ -12,28 +12,23 @@ export class ServiceService {
   constructor(public http: HttpClient) {
   }
 
-  getAllServices(): Observable<Service[]> {
-    // @ts-ignore
+  getAllServices(): Observable<any> {
     return this.http.get(this.API);
   }
 
-  getService(id: number): Observable<Service> {
-    // @ts-ignore
+  getService(id: number): Observable<any> {
     return this.http.get(`${this.API}/${id}`);
   }
 
-  addService(service: Service): Observable<Service> {
-    // @ts-ignore
+  addService(service: Service): Observable<any> {
     return this.http.post(this.API, service);
   }
 
-  updateService(service: Service): Observable<Service> {
-    // @ts-ignore
-    return this.http.put(`${this.API}/${service.id}`, service);
+  updateService(service, id): Observable<any> {
+    return this.http.put(`${this.API}/${id}`, service);
   }
 
-  deleteService(id: number): Observable<Service> {
-    // @ts-ignore
+  deleteService(id: number): Observable<any> {
     return this.http.delete(`${this.API}/${id}`);
   }
 }

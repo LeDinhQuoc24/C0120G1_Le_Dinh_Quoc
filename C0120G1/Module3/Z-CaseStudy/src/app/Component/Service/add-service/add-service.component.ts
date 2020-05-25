@@ -1,8 +1,8 @@
 import {Component, OnDestroy, OnInit} from '@angular/core';
 import {Subscription} from 'rxjs';
 import {Router} from '@angular/router';
-import {Service} from '../../../Model/service.model';
 import {ServiceService} from '../../../Service/service.service';
+import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 
 @Component({
   selector: 'app-add-service',
@@ -10,19 +10,27 @@ import {ServiceService} from '../../../Service/service.service';
   styleUrls: ['./add-service.component.css']
 })
 export class AddServiceComponent implements OnInit, OnDestroy {
-  public service: Service;
+  addServiceForm: FormGroup;
   public subscription: Subscription;
 
   constructor(
     public serviceService: ServiceService,
-    public routerService: Router
+    public routerService: Router,
+    private fb: FormBuilder
   ) {}
   ngOnInit() {
-    this.service = new Service();
+    this.addServiceForm = this.fb.group({
+      name: ['', [Validators.required]],
+      areaUsed: ['', [Validators.required, Validators.min(1)]],
+      amount: ['', [Validators.required, Validators.min(1)]],
+      maximumPeople: ['', [Validators.required, Validators.min(1)]],
+      typeRent: ['', [Validators.required]],
+      typeService: ['', [Validators.required]],
+    });
   }
 
   onAddService() {
-    this.subscription = this.serviceService.addService(this.service).subscribe(data => {
+    this.subscription = this.serviceService.addService(this.addServiceForm.value).subscribe(data => {
       if (data && data.id) {
         this.routerService.navigate(['services']);
       }

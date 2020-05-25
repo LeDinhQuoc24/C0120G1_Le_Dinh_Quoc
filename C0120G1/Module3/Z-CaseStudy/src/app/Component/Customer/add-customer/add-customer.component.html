@@ -1,57 +1,90 @@
-<h2 class="text-center">Add new Customer</h2>
-<form  class="col-md-8 offset-md-4" style="text-align: center">
-  <div class=" row">
+<h2 class="text-center">Thêm mới khách hàng</h2>
+<form  [formGroup]="addCustomerForm" class="col-md-8 offset-md-4" style="text-align: center">
+
+  <div >
     <label class="col">
-      Id:
-      <input type="number" class="form-control" [(ngModel)]="customer.id" name="id">
+      Tên khách hàng:
+      <input type="text" class="form-control"   formControlName="name">
     </label>
+  </div>
+  <div class="alert alert-danger" role="alert" *ngIf="addCustomerForm.get('name').invalid && addCustomerForm.get('name').touched">
+    Tên không được để trống.
   </div>
   <div >
     <label class="col">
       Loại khách hàng:
-      <input type="text" class="form-control"  [(ngModel)]="customer.typeCustomer" name="typeCustomer">
+      <select type="text" class="form-control"  formControlName="typeCustomer">
+        <option value="Diamond">Diamond</option>
+        <option value="Platinium">Platinium</option>
+        <option value="Gold">Gold</option>
+        <option value="Silver">Silver</option>
+        <option value="Member">Member</option>
+      </select>
     </label>
   </div>
-  <div >
-    <label class="col">
-      Tên khách hàng:
-      <input type="text" class="form-control"   [(ngModel)]="customer.name" name="name">
-    </label>
+  <div class="alert alert-danger" role="alert" *ngIf="addCustomerForm.get('typeCustomer').invalid && addCustomerForm.get('typeCustomer').touched">
+    Loại khách hàng không được để trống.
   </div>
+
   <div >
     <label class="col">
       Ngày sinh:
-      <input type="date" class="form-control"   [(ngModel)]="customer.birthday" name="birthday">
+      <input type="date" class="form-control"  formControlName="birthday">
     </label>
+  </div>
+  <div class="alert alert-danger" role="alert" *ngIf="addCustomerForm.get('birthday').invalid && addCustomerForm.get('birthday').touched">
+    Ngày sinh không được để trống.
   </div>
   <div >
     <label class="col">
       Chứng minh nhân dân:
-      <input type="number" class="form-control"  [(ngModel)]="customer.idCard" name="idCard">
+      <input type="number" class="form-control"  formControlName="idCard">
     </label>
+  </div>
+  <div class="alert alert-danger" role="alert" *ngIf="addCustomerForm.get('idCard').hasError('required') && addCustomerForm.get('idCard').touched">
+    Chứng minh nhân dân không được để trống.
+  </div>
+  <div class="alert alert-danger" role="alert" *ngIf="addCustomerForm.get('idCard').hasError('pattern') && addCustomerForm.get('idCard').touched">
+    Chứng minh nhân dân không đúng định dạng.
   </div>
   <div >
     <label class="col">
       Số điện thoại:
-      <input type="number" class="form-control"  [(ngModel)]="customer.phone" name="phone">
+      <input type="text" class="form-control"  placeholder="090" formControlName="phone">
     </label>
+  </div>
+  <div class="alert alert-danger" role="alert" *ngIf="addCustomerForm.get('phone').hasError('required') && addCustomerForm.get('phone').touched">
+    Số điện thoại không được để trống.
+  </div>
+  <div class="alert alert-danger" role="alert" *ngIf="addCustomerForm.get('phone').hasError('pattern') && addCustomerForm.get('phone').touched">
+    Số điện thoại không đúng định dạng.
   </div>
   <div >
     <label class="col">
       Email:
-      <input type="email" class="form-control"  [(ngModel)]="customer.email" name="email">
+      <input type="email" class="form-control"  formControlName="email">
     </label>
   </div>
-  <div >
-    <label class="col">
-      Địa chỉ:
-      <input type="text" class="form-control"   [(ngModel)]="customer.address" name="address">
-    </label>
+  <div class="alert alert-danger" role="alert" *ngIf="addCustomerForm.get('email').hasError('required') && addCustomerForm.get('email').touched">
+    Email không được để trống.
+  </div>
+  <div class="alert alert-danger" role="alert" *ngIf="addCustomerForm.get('email').hasError('email') && addCustomerForm.get('email').touched">
+    Email không đúng định dạng.
   </div>
 
   <div >
-    <button class="btn btn-info" type="submit" style="color: black" (click)="onAddCustomer()">
-     Submit
+    <label class="col">
+      Địa chỉ:
+      <input type="text" class="form-control"   formControlName="address">
+    </label>
+  </div>
+  <div class="alert alert-danger" role="alert" *ngIf="addCustomerForm.get('address').invalid && addCustomerForm.get('address').touched">
+    Địa chỉ không được để trống.
+  </div>
+
+  <div >
+    <button class="btn btn-info" type="submit" style="color: black" [disabled]="addCustomerForm.invalid " (click)="onAddCustomer()">
+     Thêm mới
     </button>
   </div>
 </form>

@@ -12,28 +12,23 @@ export class CustomerService {
   constructor(public http: HttpClient) {
   }
 
-  getAllCustomers(): Observable<Customer[]> {
-    // @ts-ignore
+  getAllCustomers(): Observable<any> {
     return this.http.get(this.API);
   }
 
-  getCustomer(id: number): Observable<Customer> {
-    // @ts-ignore
+  getCustomer(id: number): Observable<any> {
     return this.http.get(`${this.API}/${id}`);
   }
 
-  addCustomer(customer: Customer): Observable<Customer> {
-    // @ts-ignore
+  addCustomer(customer: Customer): Observable<any> {
     return this.http.post(this.API, customer);
   }
 
-  updateCustomer(customer: Customer): Observable<Customer> {
-    // @ts-ignore
-    return this.http.put(`${this.API}/${customer.id}`, customer);
+  updateCustomer(customer, id): Observable<any> {
+    return this.http.put(`${this.API}/${id}`, customer);
   }
 
-  deleteCustomer(id: number): Observable<Customer> {
-    // @ts-ignore
+  deleteCustomer(id: number): Observable<any> {
     return this.http.delete(`${this.API}/${id}`);
   }
 }

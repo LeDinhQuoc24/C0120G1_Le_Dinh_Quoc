@@ -1,46 +1,64 @@
-<h2 class="text-center">Add new Employee</h2>
-<form  class="col-md-8 offset-md-4" style="text-align: center">
-  <div class=" row">
-    <label class="col">
-      Id:
-      <input type="number" class="form-control" [(ngModel)]="employee.id" name="id">
-    </label>
-  </div>
+<h2 class="text-center">Thêm mới nhân viên</h2>
+<form  [formGroup]="addEmployeeForm" class="col-md-8 offset-md-4" style="text-align: center">
   <div >
     <label class="col">
       Tên nhân viên:
-      <input type="text" class="form-control"  [(ngModel)]="employee.name" name="name">
+      <input type="text" class="form-control"  formControlName="name">
     </label>
+  </div>
+  <div class="alert alert-danger" role="alert" *ngIf="addEmployeeForm.get('name').invalid && addEmployeeForm.get('name').touched">
+    Tên không được để trống.
   </div>
   <div >
     <label class="col">
       Ngày sinh:
-      <input type="date" class="form-control"   [(ngModel)]="employee.birthday" name="birthday">
+      <input type="date" class="form-control"   formControlName="birthday">
     </label>
+  </div>
+  <div class="alert alert-danger" role="alert" *ngIf="addEmployeeForm.get('birthday').invalid && addEmployeeForm.get('birthday').touched">
+    Ngày sinh không được để trống.
   </div>
   <div >
     <label class="col">
       Chứng minh nhân dân:
-      <input type="number" class="form-control"  [(ngModel)]="employee.idCard" name="idCard">
+      <input type="number" class="form-control"  formControlName="idCard">
     </label>
+  </div>
+  <div class="alert alert-danger" role="alert" *ngIf="addEmployeeForm.get('idCard').hasError('required') && addEmployeeForm.get('idCard').touched">
+    Chứng minh nhân dân không được để trống.
+  </div>
+  <div class="alert alert-danger" role="alert" *ngIf="addEmployeeForm.get('idCard').hasError('pattern') && addEmployeeForm.get('idCard').touched">
+    Chứng minh nhân dân không đúng định dạng.
   </div>
   <div >
     <label class="col">
       Số điện thoại:
-      <input type="number" class="form-control"  [(ngModel)]="employee.phone" name="phone">
+      <input type="text" class="form-control"  formControlName="phone">
     </label>
+  </div>
+  <div class="alert alert-danger" role="alert" *ngIf="addEmployeeForm.get('phone').hasError('required') && addEmployeeForm.get('phone').touched">
+    Số điện thoại không được để trống.
+  </div>
+  <div class="alert alert-danger" role="alert" *ngIf="addEmployeeForm.get('phone').hasError('pattern') && addEmployeeForm.get('phone').touched">
+    Số điện thoại không đúng định dạng.
   </div>
   <div >
     <label class="col">
       Email:
-      <input type="email" class="form-control"  [(ngModel)]="employee.email" name="email">
+      <input type="email" class="form-control"  formControlName="email">
     </label>
+  </div>
+  <div class="alert alert-danger" role="alert" *ngIf="addEmployeeForm.get('email').hasError('required') && addEmployeeForm.get('email').touched">
+    Email không được để trống.
+  </div>
+  <div class="alert alert-danger" role="alert" *ngIf="addEmployeeForm.get('email').hasError('email') && addEmployeeForm.get('email').touched">
+    Email không đúng định dạng.
   </div>
 
   <div >
     <label class="col">
       Trình độ:
-      <select type="text" class="form-control"   [(ngModel)]="employee.degree" name="degree">
+      <select type="text" class="form-control"   formControlName="degree">
         <option value="Trung cấp">Trung cấp</option>
         <option value="Cao đẳng">Cao đẳng</option>
         <option value="Đại học">Đại học</option>
@@ -48,11 +66,14 @@
       </select>
     </label>
   </div>
+  <div class="alert alert-danger" role="alert" *ngIf="addEmployeeForm.get('degree').invalid && addEmployeeForm.get('degree').touched">
+    Trình độ không được để trống.
+  </div>
   <div >
     <label class="col">
       Vị trí:
-      <select type="text" class="form-control"   [(ngModel)]="employee.part" name="part">
-        <option>Lễ tân</option>
+      <select type="text" class="form-control"   formControlName="part">
+        <option value="Lễ tân">Lễ tân</option>
         <option value="Phục vụ">Phục vụ</option>
         <option value="Chuyên viên">Chuyên viên</option>
         <option value="Giám sát">Giám sát</option>
@@ -61,10 +82,13 @@
       </select>
     </label>
   </div>
+  <div class="alert alert-danger" role="alert" *ngIf="addEmployeeForm.get('part').invalid && addEmployeeForm.get('part').touched">
+    Vị trí không được để trống.
+  </div>
   <div >
     <label class="col">
       Bộ phận:
-      <select type="text" class="form-control"   [(ngModel)]="employee.position" name="position">
+      <select type="text" class="form-control"   formControlName="position">
         <option value="Sale-Marketing">Sale-Marketing</option>
         <option value="Phục vụ">Phục vụ</option>
         <option value="Hành chính">Hành chính</option>
@@ -72,10 +96,13 @@
       </select>
     </label>
   </div>
+  <div class="alert alert-danger" role="alert" *ngIf="addEmployeeForm.get('position').invalid && addEmployeeForm.get('position').touched">
+    Bộ phận không được để trống.
+  </div>
 
   <div >
-    <button class="btn btn-info" type="submit" style="color: black" (click)="onAddEmployee()">
-      Submit
+    <button class="btn btn-info" type="submit" style="color: black"  [disabled]="addEmployeeForm.invalid " (click)="onAddEmployee()">
+      Thêm mới
     </button>
   </div>
 </form>

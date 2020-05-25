@@ -8,7 +8,7 @@ import {EmployeeService} from '../../../Service/employee.service';
   templateUrl: './list-employee.component.html',
   styleUrls: ['./list-employee.component.css']
 })
-export class ListEmployeeComponent implements OnInit,OnDestroy {
+export class ListEmployeeComponent implements OnInit, OnDestroy {
 
   public subscription: Subscription;
   public employees: Employee[];

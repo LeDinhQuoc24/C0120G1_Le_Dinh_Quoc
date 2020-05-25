@@ -5,12 +5,6 @@ import {Subscription} from 'rxjs';
 import {CustomerService} from '../../../Service/customer.service';
 import {Router} from '@angular/router';
 
-function comparePassword(c: AbstractControl) {
-  const v = c.value;
-  return (v.password === v.confirmPassword) ? null : {
-    passwordnotmatch: true
-  };
-}
 
 @Component({
   selector: 'app-add-customer',
@@ -18,19 +12,30 @@ function comparePassword(c: AbstractControl) {
   styleUrls: ['./add-customer.component.css']
 })
 export class AddCustomerComponent implements OnInit, OnDestroy {
-  public customer: Customer;
   public subscription: Subscription;
+  addCustomerForm: FormGroup;
 
   constructor(
     public customerService: CustomerService,
-    public routerService: Router
+    public routerService: Router,
+    private fb: FormBuilder
   ) {}
   ngOnInit() {
-    this.customer = new Customer();
+    this.addCustomerForm = this.fb.group({
+      typeCustomer: ['', [Validators.required]],
+      name: ['', [Validators.required]],
+      birthday: ['', [Validators.required]],
+      idCard: ['', [Validators.pattern(/^\d{9,10}$/), Validators.required ]],
+      phone: ['', [Validators.pattern(/090\d{7,8}$/), Validators.required ]],
+      email: ['', [Validators.required, Validators.email]],
+      address: ['', [Validators.required]],
+
+    });
   }
 
   onAddCustomer() {
-    this.subscription = this.customerService.addCustomer(this.customer).subscribe(data => {
+    console.log(this.addCustomerForm);
+    this.subscription = this.customerService.addCustomer(this.addCustomerForm.value).subscribe(data => {
       if (data && data.id) {
         this.routerService.navigate(['customers']);
       }

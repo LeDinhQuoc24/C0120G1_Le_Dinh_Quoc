@@ -1,122 +1,77 @@
 {
   "customers": [
     {
-      "id": 1,
-      "typeCustomer": "Diamond",
-      "name": "Trần Ngọc Tân",
-      "birthday": "1998-03-03",
-      "idCard": "201775702",
-      "phone": 905123450,
-      "email": "tan@gmail.com",
-      "address": "Đà Nẵng"
-    },
-    {
-      "id": 2,
-      "typeCustomer": "Diamond",
-      "name": "Võ Minh Hùng",
-      "birthday": "1990-02-02",
-      "idCard": "205331234",
-      "phone": 905123452,
-      "email": "vominhhung@gmail.com",
-      "address": "Quế Sơn"
-    },
-    {
-      "id": 3,
-      "typeCustomer": "Gold",
-      "name": "Nguyễn Đình Hòa",
-      "birthday": "1994-01-01",
-      "idCard": "201775702",
-      "phone": "0905294321",
-      "email": "tan@gmail.com",
-      "address": "Đại Lộc"
-    },
-    {
-      "id": 4,
       "typeCustomer": "Member",
-      "name": "Lê Đình Quốc",
-      "birthday": "2000-12-24",
-      "idCard": "201775702",
-      "phone": "0905294321",
-      "email": "tan@gmail.com",
-      "address": "Quảng Nam"
+      "name": "Trần Ngọc Tân",
+      "birthday": "1998-02-02",
+      "idCard": 123456789,
+      "phone": 905123456,
+      "email": "ngoctan@gmail.com",
+      "address": "Đà Nẵng",
+      "id": 1
     },
     {
-      "id": 5,
-      "typeCustomer": "Diamond",
-      "name": "Phạm Minh Hưng",
-      "birthday": "1996-08-08",
-      "idCard": "201775702",
-      "phone": 905123454,
-      "email": "minhhung@gmail.com",
-      "address": "Gia Lai"
-    },
-    {
-      "id": 6,
-      "typeCustomer": "Diamond",
-      "name": "Phạm Thái Cường",
-      "birthday": "1994-05-05",
-      "idCard": "201775702",
-      "phone": 905123453,
-      "email": "thaicuong@gmail.com",
-      "address": "Nha Trang"
-    },
-    {
-      "id": 7,
-      "typeCustomer": "SuperVip",
-      "name": "MoeAmatsuka",
-      "birthday": "1998-01-01",
-      "idCard": "123456789",
-      "phone": 905977000,
-      "email": "moe@gmail.com",
-      "address": "Japan"
-    },
-    {
-      "id": 8,
-      "typeCustomer": "8",
-      "name": "8",
-      "idCard": "8"
+      "typeCustomer": "Platinium",
+      "name": "32",
+      "birthday": "",
+      "idCard": 313,
+      "phone": "313",
+      "email": "313",
+      "address": "313",
+      "id": 2
     }
   ],
   "services": [
     {
-      "id": 1,
       "name": "VL-1234",
       "areaUsed": "300",
       "amount": "300000",
       "maximumPeople": "3",
-      "typeRent": "byDay",
-      "typeService": "Villa"
+      "typeRent": "ByDay",
+      "typeService": "Villa",
+      "id": 1
     },
     {
-      "id": 2,
       "name": "HO-1234",
       "areaUsed": 200,
       "amount": 2500000,
       "maximumPeople": 5,
-      "typeRent": "byMonth",
-      "typeService": "House"
+      "typeRent": "ByYear",
+      "typeService": "House",
+      "id": 2
     },
     {
-      "id": 3,
       "name": "RO-1234",
       "areaUsed": 500,
-      "typeRent": "byYear",
-      "typeService": "Room",
+      "amount": 30000000,
       "maximumPeople": 8,
-      "amount": 30000000
+      "typeRent": "ByYear",
+      "typeService": "Room",
+      "id": 3
     }
   ],
   "employees": [
     {
-      "id": 1,
       "name": "Nguyễn Đình Hòa",
-      "birthday": "1995-04-04",
-      "idCard": "123456778",
+      "birthday": "1998-02-02",
+      "idCard": 123456789,
       "phone": 905123456,
       "email": "ngdinhhoa@gmail.com",
-      "degree": "Trung cấp",
+      "degree": "Cao đẳng",
       "part": "Chuyên viên",
-      "position": "Sale-Marketing"
+      "position": "Hành chính",
+      "id": 1
+    },
+    {
+      "name": "1",
+      "birthday": "0001-01-01",
+      "idCard": 123456789,
+      "phone": "0901234567",
+      "email": "a@a",
+      "degree": "Trung cấp",
+      "part": "Lễ tân",
+      "position": "Phục vụ",
+      "id": 2
     }
   ]
 }
