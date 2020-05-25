@@ -1,6 +1,8 @@
 import {BrowserModule} from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
 
+import {NgxPaginationModule} from 'ngx-pagination';
+import {Ng2SearchPipeModule} from 'ng2-search-filter';
 import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
@@ -19,6 +21,7 @@ import { EmployeesComponent } from './Component/Employee/employees/employees.com
 import { ListEmployeeComponent } from './Component/Employee/list-employee/list-employee.component';
 import { AddEmployeeComponent } from './Component/Employee/add-employee/add-employee.component';
 import { EditEmployeeComponent } from './Component/Employee/edit-employee/edit-employee.component';
+
 
 
 @NgModule({
@@ -44,7 +47,9 @@ import { EditEmployeeComponent } from './Component/Employee/edit-employee/edit-e
     AppRoutingModule,
     ReactiveFormsModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    NgxPaginationModule,
+    Ng2SearchPipeModule
   ],
   providers: [
     CustomerService

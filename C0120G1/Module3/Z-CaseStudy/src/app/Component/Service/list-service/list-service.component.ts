@@ -11,6 +11,9 @@ import {ServiceService} from '../../../Service/service.service';
 export class ListServiceComponent implements OnInit, OnDestroy {
   public subscription: Subscription;
   public services: Service[];
+  public totalRec: number;
+  public page = 1;
+  public searchText;
 
   constructor(public serviceService: ServiceService) {
   }
@@ -18,6 +21,7 @@ export class ListServiceComponent implements OnInit, OnDestroy {
   ngOnInit() {
     this.subscription = this.serviceService.getAllServices().subscribe((data: Service[]) => {
       this.services = data;
+      this.totalRec = this.services.length;
     });
   }
 

@@ -11,6 +11,10 @@ import {Customer} from '../../../Model/customer.model';
 export class ListCustomerComponent implements OnInit, OnDestroy {
   public subscription: Subscription;
   public customers: Customer[];
+  public totalRec: number;
+  public page = 1;
+  public searchText;
+
 
 
 
@@ -20,6 +24,8 @@ export class ListCustomerComponent implements OnInit, OnDestroy {
   ngOnInit() {
     this.subscription = this.customerService.getAllCustomers().subscribe((data: Customer[]) => {
       this.customers = data;
+      this.totalRec = this.customers.length;
+
 
     });
   }

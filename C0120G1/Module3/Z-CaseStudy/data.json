@@ -9,6 +9,46 @@
       "email": "ngoctan@gmail.com",
       "address": "Đà Nẵng",
       "id": 1
+    },
+    {
+      "typeCustomer": "Gold",
+      "name": "Phạm Thái Cường",
+      "birthday": "1996-03-03",
+      "idCard": 1234567800,
+      "phone": "0901231234",
+      "email": "thaicuong@gmail.com",
+      "address": "Nha Trang",
+      "id": 2
+    },
+    {
+      "typeCustomer": "Diamond",
+      "name": "Võ Minh Hùng",
+      "birthday": "1990-04-03",
+      "idCard": 205123456,
+      "phone": "0905123456",
+      "email": "minhhung@gmail.com",
+      "address": "Quế Sơn",
+      "id": 3
+    },
+    {
+      "typeCustomer": "Platinium",
+      "name": "Nguyễn Đình Hòa",
+      "birthday": "1994-09-03",
+      "idCard": 123456123,
+      "phone": "0901888000",
+      "email": "ngdinhhoa@gmail.com",
+      "address": "Huế",
+      "id": 4
+    },
+    {
+      "typeCustomer": "Member",
+      "name": "Phạm Minh Hưng",
+      "birthday": "1996-03-08",
+      "idCard": 123454321,
+      "phone": "0901333444",
+      "email": "phamminhhung@gmail.com",
+      "address": "Gia Lai",
+      "id": 5
     }
   ],
   "services": [

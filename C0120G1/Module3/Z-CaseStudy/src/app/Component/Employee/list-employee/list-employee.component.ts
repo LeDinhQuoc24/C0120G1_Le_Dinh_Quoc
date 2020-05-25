@@ -12,6 +12,9 @@ export class ListEmployeeComponent implements OnInit, OnDestroy {
 
   public subscription: Subscription;
   public employees: Employee[];
+  public totalRec: number;
+  public page = 1;
+  public searchText;
 
   constructor(public employeeService: EmployeeService) {
   }
@@ -19,6 +22,7 @@ export class ListEmployeeComponent implements OnInit, OnDestroy {
   ngOnInit() {
     this.subscription = this.employeeService.getAllEmployees().subscribe((data: Employee[]) => {
       this.employees = data;
+      this.totalRec = this.employees.length;
     });
   }
 

@@ -1,4 +1,8 @@
 <h1>Danh sách nhân viên</h1>
+<div class="search-hero">
+  <input class="form-control mt-2" type="text" name="search" style="width: 50%" [(ngModel)]="searchText"
+         autocomplete="off" placeholder="&#61442;  Tìm kiếm nhân viên theo tên,trình độ,vị trí,bộ phận">
+</div>
 
 <div>
   <button type="button" class="btn btn-primary" routerLink="add" style="margin-left: 50px">Thêm mới nhân viên</button>
@@ -15,7 +19,10 @@
     </tr>
     </thead>
     <tbody>
-    <tr *ngFor="let item of employees;let i=index">
+    <tr *ngFor="let i=index;let item of employees|filter:searchText | paginate:{id:'listing_pagination',
+                                                                            itemsPerPage:4,
+                                                                            currentPage:page,
+                                                                            totalItems:totalRec}">
       <td>{{i+1}}</td>
       <td>{{item.name}}</td>
       <td>{{item.degree}}</td>
@@ -29,6 +36,9 @@
     </tr>
     </tbody>
   </table>
+  <div>
+    <pagination-controls  id="listing_pagination" maxSize="5" directionLinks="true" (pageChange)="page = $event"></pagination-controls>
+  </div>
 </div>
 
 <router-outlet></router-outlet>
