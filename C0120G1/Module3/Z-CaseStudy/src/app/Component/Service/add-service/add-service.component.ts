@@ -12,6 +12,7 @@ import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 export class AddServiceComponent implements OnInit, OnDestroy {
   addServiceForm: FormGroup;
   public subscription: Subscription;
+  message = '';
 
   constructor(
     public serviceService: ServiceService,
@@ -35,6 +36,7 @@ export class AddServiceComponent implements OnInit, OnDestroy {
         this.routerService.navigate(['services']);
       }
     });
+    this.message = 'Thêm mới thành công thông tin dịch vụ';
   }
 
   ngOnDestroy() {

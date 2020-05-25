@@ -14,6 +14,7 @@ import {Router} from '@angular/router';
 export class AddCustomerComponent implements OnInit, OnDestroy {
   public subscription: Subscription;
   addCustomerForm: FormGroup;
+  message = '';
 
   constructor(
     public customerService: CustomerService,
@@ -39,6 +40,7 @@ export class AddCustomerComponent implements OnInit, OnDestroy {
       if (data && data.id) {
         this.routerService.navigate(['customers']);
       }
+      this.message = 'Thêm mới thành công thông tin khách hàng';
     });
   }
 

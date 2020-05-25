@@ -13,6 +13,7 @@ import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 export class AddEmployeeComponent implements OnInit, OnDestroy {
   public subscription: Subscription;
   addEmployeeForm: FormGroup;
+  message = '';
 
   constructor(
     public employeeService: EmployeeService,
@@ -38,6 +39,7 @@ export class AddEmployeeComponent implements OnInit, OnDestroy {
         this.routerService.navigate(['employees']);
       }
     });
+    this.message = 'Thêm mới thành công thông tin nhân viên';
   }
 
   ngOnDestroy() {

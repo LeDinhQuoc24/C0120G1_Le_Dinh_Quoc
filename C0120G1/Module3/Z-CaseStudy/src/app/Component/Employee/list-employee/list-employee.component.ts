@@ -15,6 +15,7 @@ export class ListEmployeeComponent implements OnInit, OnDestroy {
   public totalRec: number;
   public page = 1;
   public searchText;
+  message = '';
 
   constructor(public employeeService: EmployeeService) {
   }
@@ -37,6 +38,7 @@ export class ListEmployeeComponent implements OnInit, OnDestroy {
     this.subscription = this.employeeService.deleteEmployee(id).subscribe((data: Employee) => {
       this.updateDataAfterDelete(id);
     });
+    this.message = 'Xóa thành công thông tin nhân viên';
   }
 
   updateDataAfterDelete(id: number) {

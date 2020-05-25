@@ -15,6 +15,7 @@ export class EditCustomerComponent implements OnInit, OnDestroy {
   public subscriptionParams: Subscription;
   addCustomerForm: FormGroup;
   public id: number;
+  message = '';
 
   constructor(
     public customerService: CustomerService,
@@ -50,6 +51,7 @@ export class EditCustomerComponent implements OnInit, OnDestroy {
     this.subscription = this.customerService.updateCustomer(this.addCustomerForm.value, this.id).subscribe((data: Customer) => {
       this.routerService.navigate(['customers']);
     });
+    this.message = 'Chỉnh sửa thành công thông tin khách hàng';
   }
 
   ngOnDestroy() {
@@ -62,3 +64,5 @@ export class EditCustomerComponent implements OnInit, OnDestroy {
   }
 
 }
+
+

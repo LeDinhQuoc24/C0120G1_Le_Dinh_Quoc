@@ -102,6 +102,17 @@
       "part": "Lễ tân",
       "position": "Phục vụ",
       "id": 2
+    },
+    {
+      "name": "15",
+      "birthday": "0414-04-14",
+      "idCard": 444456435,
+      "phone": "0901234567",
+      "email": "4g@g",
+      "degree": "Cao đẳng",
+      "part": "Chuyên viên",
+      "position": "Phục vụ",
+      "id": 3
     }
   ]
 }

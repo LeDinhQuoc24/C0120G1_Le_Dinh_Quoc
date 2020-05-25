@@ -15,6 +15,7 @@ export class EditServiceComponent implements OnInit, OnDestroy {
   public subscriptionParams: Subscription;
   addServiceForm: FormGroup;
   public id: number;
+  message = '';
 
   constructor(
     public serviceService: ServiceService,
@@ -49,6 +50,7 @@ export class EditServiceComponent implements OnInit, OnDestroy {
     this.subscription = this.serviceService.updateService(this.addServiceForm.value,this.id).subscribe((data: Service) => {
       this.routerService.navigate(['services']);
     });
+    this.message = 'Chỉnh sửa thành công thông tin dịch vụ';
   }
 
   ngOnDestroy() {

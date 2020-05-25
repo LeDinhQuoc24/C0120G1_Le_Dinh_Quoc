@@ -14,6 +14,7 @@ export class ListCustomerComponent implements OnInit, OnDestroy {
   public totalRec: number;
   public page = 1;
   public searchText;
+  message = '';
 
 
 
@@ -39,6 +40,7 @@ export class ListCustomerComponent implements OnInit, OnDestroy {
   onDeleteCustomer(id: number) {
     this.subscription = this.customerService.deleteCustomer(id).subscribe((data: Customer) => {
       this.updateDataAfterDelete(id);
+      this.message = 'Xóa thành công thông tin khách hàng';
     });
   }
 

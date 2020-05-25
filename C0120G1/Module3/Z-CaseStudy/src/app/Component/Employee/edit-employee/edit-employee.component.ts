@@ -15,6 +15,7 @@ export class EditEmployeeComponent implements OnInit, OnDestroy {
   public subscriptionParams: Subscription;
   addEmployeeForm: FormGroup;
   public id: number;
+  message = '';
 
   constructor(
     public employeeService: EmployeeService,
@@ -53,6 +54,7 @@ export class EditEmployeeComponent implements OnInit, OnDestroy {
     this.subscription = this.employeeService.updateEmployee(this.addEmployeeForm.value, this.id ).subscribe((data: Employee) => {
       this.routerService.navigate(['employees']);
     });
+    this.message = 'Chỉnh sửa thành công thông tin nhân viên';
   }
 
   ngOnDestroy() {

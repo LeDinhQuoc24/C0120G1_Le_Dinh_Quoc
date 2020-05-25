@@ -13,6 +13,13 @@ import {EmployeesComponent} from './Component/Employee/employees/employees.compo
 import {ListEmployeeComponent} from './Component/Employee/list-employee/list-employee.component';
 import {AddEmployeeComponent} from './Component/Employee/add-employee/add-employee.component';
 import {EditEmployeeComponent} from './Component/Employee/edit-employee/edit-employee.component';
+import {ContractsComponent} from "./Component/Contract/contracts/contracts.component";
+import {ListContractComponent} from "./Component/Contract/list-contract/list-contract.component";
+import {AddContractComponent} from "./Component/Contract/add-contract/add-contract.component";
+import {EditContractComponent} from "./Component/Contract/edit-contract/edit-contract.component";
+import {ListContractDetailComponent} from "./Component/ContractDetail/list-contract-detail/list-contract-detail.component";
+import {AddContractDetailComponent} from "./Component/ContractDetail/add-contract-detail/add-contract-detail.component";
+import {EditContractDetailComponent} from "./Component/ContractDetail/edit-contract-detail/edit-contract-detail.component";
 
 
 const routes: Routes = [
@@ -43,6 +50,24 @@ const routes: Routes = [
       {path: '', component: ListEmployeeComponent},
       {path: 'add', component: AddEmployeeComponent},
       {path: ':id/edit', component: EditEmployeeComponent}
+    ]
+  },
+  {
+    path: 'contracts',
+    component: ContractsComponent,
+    children: [
+      {path: '', component: ListContractComponent},
+      {path: 'add', component: AddContractComponent},
+      {path: ':id/edit', component: EditContractComponent}
+    ]
+  },
+  {
+    path: 'contractDetails',
+    component: ContractsComponent,
+    children: [
+      {path: '', component: ListContractDetailComponent},
+      {path: 'add', component: AddContractDetailComponent},
+      {path: ':id/edit', component: EditContractDetailComponent}
     ]
   },
 ];

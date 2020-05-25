@@ -14,6 +14,8 @@ export class ListServiceComponent implements OnInit, OnDestroy {
   public totalRec: number;
   public page = 1;
   public searchText;
+  message = '';
+
 
   constructor(public serviceService: ServiceService) {
   }
@@ -36,6 +38,7 @@ export class ListServiceComponent implements OnInit, OnDestroy {
     this.subscription = this.serviceService.deleteService(id).subscribe((data: Service) => {
       this.updateDataAfterDelete(id);
     });
+    this.message = 'Xóa thành công thông tin dịch vụ';
   }
   updateDataAfterDelete(id: number) {
     for (let i = 0; i < this.services.length; i++) {
