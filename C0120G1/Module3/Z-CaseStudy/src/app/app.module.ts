@@ -12,6 +12,7 @@ import { AddCustomerComponent } from './Component/Customer/add-customer/add-cust
 import { EditCustomerComponent } from './Component/Customer/edit-customer/edit-customer.component';
 import {CustomerService} from './Service/customer.service';
 import {HttpClientModule} from '@angular/common/http';
+
 import { CustomersComponent } from './Component/Customer/customers/customers.component';
 import { ServicesComponent } from './Component/Service/services/services.component';
 import { AddServiceComponent } from './Component/Service/add-service/add-service.component';
@@ -29,6 +30,13 @@ import { ContractDetailsComponent } from './Component/ContractDetail/contract-de
 import { ListContractDetailComponent } from './Component/ContractDetail/list-contract-detail/list-contract-detail.component';
 import { EditContractDetailComponent } from './Component/ContractDetail/edit-contract-detail/edit-contract-detail.component';
 import { AddContractDetailComponent } from './Component/ContractDetail/add-contract-detail/add-contract-detail.component';
+import { DeleteCustomerComponent } from './Component/Customer/delete-customer/delete-customer.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+
+import { DeleteEmployeeComponent } from './Component/Employee/delete-employee/delete-employee.component';
+// @ts-ignore
+import {MatDialogModule} from '@angular/material';
 
 
 
@@ -56,7 +64,13 @@ import { AddContractDetailComponent } from './Component/ContractDetail/add-contr
     ListContractDetailComponent,
     EditContractDetailComponent,
     AddContractDetailComponent,
+    DeleteCustomerComponent,
+    DeleteEmployeeComponent,
 
+  ],
+  entryComponents: [
+    DeleteCustomerComponent,
+    DeleteEmployeeComponent
   ],
   imports: [
     BrowserModule,
@@ -65,7 +79,9 @@ import { AddContractDetailComponent } from './Component/ContractDetail/add-contr
     FormsModule,
     HttpClientModule,
     NgxPaginationModule,
-    Ng2SearchPipeModule
+    Ng2SearchPipeModule,
+    MatDialogModule,
+    BrowserAnimationsModule
   ],
   providers: [
     CustomerService
