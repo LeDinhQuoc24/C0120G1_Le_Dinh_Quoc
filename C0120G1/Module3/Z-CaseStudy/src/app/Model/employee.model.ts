@@ -1,5 +1,6 @@
 export class Employee {
   public id: number;
+  public codeEmployee: string;
   public name: string;
   public birthday: string;
   public idCard: number;

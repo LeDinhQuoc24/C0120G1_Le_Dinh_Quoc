@@ -12,6 +12,22 @@
   </div>
   <div >
     <label class="col">
+      Mã khách hàng:
+      <input type="text" class="form-control"   formControlName="codeCustomer">
+    </label>
+  </div>
+  <div class="alert alert-danger" role="alert" *ngIf="addCustomerForm.get('codeCustomer').hasError('required') && addCustomerForm.get('codeCustomer').touched">
+    Mã khách hàng không được để trống.
+  </div>
+  <div class="alert alert-danger" role="alert" *ngIf="addCustomerForm.get('codeCustomer').hasError('pattern') && addCustomerForm.get('codeCustomer').touched">
+    Mã khách hàng phải đúng định dạng.
+  </div>
+
+
+
+
+  <div >
+    <label class="col">
       Loại khách hàng:
       <select type="text" class="form-control"  formControlName="typeCustomer">
         <option value="Diamond">Diamond</option>
@@ -50,7 +66,7 @@
   <div >
     <label class="col">
       Số điện thoại:
-      <input type="text" class="form-control"  placeholder="090" formControlName="phone">
+      <input type="text" class="form-control"  placeholder="(090|091|84+90|84+91)xxxxxxx" formControlName="phone">
     </label>
   </div>
   <div class="alert alert-danger" role="alert" *ngIf="addCustomerForm.get('phone').hasError('required') && addCustomerForm.get('phone').touched">
@@ -94,9 +110,5 @@
 
 
 
-<!--<pre>-->
-<!--{{ registerFormService.value | json}}-->
-<!--</pre>-->
 
-<!--[disabled]="registerFormService.invalid"-->
 

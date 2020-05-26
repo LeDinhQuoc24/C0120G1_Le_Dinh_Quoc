@@ -1,1 +1,96 @@
-<p>add-contract works!</p>
+<h2 class="text-center">Thêm mới hợp đồng</h2>
+<form  [formGroup]="addContractForm" class="col-md-8 offset-md-4" style="text-align: center">
+
+  <div >
+    <label class="col">
+      Mã khách hàng:
+      <select type="text" class="form-control"   formControlName="codeCustomer">
+        <option *ngFor="let customer of customers" [value]="customer.codeCustomer">{{customer.codeCustomer}}</option>
+      </select>
+    </label>
+  </div>
+  <div class="alert alert-danger" role="alert" *ngIf="addContractForm.get('codeCustomer').invalid && addContractForm.get('codeCustomer').touched">
+    Mã khách hàng không được để trống.
+  </div>
+  <div >
+    <label class="col">
+      Mã nhân viên:
+      <select type="text" class="form-control"   formControlName="codeEmployee">
+        <option *ngFor="let employee of employees" [value]="employee.codeEmployee">{{employee.codeEmployee}}</option>
+      </select>
+    </label>
+  </div>
+  <div class="alert alert-danger" role="alert" *ngIf="addContractForm.get('codeEmployee').invalid && addContractForm.get('codeEmployee').touched">
+    Mã nhân viên không được để trống.
+  </div>
+  <div >
+    <label class="col">
+      Mã dịch vụ:
+      <select type="text" class="form-control"   formControlName="codeService">
+        <option *ngFor="let service of services" [value]="service.codeService">{{service.codeService}}</option>
+      </select>
+    </label>
+  </div>
+  <div class="alert alert-danger" role="alert" *ngIf="addContractForm.get('codeService').invalid && addContractForm.get('codeService').touched">
+    Mã dịch vụ không được để trống.
+  </div>
+
+  <div >
+    <label class="col">
+      Ngày bắt đầu:
+      <input type="date" class="form-control"  formControlName="startDate">
+    </label>
+  </div>
+  <div class="alert alert-danger" role="alert" *ngIf="addContractForm.get('startDate').invalid && addContractForm.get('startDate').touched">
+    Ngày bắt đầu không được để trống.
+  </div>
+  <div >
+    <label class="col">
+      Ngày kết thúc:
+      <input type="date" class="form-control"  formControlName="endDate">
+    </label>
+  </div>
+  <div class="alert alert-danger" role="alert" *ngIf="addContractForm.get('endDate').invalid && addContractForm.get('endDate').touched">
+    Ngày kết thúc không được để trống.
+  </div>
+  <div >
+    <label class="col">
+      Tiền đặt cọc:
+      <input type="number" class="form-control"   formControlName="deposit">
+    </label>
+  </div>
+  <div class="alert alert-danger" role="alert" *ngIf="addContractForm.get('deposit').hasError('required') && addContractForm.get('deposit').touched">
+    Tiền đặt cọc không được để trống.
+  </div>
+  <div class="alert alert-danger" role="alert" *ngIf="addContractForm.get('deposit').hasError('pattern') && addContractForm.get('deposit').touched">
+    Tiền đặt cọc không đúng định dạng.
+  </div>
+  <div >
+    <label class="col">
+      Tổng tiền:
+      <input type="number" class="form-control"   formControlName="total">
+    </label>
+  </div>
+  <div class="alert alert-danger" role="alert" *ngIf="addContractForm.get('total').hasError('required') && addContractForm.get('total').touched">
+    Tổng tiền không được để trống.
+  </div>
+  <div class="alert alert-danger" role="alert" *ngIf="addContractForm.get('total').hasError('pattern') && addContractForm.get('total').touched">
+    Tổng tiền không đúng định dạng.
+  </div>
+
+
+  <div >
+    <button class="btn btn-info" type="submit" style="color: black" [disabled]="addContractForm.invalid " (click)="onAddContract()">
+      Thêm mới
+    </button>
+  </div>
+</form>
+<div class="text-danger">
+  {{message}}
+</div>
+
+
+
+
+
+

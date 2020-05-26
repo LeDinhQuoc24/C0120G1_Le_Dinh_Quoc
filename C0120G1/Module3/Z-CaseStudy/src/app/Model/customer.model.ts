@@ -1,6 +1,7 @@
 export class Customer {
   public id: number;
   public typeCustomer: string;
+  public codeCustomer: string;
   public name: string;
   public birthday: string;
   public idCard: number;

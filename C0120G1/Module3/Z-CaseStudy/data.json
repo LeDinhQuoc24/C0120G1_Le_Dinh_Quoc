@@ -2,6 +2,7 @@
   "customers": [
     {
       "typeCustomer": "Member",
+      "codeCustomer": "KH1234",
       "name": "Trần Ngọc Tân",
       "birthday": "1998-02-02",
       "idCard": 123456789,
@@ -12,6 +13,7 @@
     },
     {
       "typeCustomer": "Gold",
+      "codeCustomer": "KH1235",
       "name": "Phạm Thái Cường",
       "birthday": "1996-03-03",
       "idCard": 1234567800,
@@ -22,6 +24,7 @@
     },
     {
       "typeCustomer": "Diamond",
+      "codeCustomer": "KH1236",
       "name": "Võ Minh Hùng",
       "birthday": "1990-04-03",
       "idCard": 205123456,
@@ -32,6 +35,7 @@
     },
     {
       "typeCustomer": "Platinium",
+      "codeCustomer": "KH1237",
       "name": "Nguyễn Đình Hòa",
       "birthday": "1994-09-03",
       "idCard": 123456123,
@@ -42,6 +46,7 @@
     },
     {
       "typeCustomer": "Member",
+      "codeCustomer": "KH1238",
       "name": "Phạm Minh Hưng",
       "birthday": "1996-03-08",
       "idCard": 123454321,
@@ -54,6 +59,7 @@
   "services": [
     {
       "name": "VL-1234",
+      "codeService": "DV1234",
       "areaUsed": "300",
       "amount": "300000",
       "maximumPeople": "3",
@@ -63,6 +69,7 @@
     },
     {
       "name": "HO-1234",
+      "codeService": "DV1235",
       "areaUsed": 200,
       "amount": 2500000,
       "maximumPeople": 5,
@@ -72,6 +79,7 @@
     },
     {
       "name": "RO-1234",
+      "codeService": "DV1236",
       "areaUsed": 500,
       "amount": 30000000,
       "maximumPeople": 8,
@@ -83,6 +91,7 @@
   "employees": [
     {
       "name": "Nguyễn Đình Hòa",
+      "codeEmployee": "NV1234",
       "birthday": "1998-02-02",
       "idCard": 123456789,
       "phone": 905123456,
@@ -94,6 +103,7 @@
     },
     {
       "name": "1",
+      "codeEmployee": "NV1235",
       "birthday": "0001-01-01",
       "idCard": 123456789,
       "phone": "0901234567",
@@ -105,6 +115,7 @@
     },
     {
       "name": "15",
+      "codeEmployee": "NV1236",
       "birthday": "0414-04-14",
       "idCard": 444456435,
       "phone": "0901234567",
@@ -114,5 +125,18 @@
       "position": "Phục vụ",
       "id": 3
     }
-  ]
+  ],
+  "contracts": [
+    {
+      "codeCustomer": "KH1234",
+      "codeEmployee": "NV1234",
+      "codeService": "DV1234",
+      "startDate": "2001-01-01",
+      "endDate": "2002-02-02",
+      "deposit": 40000,
+      "total": 500000,
+      "id": 1
+    }
+  ],
+  "contractDetails": []
 }

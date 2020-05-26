@@ -11,6 +11,18 @@
   </div>
   <div >
     <label class="col">
+      Mã nhân viên:
+      <input type="text" class="form-control"   formControlName="codeEmployee">
+    </label>
+  </div>
+  <div class="alert alert-danger" role="alert" *ngIf="addEmployeeForm.get('codeEmployee').hasError('required') && addEmployeeForm.get('codeEmployee').touched">
+    Mã nhân viên không được để trống.
+  </div>
+  <div class="alert alert-danger" role="alert" *ngIf="addEmployeeForm.get('codeEmployee').hasError('pattern') && addEmployeeForm.get('codeEmployee').touched">
+    Mã nhân viên phải đúng định dạng.
+  </div>
+  <div >
+    <label class="col">
       Ngày sinh:
       <input type="date" class="form-control"   formControlName="birthday">
     </label>
@@ -33,7 +45,7 @@
   <div >
     <label class="col">
       Số điện thoại:
-      <input type="text" class="form-control"  formControlName="phone">
+      <input type="text" class="form-control" placeholder="(090|091|84+90|84+91)xxxxxxx" formControlName="phone">
     </label>
   </div>
   <div class="alert alert-danger" role="alert" *ngIf="addEmployeeForm.get('phone').hasError('required') && addEmployeeForm.get('phone').touched">

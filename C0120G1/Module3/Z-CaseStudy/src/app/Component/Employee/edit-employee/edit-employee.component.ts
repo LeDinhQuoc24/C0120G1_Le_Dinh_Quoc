@@ -28,9 +28,10 @@ export class EditEmployeeComponent implements OnInit, OnDestroy {
   ngOnInit() {
     this.addEmployeeForm = this.fb.group({
       name: ['', [Validators.required]],
+      codeEmployee: ['', [Validators.required, Validators.pattern(/^NV-\d{4}$/)]],
       birthday: ['', [Validators.required]],
-      idCard: ['', [Validators.pattern(/^\d{9,10}$/), Validators.required ]],
-      phone: ['', [Validators.pattern(/090\d{7,8}$/), Validators.required ]],
+      idCard: ['', [Validators.pattern(/^\d{9}(\d{3})?$/), Validators.required ]],
+      phone: ['', [Validators.pattern(/^(090|091|(84\+90)|(84\+91))\d{7}$/), Validators.required ]],
       email: ['', [Validators.required, Validators.email]],
       degree: ['', [Validators.required]],
       part: ['', [Validators.required]],

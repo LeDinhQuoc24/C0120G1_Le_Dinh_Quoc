@@ -1,0 +1,16 @@
+h1{
+  text-align: center;
+  margin-top: 100px;
+  color: red;
+}
+table{
+  margin-left: 10%;
+  margin-top: 70px;
+}
+tr th{
+  color: white;
+}
+tr td{
+  color: orangered;
+  text-align: center;
+}

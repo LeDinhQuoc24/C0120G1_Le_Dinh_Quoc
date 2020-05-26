@@ -22,6 +22,7 @@ export class AddServiceComponent implements OnInit, OnDestroy {
   ngOnInit() {
     this.addServiceForm = this.fb.group({
       name: ['', [Validators.required]],
+      codeService: ['', [Validators.required, Validators.pattern(/^DV-\d{4}$/)]],
       areaUsed: ['', [Validators.required, Validators.min(1)]],
       amount: ['', [Validators.required, Validators.min(1)]],
       maximumPeople: ['', [Validators.required, Validators.min(1)]],

@@ -12,6 +12,18 @@
   </div>
   <div >
     <label class="col">
+      Mã dịch vụ:
+      <input type="text" class="form-control"   formControlName="codeService">
+    </label>
+  </div>
+  <div class="alert alert-danger" role="alert" *ngIf="addServiceForm.get('codeService').hasError('required') && addServiceForm.get('codeService').touched">
+    Mã dịch vụ không được để trống.
+  </div>
+  <div class="alert alert-danger" role="alert" *ngIf="addServiceForm.get('codeService').hasError('pattern') && addServiceForm.get('codeService').touched">
+    Mã dịch vụ phải đúng định dạng.
+  </div>
+  <div >
+    <label class="col">
       Diện tích sử dụng:
       <input type="number" class="form-control"  formControlName="areaUsed">
     </label>

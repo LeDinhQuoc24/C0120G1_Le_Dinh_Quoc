@@ -28,10 +28,11 @@ export class EditCustomerComponent implements OnInit, OnDestroy {
   ngOnInit() {
     this.addCustomerForm = this.fb.group({
       typeCustomer: ['', [Validators.required]],
+      codeCustomer: ['', [Validators.required, Validators.pattern(/^KH-\d{4}$/)]],
       name: ['', [Validators.required]],
       birthday: ['', [Validators.required]],
-      idCard: ['', [Validators.pattern(/^\d{9,10}$/), Validators.required ]],
-      phone: ['', [Validators.pattern(/090\d{7,8}$/), Validators.required ]],
+      idCard: ['', [Validators.pattern(/^\d{9}(\d{3})?$/), Validators.required ]],
+      phone: ['', [Validators.pattern(/^(090|091|(84\+90)|(84\+91))\d{7}$/), Validators.required ]],
       email: ['', [Validators.required, Validators.email]],
       address: ['', [Validators.required]],
     });
