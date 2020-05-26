@@ -1,1 +1,49 @@
-<p>list-contract-detail works!</p>
+
+<h1>Danh sách hợp đồng chi tiết</h1>
+<div class="search-hero">
+  <input class="form-control mt-2" type="text" name="search" style="width: 50%" [(ngModel)]="searchText"
+         autocomplete="off" placeholder="Tìm kiếm khách hàng theo tên,địa chỉ,loại khách,ngày sinh">
+</div>
+
+<div>
+  <button type="button" class="btn btn-primary" routerLink="add" style="margin-left: 50px">Thêm mới hợp đồng chi tiết</button>
+  <table class="table table-striped table-inverse table-responsive">
+    <thead class="thead-inverse">
+    <tr>
+      <th>Số thứ tự</th>
+      <th>Ngày bắt đầu</th>
+      <th>Dịch vụ kèm theo</th>
+      <th>Số lượng</th>
+      <th colspan="2">Action</th>
+
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let i=index;let item of contractDetails|filter:searchText | paginate:{id:'listing_pagination',
+                                                                            itemsPerPage:4,
+                                                                            currentPage:page,
+                                                                            totalItems:totalRec}">
+      <td>{{i+1}}</td>
+      <td>{{item.startDate}}</td>
+      <td>{{item.nameServiceBonus}}</td>
+      <td>{{item.quantity}}</td>
+      <td><button type="button" class="btn btn-success" [routerLink]="['/contractDetails',item.id,'edit']">Sửa</button></td>
+      <td><button type="button" class="btn btn-danger" (click)="openDialog(item.id)">
+        Xóa
+      </button></td>
+
+    </tr>
+    </tbody>
+  </table>
+  <div>
+    <pagination-controls  id="listing_pagination" maxSize="5" directionLinks="true" (pageChange)="page = $event"></pagination-controls>
+  </div>
+</div>
+<div class="text-danger">
+  {{message}}
+</div>
+
+
+
+
+

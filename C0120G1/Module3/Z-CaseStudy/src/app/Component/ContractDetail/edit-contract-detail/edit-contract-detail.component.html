@@ -1,1 +1,56 @@
-<p>edit-contract-detail works!</p>
+<h2 class="text-center">Chỉnh sửa hợp đồng chi tiết</h2>
+<form  [formGroup]="addContractDetailForm" class="col-md-8 offset-md-4" style="text-align: center">
+
+  <div >
+    <label class="col">
+      Ngày bắt đầu :
+      <select type="date" class="form-control"   formControlName="startDate">
+        <option *ngFor="let contract of contracts" [value]="contract.startDate">{{contract.startDate}}</option>
+      </select>
+    </label>
+  </div>
+  <div class="alert alert-danger" role="alert" *ngIf="addContractDetailForm.get('startDate').invalid && addContractDetailForm.get('startDate').touched">
+    Ngày bắt đầu không được để trống.
+  </div>
+  <div >
+    <label class="col">
+      Dịch vụ đi kèm:
+      <select type="text" class="form-control" formControlName="nameServiceBonus">
+        <option value="Massage">Massage</option>
+        <option value="Cinema">Cinema</option>
+        <option value="Swimming">Swimming</option>
+        <option value="Boiling">Boiling</option>
+      </select>
+    </label>
+  </div>
+  <div class="alert alert-danger" role="alert" *ngIf="addContractDetailForm.get('nameServiceBonus').invalid && addContractDetailForm.get('nameServiceBonus').touched">
+    Dịch vụ đi kèm không được để trống.
+  </div>
+
+  <div >
+    <label class="col">
+      Số lượng:
+      <input type="number" class="form-control"   formControlName="quantity">
+    </label>
+  </div>
+  <div class="alert alert-danger" role="alert" *ngIf="addContractDetailForm.get('quantity').hasError('required') && addContractDetailForm.get('quantity').touched">
+    Số lượng không được để trống.
+  </div>
+  <div class="alert alert-danger" role="alert" *ngIf="addContractDetailForm.get('quantity').hasError('pattern') && addContractDetailForm.get('quantity').touched">
+    Số lượng phải đúng định dạng.
+  </div>
+
+  <div >
+    <button class="btn btn-info" type="submit" style="color: black" [disabled]="addContractDetailForm.invalid " (click)="onEditContractDetail()">
+      Chỉnh sửa
+    </button>
+  </div>
+</form>
+<div class="text-danger">
+  {{message}}
+</div>
+
+
+
+
+

@@ -3,6 +3,9 @@ import {Subscription} from 'rxjs';
 import {Service} from '../../../Model/service.model';
 import {ServiceService} from '../../../Service/service.service';
 
+import {MatDialog} from '@angular/material';
+import {DeleteServiceComponent} from '../delete-service/delete-service.component';
+
 @Component({
   selector: 'app-list-service',
   templateUrl: './list-service.component.html',
@@ -17,7 +20,10 @@ export class ListServiceComponent implements OnInit, OnDestroy {
   message = '';
 
 
-  constructor(public serviceService: ServiceService) {
+  constructor(
+    public serviceService: ServiceService,
+    public dialog: MatDialog
+  ) {
   }
 
   ngOnInit() {
@@ -34,19 +40,34 @@ export class ListServiceComponent implements OnInit, OnDestroy {
   }
 
 
-  onDeleteService(id: number) {
-    this.subscription = this.serviceService.deleteService(id).subscribe((data: Service) => {
-      this.updateDataAfterDelete(id);
+  // onDeleteService(id: number) {
+  //   this.subscription = this.serviceService.deleteService(id).subscribe((data: Service) => {
+  //     this.updateDataAfterDelete(id);
+  //   });
+  //   this.message = 'Xóa thành công thông tin dịch vụ';
+  // }
+  // updateDataAfterDelete(id: number) {
+  //   for (let i = 0; i < this.services.length; i++) {
+  //     // tslint:disable-next-line:triple-equals
+  //     if (this.services[i].id == id) {
+  //       this.services.splice(i, 1);
+  //       break;
+  //     }
+  //   }
+  // }
+  openDialog(id): void {
+    this.serviceService.getService(id).subscribe(dataOfService => {
+      const dialogRef = this.dialog.open(DeleteServiceComponent, {
+        width: '500px',
+        height: '200px',
+        data: {data1: dataOfService},
+        disableClose: true,
+      });
+
+      dialogRef.afterClosed().subscribe(result => {
+        console.log('The dialog was closed');
+        this.ngOnInit();
+      });
     });
-    this.message = 'Xóa thành công thông tin dịch vụ';
-  }
-  updateDataAfterDelete(id: number) {
-    for (let i = 0; i < this.services.length; i++) {
-      // tslint:disable-next-line:triple-equals
-      if (this.services[i].id == id) {
-        this.services.splice(i, 1);
-        break;
-      }
-    }
   }
 }

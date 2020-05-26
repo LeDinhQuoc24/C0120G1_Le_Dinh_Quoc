@@ -1,0 +1,13 @@
+<div id="modal-content-wrapper" class="d-fex justify-content-center">
+  <header id="modal-header">
+    <h1 id="modal-title">Xóa hợp đồng chi tiết</h1>
+  </header>
+  <section id="modal-body">
+    <p>Xác nhận xóa <span class="text-primary font-weight-bold">{{contractDetailStartDate}}</span> không? <br> Lưu ý: Xóa xong không thể hoàn tác!!!</p>
+  </section>
+  <footer id="modal-footer">
+    <button mat-raised-button class="btn btn-danger mr-3" id="modal-action-button" (click)="deleteContractDetail()">Yes</button>
+    <button mat-raised-button class="btn btn-warning mr-3" id="modal-cancel-button" mat-dialog-close>No</button>
+  </footer>
+</div>
+

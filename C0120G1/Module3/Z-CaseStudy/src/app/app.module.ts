@@ -37,6 +37,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DeleteEmployeeComponent } from './Component/Employee/delete-employee/delete-employee.component';
 // @ts-ignore
 import {MatDialogModule} from '@angular/material';
+import { DeleteContractComponent } from './Component/Contract/delete-contract/delete-contract.component';
+import { DeleteServiceComponent } from './Component/Service/delete-service/delete-service.component';
+import { DeleteContractDetailComponent } from './Component/ContractDetail/delete-contract-detail/delete-contract-detail.component';
 
 
 
@@ -66,11 +69,17 @@ import {MatDialogModule} from '@angular/material';
     AddContractDetailComponent,
     DeleteCustomerComponent,
     DeleteEmployeeComponent,
+    DeleteContractComponent,
+    DeleteServiceComponent,
+    DeleteContractDetailComponent,
 
   ],
   entryComponents: [
     DeleteCustomerComponent,
-    DeleteEmployeeComponent
+    DeleteEmployeeComponent,
+    DeleteContractComponent,
+    DeleteServiceComponent,
+    DeleteContractDetailComponent
   ],
   imports: [
     BrowserModule,

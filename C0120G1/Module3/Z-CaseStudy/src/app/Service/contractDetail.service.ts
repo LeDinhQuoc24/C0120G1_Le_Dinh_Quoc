@@ -6,7 +6,7 @@ import {ContractDetail} from '../Model/contractDetail.model';
 @Injectable({
   providedIn: 'root'
 })
-export class ContractDetailDetailService {
+export class ContractDetailService {
   public API = 'http://localhost:3000/contractDetails';
 
   constructor(public http: HttpClient) {

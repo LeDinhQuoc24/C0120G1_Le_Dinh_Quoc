@@ -30,7 +30,7 @@
       <td>{{item.typeRent}}</td>
       <td>{{item.typeService}}</td>
       <td><button type="button" class="btn btn-success" [routerLink]="['/services',item.id,'edit']">Sửa</button></td>
-      <td><button type="button" class="btn btn-danger" (click)="onDeleteService(item.id)">
+      <td><button type="button" class="btn btn-danger" (click)="openDialog(item.id)">
         Xóa
       </button></td>
     </tr>

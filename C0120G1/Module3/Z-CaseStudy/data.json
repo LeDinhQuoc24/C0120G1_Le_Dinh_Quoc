@@ -58,16 +58,6 @@
   ],
   "services": [
     {
-      "name": "VL-1234",
-      "codeService": "DV1234",
-      "areaUsed": "300",
-      "amount": "300000",
-      "maximumPeople": "3",
-      "typeRent": "ByDay",
-      "typeService": "Villa",
-      "id": 1
-    },
-    {
       "name": "HO-1234",
       "codeService": "DV1235",
       "areaUsed": 200,
@@ -138,5 +128,24 @@
       "id": 1
     }
   ],
-  "contractDetails": []
+  "contractDetails": [
+    {
+      "startDate": "2001-01-01",
+      "nameServiceBonus": "Cinema",
+      "quantity": 2,
+      "id": 1
+    },
+    {
+      "startDate": "2001-01-01",
+      "nameServiceBonus": "Swimming",
+      "quantity": 5,
+      "id": 2
+    },
+    {
+      "startDate": "2001-01-01",
+      "nameServiceBonus": "Cinema",
+      "quantity": 4,
+      "id": 3
+    }
+  ]
 }
