@@ -126,6 +126,16 @@
       "deposit": 40000,
       "total": 500000,
       "id": 1
+    },
+    {
+      "codeCustomer": "KH1236",
+      "codeEmployee": "NV1236",
+      "codeService": "DV1236",
+      "startDate": "2020-04-01",
+      "endDate": "2020-08-05",
+      "deposit": 400000,
+      "total": 140000,
+      "id": 2
     }
   ],
   "contractDetails": [

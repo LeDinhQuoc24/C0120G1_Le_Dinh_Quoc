@@ -14,7 +14,7 @@
       <th>Mã khách hàng</th>
       <th>Mã nhân viên</th>
       <th>Mã dịch vụ</th>
-      <th>Ngày bắt đầu hợp đồng</th>
+      <th>Tổng tiền</th>
       <th colspan="2">Action</th>
 
     </tr>
@@ -28,7 +28,7 @@
       <td>{{item.codeCustomer}}</td>
       <td>{{item.codeEmployee}}</td>
       <td>{{item.codeService}}</td>
-      <td>{{item.startDate}}</td>
+      <td>{{item.total}}</td>
       <td><button type="button" class="btn btn-success" [routerLink]="['/contracts',item.id,'edit']">Sửa</button></td>
       <td><button type="button" class="btn btn-danger" (click)="openDialog(item.id)">
         Xóa
@@ -41,6 +41,7 @@
     <pagination-controls  id="listing_pagination" maxSize="5" directionLinks="true" (pageChange)="page = $event"></pagination-controls>
   </div>
 </div>
+<button class="btn btn-info" style="margin-left: 5%">Tổng tiền : {{total}}</button>
 <div class="text-danger">
   {{message}}
 </div>

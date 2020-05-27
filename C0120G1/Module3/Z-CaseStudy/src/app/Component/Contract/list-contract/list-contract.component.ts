@@ -18,6 +18,7 @@ export class ListContractComponent implements OnInit, OnDestroy {
   public page = 1;
   public searchText;
   message = '';
+  total = 0;
 
 
 
@@ -31,6 +32,12 @@ export class ListContractComponent implements OnInit, OnDestroy {
   ngOnInit() {
     this.subscription = this.contractService.getAllContracts().subscribe((data: Contract[]) => {
       this.contracts = data;
+      let sum = 0;
+      // tslint:disable-next-line:prefer-for-of
+      for (let i = 0; i < this.contracts.length; i++) {
+        sum += this.contracts[i].total;
+      }
+      this.total = sum;
       this.totalRec = this.contracts.length;
 
 
