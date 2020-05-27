@@ -60,7 +60,7 @@ export class ListCustomerComponent implements OnInit, OnDestroy {
     this.customerService.getCustomer(id).subscribe(dataOfCustomer => {
       const dialogRef = this.dialog.open(DeleteCustomerComponent, {
         width: '500px',
-        height: '200px',
+        height: '240px',
         data: {data1: dataOfCustomer},
         disableClose: true,
       });

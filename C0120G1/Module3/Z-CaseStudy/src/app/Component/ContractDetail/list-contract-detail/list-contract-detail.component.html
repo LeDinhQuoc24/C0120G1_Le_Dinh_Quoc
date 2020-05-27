@@ -11,7 +11,7 @@
     <thead class="thead-inverse">
     <tr>
       <th>Số thứ tự</th>
-      <th>Ngày bắt đầu</th>
+      <th>ID hợp đồng</th>
       <th>Dịch vụ kèm theo</th>
       <th>Số lượng</th>
       <th colspan="2">Action</th>
@@ -24,7 +24,7 @@
                                                                             currentPage:page,
                                                                             totalItems:totalRec}">
       <td>{{i+1}}</td>
-      <td>{{item.startDate}}</td>
+      <td>{{item.id}}</td>
       <td>{{item.nameServiceBonus}}</td>
       <td>{{item.quantity}}</td>
       <td><button type="button" class="btn btn-success" [routerLink]="['/contractDetails',item.id,'edit']">Sửa</button></td>

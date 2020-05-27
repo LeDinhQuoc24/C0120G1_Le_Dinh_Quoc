@@ -28,7 +28,7 @@ export class AddContractDetailComponent implements OnInit, OnDestroy {
     this.contractService.getAllContracts().subscribe(data =>
       this.contracts = data);
     this.addContractDetailForm = this.fb.group({
-      startDate: ['', [Validators.required]],
+      idContract: ['', [Validators.required]],
       nameServiceBonus: ['', [Validators.required]],
       quantity: ['', [Validators.required, Validators.pattern('^[0-9]*$')]],
     });

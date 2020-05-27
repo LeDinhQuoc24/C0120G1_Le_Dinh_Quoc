@@ -34,17 +34,6 @@
       "id": 3
     },
     {
-      "typeCustomer": "Platinium",
-      "codeCustomer": "KH1237",
-      "name": "Nguyễn Đình Hòa",
-      "birthday": "1994-09-03",
-      "idCard": 123456123,
-      "phone": "0901888000",
-      "email": "ngdinhhoa@gmail.com",
-      "address": "Huế",
-      "id": 4
-    },
-    {
       "typeCustomer": "Member",
       "codeCustomer": "KH1238",
       "name": "Phạm Minh Hưng",
@@ -54,6 +43,17 @@
       "email": "phamminhhung@gmail.com",
       "address": "Gia Lai",
       "id": 5
+    },
+    {
+      "typeCustomer": "Platinium",
+      "codeCustomer": "KH-0090",
+      "name": "41414",
+      "birthday": "0003-03-03",
+      "idCard": 123456789,
+      "phone": "0901123441",
+      "email": "k@k",
+      "address": "3",
+      "id": 6
     }
   ],
   "services": [
@@ -136,6 +136,16 @@
       "deposit": 400000,
       "total": 140000,
       "id": 2
+    },
+    {
+      "codeCustomer": "KH1234",
+      "codeEmployee": "NV1236",
+      "codeService": "DV1235",
+      "startDate": "0002-02-02",
+      "endDate": "0003-03-02",
+      "deposit": 3,
+      "total": 4,
+      "id": 3
     }
   ],
   "contractDetails": [
@@ -150,12 +160,6 @@
       "nameServiceBonus": "Swimming",
       "quantity": 5,
       "id": 2
-    },
-    {
-      "startDate": "2001-01-01",
-      "nameServiceBonus": "Cinema",
-      "quantity": 4,
-      "id": 3
     }
   ]
 }

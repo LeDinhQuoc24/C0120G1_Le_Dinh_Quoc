@@ -1,9 +1,9 @@
-// @ts-ignore
+
 import {Component, OnInit} from '@angular/core';
-// @ts-ignore
+
 import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 
-// @ts-ignore
+
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',

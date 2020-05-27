@@ -3,14 +3,14 @@
 
   <div >
     <label class="col">
-      Ngày bắt đầu :
-      <select type="date" class="form-control"   formControlName="startDate">
-        <option *ngFor="let contract of contracts" [value]="contract.startDate">{{contract.startDate}}</option>
+      Id hợp đồng :
+      <select type="number" class="form-control"   formControlName="startDate">
+        <option *ngFor="let contract of contracts" [value]="contract.id">{{contract.id}}</option>
       </select>
     </label>
   </div>
-  <div class="alert alert-danger" role="alert" *ngIf="addContractDetailForm.get('startDate').invalid && addContractDetailForm.get('startDate').touched">
-    Ngày bắt đầu không được để trống.
+  <div class="alert alert-danger" role="alert" *ngIf="addContractDetailForm.get('idContract').invalid && addContractDetailForm.get('idContract').touched">
+    Id hợp đồng bắt đầu không được để trống.
   </div>
   <div >
     <label class="col">
