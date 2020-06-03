@@ -5,6 +5,7 @@ import {BuildingService} from '../../Service/building.service';
 import {DeleteBuildingComponent} from '../delete-building/delete-building.component';
 import {MatDialog} from '@angular/material';
 import {AddBuildingComponent} from '../add-building/add-building.component';
+import {EditBuildingComponent} from '../edit-building/edit-building.component';
 
 @Component({
   selector: 'app-list-building',
@@ -48,6 +49,16 @@ export class ListBuildingComponent implements OnInit, OnDestroy {
         this.ngOnInit();
       });
   }
+  openDialogEdit(id): void {
+    const dialogRef = this.dialog.open(EditBuildingComponent, {
+      width: '1200px',
+      height: '840px',
+      disableClose: true,
+    });
+    dialogRef.afterClosed().subscribe(result => {
+      this.ngOnInit();
+    });
+}
 
 
   openDialog(id): void {

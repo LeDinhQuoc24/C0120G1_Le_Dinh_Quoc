@@ -43,14 +43,14 @@ export class AddBuildingComponent implements OnInit, OnDestroy {
   }
 
   onAddBuilding() {
-    console.log('afsdfs');
+
     this.subscription = this.buildingService.save(this.addBuildingForm.value).subscribe(data => {
       // if (data && data.id) {
       this.routerService.navigate(['buildings']);
-      console.log('if1');
+
       // }
       this.message = 'Thêm mới thành công thông tin tòa nhà';
-      console.log('if2');
+
     });
     this.dialogRef.close();
   }
