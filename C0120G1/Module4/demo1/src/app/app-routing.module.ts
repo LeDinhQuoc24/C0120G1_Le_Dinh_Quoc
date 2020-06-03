@@ -8,7 +8,7 @@ import {EditBuildingComponent} from './Component/edit-building/edit-building.com
 
 const routes: Routes = [
   {
-    path: 'building',
+    path: 'buildings',
     component: BuildingComponent,
     children: [
       {path: '', component: ListBuildingComponent},

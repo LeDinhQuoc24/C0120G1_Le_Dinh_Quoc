@@ -23,6 +23,9 @@ export class BuildingModel {
   public recipientName: string;
   // Ngân hàng
   public bank: string;
+  // Logo
+  public logo: string;
+  public id: number;
 
 
 

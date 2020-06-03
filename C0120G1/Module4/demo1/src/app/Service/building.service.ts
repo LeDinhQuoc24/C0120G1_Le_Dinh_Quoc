@@ -7,8 +7,7 @@ import {HttpClient} from '@angular/common/http';
   providedIn: 'root'
 })
 export class BuildingService extends CrudService<BuildingModel, number> {
-  // tslint:disable-next-line:variable-name
-  constructor(protected  _http: HttpClient) {
-    super(_http, 'http://localhost:3000/contractDetail');
+  constructor(protected  http: HttpClient) {
+    super(http, 'http://localhost:3000/buildings');
   }
 }

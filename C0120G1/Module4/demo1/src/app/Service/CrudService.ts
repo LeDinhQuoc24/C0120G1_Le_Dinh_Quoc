@@ -8,28 +8,26 @@ export abstract class CrudService<T, ID> implements CrudOperations<T, ID> {
 
 
   protected constructor(
-    // tslint:disable-next-line:variable-name
-    protected _http: HttpClient,
-    // tslint:disable-next-line:variable-name
-    protected _base: string
+    protected http: HttpClient,
+    protected base: string
   ) {
   }
 
   save(t: T): Observable<T> {
-    return this._http.post<T>(this._base, t);
+    return this.http.post<T>(this.base, t);
   }
   update( t: T, id: ID): Observable<T> {
-    return this._http.put<T>(`${this._base}/${id}`, t);
+    return this.http.put<T>(`${this.base}/${id}`, t);
   }
   findOne(id: ID): Observable<T> {
-    return this._http.get<T>(`${this._base}/${id}`);
+    return this.http.get<T>(`${this.base}/${id}`);
   }
 
   findAll(): Observable<T[]> {
-    return this._http.get<T[]>(this._base);
+    return this.http.get<T[]>(this.base);
   }
 
   delete(id: ID): Observable<any> {
-    return this._http.delete<T>(`${this._base}/${id}`);
+    return this.http.delete<T>(`${this.base}/${id}`);
   }
 }

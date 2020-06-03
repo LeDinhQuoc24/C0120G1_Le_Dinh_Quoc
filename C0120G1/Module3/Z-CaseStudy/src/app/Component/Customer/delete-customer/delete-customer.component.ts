@@ -15,13 +15,13 @@ public customerId;
 
 constructor(
   public dialogRef: MatDialogRef<DeleteCustomerComponent>,
-@Inject(MAT_DIALOG_DATA) public data: any,
+  @Inject(MAT_DIALOG_DATA) public data: any,
   public customerService: CustomerService,
 ) { }
 
 ngOnInit(): void {
   this.customerName = this.data.data1.name;
-this.customerId = this.data.data1.id;
+  this.customerId = this.data.data1.id;
 
 }
 
