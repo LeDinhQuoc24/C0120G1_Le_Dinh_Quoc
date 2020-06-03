@@ -39,24 +39,6 @@ export class ListEmployeeComponent implements OnInit, OnDestroy {
       this.subscription.unsubscribe();
     }
   }
-
-
-  // onDeleteEmployee(id: number) {
-  //   this.subscription = this.employeeService.deleteEmployee(id).subscribe((data: Employee) => {
-  //     this.updateDataAfterDelete(id);
-  //   });
-  //   this.message = 'Xóa thành công thông tin nhân viên';
-  // }
-  //
-  // updateDataAfterDelete(id: number) {
-  //   for (let i = 0; i < this.employees.length; i++) {
-  //     // tslint:disable-next-line:triple-equals
-  //     if (this.employees[i].id == id) {
-  //       this.employees.splice(i, 1);
-  //       break;
-  //     }
-  //   }
-  // }
   openDialog(id): void {
     this.employeeService.getEmployee(id).subscribe(dataOfEmployee => {
       const dialogRef = this.dialog.open(DeleteEmployeeComponent, {

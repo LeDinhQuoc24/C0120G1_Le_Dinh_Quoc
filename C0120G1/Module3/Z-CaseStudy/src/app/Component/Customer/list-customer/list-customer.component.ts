@@ -41,21 +41,7 @@ export class ListCustomerComponent implements OnInit, OnDestroy {
   }
 
 
-  // onDeleteCustomer(id: number) {
-  //   this.subscription = this.customerService.deleteCustomer(id).subscribe((data: Customer) => {
-  //     this.updateDataAfterDelete(id);
-  //     this.message = 'Xóa thành công thông tin khách hàng';
-  //   });
-  // }
 
-  // updateDataAfterDelete(id: number) {
-  //   for (let i = 0; i < this.customers.length; i++) {
-  //     if (this.customers[i].id === id) {
-  //       this.customers.splice(i, 1);
-  //       break;
-  //     }
-  //   }
-  // }
   openDialog(id): void {
     this.customerService.getCustomer(id).subscribe(dataOfCustomer => {
       const dialogRef = this.dialog.open(DeleteCustomerComponent, {
