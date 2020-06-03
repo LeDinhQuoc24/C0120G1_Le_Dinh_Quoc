@@ -1,0 +1,63 @@
+
+<h1>Danh sách tòa nhà</h1>
+<div class="search-hero">
+  <input class="form-control mt-2" type="text" name="search" style="width: 50%" [(ngModel)]="searchText"
+         autocomplete="off" placeholder="Tìm kiếm khách hàng theo tên,địa chỉ,loại khách,ngày sinh">
+</div>
+
+<div>
+  <button type="button" class="btn btn-primary" routerLink="add" >Thêm mới tòa nhà</button>
+  <table class="table table-striped table-inverse table-responsive">
+    <thead class="thead-inverse">
+    <tr>
+      <th>Số thứ tự</th>
+      <th>Tên viết tắt</th>
+      <th>Tên tòa nhà</th>
+      <th>Mã số thuế</th>
+      <th>Điện thoại</th>
+      <th>Email</th>
+      <th>Fax</th>
+      <th>Địa chỉ</th>
+      <th>Ban quản lý</th>
+      <th>Người quản lý</th>
+      <th>Số tài khoản</th>
+      <th>Tên người nhận</th>
+      <th>Ngân hàng</th>
+      <th colspan="2">Action</th>
+
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let i=index;let item of buildings|filter:searchText | paginate:{id:'listing_pagination',
+                                                                            itemsPerPage:4,
+                                                                            currentPage:page,
+                                                                            totalItems:totalRec}">
+      <td>{{i+1}}</td>
+      <td>{{item.abbreviationName}}</td>
+      <td>{{item.fullName}}</td>
+      <td>{{item.taxCode}}</td>
+      <td>{{item.phone}}</td>
+      <td>{{item.email}}</td>
+      <td>{{item.fax}}</td>
+      <td>{{item.address}}</td>
+      <td>{{item.management}}</td>
+      <td>{{item.manager}}</td>
+      <td>{{item.accountNumber}}</td>
+      <td>{{item.recipientName}}</td>
+      <td>{{item.bank}}</td>
+      <td><button type="button" class="btn btn-success" [routerLink]="['/buildings',item.id,'edit']">Sửa</button></td>
+      <td><button type="button" class="btn btn-danger" (click)="openDialog(item.id)">
+        Xóa
+      </button></td>
+
+    </tr>
+    </tbody>
+  </table>
+  <div>
+    <pagination-controls  id="listing_pagination" maxSize="5" directionLinks="true" (pageChange)="page = $event"></pagination-controls>
+  </div>
+</div>
+<div class="text-danger">
+  {{message}}
+</div>
+
