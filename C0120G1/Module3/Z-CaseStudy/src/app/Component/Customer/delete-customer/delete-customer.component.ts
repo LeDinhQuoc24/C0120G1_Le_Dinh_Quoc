@@ -11,7 +11,7 @@ import {MAT_DIALOG_DATA, MatDialogRef} from '@angular/material';
 export class DeleteCustomerComponent implements OnInit {
 
   public customerName;
-public customerId;
+  public customerId;
 
 constructor(
   public dialogRef: MatDialogRef<DeleteCustomerComponent>,

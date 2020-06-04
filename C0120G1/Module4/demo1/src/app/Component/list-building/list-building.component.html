@@ -11,19 +11,19 @@
     <thead class="thead-inverse">
     <tr>
       <th>Số thứ tự</th>
-      <th>Tên viết tắt</th>
+<!--      <th>Tên viết tắt</th>-->
       <th>Tên tòa nhà</th>
       <th>Mã số thuế</th>
       <th>Điện thoại</th>
       <th>Email</th>
       <th>Fax</th>
       <th>Địa chỉ</th>
-      <th>Ban quản lý</th>
-      <th>Người quản lý</th>
-      <th>Số tài khoản</th>
-      <th>Tên người nhận</th>
-      <th>Ngân hàng</th>
-      <th colspan="2">Action</th>
+<!--      <th>Ban quản lý</th>-->
+<!--      <th>Người quản lý</th>-->
+<!--      <th>Số tài khoản</th>-->
+<!--      <th>Tên người nhận</th>-->
+<!--      <th>Ngân hàng</th>-->
+      <th colspan="3">Thao tác</th>
 
     </tr>
     </thead>
@@ -33,20 +33,21 @@
                                                                             currentPage:page,
                                                                             totalItems:totalRec}">
       <td>{{i+1}}</td>
-      <td>{{item.abbreviationName}}</td>
+<!--      <td>{{item.abbreviationName}}</td>-->
       <td>{{item.fullName}}</td>
       <td>{{item.taxCode}}</td>
       <td>{{item.phone}}</td>
       <td>{{item.email}}</td>
       <td>{{item.fax}}</td>
       <td>{{item.address}}</td>
-      <td>{{item.management}}</td>
-      <td>{{item.manager}}</td>
-      <td>{{item.accountNumber}}</td>
-      <td>{{item.recipientName}}</td>
-      <td>{{item.bank}}</td>
+<!--      <td>{{item.management}}</td>-->
+<!--      <td>{{item.manager}}</td>-->
+<!--      <td>{{item.accountNumber}}</td>-->
+<!--      <td>{{item.recipientName}}</td>-->
+<!--      <td>{{item.bank}}</td>-->
+      <td><button type="button" class="btn btn-success" (click)="openDialogView(item.id)">Chi tiết</button></td>
       <td><button type="button" class="btn btn-success" (click)="openDialogEdit(item.id)">Sửa</button></td>
-      <td><button type="button" class="btn btn-danger" (click)="openDialog(item.id)">
+      <td><button type="button" class="btn btn-danger" (click)="openDialogDelete(item.id)">
         Xóa
       </button></td>
 

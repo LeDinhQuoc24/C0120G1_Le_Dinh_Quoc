@@ -27,9 +27,12 @@ import {MatDialogModule} from '@angular/material';
     ListBuildingComponent,
     ViewBuildingComponent
   ],
-  // entryComponents: [
-  //   DeleteBuildingComponent
-  // ],
+  entryComponents: [
+    AddBuildingComponent,
+    ViewBuildingComponent,
+    EditBuildingComponent,
+    DeleteBuildingComponent
+  ],
     imports: [
         BrowserModule,
         AppRoutingModule,

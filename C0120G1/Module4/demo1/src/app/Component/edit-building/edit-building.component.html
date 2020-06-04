@@ -1,5 +1,4 @@
 <h2 class="text-center">Chỉnh sửa thông tin tòa nhà</h2>
-
 <form  [formGroup]="editBuildingForm" class="col-md-12 offset-md-4" >
   <fieldset >
     <legend>Thông tin chung</legend>
@@ -7,12 +6,12 @@
       <div class="col-md-4">
         <span  class="col-md-5">Tên viết tắt:</span>
         <div >
-          <input type="text" class="form-control col-md-7"   [value]="1" formControlName="abbreviationName" >
+          <input type="text" class="form-control col-md-7"   formControlName="abbreviationName" >
         </div>
       </div>
       <div class="col-md-4">
         <span class="col-md-5">Điện thoại:</span>
-        <input type="text" class="form-control col-md-7"   value={{phone}}  formControlName="phone">
+        <input type="text" class="form-control col-md-7"   formControlName="phone">
       </div>
       <div class="col-md-4">
         <span class="col-md-5"> Địa chỉ:</span>
@@ -41,8 +40,6 @@
     </label>
   </fieldset>
 </form>
-
-
 <form  [formGroup]="editBuildingForm" class="col-md-12 offset-md-4" >
   <fieldset>
     <legend>Thông tin trên báo cáo</legend>
@@ -78,14 +75,8 @@
         <input type="text" class="form-control col-md-7"   formControlName="logo">
       </div>
     </label>
-
   </fieldset>
 </form>
-
-
-
-
-
 <div >
   <button mat-raised-button class="btn btn-danger mr-3" id="modal-action-button" (click)="onEditBuilding()">
     Chỉnh sửa

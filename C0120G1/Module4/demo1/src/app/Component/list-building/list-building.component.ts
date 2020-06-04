@@ -6,6 +6,7 @@ import {DeleteBuildingComponent} from '../delete-building/delete-building.compon
 import {MatDialog} from '@angular/material';
 import {AddBuildingComponent} from '../add-building/add-building.component';
 import {EditBuildingComponent} from '../edit-building/edit-building.component';
+import {ViewBuildingComponent} from '../view-building/view-building.component';
 
 @Component({
   selector: 'app-list-building',
@@ -33,40 +34,59 @@ export class ListBuildingComponent implements OnInit, OnDestroy {
       this.totalRec = this.buildings.length;
     });
   }
+
   ngOnDestroy() {
     if (this.subscription) {
       this.subscription.unsubscribe();
     }
   }
-  openDialogAddNew(): void {
-      const dialogRef = this.dialog.open(AddBuildingComponent, {
-        width: '1200px',
-        height: '840px',
-        disableClose: true,
-      });
 
-      dialogRef.afterClosed().subscribe(result => {
-        this.ngOnInit();
-      });
-  }
-  openDialogEdit(id): void {
-    const dialogRef = this.dialog.open(EditBuildingComponent, {
+  openDialogAddNew(): void {
+    const dialogRef = this.dialog.open(AddBuildingComponent, {
       width: '1200px',
       height: '840px',
       disableClose: true,
     });
+
     dialogRef.afterClosed().subscribe(result => {
       this.ngOnInit();
     });
-}
+  }
+  openDialogView(id): void {
+    this.buildingService.findOne(id).subscribe(dataOfBuildingModel => {
+      const dialogRef = this.dialog.open(ViewBuildingComponent, {
+        width: '1200px',
+        height: '840px',
+        data: {data1: dataOfBuildingModel},
+        disableClose: true,
+      });
+      dialogRef.afterClosed().subscribe(result => {
+        this.ngOnInit();
+      });
+    });
+  }
+
+  openDialogEdit(id): void {
+    this.buildingService.findOne(id).subscribe(dataOfBuildingModel => {
+      const dialogRef = this.dialog.open(EditBuildingComponent, {
+        width: '1200px',
+        height: '840px',
+        data: {data1: dataOfBuildingModel},
+        disableClose: true,
+      });
+      dialogRef.afterClosed().subscribe(result => {
+        this.ngOnInit();
+      });
+    });
+  }
 
 
-  openDialog(id): void {
-    this.buildingService.findOne(id).subscribe(dataOfBuilding => {
+  openDialogDelete(id): void {
+    this.buildingService.findOne(id).subscribe(dataOfBuildingModel => {
       const dialogRef = this.dialog.open(DeleteBuildingComponent, {
         width: '500px',
         height: '240px',
-        data: {data1: dataOfBuilding},
+        data: {data1: dataOfBuildingModel},
         disableClose: true,
       });
       dialogRef.afterClosed().subscribe(result => {
