@@ -14,7 +14,7 @@ import {BuildingModel} from '../../../Model/building.model';
 export class EditBuildingComponent implements OnInit, OnDestroy {
   public subscription: Subscription;
   editBuildingForm: FormGroup;
-  message = '';
+
   public id: number;
   constructor(
     public dialogRef: MatDialogRef<EditBuildingComponent>,
@@ -33,11 +33,11 @@ export class EditBuildingComponent implements OnInit, OnDestroy {
       email: ['', [Validators.required, Validators.email, Validators.maxLength(25)]],
       fax: ['', [Validators.required, Validators.minLength(2), Validators.maxLength(25)]],
       address: ['', [Validators.required, Validators.minLength(2), Validators.maxLength(50)]],
-      management: [''],
-      manager: [''],
-      accountNumber: [''],
-      recipientName: [''],
-      bank: [''],
+      management: ['', [Validators.required, Validators.minLength(2), Validators.maxLength(50)]],
+      manager: ['', [Validators.required, Validators.minLength(2), Validators.maxLength(50)]],
+      accountNumber: ['', [Validators.required, Validators.minLength(2), Validators.maxLength(25)]],
+      recipientName: ['', [Validators.required, Validators.minLength(2), Validators.maxLength(50)]],
+      bank: ['', [Validators.required, Validators.minLength(2), Validators.maxLength(50)]],
       logo: ['']
     });
     this.loadData();
@@ -48,10 +48,8 @@ export class EditBuildingComponent implements OnInit, OnDestroy {
   }
   onEditBuilding() {
     this.subscription = this.buildingService.update(this.editBuildingForm.value, this.id).subscribe(data => {
-      this.routerService.navigate(['buildings']);
-      this.message = 'Chỉnh sửa thành công thông tin tòa nhà';
+      this.routerService.navigate(['buildings']).then(r => this.dialogRef.close());
     });
-    this.dialogRef.close();
   }
   ngOnDestroy() {
     if (this.subscription) {

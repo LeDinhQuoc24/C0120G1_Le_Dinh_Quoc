@@ -47,9 +47,8 @@ export class ViewBuildingComponent implements OnInit, OnDestroy {
   }
   onViewBuilding() {
     this.subscription = this.buildingService.update(this.viewBuildingForm.value, this.id).subscribe(data => {
-      this.routerService.navigate(['buildings']);
+      this.routerService.navigate(['buildings']).then(r => this.dialogRef.close());
     });
-    this.dialogRef.close();
   }
   ngOnDestroy() {
     if (this.subscription) {

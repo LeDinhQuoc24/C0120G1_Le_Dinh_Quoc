@@ -32,11 +32,11 @@ export class AddBuildingComponent implements OnInit, OnDestroy {
       email: ['', [Validators.required, Validators.email, Validators.maxLength(25)]],
       fax: ['', [Validators.required, Validators.minLength(2), Validators.maxLength(25)]],
       address: ['', [Validators.required, Validators.minLength(2), Validators.maxLength(50)]],
-      management: [''],
-      manager: [''],
-      accountNumber: [''],
-      recipientName: [''],
-      bank: [''],
+      management: ['', [Validators.required, Validators.minLength(2), Validators.maxLength(50)]],
+      manager: ['', [Validators.required, Validators.minLength(2), Validators.maxLength(50)]],
+      accountNumber: ['', [Validators.required, Validators.minLength(2), Validators.maxLength(25)]],
+      recipientName: ['', [Validators.required, Validators.minLength(2), Validators.maxLength(50)]],
+      bank: ['', [Validators.required, Validators.minLength(2), Validators.maxLength(50)]],
       logo: ['']
     });
   }
