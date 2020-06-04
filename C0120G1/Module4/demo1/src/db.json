@@ -1,36 +1,20 @@
 {
   "buildings": [
     {
-      "abbreviationName": "Quo",
-      "fullName": "toa nha 1",
-      "taxCode": "456",
-      "phone": "789",
-      "email": "kud@afa",
-      "fax": "1g4",
-      "address": "da nang",
-      "management": "asffff",
-      "manager": "aaaaaaa",
-      "accountNumber": "3333333",
-      "recipientName": "ggggg",
-      "bank": "yyyyyy",
-      "logo": "",
-      "id": 1
-    },
-    {
-      "abbreviationName": "4",
-      "fullName": "2",
-      "taxCode": "5",
-      "phone": "y",
-      "email": "g",
-      "fax": "4",
-      "address": "",
+      "abbreviationName": "TN1",
+      "fullName": "Tòa Nhà 1",
+      "taxCode": "MST-1234",
+      "phone": "090512345",
+      "email": "ngdinhhoa@gmail.com",
+      "fax": "12345",
+      "address": "Đại Lộc ",
       "management": "",
       "manager": "",
       "accountNumber": "",
       "recipientName": "",
       "bank": "",
       "logo": "",
-      "id": 2
+      "id": 1
     }
   ]
 }

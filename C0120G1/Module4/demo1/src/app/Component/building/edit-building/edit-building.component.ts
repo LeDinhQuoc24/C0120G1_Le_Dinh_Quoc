@@ -1,6 +1,6 @@
 import {Component, Inject, OnDestroy, OnInit} from '@angular/core';
 import {Subscription} from 'rxjs';
-import {FormBuilder, FormGroup} from '@angular/forms';
+import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 import {MAT_DIALOG_DATA, MatDialogRef} from '@angular/material';
 import {BuildingService} from '../../../Service/building.service';
 import {ActivatedRoute, Params, Router} from '@angular/router';
@@ -26,13 +26,13 @@ export class EditBuildingComponent implements OnInit, OnDestroy {
   }
   ngOnInit() {
     this.editBuildingForm = this.fb.group({
-      abbreviationName: [''],
-      fullName: [''],
-      taxCode: [''],
-      phone: [''],
-      email: [''],
-      fax: [''],
-      address: [''],
+      abbreviationName: ['', [Validators.required, Validators.minLength(2), Validators.maxLength(25)]],
+      fullName: ['', [Validators.required, Validators.minLength(2), Validators.maxLength(50)]],
+      taxCode: ['', [Validators.required, Validators.minLength(2), Validators.maxLength(25)]],
+      phone: ['', [Validators.required, Validators.pattern(/^\d{9}(\d{3})?$/)]],
+      email: ['', [Validators.required, Validators.email, Validators.maxLength(25)]],
+      fax: ['', [Validators.required, Validators.minLength(2), Validators.maxLength(25)]],
+      address: ['', [Validators.required, Validators.minLength(2), Validators.maxLength(50)]],
       management: [''],
       manager: [''],
       accountNumber: [''],

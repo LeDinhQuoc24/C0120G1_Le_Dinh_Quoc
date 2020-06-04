@@ -14,7 +14,6 @@ export class AddBuildingComponent implements OnInit, OnDestroy {
 
   public subscription: Subscription;
   addBuildingForm: FormGroup;
-  message = '';
 
   constructor(
     public dialogRef: MatDialogRef<AddBuildingComponent>,
@@ -28,9 +27,9 @@ export class AddBuildingComponent implements OnInit, OnDestroy {
     this.addBuildingForm = this.fb.group({
       abbreviationName: ['', [Validators.required, Validators.minLength(2), Validators.maxLength(25)]],
       fullName: ['', [Validators.required, Validators.minLength(2), Validators.maxLength(50)]],
-      taxCode: [''],
+      taxCode: ['', [Validators.required, Validators.minLength(2), Validators.maxLength(25)]],
       phone: ['', [Validators.required, Validators.pattern(/^\d{9}(\d{3})?$/)]],
-      email: [''],
+      email: ['', [Validators.required, Validators.email, Validators.maxLength(25)]],
       fax: ['', [Validators.required, Validators.minLength(2), Validators.maxLength(25)]],
       address: ['', [Validators.required, Validators.minLength(2), Validators.maxLength(50)]],
       management: [''],
@@ -41,18 +40,12 @@ export class AddBuildingComponent implements OnInit, OnDestroy {
       logo: ['']
     });
   }
-
   onAddBuilding() {
-
-    this.subscription = this.buildingService.save(this.addBuildingForm.value).subscribe(data => {
+    this.buildingService.save(this.addBuildingForm.value).subscribe(data => {
       // if (data && data.id) {
-      this.routerService.navigate(['buildings']);
-
+      this.routerService.navigate(['buildings']).then(r => this.dialogRef.close());
       // }
-      this.message = 'Thêm mới thành công thông tin tòa nhà';
-
     });
-    this.dialogRef.close();
   }
 
   ngOnDestroy() {
