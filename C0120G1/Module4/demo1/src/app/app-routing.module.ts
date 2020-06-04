@@ -1,18 +1,13 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import {BuildingComponent} from './Component/building/building.component';
-import {ListBuildingComponent} from './Component/list-building/list-building.component';
-import {AddBuildingComponent} from './Component/add-building/add-building.component';
-import {EditBuildingComponent} from './Component/edit-building/edit-building.component';
+import {ListBuildingComponent} from './Component/building/list-building/list-building.component';
+
 
 
 const routes: Routes = [
   {
     path: 'buildings',
-    component: BuildingComponent,
-    children: [
-      {path: '', component: ListBuildingComponent}
-    ]
+    component: ListBuildingComponent,
   },
 ];
 

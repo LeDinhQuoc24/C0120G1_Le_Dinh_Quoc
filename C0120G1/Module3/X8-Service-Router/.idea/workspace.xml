@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="db67886c-cb79-45ac-a5cb-34cfe5aa7e51" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../X7-Form/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../X7-Form/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../X7-Form/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../X7-Form/src/app/app-routing.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../X7-Form/src/app/app.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../X7-Form/src/app/app.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../X7-Form/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../X7-Form/src/app/app.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../X7-Form/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../X7-Form/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../X7-Form/src/app/login/login.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../X7-Form/src/app/login/login.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../X7-Form/src/app/register/register.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../X7-Form/src/app/register/register.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module4/demo1/src/app/Component/add-building/add-building.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module4/demo1/src/app/Component/add-building/add-building.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module4/demo1/src/app/Component/list-building/list-building.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module4/demo1/src/app/Component/list-building/list-building.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module4/demo1/src/db.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module4/demo1/src/db.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,7 +24,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../X6-Component-Template" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../X9-ModulesDependencyInjection" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
@@ -83,6 +79,7 @@
       <updated>1589810637183</updated>
       <workItem from="1589810638281" duration="159000" />
       <workItem from="1590717814810" duration="29000" />
+      <workItem from="1591239761731" duration="13000" />
     </task>
     <servers />
   </component>
@@ -90,9 +87,9 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="463" y="120" key="FileChooserDialogImpl" timestamp="1590717841219">
+    <state x="463" y="120" key="FileChooserDialogImpl" timestamp="1591239773190">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="120" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1590717841219" />
+    <state x="463" y="120" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1591239773190" />
   </component>
 </project>

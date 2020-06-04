@@ -15,6 +15,22 @@
       "bank": "yyyyyy",
       "logo": "",
       "id": 1
+    },
+    {
+      "abbreviationName": "4",
+      "fullName": "2",
+      "taxCode": "5",
+      "phone": "y",
+      "email": "g",
+      "fax": "4",
+      "address": "",
+      "management": "",
+      "manager": "",
+      "accountNumber": "",
+      "recipientName": "",
+      "bank": "",
+      "logo": "",
+      "id": 2
     }
   ]
 }
