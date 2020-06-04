@@ -27,12 +27,12 @@ export class AddBuildingComponent implements OnInit, OnDestroy {
   ngOnInit() {
     this.addBuildingForm = this.fb.group({
       abbreviationName: ['', [Validators.required, Validators.minLength(2), Validators.maxLength(25)]],
-      fullName: [''],
+      fullName: ['', [Validators.required, Validators.minLength(2), Validators.maxLength(50)]],
       taxCode: [''],
-      phone: [''],
+      phone: ['', [Validators.required, Validators.pattern(/^\d{9}(\d{3})?$/)]],
       email: [''],
-      fax: [''],
-      address: [''],
+      fax: ['', [Validators.required, Validators.minLength(2), Validators.maxLength(25)]],
+      address: ['', [Validators.required, Validators.minLength(2), Validators.maxLength(50)]],
       management: [''],
       manager: [''],
       accountNumber: [''],

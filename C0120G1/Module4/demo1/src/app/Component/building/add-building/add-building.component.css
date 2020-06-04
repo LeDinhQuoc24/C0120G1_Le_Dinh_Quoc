@@ -14,3 +14,8 @@ form fieldset label {
 form fieldset label div span{
   float: left;
 }
+form fieldset label div .col-md-10{
+  margin-left: auto;
+  margin-top: 20px;
+  text-align: center;
+}
