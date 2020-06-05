@@ -1,20 +1,3 @@
 {
-  "buildings": [
-    {
-      "abbreviationName": "TN1",
-      "fullName": "Tòa Nhà 1",
-      "taxCode": "MST-1234",
-      "phone": "090512345",
-      "email": "ngdinhhoa@gmail.com",
-      "fax": "12345",
-      "address": "Đại Lộc ",
-      "management": "",
-      "manager": "",
-      "accountNumber": "",
-      "recipientName": "",
-      "bank": "",
-      "logo": "",
-      "id": 1
-    }
-  ]
+  "buildings": []
 }
