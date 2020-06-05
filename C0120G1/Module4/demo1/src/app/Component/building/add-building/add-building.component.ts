@@ -43,10 +43,18 @@ export class AddBuildingComponent implements OnInit, OnDestroy {
   onAddBuilding() {
     this.buildingService.save(this.addBuildingForm.value).subscribe(data => {
       // if (data && data.id) {
-      this.routerService.navigate(['buildings']).then(r => this.dialogRef.close());
+      this.routerService.navigate(['buildings']).then(r => this.afterOnAddBuilding());
       // }
+
     });
   }
+  afterOnAddBuilding(){
+    this.dialogRef.close();
+    this.buildingService.showNotification('', 'Thêm mới thành công, chúc mừng bạn');
+
+}
+
+
 
   ngOnDestroy() {
     if (this.subscription) {

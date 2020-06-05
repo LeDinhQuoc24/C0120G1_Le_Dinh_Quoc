@@ -21,8 +21,13 @@ export class DeleteBuildingComponent implements OnInit {
   }
   deleteBuilding() {
     this.buildingService.delete(this.buildingId).subscribe(data => {
-      this.dialogRef.close();
+      this.afterDeleteBuilding();
     });
+  }
+  afterDeleteBuilding() {
+    this.dialogRef.close();
+    this.buildingService.showNotification('', 'Xóa thành công, chúc mừng bạn');
+
   }
 
 }

@@ -48,8 +48,12 @@ export class EditBuildingComponent implements OnInit, OnDestroy {
   }
   onEditBuilding() {
     this.subscription = this.buildingService.update(this.editBuildingForm.value, this.id).subscribe(data => {
-      this.routerService.navigate(['buildings']).then(r => this.dialogRef.close());
+      this.routerService.navigate(['buildings']).then(r => this.afterOnEditBuilding());
     });
+  }
+  afterOnEditBuilding() {
+    this.dialogRef.close();
+    this.buildingService.showNotification('', 'Sửa thành công, chúc mừng bạn');
   }
   ngOnDestroy() {
     if (this.subscription) {
